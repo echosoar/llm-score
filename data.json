@@ -1,0 +1,141 @@
+{
+    "models": [
+        {
+            "brand": "OpenAI",
+            "model": "GPT-5.6 Sol",
+            "time": "2026/07/09",
+            "url": "https://openai.com/zh-Hans-CN/index/gpt-5-6/"
+        },
+        {
+            "brand": "腾讯",
+            "model": "Hy 3",
+            "time": "2026/07/06",
+            "url": "https://hy.tencent.com/research/hy3"
+        },
+        {
+            "brand": "Z.ai",
+            "model": "GLM 5.2",
+            "time": "2026/06/16",
+            "url": "https://z.ai/blog/glm-5.2"
+        },
+        {
+            "brand": "Anthropic",
+            "model": "Claude Fable 5",
+            "time": "2026/06/09",
+            "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+        },
+        {
+            "brand": "Anthropic",
+            "model": "Claude Opus 4.8",
+            "time": "2026/05/28",
+            "url": "https://www.anthropic.com/news/claude-opus-4-8"
+        },
+        {
+            "brand": "Alibaba",
+            "model": "Qwen 3.7 Max",
+            "time": "2026/05/20",
+            "url": "https://qwen.ai/blog?id=qwen3.7"
+        },
+        {
+            "brand": "Moonshot",
+            "model": "Kimi K2.6",
+            "time": "2026/04/20",
+            "url": "https://www.kimi.com/ai-models/kimi-k2-6"
+        },
+        {
+            "brand": "Z.ai",
+            "model": "GLM 5.1",
+            "time": "2026/04/07",
+            "url": "https://z.ai/blog/glm-5.1"
+        }
+    ],
+    "benchmarks": [
+        {
+            "name": "GPQA Diamond",
+            "scores": {
+                "GPT-5.6 Sol": 0.946,
+                "Hy 3": 0.904,
+                "GLM 5.2": 0.912,
+                "Claude Fable 5(from GPT-5.6 Sol)": 0.941,
+                "Claude Opus 4.8(from GPT-5.6 Sol)": 0.92,
+                "Qwen 3.7 Max": 0.924,
+                "Kimi K2.6(from Qwen 3.7 Max)": 0.905,
+                "GLM 5.1": 0.862
+            }
+        },
+        {
+            "name": "SWE-Bench Pro",
+            "scores": {
+                "GPT-5.6 Sol": 0.646,
+                "Hy 3": 0.579,
+                "GLM 5.2": 0.621,
+                "Claude Fable 5": 0.803,
+                "Claude Opus 4.8": 0.692,
+                "Qwen 3.7 Max": 0.606,
+                "Kimi K2.6": 0.586,
+                "GLM 5.1": 0.584
+            }
+        },
+        {
+            "name": "Terminal-Bench 2.1",
+            "scores": {
+                "GPT-5.6 Sol": 0.888,
+                "Hy 3": 0.717,
+                "Claude Fable 5": 0.88,
+                "Claude Opus 4.8": 0.746,
+                "GLM 5.2": 0.81,
+                "Qwen 3.7 Max(from Hy 3)": 0.75,
+                "GLM 5.1": 0.635
+            }
+        },
+        {
+            "name": "Terminal-Bench 2",
+            "scores": {
+                "Qwen 3.7 Max": 0.697,
+                "Kimi K2.6": 0.667
+            }
+        },
+        {
+            "name": "BrowseComp",
+            "scores": {
+                "GPT-5.6 Sol": 0.904,
+                "Hy 3": 0.842,
+                "Claude Fable 5(from GPT-5.6 Sol)": 0.88,
+                "Claude Opus 4.8(from GPT-5.6 Sol)": 0.843,
+                "Kimi K2.6": 0.832,
+                "GLM 5.1(from Hy 3)": 0.793
+            }
+        },
+        {
+            "name": "GDPval-AA 2",
+            "scores": {
+                "GPT-5.6 Sol": 1747.8,
+                "Claude Fable 5(from GPT-5.6 Sol)": 1759.6,
+                "Claude Opus 4.8(from GPT-5.6 Sol)": 1600.1
+            }
+        },
+        {
+            "name": "GDPval-AA",
+            "scores": {
+                "Claude Fable 5": 1932,
+                "Claude Opus 4.8": 1890
+            }
+        },
+        {
+            "name": "Humanity's Last Exam",
+            "scores": {
+                "Hy 3": 0.532,
+                "Claude Fable 5": 0.645,
+                "Claude Opus 4.8": 0.579,
+                "GLM 5.2": 0.547,
+                "Qwen 3.7 Max": 0.535,
+                "Kimi K2.6": 0.54,
+                "GLM 5.1": 0.523
+            }
+        }
+    ],
+    "moreSources": [
+       "https://llm-stats.com/benchmarks/terminal-bench-2-1",
+        "https://www.vals.ai/benchmarks/terminal-bench-2-1"
+    ]
+}
