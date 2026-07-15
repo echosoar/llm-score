@@ -4,7 +4,8 @@ const path = require('node:path');
 const inputPath = path.join(__dirname, 'data.json');
 const outputPath = path.join(__dirname, 'score.json');
 
-// Set a benchmark multiplier here. Benchmarks omitted from this object use 1.
+// Set an optional benchmark multiplier here. Benchmarks omitted from this object use 1.
+// Each benchmark's effective multiplier is this value × sqrt(the number of models reporting it).
 // A multiplier of 0 excludes that benchmark from the final score.
 const DIMENSION_WEIGHTS = {
   // 'SWE-Bench Pro': 1.5,
@@ -18,7 +19,7 @@ function normalize(value, min, max) {
   return max === min ? 1 : (value - min) / (max - min);
 }
 
-function getWeight(benchmarkName) {
+function getConfiguredWeight(benchmarkName) {
   const weight = DIMENSION_WEIGHTS[benchmarkName] ?? 1;
 
   if (!Number.isFinite(weight) || weight < 0) {
@@ -28,6 +29,17 @@ function getWeight(benchmarkName) {
   }
 
   return weight;
+}
+
+function getDimensionWeights(benchmarkName, modelCount) {
+  const configuredWeight = getConfiguredWeight(benchmarkName);
+  const baseWeight = Math.sqrt(modelCount);
+
+  return {
+    configuredWeight,
+    baseWeight,
+    weight: configuredWeight * baseWeight,
+  };
 }
 
 function calculateScores(data) {
@@ -48,7 +60,10 @@ function calculateScores(data) {
     const rawValues = entries.map(([, value]) => value);
     const min = Math.min(...rawValues);
     const max = Math.max(...rawValues);
-    const weight = getWeight(benchmark.name);
+    const { configuredWeight, baseWeight, weight } = getDimensionWeights(
+      benchmark.name,
+      entries.length,
+    );
 
     for (const [scoreKey, rawScore] of entries) {
       const modelName = getCanonicalModelName(scoreKey);
@@ -61,8 +76,11 @@ function calculateScores(data) {
       const normalizedScore = normalize(rawScore, min, max);
       model.dimensions.push({
         name: benchmark.name,
+        modelCount: entries.length,
         rawScore,
         normalizedScore,
+        configuredWeight,
+        baseWeight,
         weight,
       });
       model.weightedScore += normalizedScore * weight;
@@ -93,7 +111,13 @@ const models = calculateScores(data);
 
 const result = {
   weights: Object.fromEntries(
-    data.benchmarks.map(({ name }) => [name, getWeight(name)]),
+    data.benchmarks.map(({ name, scores }) => [
+      name,
+      {
+        modelCount: Object.keys(scores).length,
+        ...getDimensionWeights(name, Object.keys(scores).length),
+      },
+    ]),
   ),
   models,
 };
