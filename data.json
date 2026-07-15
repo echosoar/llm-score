@@ -7,6 +7,18 @@
             "url": "https://openai.com/zh-Hans-CN/index/gpt-5-6/"
         },
         {
+            "brand": "Meta",
+            "model": "Muse Spark 1.1",
+            "time": "2026/07/09",
+            "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
+        },
+        {
+            "brand": "xAI",
+            "model": "Grok 4.5",
+            "time": "2026/07/08",
+            "url": "https://x.ai/news/grok-4-5"
+        },
+        {
             "brand": "腾讯",
             "model": "Hy 3",
             "time": "2026/07/06",
@@ -123,6 +135,8 @@
             "name": "SWE-Bench Pro",
             "scores": {
                 "GPT-5.6 Sol": 0.646,
+                "Muse Spark 1.1": 0.615,
+                "Grok 4.5": 0.647,
                 "Hy 3": 0.579,
                 "LongCat 2": 0.595,
                 "GLM 5.2": 0.621,
@@ -143,6 +157,8 @@
             "name": "Terminal-Bench 2.1",
             "scores": {
                 "GPT-5.6 Sol": 0.888,
+                "Muse Spark 1.1": 0.8,
+                "Grok 4.5": 0.833,
                 "Hy 3": 0.717,
                 "LongCat 2": 0.708,
                 "Claude Fable 5": 0.88,
@@ -214,6 +230,7 @@
         {
             "name": "Humanity's Last Exam",
             "scores": {
+                "Muse Spark 1.1": 0.621,
                 "Hy 3": 0.532,
                 "Claude Fable 5": 0.645,
                 "Claude Opus 4.8": 0.579,
@@ -246,6 +263,24 @@
                 "GLM 5.1": 0.838,
                 "Gemini 3.1 Pro(from Hy 3)": 0.81,
                 "Claude Opus 4.6(from Qwen 3.7 Max)": 0.753
+            }
+        },
+        {
+            "name": "MCPAtlas",
+            "scores": {
+                "Hy 3": 0.791,
+                "Muse Spark 1.1": 0.881,
+                "Claude Opus 4.8(from Muse Spark 1.1)": 0.822,
+                "GLM 5.2": 0.768,
+                "Qwen 3.7 Max(from GLM 5.2)": 0.764,
+                "DeepSeek V4 Pro": 0.736,
+                "DeepSeek V4 Flash": 0.69,
+                "GPT-5.5(from Muse Spark 1.1)": 0.753,
+                "Kimi K2.6(from DeepSeek V4 Pro)": 0.666,
+                "GLM 5.1(from GLM 5.2)": 0.718,
+                "Gemini 3.1 Pro": 0.692,
+                "Claude Sonnet 4.6": 0.613,
+                "Claude Opus 4.6(from Claude Sonnet 4.6)": 0.595
             }
         }
     ],
