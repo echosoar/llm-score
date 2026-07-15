@@ -90,6 +90,7 @@
         },
         {
             "name": "Terminal-Bench 2",
+            "upgrade": "Terminal-Bench 2.1",
             "scores": {
                 "Qwen 3.7 Max": 0.697,
                 "Kimi K2.6": 0.667
@@ -116,6 +117,7 @@
         },
         {
             "name": "GDPval-AA",
+            "upgrade": "GDPval-AA 2",
             "scores": {
                 "Claude Fable 5": 1932,
                 "Claude Opus 4.8": 1890

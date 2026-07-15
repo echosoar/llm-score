@@ -42,7 +42,180 @@ function getDimensionWeights(benchmarkName, modelCount) {
   };
 }
 
-function calculateScores(data) {
+function createBenchmarkEntries(benchmark) {
+  const entriesByModel = new Map();
+
+  return Object.entries(benchmark.scores).map(([scoreKey, rawScore]) => {
+    const modelName = getCanonicalModelName(scoreKey);
+
+    if (entriesByModel.has(modelName)) {
+      throw new Error(
+        `Benchmark "${benchmark.name}" has multiple scores for canonical model name "${modelName}".`,
+      );
+    }
+
+    const entry = {
+      scoreKey,
+      modelName,
+      rawScore,
+      source: 'reported',
+    };
+    entriesByModel.set(modelName, entry);
+    return entry;
+  });
+}
+
+function averageMultipliers(entries) {
+  return entries.reduce((total, entry) => total + entry.multiplier, 0) / entries.length;
+}
+
+function findProjectionMultiplier(legacyScore, knownMultipliers, benchmarkName) {
+  const matchingScores = knownMultipliers.filter(
+    ({ legacyScore: knownScore }) => knownScore === legacyScore,
+  );
+
+  if (matchingScores.length > 0) {
+    return {
+      value: averageMultipliers(matchingScores),
+      method: 'matching-score-average',
+      neighbors: matchingScores.map(({ modelName }) => modelName),
+    };
+  }
+
+  const orderedMultipliers = [...knownMultipliers].sort(
+    (left, right) => left.legacyScore - right.legacyScore,
+  );
+  const lower = orderedMultipliers.filter(
+    ({ legacyScore: score }) => score < legacyScore,
+  ).at(-1);
+  const upper = orderedMultipliers.find(({ legacyScore: score }) => score > legacyScore);
+
+  if (lower && upper) {
+    return {
+      value: averageMultipliers([lower, upper]),
+      method: 'adjacent-average',
+      neighbors: [lower.modelName, upper.modelName],
+    };
+  }
+
+  const neighbor = lower ?? upper;
+  if (neighbor) {
+    // The supplied Terminal-Bench data has only one overlap, so there is no pair
+    // of bracketing multipliers to average. Reuse its nearest reported multiplier.
+    return {
+      value: neighbor.multiplier,
+      method: 'nearest-neighbor-fallback',
+      neighbors: [neighbor.modelName],
+    };
+  }
+
+  throw new Error(
+    `Cannot project scores from "${benchmarkName}": no overlapping reported scores with its upgraded benchmark.`,
+  );
+}
+
+function prepareBenchmarks(data) {
+  const benchmarksByName = new Map();
+  const preparedBenchmarks = data.benchmarks.map((benchmark) => {
+    if (benchmarksByName.has(benchmark.name)) {
+      throw new Error(`Duplicate benchmark name: "${benchmark.name}".`);
+    }
+
+    const preparedBenchmark = {
+      name: benchmark.name,
+      upgrade: benchmark.upgrade,
+      entries: createBenchmarkEntries(benchmark),
+      calibrations: [],
+      projections: [],
+    };
+    benchmarksByName.set(benchmark.name, preparedBenchmark);
+    return preparedBenchmark;
+  });
+
+  for (const legacyBenchmark of preparedBenchmarks.filter(({ upgrade }) => upgrade)) {
+    const upgradedBenchmark = benchmarksByName.get(legacyBenchmark.upgrade);
+
+    if (!upgradedBenchmark) {
+      throw new Error(
+        `Benchmark "${legacyBenchmark.name}" references missing upgrade "${legacyBenchmark.upgrade}".`,
+      );
+    }
+    if (upgradedBenchmark.upgrade) {
+      throw new Error(
+        `Benchmark "${legacyBenchmark.name}" must point directly to a final benchmark, not legacy benchmark "${upgradedBenchmark.name}".`,
+      );
+    }
+
+    const reportedUpgradedEntriesByModel = new Map(
+      upgradedBenchmark.entries
+        .filter(({ source }) => source === 'reported')
+        .map((entry) => [entry.modelName, entry]),
+    );
+    const upgradedEntriesByModel = new Map(
+      upgradedBenchmark.entries.map((entry) => [entry.modelName, entry]),
+    );
+    const overlappingEntries = legacyBenchmark.entries
+      .filter((entry) => reportedUpgradedEntriesByModel.has(entry.modelName))
+      .map((legacyEntry) => {
+        if (legacyEntry.rawScore === 0) {
+          throw new Error(
+            `Cannot calculate an upgrade multiplier for "${legacyBenchmark.name}" and model "${legacyEntry.modelName}" because its legacy score is 0.`,
+          );
+        }
+
+        const upgradedEntry = reportedUpgradedEntriesByModel.get(legacyEntry.modelName);
+        return {
+          modelName: legacyEntry.modelName,
+          legacyScore: legacyEntry.rawScore,
+          upgradedScore: upgradedEntry.rawScore,
+          multiplier: upgradedEntry.rawScore / legacyEntry.rawScore,
+        };
+      });
+    legacyBenchmark.calibrations = overlappingEntries;
+
+    for (const legacyEntry of legacyBenchmark.entries) {
+      if (reportedUpgradedEntriesByModel.has(legacyEntry.modelName)) {
+        continue;
+      }
+      if (upgradedEntriesByModel.has(legacyEntry.modelName)) {
+        throw new Error(
+          `Model "${legacyEntry.modelName}" is projected into "${upgradedBenchmark.name}" by more than one legacy benchmark.`,
+        );
+      }
+
+      const projection = findProjectionMultiplier(
+        legacyEntry.rawScore,
+        overlappingEntries,
+        legacyBenchmark.name,
+      );
+      const projectedEntry = {
+        scoreKey: legacyEntry.modelName,
+        modelName: legacyEntry.modelName,
+        rawScore: legacyEntry.rawScore * projection.value,
+        source: 'projected',
+        projection: {
+          fromBenchmark: legacyBenchmark.name,
+          legacyScore: legacyEntry.rawScore,
+          multiplier: projection.value,
+          method: projection.method,
+          neighbors: projection.neighbors,
+        },
+      };
+
+      upgradedBenchmark.entries.push(projectedEntry);
+      upgradedEntriesByModel.set(projectedEntry.modelName, projectedEntry);
+      upgradedBenchmark.projections.push({
+        modelName: projectedEntry.modelName,
+        ...projectedEntry.projection,
+        projectedScore: projectedEntry.rawScore,
+      });
+    }
+  }
+
+  return preparedBenchmarks;
+}
+
+function calculateScores(data, benchmarks) {
   const scoresByModel = new Map(
     data.models.map((model) => [
       model.model,
@@ -55,30 +228,35 @@ function calculateScores(data) {
     ]),
   );
 
-  for (const benchmark of data.benchmarks) {
-    const entries = Object.entries(benchmark.scores);
-    const rawValues = entries.map(([, value]) => value);
+  for (const benchmark of benchmarks) {
+    // A benchmark with `upgrade` is legacy calibration data, not a final-score dimension.
+    if (benchmark.upgrade) {
+      continue;
+    }
+
+    const rawValues = benchmark.entries.map(({ rawScore }) => rawScore);
     const min = Math.min(...rawValues);
     const max = Math.max(...rawValues);
     const { configuredWeight, baseWeight, weight } = getDimensionWeights(
       benchmark.name,
-      entries.length,
+      benchmark.entries.length,
     );
 
-    for (const [scoreKey, rawScore] of entries) {
-      const modelName = getCanonicalModelName(scoreKey);
-      const model = scoresByModel.get(modelName);
+    for (const entry of benchmark.entries) {
+      const model = scoresByModel.get(entry.modelName);
 
       if (!model || weight === 0) {
         continue;
       }
 
-      const normalizedScore = normalize(rawScore, min, max);
+      const normalizedScore = normalize(entry.rawScore, min, max);
       model.dimensions.push({
         name: benchmark.name,
-        modelCount: entries.length,
-        rawScore,
+        modelCount: benchmark.entries.length,
+        rawScore: entry.rawScore,
         normalizedScore,
+        source: entry.source,
+        ...(entry.projection ? { projection: entry.projection } : {}),
         configuredWeight,
         baseWeight,
         weight,
@@ -91,7 +269,7 @@ function calculateScores(data) {
   return [...scoresByModel.values()]
     .map(({ weightedScore, totalWeight, ...model }) => ({
       ...model,
-      // Only dimensions with a reported score contribute to this model's denominator.
+      // Only included dimensions with a reported or projected score contribute.
       score: totalWeight === 0 ? null : weightedScore / totalWeight,
       totalWeight,
     }))
@@ -107,17 +285,31 @@ function calculateScores(data) {
 }
 
 const data = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
-const models = calculateScores(data);
+const benchmarks = prepareBenchmarks(data);
+const models = calculateScores(data, benchmarks);
 
 const result = {
   weights: Object.fromEntries(
-    data.benchmarks.map(({ name, scores }) => [
-      name,
-      {
-        modelCount: Object.keys(scores).length,
-        ...getDimensionWeights(name, Object.keys(scores).length),
-      },
-    ]),
+    benchmarks.map((benchmark) => {
+      const included = !benchmark.upgrade;
+      return [
+        benchmark.name,
+        {
+          included,
+          ...(benchmark.upgrade ? { upgrade: benchmark.upgrade } : {}),
+          modelCount: benchmark.entries.length,
+          ...(included
+            ? getDimensionWeights(benchmark.name, benchmark.entries.length)
+            : {}),
+          ...(benchmark.calibrations.length
+            ? { calibrations: benchmark.calibrations }
+            : {}),
+          ...(benchmark.projections.length
+            ? { projections: benchmark.projections }
+            : {}),
+        },
+      ];
+    }),
   ),
   models,
 };
