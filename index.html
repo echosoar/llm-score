@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>LLM Score</title>
+  <style>
+    :root {
+      --background: #101214;
+      --surface: #171a1e;
+      --surface-hover: #1d2228;
+      --text: #e8eaed;
+      --muted: #99a1aa;
+      --accent: #78b7ff;
+      --line: #2b3138;
+      --focus: #b7dcff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--background);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+
+    main {
+      width: min(100%, 1800px);
+      margin: 0 auto;
+      padding: 44px 32px 32px;
+    }
+
+    header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 650;
+      letter-spacing: -0.03em;
+    }
+
+    .description,
+    #status {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    #status {
+      margin: 0;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    table {
+      width: 100%;
+      min-width: 1480px;
+      border-collapse: collapse;
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 14px 12px;
+      text-align: left;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    thead {
+      background: var(--surface);
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+    }
+
+    tbody tr {
+      border-top: 1px solid var(--line);
+    }
+
+    tbody tr:hover {
+      background: var(--surface-hover);
+    }
+
+    .sort-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      letter-spacing: inherit;
+      text-align: inherit;
+      text-transform: inherit;
+      cursor: pointer;
+    }
+
+    .sort-button::after {
+      color: #637080;
+      content: "↕";
+      font-size: 13px;
+      line-height: 1;
+    }
+
+    .sort-button[aria-sort="ascending"]::after {
+      color: var(--accent);
+      content: "↑";
+    }
+
+    .sort-button[aria-sort="descending"]::after {
+      color: var(--accent);
+      content: "↓";
+    }
+
+    .sort-button:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .model-name {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .numeric {
+      text-align: right;
+    }
+
+    .dimensional-score {
+      color: #c9d9ea;
+    }
+
+    .missing {
+      color: #68727d;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .website-link::after {
+      content: " ↗";
+      font-size: 11px;
+    }
+
+    .empty,
+    .error {
+      padding: 44px 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .error { color: #ffb4ab; }
+
+    @media (max-width: 680px) {
+      main { padding: 28px 16px 20px; }
+      header { align-items: start; flex-direction: column; gap: 8px; }
+      #status { text-align: left; white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>LLM Score</h1>
+        <p class="description">模型综合评分与基准测试表现</p>
+      </div>
+      <p id="status" aria-live="polite">正在加载数据…</p>
+    </header>
+
+    <div class="table-wrap">
+      <table id="score-table">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script>
+    const table = document.querySelector('#score-table');
+    const tableHead = table.querySelector('thead');
+    const tableBody = table.querySelector('tbody');
+    const status = document.querySelector('#status');
+
+    let models = [];
+    let benchmarks = [];
+    let sortState = { key: 'score', direction: 'desc' };
+
+    const getDimension = (model, benchmark) =>
+      model.dimensions.find((dimension) => dimension.name === benchmark);
+
+    const formatScore = (value) => {
+      if (value === null || value === undefined) return '-';
+      return Number(value).toFixed(4);
+    };
+
+    const formatBenchmarkScore = (value) => {
+      if (value === null || value === undefined) return '-';
+      if (Math.abs(value) >= 100) {
+        return Number(value).toLocaleString('en-US', { maximumFractionDigits: 1 });
+      }
+      return Number(value).toLocaleString('en-US', { maximumFractionDigits: 4 });
+    };
+
+    const formatFormats = (formats) =>
+      Array.isArray(formats) && formats.length ? formats.join(' / ') : '-';
+
+    const getSortValue = (model, key) => {
+      if (key.startsWith('benchmark:')) {
+        return getDimension(model, key.slice('benchmark:'.length))?.rawScore ?? null;
+      }
+      if (key === 'input' || key === 'output') return formatFormats(model[key]);
+      return model[key] ?? null;
+    };
+
+    const compareValues = (left, right) => {
+      const leftMissing = left === null || left === undefined || left === '';
+      const rightMissing = right === null || right === undefined || right === '';
+      if (leftMissing || rightMissing) return leftMissing === rightMissing ? 0 : leftMissing ? 1 : -1;
+      if (typeof left === 'number' && typeof right === 'number') return left - right;
+      return String(left).localeCompare(String(right), 'zh-CN', { numeric: true, sensitivity: 'base' });
+    };
+
+    const sortModels = () => {
+      const { key, direction } = sortState;
+      const multiplier = direction === 'asc' ? 1 : -1;
+      return [...models].sort((left, right) => {
+        const result = compareValues(getSortValue(left, key), getSortValue(right, key));
+        return result === 0 ? left.model.localeCompare(right.model, 'zh-CN') : result * multiplier;
+      });
+    };
+
+    const makeHeader = (label, key, sortable) => {
+      const cell = document.createElement('th');
+      cell.scope = 'col';
+      if (!sortable) {
+        cell.textContent = label;
+        return cell;
+      }
+
+      const button = document.createElement('button');
+      button.className = 'sort-button';
+      button.type = 'button';
+      button.textContent = label;
+      button.setAttribute('aria-sort', sortState.key === key
+        ? (sortState.direction === 'asc' ? 'ascending' : 'descending')
+        : 'none');
+      button.addEventListener('click', () => {
+        sortState = {
+          key,
+          direction: sortState.key === key && sortState.direction === 'desc' ? 'asc' : 'desc',
+        };
+        render();
+      });
+      cell.append(button);
+      return cell;
+    };
+
+    const renderHeader = () => {
+      const row = document.createElement('tr');
+      row.append(
+        makeHeader('模型名称', 'model', false),
+        makeHeader('厂商', 'brand', false),
+        makeHeader('综合评分', 'score', true),
+        makeHeader('发布日期', 'time', true),
+        makeHeader('输入格式', 'input', true),
+        makeHeader('输出格式', 'output', true),
+      );
+      benchmarks.forEach((benchmark) => {
+        row.append(makeHeader(benchmark, `benchmark:${benchmark}`, true));
+      });
+      row.append(makeHeader('官网', 'url', true));
+      tableHead.replaceChildren(row);
+    };
+
+    const appendTextCell = (row, text, className = '') => {
+      const cell = document.createElement('td');
+      cell.textContent = text;
+      if (className) cell.className = className;
+      row.append(cell);
+    };
+
+    const renderRows = () => {
+      const rows = sortModels();
+      const fragment = document.createDocumentFragment();
+      rows.forEach((model) => {
+        const row = document.createElement('tr');
+        appendTextCell(row, model.model, 'model-name');
+        appendTextCell(row, model.brand);
+        appendTextCell(row, formatScore(model.score), 'numeric');
+        appendTextCell(row, model.time ?? '-', model.time ? '' : 'missing');
+        appendTextCell(row, formatFormats(model.input), model.input?.length ? '' : 'missing');
+        appendTextCell(row, formatFormats(model.output), model.output?.length ? '' : 'missing');
+
+        benchmarks.forEach((benchmark) => {
+          const value = getDimension(model, benchmark)?.rawScore;
+          appendTextCell(
+            row,
+            formatBenchmarkScore(value),
+            value === null || value === undefined ? 'numeric missing' : 'numeric dimensional-score',
+          );
+        });
+
+        const websiteCell = document.createElement('td');
+        if (model.url) {
+          const link = document.createElement('a');
+          link.className = 'website-link';
+          link.href = model.url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = '官网';
+          websiteCell.append(link);
+        } else {
+          websiteCell.className = 'missing';
+          websiteCell.textContent = '-';
+        }
+        row.append(websiteCell);
+        fragment.append(row);
+      });
+      tableBody.replaceChildren(fragment);
+    };
+
+    const render = () => {
+      renderHeader();
+      renderRows();
+    };
+
+    const showError = (message) => {
+      tableHead.replaceChildren();
+      const row = document.createElement('tr');
+      const cell = document.createElement('td');
+      cell.className = 'error';
+      cell.textContent = message;
+      row.append(cell);
+      tableBody.replaceChildren(row);
+    };
+
+    fetch('./score.json')
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        models = Array.isArray(data.models) ? data.models : [];
+        benchmarks = Object.entries(data.weights ?? {})
+          .filter(([, details]) => details.included)
+          .map(([name]) => name);
+
+        if (!models.length || !benchmarks.length) {
+          throw new Error('score.json 不包含可显示的模型或 benchmark 数据。');
+        }
+
+        render();
+        status.textContent = `${models.length} 个模型 · ${benchmarks.length} 个 benchmarks`;
+      })
+      .catch((error) => {
+        console.error('Unable to load score.json:', error);
+        status.textContent = '数据加载失败';
+        showError('无法加载 score.json。请通过 HTTP 服务打开此页面，而不是直接打开本地文件。');
+      });
+  </script>
+</body>
+</html>
