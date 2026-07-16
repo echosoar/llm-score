@@ -138,6 +138,24 @@
             "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-5-5/"
         },
         {
+            "brand": "OpenAI",
+            "model": "GPT-5",
+            "time": "2025/08/14",
+            "input": ["text", "image", "audio", "video", "pdf"],
+            "output": ["text"],
+            "context": 128000,
+            "url": "https://openai.com/index/introducing-gpt-5/"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-5 mini",
+            "time": "2025/08/14",
+            "input": ["text", "image", "audio", "video", "pdf"],
+            "output": ["text"],
+            "context": 128000,
+            "url": "https://openai.com/index/introducing-gpt-5/"
+        },
+        {
             "brand": "Xiaomi",
             "model": "MiMo V2.5",
             "time": "2026/04/22",
@@ -160,6 +178,15 @@
             "input": ["text", "image", "pdf"],
             "output": ["text"],
             "url": "https://www.anthropic.com/news/claude-opus-4-7"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-4o",
+            "time": "2024/05/13",
+            "input": ["text", "image", "audio", "video"],
+            "output": ["text", "image", "audio"],
+            "context": 128000,
+            "url": "https://openai.com/index/hello-gpt-4o/"
         },
         {
             "brand": "Z.ai",
@@ -267,7 +294,10 @@
                 "Claude Opus 4.6": 0.913,
                 "MiniMax M2.1": 0.81,
                 "GLM 4.7": 0.857,
-                "Claude Sonnet 4.5": 0.834
+                "Claude Sonnet 4.5": 0.834,
+                "GPT-5": 0.857,
+                "GPT-5 mini": 0.823,
+                "GPT-4o": 0.536
             }
         },
         {
@@ -342,7 +372,9 @@
                 "GLM 5": 0.562,
                 "MiniMax M2.1": 0.479,
                 "GLM 4.7": 0.41,
-                "Claude Sonnet 4.5": 0.5
+                "Claude Sonnet 4.5": 0.5,
+                "GPT-5": 0.352,
+                "GPT-5 mini": 0.319
             }
         },
         {
@@ -366,7 +398,8 @@
                 "Claude Opus 4.6": 0.84,
                 "GLM 5": 0.759,
                 "MiniMax M2.1": 0.62,
-                "GLM 4.7": 0.675
+                "GLM 4.7": 0.675,
+                "GPT-5": 0.549
             }
         },
         {
@@ -418,7 +451,8 @@
                 "Claude Opus 4.6": 0.53,
                 "GLM 5": 0.504,
                 "MiniMax M2.1": 0.22,
-                "GLM 4.7": 0.428
+                "GLM 4.7": 0.428,
+                "GPT-5": 0.263
             }
         },
         {
@@ -437,7 +471,8 @@
                 "Claude Opus 4.7(from LongCat 2)": 0.818,
                 "GLM 5.1": 0.838,
                 "Gemini 3.1 Pro(from Hy 3)": 0.81,
-                "Claude Opus 4.6(from Qwen 3.7 Max)": 0.753
+                "Claude Opus 4.6(from Qwen 3.7 Max)": 0.753,
+                "GPT-5": 0.76
             }
         },
         {
