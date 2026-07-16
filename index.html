@@ -383,7 +383,7 @@
         }
 
         render();
-        status.textContent = `${models.length} 个模型 · ${benchmarks.length} 个 benchmarks · 点击第三列及之后的标题排序`;
+        status.textContent = `${models.length} 个模型 · ${benchmarks.length} 个 benchmarks`;
       })
       .catch((error) => {
         console.error('Unable to load score.json:', error);
