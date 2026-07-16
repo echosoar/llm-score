@@ -96,6 +96,16 @@
             "url": "https://qwen.ai/blog?id=qwen3.7"
         },
         {
+            "brand": "Google",
+            "model": "Gemini 3.5 Flash",
+            "time": "2026/05/19",
+            "input": ["text", "image", "video", "audio", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 64000,
+            "url": "https://deepmind.google/models/gemini/flash/"
+        },
+        {
             "brand": "Xiaomi",
             "model": "MiMo V2.5 Pro",
             "time": "2026/04/27",
@@ -184,12 +194,54 @@
             "url": "https://www.anthropic.com/news/claude-sonnet-4-6"
         },
         {
+            "brand": "Z.ai",
+            "model": "GLM 5",
+            "time": "2026/02/12",
+            "input": ["text"],
+            "output": ["text"],
+            "url": "https://z.ai/blog/glm-5"
+        },
+        {
+            "brand": "MiniMax",
+            "model": "MiniMax M2.5",
+            "time": "2026/02/12",
+            "input": ["text"],
+            "output": ["text"],
+            "url": "https://www.minimax.io/models/text"
+        },
+        {
             "brand": "Anthropic",
             "model": "Claude Opus 4.6",
             "time": "2026/02/05",
             "input": ["text", "image", "pdf"],
             "output": ["text"],
             "url": "https://www.anthropic.com/news/claude-opus-4-6"
+        },
+        {
+            "brand": "MiniMax",
+            "model": "MiniMax M2.1",
+            "time": "2025/12/23",
+            "input": ["text"],
+            "output": ["text"],
+            "url": "https://www.minimax.io/news/minimax-m21"
+        },
+        {
+            "brand": "Z.ai",
+            "model": "GLM 4.7",
+            "time": "2025/12/22",
+            "input": ["text"],
+            "output": ["text"],
+            "url": "https://z.ai/blog/glm-4.7"
+        },
+        {
+            "brand": "Anthropic",
+            "model": "Claude Sonnet 4.5",
+            "time": "2025/09/29",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
+            "context": 200000,
+            "generate": 64000,
+            "url": "https://www.anthropic.com/news/claude-sonnet-4-5"
         }
     ],
     "benchmarks": [
@@ -212,7 +264,10 @@
                 "GLM 5.1": 0.862,
                 "Gemini 3.1 Pro": 0.943,
                 "Claude Sonnet 4.6": 0.899,
-                "Claude Opus 4.6": 0.913
+                "Claude Opus 4.6": 0.913,
+                "MiniMax M2.1": 0.81,
+                "GLM 4.7": 0.857,
+                "Claude Sonnet 4.5": 0.834
             }
         },
         {
@@ -230,6 +285,7 @@
                 "MiniMax M3": 0.59,
                 "Claude Opus 4.8": 0.692,
                 "Qwen 3.7 Max": 0.606,
+                "Gemini 3.5 Flash": 0.551,
                 "MiMo V2.5 Pro": 0.572,
                 "DeepSeek V4 Pro": 0.554,
                 "DeepSeek V4 Flash": 0.526,
@@ -240,7 +296,9 @@
                 "GLM 5.1": 0.584,
                 "MiMo V2 Pro": 0.55,
                 "Gemini 3.1 Pro": 0.542,
-                "Claude Opus 4.6(from Claude Opus 4.7)": 0.534
+                "MiniMax M2.5": 0.554,
+                "Claude Opus 4.6(from Claude Opus 4.7)": 0.534,
+                "MiniMax M2.1": 0.497
             }
         },
         {
@@ -255,6 +313,7 @@
                 "Claude Fable 5": 0.88,
                 "MiniMax M3": 0.66,
                 "Claude Opus 4.8": 0.746,
+                "Gemini 3.5 Flash": 0.762,
                 "GPT-5.5(from LongCat 2)": 0.738,
                 "GLM 5.2": 0.81,
                 "Qwen 3.7 Max(from Hy 3)": 0.75,
@@ -278,7 +337,12 @@
                 "MiMo V2 Pro": 0.571,
                 "Gemini 3.1 Pro": 0.685,
                 "Claude Sonnet 4.6": 0.591,
-                "Claude Opus 4.6": 0.654
+                "MiniMax M2.5": 0.517,
+                "Claude Opus 4.6": 0.654,
+                "GLM 5": 0.562,
+                "MiniMax M2.1": 0.479,
+                "GLM 4.7": 0.41,
+                "Claude Sonnet 4.5": 0.5
             }
         },
         {
@@ -298,7 +362,11 @@
                 "GLM 5.1(from Hy 3)": 0.793,
                 "Gemini 3.1 Pro": 0.859,
                 "Claude Sonnet 4.6": 0.747,
-                "Claude Opus 4.6": 0.84
+                "MiniMax M2.5": 0.763,
+                "Claude Opus 4.6": 0.84,
+                "GLM 5": 0.759,
+                "MiniMax M2.1": 0.62,
+                "GLM 4.7": 0.675
             }
         },
         {
@@ -316,6 +384,7 @@
             "scores": {
                 "Claude Fable 5": 1932,
                 "Claude Opus 4.8": 1890,
+                "Gemini 3.5 Flash": 1656,
                 "MiMo V2.5 Pro":1581,
                 "DeepSeek V4 Pro": 1554,
                 "DeepSeek V4 Flash": 1395,
@@ -335,6 +404,7 @@
                 "Claude Opus 4.8": 0.579,
                 "GLM 5.2": 0.547,
                 "Qwen 3.7 Max": 0.535,
+                "Gemini 3.5 Flash": 0.402,
                 "MiMo V2.5 Pro": 0.48,
                 "DeepSeek V4 Pro": 0.482,
                 "DeepSeek V4 Flash": 0.451,
@@ -345,7 +415,10 @@
                 "MiMo V2 Pro": 0.4,
                 "Gemini 3.1 Pro": 0.514,
                 "Claude Sonnet 4.6": 0.49,
-                "Claude Opus 4.6": 0.53
+                "Claude Opus 4.6": 0.53,
+                "GLM 5": 0.504,
+                "MiniMax M2.1": 0.22,
+                "GLM 4.7": 0.428
             }
         },
         {
@@ -377,6 +450,7 @@
                 "Claude Opus 4.8(from Muse Spark 1.1)": 0.822,
                 "GLM 5.2": 0.768,
                 "Qwen 3.7 Max(from GLM 5.2)": 0.764,
+                "Gemini 3.5 Flash": 0.836,
                 "DeepSeek V4 Pro": 0.736,
                 "DeepSeek V4 Flash": 0.69,
                 "GPT-5.5(from Muse Spark 1.1)": 0.753,
@@ -384,7 +458,9 @@
                 "GLM 5.1(from GLM 5.2)": 0.718,
                 "Gemini 3.1 Pro": 0.692,
                 "Claude Sonnet 4.6": 0.613,
-                "Claude Opus 4.6(from Claude Sonnet 4.6)": 0.595
+                "GLM 5": 0.678,
+                "Claude Opus 4.6(from Claude Sonnet 4.6)": 0.595,
+                "GLM 4.7": 0.52
             }
         },
         {
@@ -392,11 +468,14 @@
             "scores": {
                 "Claude Fable 5": 0.85,
                 "Claude Opus 4.8": 0.834,
+                "Gemini 3.5 Flash": 0.784,
                 "MiniMax M3": 0.752,
                 "GPT-5.5": 0.787,
                 "Kimi K2.6": 0.731,
                 "Claude Opus 4.7": 0.78,
-                "Gemini 3.1 Pro": 0.762
+                "Gemini 3.1 Pro": 0.762,
+                "Claude Sonnet 4.6(from Gemini 3.5 Flash)": 0.725,
+                "Claude Sonnet 4.5": 0.614
             }
         }
     ],
