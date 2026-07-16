@@ -242,6 +242,23 @@
             "context": 200000,
             "generate": 64000,
             "url": "https://www.anthropic.com/news/claude-sonnet-4-5"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-5",
+            "time": "2025/08/07",
+            "input": ["text", "image", "audio", "video", "pdf"],
+            "output": ["text"],
+            "context": 128000,
+            "url": "https://openai.com/index/introducing-gpt-5/"
+        },
+        {
+            "brand": "xAI",
+            "model": "Grok 3",
+            "time": "2025/02/19",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "url": "https://x.ai/news/grok-3"
         }
     ],
     "benchmarks": [
@@ -267,7 +284,9 @@
                 "Claude Opus 4.6": 0.913,
                 "MiniMax M2.1": 0.81,
                 "GLM 4.7": 0.857,
-                "Claude Sonnet 4.5": 0.834
+                "Claude Sonnet 4.5": 0.834,
+                "GPT-5": 0.873,
+                "Grok 3": 0.846
             }
         },
         {
@@ -366,7 +385,8 @@
                 "Claude Opus 4.6": 0.84,
                 "GLM 5": 0.759,
                 "MiniMax M2.1": 0.62,
-                "GLM 4.7": 0.675
+                "GLM 4.7": 0.675,
+                "GPT-5": 0.549
             }
         },
         {
@@ -418,7 +438,8 @@
                 "Claude Opus 4.6": 0.53,
                 "GLM 5": 0.504,
                 "MiniMax M2.1": 0.22,
-                "GLM 4.7": 0.428
+                "GLM 4.7": 0.428,
+                "GPT-5": 0.352
             }
         },
         {

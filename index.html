@@ -35,7 +35,7 @@
 
     header {
       display: flex;
-      align-items: end;
+      align-items: stretch;
       justify-content: space-between;
       gap: 24px;
       margin-bottom: 28px;
@@ -59,6 +59,65 @@
       margin: 0;
       text-align: right;
       white-space: nowrap;
+    }
+
+    .lang-toggle {
+      padding: 5px 12px;
+      border: 1px solid var(--line);
+      border-radius: 0;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .lang-toggle:hover {
+      background: var(--surface-hover);
+      border-color: var(--accent);
+    }
+
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 6px;
+    }
+
+    .brand-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 4px;
+      max-width: 100%;
+    }
+
+    .brand-chip {
+      padding: 5px 12px;
+      border: 1px solid var(--line);
+      border-radius: 0;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+    }
+
+    .brand-chip:hover {
+      background: var(--surface-hover);
+      color: var(--text);
+    }
+
+    .brand-chip[aria-pressed="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #0b1726;
     }
 
     .table-wrap {
@@ -195,9 +254,13 @@
     <header>
       <div>
         <h1>LLM Score</h1>
-        <p class="description">模型综合评分与基准测试表现</p>
+        <p class="description" data-i18n="description">模型综合评分与基准测试表现</p>
+        <div class="brand-filter" id="brand-filter" role="group" aria-label="厂商过滤"></div>
       </div>
-      <p id="status" aria-live="polite">正在加载数据…</p>
+      <div class="header-right">
+        <button class="lang-toggle" id="lang-toggle" type="button" aria-label="切换语言">EN</button>
+        <p id="status" aria-live="polite" data-i18n="loading">正在加载数据…</p>
+      </div>
     </header>
 
     <div class="table-wrap">
@@ -213,10 +276,55 @@
     const tableHead = table.querySelector('thead');
     const tableBody = table.querySelector('tbody');
     const status = document.querySelector('#status');
+    const brandFilter = document.querySelector('#brand-filter');
+    const langToggle = document.querySelector('#lang-toggle');
 
     let models = [];
     let benchmarks = [];
     let sortState = { key: 'score', direction: 'desc' };
+    let selectedBrands = new Set();
+    let lang = 'zh';
+
+    const i18n = {
+      zh: {
+        description: '模型综合评分与基准测试表现',
+        loading: '正在加载数据…',
+        loadFailed: '数据加载失败',
+        status: (m, b) => `${m} 个模型 · ${b} 个 benchmarks`,
+        brandGroup: '厂商过滤',
+        colModel: '模型名称',
+        colBrand: '厂商',
+        colScore: '综合评分',
+        colTime: '发布日期',
+        colInput: '输入格式',
+        colOutput: '输出格式',
+        colUrl: '官网',
+        website: '官网',
+        emptyError: '无法加载 score.json。请通过 HTTP 服务打开此页面，而不是直接打开本地文件。',
+        noDataError: 'score.json 不包含可显示的模型或 benchmark 数据。',
+        toggleLabel: 'EN',
+      },
+      en: {
+        description: 'Comprehensive LLM scores and benchmark performance',
+        loading: 'Loading data…',
+        loadFailed: 'Failed to load data',
+        status: (m, b) => `${m} models · ${b} benchmarks`,
+        brandGroup: 'Vendor filter',
+        colModel: 'Model',
+        colBrand: 'Vendor',
+        colScore: 'Overall Score',
+        colTime: 'Release Date',
+        colInput: 'Input Formats',
+        colOutput: 'Output Formats',
+        colUrl: 'Website',
+        website: 'Website',
+        emptyError: 'Unable to load score.json. Please serve this page over HTTP instead of opening the local file directly.',
+        noDataError: 'score.json does not contain displayable model or benchmark data.',
+        toggleLabel: '中',
+      },
+    };
+
+    const t = (key) => (typeof key === 'function' ? key() : i18n[lang][key] ?? key);
 
     const getDimension = (model, benchmark) =>
       model.dimensions.find((dimension) => dimension.name === benchmark);
@@ -256,7 +364,10 @@
     const sortModels = () => {
       const { key, direction } = sortState;
       const multiplier = direction === 'asc' ? 1 : -1;
-      return [...models].sort((left, right) => {
+      const filtered = selectedBrands.size
+        ? models.filter((model) => selectedBrands.has(model.brand))
+        : models;
+      return filtered.sort((left, right) => {
         const result = compareValues(getSortValue(left, key), getSortValue(right, key));
         return result === 0 ? left.model.localeCompare(right.model, 'zh-CN') : result * multiplier;
       });
@@ -291,17 +402,17 @@
     const renderHeader = () => {
       const row = document.createElement('tr');
       row.append(
-        makeHeader('模型名称', 'model', false),
-        makeHeader('厂商', 'brand', false),
-        makeHeader('综合评分', 'score', true),
-        makeHeader('发布日期', 'time', true),
-        makeHeader('输入格式', 'input', true),
-        makeHeader('输出格式', 'output', true),
+        makeHeader(t('colModel'), 'model', false),
+        makeHeader(t('colBrand'), 'brand', false),
+        makeHeader(t('colScore'), 'score', true),
+        makeHeader(t('colTime'), 'time', true),
+        makeHeader(t('colInput'), 'input', true),
+        makeHeader(t('colOutput'), 'output', true),
       );
       benchmarks.forEach((benchmark) => {
         row.append(makeHeader(benchmark, `benchmark:${benchmark}`, true));
       });
-      row.append(makeHeader('官网', 'url', true));
+      row.append(makeHeader(t('colUrl'), 'url', true));
       tableHead.replaceChildren(row);
     };
 
@@ -340,7 +451,7 @@
           link.href = model.url;
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
-          link.textContent = '官网';
+          link.textContent = t('website');
           websiteCell.append(link);
         } else {
           websiteCell.className = 'missing';
@@ -352,10 +463,60 @@
       tableBody.replaceChildren(fragment);
     };
 
+    const renderBrandFilter = () => {
+      const counts = new Map();
+      models.forEach((model) => {
+        const brand = model.brand;
+        counts.set(brand, (counts.get(brand) ?? 0) + 1);
+      });
+      const brands = [...counts.entries()]
+        .sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]), 'zh-CN', { sensitivity: 'base' }))
+        .map(([brand]) => brand);
+      const fragment = document.createDocumentFragment();
+      brands.forEach((brand) => {
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'brand-chip';
+        chip.dataset.brand = brand;
+        chip.textContent = brand;
+        const pressed = selectedBrands.has(brand);
+        chip.setAttribute('aria-pressed', String(pressed));
+        chip.addEventListener('click', () => {
+          if (selectedBrands.has(brand)) selectedBrands.delete(brand);
+          else selectedBrands.add(brand);
+          render();
+        });
+        fragment.append(chip);
+      });
+      brandFilter.replaceChildren(fragment);
+    };
+
     const render = () => {
+      renderBrandFilter();
       renderHeader();
       renderRows();
     };
+
+    const applyLanguage = () => {
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+      document.querySelectorAll('[data-i18n]').forEach((node) => {
+        const key = node.dataset.i18n;
+        const value = i18n[lang][key];
+        if (typeof value === 'string') node.textContent = value;
+      });
+      langToggle.textContent = i18n[lang === 'zh' ? 'en' : 'zh'].toggleLabel;
+      langToggle.setAttribute('aria-label', lang === 'zh' ? 'Switch to English' : '切换为中文');
+      brandFilter.setAttribute('aria-label', i18n[lang].brandGroup);
+    };
+
+    langToggle.addEventListener('click', () => {
+      lang = lang === 'zh' ? 'en' : 'zh';
+      applyLanguage();
+      render();
+      if (models.length && benchmarks.length) {
+        status.textContent = i18n[lang].status(models.length, benchmarks.length);
+      }
+    });
 
     const showError = (message) => {
       tableHead.replaceChildren();
@@ -379,16 +540,16 @@
           .map(([name]) => name);
 
         if (!models.length || !benchmarks.length) {
-          throw new Error('score.json 不包含可显示的模型或 benchmark 数据。');
+          throw new Error(i18n[lang].noDataError);
         }
 
         render();
-        status.textContent = `${models.length} 个模型 · ${benchmarks.length} 个 benchmarks`;
+        status.textContent = i18n[lang].status(models.length, benchmarks.length);
       })
       .catch((error) => {
         console.error('Unable to load score.json:', error);
-        status.textContent = '数据加载失败';
-        showError('无法加载 score.json。请通过 HTTP 服务打开此页面，而不是直接打开本地文件。');
+        status.textContent = i18n[lang].loadFailed;
+        showError(i18n[lang].emptyError);
       });
   </script>
 </body>
