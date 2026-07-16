@@ -4,108 +4,191 @@
             "brand": "OpenAI",
             "model": "GPT-5.6 Sol",
             "time": "2026/07/09",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
             "url": "https://openai.com/zh-Hans-CN/index/gpt-5-6/"
         },
         {
             "brand": "Meta",
             "model": "Muse Spark 1.1",
             "time": "2026/07/09",
+            "input": ["text", "image", "pdf", "video"],
+            "output": ["text"],
             "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
         },
         {
             "brand": "xAI",
             "model": "Grok 4.5",
             "time": "2026/07/08",
+            "input": ["text", "image"],
+            "output": ["text"],
             "url": "https://x.ai/news/grok-4-5"
         },
         {
             "brand": "腾讯",
             "model": "Hy 3",
             "time": "2026/07/06",
+            "input": ["text"],
+            "output": ["text"],
             "url": "https://hy.tencent.com/research/hy3"
         },
         {
             "brand": "美团",
             "model": "LongCat 2",
             "time": "2026/06/30",
+            "input": ["text"],
+            "output": ["text"],
             "url": "https://longcat.ai/blog/longcat-2.0/"
+        },
+        {
+            "brand": "Bytedance",
+            "model": "Seed 2.1 Pro",
+            "time": "2026/06/24",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "url": "https://seed.bytedance.com/en/seed2_1"
         },
         {
             "brand": "Z.ai",
             "model": "GLM 5.2",
             "time": "2026/06/16",
+            "input": ["text"],
+            "output": ["text"],
             "url": "https://z.ai/blog/glm-5.2"
         },
         {
             "brand": "Anthropic",
             "model": "Claude Fable 5",
             "time": "2026/06/09",
+            "input": ["text", "image", "pdf"],
             "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+        },
+        {
+            "brand": "Alibaba",
+            "model": "Qwen 3.7 Plus",
+            "time": "2026/06/01",
+             "input": ["text", "image"],
+             "output": ["text"],
+            "url": "https://qwen.ai/blog?id=qwen3.7-plus"
+        },
+        {
+            "brand": "MimiMax",
+            "model": "MiniMax M3",
+            "time": "2026/06/01",
+             "input": ["text", "image", "video"],
+             "output": ["text"],
+            "url": "https://www.minimax.io/models/text/m3"
         },
         {
             "brand": "Anthropic",
             "model": "Claude Opus 4.8",
             "time": "2026/05/28",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
             "url": "https://www.anthropic.com/news/claude-opus-4-8"
         },
         {
             "brand": "Alibaba",
             "model": "Qwen 3.7 Max",
             "time": "2026/05/20",
+             "input": ["text"],
+             "output": ["text"],
             "url": "https://qwen.ai/blog?id=qwen3.7"
+        },
+        {
+            "brand": "Xiaomi",
+            "model": "MiMo V2.5 Pro",
+            "time": "2026/04/27",
+            "input": ["text"],
+            "output": ["text"],
+            "url": "https://mimo.xiaomi.com/mimo-v2-5-pro"
         },
         {
             "brand": "DeepSeek",
             "model": "DeepSeek V4 Pro",
             "time": "2026/04/24",
+            "input": ["text"],
+            "output": ["text"],
             "url": "https://api-docs.deepseek.com/news/news260424"
         },
          {
             "brand": "DeepSeek",
             "model": "DeepSeek V4 Flash",
             "time": "2026/04/24",
+            "input": ["text"],
+            "output": ["text"],
             "url": "https://api-docs.deepseek.com/news/news260424"
         },
         {
             "brand": "OpenAI",
             "model": "GPT-5.5",
             "time": "2026/04/23",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
             "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-5-5/"
+        },
+        {
+            "brand": "Xiaomi",
+            "model": "MiMo V2.5",
+            "time": "2026/04/22",
+             "input": ["text", "image", "audio", "video"],
+            "output": ["text"],
+            "url": "https://mimo.xiaomi.com/mimo-v2-5"
         },
         {
             "brand": "Moonshot",
             "model": "Kimi K2.6",
             "time": "2026/04/20",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
             "url": "https://www.kimi.com/ai-models/kimi-k2-6"
         },
         {
             "brand": "Anthropic",
             "model": "Claude Opus 4.7",
             "time": "2026/04/16",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
             "url": "https://www.anthropic.com/news/claude-opus-4-7"
         },
         {
             "brand": "Z.ai",
             "model": "GLM 5.1",
             "time": "2026/04/07",
+            "input": ["text"],
+            "output": ["text"],
             "url": "https://z.ai/blog/glm-5.1"
+        },
+        {
+            "brand": "Xiaomi",
+            "model": "MiMo V2 Pro",
+            "time": "2026/03/18",
+            "input": ["text"],
+            "output": ["text"],
+            "url": "https://mimo.xiaomi.com/mimo-v2-pro"
         },
         {
             "brand": "Google",
             "model": "Gemini 3.1 Pro",
             "time": "2026/02/19",
+            "input": ["text", "image", "video", "audio", "pdf"],
+            "output": ["text"],
             "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"
         },
         {
             "brand": "Anthropic",
             "model": "Claude Sonnet 4.6",
             "time": "2026/02/17",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
             "url": "https://www.anthropic.com/news/claude-sonnet-4-6"
         },
         {
             "brand": "Anthropic",
             "model": "Claude Opus 4.6",
             "time": "2026/02/05",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
             "url": "https://www.anthropic.com/news/claude-opus-4-6"
         }
     ],
@@ -118,6 +201,7 @@
                 "LongCat 2": 0.889,
                 "GLM 5.2": 0.912,
                 "Claude Fable 5(from GPT-5.6 Sol)": 0.941,
+                "Qwen 3.7 Plus": 0.903,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.92,
                 "Qwen 3.7 Max": 0.924,
                 "DeepSeek V4 Pro": 0.901,
@@ -139,16 +223,22 @@
                 "Grok 4.5": 0.647,
                 "Hy 3": 0.579,
                 "LongCat 2": 0.595,
+                "Seed 2.1 Pro": 0.575,
                 "GLM 5.2": 0.621,
                 "Claude Fable 5": 0.803,
+                "Qwen 3.7 Plus": 0.576,
+                "MiniMax M3": 0.59,
                 "Claude Opus 4.8": 0.692,
                 "Qwen 3.7 Max": 0.606,
+                "MiMo V2.5 Pro": 0.572,
                 "DeepSeek V4 Pro": 0.554,
                 "DeepSeek V4 Flash": 0.526,
                 "GPT-5.5": 0.586,
+                "MiMo V2.5": 0.561,
                 "Kimi K2.6": 0.586,
                 "Claude Opus 4.7": 0.643,
                 "GLM 5.1": 0.584,
+                "MiMo V2 Pro": 0.55,
                 "Gemini 3.1 Pro": 0.542,
                 "Claude Opus 4.6(from Claude Opus 4.7)": 0.534
             }
@@ -161,7 +251,9 @@
                 "Grok 4.5": 0.833,
                 "Hy 3": 0.717,
                 "LongCat 2": 0.708,
+                "Seed 2.1 Pro": 0.71,
                 "Claude Fable 5": 0.88,
+                "MiniMax M3": 0.66,
                 "Claude Opus 4.8": 0.746,
                 "GPT-5.5(from LongCat 2)": 0.738,
                 "GLM 5.2": 0.81,
@@ -174,12 +266,16 @@
             "name": "Terminal-Bench 2",
             "upgrade": "Terminal-Bench 2.1",
             "scores": {
+                "Qwen 3.7 Plus": 0.703,
                 "Qwen 3.7 Max": 0.697,
+                "MiMo V2.5 Pro": 0.684,
                 "DeepSeek V4 Pro": 0.679,
                 "DeepSeek V4 Flash": 0.569,
                 "GPT-5.5": 0.827,
+                "MiMo V2.5": 0.658,
                 "Kimi K2.6": 0.667,
                 "Claude Opus 4.7": 0.694,
+                "MiMo V2 Pro": 0.571,
                 "Gemini 3.1 Pro": 0.685,
                 "Claude Sonnet 4.6": 0.591,
                 "Claude Opus 4.6": 0.654
@@ -192,6 +288,7 @@
                 "Hy 3": 0.842,
                 "LongCat 2": 0.799,
                 "Claude Fable 5(from GPT-5.6 Sol)": 0.88,
+                "MiniMax M3": 0.835,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.843,
                 "DeepSeek V4 Pro": 0.834,
                 "DeepSeek V4 Flash": 0.732,
@@ -219,9 +316,11 @@
             "scores": {
                 "Claude Fable 5": 1932,
                 "Claude Opus 4.8": 1890,
+                "MiMo V2.5 Pro":1581,
                 "DeepSeek V4 Pro": 1554,
                 "DeepSeek V4 Flash": 1395,
                 "Claude Opus 4.7": 1753,
+                "MiMo V2 Pro": 1426,
                 "Gemini 3.1 Pro": 1317,
                 "Claude Sonnet 4.6": 1633,
                 "Claude Opus 4.6": 1606
@@ -236,12 +335,14 @@
                 "Claude Opus 4.8": 0.579,
                 "GLM 5.2": 0.547,
                 "Qwen 3.7 Max": 0.535,
+                "MiMo V2.5 Pro": 0.48,
                 "DeepSeek V4 Pro": 0.482,
                 "DeepSeek V4 Flash": 0.451,
                 "GPT-5.5": 0.522,
                 "Kimi K2.6": 0.54,
                 "Claude Opus 4.7": 0.547,
                 "GLM 5.1": 0.523,
+                "MiMo V2 Pro": 0.4,
                 "Gemini 3.1 Pro": 0.514,
                 "Claude Sonnet 4.6": 0.49,
                 "Claude Opus 4.6": 0.53
@@ -252,6 +353,7 @@
             "scores": {
                 "Hy 3": 0.90,
                 "LongCat 2": 0.818,
+                "Qwen 3.7 Plus": 0.86,
                 "Claude Opus 4.8(from Hy 3)": 0.835,
                 "GLM 5.2(from Hy 3)": 0.91,
                 "Qwen 3.7 Max": 0.90,
@@ -270,6 +372,8 @@
             "scores": {
                 "Hy 3": 0.791,
                 "Muse Spark 1.1": 0.881,
+                "Qwen 3.7 Plus": 0.732,
+                "MiniMax M3": 0.742,
                 "Claude Opus 4.8(from Muse Spark 1.1)": 0.822,
                 "GLM 5.2": 0.768,
                 "Qwen 3.7 Max(from GLM 5.2)": 0.764,
@@ -281,6 +385,18 @@
                 "Gemini 3.1 Pro": 0.692,
                 "Claude Sonnet 4.6": 0.613,
                 "Claude Opus 4.6(from Claude Sonnet 4.6)": 0.595
+            }
+        },
+        {
+            "name": "OSWorld-Verified",
+            "scores": {
+                "Claude Fable 5": 0.85,
+                "Claude Opus 4.8": 0.834,
+                "MiniMax M3": 0.752,
+                "GPT-5.5": 0.787,
+                "Kimi K2.6": 0.731,
+                "Claude Opus 4.7": 0.78,
+                "Gemini 3.1 Pro": 0.762
             }
         }
     ],

@@ -3,6 +3,7 @@ const path = require('node:path');
 
 const inputPath = path.join(__dirname, 'data.json');
 const outputPath = path.join(__dirname, 'score.json');
+const readmePath = path.join(__dirname, 'readme.md');
 
 // Set an optional benchmark multiplier here. Benchmarks omitted from this object use 1.
 // Each benchmark's effective multiplier is this value × sqrt(the number of models reporting it).
@@ -315,4 +316,12 @@ const result = {
 };
 
 fs.writeFileSync(outputPath, `${JSON.stringify(result, null, 2)}\n`);
+
+const rankedModels = models.filter((model) => model.rank !== null);
+const readmeLines = rankedModels.map(
+  (model) => `${model.rank}. ${model.brand} ${model.model} (score: ${model.score.toFixed(4)})`,
+);
+fs.writeFileSync(readmePath, `${readmeLines.join('\n')}\n`);
+
 console.log(`Wrote ${models.length} model scores to ${outputPath}`);
+console.log(`Wrote ${rankedModels.length} ranked models to ${readmePath}`);

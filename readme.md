@@ -1,5 +1,24 @@
-# LLM Score
-
-IMOAnswerBench
-
-ClawEval
+1. Anthropic Claude Fable 5 (score: 0.9672)
+2. OpenAI GPT-5.6 Sol (score: 0.8685)
+3. Meta Muse Spark 1.1 (score: 0.7121)
+4. Anthropic Claude Opus 4.8 (score: 0.6645)
+5. xAI Grok 4.5 (score: 0.6290)
+6. Z.ai GLM 5.2 (score: 0.6277)
+7. OpenAI GPT-5.5 (score: 0.5871)
+8. Alibaba Qwen 3.7 Max (score: 0.5836)
+9. 腾讯 Hy 3 (score: 0.5341)
+10. Anthropic Claude Opus 4.7 (score: 0.5265)
+11. DeepSeek DeepSeek V4 Pro (score: 0.4300)
+12. Alibaba Qwen 3.7 Plus (score: 0.4116)
+13. Google Gemini 3.1 Pro (score: 0.4011)
+14. Moonshot Kimi K2.6 (score: 0.3975)
+15. MimiMax MiniMax M3 (score: 0.3520)
+16. 美团 LongCat 2 (score: 0.3473)
+17. Xiaomi MiMo V2.5 Pro (score: 0.3054)
+18. Anthropic Claude Opus 4.6 (score: 0.3042)
+19. Z.ai GLM 5.1 (score: 0.2985)
+20. Bytedance Seed 2.1 Pro (score: 0.2937)
+21. Anthropic Claude Sonnet 4.6 (score: 0.2349)
+22. Xiaomi MiMo V2.5 (score: 0.2169)
+23. DeepSeek DeepSeek V4 Flash (score: 0.1930)
+24. Xiaomi MiMo V2 Pro (score: 0.0547)
