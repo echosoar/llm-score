@@ -216,7 +216,7 @@
             "outputPrice": "￥6",
             "url": "https://api-docs.deepseek.com/news/news260424"
         },
-        {
+         {
             "brand": "DeepSeek",
             "model": "DeepSeek V4 Flash",
             "time": "2026/04/24",
@@ -583,6 +583,23 @@
             }
         },
         {
+            "name": "DeepSWE 1.1",
+            "scores": {
+                "Kimi K3": 0.673,
+                "GPT-5.6 Sol": 0.727,
+                "Muse Spark 1.1": 0.533,
+                "Grok 4.5": 0.53,
+                "Claude Sonnet 5": 0.538,
+                "GLM 5.2": 0.438,
+                "Claude Fable 5": 0.697,
+                "Claude Opus 4.8": 0.59,
+                "Gemini 3.5 Flash": 0.374,
+                "GPT-5.5": 0.67,
+                "Gemini 3.1 Pro": 0.118,
+                "Claude Sonnet 4.6": 0.299
+            }
+        },
+        {
             "name": "Terminal-Bench 2.1",
             "scores": {
                 "Kimi K3": 0.883,
@@ -795,6 +812,35 @@
                 "Claude Sonnet 4.5": 0.614,
                 "Kimi K2.5": 0.633,
                 "Qwen 3.5 397B A17B": 0.622
+            }
+        },
+        {
+            "name": "MMMU 无工具",
+            "scores": {
+                "Qwen 3.6 27B": 0.829,
+                "Qwen 3.5 397B A17B": 0.85,
+                "Claude Sonnet 4.5": 0.778,
+                "GPT-5": 0.842,
+                "Grok 3": 0.78
+            }
+        },
+        {
+            "name": "BabyVision",
+            "scores": {
+                "Kimi K3": 0.857,
+                "GPT-5.6 Sol(from Kimi K3)": 0.889,
+                "Muse Spark 1.1": 0.763,
+                "Seed 2.1 Pro": 0.737,
+                "Claude Fable 5(from Kimi K3)": 0.905,
+                "Qwen 3.7 Plus": 0.704,
+                "Claude Opus 4.8": 0.812,
+                "GPT-5.5": 0.836,
+                "Kimi K2.6": 0.685,
+                "Gemini 3.1 Pro": 0.516,
+                "Qwen 3.5 397B A17B": 0.433,
+                "Claude Opus 4.6": 0.148,
+                "Kimi K2.5": 0.365,
+                "GPT-5.2": 0.344
             }
         }
     ],
