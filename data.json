@@ -332,6 +332,19 @@
             "url": "https://www.minimax.io/models/text/m27"
         },
         {
+            "brand": "OpenAI",
+            "model": "GPT-5.4",
+            "time": "2026/03/05",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
+            "context": 922000,
+            "generate": 128000,
+            "inputPrice": "$2.5",
+            "inputCachedPrice": "$0.25",
+            "outputPrice": "$15",
+            "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-5-4/"
+        },
+        {
             "brand": "Google",
             "model": "Gemini 3.1 Pro",
             "time": "2026/02/19",
@@ -532,6 +545,7 @@
                 "Kimi K2.6(from Qwen 3.7 Max)": 0.905,
                 "Claude Opus 4.7": 0.942,
                 "GLM 5.1": 0.862,
+                "GPT-5.4": 0.928,
                 "Gemini 3.1 Pro": 0.943,
                 "Claude Sonnet 4.6": 0.899,
                 "Claude Opus 4.6": 0.913,
@@ -573,6 +587,7 @@
                 "GLM 5.1": 0.584,
                 "MiMo V2 Pro": 0.55,
                 "MiniMax M2.7": 0.562,
+                "GPT-5.4": 0.577,
                 "Gemini 3.1 Pro": 0.542,
                 "Claude Sonnet 4.6(from Claude Sonnet 5)": 0.581,
                 "MiniMax M2.5": 0.554,
@@ -585,18 +600,16 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
-                "Kimi K3": 0.673,
+                "Kimi K3": 0.675,
                 "GPT-5.6 Sol": 0.727,
                 "Muse Spark 1.1": 0.533,
                 "Grok 4.5": 0.53,
-                "Claude Sonnet 5": 0.538,
-                "GLM 5.2": 0.438,
-                "Claude Fable 5": 0.697,
-                "Claude Opus 4.8": 0.59,
-                "Gemini 3.5 Flash": 0.374,
+                "GLM 5.2": 0.462,
+                "Claude Fable 5(from GPT-5.6 Sol)": 0.697,
+                "Claude Opus 4.8(from GPT-5.6 Sol)": 0.59,
                 "GPT-5.5": 0.67,
-                "Gemini 3.1 Pro": 0.118,
-                "Claude Sonnet 4.6": 0.299
+                "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.118,
+                "// Claude Sonnet 4.6": 0.299
             }
         },
         {
@@ -616,7 +629,9 @@
                 "Gemini 3.5 Flash": 0.762,
                 "GPT-5.5(from GPT-5.6 Sol)": 0.856,
                 "GLM 5.2": 0.81,
-                "Qwen 3.7 Max(from Hy 3)": 0.75,
+                "DeepSeek V4 Pro(from Hy 3)": 0.64,
+                "DeepSeek V4 Flash(from Hy 3)": 0.526,
+                "MiniMax M2.7": 0.511,
                 "GLM 5.1": 0.635,
                 "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.707,
                 "Claude Sonnet 4.6(from Claude Sonnet 5)": 0.67
@@ -637,6 +652,7 @@
                 "Kimi K2.6": 0.667,
                 "Claude Opus 4.7": 0.694,
                 "MiMo V2 Pro": 0.571,
+                "GPT-5.4": 0.751,
                 "Gemini 3.1 Pro": 0.685,
                 "Claude Sonnet 4.6": 0.591,
                 "MiniMax M2.5": 0.517,
@@ -666,10 +682,13 @@
                 "Kimi K2.6": 0.832,
                 "Claude Opus 4.7": 0.793,
                 "GLM 5.1(from Hy 3)": 0.793,
+                "GPT-5.4": 0.827,
                 "Gemini 3.1 Pro": 0.859,
                 "Claude Sonnet 4.6": 0.747,
+                "MiniMax M2.7(from MiniMax M3)": 0.763,
                 "MiniMax M2.5": 0.763,
                 "Claude Opus 4.6": 0.84,
+                "Claude Sonnet 4.5": 0.439,
                 "Qwen 3.5 397B A17B": 0.78,
                 "GLM 5": 0.759,
                 "Kimi K2.5": 0.749,
@@ -690,7 +709,9 @@
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 1600.1,
                 "GPT-5.5(from GPT-5.6 Sol)": 1493.7,
                 "Gemini 3.5 Flash(from GPT-5.6 Sol)": 1348.8,
+                "MiniMax M3": 1395,
                 "Claude Sonnet 4.6(from Claude Sonnet 5)": 1395,
+                "MiniMax M2.7": 1158,
                 "Gemini 3.1 Pro(from GPT-5.6 Sol)": 963.2
             }
         },
@@ -732,16 +753,18 @@
                 "Kimi K2.6": 0.54,
                 "Claude Opus 4.7": 0.547,
                 "GLM 5.1": 0.523,
+                "GPT-5.4": 0.521,
                 "MiMo V2 Pro": 0.4,
                 "Gemini 3.1 Pro": 0.514,
                 "Claude Sonnet 4.6": 0.49,
                 "Claude Opus 4.6": 0.53,
+                "Claude Sonnet 4.5": 0.336,
                 "GLM 5": 0.504,
                 "Qwen 3.5 397B A17B": 0.483,
                 "Kimi K2.5": 0.502,
                 "MiniMax M2.1": 0.22,
                 "GLM 4.7": 0.428,
-                "GPT-5.2": 0.5,
+                "GPT-5.2": 0.455,
                 "DeepSeek V3.2": 0.306,
                 "GPT-5": 0.352
             }
@@ -788,10 +811,12 @@
                 "GPT-5.5(from Kimi K3)": 0.828,
                 "Kimi K2.6(from DeepSeek V4 Pro)": 0.666,
                 "GLM 5.1(from GLM 5.2)": 0.718,
+                "GPT-5.4": 0.672,
                 "Gemini 3.1 Pro": 0.692,
                 "Claude Sonnet 4.6": 0.613,
                 "GLM 5": 0.678,
                 "Claude Opus 4.6(from Claude Sonnet 4.6)": 0.595,
+                "Claude Sonnet 4.5(from Claude Sonnet 4.6)": 0.438,
                 "GPT-5.2": 0.606,
                 "GLM 4.7": 0.52
             }
@@ -803,25 +828,40 @@
                 "Claude Fable 5": 0.85,
                 "Claude Opus 4.8": 0.834,
                 "Gemini 3.5 Flash": 0.784,
-                "MiniMax M3": 0.752,
+                "MiniMax M3": 0.701,
                 "GPT-5.5": 0.787,
                 "Kimi K2.6": 0.731,
                 "Claude Opus 4.7": 0.78,
+                "GPT-5.4": 0.75,
                 "Gemini 3.1 Pro": 0.762,
-                "Claude Sonnet 4.6(from Gemini 3.5 Flash)": 0.725,
+                "Claude Sonnet 4.6": 0.725,
+                "Claude Opus 4.6(from Claude Sonnet 4.6)": 0.727,
                 "Claude Sonnet 4.5": 0.614,
+                "GPT-5.2(from Claude Sonnet 4.6)": 0.382,
                 "Kimi K2.5": 0.633,
                 "Qwen 3.5 397B A17B": 0.622
             }
         },
         {
-            "name": "MMMU 无工具",
+            "name": "MMMU Pro",
             "scores": {
-                "Qwen 3.6 27B": 0.829,
-                "Qwen 3.5 397B A17B": 0.85,
-                "Claude Sonnet 4.5": 0.778,
-                "GPT-5": 0.842,
-                "Grok 3": 0.78
+                "Kimi K3": 0.816,
+                "GPT-5.6 Sol(from Kimi K3)": 0.83,
+                "Seed 2.1 Pro": 0.816,
+                "Claude Fable 5(from Kimi K3)": 0.812,
+                "Qwen 3.7 Plus": 0.79,
+                "Claude Opus 4.8(from Kimi K3)": 0.789,
+                "Gemini 3.5 Flash": 0.836,
+                "MiniMax M3": 0.781,
+                "GPT-5.5": 0.812,
+                "Claude Opus 4.7(from Seed 2.1 Pro)": 0.74,
+                "GPT-5.4": 0.812,
+                "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.805,
+                "Qwen 3.6 27B": 0.788,
+                "Claude Sonnet 4.6": 0.745,
+                "Claude Opus 4.6(from Qwen 3.7 Plus)": 0.739,
+                "Claude Sonnet 4.5": 0.634,
+                "GPT-5.2": 0.795
             }
         },
         {
@@ -833,14 +873,13 @@
                 "Seed 2.1 Pro": 0.737,
                 "Claude Fable 5(from Kimi K3)": 0.905,
                 "Qwen 3.7 Plus": 0.704,
-                "Claude Opus 4.8": 0.812,
-                "GPT-5.5": 0.836,
-                "Kimi K2.6": 0.685,
-                "Gemini 3.1 Pro": 0.516,
-                "Qwen 3.5 397B A17B": 0.433,
-                "Claude Opus 4.6": 0.148,
-                "Kimi K2.5": 0.365,
-                "GPT-5.2": 0.344
+                "Claude Opus 4.8(from Kimi K3)": 0.812,
+                "GPT-5.5(from Kimi K3)": 0.836,
+                "Claude Opus 4.7(from Seed 2.1 Pro)": 0.222,
+                "GPT-5.4(from Qwen 3.7 Plus)": 0.531,
+                "Gemini 3.1 Pro(from Muse Spark 1.1)": 0.515,
+                "Qwen 3.6 27B": 0.374,
+                "Claude Opus 4.6(from Qwen 3.7 Plus)": 0.126
             }
         }
     ],
