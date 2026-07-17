@@ -128,7 +128,7 @@
 
     table {
       width: 100%;
-      min-width: 1480px;
+      min-width: 1980px;
       border-collapse: collapse;
       font-size: 13px;
       font-variant-numeric: tabular-nums;
@@ -254,7 +254,7 @@
     <header>
       <div>
         <h1>LLM Score</h1>
-        <p class="description" data-i18n="description">模型综合评分与基准测试表现</p>
+        <p class="description" data-i18n="description">模型综合多维度测试评分与基准测试表现，使用最新汇率计算价格</p>
         <div class="brand-filter" id="brand-filter" role="group" aria-label="厂商过滤"></div>
       </div>
       <div class="header-right">
@@ -279,8 +279,9 @@
     const brandFilter = document.querySelector('#brand-filter');
     const langToggle = document.querySelector('#lang-toggle');
 
-    let models = [];
-    let benchmarks = [];
+let models = [];
+let benchmarks = [];
+let priceMap = {};
     let sortState = { key: 'score', direction: 'desc' };
     let selectedBrands = new Set();
     let lang = 'zh';
@@ -298,6 +299,11 @@
         colTime: '发布日期',
         colInput: '输入格式',
         colOutput: '输出格式',
+        colInputPrice: '输入价格（1M）',
+        colInputCachedPrice: '输入缓存价格（1M）',
+        colOutputPrice: '输出价格（1M）',
+        colContext: '输入窗口',
+        colGenerate: '输出窗口',
         colUrl: '官网',
         website: '官网',
         emptyError: '无法加载 score.json。请通过 HTTP 服务打开此页面，而不是直接打开本地文件。',
@@ -316,6 +322,11 @@
         colTime: 'Release Date',
         colInput: 'Input Formats',
         colOutput: 'Output Formats',
+        colInputPrice: 'Input Price (1M)',
+        colInputCachedPrice: 'Cache Input Price (1M)',
+        colOutputPrice: 'Output Price (1M)',
+        colContext: 'Context Window',
+        colGenerate: 'Output Window',
         colUrl: 'Website',
         website: 'Website',
         emptyError: 'Unable to load score.json. Please serve this page over HTTP instead of opening the local file directly.',
@@ -342,8 +353,44 @@
       return Number(value).toLocaleString('en-US', { maximumFractionDigits: 4 });
     };
 
-    const formatFormats = (formats) =>
-      Array.isArray(formats) && formats.length ? formats.join(' / ') : '-';
+const formatFormats = (formats) =>
+  Array.isArray(formats) && formats.length ? formats.join(' / ') : '-';
+
+const formatWindow = (value) => {
+  if (value === null || value === undefined || value === '') return '-';
+  const num = Number(value);
+  if (!Number.isFinite(num)) return String(value);
+  if (num % (1024 * 1024) === 0) {
+    return `${num / (1024 * 1024)}M`;
+  }
+  if (num % 1024 === 0) {
+    const k = num / 1024;
+    return k >= 1024 ? `${k / 1024}M` : `${k}K`;
+  }
+  if (num >= 1000000) {
+    const m = num / 1000000;
+    return `${Number.isInteger(m) ? m : m.toFixed(2).replace(/\.?0+$/, '')}M`;
+  }
+  if (num >= 1000) {
+    const k = num / 1000;
+    return `${Number.isInteger(k) ? k : k.toFixed(1).replace(/\.?0+$/, '')}K`;
+  }
+  return String(num);
+};
+
+const formatPrice = (price) => {
+  if (price === null || price === undefined || price === '') return '-';
+  const match = /^([￥$])\s*([\d.]+)$/.exec(String(price).trim());
+  if (!match) return String(price);
+  const [, symbol, amount] = match;
+  const target = lang === 'zh' ? '￥' : '$';
+  if (symbol === target) return `${symbol}${amount}`;
+  if (!priceMap['$'] || !priceMap['￥']) return `${symbol}${amount}`;
+  const rate = target === '￥' ? priceMap['$'] / priceMap['￥'] : priceMap['￥'] / priceMap['$'];
+  const converted = Number(amount) * rate;
+  const rounded = Number.isInteger(converted) ? converted : Number(converted.toFixed(2));
+  return `${target}${rounded}`;
+};
 
     const getSortValue = (model, key) => {
       if (key.startsWith('benchmark:')) {
@@ -408,6 +455,11 @@
         makeHeader(t('colTime'), 'time', true),
         makeHeader(t('colInput'), 'input', true),
         makeHeader(t('colOutput'), 'output', true),
+        makeHeader(t('colInputPrice'), 'inputPrice', true),
+        makeHeader(t('colInputCachedPrice'), 'inputCachedPrice', true),
+        makeHeader(t('colOutputPrice'), 'outputPrice', true),
+        makeHeader(t('colContext'), 'context', true),
+        makeHeader(t('colGenerate'), 'generate', true),
       );
       benchmarks.forEach((benchmark) => {
         row.append(makeHeader(benchmark, `benchmark:${benchmark}`, true));
@@ -434,6 +486,11 @@
         appendTextCell(row, model.time ?? '-', model.time ? '' : 'missing');
         appendTextCell(row, formatFormats(model.input), model.input?.length ? '' : 'missing');
         appendTextCell(row, formatFormats(model.output), model.output?.length ? '' : 'missing');
+        appendTextCell(row, formatPrice(model.inputPrice), 'numeric');
+        appendTextCell(row, formatPrice(model.inputCachedPrice), 'numeric');
+        appendTextCell(row, formatPrice(model.outputPrice), 'numeric');
+        appendTextCell(row, formatWindow(model.context), 'numeric');
+        appendTextCell(row, formatWindow(model.generate), 'numeric');
 
         benchmarks.forEach((benchmark) => {
           const value = getDimension(model, benchmark)?.rawScore;
@@ -535,6 +592,7 @@
       })
       .then((data) => {
         models = Array.isArray(data.models) ? data.models : [];
+        priceMap = data.priceMap ?? {};
         benchmarks = Object.entries(data.weights ?? {})
           .filter(([, details]) => details.included)
           .map(([name]) => name);

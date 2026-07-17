@@ -313,6 +313,7 @@ const result = {
     }),
   ),
   models,
+  priceMap: data.priceMap ?? {},
 };
 
 fs.writeFileSync(outputPath, `${JSON.stringify(result, null, 2)}\n`);
