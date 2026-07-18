@@ -2,17 +2,17 @@
   "weights": {
     "GPQA Diamond": {
       "included": true,
-      "modelCount": 28,
+      "modelCount": 37,
       "configuredWeight": 1,
-      "baseWeight": 5.291502622129181,
-      "weight": 5.291502622129181
+      "baseWeight": 6.082762530298219,
+      "weight": 6.082762530298219
     },
     "SWE-Bench Pro": {
       "included": true,
-      "modelCount": 33,
+      "modelCount": 37,
       "configuredWeight": 1,
-      "baseWeight": 5.744562646538029,
-      "weight": 5.744562646538029
+      "baseWeight": 6.082762530298219,
+      "weight": 6.082762530298219
     },
     "DeepSWE 1.1": {
       "included": true,
@@ -23,10 +23,10 @@
     },
     "Terminal-Bench 2.1": {
       "included": true,
-      "modelCount": 38,
+      "modelCount": 45,
       "configuredWeight": 1,
-      "baseWeight": 6.164414002968976,
-      "weight": 6.164414002968976,
+      "baseWeight": 6.708203932499369,
+      "weight": 6.708203932499369,
       "projections": [
         {
           "modelName": "Qwen 3.7 Plus",
@@ -140,12 +140,13 @@
           "modelName": "MiniMax M2.5",
           "fromBenchmark": "Terminal-Bench 2",
           "legacyScore": 0.517,
-          "multiplier": 0.9244288224956064,
-          "method": "nearest-neighbor-fallback",
+          "multiplier": 0.9857438230125091,
+          "method": "adjacent-average",
           "neighbors": [
+            "Step 3.5 Flash",
             "DeepSeek V4 Flash"
           ],
-          "projectedScore": 0.47792970123022854
+          "projectedScore": 0.5096295564974672
         },
         {
           "modelName": "Claude Opus 4.6",
@@ -163,85 +164,120 @@
           "modelName": "GLM 5",
           "fromBenchmark": "Terminal-Bench 2",
           "legacyScore": 0.562,
-          "multiplier": 0.9244288224956064,
-          "method": "nearest-neighbor-fallback",
+          "multiplier": 0.9857438230125091,
+          "method": "adjacent-average",
           "neighbors": [
+            "Step 3.5 Flash",
             "DeepSeek V4 Flash"
           ],
-          "projectedScore": 0.5195289982425308
+          "projectedScore": 0.5539880285330302
         },
         {
           "modelName": "Kimi K2.5",
           "fromBenchmark": "Terminal-Bench 2",
           "legacyScore": 0.508,
-          "multiplier": 0.9244288224956064,
+          "multiplier": 1.0470588235294118,
           "method": "nearest-neighbor-fallback",
           "neighbors": [
-            "DeepSeek V4 Flash"
+            "Step 3.5 Flash"
           ],
-          "projectedScore": 0.46960984182776805
+          "projectedScore": 0.5319058823529412
         },
         {
           "modelName": "MiniMax M2.1",
           "fromBenchmark": "Terminal-Bench 2",
           "legacyScore": 0.479,
-          "multiplier": 0.9244288224956064,
+          "multiplier": 1.0470588235294118,
           "method": "nearest-neighbor-fallback",
           "neighbors": [
-            "DeepSeek V4 Flash"
+            "Step 3.5 Flash"
           ],
-          "projectedScore": 0.44280140597539547
+          "projectedScore": 0.5015411764705883
         },
         {
           "modelName": "GLM 4.7",
           "fromBenchmark": "Terminal-Bench 2",
           "legacyScore": 0.41,
-          "multiplier": 0.9244288224956064,
+          "multiplier": 1.0470588235294118,
           "method": "nearest-neighbor-fallback",
           "neighbors": [
-            "DeepSeek V4 Flash"
+            "Step 3.5 Flash"
           ],
-          "projectedScore": 0.3790158172231986
+          "projectedScore": 0.4292941176470588
         },
         {
           "modelName": "DeepSeek V3.2",
           "fromBenchmark": "Terminal-Bench 2",
           "legacyScore": 0.464,
-          "multiplier": 0.9244288224956064,
+          "multiplier": 1.0470588235294118,
           "method": "nearest-neighbor-fallback",
           "neighbors": [
-            "DeepSeek V4 Flash"
+            "Step 3.5 Flash"
           ],
-          "projectedScore": 0.4289349736379614
+          "projectedScore": 0.4858352941176471
+        },
+        {
+          "modelName": "Claude Haiku 4.5",
+          "fromBenchmark": "Terminal-Bench 2",
+          "legacyScore": 0.41,
+          "multiplier": 1.0470588235294118,
+          "method": "nearest-neighbor-fallback",
+          "neighbors": [
+            "Step 3.5 Flash"
+          ],
+          "projectedScore": 0.4292941176470588
         },
         {
           "modelName": "Claude Sonnet 4.5",
           "fromBenchmark": "Terminal-Bench 2",
           "legacyScore": 0.5,
-          "multiplier": 0.9244288224956064,
+          "multiplier": 1.0470588235294118,
           "method": "nearest-neighbor-fallback",
           "neighbors": [
-            "DeepSeek V4 Flash"
+            "Step 3.5 Flash"
           ],
-          "projectedScore": 0.4622144112478032
+          "projectedScore": 0.5235294117647059
         },
         {
           "modelName": "Qwen 3.5 397B A17B",
           "fromBenchmark": "Terminal-Bench 2",
           "legacyScore": 0.525,
-          "multiplier": 0.9244288224956064,
-          "method": "nearest-neighbor-fallback",
+          "multiplier": 0.9857438230125091,
+          "method": "adjacent-average",
           "neighbors": [
+            "Step 3.5 Flash",
             "DeepSeek V4 Flash"
           ],
-          "projectedScore": 0.4853251318101934
+          "projectedScore": 0.5175155070815672
+        },
+        {
+          "modelName": "Claude Opus 4",
+          "fromBenchmark": "Terminal-Bench 2",
+          "legacyScore": 0.432,
+          "multiplier": 1.0470588235294118,
+          "method": "nearest-neighbor-fallback",
+          "neighbors": [
+            "Step 3.5 Flash"
+          ],
+          "projectedScore": 0.4523294117647059
+        },
+        {
+          "modelName": "Claude Sonnet 4",
+          "fromBenchmark": "Terminal-Bench 2",
+          "legacyScore": 0.355,
+          "multiplier": 1.0470588235294118,
+          "method": "nearest-neighbor-fallback",
+          "neighbors": [
+            "Step 3.5 Flash"
+          ],
+          "projectedScore": 0.37170588235294116
         }
       ]
     },
     "Terminal-Bench 2": {
       "included": false,
       "upgrade": "Terminal-Bench 2.1",
-      "modelCount": 23,
+      "modelCount": 27,
       "calibrations": [
         {
           "modelName": "DeepSeek V4 Pro",
@@ -254,6 +290,12 @@
           "legacyScore": 0.569,
           "upgradedScore": 0.526,
           "multiplier": 0.9244288224956064
+        },
+        {
+          "modelName": "Step 3.5 Flash",
+          "legacyScore": 0.51,
+          "upgradedScore": 0.534,
+          "multiplier": 1.0470588235294118
         },
         {
           "modelName": "GPT-5.5",
@@ -277,53 +319,41 @@
     },
     "BrowseComp": {
       "included": true,
-      "modelCount": 27,
+      "modelCount": 29,
       "configuredWeight": 1,
-      "baseWeight": 5.196152422706632,
-      "weight": 5.196152422706632
+      "baseWeight": 5.385164807134504,
+      "weight": 5.385164807134504
     },
     "GDPval-AA 2": {
       "included": true,
-      "modelCount": 18,
+      "modelCount": 21,
       "configuredWeight": 1,
-      "baseWeight": 4.242640687119285,
-      "weight": 4.242640687119285,
+      "baseWeight": 4.58257569495584,
+      "weight": 4.58257569495584,
       "projections": [
         {
           "modelName": "MiMo V2.5 Pro",
           "fromBenchmark": "GDPval-AA",
           "legacyScore": 1581,
-          "multiplier": 0.7928075600943152,
+          "multiplier": 0.8476556558307936,
           "method": "adjacent-average",
           "neighbors": [
-            "Gemini 3.1 Pro",
+            "DeepSeek V4 Pro",
             "Claude Sonnet 4.6"
           ],
-          "projectedScore": 1253.4287525091122
-        },
-        {
-          "modelName": "DeepSeek V4 Pro",
-          "fromBenchmark": "GDPval-AA",
-          "legacyScore": 1554,
-          "multiplier": 0.7928075600943152,
-          "method": "adjacent-average",
-          "neighbors": [
-            "Gemini 3.1 Pro",
-            "Claude Sonnet 4.6"
-          ],
-          "projectedScore": 1232.0229483865658
+          "projectedScore": 1340.1435918684847
         },
         {
           "modelName": "DeepSeek V4 Flash",
           "fromBenchmark": "GDPval-AA",
           "legacyScore": 1395,
-          "multiplier": 0.7928075600943152,
+          "multiplier": 0.7862072453188627,
           "method": "adjacent-average",
           "neighbors": [
             "Gemini 3.1 Pro",
-            "Claude Sonnet 4.6"
+            "DeepSeek V4 Pro"
           ],
-          "projectedScore": 1105.9665463315696
+          "projectedScore": 1096.7591072198134
         },
         {
           "modelName": "Claude Opus 4.7",
@@ -341,25 +371,25 @@
           "modelName": "MiMo V2 Pro",
           "fromBenchmark": "GDPval-AA",
           "legacyScore": 1426,
-          "multiplier": 0.7928075600943152,
+          "multiplier": 0.7862072453188627,
           "method": "adjacent-average",
           "neighbors": [
             "Gemini 3.1 Pro",
-            "Claude Sonnet 4.6"
+            "DeepSeek V4 Pro"
           ],
-          "projectedScore": 1130.5435806944934
+          "projectedScore": 1121.1315318246982
         },
         {
           "modelName": "Claude Opus 4.6",
           "fromBenchmark": "GDPval-AA",
           "legacyScore": 1606,
-          "multiplier": 0.7928075600943152,
+          "multiplier": 0.8476556558307936,
           "method": "adjacent-average",
           "neighbors": [
-            "Gemini 3.1 Pro",
+            "DeepSeek V4 Pro",
             "Claude Sonnet 4.6"
           ],
-          "projectedScore": 1273.24894151147
+          "projectedScore": 1361.3349832642546
         }
       ]
     },
@@ -387,6 +417,12 @@
           "multiplier": 0.8144927536231884
         },
         {
+          "modelName": "DeepSeek V4 Pro",
+          "legacyScore": 1554,
+          "upgradedScore": 1307,
+          "multiplier": 0.8410553410553411
+        },
+        {
           "modelName": "Gemini 3.1 Pro",
           "legacyScore": 1317,
           "upgradedScore": 963.2,
@@ -402,38 +438,38 @@
     },
     "Humanity's Last Exam": {
       "included": true,
-      "modelCount": 32,
+      "modelCount": 40,
       "configuredWeight": 1,
-      "baseWeight": 5.656854249492381,
-      "weight": 5.656854249492381
+      "baseWeight": 6.324555320336759,
+      "weight": 6.324555320336759
     },
     "IMOAnswerBench": {
       "included": true,
-      "modelCount": 18,
+      "modelCount": 19,
       "configuredWeight": 1,
-      "baseWeight": 4.242640687119285,
-      "weight": 4.242640687119285
+      "baseWeight": 4.358898943540674,
+      "weight": 4.358898943540674
     },
     "MCPAtlas": {
       "included": true,
-      "modelCount": 24,
+      "modelCount": 25,
       "configuredWeight": 1,
-      "baseWeight": 4.898979485566356,
-      "weight": 4.898979485566356
+      "baseWeight": 5,
+      "weight": 5
     },
     "OSWorld-Verified": {
-      "included": true,
-      "modelCount": 16,
-      "configuredWeight": 1,
-      "baseWeight": 4,
-      "weight": 4
-    },
-    "MMMU Pro": {
       "included": true,
       "modelCount": 17,
       "configuredWeight": 1,
       "baseWeight": 4.123105625617661,
       "weight": 4.123105625617661
+    },
+    "MMMU Pro": {
+      "included": true,
+      "modelCount": 20,
+      "configuredWeight": 1,
+      "baseWeight": 4.47213595499958,
+      "weight": 4.47213595499958
     },
     "BabyVision": {
       "included": true,
@@ -466,23 +502,23 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.941,
-          "normalizedScore": 0.963235294117647,
+          "normalizedScore": 0.9773755656108597,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.803,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "DeepSWE 1.1",
@@ -496,73 +532,73 @@
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.88,
-          "normalizedScore": 0.984282419236772,
+          "normalizedScore": 0.9845049561353537,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.88,
           "normalizedScore": 0.9323467230443974,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 1759.6,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.645,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.847,
           "normalizedScore": 0.9232505643340857,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.85,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.812,
           "normalizedScore": 0.8811881188118816,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -575,8 +611,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.9680411104196843,
-      "totalWeight": 52.08604067777087
+      "score": 0.9698040405520764,
+      "totalWeight": 55.52909533177252
     },
     {
       "rank": 2,
@@ -599,13 +635,13 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.935,
-          "normalizedScore": 0.9191176470588243,
+          "normalizedScore": 0.9502262443438918,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "DeepSWE 1.1",
@@ -619,63 +655,63 @@
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.883,
-          "normalizedScore": 0.9901765120229827,
+          "normalizedScore": 0.9903155975845963,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.912,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 1668,
           "normalizedScore": 0.8849824208940232,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.56,
-          "normalizedScore": 0.8000000000000002,
+          "normalizedScore": 0.8210526315789475,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.842,
           "normalizedScore": 0.9119638826185101,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.816,
           "normalizedScore": 0.9009900990099009,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -688,8 +724,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.918765506677321,
-      "totalWeight": 42.34147803123284
+      "score": 0.9249455196794517,
+      "totalWeight": 45.32322717585664
     },
     {
       "rank": 3,
@@ -713,23 +749,23 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.946,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.646,
-          "normalizedScore": 0.4869281045751634,
+          "normalizedScore": 0.5368731563421828,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "DeepSWE 1.1",
@@ -743,63 +779,63 @@
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.888,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.904,
           "normalizedScore": 0.9830866807610994,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 1747.8,
           "normalizedScore": 0.9851833249623305,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.58,
-          "normalizedScore": 0.8470588235294116,
+          "normalizedScore": 0.863157894736842,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.836,
           "normalizedScore": 0.8984198645598194,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.83,
           "normalizedScore": 0.9702970297029703,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -812,8 +848,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.9031434489310488,
-      "totalWeight": 48.08604067777087
+      "score": 0.9113658346853758,
+      "totalWeight": 51.405989706154855
     },
     {
       "rank": 4,
@@ -836,23 +872,23 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.936,
-          "normalizedScore": 0.9264705882352948,
+          "normalizedScore": 0.95475113122172,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.586,
-          "normalizedScore": 0.29084967320261423,
+          "normalizedScore": 0.3598820058997048,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "DeepSWE 1.1",
@@ -866,83 +902,83 @@
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.856,
-          "normalizedScore": 0.9371296769470878,
+          "normalizedScore": 0.9380198245414151,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.844,
           "normalizedScore": 0.8562367864693445,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 1493.7,
           "normalizedScore": 0.6661225514816677,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.522,
-          "normalizedScore": 0.7105882352941176,
+          "normalizedScore": 0.7410526315789474,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.921,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.828,
           "normalizedScore": 0.8803611738148983,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.787,
           "normalizedScore": 0.8653846153846155,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.812,
           "normalizedScore": 0.8811881188118816,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -955,8 +991,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.8068323598951967,
-      "totalWeight": 56.32868136489015
+      "score": 0.8192201435262882,
+      "totalWeight": 59.88799427531319
     },
     {
       "rank": 5,
@@ -980,23 +1016,23 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.92,
-          "normalizedScore": 0.8088235294117652,
+          "normalizedScore": 0.882352941176471,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.692,
-          "normalizedScore": 0.637254901960784,
+          "normalizedScore": 0.6725663716814156,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "DeepSWE 1.1",
@@ -1010,83 +1046,83 @@
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.746,
-          "normalizedScore": 0.7210129414527023,
+          "normalizedScore": 0.7249629714025294,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.843,
           "normalizedScore": 0.8541226215644819,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 1600.1,
           "normalizedScore": 0.7997237569060773,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.579,
-          "normalizedScore": 0.8447058823529411,
+          "normalizedScore": 0.8610526315789473,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.835,
           "normalizedScore": 0.48809523809523775,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.836,
           "normalizedScore": 0.8984198645598194,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.834,
           "normalizedScore": 0.9658119658119658,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.789,
           "normalizedScore": 0.7673267326732677,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -1099,8 +1135,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.7832582918949611,
-      "totalWeight": 56.32868136489015
+      "score": 0.7963358739156579,
+      "totalWeight": 59.88799427531319
     },
     {
       "rank": 6,
@@ -1125,13 +1161,13 @@
       "dimensions": [
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.615,
-          "normalizedScore": 0.38562091503267965,
+          "normalizedScore": 0.4454277286135692,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "DeepSWE 1.1",
@@ -1145,33 +1181,33 @@
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.8,
-          "normalizedScore": 0.8271066116044917,
+          "normalizedScore": 0.8295545174888915,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.621,
-          "normalizedScore": 0.9435294117647058,
+          "normalizedScore": 0.9494736842105262,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.881,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "BabyVision",
@@ -1184,8 +1220,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.7749375753400732,
-      "totalWeight": 29.23263932019811
+      "score": 0.7895024973763051,
+      "totalWeight": 30.883350718766714
     },
     {
       "rank": 7,
@@ -1209,57 +1245,57 @@
       "dimensions": [
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.632,
-          "normalizedScore": 0.4411764705882352,
+          "normalizedScore": 0.495575221238938,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.804,
-          "normalizedScore": 0.8349654019861057,
+          "normalizedScore": 0.8373020394212147,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 1618,
           "normalizedScore": 0.8221998995479659,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.574,
-          "normalizedScore": 0.8329411764705881,
+          "normalizedScore": 0.8505263157894736,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.812,
           "normalizedScore": 0.918803418803419,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         }
       ],
-      "score": 0.7577658165416243,
-      "totalWeight": 25.808471586118667
+      "score": 0.7751849083025033,
+      "totalWeight": 27.821203103707848
     },
     {
       "rank": 8,
@@ -1281,23 +1317,23 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.912,
-          "normalizedScore": 0.7500000000000004,
+          "normalizedScore": 0.8461538461538465,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.621,
-          "normalizedScore": 0.4052287581699346,
+          "normalizedScore": 0.463126843657817,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "DeepSWE 1.1",
@@ -1311,60 +1347,243 @@
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.81,
-          "normalizedScore": 0.8467535875585268,
+          "normalizedScore": 0.8489233223196994,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 1514,
           "normalizedScore": 0.6916122551481668,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.547,
-          "normalizedScore": 0.7694117647058825,
+          "normalizedScore": 0.7936842105263159,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.91,
           "normalizedScore": 0.9345238095238095,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.768,
           "normalizedScore": 0.744920993227991,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         }
       ],
-      "score": 0.7157516908950738,
-      "totalWeight": 39.40387204110187
+      "score": 0.743042352961367,
+      "totalWeight": 42.30203661209746
     },
     {
       "rank": 9,
+      "brand": "Alibaba",
+      "model": "Qwen 3.7 Max",
+      "time": "2026/05/20",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 991000,
+      "generate": 64000,
+      "inputPrice": "￥12",
+      "inputCachedPrice": "￥6",
+      "outputPrice": "￥36",
+      "url": "https://qwen.ai/blog?id=qwen3.7",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.924,
+          "normalizedScore": 0.9004524886877832,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.606,
+          "normalizedScore": 0.4188790560471975,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.7204133778762388,
+          "normalizedScore": 0.6754047423830535,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.697,
+            "multiplier": 1.033591646881261,
+            "method": "adjacent-average",
+            "neighbors": [
+              "Gemini 3.1 Pro",
+              "GPT-5.5"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.535,
+          "normalizedScore": 0.768421052631579,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "IMOAnswerBench",
+          "modelCount": 19,
+          "rawScore": 0.9,
+          "normalizedScore": 0.8749999999999999,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
+        },
+        {
+          "name": "MCPAtlas",
+          "modelCount": 25,
+          "rawScore": 0.764,
+          "normalizedScore": 0.7358916478555305,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5,
+          "weight": 5
+        }
+      ],
+      "score": 0.7208153893956699,
+      "totalWeight": 34.557183256973246
+    },
+    {
+      "rank": 10,
+      "brand": "腾讯",
+      "model": "Hy 3",
+      "time": "2026/07/06",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 262000,
+      "inputPrice": "￥1",
+      "inputCachedPrice": "￥0.25",
+      "outputPrice": "￥4",
+      "url": "https://hy.tencent.com/research/hy3",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.904,
+          "normalizedScore": 0.8099547511312221,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.579,
+          "normalizedScore": 0.3392330383480824,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.717,
+          "normalizedScore": 0.6687934373931868,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.842,
+          "normalizedScore": 0.8520084566596193,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.532,
+          "normalizedScore": 0.7621052631578947,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "IMOAnswerBench",
+          "modelCount": 19,
+          "rawScore": 0.9,
+          "normalizedScore": 0.8749999999999999,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
+        },
+        {
+          "name": "MCPAtlas",
+          "modelCount": 25,
+          "rawScore": 0.791,
+          "normalizedScore": 0.7968397291196389,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5,
+          "weight": 5
+        }
+      ],
+      "score": 0.7181114445494727,
+      "totalWeight": 39.94234806410775
+    },
+    {
+      "rank": 11,
       "brand": "xAI",
       "model": "Grok 4.5",
       "time": "2026/07/08",
@@ -1384,13 +1603,13 @@
       "dimensions": [
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.647,
-          "normalizedScore": 0.49019607843137253,
+          "normalizedScore": 0.5398230088495575,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "DeepSWE 1.1",
@@ -1404,200 +1623,17 @@
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.833,
-          "normalizedScore": 0.8919416322528072,
+          "normalizedScore": 0.8934715734305572,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         }
       ],
-      "score": 0.6936118193110328,
-      "totalWeight": 15.071254309675385
-    },
-    {
-      "rank": 10,
-      "brand": "Alibaba",
-      "model": "Qwen 3.7 Max",
-      "time": "2026/05/20",
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 991000,
-      "generate": 64000,
-      "inputPrice": "￥12",
-      "inputCachedPrice": "￥6",
-      "outputPrice": "￥36",
-      "url": "https://qwen.ai/blog?id=qwen3.7",
-      "dimensions": [
-        {
-          "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.924,
-          "normalizedScore": 0.8382352941176476,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
-        },
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.606,
-          "normalizedScore": 0.3562091503267973,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.7204133778762388,
-          "normalizedScore": 0.6707429664916505,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "Terminal-Bench 2",
-            "legacyScore": 0.697,
-            "multiplier": 1.033591646881261,
-            "method": "adjacent-average",
-            "neighbors": [
-              "Gemini 3.1 Pro",
-              "GPT-5.5"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.535,
-          "normalizedScore": 0.7411764705882353,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        },
-        {
-          "name": "IMOAnswerBench",
-          "modelCount": 18,
-          "rawScore": 0.9,
-          "normalizedScore": 0.8749999999999999,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "MCPAtlas",
-          "modelCount": 24,
-          "rawScore": 0.764,
-          "normalizedScore": 0.7358916478555305,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
-        }
-      ],
-      "score": 0.6914814633568044,
-      "totalWeight": 31.998953693814208
-    },
-    {
-      "rank": 11,
-      "brand": "腾讯",
-      "model": "Hy 3",
-      "time": "2026/07/06",
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 262000,
-      "inputPrice": "￥1",
-      "inputCachedPrice": "￥0.25",
-      "outputPrice": "￥4",
-      "url": "https://hy.tencent.com/research/hy3",
-      "dimensions": [
-        {
-          "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.904,
-          "normalizedScore": 0.6911764705882356,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
-        },
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.579,
-          "normalizedScore": 0.26797385620915015,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.717,
-          "normalizedScore": 0.6640367111860006,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.842,
-          "normalizedScore": 0.8520084566596193,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.532,
-          "normalizedScore": 0.7341176470588235,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        },
-        {
-          "name": "IMOAnswerBench",
-          "modelCount": 18,
-          "rawScore": 0.9,
-          "normalizedScore": 0.8749999999999999,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "MCPAtlas",
-          "modelCount": 24,
-          "rawScore": 0.791,
-          "normalizedScore": 0.7968397291196389,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
-        }
-      ],
-      "score": 0.6852010653573868,
-      "totalWeight": 37.19510611652084
+      "score": 0.715625308394664,
+      "totalWeight": 15.953244122965968
     },
     {
       "rank": 12,
@@ -1621,29 +1657,29 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.928,
-          "normalizedScore": 0.86764705882353,
+          "normalizedScore": 0.9185520361990954,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.577,
-          "normalizedScore": 0.2614379084967319,
+          "normalizedScore": 0.3333333333333331,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.7762273268078269,
-          "normalizedScore": 0.7804004977475157,
+          "normalizedScore": 0.7835096907523138,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
@@ -1656,58 +1692,58 @@
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.827,
           "normalizedScore": 0.8202959830866806,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.521,
-          "normalizedScore": 0.7082352941176471,
+          "normalizedScore": 0.7389473684210526,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.672,
           "normalizedScore": 0.5282167042889392,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.75,
           "normalizedScore": 0.7863247863247863,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.812,
           "normalizedScore": 0.8811881188118816,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -1720,8 +1756,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.6806734055725052,
-      "totalWeight": 44.681122330483205
+      "score": 0.7044225986096737,
+      "totalWeight": 47.7842419766483
     },
     {
       "rank": 13,
@@ -1747,337 +1783,80 @@
       "dimensions": [
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.551,
-          "normalizedScore": 0.17647058823529424,
+          "normalizedScore": 0.256637168141593,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.762,
-          "normalizedScore": 0.7524481029791584,
+          "normalizedScore": 0.7559530591318219,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 1348.8,
           "normalizedScore": 0.48417880462079355,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.402,
-          "normalizedScore": 0.42823529411764705,
+          "normalizedScore": 0.488421052631579,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.836,
           "normalizedScore": 0.8984198645598194,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.784,
           "normalizedScore": 0.858974358974359,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.836,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         }
       ],
-      "score": 0.6341889120786802,
-      "totalWeight": 34.83055669730268
+      "score": 0.6555020314599463,
+      "totalWeight": 37.293339058707424
     },
     {
       "rank": 14,
-      "brand": "Anthropic",
-      "model": "Claude Opus 4.7",
-      "time": "2026/04/16",
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 1000000,
-      "generate": 128000,
-      "inputPrice": "$5",
-      "inputCachedPrice": "$0.5",
-      "outputPrice": "$25",
-      "url": "https://www.anthropic.com/news/claude-opus-4-7",
-      "dimensions": [
-        {
-          "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.942,
-          "normalizedScore": 0.9705882352941176,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
-        },
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.643,
-          "normalizedScore": 0.4771241830065359,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.7173126029355951,
-          "normalizedScore": 0.6646508814218803,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "Terminal-Bench 2",
-            "legacyScore": 0.694,
-            "multiplier": 1.033591646881261,
-            "method": "adjacent-average",
-            "neighbors": [
-              "Gemini 3.1 Pro",
-              "GPT-5.5"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.793,
-          "normalizedScore": 0.7484143763213531,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "GDPval-AA 2",
-          "modelCount": 18,
-          "rawScore": 1455.9598562226822,
-          "normalizedScore": 0.6187341238356131,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "GDPval-AA",
-            "legacyScore": 1753,
-            "multiplier": 0.8305532551184724,
-            "method": "adjacent-average",
-            "neighbors": [
-              "Gemini 3.5 Flash",
-              "Claude Opus 4.8"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.547,
-          "normalizedScore": 0.7694117647058825,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        },
-        {
-          "name": "IMOAnswerBench",
-          "modelCount": 18,
-          "rawScore": 0.818,
-          "normalizedScore": 0.3869047619047615,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "OSWorld-Verified",
-          "modelCount": 16,
-          "rawScore": 0.78,
-          "normalizedScore": 0.8504273504273505,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
-        },
-        {
-          "name": "MMMU Pro",
-          "modelCount": 17,
-          "rawScore": 0.74,
-          "normalizedScore": 0.5247524752475248,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
-        },
-        {
-          "name": "BabyVision",
-          "modelCount": 13,
-          "rawScore": 0.222,
-          "normalizedScore": 0.12323491655969192,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 3.605551275463989,
-          "weight": 3.605551275463989
-        }
-      ],
-      "score": 0.6317192719324454,
-      "totalWeight": 48.267424219155416
-    },
-    {
-      "rank": 15,
-      "brand": "Moonshot",
-      "model": "Kimi K2.6",
-      "time": "2026/04/20",
-      "input": [
-        "text",
-        "image",
-        "video"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 262144,
-      "inputPrice": "￥6.5",
-      "inputCachedPrice": "￥1.1",
-      "outputPrice": "￥27",
-      "url": "https://www.kimi.com/ai-models/kimi-k2-6",
-      "dimensions": [
-        {
-          "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.905,
-          "normalizedScore": 0.6985294117647062,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
-        },
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.586,
-          "normalizedScore": 0.29084967320261423,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.6924241506744516,
-          "normalizedScore": 0.6157525991110969,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "Terminal-Bench 2",
-            "legacyScore": 0.667,
-            "multiplier": 1.0381171674279634,
-            "method": "adjacent-average",
-            "neighbors": [
-              "Claude Sonnet 4.6",
-              "DeepSeek V4 Pro"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.832,
-          "normalizedScore": 0.8308668076109935,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.54,
-          "normalizedScore": 0.7529411764705883,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        },
-        {
-          "name": "IMOAnswerBench",
-          "modelCount": 18,
-          "rawScore": 0.86,
-          "normalizedScore": 0.6369047619047616,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "MCPAtlas",
-          "modelCount": 24,
-          "rawScore": 0.666,
-          "normalizedScore": 0.5146726862302484,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
-        },
-        {
-          "name": "OSWorld-Verified",
-          "modelCount": 16,
-          "rawScore": 0.731,
-          "normalizedScore": 0.7457264957264957,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
-        }
-      ],
-      "score": 0.6298285115134298,
-      "totalWeight": 41.19510611652084
-    },
-    {
-      "rank": 16,
       "brand": "Alibaba",
       "model": "Qwen 3.7 Plus",
       "time": "2026/06/01",
@@ -2098,29 +1877,29 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.903,
-          "normalizedScore": 0.683823529411765,
+          "normalizedScore": 0.805429864253394,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.576,
-          "normalizedScore": 0.2581699346405227,
+          "normalizedScore": 0.3303834808259585,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.7266149277575263,
-          "normalizedScore": 0.6829271366311911,
+          "normalizedScore": 0.6874164033129713,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
@@ -2133,38 +1912,38 @@
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.86,
           "normalizedScore": 0.6369047619047616,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.732,
           "normalizedScore": 0.6636568848758465,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.79,
           "normalizedScore": 0.7722772277227726,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -2177,11 +1956,155 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.6200093883947954,
-      "totalWeight": 34.070756345403474
+      "score": 0.6539096280939675,
+      "totalWeight": 36.31031516710005
     },
     {
-      "rank": 17,
+      "rank": 15,
+      "brand": "Anthropic",
+      "model": "Claude Opus 4.7",
+      "time": "2026/04/16",
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 1000000,
+      "generate": 128000,
+      "inputPrice": "$5",
+      "inputCachedPrice": "$0.5",
+      "outputPrice": "$25",
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.942,
+          "normalizedScore": 0.9819004524886877,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.643,
+          "normalizedScore": 0.5280235988200589,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.7173126029355951,
+          "normalizedScore": 0.6693989119180946,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.694,
+            "multiplier": 1.033591646881261,
+            "method": "adjacent-average",
+            "neighbors": [
+              "Gemini 3.1 Pro",
+              "GPT-5.5"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.793,
+          "normalizedScore": 0.7484143763213531,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "GDPval-AA 2",
+          "modelCount": 21,
+          "rawScore": 1455.9598562226822,
+          "normalizedScore": 0.6187341238356131,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "GDPval-AA",
+            "legacyScore": 1753,
+            "multiplier": 0.8305532551184724,
+            "method": "adjacent-average",
+            "neighbors": [
+              "Gemini 3.5 Flash",
+              "Claude Opus 4.8"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.547,
+          "normalizedScore": 0.7936842105263159,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "IMOAnswerBench",
+          "modelCount": 19,
+          "rawScore": 0.818,
+          "normalizedScore": 0.3869047619047615,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
+        },
+        {
+          "name": "OSWorld-Verified",
+          "modelCount": 17,
+          "rawScore": 0.78,
+          "normalizedScore": 0.8504273504273505,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
+        },
+        {
+          "name": "MMMU Pro",
+          "modelCount": 20,
+          "rawScore": 0.74,
+          "normalizedScore": 0.5247524752475248,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
+        },
+        {
+          "name": "BabyVision",
+          "modelCount": 13,
+          "rawScore": 0.222,
+          "normalizedScore": 0.12323491655969192,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 3.605551275463989,
+          "weight": 3.605551275463989
+        }
+      ],
+      "score": 0.6485048683515285,
+      "totalWeight": 51.72571661514481
+    },
+    {
+      "rank": 16,
       "brand": "Bytedance",
       "model": "Seed 2.1 Pro",
       "time": "2026/06/24",
@@ -2201,33 +2124,33 @@
       "dimensions": [
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.575,
-          "normalizedScore": 0.25490196078431354,
+          "normalizedScore": 0.32743362831858386,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.71,
-          "normalizedScore": 0.650283828018176,
+          "normalizedScore": 0.6552352740116213,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.816,
           "normalizedScore": 0.9009900990099009,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -2240,11 +2163,236 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.611874666040227,
-      "totalWeight": 19.637633550588653
+      "score": 0.6346589179077463,
+      "totalWeight": 20.868653693261155
+    },
+    {
+      "rank": 17,
+      "brand": "Moonshot",
+      "model": "Kimi K2.6",
+      "time": "2026/04/20",
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 262144,
+      "inputPrice": "￥6.5",
+      "inputCachedPrice": "￥1.1",
+      "outputPrice": "￥27",
+      "url": "https://www.kimi.com/ai-models/kimi-k2-6",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.905,
+          "normalizedScore": 0.8144796380090501,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.586,
+          "normalizedScore": 0.3598820058997048,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.6924241506744516,
+          "normalizedScore": 0.6211929544793983,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.667,
+            "multiplier": 1.0381171674279634,
+            "method": "adjacent-average",
+            "neighbors": [
+              "Claude Sonnet 4.6",
+              "DeepSeek V4 Pro"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.832,
+          "normalizedScore": 0.8308668076109935,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "GDPval-AA 2",
+          "modelCount": 21,
+          "rawScore": 1190,
+          "normalizedScore": 0.28478151682571573,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.54,
+          "normalizedScore": 0.7789473684210526,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "IMOAnswerBench",
+          "modelCount": 19,
+          "rawScore": 0.86,
+          "normalizedScore": 0.6369047619047616,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
+        },
+        {
+          "name": "MCPAtlas",
+          "modelCount": 25,
+          "rawScore": 0.666,
+          "normalizedScore": 0.5146726862302484,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5,
+          "weight": 5
+        },
+        {
+          "name": "OSWorld-Verified",
+          "modelCount": 17,
+          "rawScore": 0.731,
+          "normalizedScore": 0.7457264957264957,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
+        }
+      ],
+      "score": 0.6257316425084097,
+      "totalWeight": 48.648029384681244
     },
     {
       "rank": 18,
+      "brand": "DeepSeek",
+      "model": "DeepSeek V4 Pro",
+      "time": "2026/04/24",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 1000000,
+      "generate": 384000,
+      "inputPrice": "￥3",
+      "inputCachedPrice": "￥0.025",
+      "outputPrice": "￥6",
+      "url": "https://api-docs.deepseek.com/news/news260424",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.901,
+          "normalizedScore": 0.7963800904977378,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.554,
+          "normalizedScore": 0.2654867256637169,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.64,
+          "normalizedScore": 0.5196536401959668,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.834,
+          "normalizedScore": 0.8350951374207187,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "GDPval-AA 2",
+          "modelCount": 21,
+          "rawScore": 1307,
+          "normalizedScore": 0.4316926167754897,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.482,
+          "normalizedScore": 0.6568421052631578,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "IMOAnswerBench",
+          "modelCount": 19,
+          "rawScore": 0.898,
+          "normalizedScore": 0.863095238095238,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
+        },
+        {
+          "name": "MCPAtlas",
+          "modelCount": 25,
+          "rawScore": 0.736,
+          "normalizedScore": 0.672686230248307,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5,
+          "weight": 5
+        }
+      ],
+      "score": 0.6221285356106434,
+      "totalWeight": 44.52492375906358
+    },
+    {
+      "rank": 19,
       "brand": "MiniMax",
       "model": "MiniMax M3",
       "time": "2026/06/01",
@@ -2265,192 +2413,356 @@
       "dimensions": [
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.59,
-          "normalizedScore": 0.30392156862745084,
+          "normalizedScore": 0.37168141592920334,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.66,
-          "normalizedScore": 0.5520489482480009,
+          "normalizedScore": 0.5583912498575825,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.835,
           "normalizedScore": 0.8372093023255812,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 1395,
           "normalizedScore": 0.5421898543445505,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.742,
           "normalizedScore": 0.6862302483069977,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.701,
           "normalizedScore": 0.6816239316239315,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.781,
           "normalizedScore": 0.7277227722772279,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         }
       ],
-      "score": 0.607751769932766,
-      "totalWeight": 34.36985487051694
+      "score": 0.6187999673112307,
+      "totalWeight": 36.353948545505176
     },
     {
-      "rank": 19,
-      "brand": "DeepSeek",
-      "model": "DeepSeek V4 Pro",
-      "time": "2026/04/24",
+      "rank": 20,
+      "brand": "美团",
+      "model": "LongCat 2",
+      "time": "2026/06/30",
       "input": [
         "text"
       ],
       "output": [
         "text"
       ],
-      "context": 1000000,
-      "generate": 384000,
-      "inputPrice": "￥3",
-      "inputCachedPrice": "￥0.025",
-      "outputPrice": "￥6",
-      "url": "https://api-docs.deepseek.com/news/news260424",
+      "inputPrice": "￥5",
+      "inputCachedPrice": "￥0.1",
+      "outputPrice": "￥20",
+      "url": "https://longcat.ai/blog/longcat-2.0/",
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.901,
-          "normalizedScore": 0.6691176470588238,
+          "modelCount": 37,
+          "rawScore": 0.889,
+          "normalizedScore": 0.7420814479638012,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.554,
-          "normalizedScore": 0.1862745098039217,
+          "modelCount": 37,
+          "rawScore": 0.595,
+          "normalizedScore": 0.38643067846607654,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.64,
-          "normalizedScore": 0.5127549963399307,
+          "modelCount": 45,
+          "rawScore": 0.708,
+          "normalizedScore": 0.6513615130454598,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.834,
-          "normalizedScore": 0.8350951374207187,
+          "modelCount": 29,
+          "rawScore": 0.799,
+          "normalizedScore": 0.7610993657505286,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "GDPval-AA 2",
-          "modelCount": 18,
-          "rawScore": 1232.0229483865658,
-          "normalizedScore": 0.3375476499077923,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "GDPval-AA",
-            "legacyScore": 1554,
-            "multiplier": 0.7928075600943152,
-            "method": "adjacent-average",
-            "neighbors": [
-              "Gemini 3.1 Pro",
-              "Claude Sonnet 4.6"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.482,
-          "normalizedScore": 0.6164705882352941,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
-          "rawScore": 0.898,
-          "normalizedScore": 0.863095238095238,
+          "modelCount": 19,
+          "rawScore": 0.818,
+          "normalizedScore": 0.3869047619047615,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
+        }
+      ],
+      "score": 0.5947020991588943,
+      "totalWeight": 28.617792743770988
+    },
+    {
+      "rank": 21,
+      "brand": "Z.ai",
+      "model": "GLM 5.1",
+      "time": "2026/04/07",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 200000,
+      "generate": 131072,
+      "inputPrice": "￥8",
+      "inputCachedPrice": "￥2",
+      "outputPrice": "￥28",
+      "url": "https://z.ai/blog/glm-5.1",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.862,
+          "normalizedScore": 0.6199095022624436,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.584,
+          "normalizedScore": 0.3539823008849555,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.635,
+          "normalizedScore": 0.5099692377805629,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.793,
+          "normalizedScore": 0.7484143763213531,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.523,
+          "normalizedScore": 0.7431578947368421,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "IMOAnswerBench",
+          "modelCount": 19,
+          "rawScore": 0.838,
+          "normalizedScore": 0.5059523809523806,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
-          "rawScore": 0.736,
-          "normalizedScore": 0.672686230248307,
+          "modelCount": 25,
+          "rawScore": 0.718,
+          "normalizedScore": 0.6320541760722347,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         }
       ],
-      "score": 0.5788798282382963,
-      "totalWeight": 41.437746803640124
+      "score": 0.5868727180025466,
+      "totalWeight": 39.94234806410775
     },
     {
-      "rank": 20,
+      "rank": 22,
+      "brand": "Anthropic",
+      "model": "Claude Sonnet 4.6",
+      "time": "2026/02/17",
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 1000000,
+      "generate": 64000,
+      "inputPrice": "$3",
+      "inputCachedPrice": "$0.3",
+      "outputPrice": "$15",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.899,
+          "normalizedScore": 0.7873303167420818,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.581,
+          "normalizedScore": 0.3451327433628317,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.67,
+          "normalizedScore": 0.5777600546883902,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.747,
+          "normalizedScore": 0.6511627906976744,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "GDPval-AA 2",
+          "modelCount": 21,
+          "rawScore": 1395,
+          "normalizedScore": 0.5421898543445505,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.49,
+          "normalizedScore": 0.6736842105263157,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "MCPAtlas",
+          "modelCount": 25,
+          "rawScore": 0.613,
+          "normalizedScore": 0.3950338600451467,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5,
+          "weight": 5
+        },
+        {
+          "name": "OSWorld-Verified",
+          "modelCount": 17,
+          "rawScore": 0.725,
+          "normalizedScore": 0.7329059829059829,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
+        },
+        {
+          "name": "MMMU Pro",
+          "modelCount": 20,
+          "rawScore": 0.745,
+          "normalizedScore": 0.5495049504950495,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
+        }
+      ],
+      "score": 0.5838796902273339,
+      "totalWeight": 48.76126639614015
+    },
+    {
+      "rank": 23,
       "brand": "Google",
       "model": "Gemini 3.1 Pro",
       "time": "2026/02/19",
@@ -2473,23 +2785,23 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.943,
-          "normalizedScore": 0.9779411764705882,
+          "normalizedScore": 0.9864253393665158,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.542,
-          "normalizedScore": 0.14705882352941188,
+          "normalizedScore": 0.23008849557522126,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "DeepSWE 1.1",
@@ -2503,83 +2815,83 @@
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.707,
-          "normalizedScore": 0.6443897352319655,
+          "normalizedScore": 0.6494246325623789,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.859,
           "normalizedScore": 0.8879492600422833,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
+          "modelCount": 21,
           "rawScore": 963.2,
           "normalizedScore": 0,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.514,
-          "normalizedScore": 0.691764705882353,
+          "normalizedScore": 0.7242105263157894,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.81,
           "normalizedScore": 0.3392857142857145,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.692,
           "normalizedScore": 0.5733634311512414,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.762,
           "normalizedScore": 0.8119658119658121,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.805,
           "normalizedScore": 0.846534653465347,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -2592,284 +2904,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.5557741209353815,
-      "totalWeight": 56.32868136489015
-    },
-    {
-      "rank": 21,
-      "brand": "Anthropic",
-      "model": "Claude Sonnet 4.6",
-      "time": "2026/02/17",
-      "input": [
-        "text",
-        "image",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 1000000,
-      "generate": 64000,
-      "inputPrice": "$3",
-      "inputCachedPrice": "$0.3",
-      "outputPrice": "$15",
-      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "dimensions": [
-        {
-          "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.899,
-          "normalizedScore": 0.6544117647058826,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
-        },
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.581,
-          "normalizedScore": 0.2745098039215685,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.67,
-          "normalizedScore": 0.571695924202036,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.747,
-          "normalizedScore": 0.6511627906976744,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "GDPval-AA 2",
-          "modelCount": 18,
-          "rawScore": 1395,
-          "normalizedScore": 0.5421898543445505,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.49,
-          "normalizedScore": 0.6352941176470588,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        },
-        {
-          "name": "MCPAtlas",
-          "modelCount": 24,
-          "rawScore": 0.613,
-          "normalizedScore": 0.3950338600451467,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
-        },
-        {
-          "name": "OSWorld-Verified",
-          "modelCount": 16,
-          "rawScore": 0.725,
-          "normalizedScore": 0.7329059829059829,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
-        },
-        {
-          "name": "MMMU Pro",
-          "modelCount": 17,
-          "rawScore": 0.745,
-          "normalizedScore": 0.5495049504950495,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
-        }
-      ],
-      "score": 0.5510832725664271,
-      "totalWeight": 45.3182117421385
-    },
-    {
-      "rank": 22,
-      "brand": "美团",
-      "model": "LongCat 2",
-      "time": "2026/06/30",
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ],
-      "inputPrice": "￥5",
-      "inputCachedPrice": "￥0.1",
-      "outputPrice": "￥20",
-      "url": "https://longcat.ai/blog/longcat-2.0/",
-      "dimensions": [
-        {
-          "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.889,
-          "normalizedScore": 0.5808823529411766,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
-        },
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.595,
-          "normalizedScore": 0.3202614379084966,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.708,
-          "normalizedScore": 0.646354432827369,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.799,
-          "normalizedScore": 0.7610993657505286,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "IMOAnswerBench",
-          "modelCount": 18,
-          "rawScore": 0.818,
-          "normalizedScore": 0.3869047619047615,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        }
-      ],
-      "score": 0.5440908705871167,
-      "totalWeight": 26.639272381462103
-    },
-    {
-      "rank": 23,
-      "brand": "Z.ai",
-      "model": "GLM 5.1",
-      "time": "2026/04/07",
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 200000,
-      "generate": 131072,
-      "inputPrice": "￥8",
-      "inputCachedPrice": "￥2",
-      "outputPrice": "￥28",
-      "url": "https://z.ai/blog/glm-5.1",
-      "dimensions": [
-        {
-          "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.862,
-          "normalizedScore": 0.3823529411764704,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
-        },
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.584,
-          "normalizedScore": 0.2843137254901959,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.635,
-          "normalizedScore": 0.5029315083629132,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.793,
-          "normalizedScore": 0.7484143763213531,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.523,
-          "normalizedScore": 0.7129411764705883,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        },
-        {
-          "name": "IMOAnswerBench",
-          "modelCount": 18,
-          "rawScore": 0.838,
-          "normalizedScore": 0.5059523809523806,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "MCPAtlas",
-          "modelCount": 24,
-          "rawScore": 0.718,
-          "normalizedScore": 0.6320541760722347,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
-        }
-      ],
-      "score": 0.5355981958063443,
-      "totalWeight": 37.19510611652084
+      "score": 0.574374384904868,
+      "totalWeight": 59.88799427531319
     },
     {
       "rank": 24,
@@ -2891,59 +2927,91 @@
       "dimensions": [
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.5195289982425308,
-          "normalizedScore": 0.27606590887117954,
+          "modelCount": 45,
+          "rawScore": 0.5539880285330302,
+          "normalizedScore": 0.3530587313502921,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
             "legacyScore": 0.562,
-            "multiplier": 0.9244288224956064,
-            "method": "nearest-neighbor-fallback",
+            "multiplier": 0.9857438230125091,
+            "method": "adjacent-average",
             "neighbors": [
+              "Step 3.5 Flash",
               "DeepSeek V4 Flash"
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.759,
           "normalizedScore": 0.6765327695560254,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.504,
-          "normalizedScore": 0.668235294117647,
+          "normalizedScore": 0.7031578947368421,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.678,
           "normalizedScore": 0.5417607223476298,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         }
       ],
-      "score": 0.5316263705062447,
-      "totalWeight": 21.91640016073434
+      "score": 0.5622870333743393,
+      "totalWeight": 23.417924059970634
     },
     {
       "rank": 25,
+      "brand": "xAI",
+      "model": "Grok 3",
+      "time": "2025/02/19",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 131072,
+      "inputPrice": "$3",
+      "outputPrice": "$15",
+      "url": "https://x.ai/news/grok-3",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.846,
+          "normalizedScore": 0.5475113122171946,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        }
+      ],
+      "score": 0.5475113122171946,
+      "totalWeight": 6.082762530298219
+    },
+    {
+      "rank": 26,
       "brand": "OpenAI",
       "model": "GPT-5.2",
       "time": "2025/12/11",
@@ -2963,80 +3031,184 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.924,
-          "normalizedScore": 0.8382352941176476,
+          "normalizedScore": 0.9004524886877832,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.565,
-          "normalizedScore": 0.22222222222222202,
+          "normalizedScore": 0.2979351032448375,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.779,
           "normalizedScore": 0.718816067653277,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.455,
-          "normalizedScore": 0.5529411764705882,
+          "normalizedScore": 0.6000000000000001,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.606,
           "normalizedScore": 0.3792325056433408,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.382,
           "normalizedScore": 0,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.795,
           "normalizedScore": 0.7970297029702974,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         }
       ],
-      "score": 0.5075503261074088,
-      "totalWeight": 34.911157052050235
+      "score": 0.5448493682406109,
+      "totalWeight": 37.47048676868494
     },
     {
-      "rank": 26,
+      "rank": 27,
+      "brand": "Thinking Machines",
+      "model": "Inkling",
+      "time": "2026/07/09",
+      "input": [
+        "text",
+        "image",
+        "video",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 256000,
+      "inputPrice": "$3.74",
+      "inputCachedPrice": "$0.748",
+      "outputPrice": "$9.36",
+      "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.872,
+          "normalizedScore": 0.6651583710407242,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.543,
+          "normalizedScore": 0.2330383480825959,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.638,
+          "normalizedScore": 0.5157798792298053,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.771,
+          "normalizedScore": 0.7019027484143763,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "GDPval-AA 2",
+          "modelCount": 21,
+          "rawScore": 1238,
+          "normalizedScore": 0.3450527373179307,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.46,
+          "normalizedScore": 0.6105263157894738,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "MCPAtlas",
+          "modelCount": 25,
+          "rawScore": 0.741,
+          "normalizedScore": 0.6839729119638825,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5,
+          "weight": 5
+        },
+        {
+          "name": "MMMU Pro",
+          "modelCount": 20,
+          "rawScore": 0.735,
+          "normalizedScore": 0.5,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
+        }
+      ],
+      "score": 0.5332165531368798,
+      "totalWeight": 44.63816077052249
+    },
+    {
+      "rank": 28,
       "brand": "Anthropic",
       "model": "Claude Opus 4.6",
       "time": "2026/02/05",
@@ -3057,29 +3229,29 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.913,
-          "normalizedScore": 0.757352941176471,
+          "normalizedScore": 0.8506787330316745,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.534,
-          "normalizedScore": 0.12091503267973865,
+          "normalizedScore": 0.20648967551622419,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.6789286274978881,
-          "normalizedScore": 0.5892379771773901,
+          "normalizedScore": 0.5950537390297479,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
@@ -3092,88 +3264,88 @@
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.84,
           "normalizedScore": 0.8477801268498941,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
-          "rawScore": 1273.24894151147,
-          "normalizedScore": 0.3893130857753266,
+          "modelCount": 21,
+          "rawScore": 1361.3349832642546,
+          "normalizedScore": 0.49991836170800424,
           "source": "projected",
           "projection": {
             "fromBenchmark": "GDPval-AA",
             "legacyScore": 1606,
-            "multiplier": 0.7928075600943152,
+            "multiplier": 0.8476556558307936,
             "method": "adjacent-average",
             "neighbors": [
-              "Gemini 3.1 Pro",
+              "DeepSeek V4 Pro",
               "Claude Sonnet 4.6"
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.53,
-          "normalizedScore": 0.7294117647058824,
+          "normalizedScore": 0.7578947368421053,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.753,
           "normalizedScore": 0,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.595,
           "normalizedScore": 0.35440180586907444,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.727,
           "normalizedScore": 0.7371794871794871,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.739,
           "normalizedScore": 0.5198019801980198,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -3186,11 +3358,93 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.47672315707654284,
-      "totalWeight": 53.16640370472177
+      "score": 0.5148995487624002,
+      "totalWeight": 56.72571661514481
     },
     {
-      "rank": 27,
+      "rank": 29,
+      "brand": "Xiaomi",
+      "model": "MiMo V2.5 Pro",
+      "time": "2026/04/27",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 1048576,
+      "generate": 131072,
+      "inputPrice": "￥3",
+      "inputCachedPrice": "￥0.025",
+      "outputPrice": "￥6",
+      "url": "https://mimo.xiaomi.com/mimo-v2-5-pro",
+      "dimensions": [
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.572,
+          "normalizedScore": 0.31858407079645995,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.6753403480859572,
+          "normalizedScore": 0.5881036706689385,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.684,
+            "multiplier": 0.9873396901841479,
+            "method": "adjacent-average",
+            "neighbors": [
+              "DeepSeek V4 Pro",
+              "Gemini 3.1 Pro"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "GDPval-AA 2",
+          "modelCount": 21,
+          "rawScore": 1340.1435918684847,
+          "normalizedScore": 0.47330938205485273,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "GDPval-AA",
+            "legacyScore": 1581,
+            "multiplier": 0.8476556558307936,
+            "method": "adjacent-average",
+            "neighbors": [
+              "DeepSeek V4 Pro",
+              "Claude Sonnet 4.6"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.48,
+          "normalizedScore": 0.6526315789473683,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        }
+      ],
+      "score": 0.5139472150201192,
+      "totalWeight": 23.698097478090187
+    },
+    {
+      "rank": 30,
       "brand": "Alibaba",
       "model": "Qwen 3.5 397B A17B",
       "time": "2026/02/16",
@@ -3212,151 +3466,70 @@
       "dimensions": [
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.4853251318101934,
-          "normalizedScore": 0.20886565473806346,
+          "modelCount": 45,
+          "rawScore": 0.5175155070815672,
+          "normalizedScore": 0.2824158163822084,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
             "legacyScore": 0.525,
-            "multiplier": 0.9244288224956064,
-            "method": "nearest-neighbor-fallback",
+            "multiplier": 0.9857438230125091,
+            "method": "adjacent-average",
             "neighbors": [
+              "Step 3.5 Flash",
               "DeepSeek V4 Flash"
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.78,
           "normalizedScore": 0.7209302325581396,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.483,
-          "normalizedScore": 0.6188235294117647,
+          "normalizedScore": 0.6589473684210525,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.809,
           "normalizedScore": 0.33333333333333354,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.622,
           "normalizedScore": 0.5128205128205129,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         }
       ],
-      "score": 0.47504587161950734,
-      "totalWeight": 25.26006136228727
+      "score": 0.5022972266484143,
+      "totalWeight": 26.89992862912897
     },
     {
-      "rank": 28,
-      "brand": "Xiaomi",
-      "model": "MiMo V2.5 Pro",
-      "time": "2026/04/27",
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 1048576,
-      "generate": 131072,
-      "inputPrice": "￥3",
-      "inputCachedPrice": "￥0.025",
-      "outputPrice": "￥6",
-      "url": "https://mimo.xiaomi.com/mimo-v2-5-pro",
-      "dimensions": [
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.572,
-          "normalizedScore": 0.2450980392156861,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.6753403480859572,
-          "normalizedScore": 0.5821880932451338,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "Terminal-Bench 2",
-            "legacyScore": 0.684,
-            "multiplier": 0.9873396901841479,
-            "method": "adjacent-average",
-            "neighbors": [
-              "DeepSeek V4 Pro",
-              "Gemini 3.1 Pro"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "GDPval-AA 2",
-          "modelCount": 18,
-          "rawScore": 1253.4287525091122,
-          "normalizedScore": 0.3644258569928581,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "GDPval-AA",
-            "legacyScore": 1581,
-            "multiplier": 0.7928075600943152,
-            "method": "adjacent-average",
-            "neighbors": [
-              "Gemini 3.1 Pro",
-              "Claude Sonnet 4.6"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.48,
-          "normalizedScore": 0.6117647058823529,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        }
-      ],
-      "score": 0.45870345292899517,
-      "totalWeight": 21.808471586118667
-    },
-    {
-      "rank": 29,
+      "rank": 31,
       "brand": "DeepSeek",
       "model": "DeepSeek V4 Flash",
       "time": "2026/04/24",
@@ -3375,100 +3548,154 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.881,
-          "normalizedScore": 0.5220588235294118,
+          "normalizedScore": 0.7058823529411766,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.526,
-          "normalizedScore": 0.09477124183006543,
+          "normalizedScore": 0.18289085545722714,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.526,
-          "normalizedScore": 0.2887794704639311,
+          "normalizedScore": 0.29884926512475796,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.732,
           "normalizedScore": 0.6194503171247356,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "GDPval-AA 2",
-          "modelCount": 18,
-          "rawScore": 1105.9665463315696,
-          "normalizedScore": 0.17926487485129278,
+          "modelCount": 21,
+          "rawScore": 1096.7591072198134,
+          "normalizedScore": 0.1677035499997656,
           "source": "projected",
           "projection": {
             "fromBenchmark": "GDPval-AA",
             "legacyScore": 1395,
-            "multiplier": 0.7928075600943152,
+            "multiplier": 0.7862072453188627,
             "method": "adjacent-average",
             "neighbors": [
               "Gemini 3.1 Pro",
-              "Claude Sonnet 4.6"
+              "DeepSeek V4 Pro"
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.451,
-          "normalizedScore": 0.5435294117647058,
+          "normalizedScore": 0.5915789473684211,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.884,
           "normalizedScore": 0.7797619047619047,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.69,
           "normalizedScore": 0.5688487584650112,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         }
       ],
-      "score": 0.4400833044658622,
-      "totalWeight": 41.437746803640124
+      "score": 0.4828737153099549,
+      "totalWeight": 44.52492375906358
     },
     {
-      "rank": 30,
+      "rank": 32,
+      "brand": "StepFun",
+      "model": "Step 3.7 Flash",
+      "time": "2026/05/19",
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 256000,
+      "generate": 256000,
+      "inputPrice": "￥1.35",
+      "inputCachedPrice": "￥0.27",
+      "outputPrice": "￥8.1",
+      "url": "https://static.stepfun.com/blog/step-3.7-flash/",
+      "dimensions": [
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.563,
+          "normalizedScore": 0.29203539823008823,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.595,
+          "normalizedScore": 0.43249401845733165,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.472,
+          "normalizedScore": 0.6357894736842105,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        }
+      ],
+      "score": 0.45506085841460553,
+      "totalWeight": 19.115521783134348
+    },
+    {
+      "rank": 33,
       "brand": "Xiaomi",
       "model": "MiMo V2.5",
       "time": "2026/04/22",
@@ -3490,19 +3717,19 @@
       "dimensions": [
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.561,
-          "normalizedScore": 0.20915032679738577,
+          "normalizedScore": 0.2861356932153393,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.6830810961675999,
-          "normalizedScore": 0.5973963223877614,
+          "normalizedScore": 0.6030965745527173,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
@@ -3515,15 +3742,68 @@
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         }
       ],
-      "score": 0.4101171371498957,
-      "totalWeight": 11.908976649507004
+      "score": 0.45236537076316263,
+      "totalWeight": 12.790966462797588
     },
     {
-      "rank": 31,
+      "rank": 34,
+      "brand": "Google",
+      "model": "Gemma 4 31B",
+      "time": "2026/04/02",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 262144,
+      "generate": 32768,
+      "inputPrice": "$0.12",
+      "inputCachedPrice": "$0.1",
+      "outputPrice": "$0.4",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.843,
+          "normalizedScore": 0.5339366515837104,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.265,
+          "normalizedScore": 0.2,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "MMMU Pro",
+          "modelCount": 20,
+          "rawScore": 0.769,
+          "normalizedScore": 0.6683168316831685,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
+        }
+      ],
+      "score": 0.4444174995562501,
+      "totalWeight": 16.879453805634558
+    },
+    {
+      "rank": 35,
       "brand": "Moonshot",
       "model": "Kimi K2.5",
       "time": "2026/01/27",
@@ -3544,89 +3824,152 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.876,
-          "normalizedScore": 0.4852941176470588,
+          "normalizedScore": 0.6832579185520364,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.507,
-          "normalizedScore": 0.032679738562091526,
+          "normalizedScore": 0.12684365781710907,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.46960984182776805,
-          "normalizedScore": 0.17798986229852362,
+          "modelCount": 45,
+          "rawScore": 0.5319058823529412,
+          "normalizedScore": 0.31028825338954097,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
             "legacyScore": 0.508,
-            "multiplier": 0.9244288224956064,
+            "multiplier": 1.0470588235294118,
             "method": "nearest-neighbor-fallback",
             "neighbors": [
-              "DeepSeek V4 Flash"
+              "Step 3.5 Flash"
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.749,
           "normalizedScore": 0.6553911205073996,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "GDPval-AA 2",
+          "modelCount": 21,
+          "rawScore": 1009,
+          "normalizedScore": 0.0575087895529884,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.502,
-          "normalizedScore": 0.6635294117647059,
+          "normalizedScore": 0.6989473684210525,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.818,
           "normalizedScore": 0.3869047619047615,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.633,
           "normalizedScore": 0.5363247863247863,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         }
       ],
-      "score": 0.40772029514136215,
-      "totalWeight": 36.29612663095448
+      "score": 0.4380585800341146,
+      "totalWeight": 43.648029384681244
     },
     {
-      "rank": 32,
+      "rank": 36,
+      "brand": "OpenAI",
+      "model": "GPT-5",
+      "time": "2025/08/07",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 272000,
+      "generate": 128000,
+      "inputPrice": "$1.25",
+      "inputCachedPrice": "$0.125",
+      "outputPrice": "$10",
+      "url": "https://openai.com/index/introducing-gpt-5/",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.873,
+          "normalizedScore": 0.6696832579185522,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.549,
+          "normalizedScore": 0.2325581395348838,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.352,
+          "normalizedScore": 0.38315789473684203,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        }
+      ],
+      "score": 0.4355317685457464,
+      "totalWeight": 17.792482657769483
+    },
+    {
+      "rank": 37,
       "brand": "Alibaba",
       "model": "Qwen 3.6 27B",
       "time": "2026/04/22",
@@ -3648,29 +3991,29 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.878,
-          "normalizedScore": 0.5,
+          "normalizedScore": 0.6923076923076925,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.535,
-          "normalizedScore": 0.1241830065359478,
+          "normalizedScore": 0.20943952802359883,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
+          "modelCount": 45,
           "rawScore": 0.6156034802847823,
-          "normalizedScore": 0.4648232127192283,
+          "normalizedScore": 0.47240049730446615,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
@@ -3683,38 +4026,38 @@
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.24,
-          "normalizedScore": 0.047058823529411736,
+          "normalizedScore": 0.14736842105263154,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.808,
           "normalizedScore": 0.3273809523809526,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.788,
           "normalizedScore": 0.7623762376237626,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         },
         {
           "name": "BabyVision",
@@ -3727,346 +4070,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.3494500106652936,
-      "totalWeight": 34.8286311093295
-    },
-    {
-      "rank": 33,
-      "brand": "MiniMax",
-      "model": "MiniMax M2.7",
-      "time": "2026/03/18",
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 204800,
-      "generate": 131072,
-      "inputPrice": "￥2.1",
-      "inputCachedPrice": "￥0.42",
-      "outputPrice": "￥8.4",
-      "url": "https://www.minimax.io/models/text/m27",
-      "dimensions": [
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.562,
-          "normalizedScore": 0.21241830065359493,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.511,
-          "normalizedScore": 0.2593090065328785,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.763,
-          "normalizedScore": 0.6849894291754757,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "GDPval-AA 2",
-          "modelCount": 18,
-          "rawScore": 1158,
-          "normalizedScore": 0.24460070316423907,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        }
-      ],
-      "score": 0.34738058201054317,
-      "totalWeight": 21.34776975933292
-    },
-    {
-      "rank": 34,
-      "brand": "MiniMax",
-      "model": "MiniMax M2.5",
-      "time": "2026/02/12",
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 204800,
-      "generate": 131072,
-      "inputPrice": "￥2.1",
-      "inputCachedPrice": "￥0.21",
-      "outputPrice": "￥8.4",
-      "url": "https://www.minimax.io/models/text",
-      "dimensions": [
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.554,
-          "normalizedScore": 0.1862745098039217,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.47792970123022854,
-          "normalizedScore": 0.194335870060633,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "Terminal-Bench 2",
-            "legacyScore": 0.517,
-            "multiplier": 0.9244288224956064,
-            "method": "nearest-neighbor-fallback",
-            "neighbors": [
-              "DeepSeek V4 Flash"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.763,
-          "normalizedScore": 0.6849894291754757,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        }
-      ],
-      "score": 0.3406780391448493,
-      "totalWeight": 17.105129072213636
-    },
-    {
-      "rank": 35,
-      "brand": "OpenAI",
-      "model": "GPT-5",
-      "time": "2025/08/07",
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 272000,
-      "generate": 128000,
-      "inputPrice": "$1.25",
-      "inputCachedPrice": "$0.125",
-      "outputPrice": "$10",
-      "url": "https://openai.com/index/introducing-gpt-5/",
-      "dimensions": [
-        {
-          "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.873,
-          "normalizedScore": 0.463235294117647,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.549,
-          "normalizedScore": 0.2325581395348838,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.352,
-          "normalizedScore": 0.31058823529411755,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        }
-      ],
-      "score": 0.3355054398723308,
-      "totalWeight": 16.144509294328195
-    },
-    {
-      "rank": 36,
-      "brand": "Xiaomi",
-      "model": "MiMo V2 Pro",
-      "time": "2026/03/18",
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 1048576,
-      "generate": 131072,
-      "inputPrice": "$2",
-      "outputPrice": "$6",
-      "url": "https://mimo.xiaomi.com/mimo-v2-pro",
-      "dimensions": [
-        {
-          "name": "SWE-Bench Pro",
-          "modelCount": 33,
-          "rawScore": 0.55,
-          "normalizedScore": 0.1732026143790851,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.5875877113944076,
-          "normalizedScore": 0.4097806989469287,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "Terminal-Bench 2",
-            "legacyScore": 0.571,
-            "multiplier": 1.0290502826522026,
-            "method": "adjacent-average",
-            "neighbors": [
-              "DeepSeek V4 Flash",
-              "Claude Sonnet 4.6"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "GDPval-AA 2",
-          "modelCount": 18,
-          "rawScore": 1130.5435806944934,
-          "normalizedScore": 0.21012503854155368,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "GDPval-AA",
-            "legacyScore": 1426,
-            "multiplier": 0.7928075600943152,
-            "method": "adjacent-average",
-            "neighbors": [
-              "Gemini 3.1 Pro",
-              "Claude Sonnet 4.6"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.4,
-          "normalizedScore": 0.4235294117647059,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        }
-      ],
-      "score": 0.31218878917394505,
-      "totalWeight": 21.808471586118667
-    },
-    {
-      "rank": 37,
-      "brand": "Z.ai",
-      "model": "GLM 4.7",
-      "time": "2025/12/22",
-      "input": [
-        "text"
-      ],
-      "output": [
-        "text"
-      ],
-      "context": 204800,
-      "generate": 131072,
-      "inputPrice": "￥4",
-      "inputCachedPrice": "￥0.8",
-      "outputPrice": "￥16",
-      "url": "https://z.ai/blog/glm-4.7",
-      "dimensions": [
-        {
-          "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.857,
-          "normalizedScore": 0.3455882352941174,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
-        },
-        {
-          "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.3790158172231986,
-          "normalizedScore": 0,
-          "source": "projected",
-          "projection": {
-            "fromBenchmark": "Terminal-Bench 2",
-            "legacyScore": 0.41,
-            "multiplier": 0.9244288224956064,
-            "method": "nearest-neighbor-fallback",
-            "neighbors": [
-              "DeepSeek V4 Flash"
-            ]
-          },
-          "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
-        },
-        {
-          "name": "BrowseComp",
-          "modelCount": 27,
-          "rawScore": 0.675,
-          "normalizedScore": 0.49894291754756875,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
-        },
-        {
-          "name": "Humanity's Last Exam",
-          "modelCount": 32,
-          "rawScore": 0.428,
-          "normalizedScore": 0.48941176470588227,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
-        },
-        {
-          "name": "MCPAtlas",
-          "modelCount": 24,
-          "rawScore": 0.52,
-          "normalizedScore": 0.18510158013544023,
-          "source": "reported",
-          "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
-        }
-      ],
-      "score": 0.2975828174783073,
-      "totalWeight": 27.207902782863528
+      "score": 0.4137236368499581,
+      "totalWeight": 37.63487048743681
     },
     {
       "rank": 38,
@@ -4088,62 +4093,420 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.857,
-          "normalizedScore": 0.3455882352941174,
+          "normalizedScore": 0.5972850678733033,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.4289349736379614,
-          "normalizedScore": 0.09807604657265595,
+          "modelCount": 45,
+          "rawScore": 0.4858352941176471,
+          "normalizedScore": 0.2210550301925488,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
             "legacyScore": 0.464,
-            "multiplier": 0.9244288224956064,
+            "multiplier": 1.0470588235294118,
             "method": "nearest-neighbor-fallback",
             "neighbors": [
-              "DeepSeek V4 Flash"
+              "Step 3.5 Flash"
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.306,
-          "normalizedScore": 0.20235294117647054,
+          "normalizedScore": 0.2863157894736842,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "IMOAnswerBench",
-          "modelCount": 18,
+          "modelCount": 19,
           "rawScore": 0.845,
           "normalizedScore": 0.5476190476190473,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.242640687119285,
-          "weight": 4.242640687119285
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
         }
       ],
-      "score": 0.2763371868855302,
-      "totalWeight": 21.355411561709822
+      "score": 0.3967664079889585,
+      "totalWeight": 23.47442072667502
     },
     {
       "rank": 39,
-      "brand": "xAI",
-      "model": "Grok 3",
-      "time": "2025/02/19",
+      "brand": "MiniMax",
+      "model": "MiniMax M2.5",
+      "time": "2026/02/12",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 204800,
+      "generate": 131072,
+      "inputPrice": "￥2.1",
+      "inputCachedPrice": "￥0.21",
+      "outputPrice": "￥8.4",
+      "url": "https://www.minimax.io/models/text",
+      "dimensions": [
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.554,
+          "normalizedScore": 0.2654867256637169,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.5096295564974672,
+          "normalizedScore": 0.2671416726053256,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.517,
+            "multiplier": 0.9857438230125091,
+            "method": "adjacent-average",
+            "neighbors": [
+              "Step 3.5 Flash",
+              "DeepSeek V4 Flash"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.763,
+          "normalizedScore": 0.6849894291754757,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        }
+      ],
+      "score": 0.39038640224046744,
+      "totalWeight": 18.176131269932092
+    },
+    {
+      "rank": 40,
+      "brand": "Z.ai",
+      "model": "GLM 4.7",
+      "time": "2025/12/22",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 204800,
+      "generate": 131072,
+      "inputPrice": "￥4",
+      "inputCachedPrice": "￥0.8",
+      "outputPrice": "￥16",
+      "url": "https://z.ai/blog/glm-4.7",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.857,
+          "normalizedScore": 0.5972850678733033,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.4292941176470588,
+          "normalizedScore": 0.11154152899624022,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.41,
+            "multiplier": 1.0470588235294118,
+            "method": "nearest-neighbor-fallback",
+            "neighbors": [
+              "Step 3.5 Flash"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.675,
+          "normalizedScore": 0.49894291754756875,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.428,
+          "normalizedScore": 0.5431578947368422,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "MCPAtlas",
+          "modelCount": 25,
+          "rawScore": 0.52,
+          "normalizedScore": 0.18510158013544023,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5,
+          "weight": 5
+        }
+      ],
+      "score": 0.38741526958054306,
+      "totalWeight": 29.500686590268852
+    },
+    {
+      "rank": 41,
+      "brand": "StepFun",
+      "model": "Step 3.5 Flash",
+      "time": "2026/02/12",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 256000,
+      "generate": 256000,
+      "inputPrice": "￥0.7",
+      "inputCachedPrice": "￥0.14",
+      "outputPrice": "￥2.1",
+      "url": "https://static.stepfun.com/blog/step-3.5-flash/",
+      "dimensions": [
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.513,
+          "normalizedScore": 0.1445427728613569,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.534,
+          "normalizedScore": 0.31434430898940424,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.69,
+          "normalizedScore": 0.5306553911205073,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.357,
+          "normalizedScore": 0.39368421052631575,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "IMOAnswerBench",
+          "modelCount": 19,
+          "rawScore": 0.854,
+          "normalizedScore": 0.6011904761904759,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.358898943540674,
+          "weight": 4.358898943540674
+        }
+      ],
+      "score": 0.3796304668478824,
+      "totalWeight": 28.859585533809526
+    },
+    {
+      "rank": 42,
+      "brand": "MiniMax",
+      "model": "MiniMax M2.7",
+      "time": "2026/03/18",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 204800,
+      "generate": 131072,
+      "inputPrice": "￥2.1",
+      "inputCachedPrice": "￥0.42",
+      "outputPrice": "￥8.4",
+      "url": "https://www.minimax.io/models/text/m27",
+      "dimensions": [
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.562,
+          "normalizedScore": 0.28908554572271394,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.511,
+          "normalizedScore": 0.26979605787854627,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "BrowseComp",
+          "modelCount": 29,
+          "rawScore": 0.763,
+          "normalizedScore": 0.6849894291754757,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
+        },
+        {
+          "name": "GDPval-AA 2",
+          "modelCount": 21,
+          "rawScore": 1158,
+          "normalizedScore": 0.24460070316423907,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
+        }
+      ],
+      "score": 0.36812143675282644,
+      "totalWeight": 22.75870696488793
+    },
+    {
+      "rank": 43,
+      "brand": "Xiaomi",
+      "model": "MiMo V2 Pro",
+      "time": "2026/03/18",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 1048576,
+      "generate": 131072,
+      "inputPrice": "$2",
+      "outputPrice": "$6",
+      "url": "https://mimo.xiaomi.com/mimo-v2-pro",
+      "dimensions": [
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.55,
+          "normalizedScore": 0.2536873156342183,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.5875877113944076,
+          "normalizedScore": 0.4181373013221977,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.571,
+            "multiplier": 1.0290502826522026,
+            "method": "adjacent-average",
+            "neighbors": [
+              "DeepSeek V4 Flash",
+              "Claude Sonnet 4.6"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "GDPval-AA 2",
+          "modelCount": 21,
+          "rawScore": 1121.1315318246982,
+          "normalizedScore": 0.19830679535999268,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "GDPval-AA",
+            "legacyScore": 1426,
+            "multiplier": 0.7862072453188627,
+            "method": "adjacent-average",
+            "neighbors": [
+              "Gemini 3.1 Pro",
+              "DeepSeek V4 Pro"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 4.58257569495584,
+          "weight": 4.58257569495584
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.4,
+          "normalizedScore": 0.48421052631578954,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        }
+      ],
+      "score": 0.35105105612939336,
+      "totalWeight": 23.698097478090187
+    },
+    {
+      "rank": 44,
+      "brand": "Google",
+      "model": "Gemma 4 26B A4B",
+      "time": "2026/04/02",
       "input": [
         "text",
         "image"
@@ -4151,27 +4514,49 @@
       "output": [
         "text"
       ],
-      "context": 131072,
-      "inputPrice": "$3",
-      "outputPrice": "$15",
-      "url": "https://x.ai/news/grok-3",
+      "context": 262144,
+      "generate": 32768,
+      "inputPrice": "$0.12",
+      "inputCachedPrice": "$0.05",
+      "outputPrice": "$0.4",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
-          "rawScore": 0.846,
-          "normalizedScore": 0.2647058823529408,
+          "modelCount": 37,
+          "rawScore": 0.823,
+          "normalizedScore": 0.44343891402714924,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.172,
+          "normalizedScore": 0.004210526315789419,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        },
+        {
+          "name": "MMMU Pro",
+          "modelCount": 20,
+          "rawScore": 0.738,
+          "normalizedScore": 0.5148514851485149,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         }
       ],
-      "score": 0.2647058823529408,
-      "totalWeight": 5.291502622129181
+      "score": 0.29778505948291634,
+      "totalWeight": 16.879453805634558
     },
     {
-      "rank": 40,
+      "rank": 45,
       "brand": "Anthropic",
       "model": "Claude Sonnet 4.5",
       "time": "2025/09/29",
@@ -4192,89 +4577,89 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.834,
-          "normalizedScore": 0.1764705882352936,
+          "normalizedScore": 0.4932126696832579,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.4622144112478032,
-          "normalizedScore": 0.16346007762109316,
+          "modelCount": 45,
+          "rawScore": 0.5235294117647059,
+          "normalizedScore": 0.2940640309900878,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
             "legacyScore": 0.5,
-            "multiplier": 0.9244288224956064,
+            "multiplier": 1.0470588235294118,
             "method": "nearest-neighbor-fallback",
             "neighbors": [
-              "DeepSeek V4 Flash"
+              "Step 3.5 Flash"
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.439,
           "normalizedScore": 0,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.336,
-          "normalizedScore": 0.27294117647058824,
+          "normalizedScore": 0.3494736842105263,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
         },
         {
           "name": "MCPAtlas",
-          "modelCount": 24,
+          "modelCount": 25,
           "rawScore": 0.438,
           "normalizedScore": 0,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.898979485566356,
-          "weight": 4.898979485566356
+          "baseWeight": 5,
+          "weight": 5
         },
         {
           "name": "OSWorld-Verified",
-          "modelCount": 16,
+          "modelCount": 17,
           "rawScore": 0.614,
           "normalizedScore": 0.49572649572649574,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4,
-          "weight": 4
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
         },
         {
           "name": "MMMU Pro",
-          "modelCount": 17,
+          "modelCount": 20,
           "rawScore": 0.634,
           "normalizedScore": 0,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 4.123105625617661,
-          "weight": 4.123105625617661
+          "baseWeight": 4.47213595499958,
+          "weight": 4.47213595499958
         }
       ],
-      "score": 0.15477408811694177,
-      "totalWeight": 35.33100840848119
+      "score": 0.24220266655302233,
+      "totalWeight": 38.09592817088609
     },
     {
-      "rank": 41,
+      "rank": 46,
       "brand": "MiniMax",
       "model": "MiniMax M2.1",
       "time": "2025/12/23",
@@ -4293,66 +4678,400 @@
       "dimensions": [
         {
           "name": "GPQA Diamond",
-          "modelCount": 28,
+          "modelCount": 37,
           "rawScore": 0.81,
-          "normalizedScore": 0,
+          "normalizedScore": 0.384615384615385,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.291502622129181,
-          "weight": 5.291502622129181
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "SWE-Bench Pro",
-          "modelCount": 33,
+          "modelCount": 37,
           "rawScore": 0.497,
-          "normalizedScore": 0,
+          "normalizedScore": 0.09734513274336275,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.744562646538029,
-          "weight": 5.744562646538029
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
         },
         {
           "name": "Terminal-Bench 2.1",
-          "modelCount": 38,
-          "rawScore": 0.44280140597539547,
-          "normalizedScore": 0.12531939284283808,
+          "modelCount": 45,
+          "rawScore": 0.5015411764705883,
+          "normalizedScore": 0.2514754471915234,
           "source": "projected",
           "projection": {
             "fromBenchmark": "Terminal-Bench 2",
             "legacyScore": 0.479,
-            "multiplier": 0.9244288224956064,
+            "multiplier": 1.0470588235294118,
             "method": "nearest-neighbor-fallback",
             "neighbors": [
-              "DeepSeek V4 Flash"
+              "Step 3.5 Flash"
             ]
           },
           "configuredWeight": 1,
-          "baseWeight": 6.164414002968976,
-          "weight": 6.164414002968976
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         },
         {
           "name": "BrowseComp",
-          "modelCount": 27,
+          "modelCount": 29,
           "rawScore": 0.62,
           "normalizedScore": 0.3826638477801268,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.196152422706632,
-          "weight": 5.196152422706632
+          "baseWeight": 5.385164807134504,
+          "weight": 5.385164807134504
         },
         {
           "name": "Humanity's Last Exam",
-          "modelCount": 32,
+          "modelCount": 40,
           "rawScore": 0.22,
+          "normalizedScore": 0.10526315789473682,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        }
+      ],
+      "score": 0.24016423007820575,
+      "totalWeight": 30.583449120567074
+    },
+    {
+      "rank": 47,
+      "brand": "OpenAI",
+      "model": "GPT-OSS 120B",
+      "time": "2025/08/05",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 131072,
+      "generate": 32768,
+      "inputPrice": "$0.15",
+      "outputPrice": "$0.6",
+      "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-oss/",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.809,
+          "normalizedScore": 0.38009049773755693,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.19,
+          "normalizedScore": 0.042105263157894715,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        }
+      ],
+      "score": 0.2078045662179842,
+      "totalWeight": 12.407317850634978
+    },
+    {
+      "rank": 48,
+      "brand": "DeepSeek",
+      "model": "DeepSeek R1 0528",
+      "time": "2025/05/28",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 128000,
+      "generate": 32768,
+      "inputPrice": "$0.5",
+      "outputPrice": "$2.5",
+      "url": "https://api-docs.deepseek.com/news/news250528",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.81,
+          "normalizedScore": 0.384615384615385,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.177,
+          "normalizedScore": 0.014736842105263112,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        }
+      ],
+      "score": 0.19607203204937682,
+      "totalWeight": 12.407317850634978
+    },
+    {
+      "rank": 49,
+      "brand": "Nvidia",
+      "model": "Nemotron 3 Ultra",
+      "time": "2026/06/04",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 1000000,
+      "generate": 128000,
+      "inputPrice": "$0.6",
+      "inputCachedPrice": "$0.2",
+      "outputPrice": "$3",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+      "dimensions": [
+        {
+          "name": "SWE-Bench Pro",
+          "modelCount": 37,
+          "rawScore": 0.464,
           "normalizedScore": 0,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.656854249492381,
-          "weight": 5.656854249492381
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.564,
+          "normalizedScore": 0.37245072348182745,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
         }
       ],
-      "score": 0.0984155874723163,
-      "totalWeight": 28.0534859438352
+      "score": 0.1953312453120586,
+      "totalWeight": 12.790966462797588
+    },
+    {
+      "rank": 50,
+      "brand": "Anthropic",
+      "model": "Claude Haiku 4.5",
+      "time": "2025/10/15",
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 200000,
+      "generate": 64000,
+      "inputPrice": "$1",
+      "inputCachedPrice": "$0.1",
+      "outputPrice": "$5",
+      "url": "https://www.anthropic.com/news/claude-haiku-4-5",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.73,
+          "normalizedScore": 0.022624434389140295,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.4292941176470588,
+          "normalizedScore": 0.11154152899624022,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.41,
+            "multiplier": 1.0470588235294118,
+            "method": "nearest-neighbor-fallback",
+            "neighbors": [
+              "Step 3.5 Flash"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        },
+        {
+          "name": "OSWorld-Verified",
+          "modelCount": 17,
+          "rawScore": 0.507,
+          "normalizedScore": 0.2670940170940171,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 4.123105625617661,
+          "weight": 4.123105625617661
+        }
+      ],
+      "score": 0.11748319501553971,
+      "totalWeight": 16.91407208841525
+    },
+    {
+      "rank": 51,
+      "brand": "Anthropic",
+      "model": "Claude Opus 4",
+      "time": "2025/05/22",
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 200000,
+      "generate": 32000,
+      "inputPrice": "$15",
+      "inputCachedPrice": "$1.5",
+      "outputPrice": "$30",
+      "url": "https://www.anthropic.com/news/claude-4",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.725,
+          "normalizedScore": 0,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.4523294117647059,
+          "normalizedScore": 0.15615814059473634,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.432,
+            "multiplier": 1.0470588235294118,
+            "method": "nearest-neighbor-fallback",
+            "neighbors": [
+              "Step 3.5 Flash"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        }
+      ],
+      "score": 0.0818969118460409,
+      "totalWeight": 12.790966462797588
+    },
+    {
+      "rank": 52,
+      "brand": "OpenAI",
+      "model": "GPT-OSS 20B",
+      "time": "2025/08/05",
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 131072,
+      "generate": 32768,
+      "inputPrice": "$0.04",
+      "outputPrice": "$0.2",
+      "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-oss/",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.742,
+          "normalizedScore": 0.076923076923077,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Humanity's Last Exam",
+          "modelCount": 40,
+          "rawScore": 0.17,
+          "normalizedScore": 0,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.324555320336759,
+          "weight": 6.324555320336759
+        }
+      ],
+      "score": 0.037712003162633095,
+      "totalWeight": 12.407317850634978
+    },
+    {
+      "rank": 53,
+      "brand": "Anthropic",
+      "model": "Claude Sonnet 4",
+      "time": "2025/05/22",
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 200000,
+      "generate": 64000,
+      "inputPrice": "$3",
+      "inputCachedPrice": "$0.3",
+      "outputPrice": "$15",
+      "url": "https://www.anthropic.com/news/claude-4",
+      "dimensions": [
+        {
+          "name": "GPQA Diamond",
+          "modelCount": 37,
+          "rawScore": 0.727,
+          "normalizedScore": 0.009049773755656118,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 6.082762530298219,
+          "weight": 6.082762530298219
+        },
+        {
+          "name": "Terminal-Bench 2.1",
+          "modelCount": 45,
+          "rawScore": 0.37170588235294116,
+          "normalizedScore": 0,
+          "source": "projected",
+          "projection": {
+            "fromBenchmark": "Terminal-Bench 2",
+            "legacyScore": 0.355,
+            "multiplier": 1.0470588235294118,
+            "method": "nearest-neighbor-fallback",
+            "neighbors": [
+              "Step 3.5 Flash"
+            ]
+          },
+          "configuredWeight": 1,
+          "baseWeight": 6.708203932499369,
+          "weight": 6.708203932499369
+        }
+      ],
+      "score": 0.00430363294819721,
+      "totalWeight": 12.790966462797588
     }
   ],
   "priceMap": {
