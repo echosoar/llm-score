@@ -177,19 +177,6 @@
             "url": "https://www.minimax.io/models/text/m3"
         },
         {
-            "brand": "StepFun",
-            "model": "Step 3.7 Flash",
-            "time": "2026/05/19",
-            "input": ["text", "image", "video"],
-            "output": ["text"],
-            "context": 256000,
-            "generate": 256000,
-            "inputPrice": "￥1.35",
-            "inputCachedPrice": "￥0.27",
-            "outputPrice": "￥8.1",
-            "url": "https://static.stepfun.com/blog/step-3.7-flash/"
-        },
-        {
             "brand": "Anthropic",
             "model": "Claude Opus 4.8",
             "time": "2026/05/28",
@@ -201,6 +188,31 @@
             "inputCachedPrice": "$0.5",
             "outputPrice": "$25",
             "url": "https://www.anthropic.com/news/claude-opus-4-8"
+        },
+        {
+            "brand": "Mistral",
+            "model": "Medium 3.5",
+            "time": "2026/05/22",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 262144,
+            "generate": 262144,
+            "inputPrice": "$1.5",
+            "outputPrice": "$7.5",
+            "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/"
+        },
+        {
+            "brand": "StepFun",
+            "model": "Step 3.7 Flash",
+            "time": "2026/05/19",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "context": 256000,
+            "generate": 256000,
+            "inputPrice": "￥1.35",
+            "inputCachedPrice": "￥0.27",
+            "outputPrice": "￥8.1",
+            "url": "https://static.stepfun.com/blog/step-3.7-flash/"
         },
         {
             "brand": "Alibaba",
@@ -850,6 +862,7 @@
                 "Claude Fable 5(from GPT-5.6 Sol)": 0.88,
                 "MiniMax M3": 0.835,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.843,
+                "Medium 3.5": 0.486,
                 "DeepSeek V4 Pro": 0.834,
                 "DeepSeek V4 Flash": 0.732,
                 "GPT-5.5": 0.844,

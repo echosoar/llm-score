@@ -319,10 +319,10 @@
     },
     "BrowseComp": {
       "included": true,
-      "modelCount": 29,
+      "modelCount": 30,
       "configuredWeight": 1,
-      "baseWeight": 5.385164807134504,
-      "weight": 5.385164807134504
+      "baseWeight": 5.477225575051661,
+      "weight": 5.477225575051661
     },
     "GDPval-AA 2": {
       "included": true,
@@ -542,13 +542,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.88,
           "normalizedScore": 0.9323467230443974,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -611,8 +611,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.9698040405520764,
-      "totalWeight": 55.52909533177252
+      "score": 0.969742043469389,
+      "totalWeight": 55.62115609968968
     },
     {
       "rank": 2,
@@ -665,13 +665,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.912,
           "normalizedScore": 1,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -724,8 +724,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.9249455196794517,
-      "totalWeight": 45.32322717585664
+      "score": 0.9250976616872816,
+      "totalWeight": 45.41528794377379
     },
     {
       "rank": 3,
@@ -789,13 +789,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.904,
           "normalizedScore": 0.9830866807610994,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -848,8 +848,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.9113658346853758,
-      "totalWeight": 51.405989706154855
+      "score": 0.9114940468430132,
+      "totalWeight": 51.498050474072016
     },
     {
       "rank": 4,
@@ -912,13 +912,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.844,
           "normalizedScore": 0.8562367864693445,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -991,8 +991,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.8192201435262882,
-      "totalWeight": 59.88799427531319
+      "score": 0.8192769587554939,
+      "totalWeight": 59.98005504323035
     },
     {
       "rank": 5,
@@ -1056,13 +1056,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.843,
           "normalizedScore": 0.8541226215644819,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -1135,8 +1135,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.7963358739156579,
-      "totalWeight": 59.88799427531319
+      "score": 0.7964245682718093,
+      "totalWeight": 59.98005504323035
     },
     {
       "rank": 6,
@@ -1540,13 +1540,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.842,
           "normalizedScore": 0.8520084566596193,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -1579,8 +1579,8 @@
           "weight": 5
         }
       ],
-      "score": 0.7181114445494727,
-      "totalWeight": 39.94234806410775
+      "score": 0.7184193462299595,
+      "totalWeight": 40.03440883202491
     },
     {
       "rank": 11,
@@ -1697,13 +1697,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.827,
           "normalizedScore": 0.8202959830866806,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -1756,8 +1756,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.7044225986096737,
-      "totalWeight": 47.7842419766483
+      "score": 0.7046454101499263,
+      "totalWeight": 47.87630274456546
     },
     {
       "rank": 13,
@@ -2021,13 +2021,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.793,
           "normalizedScore": 0.7484143763213531,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -2100,8 +2100,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.6485048683515285,
-      "totalWeight": 51.72571661514481
+      "score": 0.6486823700988137,
+      "totalWeight": 51.81777738306197
     },
     {
       "rank": 16,
@@ -2227,13 +2227,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.832,
           "normalizedScore": 0.8308668076109935,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -2286,8 +2286,8 @@
           "weight": 4.123105625617661
         }
       ],
-      "score": 0.6257316425084097,
-      "totalWeight": 48.648029384681244
+      "score": 0.626119103852183,
+      "totalWeight": 48.740090152598405
     },
     {
       "rank": 18,
@@ -2339,13 +2339,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.834,
           "normalizedScore": 0.8350951374207187,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -2388,8 +2388,8 @@
           "weight": 5
         }
       ],
-      "score": 0.6221285356106434,
-      "totalWeight": 44.52492375906358
+      "score": 0.6225679617419967,
+      "totalWeight": 44.616984526980744
     },
     {
       "rank": 19,
@@ -2433,13 +2433,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.835,
           "normalizedScore": 0.8372093023255812,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -2482,8 +2482,8 @@
           "weight": 4.47213595499958
         }
       ],
-      "score": 0.6187999673112307,
-      "totalWeight": 36.353948545505176
+      "score": 0.6193516581953762,
+      "totalWeight": 36.44600931342233
     },
     {
       "rank": 20,
@@ -2533,13 +2533,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.799,
           "normalizedScore": 0.7610993657505286,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "IMOAnswerBench",
@@ -2552,8 +2552,8 @@
           "weight": 4.358898943540674
         }
       ],
-      "score": 0.5947020991588943,
-      "totalWeight": 28.617792743770988
+      "score": 0.5952356671945341,
+      "totalWeight": 28.709853511688145
     },
     {
       "rank": 21,
@@ -2605,13 +2605,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.793,
           "normalizedScore": 0.7484143763213531,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -2644,8 +2644,8 @@
           "weight": 5
         }
       ],
-      "score": 0.5868727180025466,
-      "totalWeight": 39.94234806410775
+      "score": 0.5872441896827664,
+      "totalWeight": 40.03440883202491
     },
     {
       "rank": 22,
@@ -2699,13 +2699,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.747,
           "normalizedScore": 0.6511627906976744,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -2758,8 +2758,8 @@
           "weight": 4.47213595499958
         }
       ],
-      "score": 0.5838796902273339,
-      "totalWeight": 48.76126639614015
+      "score": 0.5840064806478991,
+      "totalWeight": 48.85332716405731
     },
     {
       "rank": 23,
@@ -2825,13 +2825,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.859,
           "normalizedScore": 0.8879492600422833,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -2904,8 +2904,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.574374384904868,
-      "totalWeight": 59.88799427531319
+      "score": 0.5748556772908764,
+      "totalWeight": 59.98005504323035
     },
     {
       "rank": 24,
@@ -2947,13 +2947,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.759,
           "normalizedScore": 0.6765327695560254,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -2976,8 +2976,8 @@
           "weight": 5
         }
       ],
-      "score": 0.5622870333743393,
-      "totalWeight": 23.417924059970634
+      "score": 0.5627343986228134,
+      "totalWeight": 23.50998482788779
     },
     {
       "rank": 25,
@@ -3051,13 +3051,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.779,
           "normalizedScore": 0.718816067653277,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -3100,8 +3100,8 @@
           "weight": 4.47213595499958
         }
       ],
-      "score": 0.5448493682406109,
-      "totalWeight": 37.47048676868494
+      "score": 0.5452757372967656,
+      "totalWeight": 37.562547536602096
     },
     {
       "rank": 27,
@@ -3155,13 +3155,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.771,
           "normalizedScore": 0.7019027484143763,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -3204,8 +3204,8 @@
           "weight": 4.47213595499958
         }
       ],
-      "score": 0.5332165531368798,
-      "totalWeight": 44.63816077052249
+      "score": 0.5335637318482779,
+      "totalWeight": 44.73022153843965
     },
     {
       "rank": 28,
@@ -3269,13 +3269,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.84,
           "normalizedScore": 0.8477801268498941,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -3358,8 +3358,8 @@
           "weight": 3.605551275463989
         }
       ],
-      "score": 0.5148995487624002,
-      "totalWeight": 56.72571661514481
+      "score": 0.5154389088545213,
+      "totalWeight": 56.81777738306197
     },
     {
       "rank": 29,
@@ -3486,13 +3486,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.78,
           "normalizedScore": 0.7209302325581396,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -3525,8 +3525,8 @@
           "weight": 4.123105625617661
         }
       ],
-      "score": 0.5022972266484143,
-      "totalWeight": 26.89992862912897
+      "score": 0.5030429116781471,
+      "totalWeight": 26.991989397046126
     },
     {
       "rank": 31,
@@ -3578,13 +3578,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.732,
           "normalizedScore": 0.6194503171247356,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -3637,8 +3637,8 @@
           "weight": 5
         }
       ],
-      "score": 0.4828737153099549,
-      "totalWeight": 44.52492375906358
+      "score": 0.4831555215991042,
+      "totalWeight": 44.616984526980744
     },
     {
       "rank": 32,
@@ -3863,13 +3863,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.749,
           "normalizedScore": 0.6553911205073996,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -3912,8 +3912,8 @@
           "weight": 4.123105625617661
         }
       ],
-      "score": 0.4380585800341146,
-      "totalWeight": 43.648029384681244
+      "score": 0.43851600480163455,
+      "totalWeight": 43.740090152598405
     },
     {
       "rank": 36,
@@ -3946,13 +3946,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.549,
           "normalizedScore": 0.2325581395348838,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -3965,8 +3965,8 @@
           "weight": 6.324555320336759
         }
       ],
-      "score": 0.4355317685457464,
-      "totalWeight": 17.792482657769483
+      "score": 0.4344869608752953,
+      "totalWeight": 17.88454342568664
     },
     {
       "rank": 37,
@@ -4194,17 +4194,17 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.763,
           "normalizedScore": 0.6849894291754757,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         }
       ],
-      "score": 0.39038640224046744,
-      "totalWeight": 18.176131269932092
+      "score": 0.3918710253949736,
+      "totalWeight": 18.26819203784925
     },
     {
       "rank": 40,
@@ -4255,13 +4255,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.675,
           "normalizedScore": 0.49894291754756875,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -4284,8 +4284,8 @@
           "weight": 5
         }
       ],
-      "score": 0.38741526958054306,
-      "totalWeight": 29.500686590268852
+      "score": 0.38776222354164597,
+      "totalWeight": 29.59274735818601
     },
     {
       "rank": 41,
@@ -4327,13 +4327,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.69,
           "normalizedScore": 0.5306553911205073,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -4356,8 +4356,8 @@
           "weight": 4.358898943540674
         }
       ],
-      "score": 0.3796304668478824,
-      "totalWeight": 28.859585533809526
+      "score": 0.38011069758703525,
+      "totalWeight": 28.951646301726683
     },
     {
       "rank": 42,
@@ -4399,13 +4399,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.763,
           "normalizedScore": 0.6849894291754757,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "GDPval-AA 2",
@@ -4418,8 +4418,8 @@
           "weight": 4.58257569495584
         }
       ],
-      "score": 0.36812143675282644,
-      "totalWeight": 22.75870696488793
+      "score": 0.3693980289028975,
+      "totalWeight": 22.85076773280509
     },
     {
       "rank": 43,
@@ -4606,13 +4606,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.439,
           "normalizedScore": 0,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -4655,8 +4655,8 @@
           "weight": 4.47213595499958
         }
       ],
-      "score": 0.24220266655302233,
-      "totalWeight": 38.09592817088609
+      "score": 0.24161878235031695,
+      "totalWeight": 38.18798893880325
     },
     {
       "rank": 46,
@@ -4717,13 +4717,13 @@
         },
         {
           "name": "BrowseComp",
-          "modelCount": 29,
+          "modelCount": 30,
           "rawScore": 0.62,
           "normalizedScore": 0.3826638477801268,
           "source": "reported",
           "configuredWeight": 1,
-          "baseWeight": 5.385164807134504,
-          "weight": 5.385164807134504
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
         },
         {
           "name": "Humanity's Last Exam",
@@ -4736,8 +4736,8 @@
           "weight": 6.324555320336759
         }
       ],
-      "score": 0.24016423007820575,
-      "totalWeight": 30.583449120567074
+      "score": 0.24059188798124406,
+      "totalWeight": 30.675509888484232
     },
     {
       "rank": 47,
@@ -4928,6 +4928,38 @@
     },
     {
       "rank": 51,
+      "brand": "Mistral",
+      "model": "Medium 3.5",
+      "time": "2026/05/22",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ],
+      "context": 262144,
+      "generate": 262144,
+      "inputPrice": "$1.5",
+      "outputPrice": "$7.5",
+      "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
+      "dimensions": [
+        {
+          "name": "BrowseComp",
+          "modelCount": 30,
+          "rawScore": 0.486,
+          "normalizedScore": 0.09936575052854119,
+          "source": "reported",
+          "configuredWeight": 1,
+          "baseWeight": 5.477225575051661,
+          "weight": 5.477225575051661
+        }
+      ],
+      "score": 0.09936575052854119,
+      "totalWeight": 5.477225575051661
+    },
+    {
+      "rank": 52,
       "brand": "Anthropic",
       "model": "Claude Opus 4",
       "time": "2025/05/22",
@@ -4980,7 +5012,7 @@
       "totalWeight": 12.790966462797588
     },
     {
-      "rank": 52,
+      "rank": 53,
       "brand": "OpenAI",
       "model": "GPT-OSS 20B",
       "time": "2025/08/05",
@@ -5021,7 +5053,7 @@
       "totalWeight": 12.407317850634978
     },
     {
-      "rank": 53,
+      "rank": 54,
       "brand": "Anthropic",
       "model": "Claude Sonnet 4",
       "time": "2025/05/22",
