@@ -247,6 +247,32 @@
       header { align-items: start; flex-direction: column; gap: 8px; }
       #status { text-align: left; white-space: normal; }
     }
+
+    .site-footer {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-link {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+
+    .footer-counter {
+      display: block;
+      height: 48px;
+      width: auto;
+    }
   </style>
 </head>
 <body>
@@ -269,6 +295,11 @@
         <tbody></tbody>
       </table>
     </div>
+
+    <footer class="site-footer">
+      <a class="footer-link" href="https://github.com/echosoar/llm-score" target="_blank" rel="noopener">GitHub</a>
+      <img class="footer-counter" src="https://not.aiznb.com/img?url=https://echosoar.github.io/llm-score/"  />
+    </footer>
   </main>
 
   <script>
