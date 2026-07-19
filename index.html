@@ -128,7 +128,7 @@
 
     table {
       width: 100%;
-      min-width: 1980px;
+      min-width: 2180px;
       border-collapse: collapse;
       font-size: 13px;
       font-variant-numeric: tabular-nums;
@@ -282,6 +282,8 @@
 let models = [];
 let benchmarks = [];
 let priceMap = {};
+let rankMap = new Map();
+let priceNormMap = new Map();
     let sortState = { key: 'score', direction: 'desc' };
     let selectedBrands = new Set();
     let lang = 'zh';
@@ -293,15 +295,18 @@ let priceMap = {};
         loadFailed: '数据加载失败',
         status: (m, b) => `${m} 个模型 · ${b} 个 benchmarks`,
         brandGroup: '厂商过滤',
+        colRank: '#',
         colModel: '模型名称',
         colBrand: '厂商',
-        colScore: '综合评分',
+        colScore: '性能指数',
         colTime: '发布日期',
         colInput: '输入格式',
         colOutput: '输出格式',
         colInputPrice: '输入价格（1M）',
         colInputCachedPrice: '输入缓存价格（1M）',
         colOutputPrice: '输出价格（1M）',
+        colPriceIndex: '价格指数',
+        colPriceScore: '价格综合指数',
         colContext: '输入窗口',
         colGenerate: '输出窗口',
         colUrl: '官网',
@@ -316,15 +321,18 @@ let priceMap = {};
         loadFailed: 'Failed to load data',
         status: (m, b) => `${m} models · ${b} benchmarks`,
         brandGroup: 'Vendor filter',
+        colRank: '#',
         colModel: 'Model',
         colBrand: 'Vendor',
-        colScore: 'Overall Score',
+        colScore: 'Performance Index',
         colTime: 'Release Date',
         colInput: 'Input Formats',
         colOutput: 'Output Formats',
         colInputPrice: 'Input Price (1M)',
         colInputCachedPrice: 'Cache Input Price (1M)',
         colOutputPrice: 'Output Price (1M)',
+        colPriceIndex: 'Price Index',
+        colPriceScore: 'Price Composite Index',
         colContext: 'Context Window',
         colGenerate: 'Output Window',
         colUrl: 'Website',
@@ -378,24 +386,65 @@ const formatWindow = (value) => {
   return String(num);
 };
 
+const PRICE_REGEX = /^([￥$])\s*([\d.]+)$/;
+
+const getPriceAmount = (price) => {
+  if (price === null || price === undefined || price === '') return null;
+  const match = PRICE_REGEX.exec(String(price).trim());
+  if (!match) return null;
+  const [, symbol, amount] = match;
+  const num = Number(amount);
+  if (!Number.isFinite(num)) return null;
+  const target = lang === 'zh' ? '￥' : '$';
+  if (symbol === target) return num;
+  if (!priceMap['$'] || !priceMap['￥']) return num;
+  const rate = target === '￥' ? priceMap['$'] / priceMap['￥'] : priceMap['￥'] / priceMap['$'];
+  return num * rate;
+};
+
 const formatPrice = (price) => {
   if (price === null || price === undefined || price === '') return '-';
-  const match = /^([￥$])\s*([\d.]+)$/.exec(String(price).trim());
-  if (!match) return String(price);
-  const [, symbol, amount] = match;
+  const amount = getPriceAmount(price);
+  if (amount === null) return String(price);
   const target = lang === 'zh' ? '￥' : '$';
-  if (symbol === target) return `${symbol}${amount}`;
-  if (!priceMap['$'] || !priceMap['￥']) return `${symbol}${amount}`;
-  const rate = target === '￥' ? priceMap['$'] / priceMap['￥'] : priceMap['￥'] / priceMap['$'];
-  const converted = Number(amount) * rate;
-  const rounded = Number.isInteger(converted) ? converted : Number(converted.toFixed(2));
+  const rounded = Number.isInteger(amount) ? amount : Number(amount.toFixed(2));
   return `${target}${rounded}`;
+};
+
+const getPriceIndex = (model) => {
+  const input = getPriceAmount(model.inputPrice);
+  if (input === null) return null;
+  const cached = getPriceAmount(model.inputCachedPrice);
+  const output = getPriceAmount(model.outputPrice);
+  if (output === null) return null;
+  return input * 5 + (cached ?? input) * 20 + output * 1;
+};
+
+const formatPriceIndex = (model) => {
+  const value = getPriceIndex(model);
+  if (value === null) return '-';
+  const target = lang === 'zh' ? '￥' : '$';
+  const rounded = Number.isInteger(value) ? value : Number(value.toFixed(2));
+  return `${target}${rounded}`;
+};
+
+const getPriceMultiplier = (model) => priceNormMap.get(model.model) ?? null;
+
+const getPriceScore = (model) => {
+  const multiplier = getPriceMultiplier(model);
+  if (multiplier === null || model.score === null || model.score === undefined) return null;
+  return model.score * Math.sqrt((multiplier + 0.1) * 0.9);
 };
 
     const getSortValue = (model, key) => {
       if (key.startsWith('benchmark:')) {
         return getDimension(model, key.slice('benchmark:'.length))?.rawScore ?? null;
       }
+      if (key === 'inputPrice' || key === 'inputCachedPrice' || key === 'outputPrice') {
+        return getPriceAmount(model[key]);
+      }
+      if (key === 'priceIndex') return getPriceIndex(model);
+      if (key === 'priceScore') return getPriceScore(model);
       if (key === 'input' || key === 'output') return formatFormats(model[key]);
       return model[key] ?? null;
     };
@@ -449,9 +498,11 @@ const formatPrice = (price) => {
     const renderHeader = () => {
       const row = document.createElement('tr');
       row.append(
+        makeHeader(t('colRank'), null, false),
         makeHeader(t('colModel'), 'model', false),
         makeHeader(t('colBrand'), 'brand', false),
         makeHeader(t('colScore'), 'score', true),
+        makeHeader(t('colPriceScore'), 'priceScore', true),
         makeHeader(t('colTime'), 'time', true),
         makeHeader(t('colInput'), 'input', true),
         makeHeader(t('colOutput'), 'output', true),
@@ -480,9 +531,11 @@ const formatPrice = (price) => {
       const fragment = document.createDocumentFragment();
       rows.forEach((model) => {
         const row = document.createElement('tr');
+        appendTextCell(row, String(rankMap.get(model.model) ?? '-'), 'numeric');
         appendTextCell(row, model.model, 'model-name');
         appendTextCell(row, model.brand);
         appendTextCell(row, formatScore(model.score), 'numeric');
+        appendTextCell(row, formatScore(getPriceScore(model)), 'numeric');
         appendTextCell(row, model.time ?? '-', model.time ? '' : 'missing');
         appendTextCell(row, formatFormats(model.input), model.input?.length ? '' : 'missing');
         appendTextCell(row, formatFormats(model.output), model.output?.length ? '' : 'missing');
@@ -600,6 +653,28 @@ const formatPrice = (price) => {
         if (!models.length || !benchmarks.length) {
           throw new Error(i18n[lang].noDataError);
         }
+
+        rankMap = new Map(
+          [...models]
+            .sort((a, b) => compareValues(getSortValue(b, 'score'), getSortValue(a, 'score'))
+              || a.model.localeCompare(b.model, 'zh-CN'))
+            .map((model, index) => [model.model, index + 1]),
+        );
+        priceNormMap = (() => {
+          const items = models
+            .map((model) => ({ model, index: getPriceIndex(model) }))
+            .filter(({ index }) => index !== null);
+          const indices = items.map(({ index }) => index);
+          const min = Math.min(...indices);
+          const max = Math.max(...indices);
+          const range = max - min;
+          const map = new Map();
+          items.forEach(({ model, index }) => {
+            const norm = range === 0 ? 1 : (max - index) / range;
+            map.set(model.model, norm);
+          });
+          return map;
+        })();
 
         render();
         status.textContent = i18n[lang].status(models.length, benchmarks.length);
