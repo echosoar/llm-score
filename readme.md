@@ -1,3 +1,4 @@
+### LLM Score
 1. Anthropic Claude Fable 5 (score: 0.9696)
 2. Moonshot Kimi K3 (score: 0.9267)
 3. OpenAI GPT-5.6 Sol (score: 0.9174)
