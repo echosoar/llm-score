@@ -577,6 +577,19 @@
             "url": "https://api-docs.deepseek.com/news/news251201/"
         },
         {
+            "brand": "Google",
+            "model": "Gemini 3 Pro",
+            "time": "2025/11/18",
+            "input": ["text", "image", "pdf", "video", "audio"],
+            "output": ["text"],
+            "context": 1048576,
+            "generate": 65536,
+            "inputPrice": "$2",
+            "inputCachedPrice": "$0.2",
+            "outputPrice": "$12",
+            "url": "https://blog.google/products-and-platforms/products/gemini/gemini-3/"
+        },
+        {
             "brand": "Anthropic",
             "model": "Claude Haiku 4.5",
             "time": "2025/10/15",
@@ -721,6 +734,7 @@
                 "GLM 4.7": 0.857,
                 "GPT-5.2": 0.924,
                 "DeepSeek V3.2": 0.857,
+                "Gemini 3 Pro": 0.919,
                 "Claude Haiku 4.5": 0.73,
                 "Claude Sonnet 4.5": 0.834,
                 "GPT-5": 0.873,
@@ -770,8 +784,33 @@
                 "Claude Opus 4.6(from Claude Opus 4.7)": 0.534,
                 "Step 3.5 Flash(from Step 3.7 Flash)": 0.513,
                 "Kimi K2.5": 0.507,
+                "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.433,
                 "MiniMax M2.1": 0.497,
                 "GPT-5.2": 0.565
+            }
+        },
+        {
+            "name": "SWE-Bench Verified",
+            "scores": {
+                "Hy 3": 0.78,
+                "Seed 2.1 Pro(from Hy 3)": 0.76,
+                "GLM 5.2(from Hy 3)": 0.842,
+                "Qwen 3.7 Plus": 0.777,
+                "Claude Opus 4.8(from Hy 3)": 0.886,
+                "Qwen 3.7 Max": 0.804,
+                "DeepSeek V4 Pro": 0.806,
+                "DeepSeek V4 Flash": 0.79,
+                "GPT-5.5(from Hy 3)": 0.844,
+                "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.788,
+                "Kimi K2.6(from Qwen 3.7 Max)": 0.802,
+                "GLM 5.1(from Hy 3)": 0.75,
+                "Gemini 3.1 Pro": 0.806,
+                "Claude Sonnet 4.6(from Gemini 3.1 Pro)": 0.796,
+                "MiniMax M2.5": 0.802,
+                "Claude Opus 4.6(from Gemini 3.1 Pro)": 0.808,
+                "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.762,
+                "MiniMax M2.1": 0.74,
+                "GPT-5.2(from Gemini 3.1 Pro)": 0.8
             }
         },
         {
@@ -785,8 +824,21 @@
                 "Claude Fable 5(from GPT-5.6 Sol)": 0.697,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.59,
                 "GPT-5.5": 0.67,
-                "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.118,
-                "// Claude Sonnet 4.6": 0.299
+                "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.118
+            }
+        },
+        {
+            "name": "DeepSWE",
+            "upgrade": "DeepSWE 1.1",
+            "scores": {
+                "Hy 3": 0.28,
+                "Seed 2.1 Pro(from Hy 3)": 0.327,
+                "Qwen 3.7 Max(from Hy 3)": 0.18,
+                "Claude Opus 4.8(from Hy 3)": 0.58,
+                "DeepSeek V4 Pro(from Hy 3)": 0.08,
+                "DeepSeek V4 Flash(from Hy 3)": 0.071,
+                "GPT-5.5": 0.7,
+                "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.1
             }
         },
         {
@@ -844,6 +896,7 @@
                 "MiniMax M2.1": 0.479,
                 "GLM 4.7": 0.41,
                 "DeepSeek V3.2": 0.464,
+                "Gemini 3 Pro": 0.542,
                 "Claude Haiku 4.5": 0.41,
                 "Claude Sonnet 4.5": 0.5,
                 "Qwen 3.5 397B A17B": 0.525,
@@ -881,6 +934,7 @@
                 "GLM 5": 0.759,
                 "Kimi K2.5": 0.749,
                 "MiniMax M2.1": 0.62,
+                "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.592,
                 "GPT-5.2": 0.779,
                 "GLM 4.7": 0.675,
                 "GPT-5": 0.549
@@ -921,6 +975,7 @@
                 "MiMo V2 Pro": 1426,
                 "Gemini 3.1 Pro": 1317,
                 "Claude Sonnet 4.6": 1633,
+                "Gemini 3 Pro(from Gemini 3.1 Pro)": 1195,
                 "Claude Opus 4.6": 1606
             }
         },
@@ -956,6 +1011,7 @@
                 "Claude Opus 4.6": 0.53,
                 "Claude Sonnet 4.5": 0.336,
                 "GLM 5": 0.504,
+                "Gemini 3 Pro": 0.458,
                 "Step 3.5 Flash(from Step 3.7 Flash)": 0.357,
                 "Qwen 3.5 397B A17B": 0.483,
                 "Kimi K2.5": 0.502,
@@ -1019,6 +1075,7 @@
                 "GLM 5": 0.678,
                 "Claude Opus 4.6(from Claude Sonnet 4.6)": 0.595,
                 "Claude Sonnet 4.5(from Claude Sonnet 4.6)": 0.438,
+                "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.541,
                 "GPT-5.2": 0.606,
                 "GLM 4.7": 0.52
             }
@@ -1067,6 +1124,7 @@
                 "Claude Sonnet 4.6": 0.745,
                 "Claude Opus 4.6(from Qwen 3.7 Plus)": 0.739,
                 "Claude Sonnet 4.5": 0.634,
+                "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.81,
                 "GPT-5.2": 0.795
             }
         },

@@ -9,7 +9,7 @@ const readmePath = path.join(__dirname, 'readme.md');
 // Each benchmark's effective multiplier is this value × sqrt(the number of models reporting it).
 // A multiplier of 0 excludes that benchmark from the final score.
 const DIMENSION_WEIGHTS = {
-  // 'SWE-Bench Pro': 1.5,
+  'SWE-Bench Verified': 0,
 };
 
 function getCanonicalModelName(scoreKey) {
@@ -32,14 +32,45 @@ function getConfiguredWeight(benchmarkName) {
   return weight;
 }
 
-function getDimensionWeights(benchmarkName, modelCount) {
+function getMonthsDifference(timeStr, referenceDate = new Date()) {
+  const modelDate = new Date(timeStr);
+  const diffMs = referenceDate.getTime() - modelDate.getTime();
+  const diffDays = diffMs / (1000 * 60 * 60 * 24);
+  return Math.max(0, Math.floor(diffDays / 30));
+}
+
+function getTimeWeight(benchmark, modelTimeByName) {
+  if (benchmark.entries.length === 0) {
+    return { timeWeight: 1, topModel: null, monthsDiff: null };
+  }
+
+  const topEntry = benchmark.entries.reduce((best, entry) =>
+    entry.rawScore > best.rawScore ? entry : best,
+  );
+  const modelTime = modelTimeByName.get(topEntry.modelName);
+  if (!modelTime) {
+    return { timeWeight: 1, topModel: topEntry.modelName, monthsDiff: null };
+  }
+
+  const monthsDiff = getMonthsDifference(modelTime);
+  return {
+    timeWeight: Math.pow(0.99, monthsDiff),
+    topModel: topEntry.modelName,
+    topModelTime: modelTime,
+    monthsDiff,
+  };
+}
+
+function getDimensionWeights(benchmarkName, modelCount, timeWeight) {
   const configuredWeight = getConfiguredWeight(benchmarkName);
   const baseWeight = Math.sqrt(modelCount);
+  const resolvedTimeWeight = timeWeight ?? 1;
 
   return {
     configuredWeight,
     baseWeight,
-    weight: configuredWeight * baseWeight,
+    timeWeight: resolvedTimeWeight,
+    weight: configuredWeight * baseWeight * resolvedTimeWeight,
   };
 }
 
@@ -228,6 +259,9 @@ function calculateScores(data, benchmarks) {
       },
     ]),
   );
+  const modelTimeByName = new Map(
+    data.models.map((model) => [model.model, model.time]),
+  );
 
   for (const benchmark of benchmarks) {
     // A benchmark with `upgrade` is legacy calibration data, not a final-score dimension.
@@ -238,9 +272,14 @@ function calculateScores(data, benchmarks) {
     const rawValues = benchmark.entries.map(({ rawScore }) => rawScore);
     const min = Math.min(...rawValues);
     const max = Math.max(...rawValues);
+    const { timeWeight, topModel, topModelTime, monthsDiff } = getTimeWeight(
+      benchmark,
+      modelTimeByName,
+    );
     const { configuredWeight, baseWeight, weight } = getDimensionWeights(
       benchmark.name,
       benchmark.entries.length,
+      timeWeight,
     );
 
     for (const entry of benchmark.entries) {
@@ -260,29 +299,50 @@ function calculateScores(data, benchmarks) {
         ...(entry.projection ? { projection: entry.projection } : {}),
         configuredWeight,
         baseWeight,
+        timeWeight,
         weight,
       });
       model.weightedScore += normalizedScore * weight;
       model.totalWeight += weight;
     }
+
+    benchmark.timeWeight = timeWeight;
+    if (topModel) {
+      benchmark.topModel = topModel;
+      if (topModelTime) benchmark.topModelTime = topModelTime;
+      if (monthsDiff !== null) benchmark.monthsDiff = monthsDiff;
+    }
   }
 
   return [...scoresByModel.values()]
-    .map(({ weightedScore, totalWeight, ...model }) => ({
-      ...model,
-      // Only included dimensions with a reported or projected score contribute.
-      score: totalWeight === 0 ? null : weightedScore / totalWeight,
-      totalWeight,
-    }))
+    .map(({ weightedScore, totalWeight, dimensions, ...model }) => {
+      // Models with fewer than 2 evaluation dimensions do not participate in ranking.
+      if (dimensions.length < 2) {
+        return {
+          ...model,
+          dimensions,
+          score: 0,
+          totalWeight,
+          excluded: true,
+        };
+      }
+      return {
+        ...model,
+        dimensions,
+        score: totalWeight === 0 ? null : weightedScore / totalWeight,
+        totalWeight,
+      };
+    })
     .sort((left, right) => {
-      if (left.score === null) return 1;
-      if (right.score === null) return -1;
+      if (left.score === null || left.excluded) return 1;
+      if (right.score === null || right.excluded) return -1;
       return right.score - left.score || left.model.localeCompare(right.model);
     })
     .map((model, index) => ({
-      rank: model.score === null ? null : index + 1,
       ...model,
-    }));
+      rank: model.excluded || model.score === null ? null : index + 1,
+    }))
+    .map(({ excluded, ...model }) => model);
 }
 
 const data = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
@@ -300,7 +360,20 @@ const result = {
           ...(benchmark.upgrade ? { upgrade: benchmark.upgrade } : {}),
           modelCount: benchmark.entries.length,
           ...(included
-            ? getDimensionWeights(benchmark.name, benchmark.entries.length)
+            ? {
+                ...getDimensionWeights(
+                  benchmark.name,
+                  benchmark.entries.length,
+                  benchmark.timeWeight,
+                ),
+                ...(benchmark.topModel ? { topModel: benchmark.topModel } : {}),
+                ...(benchmark.topModelTime
+                  ? { topModelTime: benchmark.topModelTime }
+                  : {}),
+                ...(benchmark.monthsDiff !== undefined
+                  ? { monthsDiff: benchmark.monthsDiff }
+                  : {}),
+              }
             : {}),
           ...(benchmark.calibrations.length
             ? { calibrations: benchmark.calibrations }
