@@ -9,7 +9,7 @@ const readmePath = path.join(__dirname, 'readme.md');
 // Each benchmark's effective multiplier is this value × sqrt(the number of models reporting it).
 // A multiplier of 0 excludes that benchmark from the final score.
 const DIMENSION_WEIGHTS = {
-  'SWE-Bench Verified': 0,
+  'HumanEval': 0,
 };
 
 function getCanonicalModelName(scoreKey) {
@@ -54,7 +54,7 @@ function getTimeWeight(benchmark, modelTimeByName) {
 
   const monthsDiff = getMonthsDifference(modelTime);
   return {
-    timeWeight: Math.pow(0.99, monthsDiff),
+    timeWeight: Math.pow(0.95, monthsDiff),
     topModel: topEntry.modelName,
     topModelTime: modelTime,
     monthsDiff,
