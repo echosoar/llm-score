@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="light">
   <title>LLM Score</title>
   <style>
     :root {
-      --background: #101214;
-      --surface: #171a1e;
-      --surface-hover: #1d2228;
-      --text: #e8eaed;
-      --muted: #99a1aa;
-      --accent: #78b7ff;
-      --line: #2b3138;
-      --focus: #b7dcff;
+      --background: #ffffff;
+      --text: rgba(0, 0, 0, 0.88);
+      --text-strong: #000000;
+      --muted: rgba(0, 0, 0, 0.55);
+      --faint: rgba(0, 0, 0, 0.35);
+      --line: rgba(0, 0, 0, 0.12);
+      --line-soft: rgba(0, 0, 0, 0.07);
+      --chip-active: rgba(0, 0, 0, 0.85);
     }
 
     * { box-sizing: border-box; }
@@ -30,27 +30,28 @@
     main {
       width: min(100%, 1800px);
       margin: 0 auto;
-      padding: 44px 32px 32px;
+      padding: 64px 48px 48px;
     }
 
     header {
       display: flex;
       align-items: stretch;
       justify-content: space-between;
-      gap: 24px;
-      margin-bottom: 28px;
+      gap: 32px;
+      margin-bottom: 40px;
     }
 
     h1 {
       margin: 0;
-      font-size: 28px;
+      color: var(--text-strong);
+      font-size: 30px;
       font-weight: 650;
       letter-spacing: -0.03em;
     }
 
     .description,
     #status {
-      margin: 8px 0 0;
+      margin: 12px 0 0;
       color: var(--muted);
       font-size: 14px;
     }
@@ -62,11 +63,10 @@
     }
 
     .lang-toggle {
-      padding: 5px 12px;
+      padding: 6px 14px;
       border: 1px solid var(--line);
-      border-radius: 0;
-      background: var(--surface);
-      color: var(--text);
+      background: transparent;
+      color: var(--muted);
       font: inherit;
       font-size: 12px;
       font-weight: 600;
@@ -75,55 +75,41 @@
       white-space: nowrap;
     }
 
-    .lang-toggle:hover {
-      background: var(--surface-hover);
-      border-color: var(--accent);
-    }
-
     .header-right {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-end;
-      gap: 6px;
+      gap: 8px;
     }
 
     .brand-filter {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      margin: 16px 0 4px;
+      gap: 10px;
+      margin: 24px 0 0;
       max-width: 100%;
     }
 
     .brand-chip {
-      padding: 5px 12px;
+      padding: 6px 14px;
       border: 1px solid var(--line);
-      border-radius: 0;
       background: transparent;
       color: var(--muted);
       font: inherit;
       font-size: 12px;
       font-weight: 500;
       cursor: pointer;
-      transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
-    }
-
-    .brand-chip:hover {
-      background: var(--surface-hover);
-      color: var(--text);
     }
 
     .brand-chip[aria-pressed="true"] {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #0b1726;
+      background: var(--chip-active);
+      border-color: var(--chip-active);
+      color: #ffffff;
     }
 
     .table-wrap {
       overflow-x: auto;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
     }
 
     table {
@@ -136,21 +122,22 @@
 
     th,
     td {
-      padding: 14px 12px;
+      padding: 16px 14px;
       text-align: left;
       vertical-align: middle;
       white-space: nowrap;
     }
 
     thead {
-      background: var(--surface);
+      background: var(--background);
     }
 
     th {
       position: sticky;
       top: 0;
       z-index: 1;
-      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      color: var(--faint);
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.055em;
@@ -158,11 +145,7 @@
     }
 
     tbody tr {
-      border-top: 1px solid var(--line);
-    }
-
-    tbody tr:hover {
-      background: var(--surface-hover);
+      border-top: 1px solid var(--line-soft);
     }
 
     .sort-button {
@@ -182,30 +165,32 @@
     }
 
     .sort-button::after {
-      color: #637080;
+      color: var(--faint);
       content: "↕";
       font-size: 13px;
       line-height: 1;
     }
 
     .sort-button[aria-sort="ascending"]::after {
-      color: var(--accent);
+      color: var(--text-strong);
       content: "↑";
     }
 
     .sort-button[aria-sort="descending"]::after {
-      color: var(--accent);
+      color: var(--text-strong);
       content: "↓";
     }
 
     .sort-button:focus-visible,
-    a:focus-visible {
-      outline: 2px solid var(--focus);
+    a:focus-visible,
+    .brand-chip:focus-visible,
+    .lang-toggle:focus-visible {
+      outline: 2px solid rgba(0, 0, 0, 0.55);
       outline-offset: 3px;
     }
 
     .model-name {
-      color: #fff;
+      color: var(--text-strong);
       font-weight: 600;
     }
 
@@ -214,19 +199,18 @@
     }
 
     .dimensional-score {
-      color: #c9d9ea;
+      color: rgba(0, 0, 0, 0.62);
     }
 
     .missing {
-      color: #68727d;
+      color: var(--faint);
     }
 
     a {
-      color: var(--accent);
-      text-decoration: none;
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
-
-    a:hover { text-decoration: underline; }
 
     .website-link::after {
       content: " ↗";
@@ -235,43 +219,41 @@
 
     .empty,
     .error {
-      padding: 44px 12px;
+      padding: 48px 12px;
       color: var(--muted);
       text-align: center;
     }
 
-    .error { color: #ffb4ab; }
-
     @media (max-width: 680px) {
-      main { padding: 28px 16px 20px; }
-      header { align-items: start; flex-direction: column; gap: 8px; }
+      main { padding: 36px 20px 28px; }
+      header { align-items: start; flex-direction: column; gap: 12px; }
       #status { text-align: left; white-space: normal; }
     }
 
     .site-footer {
       display: flex;
       align-items: center;
-      gap: 16px;
-      margin-top: 28px;
-      padding-top: 20px;
-      border-top: 1px solid var(--line);
+      gap: 24px;
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line-soft);
       color: var(--muted);
-      font-size: 14px;
+      font-size: 13px;
+    }
+
+    .updated-at {
+      color: var(--muted);
     }
 
     .footer-link {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .footer-link:hover {
-      text-decoration: underline;
+      color: var(--text);
     }
 
     .footer-counter {
       display: block;
       height: 48px;
       width: auto;
+      margin-left: auto;
     }
   </style>
 </head>
@@ -297,6 +279,7 @@
     </div>
 
     <footer class="site-footer">
+      <span class="updated-at" id="updated-at"></span>
       <a class="footer-link" href="https://github.com/echosoar/llm-score" target="_blank" rel="noopener">GitHub</a>
       <img class="footer-counter" src="https://not.aiznb.com/img?url=https://echosoar.github.io/llm-score/"  />
     </footer>
@@ -309,10 +292,12 @@
     const status = document.querySelector('#status');
     const brandFilter = document.querySelector('#brand-filter');
     const langToggle = document.querySelector('#lang-toggle');
+    const updatedAtNode = document.querySelector('#updated-at');
 
 let models = [];
 let benchmarks = [];
 let priceMap = {};
+let updatedAt = null;
 let rankMap = new Map();
 let priceNormMap = new Map();
     let sortState = { key: 'score', direction: 'desc' };
@@ -325,6 +310,7 @@ let priceNormMap = new Map();
         loading: '正在加载数据…',
         loadFailed: '数据加载失败',
         status: (m, b) => `${m} 个模型 · ${b} 个 benchmarks`,
+        updatedAt: (date) => `最后更新时间：${date}`,
         brandGroup: '厂商过滤',
         colRank: '#',
         colModel: '模型名称',
@@ -351,6 +337,7 @@ let priceNormMap = new Map();
         loading: 'Loading data…',
         loadFailed: 'Failed to load data',
         status: (m, b) => `${m} models · ${b} benchmarks`,
+        updatedAt: (date) => `Last updated: ${date}`,
         brandGroup: 'Vendor filter',
         colRank: '#',
         colModel: 'Model',
@@ -375,6 +362,25 @@ let priceNormMap = new Map();
     };
 
     const t = (key) => (typeof key === 'function' ? key() : i18n[lang][key] ?? key);
+
+    const renderUpdatedAt = () => {
+      if (!updatedAt) {
+        updatedAtNode.textContent = '';
+        return;
+      }
+      const date = new Date(updatedAt);
+      const text = Number.isNaN(date.getTime())
+        ? String(updatedAt)
+        : new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : 'en-US', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false,
+          }).format(date);
+      updatedAtNode.textContent = i18n[lang].updatedAt(text);
+    };
 
     const getBenchmarkScore = (model, benchmark) =>
       model.currentBenchmarksScores?.[benchmark] ?? null;
@@ -654,6 +660,7 @@ const getPriceScore = (model) => {
       lang = lang === 'zh' ? 'en' : 'zh';
       applyLanguage();
       render();
+      renderUpdatedAt();
       if (models.length && benchmarks.length) {
         status.textContent = i18n[lang].status(models.length, benchmarks.length);
       }
@@ -680,6 +687,7 @@ const getPriceScore = (model) => {
           score: entry.rank,
         }));
         priceMap = data.priceMap ?? {};
+        updatedAt = data.updatedAt ?? null;
         benchmarks = (Array.isArray(data.benchmarks) ? data.benchmarks : [])
           .filter((benchmark) => !benchmark.upgrade)
           .map((benchmark) => benchmark.name);
@@ -711,6 +719,7 @@ const getPriceScore = (model) => {
         })();
 
         render();
+        renderUpdatedAt();
         status.textContent = i18n[lang].status(models.length, benchmarks.length);
       })
       .catch((error) => {
