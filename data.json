@@ -138,6 +138,19 @@
             "url": "https://z.ai/blog/glm-5.2"
         },
         {
+            "brand": "Moonshot",
+            "model": "Kimi K2.7 Code",
+            "time": "2026/06/12",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "context": 262144,
+            "generate": 262144,
+            "inputPrice": "$0.95",
+            "inputCachedPrice": "$0.19",
+            "outputPrice": "$4",
+            "url": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart"
+        },
+        {
             "brand": "Anthropic",
             "model": "Claude Fable 5",
             "time": "2026/06/09",
@@ -357,6 +370,19 @@
             "url": "https://www.anthropic.com/news/claude-opus-4-7"
         },
         {
+            "brand": "Meta",
+            "model": "Muse Spark",
+            "time": "2026/04/08",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 32000,
+            "inputPrice": "$1.25",
+            "inputCachedPrice": "$0.15",
+            "outputPrice": "$4.25",
+            "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/"
+        },
+        {
             "brand": "Z.ai",
             "model": "GLM 5.1",
             "time": "2026/04/07",
@@ -419,6 +445,18 @@
             "inputCachedPrice": "￥0.42",
             "outputPrice": "￥8.4",
             "url": "https://www.minimax.io/models/text/m27"
+        },
+        {
+            "brand": "xAI",
+            "model": "Grok 4.2",
+            "time": "2026/03/09",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1000000,
+            "inputPrice": "$1.25",
+            "inputCachedPrice": "$0.2",
+            "outputPrice": "$2.5",
+            "url": "https://x.ai/news/grok-3"
         },
         {
             "brand": "OpenAI",
@@ -666,6 +704,18 @@
             "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-oss/"
         },
         {
+            "brand": "xAI",
+            "model": "Grok 4",
+            "time": "2025/07/09",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 250000,
+            "inputPrice": "$1.25",
+            "inputCachedPrice": "$0.2",
+            "outputPrice": "$2.5",
+            "url": "https://x.ai/news/grok-4"
+        },
+        {
             "brand": "Anthropic",
             "model": "Claude Opus 4",
             "time": "2025/05/22",
@@ -748,6 +798,35 @@
             "inputPrice": "$3",
             "outputPrice": "$15",
             "url": "https://x.ai/news/grok-3"
+        },
+        {
+            "brand": "DeepSeek",
+            "model": "DeepSeek V3",
+            "time": "2024/12/26",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 384000,
+            "inputPrice": "$0.27",
+            "inputCachedPrice": "$0.07",
+            "outputPrice": "$1.1",
+            "url": "https://api-docs.deepseek.com/news/news1226"
+        },
+        {
+            "brand": "Anthropic",
+            "model": "Claude Sonnet 3.5",
+            "time": "2024/06/21",
+            "input": ["text"],
+            "output": ["text"],
+            "url": "https://www.anthropic.com/news/claude-3-5-sonnet"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-4o",
+            "time": "2024/05/13",
+            "input": ["text"],
+            "output": ["text"],
+            "url": "https://openai.com/zh-Hans-CN/index/hello-gpt-4o/"
         }
     ],
     "benchmarks": [
@@ -771,7 +850,10 @@
                 "Kimi K2.6(from Qwen 3.7 Max)": 0.905,
                 "Claude Opus 4.7": 0.942,
                 "GLM 5.1": 0.862,
+                "Muse Spark": 0.895,
+                "Grok 4.2(Muse Spark)": 0.885,
                 "GPT-5.4": 0.928,
+                "Grok 4": 0.875,
                 "Gemini 3.1 Pro": 0.943,
                 "Gemma 4 31B": 0.843,
                 "Gemma 4 26B A4B": 0.823,
@@ -812,7 +894,7 @@
                 "GPT-OSS 20B": 0.742,
                 "Qwen 2.5 Max": 0.601,
                 "Claude Sonnet 3.5(from Qwen 2.5 Max)": 0.65, 
-                "DeepSeek V3(from Qwen 2.5 Max)": 0.591
+                "DeepSeek V3": 0.591
             }
         },
         {
@@ -845,6 +927,8 @@
                 "Kimi K2.6": 0.586,
                 "Claude Opus 4.7": 0.643,
                 "GLM 5.1": 0.584,
+                "Muse Spark": 0.524,
+                "Grok 4.2(Muse Spark)": 0.518,
                 "MiMo V2 Pro": 0.55,
                 "MiniMax M2.7": 0.562,
                 "GPT-5.4": 0.577,
@@ -874,6 +958,8 @@
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.788,
                 "Kimi K2.6(from Qwen 3.7 Max)": 0.802,
                 "GLM 5.1(from Hy 3)": 0.75,
+                "Muse Spark": 0.774,
+                "Grok 4.2(Muse Spark)": 0.767,
                 "Gemini 3.1 Pro": 0.806,
                 "Claude Sonnet 4.6(from Gemini 3.1 Pro)": 0.796,
                 "MiniMax M2.5": 0.802,
@@ -887,7 +973,10 @@
                 "Claude Sonnet 3.7(from Claude Opus 4)": 0.623,
                 "Gemini 2.5 Pro(from Claude Opus 4)": 0.632,
                 "GPT-o3(from Claude Opus 4)": 0.691,
-                "GPT-4.1(from Claude Opus 4)": 0.546
+                "GPT-4.1(from Claude Opus 4)": 0.546, 
+                "DeepSeek V3": 0.42, 
+                "Claude Sonnet 3.5(from DeepSeek V3)": 0.508, 
+                "GPT-4o(from DeepSeek V3)": 0.388
             }
         },
         {
@@ -966,6 +1055,8 @@
                 "MiMo V2.5": 0.658,
                 "Kimi K2.6": 0.667,
                 "Claude Opus 4.7": 0.694,
+                "Muse Spark": 0.59,
+                "Grok 4.2(Muse Spark)": 0.471,
                 "MiMo V2 Pro": 0.571,
                 "GPT-5.4": 0.751,
                 "Gemini 3.1 Pro": 0.685,
@@ -1059,6 +1150,9 @@
                 "DeepSeek V4 Pro": 1554,
                 "DeepSeek V4 Flash": 1395,
                 "Claude Opus 4.7": 1753,
+                "Muse Spark": 1444,
+                "GPT-5.4(Muse Spark)": 1672,
+                "Grok 4.2(Muse Spark)": 1055,
                 "MiMo V2 Pro": 1426,
                 "Gemini 3.1 Pro": 1317,
                 "Claude Sonnet 4.6": 1633,
@@ -1090,7 +1184,9 @@
                 "Claude Opus 4.7": 0.547,
                 "GLM 5.1": 0.523,
                 "GPT-5.4": 0.521,
+                "Muse Spark": 0.504,
                 "MiMo V2 Pro": 0.4,
+                "Grok 4": 0.386,
                 "Gemini 3.1 Pro": 0.514,
                 "Gemma 4 31B": 0.265,
                 "Gemma 4 26B A4B": 0.172,
@@ -1147,6 +1243,7 @@
                 "Hy 3": 0.791,
                 "Muse Spark 1.1": 0.881,
                 "Qwen 3.7 Plus": 0.732,
+                "Kimi K2.7 Code": 0.76,
                 "Claude Fable 5(from Kimi K3)": 0.847,
                 "MiniMax M3": 0.742,
                 "Claude Opus 4.8(from Kimi K3)": 0.836,
@@ -1206,6 +1303,8 @@
                 "MiniMax M3": 0.781,
                 "GPT-5.5": 0.812,
                 "Claude Opus 4.7(from Seed 2.1 Pro)": 0.74,
+                "Muse Spark": 0.804,
+                "Grok 4.2(Muse Spark)": 0.752,
                 "GPT-5.4": 0.812,
                 "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.805,
                 "Qwen 3.6 27B": 0.788,
@@ -1240,11 +1339,13 @@
             }
         },
         {
-            "name": "HumanEval",
+            "name": "HumanEval-Mul",
             "scores": {
-                "Llama 3.1 405B(from Qwen 2.5 Max)": 0.61,
-                "Qwen 2.5 Max": 0.732,
-                "DeepSeek V3(from Qwen 2.5 Max)": 0.652
+                "Llama 3.1 405B(from Qwen 2.5 Max)": 0.772,
+                "Qwen 2.5 Max": 0.773,
+                "DeepSeek V3": 0.826, 
+                "Claude Sonnet 3.5(from DeepSeek V3)": 0.817, 
+                "GPT-4o(from DeepSeek V3)": 0.805
             }
         },
         {
