@@ -376,8 +376,8 @@ let priceNormMap = new Map();
 
     const t = (key) => (typeof key === 'function' ? key() : i18n[lang][key] ?? key);
 
-    const getDimension = (model, benchmark) =>
-      model.dimensions.find((dimension) => dimension.name === benchmark);
+    const getBenchmarkScore = (model, benchmark) =>
+      model.currentBenchmarksScores?.[benchmark] ?? null;
 
     const formatScore = (value) => {
       if (value === null || value === undefined) return '-';
@@ -469,7 +469,7 @@ const getPriceScore = (model) => {
 
     const getSortValue = (model, key) => {
       if (key.startsWith('benchmark:')) {
-        return getDimension(model, key.slice('benchmark:'.length))?.rawScore ?? null;
+        return getBenchmarkScore(model, key.slice('benchmark:'.length));
       }
       if (key === 'inputPrice' || key === 'inputCachedPrice' || key === 'outputPrice') {
         return getPriceAmount(model[key]);
@@ -577,7 +577,7 @@ const getPriceScore = (model) => {
         appendTextCell(row, formatWindow(model.generate), 'numeric');
 
         benchmarks.forEach((benchmark) => {
-          const value = getDimension(model, benchmark)?.rawScore;
+          const value = getBenchmarkScore(model, benchmark);
           appendTextCell(
             row,
             formatBenchmarkScore(value),
@@ -675,11 +675,14 @@ const getPriceScore = (model) => {
         return response.json();
       })
       .then((data) => {
-        models = Array.isArray(data.models) ? data.models : [];
+        models = (Array.isArray(data.models) ? data.models : []).map((entry) => ({
+          ...entry.modelInfo,
+          score: entry.rank,
+        }));
         priceMap = data.priceMap ?? {};
-        benchmarks = Object.entries(data.weights ?? {})
-          .filter(([, details]) => details.included)
-          .map(([name]) => name);
+        benchmarks = (Array.isArray(data.benchmarks) ? data.benchmarks : [])
+          .filter((benchmark) => !benchmark.upgrade)
+          .map((benchmark) => benchmark.name);
 
         if (!models.length || !benchmarks.length) {
           throw new Error(i18n[lang].noDataError);
