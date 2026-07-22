@@ -139,8 +139,24 @@ data.models.forEach((cur, index) => {
     });
 });
 
+const updatedAt = new Date();
+
 fs.writeFileSync(outputPath, JSON.stringify({
     benchmarks: data.benchmarks,
     models: sortedModels,
-    priceMap: data.priceMap
+    priceMap: data.priceMap,
+    updatedAt: updatedAt.toISOString()
 }, null, 2));
+
+// 更新 readme.md 中的最后更新时间
+const readmePath = path.join(__dirname, 'readme.md');
+const pad = n => String(n).padStart(2, '0');
+const updatedAtText = `${updatedAt.getUTCFullYear()}-${pad(updatedAt.getUTCMonth() + 1)}-${pad(updatedAt.getUTCDate())} ${pad(updatedAt.getUTCHours())}:${pad(updatedAt.getUTCMinutes())}:${pad(updatedAt.getUTCSeconds())} UTC`;
+const timeLine = `最后更新时间：${updatedAtText}`;
+let readme = fs.existsSync(readmePath) ? fs.readFileSync(readmePath, 'utf8') : '';
+if (/^最后更新时间：.*$/m.test(readme)) {
+    readme = readme.replace(/^最后更新时间：.*$/m, timeLine);
+} else {
+    readme = readme.replace(/\s*$/, '') + `\n\n---\n\n${timeLine}\n`;
+}
+fs.writeFileSync(readmePath, readme);
