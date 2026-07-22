@@ -14,6 +14,43 @@
             "url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-6_flash_model_evaluation.pdf"
         },
         {
+            "brand": "Google",
+            "model": "Gemini 3.5 Flash Lite",
+            "time": "2026/07/21",
+            "input": ["text", "image", "video", "audio", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 64000,
+            "inputPrice": "$0.3",
+            "inputCachedPrice": "$0.03",
+            "outputPrice": "$2.5",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"
+        },
+         {
+            "brand": "Poolside",
+            "model": "Laguna S 2.1",
+            "time": "2026/07/21",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "inputPrice": "$0.1",
+            "inputCachedPrice": "$0.01",
+            "outputPrice": "$0.2",
+            "url": "https://poolside.ai/blog/introducing-laguna-s-2-1"
+        },
+        {
+            "brand": "Poolside",
+            "model": "Laguna XS 2.1",
+            "time": "2026/07/21",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 262000,
+            "inputPrice": "$0.06",
+            "inputCachedPrice": "$0.03",
+            "outputPrice": "$0.12",
+            "url": "https://poolside.ai/blog/introducing-laguna-xs-2-1"
+        },
+        {
             "brand": "Moonshot",
             "model": "Kimi K3",
             "time": "2026/07/17",
@@ -266,6 +303,15 @@
             "outputPrice": "$9",
             "url": "https://deepmind.google/models/gemini/flash/"
         },
+         {
+            "brand": "Poolside",
+            "model": "Laguna XS 2",
+            "time": "2026/04/28",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 262000,
+            "url": "https://poolside.ai/models#laguna-xs"
+        },
         {
             "brand": "Xiaomi",
             "model": "MiMo V2.5 Pro",
@@ -473,6 +519,19 @@
         },
         {
             "brand": "Google",
+            "model": "Gemini 3.1 Flash Lite",
+            "time": "2026/03/03",
+            "input": ["text", "image", "video", "audio", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 64000,
+            "inputPrice": "$0.25",
+            "inputCachedPrice": "$0.025",
+            "outputPrice": "$1.5",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-lite/"
+        },
+        {
+            "brand": "Google",
             "model": "Gemini 3.1 Pro",
             "time": "2026/02/19",
             "input": ["text", "image", "video", "audio", "pdf"],
@@ -602,6 +661,19 @@
             "url": "https://z.ai/blog/glm-4.7"
         },
         {
+            "brand": "Google",
+            "model": "Gemini 3 Flash",
+            "time": "2025/12/17",
+            "input": ["text", "image", "video", "audio", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 64000,
+            "inputPrice": "$0.5",
+            "inputCachedPrice": "$0.05",
+            "outputPrice": "$3",
+            "url": "https://blog.google/products-and-platforms/products/gemini/gemini-3-flash/"
+        },
+        {
             "brand": "OpenAI",
             "model": "GPT-5.2",
             "time": "2025/12/11",
@@ -672,12 +744,25 @@
             "time": "2025/08/07",
             "input": ["text", "image"],
             "output": ["text"],
-            "context": 272000,
+            "context": 400000,
             "generate": 128000,
             "inputPrice": "$1.25",
             "inputCachedPrice": "$0.125",
             "outputPrice": "$10",
             "url": "https://openai.com/index/introducing-gpt-5/"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-5 mini",
+            "time": "2025/08/07",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 400000,
+            "generate": 128000,
+            "inputPrice": "$0.25",
+            "inputCachedPrice": "$0.025",
+            "outputPrice": "$2",
+            "url": "https://developers.openai.com/api/docs/models/gpt-5-mini"
         },
         {
             "brand": "OpenAI",
@@ -754,6 +839,45 @@
             "url": "https://www.anthropic.com/news/claude-4"
         },
         {
+            "brand": "OpenAI",
+            "model": "GPT-4.1",
+            "time": "2025/04/14",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1047576,
+            "generate": 32768,
+            "inputPrice": "$2",
+            "inputCachedPrice": "$0.5",
+            "outputPrice": "$8",
+            "url": "https://openai.com/index/gpt-4-1/"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-4.1 mini",
+            "time": "2025/04/14",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1047576,
+            "generate": 32768,
+            "inputPrice": "$0.4",
+            "inputCachedPrice": "$0.1",
+            "outputPrice": "$1.6",
+            "url": "https://developers.openai.com/api/docs/models/gpt-4.1"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-4.1 nano",
+            "time": "2025/04/14",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1047576,
+            "generate": 32768,
+            "inputPrice": "$0.1",
+            "inputCachedPrice": "$0.025",
+            "outputPrice": "$0.4",
+            "url": "https://developers.openai.com/api/docs/models/gpt-4.1"
+        },
+        {
             "brand": "Meta",
             "model": "Llama 4 Maverick",
             "time": "2025/04/05",
@@ -781,12 +905,17 @@
             "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
         },
         {
-            "brand": "Alibaba",
-            "model": "Qwen 2.5 Max",
-            "time": "2025/01/28",
-            "input": ["text"],
+            "brand": "OpenAI",
+            "model": "GPT-4.5",
+            "time": "2025/02/27",
+            "input": ["text", "image"],
             "output": ["text"],
-            "url": "https://qwen.ai/blog?id=qwen2.5-max"
+            "context": 128000,
+            "generate": 16384,
+            "inputPrice": "$75",
+            "inputCachedPrice": "$37.5",
+            "outputPrice": "$150",
+            "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-4-5/"
         },
         {
             "brand": "xAI",
@@ -798,6 +927,44 @@
             "inputPrice": "$3",
             "outputPrice": "$15",
             "url": "https://x.ai/news/grok-3"
+        },
+        {
+            "brand": "Google",
+            "model": "Gemini 2 Pro",
+            "time": "2025/02/05",
+            "input": ["text", "image", "video", "audio"],
+            "output": ["text"],
+            "context": 1048576,
+            "generate": 65536,
+            "url": "https://developers.googleblog.com/en/gemini-2-family-expands/"
+        },
+        {
+            "brand": "Google",
+            "model": "Gemini 2 Flash",
+            "time": "2025/02/05",
+            "input": ["text", "image", "video", "audio"],
+            "output": ["text"],
+            "context": 1048576,
+            "generate": 65536,
+            "url": "https://developers.googleblog.com/en/gemini-2-family-expands/"
+        },
+        {
+            "brand": "Google",
+            "model": "Gemini 2 Flash Lite",
+            "time": "2025/02/05",
+            "input": ["text", "image", "video", "audio"],
+            "output": ["text"],
+            "context": 1048576,
+            "generate": 65536,
+            "url": "https://developers.googleblog.com/en/gemini-2-family-expands/"
+        },
+         {
+            "brand": "Alibaba",
+            "model": "Qwen 2.5 Max",
+            "time": "2025/01/28",
+            "input": ["text"],
+            "output": ["text"],
+            "url": "https://qwen.ai/blog?id=qwen2.5-max"
         },
         {
             "brand": "DeepSeek",
@@ -822,10 +989,28 @@
         },
         {
             "brand": "OpenAI",
+            "model": "GPT-4o mini",
+            "time": "2024/07/18",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 128000,
+            "generate": 16384,
+            "inputPrice": "$0.15",
+            "inputCachedPrice": "$0.075",
+            "outputPrice": "$0.6",
+            "url": "https://openai.com/zh-Hans-CN/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
+        },
+        {
+            "brand": "OpenAI",
             "model": "GPT-4o",
             "time": "2024/05/13",
             "input": ["text"],
             "output": ["text"],
+            "context": 128000,
+            "generate": 16384,
+            "inputPrice": "$0.5",
+            "inputCachedPrice": "$1.25",
+            "outputPrice": "$10",
             "url": "https://openai.com/zh-Hans-CN/index/hello-gpt-4o/"
         }
     ],
@@ -853,6 +1038,8 @@
                 "Muse Spark": 0.895,
                 "Grok 4.2(Muse Spark)": 0.885,
                 "GPT-5.4": 0.928,
+                "Gemini 3.1 Flash Lite": 0.869,
+                "GPT-5 mini(from Gemini 3.1 Flash Lite)": 0.823,
                 "Grok 4": 0.875,
                 "Gemini 3.1 Pro": 0.943,
                 "Gemma 4 31B": 0.843,
@@ -866,6 +1053,7 @@
                 "GPT-5.2": 0.924,
                 "DeepSeek V3.2": 0.857,
                 "Gemini 3 Pro": 0.919,
+                "Gemini 3 Flash": 0.909,
                 "Claude Haiku 4.5": 0.73,
                 "Claude Sonnet 4.5": 0.834,
                 "GPT-5": 0.873,
@@ -874,33 +1062,43 @@
                 "Claude Sonnet 4": 0.727,
                 "Grok 3": 0.846,
                 "Llama 4 Maverick": 0.698,
-                "Gemini 2 Flash(from Llama 4 Maverick)": 0.601,
                 "DeepSeek V3.1(from Llama 4 Maverick)": 0.684,
                 "GPT-4o(from Llama 4 Maverick)": 0.536,
                 "Llama 4 Scout": 0.572,
-                "Gemini 2 Flash Lite(from Llama 4 Scout)": 0.515,
                 "Gemma 3 27B(from Llama 4 Scout)": 0.424,
                 "Mistral 3.1 24B(from Llama 4 Scout)": 0.46,
                 "Llama 3.3 70B(from Llama 4 Scout)": 0.505,
                 "Llama 3.1 405B(from Llama 4 Scout)": 0.49,
                 "Llama 4 Behemoth": 0.737,
-                "Gemini 2 Pro(from Llama 4 Behemoth)": 0.647, 
+                "Gemini 2 Pro": 0.647, 
+                "Gemini 2 Flash": 0.601,
+                "Gemini 2 Flash Lite": 0.515,
                 "Claude Sonnet 3.7(from Claude Sonnet 4)": 0.782, 
                 "Gemini 2.5 Pro(from Claude Opus 4)": 0.83,
                 "GPT-o3": 0.85,
-                "GPT-4.1(from Claude Opus 4)": 0.663,
+                "GPT-4.1": 0.663,
+                "GPT-4.1 mini(from GPT-4.1)": 0.65,
+                "GPT-4.1 nano(from GPT-4.1)": 0.503,
                 "GPT-4.5(from Llama 4 Behemoth)": 0.714, 
                 "GPT-OSS 120B": 0.809,
                 "GPT-OSS 20B": 0.742,
                 "Qwen 2.5 Max": 0.601,
                 "Claude Sonnet 3.5(from Qwen 2.5 Max)": 0.65, 
-                "DeepSeek V3": 0.591
+                "DeepSeek V3": 0.591,
+                "GPT-4.5": 0.714,
+                "GPT-4o(from GPT-4.5)": 0.536,
+                "GPT-4o mini(from GPT-4.1)": 0.402,
+                "GPT-o1(from GPT-4.1)": 0.757
             }
         },
         {
             "name": "SWE-Bench Pro",
             "scores": {
                 "Gemini 3.6 Flash": 0.587,
+                "Gemini 3.5 Flash Lite": 0.54,
+                "Laguna S 2.1": 0.594,
+                "Laguna XS 2.1": 0.476,
+                "Laguna XS 2": 0.463,
                 "Inkling": 0.543,
                 "GPT-5.6 Sol": 0.646,
                 "Muse Spark 1.1": 0.615,
@@ -946,6 +1144,8 @@
         {
             "name": "SWE-Bench Verified",
             "scores": {
+                "Laguna XS 2.1": 0.709,
+                "Laguna XS 2": 0.699,
                 "Hy 3": 0.78,
                 "Seed 2.1 Pro(from Hy 3)": 0.76,
                 "GLM 5.2(from Hy 3)": 0.842,
@@ -964,6 +1164,7 @@
                 "Claude Sonnet 4.6(from Gemini 3.1 Pro)": 0.796,
                 "MiniMax M2.5": 0.802,
                 "Claude Opus 4.6(from Gemini 3.1 Pro)": 0.808,
+                "Gemini 3 Flash": 0.78,
                 "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.762,
                 "MiniMax M2.1": 0.74,
                 "GPT-5.2(from Gemini 3.1 Pro)": 0.8,
@@ -973,10 +1174,14 @@
                 "Claude Sonnet 3.7(from Claude Opus 4)": 0.623,
                 "Gemini 2.5 Pro(from Claude Opus 4)": 0.632,
                 "GPT-o3(from Claude Opus 4)": 0.691,
-                "GPT-4.1(from Claude Opus 4)": 0.546, 
+                "GPT-4.1": 0.546,
+                "GPT-4.1 mini(from GPT-4.1)": 0.236,
                 "DeepSeek V3": 0.42, 
                 "Claude Sonnet 3.5(from DeepSeek V3)": 0.508, 
-                "GPT-4o(from DeepSeek V3)": 0.388
+                "GPT-4o(from GPT-4.5)": 0.307,
+                "GPT-4.5": 0.38,
+                "GPT-4o mini(from GPT-4.1)": 0.087,
+                "GPT-o1(from GPT-4.1)": 0.41
             }
         },
         {
@@ -1000,6 +1205,8 @@
             "name": "DeepSWE",
             "upgrade": "DeepSWE 1.1",
             "scores": {
+                "Laguna S 2.1": 0.404,
+                "Kimi K3(from Laguna S 2.1)": 0.69,
                 "Hy 3": 0.28,
                 "Seed 2.1 Pro(from Hy 3)": 0.327,
                 "Qwen 3.7 Max(from Hy 3)": 0.18,
@@ -1014,6 +1221,8 @@
             "name": "Terminal-Bench 2.1",
             "scores": {
                 "Gemini 3.6 Flash": 0.78,
+                "Gemini 3.5 Flash Lite": 0.54,
+                "Laguna S 2.1": 0.702,
                 "Kimi K3": 0.883,
                 "Inkling": 0.638,
                 "GPT-5.6 Sol": 0.888,
@@ -1037,13 +1246,16 @@
                 "GLM 5.1": 0.635,
                 "Gemini 3.1 Pro(from Gemini 3.6 Flash)": 0.738,
                 "Claude Sonnet 4.6(from Claude Sonnet 5)": 0.67,
-                "Step 3.5 Flash(from Step 3.7 Flash)": 0.534
+                "Step 3.5 Flash(from Step 3.7 Flash)": 0.534,
+                "Gemini 3.1 Flash Lite(from Gemini 3.5 Flash Lite)": 0.31
             }
         },
         {
             "name": "Terminal-Bench 2",
             "upgrade": "Terminal-Bench 2.1",
             "scores": {
+                "Laguna XS 2.1": 0.375,
+                "Laguna XS 2": 0.357,
                 "Qwen 3.7 Plus": 0.703,
                 "Qwen 3.7 Max": 0.697,
                 "MiMo V2.5 Pro": 0.684,
@@ -1069,6 +1281,7 @@
                 "GLM 4.7": 0.41,
                 "DeepSeek V3.2": 0.464,
                 "Gemini 3 Pro": 0.542,
+                "Gemini 3 Flash": 0.476,
                 "Claude Haiku 4.5": 0.41,
                 "Claude Sonnet 4.5": 0.5,
                 "Qwen 3.5 397B A17B": 0.525,
@@ -1120,6 +1333,7 @@
             "name": "GDPval-AA 2",
             "scores": {
                 "Gemini 3.6 Flash": 1421,
+                "Gemini 3.5 Flash Lite": 1140,
                 "Grok 4.5(from Gemini 3.6 Flash)": 1535,
                 "Kimi K3": 1668,
                 "Inkling": 1238,
@@ -1136,7 +1350,8 @@
                 "Claude Sonnet 4.6(from Claude Sonnet 5)": 1395,
                 "MiniMax M2.7": 1158,
                 "Kimi K2.5(from Inkling)": 1009,
-                "Gemini 3.1 Pro(from GPT-5.6 Sol)": 963.2
+                "Gemini 3.1 Pro(from GPT-5.6 Sol)": 963.2,
+                "Gemini 3.1 Flash Lite(from Gemini 3.5 Flash Lite)": 642
             }
         },
         {
@@ -1195,6 +1410,7 @@
                 "Claude Sonnet 4.5": 0.336,
                 "GLM 5": 0.504,
                 "Gemini 3 Pro": 0.458,
+                "Gemini 3 Flash": 0.435,
                 "Step 3.5 Flash(from Step 3.7 Flash)": 0.357,
                 "Qwen 3.5 397B A17B": 0.483,
                 "Kimi K2.5": 0.502,
@@ -1262,6 +1478,7 @@
                 "Claude Opus 4.6(from Claude Sonnet 4.6)": 0.595,
                 "Claude Sonnet 4.5(from Claude Sonnet 4.6)": 0.438,
                 "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.541,
+                "Gemini 3 Flash": 0.574,
                 "GPT-5.2": 0.606,
                 "GLM 4.7": 0.52
             }
@@ -1270,6 +1487,7 @@
             "name": "OSWorld-Verified",
             "scores": {
                 "Gemini 3.6 Flash": 0.83,
+                "Gemini 3.5 Flash Lite": 0.74,
                 "Claude Sonnet 5": 0.812,
                 "Claude Fable 5": 0.85,
                 "Claude Opus 4.8": 0.834,
@@ -1286,7 +1504,8 @@
                 "Claude Sonnet 4.5": 0.614,
                 "GPT-5.2(from Claude Sonnet 4.6)": 0.382,
                 "Kimi K2.5": 0.633,
-                "Qwen 3.5 397B A17B": 0.622
+                "Qwen 3.5 397B A17B": 0.622,
+                "Gemini 3 Flash(from Gemini 3.5 Flash Lite)": 0.651
             }
         },
         {
@@ -1306,6 +1525,8 @@
                 "Muse Spark": 0.804,
                 "Grok 4.2(Muse Spark)": 0.752,
                 "GPT-5.4": 0.812,
+                "Gemini 3.1 Flash Lite": 0.768,
+                "GPT-5 mini(from Gemini 3.1 Flash Lite)": 0.741,
                 "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.805,
                 "Qwen 3.6 27B": 0.788,
                 "Gemma 4 31B": 0.769,
@@ -1314,6 +1535,7 @@
                 "Claude Opus 4.6(from Qwen 3.7 Plus)": 0.739,
                 "Claude Sonnet 4.5": 0.634,
                 "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.81,
+                "Gemini 3 Flash": 0.812,
                 "GPT-5.2": 0.795
             }
         },
@@ -1347,6 +1569,18 @@
                 "Claude Sonnet 3.5(from DeepSeek V3)": 0.817, 
                 "GPT-4o(from DeepSeek V3)": 0.805
             }
+        },
+        {
+            "name": "IFEval",
+            "scores": {
+                "GPT-4.1": 0.874,
+                "GPT-4.1 mini(from GPT-4.1)": 0.841,
+                "GPT-4.1 nano(from GPT-4.1)": 0.745,
+                "GPT-4o(from GPT-4.1)": 0.81,
+                "GPT-4o mini(from GPT-4.1)": 0.784,
+                "GPT-4.5(from GPT-4.1)": 0.882, 
+                "GPT-o1(from GPT-4.1)": 0.922
+            }   
         },
         {
             "name": "BabyVision",
