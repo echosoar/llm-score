@@ -1265,6 +1265,7 @@
           "GPT-OSS 120B",
           "GPT-OSS 20B",
           "Grok 4",
+          "Claude Opus 4",
           "DeepSeek R1 0528",
           "Grok 3"
         ],
@@ -1338,6 +1339,7 @@
           "GPT-5",
           "GPT-OSS 120B",
           "Grok 4",
+          "Claude Opus 4",
           "DeepSeek R1 0528",
           "Grok 3"
         ],
@@ -1414,6 +1416,7 @@
           "GPT-5",
           "GPT-OSS 120B",
           "Grok 4",
+          "Claude Opus 4",
           "DeepSeek R1 0528",
           "Grok 3"
         ],
@@ -4603,5 +4606,6 @@
   "priceMap": {
     "￥": 0.15,
     "$": 1
-  }
+  },
+  "updatedAt": "2026-07-22T09:26:46.211Z"
 }
