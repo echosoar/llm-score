@@ -78,13 +78,39 @@
             "brand": "OpenAI",
             "model": "GPT-5.6 Sol",
             "time": "2026/07/09",
-            "input": ["text", "image", "pdf"],
+            "input": ["text", "image"],
             "output": ["text"],
-            "context": 922000,
+            "context": 1050000,
             "generate": 128000,
             "inputPrice": "$5",
             "inputCachedPrice": "$0.5",
             "outputPrice": "$30",
+            "url": "https://openai.com/zh-Hans-CN/index/gpt-5-6/"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-5.6 Terra",
+            "time": "2026/07/09",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1050000,
+            "generate": 128000,
+            "inputPrice": "$2.50",
+            "inputCachedPrice": "$0.25",
+            "outputPrice": "$15",
+            "url": "https://openai.com/zh-Hans-CN/index/gpt-5-6/"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-5.6 Luna",
+            "time": "2026/07/09",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1050000,
+            "generate": 128000,
+            "inputPrice": "$1",
+            "inputCachedPrice": "$0.1",
+            "outputPrice": "$6",
             "url": "https://openai.com/zh-Hans-CN/index/gpt-5-6/"
         },
         {
@@ -303,6 +329,16 @@
             "outputPrice": "$9",
             "url": "https://deepmind.google/models/gemini/flash/"
         },
+        {
+            "brand": "Cursor",
+            "model": "Composer 2.5",
+            "time": "2026/05/18",
+            "input": ["text"],
+            "output": ["text"],
+            "inputPrice": "$0.5",
+            "outputPrice": "$2.5",
+            "url": "https://cursor.com/cn/blog/composer-2-5"
+        },
          {
             "brand": "Poolside",
             "model": "Laguna XS 2",
@@ -468,6 +504,16 @@
             "url": "https://ai.google.dev/gemma/docs/core/model_card_4"
         },
         {
+            "brand": "Cursor",
+            "model": "Composer 2",
+            "time": "2026/03/19",
+            "input": ["text"],
+            "output": ["text"],
+            "inputPrice": "$0.5",
+            "outputPrice": "$2.5",
+            "url": "https://cursor.com/cn/blog/composer-2"
+        },
+        {
             "brand": "Xiaomi",
             "model": "MiMo V2 Pro",
             "time": "2026/03/18",
@@ -607,6 +653,16 @@
             "inputCachedPrice": "￥0.21",
             "outputPrice": "￥8.4",
             "url": "https://www.minimax.io/models/text"
+        },
+        {
+            "brand": "Cursor",
+            "model": "Composer 1.5",
+            "time": "2026/02/09",
+            "input": ["text"],
+            "output": ["text"],
+            "inputPrice": "$0.5",
+            "outputPrice": "$2.5",
+            "url": "https://cursor.com/zh-Hant/blog/composer-1-5"
         },
         {
             "brand": "Anthropic",
@@ -1021,6 +1077,8 @@
                 "Kimi K3": 0.935,
                 "Inkling": 0.872,
                 "GPT-5.6 Sol": 0.946,
+                "GPT-5.6 Terra": 0.929,
+                "GPT-5.6 Luna": 0.923,
                 "Hy 3": 0.904,
                 "LongCat 2": 0.889,
                 "GLM 5.2": 0.912,
@@ -1101,6 +1159,8 @@
                 "Laguna XS 2": 0.463,
                 "Inkling": 0.543,
                 "GPT-5.6 Sol": 0.646,
+                "GPT-5.6 Terra": 0.634,
+                "GPT-5.6 Luna": 0.627,
                 "Muse Spark 1.1": 0.615,
                 "Grok 4.5": 0.647,
                 "Hy 3": 0.579,
@@ -1184,6 +1244,23 @@
                 "GPT-o1(from GPT-4.1)": 0.41
             }
         },
+         {
+            "name": "SWE-Bench Multilingual",
+            "scores": {
+                "Composer 2.5": 0.798,
+                "Qwen 3.7 Max": 0.783,
+                "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.738,
+                "Kimi K2.6(from Qwen 3.7 Max)": 0.767,
+                "Claude Opus 4.6(from Qwen 3.7 Max)": 0.775,
+                "DeepSeek V4 Pro(from Qwen 3.7 Max)": 0.762,
+                "Hy 3": 0.758,
+                "GLM 5.2(from Hy 3)": 0.83,
+                "Claude Opus 4.8(from Hy 3)": 0.844,
+                "Claude Opus 4.7(from Composer 2.5)": 0.805,
+                "Composer 2": 0.737,
+                "Composer 1.5": 0.659
+            }
+        },
         {
             "name": "DeepSWE 1.1",
             "scores": {
@@ -1191,9 +1268,10 @@
                 "Claude Sonnet 5(from Gemini 3.6 Flash)": 0.54,
                 "Kimi K3": 0.675,
                 "GPT-5.6 Sol": 0.727,
+                "GPT-5.6 Terra": 0.696,
+                "GPT-5.6 Luna": 0.672,
                 "Muse Spark 1.1": 0.533,
                 "Grok 4.5": 0.54,
-                "GLM 5.2": 0.462,
                 "Claude Fable 5(from GPT-5.6 Sol)": 0.697,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.59,
                 "GPT-5.5": 0.67,
@@ -1205,16 +1283,32 @@
             "name": "DeepSWE",
             "upgrade": "DeepSWE 1.1",
             "scores": {
+                "GLM 5.2": 0.462,
                 "Laguna S 2.1": 0.404,
                 "Kimi K3(from Laguna S 2.1)": 0.69,
                 "Hy 3": 0.28,
                 "Seed 2.1 Pro(from Hy 3)": 0.327,
                 "Qwen 3.7 Max(from Hy 3)": 0.18,
+                "MiniMax M3(from GLM 5.2)": 0.22,
                 "Claude Opus 4.8(from Hy 3)": 0.58,
                 "DeepSeek V4 Pro(from Hy 3)": 0.08,
                 "DeepSeek V4 Flash(from Hy 3)": 0.071,
                 "GPT-5.5(from Hy 3)": 0.7,
                 "Gemini 3.1 Pro(from Hy 3)": 0.1
+            }
+        },
+        {
+            "name": "Toolathlon-Verified",
+            "scores": {
+                "Kimi K3": 0.732,
+                "GLM 5.2(from Kimi K3)": 0.599,
+                "Claude Fable 5(from Kimi K3)": 0.779,
+                "GPT-5.6 Sol(from Kimi K3)": 0.749,
+                "Claude Opus 4.8(from Kimi K3)": 0.762,
+                "GPT-5.5(from Kimi K3)": 0.735,
+                "Muse Spark 1.1": 0.756,
+                "Muse Spark(from Muse Spark 1.1)": 0.494,
+                "Gemini 3 Pro(from Muse Spark 1.1)": 0.611
             }
         },
         {
@@ -1226,6 +1320,8 @@
                 "Kimi K3": 0.883,
                 "Inkling": 0.638,
                 "GPT-5.6 Sol": 0.888,
+                "GPT-5.6 Terra": 0.874,
+                "GPT-5.6 Luna": 0.847,
                 "Muse Spark 1.1": 0.8,
                 "Grok 4.5": 0.833,
                 "Hy 3": 0.717,
@@ -1236,7 +1332,7 @@
                 "Nemotron 3 Ultra": 0.564,
                 "MiniMax M3": 0.66,
                 "Step 3.7 Flash": 0.595,
-                "Claude Opus 4.8": 0.746,
+                "Claude Opus 4.8": 0.85,
                 "Gemini 3.5 Flash": 0.762,
                 "GPT-5.5(from GPT-5.6 Sol)": 0.856,
                 "GLM 5.2": 0.81,
@@ -1266,12 +1362,15 @@
                 "Qwen 3.6 27B": 0.593,
                 "MiMo V2.5": 0.658,
                 "Kimi K2.6": 0.667,
+                "Composer 2.5": 0.693,
                 "Claude Opus 4.7": 0.694,
                 "Muse Spark": 0.59,
                 "Grok 4.2(Muse Spark)": 0.471,
                 "MiMo V2 Pro": 0.571,
                 "GPT-5.4": 0.751,
                 "Gemini 3.1 Pro": 0.685,
+                "Composer 2": 0.479,
+                "Composer 1.5": 0.4,
                 "Claude Sonnet 4.6": 0.591,
                 "MiniMax M2.5": 0.517,
                 "Claude Opus 4.6": 0.654,
@@ -1299,6 +1398,8 @@
                 "Kimi K3": 0.912,
                 "Inkling": 0.771,
                 "GPT-5.6 Sol": 0.904,
+                "GPT-5.6 Terra": 0.875,
+                "GPT-5.6 Luna": 0.833,
                 "Hy 3": 0.842,
                 "LongCat 2": 0.799,
                 "Claude Fable 5(from GPT-5.6 Sol)": 0.88,
@@ -1338,6 +1439,8 @@
                 "Kimi K3": 1668,
                 "Inkling": 1238,
                 "GPT-5.6 Sol": 1747.8,
+                "GPT-5.6 Terra": 1593,
+                "GPT-5.6 Luna": 1591.8,
                 "Claude Sonnet 5": 1618,
                 "GLM 5.2(from Kimi K3)": 1514,
                 "Claude Fable 5(from GPT-5.6 Sol)": 1759.6,
@@ -1513,7 +1616,9 @@
             "scores": {
                 "Kimi K3": 0.816,
                 "Inkling": 0.735,
-                "GPT-5.6 Sol(from Kimi K3)": 0.83,
+                "GPT-5.6 Sol": 0.83,
+                "GPT-5.6 Terra": 0.807,
+                "GPT-5.6 Luna": 0.784,
                 "Seed 2.1 Pro": 0.816,
                 "Claude Fable 5(from Kimi K3)": 0.812,
                 "Qwen 3.7 Plus": 0.79,

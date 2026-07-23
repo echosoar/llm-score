@@ -120,6 +120,10 @@
       font-variant-numeric: tabular-nums;
     }
 
+    tr:hover {
+      background: rgba(0, 0, 0, 0.03);
+    }
+
     th,
     td {
       padding: 16px 14px;
@@ -568,6 +572,7 @@ const getPriceScore = (model) => {
       const fragment = document.createDocumentFragment();
       rows.forEach((model) => {
         const row = document.createElement('tr');
+        row.setAttribute('title', model.model);
         appendTextCell(row, String(rankMap.get(model.model) ?? '-'), 'numeric');
         appendTextCell(row, model.model, 'model-name');
         appendTextCell(row, model.brand);
