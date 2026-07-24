@@ -232,6 +232,11 @@
       main { padding: 36px 20px 28px; }
       header { align-items: start; flex-direction: column; gap: 12px; }
       #status { text-align: left; white-space: normal; }
+      .lang-toggle {
+        position: absolute;
+        top: 36px;
+        right: 12px;
+      }
     }
 
     .site-footer {
@@ -284,6 +289,8 @@
 
     <footer class="site-footer">
       <span class="updated-at" id="updated-at"></span>
+      <a class="footer-link" href="https://aiznb.com/about" target="_blank" rel="noopener">Created by Soar</a>
+      <a class="footer-link" href="https://x.com/intent/user?screen_name=codersoar" target="_blank" rel="noopener">X</a>
       <a class="footer-link" href="https://github.com/echosoar/llm-score" target="_blank" rel="noopener">GitHub</a>
       <img class="footer-counter" src="https://not.aiznb.com/img?url=https://echosoar.github.io/llm-score/"  />
     </footer>
@@ -313,7 +320,7 @@ let priceNormMap = new Map();
         description: '模型综合评分与基准测试表现',
         loading: '正在加载数据…',
         loadFailed: '数据加载失败',
-        status: (m, b) => `${m} 个模型 · ${b} 个 benchmarks`,
+        status: (m, b) => `${m} 个模型 · ${b} 个评测`,
         updatedAt: (date) => `最后更新时间：${date}`,
         brandGroup: '厂商过滤',
         colRank: '#',

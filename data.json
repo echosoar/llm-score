@@ -240,6 +240,16 @@
             "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/"
         },
         {
+            "brand": "Microsoft",
+            "model": "MAI-Thinking-1",
+            "time": "2026/06/02",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 256000,
+            "generate": 256000,
+            "url": "https://microsoft.ai/news/introducing-mai-thinking-1/"
+        },
+        {
             "brand": "Alibaba",
             "model": "Qwen 3.7 Plus",
             "time": "2026/06/01",
@@ -1083,6 +1093,7 @@
                 "LongCat 2": 0.889,
                 "GLM 5.2": 0.912,
                 "Claude Fable 5(from GPT-5.6 Sol)": 0.941,
+                "MAI-Thinking-1": 0.842,
                 "Qwen 3.7 Plus": 0.903,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.92,
                 "Qwen 3.7 Max": 0.924,
@@ -1170,6 +1181,7 @@
                 "GLM 5.2": 0.621,
                 "Claude Fable 5": 0.803,
                 "Nemotron 3 Ultra": 0.464,
+                "MAI-Thinking-1": 0.528,
                 "Qwen 3.7 Plus": 0.576,
                 "MiniMax M3": 0.59,
                 "Step 3.7 Flash": 0.563,
@@ -1209,6 +1221,7 @@
                 "Hy 3": 0.78,
                 "Seed 2.1 Pro(from Hy 3)": 0.76,
                 "GLM 5.2(from Hy 3)": 0.842,
+                "MAI-Thinking-1": 0.735,
                 "Qwen 3.7 Plus": 0.777,
                 "Claude Opus 4.8(from Hy 3)": 0.886,
                 "Qwen 3.7 Max": 0.804,
@@ -1352,6 +1365,7 @@
             "scores": {
                 "Laguna XS 2.1": 0.375,
                 "Laguna XS 2": 0.357,
+                "MAI-Thinking-1": 0.46,
                 "Qwen 3.7 Plus": 0.703,
                 "Qwen 3.7 Max": 0.697,
                 "MiMo V2.5 Pro": 0.684,
