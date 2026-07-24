@@ -1,6 +1,19 @@
 {
     "models": [
         {
+            "brand": "Anthropic",
+            "model": "Claude Opus 5",
+            "time": "2026/07/24",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "inputPrice": "$5",
+            "inputCachedPrice": "$0.5",
+            "outputPrice": "$25",
+            "url": "https://www.anthropic.com/news/claude-opus-5"
+        },
+        {
             "brand": "Google",
             "model": "Gemini 3.6 Flash",
             "time": "2026/07/21",
@@ -1277,6 +1290,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Claude Opus 5": 0.688,
                 "Gemini 3.6 Flash": 0.49,
                 "Claude Sonnet 5(from Gemini 3.6 Flash)": 0.54,
                 "Kimi K3": 0.675,
@@ -1409,6 +1423,7 @@
         {
             "name": "BrowseComp",
             "scores": {
+                "Claude Opus 5": 0.908,
                 "Kimi K3": 0.912,
                 "Inkling": 0.771,
                 "GPT-5.6 Sol": 0.904,
@@ -1447,6 +1462,7 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "Claude Opus 5": 1861,
                 "Gemini 3.6 Flash": 1421,
                 "Gemini 3.5 Flash Lite": 1140,
                 "Grok 4.5(from Gemini 3.6 Flash)": 1535,
@@ -1495,6 +1511,7 @@
         {
             "name": "Humanity's Last Exam",
             "scores": {
+                "Claude Opus 5": 0.647,
                 "Kimi K3": 0.56,
                 "Inkling": 0.46,
                 "GPT-5.6 Sol(from Kimi K3)": 0.58,
