@@ -481,7 +481,9 @@ const getPriceMultiplier = (model) => priceNormMap.get(model.model) ?? null;
 const getPriceScore = (model) => {
   const multiplier = getPriceMultiplier(model);
   if (multiplier === null || model.score === null || model.score === undefined) return null;
-  return model.score * Math.sqrt((multiplier + 0.1) * 0.9);
+  const value = getPriceIndex(model);
+  return model.score / Math.pow(value, 0.1);
+  // return Math.sqrt(model.score) * ((multiplier + 0.1) * 0.9);
 };
 
     const getSortValue = (model, key) => {
@@ -512,7 +514,18 @@ const getPriceScore = (model) => {
         ? models.filter((model) => selectedBrands.has(model.brand))
         : models;
       return filtered.sort((left, right) => {
-        const result = compareValues(getSortValue(left, key), getSortValue(right, key));
+        const leftValue = getSortValue(left, key);
+        const rightValue = getSortValue(right, key);
+        const leftMissing = leftValue === null || leftValue === undefined || leftValue === '';
+        const rightMissing = rightValue === null || rightValue === undefined || rightValue === '';
+        // 缺失值不论升序降序都排到最后，缺失项之间按 # 序号排序
+        if (leftMissing || rightMissing) {
+          if (leftMissing && rightMissing) {
+            return (rankMap.get(left.model) ?? Infinity) - (rankMap.get(right.model) ?? Infinity);
+          }
+          return leftMissing ? 1 : -1;
+        }
+        const result = compareValues(leftValue, rightValue);
         return result === 0 ? left.model.localeCompare(right.model, 'zh-CN') : result * multiplier;
       });
     };

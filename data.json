@@ -918,6 +918,42 @@
             "url": "https://www.anthropic.com/news/claude-4"
         },
         {
+            "brand": "Alibaba",
+            "model": "Qwen 3 235B A22B",
+            "time": "2025/04/29",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 32000,
+            "url": "https://qwen.ai/blog?id=qwen3"
+        },
+        {
+            "brand": "Alibaba",
+            "model": "Qwen 3 32B",
+            "time": "2025/04/29",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 32000,
+            "url": "https://qwen.ai/blog?id=qwen3"
+        },
+        {
+            "brand": "Alibaba",
+            "model": "Qwen 3 30B A3B",
+            "time": "2025/04/29",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 32000,
+            "url": "https://qwen.ai/blog?id=qwen3"
+        },
+        {
+            "brand": "Alibaba",
+            "model": "Qwen 3 4B",
+            "time": "2025/04/29",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 32000,
+            "url": "https://qwen.ai/blog?id=qwen3"
+        },
+        {
             "brand": "OpenAI",
             "model": "GPT-4.1",
             "time": "2025/04/14",
@@ -1273,6 +1309,7 @@
          {
             "name": "SWE-Bench Multilingual",
             "scores": {
+                "Laguna S 2.1": 0.785,
                 "Composer 2.5": 0.798,
                 "Qwen 3.7 Max": 0.783,
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.738,
@@ -1687,6 +1724,7 @@
                 "Gemma 3 27B(from Llama 4 Scout)": 0.649,
                 "Mistral 3.1 24B(from Llama 4 Scout)": 0.628,
                 "Llama 4 Behemoth": 0.761,
+                "Grok 3": 0.78,
                 "Gemini 2 Pro(from Llama 4 Behemoth)": 0.727,
                 "Claude Opus 4": 0.765,
                 "Claude Sonnet 4": 0.744,
@@ -1716,6 +1754,44 @@
                 "GPT-4o mini(from GPT-4.1)": 0.784,
                 "GPT-4.5(from GPT-4.1)": 0.882, 
                 "GPT-o1(from GPT-4.1)": 0.922
+            }   
+        },
+        {
+            "name": "AIME'26",
+            "scores": {
+                "GLM 5.2": 0.992,
+                "Qwen 3.7 Max(from GLM 5.2)": 0.97,
+                "GLM 5.1(from GLM 5.2)": 0.953,
+                "DeepSeek V4 Pro(from GLM 5.2)": 0.946,
+                "GPT-5.5(from GLM 5.2)": 0.983
+            }
+        },
+        {
+            "name": "AIME'25",
+            "scores": {
+                "Gemini 3 Pro": 0.95,
+                "Gemini 2.5 Pro": 0.88,
+                "Claude Sonnet 4.5(from Gemini 3 Pro)": 0.87,
+                "GPT-5.1(from Gemini 3 Pro)": 0.94,
+                "Grok 3": 0.773,
+                "Qwen 3 235B A22B": 0.815,
+                "Qwen 3 32B": 0.729,
+                "Qwen 3 30B A3B": 0.709,
+                "Qwen 3 4B": 0.656,
+                "GPT-4o(from Qwen 3 235B A22B)": 0.076,
+                "DeepSeek V3(from Qwen 3 235B A22B)": 0.288
+            }   
+        },
+        {
+            "name": "AIME'24",
+            "scores": {
+                "Grok 3": 0.839,
+                "Qwen 3 235B A22B": 0.857,
+                "Qwen 3 32B": 0.814,
+                "Qwen 3 30B A3B": 0.804,
+                "Qwen 3 4B": 0.738,
+                "DeepSeek V3": 0.392,
+                "GPT-4o(from Qwen 3 235B A22B)": 0.111
             }   
         },
         {
