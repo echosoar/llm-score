@@ -145,6 +145,7 @@ fs.writeFileSync(outputPath, JSON.stringify({
     benchmarks: data.benchmarks,
     models: sortedModels,
     priceMap: data.priceMap,
+    icons: data.icons,
     updatedAt: updatedAt.toISOString()
 }, null, 2));
 

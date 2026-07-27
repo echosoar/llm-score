@@ -92,6 +92,9 @@
     }
 
     .brand-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
       padding: 6px 14px;
       border: 1px solid var(--line);
       background: transparent;
@@ -100,6 +103,24 @@
       font-size: 12px;
       font-weight: 500;
       cursor: pointer;
+    }
+
+    .brand-cell {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-icon {
+      flex: none;
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+    }
+
+    .brand-chip .brand-icon {
+      width: 14px;
+      height: 14px;
     }
 
     .brand-chip[aria-pressed="true"] {
@@ -308,6 +329,7 @@
 let models = [];
 let benchmarks = [];
 let priceMap = {};
+let brandIcons = {};
 let updatedAt = null;
 let rankMap = new Map();
 let priceNormMap = new Map();
@@ -587,6 +609,33 @@ const getPriceScore = (model) => {
       row.append(cell);
     };
 
+    // 厂商图标，来自 lobe-icons，映射关系维护在 data.json 的 icons 字段
+    const createBrandIcon = (brand) => {
+      const file = brandIcons[brand];
+      if (!file) return null;
+      const icon = document.createElement('img');
+      icon.className = 'brand-icon';
+      icon.src = `./icons/${file}`;
+      icon.width = 16;
+      icon.height = 16;
+      icon.alt = '';
+      icon.setAttribute('aria-hidden', 'true');
+      return icon;
+    };
+
+    const appendBrandCell = (row, brand) => {
+      const cell = document.createElement('td');
+      const wrap = document.createElement('span');
+      wrap.className = 'brand-cell';
+      const icon = createBrandIcon(brand);
+      if (icon) wrap.append(icon);
+      const label = document.createElement('span');
+      label.textContent = brand ?? '-';
+      wrap.append(label);
+      cell.append(wrap);
+      row.append(cell);
+    };
+
     const renderRows = () => {
       const rows = sortModels();
       const fragment = document.createDocumentFragment();
@@ -595,7 +644,7 @@ const getPriceScore = (model) => {
         row.setAttribute('title', model.model);
         appendTextCell(row, String(rankMap.get(model.model) ?? '-'), 'numeric');
         appendTextCell(row, model.model, 'model-name');
-        appendTextCell(row, model.brand);
+        appendBrandCell(row, model.brand);
         appendTextCell(row, formatScore(model.score), 'numeric');
         appendTextCell(row, formatScore(getPriceScore(model)), 'numeric');
         appendTextCell(row, model.time ?? '-', model.time ? '' : 'missing');
@@ -650,7 +699,11 @@ const getPriceScore = (model) => {
         chip.type = 'button';
         chip.className = 'brand-chip';
         chip.dataset.brand = brand;
-        chip.textContent = brand;
+        const chipIcon = createBrandIcon(brand);
+        if (chipIcon) chip.append(chipIcon);
+        const chipLabel = document.createElement('span');
+        chipLabel.textContent = brand;
+        chip.append(chipLabel);
         const pressed = selectedBrands.has(brand);
         chip.setAttribute('aria-pressed', String(pressed));
         chip.addEventListener('click', () => {
@@ -712,6 +765,7 @@ const getPriceScore = (model) => {
           score: entry.rank,
         }));
         priceMap = data.priceMap ?? {};
+        brandIcons = data.icons ?? {};
         updatedAt = data.updatedAt ?? null;
         benchmarks = (Array.isArray(data.benchmarks) ? data.benchmarks : [])
           .filter((benchmark) => !benchmark.upgrade)

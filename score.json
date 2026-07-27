@@ -6801,5 +6801,28 @@
     "￥": 0.15,
     "$": 1
   },
+  "icons": {
+    "Alibaba": "alibaba-color.svg",
+    "Anthropic": "claude-color.svg",
+    "Bytedance": "bytedance-color.svg",
+    "Cursor": "cursor.svg",
+    "DeepSeek": "deepseek-color.svg",
+    "Google": "google-color.svg",
+    "Meta": "meta-color.svg",
+    "Microsoft": "microsoft-color.svg",
+    "MiniMax": "minimax-color.svg",
+    "Mistral": "mistral-color.svg",
+    "Moonshot": "kimi-color.svg",
+    "Nvidia": "nvidia-color.svg",
+    "OpenAI": "openai.svg",
+    "Poolside": "poolside-color.svg",
+    "StepFun": "stepfun-color.svg",
+    "Thinking Machines": "thinkingmachines.svg",
+    "Xiaomi": "xiaomimimo.svg",
+    "Z.ai": "zhipu-color.svg",
+    "xAI": "xai.svg",
+    "美团": "longcat-color.svg",
+    "腾讯": "hunyuan-color.svg"
+  },
   "updatedAt": "2026-07-26T14:39:43.841Z"
 }
