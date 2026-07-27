@@ -1,6 +1,17 @@
 {
     "models": [
         {
+            "brand": "蚂蚁",
+            "model": "Ling-3.0-flash",
+            "time": "2026/07/24",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 262000,
+            "inputPrice": "￥0.4",
+            "outputPrice": "￥1.2",
+            "url": "https://mp.weixin.qq.com/s/5ic54FCsy334JJsQcyBr1g"
+        },
+        {
             "brand": "Anthropic",
             "model": "Claude Opus 5",
             "time": "2026/07/24",
@@ -361,6 +372,17 @@
             "inputPrice": "$0.5",
             "outputPrice": "$2.5",
             "url": "https://cursor.com/cn/blog/composer-2-5"
+        },
+        {
+            "brand": "蚂蚁",
+            "model": "Ring-2.6-1T",
+            "time": "2026/05/09",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 262000,
+            "inputPrice": "￥4.5",
+            "outputPrice": "￥18",
+            "url": "https://mp.weixin.qq.com/s/5ic54FCsy334JJsQcyBr1g"
         },
          {
             "brand": "Poolside",
@@ -1212,6 +1234,7 @@
         {
             "name": "SWE-Bench Pro",
             "scores": {
+                "Ling-3.0-flash": 0.566,
                 "Gemini 3.6 Flash": 0.587,
                 "Gemini 3.5 Flash Lite": 0.54,
                 "Laguna S 2.1": 0.594,
@@ -1228,6 +1251,7 @@
                 "LongCat 2": 0.595,
                 "Seed 2.1 Pro": 0.575,
                 "GLM 5.2": 0.621,
+                "Ring-2.6-1T": 0.539,
                 "Claude Fable 5": 0.803,
                 "Nemotron 3 Ultra": 0.464,
                 "MAI-Thinking-1": 0.528,
@@ -1309,6 +1333,7 @@
          {
             "name": "SWE-Bench Multilingual",
             "scores": {
+                "Ling-3.0-flash": 0.724,
                 "Laguna S 2.1": 0.785,
                 "Composer 2.5": 0.798,
                 "Qwen 3.7 Max": 0.783,
@@ -1318,6 +1343,7 @@
                 "DeepSeek V4 Pro(from Qwen 3.7 Max)": 0.762,
                 "Hy 3": 0.758,
                 "GLM 5.2(from Hy 3)": 0.83,
+                "Ring-2.6-1T": 0.567,
                 "Claude Opus 4.8(from Hy 3)": 0.844,
                 "Claude Opus 4.7(from Composer 2.5)": 0.805,
                 "Composer 2": 0.737,
@@ -1378,6 +1404,7 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "Ling-3.0-flash": 0.57,
                 "Gemini 3.6 Flash": 0.78,
                 "Gemini 3.5 Flash Lite": 0.54,
                 "Laguna S 2.1": 0.702,
@@ -1400,6 +1427,7 @@
                 "Gemini 3.5 Flash": 0.762,
                 "GPT-5.5(from GPT-5.6 Sol)": 0.856,
                 "GLM 5.2": 0.81,
+                "Ring-2.6-1T": 0.431,
                 "DeepSeek V4 Pro(from Hy 3)": 0.64,
                 "DeepSeek V4 Flash(from Hy 3)": 0.526,
                 "MiniMax M2.7": 0.511,
@@ -1460,6 +1488,7 @@
         {
             "name": "BrowseComp",
             "scores": {
+                "Ling-3.0-flash": 0.82,
                 "Claude Opus 5": 0.908,
                 "Kimi K3": 0.912,
                 "Inkling": 0.771,
@@ -1477,6 +1506,7 @@
                 "GPT-5.5": 0.844,
                 "Kimi K2.6": 0.832,
                 "Claude Opus 4.7": 0.793,
+                "Ring-2.6-1T": 0.717,
                 "GLM 5.1(from Hy 3)": 0.793,
                 "GPT-5.4": 0.827,
                 "Gemini 3.1 Pro": 0.859,
@@ -1624,6 +1654,7 @@
         {
             "name": "MCPAtlas",
             "scores": {
+                "Ling-3.0-flash": 0.655,
                 "Kimi K3": 0.842,
                 "Inkling": 0.741,
                 "GPT-5.6 Sol(from Kimi K3)": 0.836,
@@ -1635,6 +1666,7 @@
                 "MiniMax M3": 0.742,
                 "Claude Opus 4.8(from Kimi K3)": 0.836,
                 "GLM 5.2": 0.768,
+                "Ring-2.6-1T": 0.612,
                 "Qwen 3.7 Max(from GLM 5.2)": 0.764,
                 "Gemini 3.5 Flash": 0.836,
                 "DeepSeek V4 Pro": 0.736,
@@ -1823,6 +1855,8 @@
     ],
     "icons": {
         "Alibaba": "alibaba-color.svg",
+        "蚂蚁": "ant.svg",
+        "百度": "baidu.svg",
         "Anthropic": "claude-color.svg",
         "Bytedance": "bytedance-color.svg",
         "Cursor": "cursor.svg",
