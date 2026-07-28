@@ -16,6 +16,7 @@
         "Qwen 3.7 Plus": 0.903,
         "Claude Opus 4.8": 0.92,
         "Qwen 3.7 Max": 0.924,
+        "ERNIE 5.1": 0.91,
         "DeepSeek V4 Pro": 0.901,
         "DeepSeek V4 Flash": 0.881,
         "GPT-5.5": 0.936,
@@ -183,6 +184,7 @@
         "Laguna S 2.1": 0.785,
         "Composer 2.5": 0.798,
         "Qwen 3.7 Max": 0.783,
+        "LongCat 2": 0.773,
         "Qwen 3.6 27B": 0.738,
         "Kimi K2.6": 0.767,
         "Claude Opus 4.6": 0.775,
@@ -625,6 +627,14 @@
     {
       "name": "IFEval",
       "scores": {
+        "Qwen 3.7 Max": 0.943,
+        "Qwen 3.6 27B": 0.943,
+        "DeepSeek V4 Pro": 0.919,
+        "GLM 5.1": 0.945,
+        "Kimi K2.6": 0.945,
+        "LongCat 2": 0.9,
+        "GPT-5.5": 0.95,
+        "Claude Opus 4.6": 0.919,
         "GPT-4.1": 0.874,
         "GPT-4.1 mini": 0.841,
         "GPT-4.1 nano": 0.745,
@@ -635,13 +645,27 @@
       }
     },
     {
+      "name": "MMLU Pro",
+      "scores": {
+        "Qwen 3.7 Max": 0.896,
+        "Qwen 3.6 27B": 0.885,
+        "DeepSeek V4 Pro": 0.875,
+        "GLM 5.1": 0.863,
+        "Kimi K2.6": 0.871,
+        "Claude Opus 4.6": 0.897,
+        "ERNIE 5.1": 0.843
+      }
+    },
+    {
       "name": "AIME'26",
+      "info": "no tool",
       "scores": {
         "GLM 5.2": 0.992,
         "Qwen 3.7 Max": 0.97,
         "GLM 5.1": 0.953,
         "DeepSeek V4 Pro": 0.946,
-        "GPT-5.5": 0.983
+        "GPT-5.5": 0.983,
+        "ERNIE 5.1": 0.95
       }
     },
     {
@@ -732,6 +756,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "Laguna XS 2",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -824,6 +849,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -912,6 +938,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -1012,6 +1039,7 @@
           "Step 3.7 Flash",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "Laguna XS 2",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
@@ -1104,6 +1132,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -1184,6 +1213,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -1272,6 +1302,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "Laguna XS 2",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -1360,6 +1391,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -1442,6 +1474,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -1527,6 +1560,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "Laguna XS 2",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -1701,6 +1735,7 @@
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
           "Composer 2.5",
+          "ERNIE 5.1",
           "Laguna XS 2",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
@@ -1787,6 +1822,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "Laguna XS 2",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -1865,6 +1901,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -1946,6 +1983,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "Laguna XS 2",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -2118,6 +2156,7 @@
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
           "Composer 2.5",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -2274,6 +2313,7 @@
           "Ling-3.0-flash",
           "Laguna S 2.1",
           "Hy 3",
+          "LongCat 2",
           "GLM 5.2",
           "MAI-Thinking-1",
           "Qwen 3.7 Plus",
@@ -2358,6 +2398,7 @@
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
           "Composer 2.5",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -2445,6 +2486,7 @@
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
           "Composer 2.5",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -2521,6 +2563,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -2597,6 +2640,7 @@
           "Step 3.7 Flash",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -2681,6 +2725,7 @@
           "Step 3.7 Flash",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -2760,6 +2805,7 @@
           "Step 3.7 Flash",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -2838,6 +2884,7 @@
           "Step 3.7 Flash",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -2988,6 +3035,7 @@
           "Gemini 3.5 Flash",
           "Composer 2.5",
           "Ring-2.6-1T",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -3066,6 +3114,7 @@
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -3166,6 +3215,7 @@
           "Gemini 3.5 Flash",
           "Composer 2.5",
           "Ring-2.6-1T",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -3247,6 +3297,7 @@
           "Step 3.7 Flash",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -3316,6 +3367,7 @@
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -3388,6 +3440,7 @@
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
           "Composer 2.5",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -3478,6 +3531,7 @@
           "Gemini 3.5 Flash",
           "Composer 2.5",
           "Ring-2.6-1T",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -3561,6 +3615,7 @@
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
           "Ring-2.6-1T",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -3640,6 +3695,7 @@
           "Gemini 3.5 Flash",
           "Composer 2.5",
           "Ring-2.6-1T",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -3726,6 +3782,7 @@
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
           "Ring-2.6-1T",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
@@ -3865,6 +3922,7 @@
           "Step 3.7 Flash",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -3941,6 +3999,7 @@
           "Gemini 3.5 Flash",
           "Composer 2.5",
           "Ring-2.6-1T",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -3969,6 +4028,59 @@
         "rank": 45.74917450425109
       },
       "rank": 45.74917450425109
+    },
+    {
+      "modelInfo": {
+        "brand": "Cursor",
+        "model": "Composer 2",
+        "time": "2026/03/19",
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ],
+        "inputPrice": "$0.5",
+        "outputPrice": "$2.5",
+        "url": "https://cursor.com/cn/blog/composer-2",
+        "currentBenchmarksScores": {
+          "SWE-Bench Multilingual": 0.737,
+          "Terminal-Bench 2": 0.479
+        },
+        "betterThanCurrentModels": [
+          "Laguna S 2.1",
+          "Hy 3",
+          "LongCat 2",
+          "GLM 5.2",
+          "Qwen 3.7 Plus",
+          "Claude Opus 4.8",
+          "Qwen 3.7 Max",
+          "Composer 2.5",
+          "MiMo V2.5 Pro",
+          "DeepSeek V4 Pro",
+          "DeepSeek V4 Flash",
+          "GPT-5.5",
+          "Qwen 3.6 27B",
+          "MiMo V2.5",
+          "Kimi K2.6",
+          "Claude Opus 4.7",
+          "Muse Spark",
+          "MiMo V2 Pro",
+          "GPT-5.4",
+          "Gemini 3.1 Pro",
+          "Claude Sonnet 4.6",
+          "Qwen 3.5 397B A17B",
+          "Step 3.5 Flash",
+          "GLM 5",
+          "MiniMax M2.5",
+          "Claude Opus 4.6",
+          "Kimi K2.5",
+          "Gemini 3 Pro",
+          "Claude Sonnet 4.5"
+        ],
+        "rank": 45.91902588429355
+      },
+      "rank": 45.91902588429355
     },
     {
       "modelInfo": {
@@ -4055,40 +4167,38 @@
           "Kimi K2.5",
           "GPT-5.2"
         ],
-        "rank": 46.74665015489896
+        "rank": 47.23426596780086
       },
-      "rank": 46.74665015489896
+      "rank": 47.23426596780086
     },
     {
       "modelInfo": {
-        "brand": "Alibaba",
-        "model": "Qwen 3.6 27B",
-        "time": "2026/04/22",
+        "brand": "Moonshot",
+        "model": "Kimi K2.5",
+        "time": "2026/01/27",
         "input": [
           "text",
           "image",
-          "video",
-          "audio"
+          "video"
         ],
         "output": [
           "text"
         ],
         "context": 262144,
-        "generate": 65536,
-        "inputPrice": "￥2",
-        "inputCachedPrice": "￥1",
-        "outputPrice": "￥22",
-        "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+        "generate": 262144,
+        "inputPrice": "￥4",
+        "inputCachedPrice": "￥0.7",
+        "outputPrice": "￥21",
+        "url": "https://www.kimi.com/ai-models/kimi-k2-5",
         "currentBenchmarksScores": {
-          "GPQA Diamond": 0.878,
-          "SWE-Bench Pro": 0.535,
-          "SWE-Bench Verified": 0.788,
-          "SWE-Bench Multilingual": 0.738,
-          "Terminal-Bench 2": 0.593,
-          "Humanity's Last Exam": 0.24,
-          "IMOAnswerBench": 0.808,
-          "MMMU Pro": 0.788,
-          "BabyVision": 0.374
+          "GPQA Diamond": 0.876,
+          "SWE-Bench Pro": 0.507,
+          "Terminal-Bench 2": 0.508,
+          "BrowseComp": 0.749,
+          "GDPval-AA 2": 1009,
+          "Humanity's Last Exam": 0.502,
+          "IMOAnswerBench": 0.818,
+          "OSWorld-Verified": 0.633
         },
         "betterThanCurrentModels": [
           "Ling-3.0-flash",
@@ -4116,10 +4226,13 @@
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
           "Composer 2.5",
+          "Ring-2.6-1T",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
           "GPT-5.5",
+          "Qwen 3.6 27B",
           "MiMo V2.5",
           "Kimi K2.6",
           "Claude Opus 4.7",
@@ -4127,23 +4240,19 @@
           "GLM 5.1",
           "MiMo V2 Pro",
           "MiniMax M2.7",
+          "Grok 4.2",
           "GPT-5.4",
           "Gemini 3.1 Pro",
           "Claude Sonnet 4.6",
-          "Qwen 3.5 397B A17B",
           "Step 3.5 Flash",
           "GLM 5",
           "MiniMax M2.5",
           "Claude Opus 4.6",
-          "Gemini 3 Flash",
-          "GPT-5.2",
-          "DeepSeek V3.2",
-          "Gemini 3 Pro",
-          "Grok 4"
+          "GPT-5.2"
         ],
-        "rank": 47.959258473995554
+        "rank": 49.00817684959747
       },
-      "rank": 47.959258473995554
+      "rank": 49.00817684959747
     },
     {
       "modelInfo": {
@@ -4219,9 +4328,97 @@
           "GPT-5.2",
           "Grok 4"
         ],
-        "rank": 50.68141193934209
+        "rank": 49.207447207436616
       },
-      "rank": 50.68141193934209
+      "rank": 49.207447207436616
+    },
+    {
+      "modelInfo": {
+        "brand": "Alibaba",
+        "model": "Qwen 3.6 27B",
+        "time": "2026/04/22",
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 262144,
+        "generate": 65536,
+        "inputPrice": "￥2",
+        "inputCachedPrice": "￥1",
+        "outputPrice": "￥22",
+        "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+        "currentBenchmarksScores": {
+          "GPQA Diamond": 0.878,
+          "SWE-Bench Pro": 0.535,
+          "SWE-Bench Verified": 0.788,
+          "SWE-Bench Multilingual": 0.738,
+          "Terminal-Bench 2": 0.593,
+          "Humanity's Last Exam": 0.24,
+          "IMOAnswerBench": 0.808,
+          "MMMU Pro": 0.788,
+          "IFEval": 0.943,
+          "MMLU Pro": 0.885,
+          "BabyVision": 0.374
+        },
+        "betterThanCurrentModels": [
+          "Ling-3.0-flash",
+          "Claude Opus 5",
+          "Gemini 3.6 Flash",
+          "Gemini 3.5 Flash Lite",
+          "Laguna S 2.1",
+          "Kimi K3",
+          "Inkling",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Muse Spark 1.1",
+          "Grok 4.5",
+          "Hy 3",
+          "Claude Sonnet 5",
+          "LongCat 2",
+          "Seed 2.1 Pro",
+          "GLM 5.2",
+          "Claude Fable 5",
+          "Qwen 3.7 Plus",
+          "MiniMax M3",
+          "Claude Opus 4.8",
+          "Step 3.7 Flash",
+          "Qwen 3.7 Max",
+          "Gemini 3.5 Flash",
+          "Composer 2.5",
+          "MiMo V2.5 Pro",
+          "DeepSeek V4 Pro",
+          "DeepSeek V4 Flash",
+          "GPT-5.5",
+          "MiMo V2.5",
+          "Kimi K2.6",
+          "Claude Opus 4.7",
+          "Muse Spark",
+          "GLM 5.1",
+          "MiMo V2 Pro",
+          "MiniMax M2.7",
+          "GPT-5.4",
+          "Gemini 3.1 Pro",
+          "Claude Sonnet 4.6",
+          "Qwen 3.5 397B A17B",
+          "Step 3.5 Flash",
+          "GLM 5",
+          "MiniMax M2.5",
+          "Claude Opus 4.6",
+          "Gemini 3 Flash",
+          "GPT-5.2",
+          "DeepSeek V3.2",
+          "Gemini 3 Pro",
+          "Grok 4"
+        ],
+        "rank": 50.23559764889975
+      },
+      "rank": 50.23559764889975
     },
     {
       "modelInfo": {
@@ -4295,143 +4492,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 51.13047541929802
+        "rank": 50.31036400403993
       },
-      "rank": 51.13047541929802
-    },
-    {
-      "modelInfo": {
-        "brand": "Cursor",
-        "model": "Composer 2",
-        "time": "2026/03/19",
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ],
-        "inputPrice": "$0.5",
-        "outputPrice": "$2.5",
-        "url": "https://cursor.com/cn/blog/composer-2",
-        "currentBenchmarksScores": {
-          "SWE-Bench Multilingual": 0.737,
-          "Terminal-Bench 2": 0.479
-        },
-        "betterThanCurrentModels": [
-          "Laguna S 2.1",
-          "Hy 3",
-          "GLM 5.2",
-          "Qwen 3.7 Plus",
-          "Claude Opus 4.8",
-          "Qwen 3.7 Max",
-          "Composer 2.5",
-          "MiMo V2.5 Pro",
-          "DeepSeek V4 Pro",
-          "DeepSeek V4 Flash",
-          "GPT-5.5",
-          "Qwen 3.6 27B",
-          "MiMo V2.5",
-          "Kimi K2.6",
-          "Claude Opus 4.7",
-          "Muse Spark",
-          "MiMo V2 Pro",
-          "GPT-5.4",
-          "Gemini 3.1 Pro",
-          "Claude Sonnet 4.6",
-          "Qwen 3.5 397B A17B",
-          "Step 3.5 Flash",
-          "GLM 5",
-          "MiniMax M2.5",
-          "Claude Opus 4.6",
-          "Kimi K2.5",
-          "Gemini 3 Pro",
-          "Claude Sonnet 4.5"
-        ],
-        "rank": 54.12871175086769
-      },
-      "rank": 54.12871175086769
-    },
-    {
-      "modelInfo": {
-        "brand": "Moonshot",
-        "model": "Kimi K2.5",
-        "time": "2026/01/27",
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 262144,
-        "generate": 262144,
-        "inputPrice": "￥4",
-        "inputCachedPrice": "￥0.7",
-        "outputPrice": "￥21",
-        "url": "https://www.kimi.com/ai-models/kimi-k2-5",
-        "currentBenchmarksScores": {
-          "GPQA Diamond": 0.876,
-          "SWE-Bench Pro": 0.507,
-          "Terminal-Bench 2": 0.508,
-          "BrowseComp": 0.749,
-          "GDPval-AA 2": 1009,
-          "Humanity's Last Exam": 0.502,
-          "IMOAnswerBench": 0.818,
-          "OSWorld-Verified": 0.633
-        },
-        "betterThanCurrentModels": [
-          "Ling-3.0-flash",
-          "Claude Opus 5",
-          "Gemini 3.6 Flash",
-          "Gemini 3.5 Flash Lite",
-          "Laguna S 2.1",
-          "Kimi K3",
-          "Inkling",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "GPT-5.6 Luna",
-          "Muse Spark 1.1",
-          "Grok 4.5",
-          "Hy 3",
-          "Claude Sonnet 5",
-          "LongCat 2",
-          "Seed 2.1 Pro",
-          "GLM 5.2",
-          "Claude Fable 5",
-          "Qwen 3.7 Plus",
-          "MiniMax M3",
-          "Claude Opus 4.8",
-          "Step 3.7 Flash",
-          "Qwen 3.7 Max",
-          "Gemini 3.5 Flash",
-          "Composer 2.5",
-          "Ring-2.6-1T",
-          "MiMo V2.5 Pro",
-          "DeepSeek V4 Pro",
-          "DeepSeek V4 Flash",
-          "GPT-5.5",
-          "Qwen 3.6 27B",
-          "MiMo V2.5",
-          "Kimi K2.6",
-          "Claude Opus 4.7",
-          "Muse Spark",
-          "GLM 5.1",
-          "MiMo V2 Pro",
-          "MiniMax M2.7",
-          "Grok 4.2",
-          "GPT-5.4",
-          "Gemini 3.1 Pro",
-          "Claude Sonnet 4.6",
-          "Step 3.5 Flash",
-          "GLM 5",
-          "MiniMax M2.5",
-          "Claude Opus 4.6",
-          "GPT-5.2"
-        ],
-        "rank": 54.734139725815496
-      },
-      "rank": 54.734139725815496
+      "rank": 50.31036400403993
     },
     {
       "modelInfo": {
@@ -4490,6 +4553,7 @@
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
           "Composer 2.5",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "GPT-5.5",
@@ -4508,9 +4572,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 55.34400583696357
+        "rank": 51.53966105702287
       },
-      "rank": 55.34400583696357
+      "rank": 51.53966105702287
     },
     {
       "modelInfo": {
@@ -4576,9 +4640,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 55.58188762741908
+        "rank": 51.77754284747838
       },
-      "rank": 55.58188762741908
+      "rank": 51.77754284747838
     },
     {
       "modelInfo": {
@@ -4633,6 +4697,7 @@
           "Gemini 3.5 Flash",
           "Composer 2.5",
           "Ring-2.6-1T",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "GPT-5.5",
@@ -4649,9 +4714,9 @@
           "Gemini 3 Flash",
           "GPT-5.2"
         ],
-        "rank": 56.60154655113501
+        "rank": 52.79720177119431
       },
-      "rank": 56.60154655113501
+      "rank": 52.79720177119431
     },
     {
       "modelInfo": {
@@ -4705,6 +4770,7 @@
           "Gemini 3.5 Flash",
           "Composer 2.5",
           "Ring-2.6-1T",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "DeepSeek V4 Flash",
@@ -4726,9 +4792,9 @@
           "GPT-5.2",
           "Gemini 3 Pro"
         ],
-        "rank": 56.71269536727259
+        "rank": 52.90835058733189
       },
-      "rank": 56.71269536727259
+      "rank": 52.90835058733189
     },
     {
       "modelInfo": {
@@ -4795,9 +4861,9 @@
           "Claude Sonnet 4.6",
           "MiniMax M2.5"
         ],
-        "rank": 58.07982286343234
+        "rank": 54.27547808349164
       },
-      "rank": 58.07982286343234
+      "rank": 54.27547808349164
     },
     {
       "modelInfo": {
@@ -4851,6 +4917,7 @@
           "Step 3.7 Flash",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "MiMo V2.5 Pro",
           "DeepSeek V4 Pro",
           "GPT-5.5",
@@ -4868,9 +4935,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 58.98982936115814
+        "rank": 55.18548458121744
       },
-      "rank": 58.98982936115814
+      "rank": 55.18548458121744
     },
     {
       "modelInfo": {
@@ -4934,9 +5001,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 59.19240763003475
+        "rank": 55.38806285009405
       },
-      "rank": 59.19240763003475
+      "rank": 55.38806285009405
     },
     {
       "modelInfo": {
@@ -4998,9 +5065,77 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 59.33681196216472
+        "rank": 55.53246718222402
       },
-      "rank": 59.33681196216472
+      "rank": 55.53246718222402
+    },
+    {
+      "modelInfo": {
+        "brand": "Alibaba",
+        "model": "Qwen 3.5 397B A17B",
+        "time": "2026/02/16",
+        "input": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 262144,
+        "generate": 65536,
+        "inputPrice": "￥3.5",
+        "inputCachedPrice": "￥1.5",
+        "outputPrice": "￥25",
+        "url": "https://qwen.ai/blog?id=qwen3.5",
+        "currentBenchmarksScores": {
+          "Terminal-Bench 2": 0.525,
+          "BrowseComp": 0.78,
+          "Humanity's Last Exam": 0.483,
+          "IMOAnswerBench": 0.809,
+          "OSWorld-Verified": 0.622
+        },
+        "betterThanCurrentModels": [
+          "Ling-3.0-flash",
+          "Claude Opus 5",
+          "Gemini 3.6 Flash",
+          "Gemini 3.5 Flash Lite",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Muse Spark 1.1",
+          "Hy 3",
+          "Claude Sonnet 5",
+          "LongCat 2",
+          "GLM 5.2",
+          "Claude Fable 5",
+          "Qwen 3.7 Plus",
+          "MiniMax M3",
+          "Claude Opus 4.8",
+          "Qwen 3.7 Max",
+          "Gemini 3.5 Flash",
+          "Composer 2.5",
+          "MiMo V2.5 Pro",
+          "DeepSeek V4 Pro",
+          "DeepSeek V4 Flash",
+          "GPT-5.5",
+          "MiMo V2.5",
+          "Kimi K2.6",
+          "Claude Opus 4.7",
+          "Muse Spark",
+          "GLM 5.1",
+          "GPT-5.4",
+          "Gemini 3.1 Pro",
+          "Claude Sonnet 4.6",
+          "GLM 5",
+          "Claude Opus 4.6",
+          "Kimi K2.5"
+        ],
+        "rank": 55.75527190044158
+      },
+      "rank": 55.75527190044158
     },
     {
       "modelInfo": {
@@ -5068,77 +5203,9 @@
           "Claude Opus 4.6",
           "Claude Haiku 4.5"
         ],
-        "rank": 59.468351632784994
+        "rank": 55.75527190044158
       },
-      "rank": 59.468351632784994
-    },
-    {
-      "modelInfo": {
-        "brand": "Alibaba",
-        "model": "Qwen 3.5 397B A17B",
-        "time": "2026/02/16",
-        "input": [
-          "text",
-          "image",
-          "video",
-          "audio"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 262144,
-        "generate": 65536,
-        "inputPrice": "￥3.5",
-        "inputCachedPrice": "￥1.5",
-        "outputPrice": "￥25",
-        "url": "https://qwen.ai/blog?id=qwen3.5",
-        "currentBenchmarksScores": {
-          "Terminal-Bench 2": 0.525,
-          "BrowseComp": 0.78,
-          "Humanity's Last Exam": 0.483,
-          "IMOAnswerBench": 0.809,
-          "OSWorld-Verified": 0.622
-        },
-        "betterThanCurrentModels": [
-          "Ling-3.0-flash",
-          "Claude Opus 5",
-          "Gemini 3.6 Flash",
-          "Gemini 3.5 Flash Lite",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "GPT-5.6 Luna",
-          "Muse Spark 1.1",
-          "Hy 3",
-          "Claude Sonnet 5",
-          "LongCat 2",
-          "GLM 5.2",
-          "Claude Fable 5",
-          "Qwen 3.7 Plus",
-          "MiniMax M3",
-          "Claude Opus 4.8",
-          "Qwen 3.7 Max",
-          "Gemini 3.5 Flash",
-          "Composer 2.5",
-          "MiMo V2.5 Pro",
-          "DeepSeek V4 Pro",
-          "DeepSeek V4 Flash",
-          "GPT-5.5",
-          "MiMo V2.5",
-          "Kimi K2.6",
-          "Claude Opus 4.7",
-          "Muse Spark",
-          "GLM 5.1",
-          "GPT-5.4",
-          "Gemini 3.1 Pro",
-          "Claude Sonnet 4.6",
-          "GLM 5",
-          "Claude Opus 4.6",
-          "Kimi K2.5"
-        ],
-        "rank": 61.77199966576786
-      },
-      "rank": 61.77199966576786
+      "rank": 55.75527190044158
     },
     {
       "modelInfo": {
@@ -5198,9 +5265,9 @@
           "Gemini 3.1 Pro",
           "Claude Sonnet 4.6"
         ],
-        "rank": 62.28482017858837
+        "rank": 56.206137154642825
       },
-      "rank": 62.28482017858837
+      "rank": 56.206137154642825
     },
     {
       "modelInfo": {
@@ -5258,6 +5325,7 @@
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
           "Composer 2.5",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "GPT-5.5",
           "MiMo V2.5",
@@ -5269,9 +5337,9 @@
           "GLM 5",
           "Claude Opus 4.6"
         ],
-        "rank": 63.29452199496677
+        "rank": 57.21583897102123
       },
-      "rank": 63.29452199496677
+      "rank": 57.21583897102123
     },
     {
       "modelInfo": {
@@ -5329,9 +5397,9 @@
           "Gemini 3.1 Pro",
           "Claude Opus 4.6"
         ],
-        "rank": 63.796760577199066
+        "rank": 57.71807755325352
       },
-      "rank": 63.796760577199066
+      "rank": 57.71807755325352
     },
     {
       "modelInfo": {
@@ -5390,9 +5458,9 @@
           "GLM 5",
           "Claude Opus 4.6"
         ],
-        "rank": 63.796760577199066
+        "rank": 57.71807755325352
       },
-      "rank": 63.796760577199066
+      "rank": 57.71807755325352
     },
     {
       "modelInfo": {
@@ -5450,9 +5518,9 @@
           "Gemini 3.1 Pro",
           "GPT-5.2"
         ],
-        "rank": 63.796760577199066
+        "rank": 57.71807755325352
       },
-      "rank": 63.796760577199066
+      "rank": 57.71807755325352
     },
     {
       "modelInfo": {
@@ -5480,6 +5548,8 @@
           "Humanity's Last Exam": 0.523,
           "IMOAnswerBench": 0.838,
           "MCPAtlas": 0.718,
+          "IFEval": 0.945,
+          "MMLU Pro": 0.863,
           "AIME'26": 0.953
         },
         "betterThanCurrentModels": [
@@ -5512,49 +5582,48 @@
           "Gemini 3.1 Pro",
           "Claude Opus 4.6"
         ],
-        "rank": 64.20674275188712
+        "rank": 58.128059727941576
       },
-      "rank": 64.20674275188712
+      "rank": 58.128059727941576
     },
     {
       "modelInfo": {
-        "brand": "Anthropic",
-        "model": "Claude Opus 4.6",
-        "time": "2026/02/05",
+        "brand": "DeepSeek",
+        "model": "DeepSeek V4 Pro",
+        "time": "2026/04/24",
         "input": [
-          "text",
-          "image",
-          "pdf"
+          "text"
         ],
         "output": [
           "text"
         ],
         "context": 1000000,
-        "generate": 128000,
-        "inputPrice": "$5",
-        "inputCachedPrice": "$0.5",
-        "outputPrice": "$25",
-        "url": "https://www.anthropic.com/news/claude-opus-4-6",
+        "generate": 384000,
+        "inputPrice": "￥3",
+        "inputCachedPrice": "￥0.025",
+        "outputPrice": "￥6",
+        "url": "https://api-docs.deepseek.com/news/news260424",
         "currentBenchmarksScores": {
-          "GPQA Diamond": 0.913,
-          "SWE-Bench Pro": 0.534,
-          "SWE-Bench Verified": 0.808,
-          "SWE-Bench Multilingual": 0.775,
-          "Terminal-Bench 2": 0.654,
-          "BrowseComp": 0.84,
-          "GDPval-AA": 1606,
-          "Humanity's Last Exam": 0.53,
-          "IMOAnswerBench": 0.753,
-          "MCPAtlas": 0.595,
-          "OSWorld-Verified": 0.727,
-          "MMMU Pro": 0.739,
-          "BabyVision": 0.126
+          "GPQA Diamond": 0.901,
+          "SWE-Bench Pro": 0.554,
+          "SWE-Bench Verified": 0.806,
+          "SWE-Bench Multilingual": 0.762,
+          "DeepSWE": 0.08,
+          "Terminal-Bench 2.1": 0.64,
+          "Terminal-Bench 2": 0.679,
+          "BrowseComp": 0.834,
+          "GDPval-AA 2": 1307,
+          "GDPval-AA": 1554,
+          "Humanity's Last Exam": 0.482,
+          "IMOAnswerBench": 0.898,
+          "MCPAtlas": 0.736,
+          "IFEval": 0.919,
+          "MMLU Pro": 0.875,
+          "AIME'26": 0.946
         },
         "betterThanCurrentModels": [
-          "Ling-3.0-flash",
           "Claude Opus 5",
           "Gemini 3.6 Flash",
-          "Gemini 3.5 Flash Lite",
           "Laguna S 2.1",
           "Kimi K3",
           "GPT-5.6 Sol",
@@ -5564,27 +5633,26 @@
           "Grok 4.5",
           "Hy 3",
           "Claude Sonnet 5",
-          "LongCat 2",
           "Seed 2.1 Pro",
           "GLM 5.2",
           "Kimi K2.7 Code",
           "Claude Fable 5",
-          "Qwen 3.7 Plus",
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
           "Composer 2.5",
+          "ERNIE 5.1",
+          "MiMo V2.5 Pro",
           "GPT-5.5",
-          "MiMo V2.5",
-          "Kimi K2.6",
           "Claude Opus 4.7",
           "GPT-5.4",
-          "Gemini 3.1 Pro"
+          "Gemini 3.1 Pro",
+          "Claude Opus 4.6"
         ],
-        "rank": 64.72962022185688
+        "rank": 58.54243167610842
       },
-      "rank": 64.72962022185688
+      "rank": 58.54243167610842
     },
     {
       "modelInfo": {
@@ -5638,46 +5706,51 @@
           "Claude Sonnet 4.6",
           "Claude Opus 4.6"
         ],
-        "rank": 65.3147832634677
+        "rank": 58.73319588395551
       },
-      "rank": 65.3147832634677
+      "rank": 58.73319588395551
     },
     {
       "modelInfo": {
-        "brand": "DeepSeek",
-        "model": "DeepSeek V4 Pro",
-        "time": "2026/04/24",
+        "brand": "Anthropic",
+        "model": "Claude Opus 4.6",
+        "time": "2026/02/05",
         "input": [
-          "text"
+          "text",
+          "image",
+          "pdf"
         ],
         "output": [
           "text"
         ],
         "context": 1000000,
-        "generate": 384000,
-        "inputPrice": "￥3",
-        "inputCachedPrice": "￥0.025",
-        "outputPrice": "￥6",
-        "url": "https://api-docs.deepseek.com/news/news260424",
+        "generate": 128000,
+        "inputPrice": "$5",
+        "inputCachedPrice": "$0.5",
+        "outputPrice": "$25",
+        "url": "https://www.anthropic.com/news/claude-opus-4-6",
         "currentBenchmarksScores": {
-          "GPQA Diamond": 0.901,
-          "SWE-Bench Pro": 0.554,
-          "SWE-Bench Verified": 0.806,
-          "SWE-Bench Multilingual": 0.762,
-          "DeepSWE": 0.08,
-          "Terminal-Bench 2.1": 0.64,
-          "Terminal-Bench 2": 0.679,
-          "BrowseComp": 0.834,
-          "GDPval-AA 2": 1307,
-          "GDPval-AA": 1554,
-          "Humanity's Last Exam": 0.482,
-          "IMOAnswerBench": 0.898,
-          "MCPAtlas": 0.736,
-          "AIME'26": 0.946
+          "GPQA Diamond": 0.913,
+          "SWE-Bench Pro": 0.534,
+          "SWE-Bench Verified": 0.808,
+          "SWE-Bench Multilingual": 0.775,
+          "Terminal-Bench 2": 0.654,
+          "BrowseComp": 0.84,
+          "GDPval-AA": 1606,
+          "Humanity's Last Exam": 0.53,
+          "IMOAnswerBench": 0.753,
+          "MCPAtlas": 0.595,
+          "OSWorld-Verified": 0.727,
+          "MMMU Pro": 0.739,
+          "IFEval": 0.919,
+          "MMLU Pro": 0.897,
+          "BabyVision": 0.126
         },
         "betterThanCurrentModels": [
+          "Ling-3.0-flash",
           "Claude Opus 5",
           "Gemini 3.6 Flash",
+          "Gemini 3.5 Flash Lite",
           "Laguna S 2.1",
           "Kimi K3",
           "GPT-5.6 Sol",
@@ -5691,21 +5764,124 @@
           "GLM 5.2",
           "Kimi K2.7 Code",
           "Claude Fable 5",
+          "Qwen 3.7 Plus",
           "MiniMax M3",
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
           "Composer 2.5",
-          "MiMo V2.5 Pro",
           "GPT-5.5",
+          "MiMo V2.5",
+          "Kimi K2.6",
+          "Claude Opus 4.7",
+          "GPT-5.4",
+          "Gemini 3.1 Pro"
+        ],
+        "rank": 59.33309310090681
+      },
+      "rank": 59.33309310090681
+    },
+    {
+      "modelInfo": {
+        "brand": "美团",
+        "model": "LongCat 2",
+        "time": "2026/06/30",
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ],
+        "inputPrice": "￥5",
+        "inputCachedPrice": "￥0.1",
+        "outputPrice": "￥20",
+        "url": "https://longcat.ai/blog/longcat-2.0/",
+        "currentBenchmarksScores": {
+          "GPQA Diamond": 0.889,
+          "SWE-Bench Pro": 0.595,
+          "SWE-Bench Multilingual": 0.773,
+          "Terminal-Bench 2.1": 0.708,
+          "BrowseComp": 0.799,
+          "IMOAnswerBench": 0.818,
+          "IFEval": 0.9
+        },
+        "betterThanCurrentModels": [
+          "Claude Opus 5",
+          "Gemini 3.6 Flash",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Muse Spark 1.1",
+          "Grok 4.5",
+          "Hy 3",
+          "Claude Sonnet 5",
+          "GLM 5.2",
+          "Claude Fable 5",
+          "Qwen 3.7 Plus",
+          "MiniMax M3",
+          "Claude Opus 4.8",
+          "Qwen 3.7 Max",
+          "Composer 2.5",
+          "ERNIE 5.1",
+          "DeepSeek V4 Pro",
+          "GPT-5.5",
+          "Kimi K2.6",
           "Claude Opus 4.7",
           "GPT-5.4",
           "Gemini 3.1 Pro",
-          "Claude Opus 4.6"
+          "Claude Opus 4.6",
+          "Gemini 3 Flash"
         ],
-        "rank": 65.35644993013437
+        "rank": 60.33586105530644
       },
-      "rank": 65.35644993013437
+      "rank": 60.33586105530644
+    },
+    {
+      "modelInfo": {
+        "brand": "百度",
+        "model": "ERNIE 5.1",
+        "time": "2026/05/08",
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 119000,
+        "generate": 64000,
+        "inputPrice": "￥4",
+        "outputPrice": "￥18",
+        "url": "https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/",
+        "currentBenchmarksScores": {
+          "GPQA Diamond": 0.91,
+          "MMLU Pro": 0.843,
+          "AIME'26": 0.95
+        },
+        "betterThanCurrentModels": [
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "GLM 5.2",
+          "Claude Fable 5",
+          "MiniMax M3",
+          "Claude Opus 4.8",
+          "Qwen 3.7 Max",
+          "GPT-5.5",
+          "Qwen 3.6 27B",
+          "Kimi K2.6",
+          "Claude Opus 4.7",
+          "GLM 5.1",
+          "GPT-5.4",
+          "Gemini 3.1 Pro",
+          "Claude Opus 4.6",
+          "GPT-5.2",
+          "Gemini 3 Pro"
+        ],
+        "rank": 60.572081527747386
+      },
+      "rank": 60.572081527747386
     },
     {
       "modelInfo": {
@@ -5772,9 +5948,9 @@
           "Claude Opus 4.7",
           "GPT-5.4"
         ],
-        "rank": 66.2813540257059
+        "rank": 60.93471889038475
       },
-      "rank": 66.2813540257059
+      "rank": 60.93471889038475
     },
     {
       "modelInfo": {
@@ -5824,6 +6000,7 @@
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
           "Gemini 3.5 Flash",
+          "ERNIE 5.1",
           "DeepSeek V4 Pro",
           "GPT-5.5",
           "Kimi K2.6",
@@ -5831,9 +6008,9 @@
           "Gemini 3 Flash",
           "GPT-5.2"
         ],
-        "rank": 67.4324143339079
+        "rank": 62.085779198586756
       },
-      "rank": 67.4324143339079
+      "rank": 62.085779198586756
     },
     {
       "modelInfo": {
@@ -5864,7 +6041,9 @@
           "Humanity's Last Exam": 0.54,
           "IMOAnswerBench": 0.86,
           "MCPAtlas": 0.666,
-          "OSWorld-Verified": 0.731
+          "OSWorld-Verified": 0.731,
+          "IFEval": 0.945,
+          "MMLU Pro": 0.871
         },
         "betterThanCurrentModels": [
           "Claude Opus 5",
@@ -5891,9 +6070,123 @@
           "GPT-5.4",
           "Gemini 3.1 Pro"
         ],
-        "rank": 67.60491760960885
+        "rank": 62.258282474287704
       },
-      "rank": 67.60491760960885
+      "rank": 62.258282474287704
+    },
+    {
+      "modelInfo": {
+        "brand": "OpenAI",
+        "model": "GPT-5.4",
+        "time": "2026/03/05",
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 922000,
+        "generate": 128000,
+        "inputPrice": "$2.5",
+        "inputCachedPrice": "$0.25",
+        "outputPrice": "$15",
+        "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-5-4/",
+        "currentBenchmarksScores": {
+          "GPQA Diamond": 0.928,
+          "SWE-Bench Pro": 0.577,
+          "Terminal-Bench 2": 0.751,
+          "BrowseComp": 0.827,
+          "GDPval-AA": 1672,
+          "Humanity's Last Exam": 0.521,
+          "MCPAtlas": 0.672,
+          "OSWorld-Verified": 0.75,
+          "MMMU Pro": 0.812,
+          "BabyVision": 0.531
+        },
+        "betterThanCurrentModels": [
+          "Claude Opus 5",
+          "Gemini 3.6 Flash",
+          "Laguna S 2.1",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Muse Spark 1.1",
+          "Grok 4.5",
+          "Hy 3",
+          "Claude Sonnet 5",
+          "Seed 2.1 Pro",
+          "GLM 5.2",
+          "Kimi K2.7 Code",
+          "Claude Fable 5",
+          "MiniMax M3",
+          "Claude Opus 4.8",
+          "Qwen 3.7 Max",
+          "GPT-5.5",
+          "Claude Opus 4.7",
+          "GLM 5.1"
+        ],
+        "rank": 62.72416296728724
+      },
+      "rank": 62.72416296728724
+    },
+    {
+      "modelInfo": {
+        "brand": "MiniMax",
+        "model": "MiniMax M3",
+        "time": "2026/06/01",
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 512000,
+        "generate": 128000,
+        "inputPrice": "￥4.2",
+        "inputCachedPrice": "￥0.84",
+        "outputPrice": "￥16.8",
+        "url": "https://www.minimax.io/models/text/m3",
+        "currentBenchmarksScores": {
+          "GPQA Diamond": 0.93,
+          "SWE-Bench Pro": 0.59,
+          "DeepSWE": 0.22,
+          "Terminal-Bench 2.1": 0.66,
+          "BrowseComp": 0.835,
+          "GDPval-AA 2": 1395,
+          "MCPAtlas": 0.742,
+          "OSWorld-Verified": 0.701,
+          "MMMU Pro": 0.781
+        },
+        "betterThanCurrentModels": [
+          "Claude Opus 5",
+          "Gemini 3.6 Flash",
+          "Laguna S 2.1",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Muse Spark 1.1",
+          "Grok 4.5",
+          "Hy 3",
+          "Claude Sonnet 5",
+          "Seed 2.1 Pro",
+          "GLM 5.2",
+          "Kimi K2.7 Code",
+          "Claude Fable 5",
+          "Claude Opus 4.8",
+          "Gemini 3.5 Flash",
+          "GPT-5.5",
+          "Claude Opus 4.7",
+          "Gemini 3.1 Pro"
+        ],
+        "rank": 63.07047718506807
+      },
+      "rank": 63.07047718506807
     },
     {
       "modelInfo": {
@@ -5929,9 +6222,61 @@
           "Gemini 3.5 Flash",
           "GPT-5.5"
         ],
-        "rank": 69.01632902102025
+        "rank": 63.31306478614624
       },
-      "rank": 69.01632902102025
+      "rank": 63.31306478614624
+    },
+    {
+      "modelInfo": {
+        "brand": "Bytedance",
+        "model": "Seed 2.1 Pro",
+        "time": "2026/06/24",
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 256000,
+        "inputPrice": "￥6",
+        "inputCachedPrice": "￥1.2",
+        "outputPrice": "￥30",
+        "url": "https://seed.bytedance.com/en/seed2_1",
+        "currentBenchmarksScores": {
+          "SWE-Bench Pro": 0.575,
+          "SWE-Bench Verified": 0.76,
+          "DeepSWE": 0.327,
+          "Terminal-Bench 2.1": 0.71,
+          "MMMU Pro": 0.816,
+          "BabyVision": 0.737
+        },
+        "betterThanCurrentModels": [
+          "Gemini 3.6 Flash",
+          "Laguna S 2.1",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Muse Spark 1.1",
+          "Grok 4.5",
+          "Hy 3",
+          "Claude Sonnet 5",
+          "LongCat 2",
+          "GLM 5.2",
+          "Claude Fable 5",
+          "Claude Opus 4.8",
+          "Qwen 3.7 Max",
+          "Gemini 3.5 Flash",
+          "GPT-5.5",
+          "Kimi K2.6",
+          "MiniMax M2.5",
+          "Gemini 3 Flash"
+        ],
+        "rank": 63.31306478614624
+      },
+      "rank": 63.31306478614624
     },
     {
       "modelInfo": {
@@ -5990,226 +6335,9 @@
           "GLM 5",
           "MiniMax M2.5"
         ],
-        "rank": 70.01632902102025
+        "rank": 63.80181098885268
       },
-      "rank": 70.01632902102025
-    },
-    {
-      "modelInfo": {
-        "brand": "美团",
-        "model": "LongCat 2",
-        "time": "2026/06/30",
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ],
-        "inputPrice": "￥5",
-        "inputCachedPrice": "￥0.1",
-        "outputPrice": "￥20",
-        "url": "https://longcat.ai/blog/longcat-2.0/",
-        "currentBenchmarksScores": {
-          "GPQA Diamond": 0.889,
-          "SWE-Bench Pro": 0.595,
-          "Terminal-Bench 2.1": 0.708,
-          "BrowseComp": 0.799,
-          "IMOAnswerBench": 0.818
-        },
-        "betterThanCurrentModels": [
-          "Claude Opus 5",
-          "Gemini 3.6 Flash",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "GPT-5.6 Luna",
-          "Muse Spark 1.1",
-          "Grok 4.5",
-          "Hy 3",
-          "Claude Sonnet 5",
-          "GLM 5.2",
-          "Claude Fable 5",
-          "Qwen 3.7 Plus",
-          "MiniMax M3",
-          "Claude Opus 4.8",
-          "Qwen 3.7 Max",
-          "DeepSeek V4 Pro",
-          "GPT-5.5",
-          "Kimi K2.6",
-          "Claude Opus 4.7",
-          "GPT-5.4",
-          "Gemini 3.1 Pro",
-          "Gemini 3 Flash"
-        ],
-        "rank": 70.81487711539413
-      },
-      "rank": 70.81487711539413
-    },
-    {
-      "modelInfo": {
-        "brand": "OpenAI",
-        "model": "GPT-5.4",
-        "time": "2026/03/05",
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 922000,
-        "generate": 128000,
-        "inputPrice": "$2.5",
-        "inputCachedPrice": "$0.25",
-        "outputPrice": "$15",
-        "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-5-4/",
-        "currentBenchmarksScores": {
-          "GPQA Diamond": 0.928,
-          "SWE-Bench Pro": 0.577,
-          "Terminal-Bench 2": 0.751,
-          "BrowseComp": 0.827,
-          "GDPval-AA": 1672,
-          "Humanity's Last Exam": 0.521,
-          "MCPAtlas": 0.672,
-          "OSWorld-Verified": 0.75,
-          "MMMU Pro": 0.812,
-          "BabyVision": 0.531
-        },
-        "betterThanCurrentModels": [
-          "Claude Opus 5",
-          "Gemini 3.6 Flash",
-          "Laguna S 2.1",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "GPT-5.6 Luna",
-          "Muse Spark 1.1",
-          "Grok 4.5",
-          "Hy 3",
-          "Claude Sonnet 5",
-          "Seed 2.1 Pro",
-          "GLM 5.2",
-          "Kimi K2.7 Code",
-          "Claude Fable 5",
-          "MiniMax M3",
-          "Claude Opus 4.8",
-          "Qwen 3.7 Max",
-          "GPT-5.5",
-          "Claude Opus 4.7",
-          "GLM 5.1"
-        ],
-        "rank": 71.20944372072616
-      },
-      "rank": 71.20944372072616
-    },
-    {
-      "modelInfo": {
-        "brand": "MiniMax",
-        "model": "MiniMax M3",
-        "time": "2026/06/01",
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 512000,
-        "generate": 128000,
-        "inputPrice": "￥4.2",
-        "inputCachedPrice": "￥0.84",
-        "outputPrice": "￥16.8",
-        "url": "https://www.minimax.io/models/text/m3",
-        "currentBenchmarksScores": {
-          "GPQA Diamond": 0.93,
-          "SWE-Bench Pro": 0.59,
-          "DeepSWE": 0.22,
-          "Terminal-Bench 2.1": 0.66,
-          "BrowseComp": 0.835,
-          "GDPval-AA 2": 1395,
-          "MCPAtlas": 0.742,
-          "OSWorld-Verified": 0.701,
-          "MMMU Pro": 0.781
-        },
-        "betterThanCurrentModels": [
-          "Claude Opus 5",
-          "Gemini 3.6 Flash",
-          "Laguna S 2.1",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "GPT-5.6 Luna",
-          "Muse Spark 1.1",
-          "Grok 4.5",
-          "Hy 3",
-          "Claude Sonnet 5",
-          "Seed 2.1 Pro",
-          "GLM 5.2",
-          "Kimi K2.7 Code",
-          "Claude Fable 5",
-          "Claude Opus 4.8",
-          "Gemini 3.5 Flash",
-          "GPT-5.5",
-          "Claude Opus 4.7",
-          "Gemini 3.1 Pro"
-        ],
-        "rank": 71.55575793850699
-      },
-      "rank": 71.55575793850699
-    },
-    {
-      "modelInfo": {
-        "brand": "Bytedance",
-        "model": "Seed 2.1 Pro",
-        "time": "2026/06/24",
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 256000,
-        "inputPrice": "￥6",
-        "inputCachedPrice": "￥1.2",
-        "outputPrice": "￥30",
-        "url": "https://seed.bytedance.com/en/seed2_1",
-        "currentBenchmarksScores": {
-          "SWE-Bench Pro": 0.575,
-          "SWE-Bench Verified": 0.76,
-          "DeepSWE": 0.327,
-          "Terminal-Bench 2.1": 0.71,
-          "MMMU Pro": 0.816,
-          "BabyVision": 0.737
-        },
-        "betterThanCurrentModels": [
-          "Gemini 3.6 Flash",
-          "Laguna S 2.1",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "GPT-5.6 Luna",
-          "Muse Spark 1.1",
-          "Grok 4.5",
-          "Hy 3",
-          "Claude Sonnet 5",
-          "LongCat 2",
-          "GLM 5.2",
-          "Claude Fable 5",
-          "Claude Opus 4.8",
-          "Qwen 3.7 Max",
-          "Gemini 3.5 Flash",
-          "GPT-5.5",
-          "Kimi K2.6",
-          "MiniMax M2.5",
-          "Gemini 3 Flash"
-        ],
-        "rank": 73.57887644754099
-      },
-      "rank": 73.57887644754099
+      "rank": 63.80181098885268
     },
     {
       "modelInfo": {
@@ -6255,13 +6383,14 @@
           "Claude Opus 4.8",
           "Qwen 3.7 Max",
           "Composer 2.5",
+          "ERNIE 5.1",
           "GPT-5.5",
           "Kimi K2.6",
           "Claude Opus 4.7"
         ],
-        "rank": 73.72264800134897
+        "rank": 65.67280989631175
       },
-      "rank": 73.72264800134897
+      "rank": 65.67280989631175
     },
     {
       "modelInfo": {
@@ -6303,9 +6432,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 75.40392777261192
+        "rank": 67.3540896675747
       },
-      "rank": 75.40392777261192
+      "rank": 67.3540896675747
     },
     {
       "modelInfo": {
@@ -6351,9 +6480,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 76.51503888372304
+        "rank": 68.46520077868581
       },
-      "rank": 76.51503888372304
+      "rank": 68.46520077868581
     },
     {
       "modelInfo": {
@@ -6382,6 +6511,8 @@
           "Humanity's Last Exam": 0.535,
           "IMOAnswerBench": 0.9,
           "MCPAtlas": 0.764,
+          "IFEval": 0.943,
+          "MMLU Pro": 0.896,
           "AIME'26": 0.97
         },
         "betterThanCurrentModels": [
@@ -6402,9 +6533,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 76.83871861115064
+        "rank": 68.78888050611341
       },
-      "rank": 76.83871861115064
+      "rank": 68.78888050611341
     },
     {
       "modelInfo": {
@@ -6432,9 +6563,9 @@
           "Claude Opus 4.7",
           "GPT-5.4"
         ],
-        "rank": 77.0302894923767
+        "rank": 68.98045138733947
       },
-      "rank": 77.0302894923767
+      "rank": 68.98045138733947
     },
     {
       "modelInfo": {
@@ -6484,9 +6615,9 @@
           "Claude Opus 4.8",
           "GPT-5.5"
         ],
-        "rank": 77.08136414871451
+        "rank": 69.03152604367729
       },
-      "rank": 77.08136414871451
+      "rank": 69.03152604367729
     },
     {
       "modelInfo": {
@@ -6532,9 +6663,9 @@
           "Claude Opus 4.8",
           "GPT-5.5"
         ],
-        "rank": 77.79899084008416
+        "rank": 69.74915273504693
       },
-      "rank": 77.79899084008416
+      "rank": 69.74915273504693
     },
     {
       "modelInfo": {
@@ -6576,9 +6707,9 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 79.61406512779182
+        "rank": 71.5642270227546
       },
-      "rank": 79.61406512779182
+      "rank": 71.5642270227546
     },
     {
       "modelInfo": {
@@ -6617,9 +6748,9 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 79.76665007671824
+        "rank": 71.71681197168101
       },
-      "rank": 79.76665007671824
+      "rank": 71.71681197168101
     },
     {
       "modelInfo": {
@@ -6655,9 +6786,9 @@
           "Claude Opus 4.8",
           "GPT-5.5"
         ],
-        "rank": 80.06566922150066
+        "rank": 72.01583111646343
       },
-      "rank": 80.06566922150066
+      "rank": 72.01583111646343
     },
     {
       "modelInfo": {
@@ -6696,9 +6827,9 @@
           "GPT-5.5",
           "Gemini 3 Flash"
         ],
-        "rank": 81.05985063637569
+        "rank": 73.01001253133846
       },
-      "rank": 81.05985063637569
+      "rank": 73.01001253133846
     },
     {
       "modelInfo": {
@@ -6746,9 +6877,9 @@
           "Claude Fable 5",
           "GPT-5.5"
         ],
-        "rank": 81.32146413643433
+        "rank": 73.2716260313971
       },
-      "rank": 81.32146413643433
+      "rank": 73.2716260313971
     },
     {
       "modelInfo": {
@@ -6784,6 +6915,7 @@
           "MCPAtlas": 0.828,
           "OSWorld-Verified": 0.787,
           "MMMU Pro": 0.812,
+          "IFEval": 0.95,
           "AIME'26": 0.983,
           "BabyVision": 0.836
         },
@@ -6796,9 +6928,9 @@
           "Claude Sonnet 5",
           "Claude Fable 5"
         ],
-        "rank": 81.98374866844776
+        "rank": 73.93391056341054
       },
-      "rank": 81.98374866844776
+      "rank": 73.93391056341054
     },
     {
       "modelInfo": {
@@ -6833,9 +6965,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 82.47365735013632
+        "rank": 74.4238192450991
       },
-      "rank": 82.47365735013632
+      "rank": 74.4238192450991
     },
     {
       "modelInfo": {
@@ -6873,9 +7005,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 82.70820765084291
+        "rank": 74.65836954580568
       },
-      "rank": 82.70820765084291
+      "rank": 74.65836954580568
     },
     {
       "modelInfo": {
@@ -6912,9 +7044,9 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 83.02788356642088
+        "rank": 74.97804546138366
       },
-      "rank": 83.02788356642088
+      "rank": 74.97804546138366
     },
     {
       "modelInfo": {
@@ -6953,9 +7085,9 @@
         "betterThanCurrentModels": [
           "Claude Opus 5"
         ],
-        "rank": 83.749655925337
+        "rank": 75.69981782029977
       },
-      "rank": 83.749655925337
+      "rank": 75.69981782029977
     },
     {
       "modelInfo": {
@@ -6983,9 +7115,9 @@
           "Humanity's Last Exam": 0.647
         },
         "betterThanCurrentModels": [],
-        "rank": 84.05814155987188
+        "rank": 76.00830345483466
       },
-      "rank": 84.05814155987188
+      "rank": 76.00830345483466
     }
   ],
   "priceMap": {
@@ -7017,5 +7149,5 @@
     "美团": "longcat-color.svg",
     "腾讯": "hunyuan-color.svg"
   },
-  "updatedAt": "2026-07-27T22:57:01.398Z"
+  "updatedAt": "2026-07-28T00:39:53.406Z"
 }

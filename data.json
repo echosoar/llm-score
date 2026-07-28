@@ -384,7 +384,19 @@
             "outputPrice": "￥18",
             "url": "https://mp.weixin.qq.com/s/5ic54FCsy334JJsQcyBr1g"
         },
-         {
+        {
+            "brand": "百度",
+            "model": "ERNIE 5.1",
+            "time": "2026/05/08",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 119000,
+            "generate": 64000,
+            "inputPrice": "￥4",
+            "outputPrice": "￥18",
+            "url": "https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/"
+        },
+        {
             "brand": "Poolside",
             "model": "Laguna XS 2",
             "time": "2026/04/28",
@@ -1168,6 +1180,7 @@
                 "Qwen 3.7 Plus": 0.903,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.92,
                 "Qwen 3.7 Max": 0.924,
+                "ERNIE 5.1": 0.91,
                 "DeepSeek V4 Pro": 0.901,
                 "DeepSeek V4 Flash": 0.881,
                 "GPT-5.5": 0.936,
@@ -1337,6 +1350,7 @@
                 "Laguna S 2.1": 0.785,
                 "Composer 2.5": 0.798,
                 "Qwen 3.7 Max": 0.783,
+                "LongCat 2": 0.773,
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.738,
                 "Kimi K2.6(from Qwen 3.7 Max)": 0.767,
                 "Claude Opus 4.6(from Qwen 3.7 Max)": 0.775,
@@ -1779,6 +1793,14 @@
         {
             "name": "IFEval",
             "scores": {
+                "Qwen 3.7 Max": 0.943,
+                "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.943,
+                "DeepSeek V4 Pro(from Qwen 3.7 Max)": 0.919,
+                "GLM 5.1(from Qwen 3.7 Max)": 0.945,
+                "Kimi K2.6(from Qwen 3.7 Max)": 0.945,
+                "LongCat 2": 0.9,
+                "GPT-5.5(from LongCat 2)": 0.95,
+                "Claude Opus 4.6(from Qwen 3.7 Max)": 0.919,
                 "GPT-4.1": 0.874,
                 "GPT-4.1 mini(from GPT-4.1)": 0.841,
                 "GPT-4.1 nano(from GPT-4.1)": 0.745,
@@ -1789,13 +1811,27 @@
             }   
         },
         {
+            "name": "MMLU Pro",
+            "scores": {
+                "Qwen 3.7 Max": 0.896,
+                "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.885,
+                "DeepSeek V4 Pro(from Qwen 3.7 Max)": 0.875,
+                "GLM 5.1(from Qwen 3.7 Max)": 0.863,
+                "Kimi K2.6(from Qwen 3.7 Max)": 0.871,
+                "Claude Opus 4.6(from Qwen 3.7 Max)": 0.897,
+                "ERNIE 5.1": 0.843
+            }   
+        },
+        {
             "name": "AIME'26",
+            "info": "no tool",
             "scores": {
                 "GLM 5.2": 0.992,
                 "Qwen 3.7 Max(from GLM 5.2)": 0.97,
                 "GLM 5.1(from GLM 5.2)": 0.953,
                 "DeepSeek V4 Pro(from GLM 5.2)": 0.946,
-                "GPT-5.5(from GLM 5.2)": 0.983
+                "GPT-5.5(from GLM 5.2)": 0.983,
+                "ERNIE 5.1": 0.95
             }
         },
         {
