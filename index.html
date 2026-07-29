@@ -134,12 +134,15 @@
     .selection-bar {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      /* stretch 让同一行内的模型 item 与对比按钮高度完全一致 */
+      align-items: stretch;
       gap: 10px;
       margin: 0 0 24px;
     }
 
     .selection-label {
+      display: inline-flex;
+      align-items: center;
       margin-right: 4px;
       color: var(--faint);
       font-size: 11px;
@@ -178,8 +181,10 @@
     }
 
     .compare-button {
+      display: inline-flex;
+      align-items: center;
       margin-left: 6px;
-      padding: 6px 14px;
+      padding: 0 14px;
       border: 1px solid var(--line);
       background: transparent;
       color: var(--muted);
@@ -956,21 +961,44 @@ const getPriceScore = (model) => {
         })),
       ];
       const plainRows = [
-        { label: t('colRank'), plain: true, numeric: true, format: (m) => String(rankMap.get(m.model) ?? '-') },
-        { label: t('colUrl'), plain: true, link: true },
+        { label: t('colRank'), plain: true, numeric: true, value: (m) => rankMap.get(m.model) ?? null, format: (m) => String(rankMap.get(m.model) ?? '-') },
+        { label: t('colUrl'), plain: true, link: true, value: (m) => m.url ?? null },
       ];
       return { rows, plainRows };
     };
 
     const isMissing = (value) => value === null || value === undefined || value === '';
 
-    const computeWinners = (row, list) => {
-      const values = list.map((model) => row.value(model));
+    const computeWinners = (definition, values) => {
       const valid = values.filter((value) => !isMissing(value));
       if (!valid.length) return values.map(() => false);
       const sorted = [...valid].sort(compareValues);
-      const best = row.better === 'low' ? sorted[0] : sorted[sorted.length - 1];
+      const best = definition.better === 'low' ? sorted[0] : sorted[sorted.length - 1];
       return values.map((value) => !isMissing(value) && compareValues(value, best) === 0);
+    };
+
+    const makeCompareEntry = (definition, list) => {
+      const values = list.map((model) => definition.value(model));
+      return {
+        definition,
+        values,
+        // 全部模型都没有数据的属性行不展示
+        hasData: values.some((value) => !isMissing(value)),
+        winners: definition.plain ? values.map(() => false) : computeWinners(definition, values),
+      };
+    };
+
+    const sameValue = (left, right) => {
+      if (isMissing(left) || isMissing(right)) return isMissing(left) && isMissing(right);
+      return compareValues(left, right) === 0;
+    };
+
+    // 相对某个模型的属性行分组：胜出 / 与其他模型一致 / 落后
+    const getRowStatus = (entry, index) => {
+      const own = entry.values[index];
+      const tiedWithAll = entry.values.every((value, i) => i === index || sameValue(value, own));
+      if (tiedWithAll) return 'same';
+      return entry.winners[index] ? 'win' : 'lose';
     };
 
     const appendCompareValueCell = (row, model, definition, isWinner) => {
@@ -1037,18 +1065,25 @@ const getPriceScore = (model) => {
       compareHead.replaceChildren(headRow);
 
       const { rows, plainRows } = buildCompareRows();
-      let entries = rows.map((definition) => ({ definition, winners: computeWinners(definition, list) }));
+      let entries = rows
+        .map((definition) => makeCompareEntry(definition, list))
+        .filter((entry) => entry.hasData);
 
-      if (compareSort.model && compareSort.direction) {
-        const index = selectedModels.indexOf(compareSort.model);
-        const winning = entries.filter((entry) => entry.winners[index]);
-        const rest = entries.filter((entry) => !entry.winners[index]);
-        entries = compareSort.direction === 'win' ? [...winning, ...rest] : [...rest, ...winning];
+      const index = list.findIndex((model) => model.model === compareSort.model);
+      if (compareSort.direction && index >= 0) {
+        // 正序：胜出 → 与其他模型一致 → 落后；倒序反过来
+        const groups = { win: [], same: [], lose: [] };
+        entries.forEach((entry) => groups[getRowStatus(entry, index)].push(entry));
+        entries = compareSort.direction === 'win'
+          ? [...groups.win, ...groups.same, ...groups.lose]
+          : [...groups.lose, ...groups.same, ...groups.win];
       }
 
       const allEntries = [
         ...entries,
-        ...plainRows.map((definition) => ({ definition, winners: list.map(() => false) })),
+        ...plainRows
+          .map((definition) => makeCompareEntry(definition, list))
+          .filter((entry) => entry.hasData),
       ];
 
       const fragment = document.createDocumentFragment();
