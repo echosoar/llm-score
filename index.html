@@ -207,6 +207,26 @@
       overflow-x: auto;
     }
 
+    /* 鼠标横向拖拽滚动：仅在表格确实溢出时给出可抓取的光标提示 */
+    .table-wrap.can-grab,
+    .table-wrap.can-grab #score-table tbody tr,
+    .table-wrap.can-grab .sort-button {
+      cursor: grab;
+    }
+
+    .table-wrap.can-grab a {
+      cursor: pointer;
+    }
+
+    .table-wrap.is-dragging {
+      user-select: none;
+    }
+
+    .table-wrap.is-dragging,
+    .table-wrap.is-dragging * {
+      cursor: grabbing !important;
+    }
+
     table {
       width: 100%;
       min-width: 2180px;
@@ -1132,6 +1152,91 @@ const getPriceScore = (model) => {
       brandFilter.replaceChildren(fragment);
     };
 
+    // ---- 鼠标横向拖拽滚动 ----
+    // PC（鼠标）上按住表格左右拖动即可横向滚动表格；一旦判定为拖拽，本次释放产生的
+    // click 会被吞掉，避免误触发行选中、表头排序或官网链接跳转。触摸/触控笔保持原生滚动。
+    const DRAG_THRESHOLD = 5;
+    const dragScrollWraps = [tableWrap, compareWrap];
+
+    const isScrollableX = (wrap) => wrap.scrollWidth - wrap.clientWidth > 1;
+
+    const updateGrabCursors = () => {
+      dragScrollWraps.forEach((wrap) => {
+        wrap.classList.toggle('can-grab', !wrap.hidden && isScrollableX(wrap));
+      });
+    };
+
+    const setupDragScroll = (wrap) => {
+      let activePointerId = null;
+      let startX = 0;
+      let startScrollLeft = 0;
+      let dragging = false;
+      let suppressClick = false;
+
+      const stopTracking = () => {
+        if (activePointerId !== null && wrap.hasPointerCapture?.(activePointerId)) {
+          wrap.releasePointerCapture(activePointerId);
+        }
+        activePointerId = null;
+        dragging = false;
+        wrap.classList.remove('is-dragging');
+      };
+
+      wrap.addEventListener('pointerdown', (event) => {
+        // 仅响应鼠标左键，触摸与触控笔交给浏览器原生滚动
+        if (event.pointerType !== 'mouse' || event.button !== 0) return;
+        // 每次按下都重置抑制标记，避免上一次拖拽的残留状态吞掉正常点击
+        suppressClick = false;
+        if (!isScrollableX(wrap)) return;
+        activePointerId = event.pointerId;
+        startX = event.clientX;
+        startScrollLeft = wrap.scrollLeft;
+        dragging = false;
+        // 阻止原生文本选中与链接拖拽，保证拖动手感
+        event.preventDefault();
+      });
+
+      wrap.addEventListener('pointermove', (event) => {
+        if (activePointerId === null || event.pointerId !== activePointerId) return;
+        const deltaX = event.clientX - startX;
+        if (!dragging) {
+          // 横向位移超过阈值才算拖拽，纯竖向的轻微晃动仍然算点击
+          if (Math.abs(deltaX) < DRAG_THRESHOLD) return;
+          dragging = true;
+          suppressClick = true;
+          wrap.classList.add('is-dragging');
+          wrap.setPointerCapture?.(activePointerId);
+        }
+        // 内容跟随鼠标移动，只处理横向，纵向不动
+        wrap.scrollLeft = startScrollLeft - deltaX;
+        event.preventDefault();
+      });
+
+      const finishDrag = (event) => {
+        if (activePointerId === null || event.pointerId !== activePointerId) return;
+        stopTracking();
+      };
+
+      wrap.addEventListener('pointerup', finishDrag);
+      wrap.addEventListener('pointercancel', finishDrag);
+
+      // 拖拽过程中禁止原生拖拽（链接、图标）
+      wrap.addEventListener('dragstart', (event) => {
+        if (activePointerId !== null) event.preventDefault();
+      });
+
+      // 捕获阶段拦截：拖拽结束后的这次 click 不应触发行选中 / 排序 / 链接跳转
+      wrap.addEventListener('click', (event) => {
+        if (!suppressClick) return;
+        suppressClick = false;
+        event.preventDefault();
+        event.stopPropagation();
+      }, true);
+    };
+
+    dragScrollWraps.forEach(setupDragScroll);
+    window.addEventListener('resize', updateGrabCursors);
+
     const render = () => {
       renderBrandFilter();
       renderSelection();
@@ -1142,10 +1247,12 @@ const getPriceScore = (model) => {
       compareWrap.hidden = !compareMode;
       if (compareMode) {
         renderCompare();
+        updateGrabCursors();
         return;
       }
       renderHeader();
       renderRows();
+      updateGrabCursors();
     };
 
     const applyLanguage = () => {
