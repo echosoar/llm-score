@@ -19,6 +19,8 @@
 
     * { box-sizing: border-box; }
 
+    [hidden] { display: none !important; }
+
     body {
       margin: 0;
       min-width: 320px;
@@ -129,6 +131,71 @@
       color: #ffffff;
     }
 
+    .selection-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 24px;
+    }
+
+    .selection-label {
+      margin-right: 4px;
+      color: var(--faint);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+    }
+
+    .selection-chip {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 8px;
+      padding: 6px 12px;
+      background: rgba(0, 0, 0, 0.04);
+      font-size: 12px;
+    }
+
+    .selection-chip-brand {
+      color: var(--muted);
+    }
+
+    .selection-chip-name {
+      color: var(--text-strong);
+      font-weight: 600;
+    }
+
+    .selection-remove {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--faint);
+      font: inherit;
+      font-size: 14px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .compare-button {
+      margin-left: 6px;
+      padding: 6px 14px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+    }
+
+    .compare-button[aria-pressed="true"] {
+      background: var(--chip-active);
+      border-color: var(--chip-active);
+      color: #ffffff;
+    }
+
     .table-wrap {
       overflow-x: auto;
     }
@@ -173,6 +240,79 @@
       border-top: 1px solid var(--line-soft);
     }
 
+    #score-table tbody tr {
+      cursor: pointer;
+    }
+
+    #score-table tbody tr[aria-selected="true"] {
+      background: rgba(0, 0, 0, 0.03);
+    }
+
+    #compare-wrap table {
+      width: auto;
+      min-width: 0;
+    }
+
+    #compare-table tr:hover {
+      background: transparent;
+    }
+
+    #compare-table th:first-child,
+    #compare-table td:first-child {
+      min-width: 200px;
+      padding-left: 0;
+    }
+
+    #compare-table th:not(:first-child),
+    #compare-table td:not(:first-child) {
+      min-width: 190px;
+    }
+
+    /* 对比模式下数值左对齐，属性名与取值贴近，便于横向阅读 */
+    #compare-table .numeric {
+      text-align: left;
+    }
+
+    .compare-attr {
+      color: var(--muted);
+    }
+
+    .compare-model {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    .compare-model-name {
+      color: var(--text-strong);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      text-transform: none;
+    }
+
+    .compare-model-brand {
+      color: var(--faint);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: none;
+    }
+
+    .compare-win {
+      color: var(--text-strong);
+      font-weight: 650;
+    }
+
+    .compare-lose {
+      color: rgba(0, 0, 0, 0.38);
+    }
+
+    .compare-plain {
+      color: rgba(0, 0, 0, 0.55);
+    }
+
     .sort-button {
       display: inline-flex;
       align-items: center;
@@ -209,6 +349,8 @@
     .sort-button:focus-visible,
     a:focus-visible,
     .brand-chip:focus-visible,
+    .compare-button:focus-visible,
+    .selection-remove:focus-visible,
     .lang-toggle:focus-visible {
       outline: 2px solid rgba(0, 0, 0, 0.55);
       outline-offset: 3px;
@@ -301,8 +443,17 @@
       </div>
     </header>
 
-    <div class="table-wrap">
+    <div class="selection-bar" id="selection-bar" hidden></div>
+
+    <div class="table-wrap" id="table-wrap">
       <table id="score-table">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div class="table-wrap" id="compare-wrap" hidden>
+      <table id="compare-table">
         <thead></thead>
         <tbody></tbody>
       </table>
@@ -321,6 +472,12 @@
     const table = document.querySelector('#score-table');
     const tableHead = table.querySelector('thead');
     const tableBody = table.querySelector('tbody');
+    const tableWrap = document.querySelector('#table-wrap');
+    const compareTable = document.querySelector('#compare-table');
+    const compareHead = compareTable.querySelector('thead');
+    const compareBody = compareTable.querySelector('tbody');
+    const compareWrap = document.querySelector('#compare-wrap');
+    const selectionBar = document.querySelector('#selection-bar');
     const status = document.querySelector('#status');
     const brandFilter = document.querySelector('#brand-filter');
     const langToggle = document.querySelector('#lang-toggle');
@@ -333,8 +490,13 @@ let brandIcons = {};
 let updatedAt = null;
 let rankMap = new Map();
 let priceNormMap = new Map();
+let modelMap = new Map();
     let sortState = { key: 'score', direction: 'desc' };
     let selectedBrands = new Set();
+    // 选中的模型（按点击顺序），以及对比模式状态
+    let selectedModels = [];
+    let compareMode = false;
+    let compareSort = { model: null, direction: null };
     let lang = 'zh';
 
     const i18n = {
@@ -361,6 +523,10 @@ let priceNormMap = new Map();
         colGenerate: '输出窗口',
         colUrl: '官网',
         website: '官网',
+        selectedTitle: '选中的模型列表',
+        compare: '对比',
+        cancelCompare: '取消对比',
+        removeSelected: '取消选中',
         emptyError: '无法加载 score.json。请通过 HTTP 服务打开此页面，而不是直接打开本地文件。',
         noDataError: 'score.json 不包含可显示的模型或 benchmark 数据。',
         toggleLabel: 'EN',
@@ -388,6 +554,10 @@ let priceNormMap = new Map();
         colGenerate: 'Output Window',
         colUrl: 'Website',
         website: 'Website',
+        selectedTitle: 'Selected Models',
+        compare: 'Compare',
+        cancelCompare: 'Cancel Compare',
+        removeSelected: 'Remove',
         emptyError: 'Unable to load score.json. Please serve this page over HTTP instead of opening the local file directly.',
         noDataError: 'score.json does not contain displayable model or benchmark data.',
         toggleLabel: '中',
@@ -642,6 +812,12 @@ const getPriceScore = (model) => {
       rows.forEach((model) => {
         const row = document.createElement('tr');
         row.setAttribute('title', model.model);
+        // 整行点击切换选中态，官网链接除外
+        row.setAttribute('aria-selected', String(selectedModels.includes(model.model)));
+        row.addEventListener('click', (event) => {
+          if (event.target.closest('a')) return;
+          toggleSelection(model.model);
+        });
         appendTextCell(row, String(rankMap.get(model.model) ?? '-'), 'numeric');
         appendTextCell(row, model.model, 'model-name');
         appendBrandCell(row, model.brand);
@@ -684,6 +860,209 @@ const getPriceScore = (model) => {
       tableBody.replaceChildren(fragment);
     };
 
+    const toggleSelection = (key) => {
+      const index = selectedModels.indexOf(key);
+      if (index >= 0) selectedModels.splice(index, 1);
+      else selectedModels.push(key);
+      afterSelectionChange();
+    };
+
+    const afterSelectionChange = () => {
+      // 被排序依据的模型取消选中后重置对比排序；不足两个模型时自动退出对比模式
+      if (compareSort.model && !selectedModels.includes(compareSort.model)) {
+        compareSort = { model: null, direction: null };
+      }
+      if (compareMode && selectedModels.length < 2) compareMode = false;
+      render();
+    };
+
+    const renderSelection = () => {
+      if (!selectedModels.length) {
+        selectionBar.hidden = true;
+        selectionBar.replaceChildren();
+        return;
+      }
+      selectionBar.hidden = false;
+      const fragment = document.createDocumentFragment();
+      const label = document.createElement('span');
+      label.className = 'selection-label';
+      label.textContent = t('selectedTitle');
+      fragment.append(label);
+
+      selectedModels.forEach((key) => {
+        const model = modelMap.get(key);
+        const chip = document.createElement('span');
+        chip.className = 'selection-chip';
+        const brand = document.createElement('span');
+        brand.className = 'selection-chip-brand';
+        brand.textContent = model?.brand ?? '-';
+        const name = document.createElement('span');
+        name.className = 'selection-chip-name';
+        name.textContent = model?.model ?? key;
+        const remove = document.createElement('button');
+        remove.type = 'button';
+        remove.className = 'selection-remove';
+        remove.textContent = '✕';
+        remove.title = t('removeSelected');
+        remove.setAttribute('aria-label', `${t('removeSelected')} ${key}`);
+        remove.addEventListener('click', () => toggleSelection(key));
+        chip.append(brand, name, remove);
+        fragment.append(chip);
+      });
+
+      if (selectedModels.length > 1) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'compare-button';
+        button.textContent = compareMode ? t('cancelCompare') : t('compare');
+        button.setAttribute('aria-pressed', String(compareMode));
+        button.addEventListener('click', () => {
+          compareMode = !compareMode;
+          render();
+        });
+        fragment.append(button);
+      }
+
+      selectionBar.replaceChildren(fragment);
+    };
+
+    const toNumber = (value) => {
+      if (value === null || value === undefined || value === '') return null;
+      const num = Number(value);
+      return Number.isFinite(num) ? num : null;
+    };
+
+    const formatCount = (formats) => (Array.isArray(formats) && formats.length ? formats.length : null);
+
+    // 对比模式的属性行：better 表示哪一侧胜出，plain 行仅展示不参与胜出判定
+    const buildCompareRows = () => {
+      const rows = [
+        { label: t('colScore'), better: 'high', numeric: true, value: (m) => toNumber(m.score), format: (m) => formatScore(m.score) },
+        { label: t('colPriceScore'), better: 'high', numeric: true, value: (m) => toNumber(getPriceScore(m)), format: (m) => formatScore(getPriceScore(m)) },
+        { label: t('colTime'), better: 'high', value: (m) => m.time ?? null, format: (m) => m.time ?? '-' },
+        { label: t('colInput'), better: 'high', value: (m) => formatCount(m.input), format: (m) => formatFormats(m.input) },
+        { label: t('colOutput'), better: 'high', value: (m) => formatCount(m.output), format: (m) => formatFormats(m.output) },
+        { label: t('colInputPrice'), better: 'low', numeric: true, value: (m) => getPriceAmount(m.inputPrice), format: (m) => formatPrice(m.inputPrice) },
+        { label: t('colInputCachedPrice'), better: 'low', numeric: true, value: (m) => getPriceAmount(m.inputCachedPrice), format: (m) => formatPrice(m.inputCachedPrice) },
+        { label: t('colOutputPrice'), better: 'low', numeric: true, value: (m) => getPriceAmount(m.outputPrice), format: (m) => formatPrice(m.outputPrice) },
+        { label: t('colContext'), better: 'high', numeric: true, value: (m) => toNumber(m.context), format: (m) => formatWindow(m.context) },
+        { label: t('colGenerate'), better: 'high', numeric: true, value: (m) => toNumber(m.generate), format: (m) => formatWindow(m.generate) },
+        ...benchmarks.map((benchmark) => ({
+          label: benchmark,
+          better: 'high',
+          numeric: true,
+          value: (m) => getBenchmarkScore(m, benchmark),
+          format: (m) => formatBenchmarkScore(getBenchmarkScore(m, benchmark)),
+        })),
+      ];
+      const plainRows = [
+        { label: t('colRank'), plain: true, numeric: true, format: (m) => String(rankMap.get(m.model) ?? '-') },
+        { label: t('colUrl'), plain: true, link: true },
+      ];
+      return { rows, plainRows };
+    };
+
+    const isMissing = (value) => value === null || value === undefined || value === '';
+
+    const computeWinners = (row, list) => {
+      const values = list.map((model) => row.value(model));
+      const valid = values.filter((value) => !isMissing(value));
+      if (!valid.length) return values.map(() => false);
+      const sorted = [...valid].sort(compareValues);
+      const best = row.better === 'low' ? sorted[0] : sorted[sorted.length - 1];
+      return values.map((value) => !isMissing(value) && compareValues(value, best) === 0);
+    };
+
+    const appendCompareValueCell = (row, model, definition, isWinner) => {
+      const cell = document.createElement('td');
+      const classes = [];
+      if (definition.numeric) classes.push('numeric');
+      if (definition.plain) classes.push('compare-plain');
+      else classes.push(isWinner ? 'compare-win' : 'compare-lose');
+      cell.className = classes.join(' ');
+      if (definition.link) {
+        if (model.url) {
+          const link = document.createElement('a');
+          link.className = 'website-link';
+          link.href = model.url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          link.textContent = t('website');
+          cell.append(link);
+        } else {
+          cell.textContent = '-';
+        }
+      } else {
+        cell.textContent = definition.format(model);
+      }
+      row.append(cell);
+    };
+
+    const renderCompare = () => {
+      const list = selectedModels.map((key) => modelMap.get(key)).filter(Boolean);
+      const headRow = document.createElement('tr');
+      const corner = document.createElement('th');
+      corner.scope = 'col';
+      headRow.append(corner);
+
+      list.forEach((model) => {
+        const cell = document.createElement('th');
+        cell.scope = 'col';
+        const button = document.createElement('button');
+        button.className = 'sort-button';
+        button.type = 'button';
+        const wrap = document.createElement('span');
+        wrap.className = 'compare-model';
+        const name = document.createElement('span');
+        name.className = 'compare-model-name';
+        name.textContent = model.model;
+        const brand = document.createElement('span');
+        brand.className = 'compare-model-brand';
+        brand.textContent = model.brand ?? '-';
+        wrap.append(name, brand);
+        button.append(wrap);
+        // 点击表头模型：先把该模型胜出的属性排到前面，再点反向，第三次取消排序
+        button.setAttribute('aria-sort', compareSort.model === model.model
+          ? (compareSort.direction === 'win' ? 'descending' : 'ascending')
+          : 'none');
+        button.addEventListener('click', () => {
+          if (compareSort.model !== model.model) compareSort = { model: model.model, direction: 'win' };
+          else if (compareSort.direction === 'win') compareSort = { model: model.model, direction: 'lose' };
+          else compareSort = { model: null, direction: null };
+          render();
+        });
+        cell.append(button);
+        headRow.append(cell);
+      });
+      compareHead.replaceChildren(headRow);
+
+      const { rows, plainRows } = buildCompareRows();
+      let entries = rows.map((definition) => ({ definition, winners: computeWinners(definition, list) }));
+
+      if (compareSort.model && compareSort.direction) {
+        const index = selectedModels.indexOf(compareSort.model);
+        const winning = entries.filter((entry) => entry.winners[index]);
+        const rest = entries.filter((entry) => !entry.winners[index]);
+        entries = compareSort.direction === 'win' ? [...winning, ...rest] : [...rest, ...winning];
+      }
+
+      const allEntries = [
+        ...entries,
+        ...plainRows.map((definition) => ({ definition, winners: list.map(() => false) })),
+      ];
+
+      const fragment = document.createDocumentFragment();
+      allEntries.forEach(({ definition, winners }) => {
+        const row = document.createElement('tr');
+        appendTextCell(row, definition.label, 'compare-attr');
+        list.forEach((model, index) => {
+          appendCompareValueCell(row, model, definition, winners[index]);
+        });
+        fragment.append(row);
+      });
+      compareBody.replaceChildren(fragment);
+    };
+
     const renderBrandFilter = () => {
       const counts = new Map();
       models.forEach((model) => {
@@ -718,6 +1097,16 @@ const getPriceScore = (model) => {
 
     const render = () => {
       renderBrandFilter();
+      renderSelection();
+      // 对比模式下隐藏主表格、厂商过滤与状态文字
+      brandFilter.hidden = compareMode;
+      status.hidden = compareMode;
+      tableWrap.hidden = compareMode;
+      compareWrap.hidden = !compareMode;
+      if (compareMode) {
+        renderCompare();
+        return;
+      }
       renderHeader();
       renderRows();
     };
@@ -775,6 +1164,7 @@ const getPriceScore = (model) => {
           throw new Error(i18n[lang].noDataError);
         }
 
+        modelMap = new Map(models.map((model) => [model.model, model]));
         rankMap = new Map(
           [...models]
             .sort((a, b) => compareValues(getSortValue(b, 'score'), getSortValue(a, 'score'))
