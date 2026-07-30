@@ -1191,11 +1191,25 @@ const getPriceScore = (model) => {
 
     const formatCount = (formats) => (Array.isArray(formats) && formats.length ? formats.length : null);
 
+    // 在所有有该项数据的模型中的名次，分数越高名次越前，同分并列同名次
+    const getMetricRank = (model, getValue) => {
+      const own = toNumber(getValue(model));
+      if (own === null) return null;
+      let better = 0;
+      models.forEach((other) => {
+        const value = toNumber(getValue(other));
+        if (value !== null && value > own) better += 1;
+      });
+      return better + 1;
+    };
+
+    const withRank = (text, rank) => (rank === null || text === '-' ? text : `${text} (#${rank})`);
+
     // 对比模式的属性行：better 表示哪一侧胜出，plain 行仅展示不参与胜出判定
     const buildCompareRows = () => {
       const rows = [
-        { label: t('colScore'), better: 'high', numeric: true, value: (m) => toNumber(m.score), format: (m) => formatScore(m.score) },
-        { label: t('colPriceScore'), better: 'high', numeric: true, value: (m) => toNumber(getPriceScore(m)), format: (m) => formatScore(getPriceScore(m)) },
+        { label: t('colScore'), better: 'high', numeric: true, value: (m) => toNumber(m.score), format: (m) => withRank(formatScore(m.score), getMetricRank(m, (item) => item.score)) },
+        { label: t('colPriceScore'), better: 'high', numeric: true, value: (m) => toNumber(getPriceScore(m)), format: (m) => withRank(formatScore(getPriceScore(m)), getMetricRank(m, getPriceScore)) },
         { label: t('colTime'), better: 'high', value: (m) => m.time ?? null, format: (m) => m.time ?? '-' },
         { label: t('colInput'), better: 'high', value: (m) => formatCount(m.input), format: (m) => formatFormats(m.input) },
         { label: t('colOutput'), better: 'high', value: (m) => formatCount(m.output), format: (m) => formatFormats(m.output) },
@@ -1205,11 +1219,15 @@ const getPriceScore = (model) => {
         { label: t('colContext'), better: 'high', numeric: true, value: (m) => toNumber(m.context), format: (m) => formatWindow(m.context) },
         { label: t('colGenerate'), better: 'high', numeric: true, value: (m) => toNumber(m.generate), format: (m) => formatWindow(m.generate) },
         ...benchmarks.map((benchmark) => ({
+          key: `benchmark:${benchmark}`,
           label: benchmark,
           better: 'high',
           numeric: true,
           value: (m) => getBenchmarkScore(m, benchmark),
-          format: (m) => formatBenchmarkScore(getBenchmarkScore(m, benchmark)),
+          format: (m) => withRank(
+            formatBenchmarkScore(getBenchmarkScore(m, benchmark)),
+            getMetricRank(m, (item) => getBenchmarkScore(item, benchmark)),
+          ),
         })),
       ];
       const plainRows = [
@@ -1447,12 +1465,16 @@ const getPriceScore = (model) => {
       ladderBody.replaceChildren(fragment);
     };
 
-    // 详情弹层的属性行：排名在最前，官网在最后，中间复用对比模式的属性定义
-    const buildDetailRows = () => {
+    // 详情弹层的属性行：排名在最前，官网在最后，中间复用对比模式的属性定义；
+    // 该模型没有跑分的 benchmark 直接不列出，其他属性没有数据时仍显示 -
+    const buildDetailRows = (model) => {
       const { rows, plainRows } = buildCompareRows();
       const rankRow = plainRows.find((definition) => definition.key === 'rank');
       const urlRow = plainRows.find((definition) => definition.key === 'url');
-      return [rankRow, ...rows, urlRow].filter(Boolean);
+      const attributeRows = rows.filter((definition) => (
+        !String(definition.key ?? '').startsWith('benchmark:') || !isMissing(definition.value(model))
+      ));
+      return [rankRow, ...attributeRows, urlRow].filter(Boolean);
     };
 
     const renderModal = () => {
@@ -1476,7 +1498,7 @@ const getPriceScore = (model) => {
       modalClose.setAttribute('aria-label', t('closeModal'));
 
       const fragment = document.createDocumentFragment();
-      buildDetailRows().forEach((definition) => {
+      buildDetailRows(model).forEach((definition) => {
         const row = document.createElement('tr');
         const label = document.createElement('th');
         label.scope = 'row';
