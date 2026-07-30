@@ -53,6 +53,34 @@
       letter-spacing: -0.03em;
     }
 
+    .title-row {
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+    }
+
+    /* 视图切换：仅用文字深浅区分，无背景与边框 */
+    .view-toggle {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+
+    .view-option {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--faint);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .view-option[aria-pressed="true"] {
+      color: var(--text-strong);
+    }
+
     .description,
     #status {
       margin: 12px 0 0;
@@ -320,6 +348,169 @@
       color: rgba(0, 0, 0, 0.55);
     }
 
+    /* 天梯模式：行=分数段（自上而下由高到低），列=厂商（自左向右由强到弱） */
+    #ladder-wrap table {
+      width: auto;
+      min-width: 0;
+    }
+
+    #ladder-table tr:hover {
+      background: transparent;
+    }
+
+    #ladder-table th,
+    #ladder-table td {
+      vertical-align: top;
+    }
+
+    #ladder-table th:not(:first-child),
+    #ladder-table td:not(:first-child) {
+      min-width: 168px;
+    }
+
+    /* 分数段列横向滚动时固定在左侧，便于对照当前行所处的分数区间 */
+    #ladder-table th:first-child,
+    #ladder-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      min-width: 116px;
+      padding-right: 24px;
+      padding-left: 0;
+      background: var(--background);
+    }
+
+    #ladder-table thead th:first-child {
+      z-index: 3;
+    }
+
+    /* 分数段是行表头，需要去掉全局 th 的置顶粘性与视觉强调 */
+    #ladder-table tbody th {
+      top: auto;
+      border-bottom: 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .ladder-tier {
+      font-variant-numeric: tabular-nums;
+    }
+
+    .ladder-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .ladder-model {
+      max-width: 200px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--text-strong);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: left;
+      white-space: normal;
+      cursor: pointer;
+    }
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 10;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 64px 24px;
+      overflow-y: auto;
+      background: rgba(0, 0, 0, 0.28);
+    }
+
+    .modal {
+      width: min(100%, 560px);
+      padding: 32px;
+      border: 1px solid var(--line);
+      background: var(--background);
+    }
+
+    .modal-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .modal-title {
+      margin: 0;
+      color: var(--text-strong);
+      font-size: 20px;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .modal-brand {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .modal-close {
+      flex: none;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--faint);
+      font: inherit;
+      font-size: 15px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .modal-table {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .modal-table tr:hover {
+      background: transparent;
+    }
+
+    .modal-table th,
+    .modal-table td {
+      padding: 10px 0;
+      white-space: normal;
+    }
+
+    .modal-table th {
+      position: static;
+      width: 45%;
+      border-bottom: 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .modal-table td {
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .modal-close:focus-visible,
+    .view-option:focus-visible,
+    .ladder-model:focus-visible {
+      outline: 2px solid rgba(0, 0, 0, 0.55);
+      outline-offset: 3px;
+    }
+
     .sort-button {
       display: inline-flex;
       align-items: center;
@@ -401,6 +592,9 @@
     @media (max-width: 680px) {
       main { padding: 36px 20px 28px; }
       header { align-items: start; flex-direction: column; gap: 12px; }
+      .title-row { flex-wrap: wrap; gap: 8px 16px; }
+      .modal-overlay { padding: 32px 16px; }
+      .modal { padding: 24px 20px; }
       #status { text-align: left; white-space: normal; }
       .lang-toggle {
         position: absolute;
@@ -440,7 +634,10 @@
   <main>
     <header>
       <div>
-        <h1>LLM Score</h1>
+        <div class="title-row">
+          <h1>LLM Score</h1>
+          <div class="view-toggle" id="view-toggle" role="group" aria-label="视图模式"></div>
+        </div>
         <p class="description" data-i18n="description">模型综合多维度测试评分与基准测试表现，使用最新汇率计算价格</p>
         <div class="brand-filter" id="brand-filter" role="group" aria-label="厂商过滤"></div>
       </div>
@@ -466,6 +663,13 @@
       </table>
     </div>
 
+    <div class="table-wrap" id="ladder-wrap" hidden>
+      <table id="ladder-table">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
     <footer class="site-footer">
       <span class="updated-at" id="updated-at"></span>
       <a class="footer-link" href="https://aiznb.com/about" target="_blank" rel="noopener">Created by Soar</a>
@@ -474,6 +678,21 @@
       <img class="footer-counter" src="https://not.aiznb.com/img?url=https://echosoar.github.io/llm-score/"  />
     </footer>
   </main>
+
+  <div class="modal-overlay" id="model-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-head">
+        <div>
+          <h2 class="modal-title" id="modal-title"></h2>
+          <p class="modal-brand" id="modal-brand"></p>
+        </div>
+        <button class="modal-close" id="modal-close" type="button">✕</button>
+      </div>
+      <table class="modal-table">
+        <tbody id="modal-body"></tbody>
+      </table>
+    </div>
+  </div>
 
   <script>
     const table = document.querySelector('#score-table');
@@ -484,6 +703,17 @@
     const compareHead = compareTable.querySelector('thead');
     const compareBody = compareTable.querySelector('tbody');
     const compareWrap = document.querySelector('#compare-wrap');
+    const ladderTable = document.querySelector('#ladder-table');
+    const ladderHead = ladderTable.querySelector('thead');
+    const ladderBody = ladderTable.querySelector('tbody');
+    const ladderWrap = document.querySelector('#ladder-wrap');
+    const viewToggle = document.querySelector('#view-toggle');
+    const modal = document.querySelector('#model-modal');
+    const modalTitle = document.querySelector('#modal-title');
+    const modalBrand = document.querySelector('#modal-brand');
+    const modalBody = document.querySelector('#modal-body');
+    const modalClose = document.querySelector('#modal-close');
+    const pageMain = document.querySelector('main');
     const selectionBar = document.querySelector('#selection-bar');
     const status = document.querySelector('#status');
     const brandFilter = document.querySelector('#brand-filter');
@@ -504,7 +734,17 @@ let modelMap = new Map();
     let selectedModels = [];
     let compareMode = false;
     let compareSort = { model: null, direction: null };
+    // 视图模式：rank（排名表格）/ ladder（天梯）
+    let viewMode = 'rank';
+    // 数据加载失败标记，置位后任何一次 render 都保持错误提示可见
+    let loadFailed = false;
+    // 天梯中点击模型后展示详情的模型 key，以及关闭弹层后需要还原焦点的元素
+    let modalModel = null;
+    let modalReturnFocus = null;
+    let overlayPressed = false;
     let lang = 'zh';
+
+    const TIER_STEP = 5;
 
     const i18n = {
       zh: {
@@ -530,6 +770,11 @@ let modelMap = new Map();
         colGenerate: '输出窗口',
         colUrl: '官网',
         website: '官网',
+        viewGroup: '视图模式',
+        viewRank: '排名',
+        viewLadder: '天梯',
+        colTier: '分数段',
+        closeModal: '关闭',
         selectedTitle: '选中的模型列表',
         compare: '对比',
         cancelCompare: '取消对比',
@@ -561,6 +806,11 @@ let modelMap = new Map();
         colGenerate: 'Output Window',
         colUrl: 'Website',
         website: 'Website',
+        viewGroup: 'View mode',
+        viewRank: 'Ranking',
+        viewLadder: 'Ladder',
+        colTier: 'Score Range',
+        closeModal: 'Close',
         selectedTitle: 'Selected Models',
         compare: 'Compare',
         cancelCompare: 'Cancel Compare',
@@ -963,8 +1213,8 @@ const getPriceScore = (model) => {
         })),
       ];
       const plainRows = [
-        { label: t('colRank'), plain: true, numeric: true, value: (m) => rankMap.get(m.model) ?? null, format: (m) => String(rankMap.get(m.model) ?? '-') },
-        { label: t('colUrl'), plain: true, link: true, value: (m) => m.url ?? null },
+        { key: 'rank', label: t('colRank'), plain: true, numeric: true, value: (m) => rankMap.get(m.model) ?? null, format: (m) => String(rankMap.get(m.model) ?? '-') },
+        { key: 'url', label: t('colUrl'), plain: true, link: true, value: (m) => m.url ?? null },
       ];
       return { rows, plainRows };
     };
@@ -1100,6 +1350,219 @@ const getPriceScore = (model) => {
       compareBody.replaceChildren(fragment);
     };
 
+    const getTierLower = (score) => Math.floor(score / TIER_STEP) * TIER_STEP;
+
+    const formatTier = (lower) => `${lower}~${lower + TIER_STEP}`;
+
+    // 天梯数据：列按厂商最高分从左到右递减，行按分数段从上到下递减，
+    // 每格放这个厂商落在这个分数段里的模型（按分数从高到低）
+    const buildLadder = () => {
+      const scored = models.filter((model) => toNumber(model.score) !== null);
+      if (!scored.length) return { tiers: [], brands: [], cells: new Map() };
+
+      const values = scored.map((model) => Number(model.score));
+      // 最低分段固定不高于 10~15，最高分段跟随数据自动上探
+      const minTier = Math.min(getTierLower(Math.min(...values)), 10);
+      const maxTier = getTierLower(Math.max(...values));
+      const tiers = [];
+      for (let lower = maxTier; lower >= minTier; lower -= TIER_STEP) tiers.push(lower);
+
+      const brandBest = new Map();
+      const cells = new Map();
+      scored.forEach((model) => {
+        const score = Number(model.score);
+        const best = brandBest.get(model.brand);
+        if (best === undefined || score > best) brandBest.set(model.brand, score);
+        const key = `${model.brand}\u0000${getTierLower(score)}`;
+        if (!cells.has(key)) cells.set(key, []);
+        cells.get(key).push(model);
+      });
+      cells.forEach((list) => {
+        list.sort((left, right) => Number(right.score) - Number(left.score)
+          || left.model.localeCompare(right.model, 'zh-CN'));
+      });
+
+      const brands = [...brandBest.entries()]
+        .sort((a, b) => b[1] - a[1] || String(a[0]).localeCompare(String(b[0]), 'zh-CN', { sensitivity: 'base' }))
+        .map(([brand]) => brand);
+
+      return { tiers, brands, cells };
+    };
+
+    const renderLadder = () => {
+      const { tiers, brands, cells } = buildLadder();
+
+      const headRow = document.createElement('tr');
+      const corner = document.createElement('th');
+      corner.scope = 'col';
+      corner.textContent = t('colTier');
+      headRow.append(corner);
+      brands.forEach((brand) => {
+        const cell = document.createElement('th');
+        cell.scope = 'col';
+        const wrap = document.createElement('span');
+        wrap.className = 'brand-cell';
+        const icon = createBrandIcon(brand);
+        if (icon) wrap.append(icon);
+        const label = document.createElement('span');
+        label.textContent = brand;
+        wrap.append(label);
+        cell.append(wrap);
+        headRow.append(cell);
+      });
+      ladderHead.replaceChildren(headRow);
+
+      const fragment = document.createDocumentFragment();
+      tiers.forEach((lower) => {
+        const row = document.createElement('tr');
+        const tierCell = document.createElement('th');
+        tierCell.scope = 'row';
+        tierCell.className = 'ladder-tier';
+        tierCell.textContent = formatTier(lower);
+        row.append(tierCell);
+        brands.forEach((brand) => {
+          const list = cells.get(`${brand}\u0000${lower}`) ?? [];
+          const cell = document.createElement('td');
+          if (!list.length) {
+            cell.className = 'missing';
+            cell.textContent = '-';
+            row.append(cell);
+            return;
+          }
+          const wrap = document.createElement('div');
+          wrap.className = 'ladder-cell';
+          list.forEach((model) => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'ladder-model';
+            button.textContent = model.model;
+            button.addEventListener('click', () => openModal(model.model));
+            wrap.append(button);
+          });
+          cell.append(wrap);
+          row.append(cell);
+        });
+        fragment.append(row);
+      });
+      ladderBody.replaceChildren(fragment);
+    };
+
+    // 详情弹层的属性行：排名在最前，官网在最后，中间复用对比模式的属性定义
+    const buildDetailRows = () => {
+      const { rows, plainRows } = buildCompareRows();
+      const rankRow = plainRows.find((definition) => definition.key === 'rank');
+      const urlRow = plainRows.find((definition) => definition.key === 'url');
+      return [rankRow, ...rows, urlRow].filter(Boolean);
+    };
+
+    const renderModal = () => {
+      const model = modalModel ? modelMap.get(modalModel) : null;
+      if (!model) {
+        modal.hidden = true;
+        modalBody.replaceChildren();
+        return;
+      }
+      modal.hidden = false;
+      modalTitle.textContent = model.model;
+      const brandWrap = document.createElement('span');
+      brandWrap.className = 'brand-cell';
+      const icon = createBrandIcon(model.brand);
+      if (icon) brandWrap.append(icon);
+      const brandLabel = document.createElement('span');
+      brandLabel.textContent = model.brand ?? '-';
+      brandWrap.append(brandLabel);
+      modalBrand.replaceChildren(brandWrap);
+      modalClose.title = t('closeModal');
+      modalClose.setAttribute('aria-label', t('closeModal'));
+
+      const fragment = document.createDocumentFragment();
+      buildDetailRows().forEach((definition) => {
+        const row = document.createElement('tr');
+        const label = document.createElement('th');
+        label.scope = 'row';
+        label.textContent = definition.label;
+        row.append(label);
+        const value = document.createElement('td');
+        if (definition.link) {
+          if (model.url) {
+            const link = document.createElement('a');
+            link.className = 'website-link';
+            link.href = model.url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = t('website');
+            value.append(link);
+          } else {
+            value.className = 'missing';
+            value.textContent = '-';
+          }
+        } else {
+          const text = definition.format(model);
+          value.textContent = text;
+          if (text === '-') value.className = 'missing';
+        }
+        row.append(value);
+        fragment.append(row);
+      });
+      modalBody.replaceChildren(fragment);
+    };
+
+    const openModal = (key) => {
+      modalReturnFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+      modalModel = key;
+      renderModal();
+      // 弹层打开期间把主内容标记为 inert，焦点只能停留在弹层内，同时锁掉背景滚动
+      pageMain.inert = true;
+      document.documentElement.style.overflow = 'hidden';
+      modalClose.focus();
+    };
+
+    const closeModal = () => {
+      if (!modalModel) return;
+      modalModel = null;
+      renderModal();
+      pageMain.inert = false;
+      document.documentElement.style.overflow = '';
+      if (modalReturnFocus && document.contains(modalReturnFocus)) modalReturnFocus.focus();
+      modalReturnFocus = null;
+    };
+
+    modalClose.addEventListener('click', closeModal);
+    // 只有按下与松开都发生在遮罩上才关闭，避免在弹层内框选文字时误关
+    modal.addEventListener('mousedown', (event) => {
+      overlayPressed = event.target === modal;
+    });
+    modal.addEventListener('click', (event) => {
+      const shouldClose = overlayPressed && event.target === modal;
+      overlayPressed = false;
+      if (shouldClose) closeModal();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeModal();
+    });
+
+    // 切换按钮只更新文案与选中态，不重建节点，避免键盘操作时焦点丢失
+    const viewOptions = [['rank', 'viewRank'], ['ladder', 'viewLadder']].map(([mode, key]) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'view-option';
+      button.addEventListener('click', () => {
+        if (viewMode === mode) return;
+        viewMode = mode;
+        closeModal();
+        render();
+      });
+      viewToggle.append(button);
+      return { mode, key, button };
+    });
+
+    const renderViewToggle = () => {
+      viewOptions.forEach(({ mode, key, button }) => {
+        button.textContent = t(key);
+        button.setAttribute('aria-pressed', String(viewMode === mode));
+      });
+    };
+
     const renderBrandFilter = () => {
       const counts = new Map();
       models.forEach((model) => {
@@ -1133,19 +1596,33 @@ const getPriceScore = (model) => {
     };
 
     const render = () => {
+      // 对比模式优先，此时不允许切到天梯，切换控件整体隐藏；
+      // 数据未就绪时也不进天梯，避免加载失败的提示被空表盖住
+      const hasModels = models.length > 0;
+      const ladderMode = viewMode === 'ladder' && !compareMode && hasModels;
+      renderViewToggle();
+      viewToggle.hidden = compareMode || !hasModels;
       renderBrandFilter();
       renderSelection();
-      // 对比模式下隐藏主表格、厂商过滤与状态文字
-      brandFilter.hidden = compareMode;
-      status.hidden = compareMode;
-      tableWrap.hidden = compareMode;
+      renderModal();
+      // 对比模式与天梯模式下都隐藏主表格、厂商过滤与状态文字，天梯模式另外隐藏选中态
+      brandFilter.hidden = compareMode || ladderMode;
+      status.hidden = compareMode || ladderMode;
+      if (ladderMode) selectionBar.hidden = true;
+      tableWrap.hidden = compareMode || ladderMode;
       compareWrap.hidden = !compareMode;
+      ladderWrap.hidden = !ladderMode;
       if (compareMode) {
         renderCompare();
         return;
       }
+      if (ladderMode) {
+        renderLadder();
+        return;
+      }
       renderHeader();
       renderRows();
+      if (loadFailed) showError(i18n[lang].emptyError);
     };
 
     const applyLanguage = () => {
@@ -1158,6 +1635,7 @@ const getPriceScore = (model) => {
       langToggle.textContent = i18n[lang === 'zh' ? 'en' : 'zh'].toggleLabel;
       langToggle.setAttribute('aria-label', lang === 'zh' ? 'Switch to English' : '切换为中文');
       brandFilter.setAttribute('aria-label', i18n[lang].brandGroup);
+      viewToggle.setAttribute('aria-label', i18n[lang].viewGroup);
     };
 
     langToggle.addEventListener('click', () => {
@@ -1179,6 +1657,8 @@ const getPriceScore = (model) => {
       row.append(cell);
       tableBody.replaceChildren(row);
     };
+
+    renderViewToggle();
 
     fetch('./score.json')
       .then((response) => {
@@ -1230,8 +1710,12 @@ const getPriceScore = (model) => {
       })
       .catch((error) => {
         console.error('Unable to load score.json:', error);
+        // 没有数据时天梯无内容可展示，回到排名视图，保证错误信息可见
+        loadFailed = true;
+        viewMode = 'rank';
+        compareMode = false;
+        render();
         status.textContent = i18n[lang].loadFailed;
-        showError(i18n[lang].emptyError);
       });
   </script>
 </body>
