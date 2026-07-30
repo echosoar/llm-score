@@ -348,6 +348,15 @@
       color: rgba(0, 0, 0, 0.55);
     }
 
+    /* 数值后的名次比数值本身更浅，落后一侧再浅一档以保持层级 */
+    .value-rank {
+      color: var(--faint);
+    }
+
+    .compare-lose .value-rank {
+      color: rgba(0, 0, 0, 0.26);
+    }
+
     /* 天梯模式：行=分数段（自上而下由高到低），列=厂商（自左向右由强到弱） */
     #ladder-wrap table {
       width: auto;
@@ -1203,13 +1212,22 @@ const getPriceScore = (model) => {
       return better + 1;
     };
 
-    const withRank = (text, rank) => (rank === null || text === '-' ? text : `${text} (#${rank})`);
+    // 名次以更浅的文字跟在数值后面，作为独立节点渲染
+    const appendRankSuffix = (cell, definition, model) => {
+      if (!definition.rank || cell.textContent === '-') return;
+      const rank = definition.rank(model);
+      if (rank === null) return;
+      const suffix = document.createElement('span');
+      suffix.className = 'value-rank';
+      suffix.textContent = ` (#${rank})`;
+      cell.append(suffix);
+    };
 
     // 对比模式的属性行：better 表示哪一侧胜出，plain 行仅展示不参与胜出判定
     const buildCompareRows = () => {
       const rows = [
-        { label: t('colScore'), better: 'high', numeric: true, value: (m) => toNumber(m.score), format: (m) => withRank(formatScore(m.score), getMetricRank(m, (item) => item.score)) },
-        { label: t('colPriceScore'), better: 'high', numeric: true, value: (m) => toNumber(getPriceScore(m)), format: (m) => withRank(formatScore(getPriceScore(m)), getMetricRank(m, getPriceScore)) },
+        { label: t('colScore'), better: 'high', numeric: true, value: (m) => toNumber(m.score), format: (m) => formatScore(m.score), rank: (m) => getMetricRank(m, (item) => item.score) },
+        { label: t('colPriceScore'), better: 'high', numeric: true, value: (m) => toNumber(getPriceScore(m)), format: (m) => formatScore(getPriceScore(m)), rank: (m) => getMetricRank(m, getPriceScore) },
         { label: t('colTime'), better: 'high', value: (m) => m.time ?? null, format: (m) => m.time ?? '-' },
         { label: t('colInput'), better: 'high', value: (m) => formatCount(m.input), format: (m) => formatFormats(m.input) },
         { label: t('colOutput'), better: 'high', value: (m) => formatCount(m.output), format: (m) => formatFormats(m.output) },
@@ -1224,10 +1242,8 @@ const getPriceScore = (model) => {
           better: 'high',
           numeric: true,
           value: (m) => getBenchmarkScore(m, benchmark),
-          format: (m) => withRank(
-            formatBenchmarkScore(getBenchmarkScore(m, benchmark)),
-            getMetricRank(m, (item) => getBenchmarkScore(item, benchmark)),
-          ),
+          format: (m) => formatBenchmarkScore(getBenchmarkScore(m, benchmark)),
+          rank: (m) => getMetricRank(m, (item) => getBenchmarkScore(item, benchmark)),
         })),
       ];
       const plainRows = [
@@ -1292,6 +1308,7 @@ const getPriceScore = (model) => {
         }
       } else {
         cell.textContent = definition.format(model);
+        appendRankSuffix(cell, definition, model);
       }
       row.append(cell);
     };
@@ -1522,6 +1539,7 @@ const getPriceScore = (model) => {
           const text = definition.format(model);
           value.textContent = text;
           if (text === '-') value.className = 'missing';
+          appendRankSuffix(value, definition, model);
         }
         row.append(value);
         fragment.append(row);
