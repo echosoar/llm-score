@@ -1,6 +1,19 @@
 {
     "models": [
         {
+            "brand": "DeepSeek",
+            "model": "DeepSeek V4 Flash",
+            "time": "2026/07/31",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 384000,
+            "inputPrice": "￥1",
+            "inputCachedPrice": "￥0.02",
+            "outputPrice": "￥2",
+            "url": "https://api-docs.deepseek.com/updates/"
+        },
+        {
             "brand": "蚂蚁",
             "model": "Ling-3.0-flash",
             "time": "2026/07/24",
@@ -119,9 +132,9 @@
             "output": ["text"],
             "context": 1050000,
             "generate": 128000,
-            "inputPrice": "$2.50",
-            "inputCachedPrice": "$0.25",
-            "outputPrice": "$15",
+            "inputPrice": "$2",
+            "inputCachedPrice": "$0.2",
+            "outputPrice": "$12",
             "url": "https://openai.com/zh-Hans-CN/index/gpt-5-6/"
         },
         {
@@ -132,9 +145,9 @@
             "output": ["text"],
             "context": 1050000,
             "generate": 128000,
-            "inputPrice": "$1",
-            "inputCachedPrice": "$0.1",
-            "outputPrice": "$6",
+            "inputPrice": "$0.2",
+            "inputCachedPrice": "$0.02",
+            "outputPrice": "$1.2",
             "url": "https://openai.com/zh-Hans-CN/index/gpt-5-6/"
         },
         {
@@ -420,7 +433,7 @@
         },
         {
             "brand": "DeepSeek",
-            "model": "DeepSeek V4 Pro",
+            "model": "DeepSeek V4 Pro Preview",
             "time": "2026/04/24",
             "input": ["text"],
             "output": ["text"],
@@ -433,7 +446,7 @@
         },
          {
             "brand": "DeepSeek",
-            "model": "DeepSeek V4 Flash",
+            "model": "DeepSeek V4 Flash Preview",
             "time": "2026/04/24",
             "input": ["text"],
             "output": ["text"],
@@ -1182,7 +1195,7 @@
                 "Qwen 3.7 Max": 0.924,
                 "ERNIE 5.1": 0.91,
                 "DeepSeek V4 Pro": 0.901,
-                "DeepSeek V4 Flash": 0.881,
+                "DeepSeek V4 Flash Preview": 0.881,
                 "GPT-5.5": 0.936,
                 "Qwen 3.6 27B": 0.878,
                 "Kimi K2.6(from Qwen 3.7 Max)": 0.905,
@@ -1276,7 +1289,7 @@
                 "Gemini 3.5 Flash": 0.551,
                 "MiMo V2.5 Pro": 0.572,
                 "DeepSeek V4 Pro": 0.554,
-                "DeepSeek V4 Flash": 0.526,
+                "DeepSeek V4 Flash Preview": 0.526,
                 "GPT-5.5": 0.586,
                 "Qwen 3.6 27B": 0.535,
                 "MiMo V2.5": 0.561,
@@ -1312,7 +1325,7 @@
                 "Claude Opus 4.8(from Hy 3)": 0.886,
                 "Qwen 3.7 Max": 0.804,
                 "DeepSeek V4 Pro": 0.806,
-                "DeepSeek V4 Flash": 0.79,
+                "DeepSeek V4 Flash Preview": 0.79,
                 "GPT-5.5(from Hy 3)": 0.844,
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.788,
                 "Kimi K2.6(from Qwen 3.7 Max)": 0.802,
@@ -1385,8 +1398,8 @@
         },
         {
             "name": "DeepSWE",
-            "upgrade": "DeepSWE 1.1",
             "scores": {
+                "DeepSeek V4 Flash": 0.544,
                 "GLM 5.2": 0.462,
                 "Laguna S 2.1": 0.404,
                 "Kimi K3(from Laguna S 2.1)": 0.69,
@@ -1396,7 +1409,7 @@
                 "MiniMax M3(from GLM 5.2)": 0.22,
                 "Claude Opus 4.8(from Hy 3)": 0.58,
                 "DeepSeek V4 Pro(from Hy 3)": 0.08,
-                "DeepSeek V4 Flash(from Hy 3)": 0.071,
+                "DeepSeek V4 Flash Preview(from Hy 3)": 0.071,
                 "GPT-5.5(from Hy 3)": 0.7,
                 "Gemini 3.1 Pro(from Hy 3)": 0.1
             }
@@ -1404,6 +1417,7 @@
         {
             "name": "Toolathlon-Verified",
             "scores": {
+                "DeepSeek V4 Flash": 0.703,
                 "Kimi K3": 0.732,
                 "GLM 5.2(from Kimi K3)": 0.599,
                 "Claude Fable 5(from Kimi K3)": 0.779,
@@ -1418,6 +1432,7 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "DeepSeek V4 Flash": 0.827,
                 "Ling-3.0-flash": 0.57,
                 "Gemini 3.6 Flash": 0.78,
                 "Gemini 3.5 Flash Lite": 0.54,
@@ -1443,7 +1458,7 @@
                 "GLM 5.2": 0.81,
                 "Ring-2.6-1T": 0.431,
                 "DeepSeek V4 Pro(from Hy 3)": 0.64,
-                "DeepSeek V4 Flash(from Hy 3)": 0.526,
+                "DeepSeek V4 Flash Preview(from Hy 3)": 0.526,
                 "MiniMax M2.7": 0.511,
                 "GLM 5.1": 0.635,
                 "Gemini 3.1 Pro(from Gemini 3.6 Flash)": 0.738,
@@ -1454,7 +1469,6 @@
         },
         {
             "name": "Terminal-Bench 2",
-            "upgrade": "Terminal-Bench 2.1",
             "scores": {
                 "Laguna XS 2.1": 0.375,
                 "Laguna XS 2": 0.357,
@@ -1463,7 +1477,7 @@
                 "Qwen 3.7 Max": 0.697,
                 "MiMo V2.5 Pro": 0.684,
                 "DeepSeek V4 Pro": 0.679,
-                "DeepSeek V4 Flash": 0.569,
+                "DeepSeek V4 Flash Preview": 0.569,
                 "Step 3.5 Flash": 0.51,
                 "GPT-5.5": 0.827,
                 "Qwen 3.6 27B": 0.593,
@@ -1516,7 +1530,7 @@
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.843,
                 "Medium 3.5": 0.486,
                 "DeepSeek V4 Pro": 0.834,
-                "DeepSeek V4 Flash": 0.732,
+                "DeepSeek V4 Flash Preview": 0.732,
                 "GPT-5.5": 0.844,
                 "Kimi K2.6": 0.832,
                 "Claude Opus 4.7": 0.793,
@@ -1570,14 +1584,13 @@
         },
         {
             "name": "GDPval-AA",
-            "upgrade": "GDPval-AA 2",
             "scores": {
                 "Claude Fable 5": 1932,
                 "Claude Opus 4.8": 1890,
                 "Gemini 3.5 Flash": 1656,
                 "MiMo V2.5 Pro":1581,
                 "DeepSeek V4 Pro": 1554,
-                "DeepSeek V4 Flash": 1395,
+                "DeepSeek V4 Flash Preview": 1395,
                 "Claude Opus 4.7": 1753,
                 "Muse Spark": 1444,
                 "GPT-5.4(Muse Spark)": 1672,
@@ -1607,7 +1620,7 @@
                 "Gemini 3.5 Flash": 0.402,
                 "MiMo V2.5 Pro": 0.48,
                 "DeepSeek V4 Pro": 0.482,
-                "DeepSeek V4 Flash": 0.451,
+                "DeepSeek V4 Flash Preview": 0.451,
                 "GPT-5.5": 0.522,
                 "Qwen 3.6 27B": 0.24,
                 "Kimi K2.6": 0.54,
@@ -1642,6 +1655,16 @@
             }
         },
         {
+            "name": "Cybergym",
+            "scores": {
+                "DeepSeek V4 Flash": 0.767,
+                "GPT-5.5": 0.818,
+                "Claude Opus 4.7": 0.78,
+                "Claude Opus 4.6(from Claude Opus 4.7)": 0.727,
+                "GPT-5.4(from GPT-5.5)": 0.79
+            }
+        },
+        {
             "name": "IMOAnswerBench",
             "scores": {
                 "Hy 3": 0.90,
@@ -1651,7 +1674,7 @@
                 "GLM 5.2(from Hy 3)": 0.91,
                 "Qwen 3.7 Max": 0.90,
                 "DeepSeek V4 Pro": 0.898,
-                "DeepSeek V4 Flash": 0.884,
+                "DeepSeek V4 Flash Preview": 0.884,
                 "GPT-5.5(from Hy 3)": 0.921,
                 "Qwen 3.6 27B": 0.808,
                 "Kimi K2.6": 0.86,
@@ -1684,7 +1707,7 @@
                 "Qwen 3.7 Max(from GLM 5.2)": 0.764,
                 "Gemini 3.5 Flash": 0.836,
                 "DeepSeek V4 Pro": 0.736,
-                "DeepSeek V4 Flash": 0.69,
+                "DeepSeek V4 Flash Preview": 0.69,
                 "GPT-5.5(from Kimi K3)": 0.828,
                 "Kimi K2.6(from DeepSeek V4 Pro)": 0.666,
                 "GLM 5.1(from GLM 5.2)": 0.718,
