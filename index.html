@@ -63,7 +63,7 @@
     .view-toggle {
       display: inline-flex;
       align-items: baseline;
-      gap: 16px;
+      gap: 8px;
     }
 
     .view-option {
@@ -429,6 +429,100 @@
       cursor: pointer;
     }
 
+    /* 左右滚动按钮：固定在视口两侧垂直居中，仅当前表格可横向滚动且未滚到边缘时显示 */
+    .scroll-nav {
+      position: fixed;
+      top: 50%;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      padding: 0;
+      border: 1px solid var(--line);
+      background: var(--background);
+      color: var(--muted);
+      font: inherit;
+      font-size: 15px;
+      line-height: 1;
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+
+    .scroll-nav:hover {
+      color: var(--text-strong);
+    }
+
+    .scroll-nav-left { left: 8px; }
+
+    .scroll-nav-right { right: 8px; }
+
+    .scroll-nav:focus-visible {
+      outline: 2px solid rgba(0, 0, 0, 0.55);
+      outline-offset: 3px;
+    }
+
+    /* 排名表横向滚动时，# 与模型名称两列固定在左侧，纵向跟随行滚动 */
+    #score-table th:nth-child(1),
+    #score-table td:nth-child(1) {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      background: var(--background);
+    }
+
+    #score-table th:nth-child(2),
+    #score-table td:nth-child(2) {
+      position: sticky;
+      left: var(--pin-2, 0px);
+      z-index: 2;
+      background: var(--background);
+    }
+
+    /* 固定列背景不透明，行 hover 与选中态需要同步成与叠加色等效的实色 */
+    #score-table tbody tr:hover td:nth-child(-n+2),
+    #score-table tbody tr[aria-selected="true"] td:nth-child(-n+2) {
+      background: #f7f7f7;
+    }
+
+    /* 对比表第一列（属性名）同样在横向滚动时固定在左侧 */
+    #compare-table th:first-child,
+    #compare-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      background: var(--background);
+    }
+
+    /* 吸顶表头：原表头滚出视口后显示的克隆条，横向跟随表格滚动 */
+    .sticky-head {
+      position: fixed;
+      top: 0;
+      z-index: 8;
+      overflow: hidden;
+      background: var(--background);
+    }
+
+    .sticky-head table {
+      width: auto;
+      min-width: 0;
+      table-layout: fixed;
+    }
+
+    /* 覆盖全局 th 的 sticky 吸顶，克隆条内由 JS 平移控制 */
+    .sticky-head th {
+      position: relative;
+      z-index: 0;
+    }
+
+    .sticky-head--rank th:nth-child(-n+2),
+    .sticky-head--compare th:nth-child(1),
+    .sticky-head--ladder th:nth-child(1) {
+      z-index: 1;
+      background: var(--background);
+    }
+
     .modal-overlay {
       position: fixed;
       inset: 0;
@@ -607,7 +701,7 @@
       #status { text-align: left; white-space: normal; }
       .lang-toggle {
         position: absolute;
-        top: 36px;
+        top: 40px;
         right: 12px;
       }
     }
@@ -679,6 +773,14 @@
       </table>
     </div>
 
+    <button class="scroll-nav scroll-nav-left" id="scroll-nav-left" type="button" aria-label="向左滚动" hidden>←</button>
+    <button class="scroll-nav scroll-nav-right" id="scroll-nav-right" type="button" aria-label="向右滚动" hidden>→</button>
+    <div class="sticky-head" id="sticky-head" hidden>
+      <table>
+        <thead></thead>
+      </table>
+    </div>
+
     <footer class="site-footer">
       <span class="updated-at" id="updated-at"></span>
       <a class="footer-link" href="https://aiznb.com/about" target="_blank" rel="noopener">Created by Soar</a>
@@ -728,6 +830,11 @@
     const brandFilter = document.querySelector('#brand-filter');
     const langToggle = document.querySelector('#lang-toggle');
     const updatedAtNode = document.querySelector('#updated-at');
+    const scrollNavLeft = document.querySelector('#scroll-nav-left');
+    const scrollNavRight = document.querySelector('#scroll-nav-right');
+    const stickyHead = document.querySelector('#sticky-head');
+    const stickyHeadTable = stickyHead.querySelector('table');
+    const stickyHeadThead = stickyHead.querySelector('thead');
 
 let models = [];
 let benchmarks = [];
@@ -788,6 +895,8 @@ let modelMap = new Map();
         compare: '对比',
         cancelCompare: '取消对比',
         removeSelected: '取消选中',
+        scrollLeft: '向左滚动',
+        scrollRight: '向右滚动',
         emptyError: '无法加载 score.json。请通过 HTTP 服务打开此页面，而不是直接打开本地文件。',
         noDataError: 'score.json 不包含可显示的模型或 benchmark 数据。',
         toggleLabel: 'EN',
@@ -824,6 +933,8 @@ let modelMap = new Map();
         compare: 'Compare',
         cancelCompare: 'Cancel Compare',
         removeSelected: 'Remove',
+        scrollLeft: 'Scroll left',
+        scrollRight: 'Scroll right',
         emptyError: 'Unable to load score.json. Please serve this page over HTTP instead of opening the local file directly.',
         noDataError: 'score.json does not contain displayable model or benchmark data.',
         toggleLabel: '中',
@@ -1654,16 +1765,123 @@ const getPriceScore = (model) => {
       ladderWrap.hidden = !ladderMode;
       if (compareMode) {
         renderCompare();
-        return;
-      }
-      if (ladderMode) {
+      } else if (ladderMode) {
         renderLadder();
+      } else {
+        renderHeader();
+        renderRows();
+        if (loadFailed) showError(i18n[lang].emptyError);
+      }
+      buildStickyHead();
+      syncChrome();
+    };
+
+    // 横向滚动辅助与吸顶表头：作用于排名表、对比表与天梯表
+    // 当前需要横向滚动辅助的表格容器：对比模式用对比表，天梯用天梯表，其余用排名表
+    const getActiveWrap = () => {
+      if (compareMode) return compareWrap;
+      return viewMode === 'ladder' ? ladderWrap : tableWrap;
+    };
+
+    const getActiveTable = () => {
+      if (compareMode) return compareTable;
+      return viewMode === 'ladder' ? ladderTable : table;
+    };
+
+    // 克隆当前表头；排序按钮的点击按下标委托回原表头按钮，排序逻辑保持单一入口
+    const buildStickyHead = () => {
+      stickyHeadThead.replaceChildren();
+      const sourceRow = getActiveTable().querySelector('thead tr');
+      if (!sourceRow) return;
+      stickyHeadThead.append(sourceRow.cloneNode(true));
+      stickyHead.classList.toggle('sticky-head--rank', !compareMode && viewMode !== 'ladder');
+      stickyHead.classList.toggle('sticky-head--compare', compareMode);
+      stickyHead.classList.toggle('sticky-head--ladder', !compareMode && viewMode === 'ladder');
+    };
+
+    stickyHead.addEventListener('click', (event) => {
+      const button = event.target.closest('.sort-button');
+      if (!button) return;
+      const index = [...stickyHeadThead.querySelectorAll('.sort-button')].indexOf(button);
+      getActiveTable().querySelectorAll('thead .sort-button')[index]?.click();
+    });
+
+    // 列宽与内边距跟随原表头，保证克隆条与表格主体逐列对齐
+    const syncStickyHeadWidths = () => {
+      const sourceCells = getActiveTable().querySelectorAll('thead th');
+      stickyHeadThead.querySelectorAll('th').forEach((cell, index) => {
+        const source = sourceCells[index];
+        if (!source) return;
+        cell.style.width = `${source.offsetWidth}px`;
+        const style = getComputedStyle(source);
+        cell.style.paddingLeft = style.paddingLeft;
+        cell.style.paddingRight = style.paddingRight;
+      });
+    };
+
+    // 同步克隆条的显隐、位置与横向偏移；原表头滚出视口上缘且表格仍在视口内时显示
+    const syncStickyHead = () => {
+      const wrap = getActiveWrap();
+      if (!wrap || wrap.hidden) {
+        stickyHead.hidden = true;
         return;
       }
-      renderHeader();
-      renderRows();
-      if (loadFailed) showError(i18n[lang].emptyError);
+      const activeTable = getActiveTable();
+      const headHeight = activeTable.querySelector('thead').offsetHeight;
+      const rect = wrap.getBoundingClientRect();
+      const show = rect.top < 0 && rect.bottom > headHeight;
+      const wasHidden = stickyHead.hidden;
+      stickyHead.hidden = !show;
+      if (!show) return;
+      if (wasHidden) syncStickyHeadWidths();
+      stickyHead.style.left = `${rect.left}px`;
+      stickyHead.style.width = `${rect.width}px`;
+      stickyHead.style.height = `${headHeight}px`;
+      stickyHeadTable.style.width = `${activeTable.offsetWidth}px`;
+      const scrollLeft = wrap.scrollLeft;
+      stickyHeadTable.style.transform = `translateX(${-scrollLeft}px)`;
+      // 固定列反向平移，使其停留在克隆条左缘，与表格主体的固定列对齐
+      const pinCount = !compareMode && viewMode !== 'ladder' ? 2 : 1;
+      stickyHeadThead.querySelectorAll('th').forEach((cell, index) => {
+        cell.style.transform = index < pinCount ? `translateX(${scrollLeft}px)` : '';
+      });
     };
+
+    const syncNavButtons = () => {
+      const wrap = getActiveWrap();
+      const canScroll = wrap && !wrap.hidden && wrap.scrollWidth > wrap.clientWidth + 1;
+      scrollNavLeft.hidden = !canScroll || wrap.scrollLeft <= 0;
+      scrollNavRight.hidden = !canScroll || wrap.scrollLeft + wrap.clientWidth >= wrap.scrollWidth - 1;
+    };
+
+    // 模型名称列的固定偏移量等于 # 列的实际宽度，每次渲染后重新测量
+    const syncPinnedColumns = () => {
+      const rankCell = table.querySelector('thead th');
+      if (rankCell) tableWrap.style.setProperty('--pin-2', `${rankCell.offsetWidth}px`);
+    };
+
+    const syncChrome = () => {
+      syncPinnedColumns();
+      syncNavButtons();
+      syncStickyHead();
+      if (!stickyHead.hidden) syncStickyHeadWidths();
+    };
+
+    const scrollActiveWrap = (direction) => {
+      const wrap = getActiveWrap();
+      if (wrap) wrap.scrollBy({ left: direction * wrap.clientWidth, behavior: 'smooth' });
+    };
+
+    scrollNavLeft.addEventListener('click', () => scrollActiveWrap(-1));
+    scrollNavRight.addEventListener('click', () => scrollActiveWrap(1));
+    window.addEventListener('scroll', syncStickyHead, { passive: true });
+    window.addEventListener('resize', syncChrome);
+    [tableWrap, compareWrap, ladderWrap].forEach((wrap) => {
+      wrap.addEventListener('scroll', () => {
+        syncNavButtons();
+        syncStickyHead();
+      }, { passive: true });
+    });
 
     const applyLanguage = () => {
       document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
@@ -1676,6 +1894,8 @@ const getPriceScore = (model) => {
       langToggle.setAttribute('aria-label', lang === 'zh' ? 'Switch to English' : '切换为中文');
       brandFilter.setAttribute('aria-label', i18n[lang].brandGroup);
       viewToggle.setAttribute('aria-label', i18n[lang].viewGroup);
+      scrollNavLeft.setAttribute('aria-label', i18n[lang].scrollLeft);
+      scrollNavRight.setAttribute('aria-label', i18n[lang].scrollRight);
     };
 
     langToggle.addEventListener('click', () => {
