@@ -233,12 +233,17 @@
 
     .table-wrap {
       overflow-x: auto;
+      /* 移动端横向滑到两端时不把滚动继续传给页面，避免触发浏览器的左右滑动手势 */
+      overscroll-behavior-x: contain;
     }
 
     table {
       width: 100%;
       min-width: 2180px;
-      border-collapse: collapse;
+      /* iOS Safari / 移动端 WebKit 下 border-collapse: collapse 会让单元格上的 position: sticky 失效，
+         横向滚动时固定列会跟着一起跑，因此改用 separate + 0 间距，分隔线画在单元格上 */
+      border-collapse: separate;
+      border-spacing: 0;
       font-size: 13px;
       font-variant-numeric: tabular-nums;
     }
@@ -271,8 +276,16 @@
       text-transform: uppercase;
     }
 
-    tbody tr {
+    /* border-collapse: separate 下 tr 上的边框不会渲染，行分隔线放到单元格上 */
+    tbody th,
+    tbody td {
       border-top: 1px solid var(--line-soft);
+    }
+
+    /* 表头已有下边框，紧跟其后的首行不再重复画线 */
+    thead + tbody tr:first-child > th,
+    thead + tbody tr:first-child > td {
+      border-top: 0;
     }
 
     #score-table tbody tr {
@@ -380,6 +393,7 @@
     /* 分数段列横向滚动时固定在左侧，便于对照当前行所处的分数区间 */
     #ladder-table th:first-child,
     #ladder-table td:first-child {
+      position: -webkit-sticky;
       position: sticky;
       left: 0;
       z-index: 2;
@@ -466,6 +480,7 @@
     /* 排名表横向滚动时，# 与模型名称两列固定在左侧，纵向跟随行滚动 */
     #score-table th:nth-child(1),
     #score-table td:nth-child(1) {
+      position: -webkit-sticky;
       position: sticky;
       left: 0;
       z-index: 2;
@@ -474,10 +489,36 @@
 
     #score-table th:nth-child(2),
     #score-table td:nth-child(2) {
+      position: -webkit-sticky;
       position: sticky;
       left: var(--pin-2, 0px);
       z-index: 2;
       background: var(--background);
+    }
+
+    /* 固定列右侧的分隔线：始终占位 1px 保证列宽稳定，只有横向滚动过才显色 */
+    #score-table th:nth-child(2),
+    #score-table td:nth-child(2),
+    #compare-table th:first-child,
+    #compare-table td:first-child,
+    #ladder-table th:first-child,
+    #ladder-table td:first-child,
+    .sticky-head--rank th:nth-child(2),
+    .sticky-head--compare th:nth-child(1),
+    .sticky-head--ladder th:nth-child(1) {
+      border-right: 1px solid transparent;
+    }
+
+    .is-pinned #score-table th:nth-child(2),
+    .is-pinned #score-table td:nth-child(2),
+    .is-pinned #compare-table th:first-child,
+    .is-pinned #compare-table td:first-child,
+    .is-pinned #ladder-table th:first-child,
+    .is-pinned #ladder-table td:first-child,
+    .is-pinned.sticky-head--rank th:nth-child(2),
+    .is-pinned.sticky-head--compare th:nth-child(1),
+    .is-pinned.sticky-head--ladder th:nth-child(1) {
+      border-right-color: var(--line-soft);
     }
 
     /* 固定列背景不透明，行 hover 与选中态需要同步成与叠加色等效的实色 */
@@ -489,6 +530,7 @@
     /* 对比表第一列（属性名）同样在横向滚动时固定在左侧 */
     #compare-table th:first-child,
     #compare-table td:first-child {
+      position: -webkit-sticky;
       position: sticky;
       left: 0;
       z-index: 2;
@@ -694,6 +736,8 @@
 
     @media (max-width: 680px) {
       main { padding: 36px 20px 28px; }
+      /* 小屏上收紧单元格内边距，固定的两列少占一些宽度，右侧数据区更可用 */
+      th, td { padding: 14px 10px; }
       header { align-items: start; flex-direction: column; gap: 12px; }
       .title-row { flex-wrap: wrap; gap: 8px 16px; }
       .modal-overlay { padding: 32px 16px; }
@@ -1854,17 +1898,47 @@ const getPriceScore = (model) => {
       scrollNavRight.hidden = !canScroll || wrap.scrollLeft + wrap.clientWidth >= wrap.scrollWidth - 1;
     };
 
+    // 已经横向滚动过时给固定列右侧加分隔线，让被压在下面的内容有明确边界
+    const syncPinnedDivider = () => {
+      const wrap = getActiveWrap();
+      const pinned = Boolean(wrap) && !wrap.hidden && wrap.scrollLeft > 0;
+      [tableWrap, compareWrap, ladderWrap].forEach((item) => {
+        item.classList.toggle('is-pinned', pinned && item === wrap);
+      });
+      stickyHead.classList.toggle('is-pinned', pinned);
+    };
+
     // 模型名称列的固定偏移量等于 # 列的实际宽度，每次渲染后重新测量
     const syncPinnedColumns = () => {
       const rankCell = table.querySelector('thead th');
       if (rankCell) tableWrap.style.setProperty('--pin-2', `${rankCell.offsetWidth}px`);
     };
 
+    const syncScrollState = () => {
+      syncNavButtons();
+      syncPinnedDivider();
+      syncStickyHead();
+    };
+
     const syncChrome = () => {
       syncPinnedColumns();
-      syncNavButtons();
-      syncStickyHead();
+      syncScrollState();
       if (!stickyHead.hidden) syncStickyHeadWidths();
+    };
+
+    // 移动端（尤其是 iOS Safari）在触摸与惯性滚动期间 scroll 事件是异步且低频的，
+    // 只靠 scroll 事件同步会让克隆表头里的固定列跟不上手指、看起来“没固定住”。
+    // 交互期间改用 rAF 逐帧同步，滚动停止后再持续一小段时间覆盖惯性阶段。
+    let syncFrame = 0;
+    let syncDeadline = 0;
+    const pumpSync = () => {
+      syncFrame = 0;
+      syncScrollState();
+      if (performance.now() < syncDeadline) requestSync(0);
+    };
+    const requestSync = (duration) => {
+      if (duration) syncDeadline = Math.max(syncDeadline, performance.now() + duration);
+      if (!syncFrame) syncFrame = requestAnimationFrame(pumpSync);
     };
 
     const scrollActiveWrap = (direction) => {
@@ -1872,15 +1946,21 @@ const getPriceScore = (model) => {
       if (wrap) wrap.scrollBy({ left: direction * wrap.clientWidth, behavior: 'smooth' });
     };
 
-    scrollNavLeft.addEventListener('click', () => scrollActiveWrap(-1));
-    scrollNavRight.addEventListener('click', () => scrollActiveWrap(1));
-    window.addEventListener('scroll', syncStickyHead, { passive: true });
+    scrollNavLeft.addEventListener('click', () => {
+      scrollActiveWrap(-1);
+      requestSync(600);
+    });
+    scrollNavRight.addEventListener('click', () => {
+      scrollActiveWrap(1);
+      requestSync(600);
+    });
+    window.addEventListener('scroll', () => requestSync(300), { passive: true });
     window.addEventListener('resize', syncChrome);
     [tableWrap, compareWrap, ladderWrap].forEach((wrap) => {
-      wrap.addEventListener('scroll', () => {
-        syncNavButtons();
-        syncStickyHead();
-      }, { passive: true });
+      wrap.addEventListener('scroll', () => requestSync(300), { passive: true });
+      wrap.addEventListener('touchstart', () => requestSync(600), { passive: true });
+      wrap.addEventListener('touchmove', () => requestSync(600), { passive: true });
+      wrap.addEventListener('touchend', () => requestSync(1200), { passive: true });
     });
 
     const applyLanguage = () => {
