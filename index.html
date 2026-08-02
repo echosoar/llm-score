@@ -704,6 +704,13 @@
         top: 40px;
         right: 12px;
       }
+      #score-table th:nth-child(-n+2),
+      #score-table td:nth-child(-n+2) {
+        left: auto;
+      }
+      .scroll-nav {
+        display: none;
+      }
     }
 
     .site-footer {
@@ -861,6 +868,7 @@ let modelMap = new Map();
     let lang = 'zh';
 
     const TIER_STEP = 5;
+    const isMobileViewport = () => window.matchMedia('(max-width: 680px)').matches;
 
     const i18n = {
       zh: {
@@ -1841,13 +1849,18 @@ const getPriceScore = (model) => {
       const scrollLeft = wrap.scrollLeft;
       stickyHeadTable.style.transform = `translateX(${-scrollLeft}px)`;
       // 固定列反向平移，使其停留在克隆条左缘，与表格主体的固定列对齐
-      const pinCount = !compareMode && viewMode !== 'ladder' ? 2 : 1;
+      const pinCount = isMobileViewport() ? 0 : (!compareMode && viewMode !== 'ladder' ? 2 : 1);
       stickyHeadThead.querySelectorAll('th').forEach((cell, index) => {
         cell.style.transform = index < pinCount ? `translateX(${scrollLeft}px)` : '';
       });
     };
 
     const syncNavButtons = () => {
+      if (isMobileViewport()) {
+        scrollNavLeft.hidden = true;
+        scrollNavRight.hidden = true;
+        return;
+      }
       const wrap = getActiveWrap();
       const canScroll = wrap && !wrap.hidden && wrap.scrollWidth > wrap.clientWidth + 1;
       scrollNavLeft.hidden = !canScroll || wrap.scrollLeft <= 0;
