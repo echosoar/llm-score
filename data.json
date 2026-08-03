@@ -1,6 +1,21 @@
 {
     "models": [
         {
+            "brand": "Alibaba",
+            "model": "Qwen 3.8 Max",
+            "time": "2026/08/03",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 131000,
+            "params": 2400,
+            "active": 95,
+            "inputPrice": "￥12",
+            "inputCachedPrice": "￥1.5",
+            "outputPrice": "￥36",
+            "url": "https://qwen.ai/blog?id=qwen3.8"
+        },
+        {
             "brand": "DeepSeek",
             "model": "DeepSeek V4 Flash",
             "time": "2026/07/31",
@@ -8,10 +23,26 @@
             "output": ["text"],
             "context": 1000000,
             "generate": 384000,
+            "params": 284,
+            "active": 13,
             "inputPrice": "￥1",
             "inputCachedPrice": "￥0.02",
             "outputPrice": "￥2",
             "url": "https://api-docs.deepseek.com/updates/"
+        },
+        {
+            "brand": "Thinking Machines",
+            "model": "Inkling-Small",
+            "time": "2026/07/30",
+            "input": ["text", "image", "audio"],
+            "output": ["text"],
+            "context": 1000000,
+            "params": 276,
+            "active": 12,
+            "inputPrice": "$3.74",
+            "inputCachedPrice": "$0.748",
+            "outputPrice": "$9.36",
+            "url": "https://thinkingmachines.ai/news/inkling-small/"
         },
         {
             "brand": "蚂蚁",
@@ -20,6 +51,8 @@
             "input": ["text"],
             "output": ["text"],
             "context": 262000,
+            "params": 124,
+            "active": 5.1,
             "inputPrice": "￥0.4",
             "outputPrice": "￥1.2",
             "url": "https://mp.weixin.qq.com/s/5ic54FCsy334JJsQcyBr1g"
@@ -70,6 +103,8 @@
             "input": ["text"],
             "output": ["text"],
             "context": 1000000,
+            "params": 118,
+            "active": 8,
             "inputPrice": "$0.1",
             "inputCachedPrice": "$0.01",
             "outputPrice": "$0.2",
@@ -103,9 +138,11 @@
             "brand": "Thinking Machines",
             "model": "Inkling",
             "time": "2026/07/09",
-            "input": ["text", "image", "video", "audio"],
+            "input": ["text", "image", "audio"],
             "output": ["text"],
-            "context": 256000,
+            "context": 1000000,
+            "params": 975,
+            "active": 41,
             "inputPrice": "$3.74",
             "inputCachedPrice": "$0.748",
             "outputPrice": "$9.36",
@@ -1180,7 +1217,9 @@
         {
             "name": "GPQA Diamond",
             "scores": {
+                "Qwen 3.8 Max": 0.926,
                 "Kimi K3": 0.935,
+                "Inkling-Small": 0.895,
                 "Inkling": 0.872,
                 "GPT-5.6 Sol": 0.946,
                 "GPT-5.6 Terra": 0.929,
@@ -1260,6 +1299,8 @@
         {
             "name": "SWE-Bench Pro",
             "scores": {
+                "Qwen 3.8 Max": 0.677,
+                "Inkling-Small": 0.559,
                 "Ling-3.0-flash": 0.566,
                 "Gemini 3.6 Flash": 0.587,
                 "Gemini 3.5 Flash Lite": 0.54,
@@ -1315,6 +1356,8 @@
         {
             "name": "SWE-Bench Verified",
             "scores": {
+                "Inkling-Small": 0.802,
+                "Inkling": 0.776,
                 "Laguna XS 2.1": 0.709,
                 "Laguna XS 2": 0.699,
                 "Hy 3": 0.78,
@@ -1380,6 +1423,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Qwen 3.8 Max": 0.566,
                 "Claude Opus 5": 0.688,
                 "Gemini 3.6 Flash": 0.49,
                 "Claude Sonnet 5(from Gemini 3.6 Flash)": 0.54,
@@ -1417,6 +1461,9 @@
         {
             "name": "Toolathlon-Verified",
             "scores": {
+                "Qwen 3.8 Max": 0.725,
+                "Inkling-Small": 0.544,
+                "Inkling": 0.455,
                 "DeepSeek V4 Flash": 0.703,
                 "Kimi K3": 0.732,
                 "GLM 5.2(from Kimi K3)": 0.599,
@@ -1424,6 +1471,7 @@
                 "GPT-5.6 Sol(from Kimi K3)": 0.749,
                 "Claude Opus 4.8(from Kimi K3)": 0.762,
                 "GPT-5.5(from Kimi K3)": 0.735,
+                "Qwen 3.7 Max(from Qwen 3.8 Max)": 0.497,
                 "Muse Spark 1.1": 0.756,
                 "Muse Spark(from Muse Spark 1.1)": 0.494,
                 "Gemini 3 Pro(from Muse Spark 1.1)": 0.611
@@ -1432,7 +1480,9 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "Qwen 3.8 Max": 0.866,
                 "DeepSeek V4 Flash": 0.827,
+                "Inkling-Small": 0.647,
                 "Ling-3.0-flash": 0.57,
                 "Gemini 3.6 Flash": 0.78,
                 "Gemini 3.5 Flash Lite": 0.54,
@@ -1453,6 +1503,7 @@
                 "MiniMax M3": 0.66,
                 "Step 3.7 Flash": 0.595,
                 "Claude Opus 4.8": 0.85,
+                "Qwen 3.7 Max(from Qwen 3.8 Max)": 0.745,
                 "Gemini 3.5 Flash": 0.762,
                 "GPT-5.5(from GPT-5.6 Sol)": 0.856,
                 "GLM 5.2": 0.81,
@@ -1516,6 +1567,7 @@
         {
             "name": "BrowseComp",
             "scores": {
+                "Inkling-Small": 0.774,
                 "Ling-3.0-flash": 0.82,
                 "Claude Opus 5": 0.908,
                 "Kimi K3": 0.912,
@@ -1557,6 +1609,7 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "Inkling-Small": 1269,
                 "Claude Opus 5": 1861,
                 "Gemini 3.6 Flash": 1421,
                 "Gemini 3.5 Flash Lite": 1140,
@@ -1605,6 +1658,8 @@
         {
             "name": "Humanity's Last Exam",
             "scores": {
+                "Qwen 3.8 Max": 0.562,
+                "Inkling-Small": 0.478,
                 "Claude Opus 5": 0.647,
                 "Kimi K3": 0.56,
                 "Inkling": 0.46,
@@ -1655,10 +1710,41 @@
             }
         },
         {
+            "name": "Agents' Last Exam",
+            "info": "score",
+            "scores": {
+                "Qwen 3.8 Max": 0.524,
+                "Qwen 3.7 Max(from Qwen 3.8 Max)": 0.311,
+                "GPT-5.6 Sol": 0.27,
+                "GPT-5.6 Terra": 0.504,
+                "GPT-5.6 Luna": 0.503,
+                "GPT-5.5": 0.469,
+                "Claude Opus 4.8(from Qwen 3.8 Max)": 0.451,
+                "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.321
+            }
+        },
+        {
+            "name": "CharXiv",
+            "info": "RQ score w/ python",
+            "scores": {
+                "Qwen 3.8 Max": 0.935,
+                "Inkling-Small": 0.813,
+                "Inkling": 0.82,
+                "Kimi K3": 0.913,
+                "Qwen 3.7 Plus(from Qwen 3.8 Max)": 0.859,
+                "GPT-5.6 Sol(from Qwen 3.8 Max)": 0.891,
+                "GPT-5.5(Kimi K3)": 0.89,
+                "Claude Opus 4.8(from Qwen 3.8 Max)": 0.899,
+                "Claude Fable 5(from Qwen 3.8 Max)": 0.935,
+                "Gemini 3.1 Pro(from Qwen 3.8 Max)": 0.899
+            }
+        },
+        {
             "name": "Cybergym",
             "scores": {
                 "DeepSeek V4 Flash": 0.767,
                 "GPT-5.5": 0.818,
+                "GPT-5.4": 0.79,
                 "Claude Opus 4.7": 0.78,
                 "Claude Opus 4.6(from Claude Opus 4.7)": 0.727,
                 "GPT-5.4(from GPT-5.5)": 0.79
@@ -1726,6 +1812,7 @@
         {
             "name": "OSWorld-Verified",
             "scores": {
+                "Qwen 3.8 Max": 0.861,
                 "Gemini 3.6 Flash": 0.83,
                 "Gemini 3.5 Flash Lite": 0.74,
                 "Claude Sonnet 5": 0.812,
@@ -1735,6 +1822,8 @@
                 "MiniMax M3": 0.701,
                 "GPT-5.5": 0.787,
                 "Kimi K2.6": 0.731,
+                "Qwen 3.7 Plus(from Qwen 3.8 Max)": 0.733,
+                "GPT-5.6 Sol(from Qwen 3.8 Max)": 0.832,
                 "Claude Opus 4.7": 0.78,
                 "GPT-5.4": 0.75,
                 "Gemini 3.1 Pro": 0.762,
@@ -1751,6 +1840,8 @@
         {
             "name": "MMMU Pro",
             "scores": {
+                "Qwen 3.8 Max": 0.823,
+                "Inkling-Small": 0.74,
                 "Kimi K3": 0.816,
                 "Inkling": 0.735,
                 "GPT-5.6 Sol": 0.83,
@@ -1849,6 +1940,8 @@
             "name": "AIME'26",
             "info": "no tool",
             "scores": {
+                "Inkling-Small": 0.955,
+                "Inkling": 0.971,
                 "GLM 5.2": 0.992,
                 "Qwen 3.7 Max(from GLM 5.2)": 0.97,
                 "GLM 5.1(from GLM 5.2)": 0.953,
@@ -1887,7 +1980,9 @@
         },
         {
             "name": "BabyVision",
+            "info": "with tool",
             "scores": {
+                "Qwen 3.8 Max": 0.913,
                 "Kimi K3": 0.857,
                 "GPT-5.6 Sol(from Kimi K3)": 0.889,
                 "Muse Spark 1.1": 0.763,
