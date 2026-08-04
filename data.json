@@ -1233,7 +1233,7 @@
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.92,
                 "Qwen 3.7 Max": 0.924,
                 "ERNIE 5.1": 0.91,
-                "DeepSeek V4 Pro": 0.901,
+                "DeepSeek V4 Pro Preview": 0.901,
                 "DeepSeek V4 Flash Preview": 0.881,
                 "GPT-5.5": 0.936,
                 "Qwen 3.6 27B": 0.878,
@@ -1329,7 +1329,7 @@
                 "Qwen 3.7 Max": 0.606,
                 "Gemini 3.5 Flash": 0.551,
                 "MiMo V2.5 Pro": 0.572,
-                "DeepSeek V4 Pro": 0.554,
+                "DeepSeek V4 Pro Preview": 0.554,
                 "DeepSeek V4 Flash Preview": 0.526,
                 "GPT-5.5": 0.586,
                 "Qwen 3.6 27B": 0.535,
@@ -1367,7 +1367,7 @@
                 "Qwen 3.7 Plus": 0.777,
                 "Claude Opus 4.8(from Hy 3)": 0.886,
                 "Qwen 3.7 Max": 0.804,
-                "DeepSeek V4 Pro": 0.806,
+                "DeepSeek V4 Pro Preview": 0.806,
                 "DeepSeek V4 Flash Preview": 0.79,
                 "GPT-5.5(from Hy 3)": 0.844,
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.788,
@@ -1408,7 +1408,7 @@
                 "Qwen 3.7 Max": 0.783,
                 "LongCat 2": 0.773,
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.738,
-                "Kimi K2.6(from Qwen 3.7 Max)": 0.767,
+                "Kimi K2.6": 0.767,
                 "Claude Opus 4.6(from Qwen 3.7 Max)": 0.775,
                 "DeepSeek V4 Pro(from Qwen 3.7 Max)": 0.762,
                 "Hy 3": 0.758,
@@ -1527,7 +1527,7 @@
                 "Qwen 3.7 Plus": 0.703,
                 "Qwen 3.7 Max": 0.697,
                 "MiMo V2.5 Pro": 0.684,
-                "DeepSeek V4 Pro": 0.679,
+                "DeepSeek V4 Pro Preview": 0.679,
                 "DeepSeek V4 Flash Preview": 0.569,
                 "Step 3.5 Flash": 0.51,
                 "GPT-5.5": 0.827,
@@ -1581,7 +1581,7 @@
                 "MiniMax M3": 0.835,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.843,
                 "Medium 3.5": 0.486,
-                "DeepSeek V4 Pro": 0.834,
+                "DeepSeek V4 Pro Preview": 0.834,
                 "DeepSeek V4 Flash Preview": 0.732,
                 "GPT-5.5": 0.844,
                 "Kimi K2.6": 0.832,
@@ -1642,7 +1642,7 @@
                 "Claude Opus 4.8": 1890,
                 "Gemini 3.5 Flash": 1656,
                 "MiMo V2.5 Pro":1581,
-                "DeepSeek V4 Pro": 1554,
+                "DeepSeek V4 Pro Preview": 1554,
                 "DeepSeek V4 Flash Preview": 1395,
                 "Claude Opus 4.7": 1753,
                 "Muse Spark": 1444,
@@ -1674,7 +1674,7 @@
                 "Qwen 3.7 Max": 0.535,
                 "Gemini 3.5 Flash": 0.402,
                 "MiMo V2.5 Pro": 0.48,
-                "DeepSeek V4 Pro": 0.482,
+                "DeepSeek V4 Pro Preview": 0.482,
                 "DeepSeek V4 Flash Preview": 0.451,
                 "GPT-5.5": 0.522,
                 "Qwen 3.6 27B": 0.24,
@@ -1714,6 +1714,7 @@
             "info": "score",
             "scores": {
                 "Qwen 3.8 Max": 0.524,
+                "DeepSeek V4 Flash": 0.252,
                 "Qwen 3.7 Max(from Qwen 3.8 Max)": 0.311,
                 "GPT-5.6 Sol": 0.27,
                 "GPT-5.6 Terra": 0.504,
@@ -1729,14 +1730,20 @@
             "scores": {
                 "Qwen 3.8 Max": 0.935,
                 "Inkling-Small": 0.813,
+                "Gemini 3.6 Flash": 0.894,
+                "Claude Sonnet 5(from Gemini 3.6 Flash)": 0.883,
+                "Gemini 3.5 Flash(from Gemini 3.6 Flash)": 0.849,
+                "Seed 2.1 Pro": 0.854,
                 "Inkling": 0.82,
                 "Kimi K3": 0.913,
+                "Muse Spark 1.1": 0.884,
+                "Muse Spark(from Muse Spark 1.1)": 0.889,
                 "Qwen 3.7 Plus(from Qwen 3.8 Max)": 0.859,
                 "GPT-5.6 Sol(from Qwen 3.8 Max)": 0.891,
                 "GPT-5.5(Kimi K3)": 0.89,
                 "Claude Opus 4.8(from Qwen 3.8 Max)": 0.899,
                 "Claude Fable 5(from Qwen 3.8 Max)": 0.935,
-                "Gemini 3.1 Pro(from Qwen 3.8 Max)": 0.899
+                "Gemini 3.1 Pro(from Gemini 3.6 Flash)": 0.832
             }
         },
         {
@@ -1759,7 +1766,7 @@
                 "Claude Opus 4.8(from Hy 3)": 0.835,
                 "GLM 5.2(from Hy 3)": 0.91,
                 "Qwen 3.7 Max": 0.90,
-                "DeepSeek V4 Pro": 0.898,
+                "DeepSeek V4 Pro Preview": 0.898,
                 "DeepSeek V4 Flash Preview": 0.884,
                 "GPT-5.5(from Hy 3)": 0.921,
                 "Qwen 3.6 27B": 0.808,
@@ -1776,6 +1783,7 @@
         },
         {
             "name": "MCPAtlas",
+            "group": "agentic",
             "scores": {
                 "Ling-3.0-flash": 0.655,
                 "Kimi K3": 0.842,
@@ -1792,7 +1800,7 @@
                 "Ring-2.6-1T": 0.612,
                 "Qwen 3.7 Max(from GLM 5.2)": 0.764,
                 "Gemini 3.5 Flash": 0.836,
-                "DeepSeek V4 Pro": 0.736,
+                "DeepSeek V4 Pro Preview": 0.736,
                 "DeepSeek V4 Flash Preview": 0.69,
                 "GPT-5.5(from Kimi K3)": 0.828,
                 "Kimi K2.6(from DeepSeek V4 Pro)": 0.666,
@@ -1807,6 +1815,19 @@
                 "Gemini 3 Flash": 0.574,
                 "GPT-5.2": 0.606,
                 "GLM 4.7": 0.52
+            }
+        },
+        {
+            "name": "Tau 3 Banking",
+            "group": "agentic",
+            "scores": {
+                "Inkling-Small": 0.155,
+                "Nemotron 3 Ultra(from Inkling-Small)": 0.138,
+                "GPT-5.6 Luna(from Inkling-Small)":0.243,
+                "Claude Haiku 4.5(from Inkling-Small)": 0.091,
+                "MiMo V2.5": 0.066,
+                "MiniMax M2.7": 0.089,
+                "Inkling(from Inkling-Small)": 0.237
             }
         },
         {
