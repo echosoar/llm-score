@@ -1,6 +1,18 @@
 {
     "models": [
         {
+            "brand": "Meta",
+            "model": "Muse Spark 1.2",
+            "time": "2026/08/06",
+            "input": ["text", "image", "pdf", "video"],
+            "output": ["text"],
+            "context": 1000000,
+            "inputPrice": "$0.1",
+            "inputCachedPrice": "$0.002",
+            "outputPrice": "$0.2",
+            "url": "https://developer.meta.com/ai/models/muse-spark/"
+        },
+        {
             "brand": "Alibaba",
             "model": "Qwen 3.8 Max",
             "time": "2026/08/03",
@@ -1423,6 +1435,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Muse Spark 1.2": 0.593,
                 "Qwen 3.8 Max": 0.566,
                 "Claude Opus 5": 0.688,
                 "Gemini 3.6 Flash": 0.49,
@@ -1480,6 +1493,7 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "Muse Spark 1.2": 0.829,
                 "Qwen 3.8 Max": 0.866,
                 "DeepSeek V4 Flash": 0.827,
                 "Inkling-Small": 0.647,
@@ -1609,6 +1623,7 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "Muse Spark 1.2": 1631,
                 "Inkling-Small": 1269,
                 "Claude Opus 5": 1861,
                 "Gemini 3.6 Flash": 1421,

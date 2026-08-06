@@ -207,6 +207,7 @@
     {
       "name": "DeepSWE 1.1",
       "scores": {
+        "Muse Spark 1.2": 0.593,
         "Qwen 3.8 Max": 0.566,
         "Claude Opus 5": 0.688,
         "Gemini 3.6 Flash": 0.49,
@@ -264,6 +265,7 @@
     {
       "name": "Terminal-Bench 2.1",
       "scores": {
+        "Muse Spark 1.2": 0.829,
         "Qwen 3.8 Max": 0.866,
         "DeepSeek V4 Flash": 0.827,
         "Inkling-Small": 0.647,
@@ -393,6 +395,7 @@
     {
       "name": "GDPval-AA 2",
       "scores": {
+        "Muse Spark 1.2": 1631,
         "Inkling-Small": 1269,
         "Claude Opus 5": 1861,
         "Gemini 3.6 Flash": 1421,
@@ -3913,6 +3916,7 @@
           "MMMU Pro": 0.768
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -4295,6 +4299,7 @@
           "OSWorld-Verified": 0.633
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "Inkling-Small",
           "Ling-3.0-flash",
@@ -4376,6 +4381,7 @@
           "IMOAnswerBench": 0.854
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -4454,6 +4460,7 @@
           "MCPAtlas": 0.612
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -4533,6 +4540,7 @@
           "Tau 3 Banking": 0.138
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -4706,6 +4714,7 @@
           "MCPAtlas": 0.69
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -5013,6 +5022,7 @@
           "OSWorld-Verified": 0.74
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -5082,6 +5092,7 @@
           "Tau 3 Banking": 0.089
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -5231,6 +5242,7 @@
           "AIME'26": 0.971
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -5453,6 +5465,7 @@
           "AIME'26": 0.955
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Ling-3.0-flash",
@@ -5520,6 +5533,7 @@
           "MCPAtlas": 0.655
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -5595,6 +5609,7 @@
           "MMMU Pro": 0.745
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -5660,6 +5675,7 @@
           "Humanity's Last Exam": 0.472
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -5856,6 +5872,7 @@
           "AIME'26": 0.953
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Inkling-Small",
@@ -6049,6 +6066,7 @@
           "IFEval": 0.9
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -6124,6 +6142,7 @@
           "BabyVision": 0.515
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -6297,6 +6316,7 @@
           "MMLU Pro": 0.871
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "Claude Opus 5",
           "Gemini 3.6 Flash",
@@ -6358,6 +6378,7 @@
           "MMMU Pro": 0.781
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -6414,6 +6435,7 @@
           "BabyVision": 0.737
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Gemini 3.6 Flash",
@@ -6574,6 +6596,7 @@
           "MMMU Pro": 0.836
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -6633,6 +6656,7 @@
           "MCPAtlas": 0.791
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -6694,6 +6718,7 @@
           "AIME'26": 0.97
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -6742,6 +6767,7 @@
           "Terminal-Bench 2.1": 0.702
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Gemini 3.6 Flash",
@@ -6825,6 +6851,7 @@
           "OSWorld-Verified": 0.83
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -6991,6 +7018,7 @@
           "AIME'26": 0.992
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -7036,6 +7064,7 @@
           "Cybergym": 0.767
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "Kimi K3",
           "GPT-5.6 Sol",
@@ -7084,6 +7113,7 @@
           "BabyVision": 0.763
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "Claude Opus 5",
           "Kimi K3",
@@ -7129,6 +7159,7 @@
           "OSWorld-Verified": 0.812
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "DeepSeek V4 Flash",
           "Claude Opus 5",
@@ -7169,6 +7200,7 @@
           "GDPval-AA 2": 1535
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Qwen 3.8 Max",
           "Claude Opus 5",
           "Kimi K3",
@@ -7182,6 +7214,60 @@
         "rank": 81.07172997654402
       },
       "rank": 81.07172997654402
+    },
+    {
+      "modelInfo": {
+        "brand": "Anthropic",
+        "model": "Claude Opus 4.8",
+        "time": "2026/05/28",
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "generate": 128000,
+        "inputPrice": "$5",
+        "inputCachedPrice": "$0.5",
+        "outputPrice": "$25",
+        "url": "https://www.anthropic.com/news/claude-opus-4-8",
+        "currentBenchmarksScores": {
+          "GPQA Diamond": 0.92,
+          "SWE-Bench Pro": 0.692,
+          "SWE-Bench Verified": 0.886,
+          "SWE-Bench Multilingual": 0.844,
+          "DeepSWE 1.1": 0.59,
+          "DeepSWE": 0.58,
+          "Toolathlon-Verified": 0.762,
+          "Terminal-Bench 2.1": 0.85,
+          "BrowseComp": 0.843,
+          "GDPval-AA 2": 1600.1,
+          "GDPval-AA": 1890,
+          "Humanity's Last Exam": 0.579,
+          "Agents' Last Exam": 0.451,
+          "CharXiv": 0.899,
+          "IMOAnswerBench": 0.835,
+          "MCPAtlas": 0.836,
+          "OSWorld-Verified": 0.834,
+          "MMMU Pro": 0.789,
+          "BabyVision": 0.812
+        },
+        "betterThanCurrentModels": [
+          "Muse Spark 1.2",
+          "Qwen 3.8 Max",
+          "Claude Opus 5",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "Claude Fable 5",
+          "GPT-5.5"
+        ],
+        "rank": 81.63413736840647
+      },
+      "rank": 81.63413736840647
     },
     {
       "modelInfo": {
@@ -7234,9 +7320,9 @@
           "Claude Sonnet 5",
           "Claude Fable 5"
         ],
-        "rank": 82.41348890233655
+        "rank": 82.26718062820062
       },
-      "rank": 82.41348890233655
+      "rank": 82.26718062820062
     },
     {
       "modelInfo": {
@@ -7277,62 +7363,9 @@
           "Claude Opus 4.8",
           "Gemini 3 Flash"
         ],
-        "rank": 82.9412925347501
+        "rank": 82.79498426061417
       },
-      "rank": 82.9412925347501
-    },
-    {
-      "modelInfo": {
-        "brand": "Anthropic",
-        "model": "Claude Opus 4.8",
-        "time": "2026/05/28",
-        "input": [
-          "text",
-          "image",
-          "pdf"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 1000000,
-        "generate": 128000,
-        "inputPrice": "$5",
-        "inputCachedPrice": "$0.5",
-        "outputPrice": "$25",
-        "url": "https://www.anthropic.com/news/claude-opus-4-8",
-        "currentBenchmarksScores": {
-          "GPQA Diamond": 0.92,
-          "SWE-Bench Pro": 0.692,
-          "SWE-Bench Verified": 0.886,
-          "SWE-Bench Multilingual": 0.844,
-          "DeepSWE 1.1": 0.59,
-          "DeepSWE": 0.58,
-          "Toolathlon-Verified": 0.762,
-          "Terminal-Bench 2.1": 0.85,
-          "BrowseComp": 0.843,
-          "GDPval-AA 2": 1600.1,
-          "GDPval-AA": 1890,
-          "Humanity's Last Exam": 0.579,
-          "Agents' Last Exam": 0.451,
-          "CharXiv": 0.899,
-          "IMOAnswerBench": 0.835,
-          "MCPAtlas": 0.836,
-          "OSWorld-Verified": 0.834,
-          "MMMU Pro": 0.789,
-          "BabyVision": 0.812
-        },
-        "betterThanCurrentModels": [
-          "Qwen 3.8 Max",
-          "Claude Opus 5",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "Claude Fable 5",
-          "GPT-5.5"
-        ],
-        "rank": 83.20290603480875
-      },
-      "rank": 83.20290603480875
+      "rank": 82.79498426061417
     },
     {
       "modelInfo": {
@@ -7369,15 +7402,53 @@
           "BabyVision": 0.913
         },
         "betterThanCurrentModels": [
+          "Muse Spark 1.2",
           "Claude Opus 5",
           "Kimi K3",
           "GPT-5.6 Sol",
           "GPT-5.6 Terra",
           "Claude Fable 5"
         ],
-        "rank": 83.81305339122743
+        "rank": 83.18882746406481
       },
-      "rank": 83.81305339122743
+      "rank": 83.18882746406481
+    },
+    {
+      "modelInfo": {
+        "brand": "Meta",
+        "model": "Muse Spark 1.2",
+        "time": "2026/08/06",
+        "input": [
+          "text",
+          "image",
+          "pdf",
+          "video"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "inputPrice": "$0.1",
+        "inputCachedPrice": "$0.002",
+        "outputPrice": "$0.2",
+        "url": "https://developer.meta.com/ai/models/muse-spark/",
+        "currentBenchmarksScores": {
+          "DeepSWE 1.1": 0.593,
+          "Terminal-Bench 2.1": 0.829,
+          "GDPval-AA 2": 1631
+        },
+        "betterThanCurrentModels": [
+          "Claude Opus 5",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Claude Fable 5",
+          "GPT-5.5"
+        ],
+        "rank": 83.66585926618495
+      },
+      "rank": 83.66585926618495
     },
     {
       "modelInfo": {
@@ -7413,9 +7484,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 84.62025204092078
+        "rank": 84.80573603516441
       },
-      "rank": 84.62025204092078
+      "rank": 84.80573603516441
     },
     {
       "modelInfo": {
@@ -7454,9 +7525,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 84.85480234162736
+        "rank": 85.040286335871
       },
-      "rank": 84.85480234162736
+      "rank": 85.040286335871
     },
     {
       "modelInfo": {
@@ -7496,9 +7567,9 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 85.17447825720534
+        "rank": 85.35996225144898
       },
-      "rank": 85.17447825720534
+      "rank": 85.35996225144898
     },
     {
       "modelInfo": {
@@ -7538,9 +7609,9 @@
         "betterThanCurrentModels": [
           "Claude Opus 5"
         ],
-        "rank": 85.80457919068492
+        "rank": 85.99006318492856
       },
-      "rank": 85.80457919068492
+      "rank": 85.99006318492856
     },
     {
       "modelInfo": {
@@ -7568,9 +7639,9 @@
           "Humanity's Last Exam": 0.647
         },
         "betterThanCurrentModels": [],
-        "rank": 86.11306482521981
+        "rank": 86.29854881946345
       },
-      "rank": 86.11306482521981
+      "rank": 86.29854881946345
     }
   ],
   "priceMap": {
@@ -7602,5 +7673,5 @@
     "美团": "longcat-color.svg",
     "腾讯": "hunyuan-color.svg"
   },
-  "updatedAt": "2026-08-04T00:48:20.296Z"
+  "updatedAt": "2026-08-06T10:29:06.405Z"
 }
