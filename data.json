@@ -964,6 +964,15 @@
             "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-oss/"
         },
         {
+            "brand": "Moonshot",
+            "model": "Kimi K2",
+            "time": "2025/07/11",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 131000,
+            "url": "https://www.kimi.com/blog/kimi-k2"
+        },
+        {
             "brand": "xAI",
             "model": "Grok 4",
             "time": "2025/07/09",
@@ -974,6 +983,32 @@
             "inputCachedPrice": "$0.2",
             "outputPrice": "$2.5",
             "url": "https://x.ai/news/grok-4"
+        },
+        {
+            "brand": "Google",
+            "model": "Gemini 2.5 Pro",
+            "time": "2025/06/17",
+            "input": ["text", "image", "video", "audio"],
+            "output": ["text"],
+            "context": 1048576,
+            "generate": 65536,
+            "inputPrice": "$1.25",
+            "inputCachedPrice": "$0.125",
+            "outputPrice": "$10",
+            "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-pro"
+        },
+        {
+            "brand": "Google",
+            "model": "Gemini 2.5 Flash",
+            "time": "2025/06/17",
+            "input": ["text", "image", "video", "audio"],
+            "output": ["text"],
+            "context": 1048576,
+            "generate": 65536,
+            "inputPrice": "$0.3",
+            "inputCachedPrice": "$0.03",
+            "outputPrice": "$2.5",
+            "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash"
         },
         {
             "brand": "Anthropic",
@@ -1157,6 +1192,9 @@
             "output": ["text"],
             "context": 1048576,
             "generate": 65536,
+            "inputPrice": "$0.1",
+            "inputCachedPrice": "$0.025",
+            "outputPrice": "$0.4",
             "url": "https://developers.googleblog.com/en/gemini-2-family-expands/"
         },
         {
@@ -1167,6 +1205,8 @@
             "output": ["text"],
             "context": 1048576,
             "generate": 65536,
+            "inputPrice": "$0.075",
+            "outputPrice": "$0.3",
             "url": "https://developers.googleblog.com/en/gemini-2-family-expands/"
         },
          {
@@ -1274,6 +1314,9 @@
                 "Claude Haiku 4.5": 0.73,
                 "Claude Sonnet 4.5": 0.834,
                 "GPT-5": 0.873,
+                "Kimi K2": 0.751,
+                "GPT-4.1(from Kimi K2)": 0.663,
+                "Gemini 2.5 Flash(from Kimi K2)": 0.682,
                 "Claude Opus 4": 0.725,
                 "DeepSeek R1 0528": 0.81,
                 "Claude Sonnet 4": 0.727,
@@ -1396,6 +1439,7 @@
                 "MiniMax M2.1": 0.74,
                 "GPT-5.2(from Gemini 3.1 Pro)": 0.8,
                 "GPT-5": 0.749,
+                "Kimi K2": 0.658,
                 "Claude Opus 4": 0.725,
                 "Claude Sonnet 4": 0.727,
                 "Claude Sonnet 3.7(from Claude Opus 4)": 0.623,
@@ -1428,8 +1472,10 @@
                 "Ring-2.6-1T": 0.567,
                 "Claude Opus 4.8(from Hy 3)": 0.844,
                 "Claude Opus 4.7(from Composer 2.5)": 0.805,
+                "Kimi K2": 0.473,
                 "Composer 2": 0.737,
-                "Composer 1.5": 0.659
+                "Composer 1.5": 0.659,
+                "Claude Sonnet 4(from Kimi K2)": 0.51
             }
         },
         {
@@ -1951,6 +1997,10 @@
                 "LongCat 2": 0.9,
                 "GPT-5.5(from LongCat 2)": 0.95,
                 "Claude Opus 4.6(from Qwen 3.7 Max)": 0.919,
+                "Kimi K2": 0.898,
+                "Claude Sonnet 4(from Kimi K2)": 0.876,
+                "Claude Opus 4(from Kimi K2)": 0.874,
+                "Gemini 2.5 Flash(from Kimi K2)": 0.843,
                 "GPT-4.1": 0.874,
                 "GPT-4.1 mini(from GPT-4.1)": 0.841,
                 "GPT-4.1 nano(from GPT-4.1)": 0.745,
@@ -1969,6 +2019,11 @@
                 "GLM 5.1(from Qwen 3.7 Max)": 0.863,
                 "Kimi K2.6(from Qwen 3.7 Max)": 0.871,
                 "Claude Opus 4.6(from Qwen 3.7 Max)": 0.897,
+                "Kimi K2": 0.811,
+                "Claude Sonnet 4(from Kimi K2)": 0.837,
+                "Claude Opus 4(from Kimi K2)": 0.866,
+                "GPT-4.1(from Kimi K2)": 0.818,
+                "Gemini 2.5 Flash(from Kimi K2)": 0.794,
                 "ERNIE 5.1": 0.843
             }   
         },
@@ -1992,14 +2047,16 @@
                 "Gemini 3 Pro": 0.95,
                 "Gemini 2.5 Pro": 0.88,
                 "Claude Sonnet 4.5(from Gemini 3 Pro)": 0.87,
+                "Kimi K2": 0.495,
                 "GPT-5.1(from Gemini 3 Pro)": 0.94,
                 "Grok 3": 0.773,
                 "Qwen 3 235B A22B": 0.815,
                 "Qwen 3 32B": 0.729,
                 "Qwen 3 30B A3B": 0.709,
                 "Qwen 3 4B": 0.656,
+                "GPT-4.1(from Kimi K2)": 0.37,
                 "GPT-4o(from Qwen 3 235B A22B)": 0.076,
-                "DeepSeek V3(from Qwen 3 235B A22B)": 0.288
+                "DeepSeek V3(from Kimi K2)": 0.467
             }   
         },
         {
@@ -2010,7 +2067,12 @@
                 "Qwen 3 32B": 0.814,
                 "Qwen 3 30B A3B": 0.804,
                 "Qwen 3 4B": 0.738,
+                "Kimi K2": 0.696,
+                "Gemini 2.5 Flash(from Kimi K2)": 0.613,
+                "Claude Sonnet 4(from Kimi K2)": 0.434,
+                "Claude Opus 4(from Kimi K2)": 0.482,
                 "DeepSeek V3": 0.392,
+                "GPT-4.1(from Kimi K2)": 0.465,
                 "GPT-4o(from Qwen 3 235B A22B)": 0.111
             }   
         },
