@@ -1,6 +1,29 @@
 {
     "models": [
         {
+            "brand": "Agnes",
+            "model": "Agnes 2.5 Pro",
+            "time": "2026/08/06",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 65536,
+            "inputPrice": "$0.45",
+            "inputCachedPrice": "$0.0038",
+            "outputPrice": "$0.9",
+            "url": "https://agnes-ai.com/zh-Hans/docs/agnes-25-pro"
+        },
+        {
+            "brand": "Meta",
+            "model": "Muse Glimmer",
+            "time": "2026/08/06",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 131072,
+            "params": 30,
+            "url": "https://developer.meta.com/ai/models/muse-glimmer/"
+        },
+        {
             "brand": "Meta",
             "model": "Muse Spark 1.2",
             "time": "2026/08/06",
@@ -1269,6 +1292,7 @@
         {
             "name": "GPQA Diamond",
             "scores": {
+                "Muse Glimmer": 0.835,
                 "Qwen 3.8 Max": 0.926,
                 "Kimi K3": 0.935,
                 "Inkling-Small": 0.895,
@@ -1354,6 +1378,8 @@
         {
             "name": "SWE-Bench Pro",
             "scores": {
+                "Muse Glimmer": 0.512,
+                 "Gemma 4 31B(from Muse Glimmer)": 0.369,
                 "Qwen 3.8 Max": 0.677,
                 "Inkling-Small": 0.559,
                 "Ling-3.0-flash": 0.566,
@@ -1411,6 +1437,8 @@
         {
             "name": "SWE-Bench Verified",
             "scores": {
+                "Muse Glimmer": 0.76,
+                "Gemma 4 31B(from Muse Glimmer)": 0.666,
                 "Inkling-Small": 0.802,
                 "Inkling": 0.776,
                 "Laguna XS 2.1": 0.709,
@@ -1539,6 +1567,10 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "Agnes 2.5 Pro": 0.67,
+                "Muse Glimmer": 0.517,
+                "Gemma 4 31B(from Muse Glimmer)": 0.434,
+                "Qwen 3.6 27B(from Muse Glimmer)": 0.607,
                 "Muse Spark 1.2": 0.829,
                 "Qwen 3.8 Max": 0.866,
                 "DeepSeek V4 Flash": 0.827,
@@ -1669,6 +1701,7 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "Agnes 2.5 Pro": 1170,
                 "Muse Spark 1.2": 1631,
                 "Inkling-Small": 1269,
                 "Claude Opus 5": 1861,
@@ -1699,6 +1732,7 @@
         {
             "name": "GDPval-AA",
             "scores": {
+                "Muse Glimmer": 953,
                 "Claude Fable 5": 1932,
                 "Claude Opus 4.8": 1890,
                 "Gemini 3.5 Flash": 1656,
@@ -1719,6 +1753,8 @@
         {
             "name": "Humanity's Last Exam",
             "scores": {
+                "Agnes 2.5 Pro": 0.319,
+                "Muse Glimmer": 0.22,
                 "Qwen 3.8 Max": 0.562,
                 "Inkling-Small": 0.478,
                 "Claude Opus 5": 0.647,
@@ -1789,6 +1825,9 @@
             "name": "CharXiv",
             "info": "RQ score w/ python",
             "scores": {
+                "Muse Glimmer": 0.788,
+                "Gemma 4 31B(from Muse Glimmer)": 0.777,
+                "Qwen 3.6 27B(from Muse Glimmer)": 0.784,
                 "Qwen 3.8 Max": 0.935,
                 "Inkling-Small": 0.813,
                 "Gemini 3.6 Flash": 0.894,
@@ -1846,6 +1885,7 @@
             "name": "MCPAtlas",
             "group": "agentic",
             "scores": {
+                "Muse Glimmer": 0.755,
                 "Ling-3.0-flash": 0.655,
                 "Kimi K3": 0.842,
                 "Inkling": 0.741,
@@ -1882,6 +1922,10 @@
             "name": "Tau 3 Banking",
             "group": "agentic",
             "scores": {
+                "Agnes 2.5 Pro": 0.116,
+                "Muse Glimmer": 0.235,
+                "Gemma 4 31B(from Muse Glimmer)": 0.151,
+                "Qwen 3.6 27B(from Muse Glimmer)": 0.167,
                 "Inkling-Small": 0.155,
                 "Nemotron 3 Ultra(from Inkling-Small)": 0.138,
                 "GPT-5.6 Luna(from Inkling-Small)":0.243,
@@ -1894,6 +1938,7 @@
         {
             "name": "OSWorld-Verified",
             "scores": {
+                "Muse Glimmer": 0.659,
                 "Qwen 3.8 Max": 0.861,
                 "Gemini 3.6 Flash": 0.83,
                 "Gemini 3.5 Flash Lite": 0.74,
@@ -1922,6 +1967,7 @@
         {
             "name": "MMMU Pro",
             "scores": {
+                "Muse Glimmer": 0.74,
                 "Qwen 3.8 Max": 0.823,
                 "Inkling-Small": 0.74,
                 "Kimi K3": 0.816,
@@ -2031,6 +2077,9 @@
             "name": "AIME'26",
             "info": "no tool",
             "scores": {
+                "Muse Glimmer": 0.947,
+                "Gemma 4 31B(from Muse Glimmer)": 0.892,
+                "Qwen 3.6 27B(from Muse Glimmer)": 0.941,
                 "Inkling-Small": 0.955,
                 "Inkling": 0.971,
                 "GLM 5.2": 0.992,
