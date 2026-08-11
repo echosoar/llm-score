@@ -4442,7 +4442,7 @@
       "modelInfo": {
         "brand": "Meta",
         "model": "Muse Glimmer",
-        "time": "2026/08/06",
+        "time": "2026/08/10",
         "input": [
           "text"
         ],
@@ -5342,7 +5342,7 @@
       "modelInfo": {
         "brand": "Agnes",
         "model": "Agnes 2.5 Pro",
-        "time": "2026/08/06",
+        "time": "2026/08/10",
         "input": [
           "text",
           "image"
@@ -8331,5 +8331,5 @@
     "美团": "longcat-color.svg",
     "腾讯": "hunyuan-color.svg"
   },
-  "updatedAt": "2026-08-10T14:39:41.944Z"
+  "updatedAt": "2026-08-11T00:52:45.086Z"
 }

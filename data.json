@@ -3,7 +3,7 @@
         {
             "brand": "Agnes",
             "model": "Agnes 2.5 Pro",
-            "time": "2026/08/06",
+            "time": "2026/08/10",
             "input": ["text", "image"],
             "output": ["text"],
             "context": 1000000,
@@ -16,7 +16,7 @@
         {
             "brand": "Meta",
             "model": "Muse Glimmer",
-            "time": "2026/08/06",
+            "time": "2026/08/10",
             "input": ["text"],
             "output": ["text"],
             "context": 131072,
