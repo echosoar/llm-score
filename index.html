@@ -1782,6 +1782,9 @@ const getPriceScore = (model) => {
       }
       buildStickyHead();
       syncChrome();
+      // 首次插入表格时，移动端浏览器可能会在当前任务结束后才完成列宽与视口布局。
+      // 下一帧重新测量，避免固定列/克隆表头保留初次渲染时的过期尺寸。
+      scheduleChromeSync();
     };
 
     // 横向滚动辅助与吸顶表头：作用于排名表、对比表与天梯表
@@ -1879,6 +1882,23 @@ const getPriceScore = (model) => {
       syncStickyHead();
       if (!stickyHead.hidden) syncStickyHeadWidths();
     };
+
+    let chromeSyncFrame = 0;
+    // 将尺寸同步安排到下一帧：避免动态插入大量单元格后，在布局尚未稳定时读取到过期的列宽。
+    const scheduleChromeSync = () => {
+      if (chromeSyncFrame) return;
+      chromeSyncFrame = requestAnimationFrame(() => {
+        chromeSyncFrame = 0;
+        syncChrome();
+      });
+    };
+
+    // 除 window resize 外，移动浏览器的视口变化、表格内容或容器尺寸变化也需要重测固定列偏移。
+    if ('ResizeObserver' in window) {
+      const chromeResizeObserver = new ResizeObserver(scheduleChromeSync);
+      [tableWrap, compareWrap, ladderWrap, table, compareTable, ladderTable]
+        .forEach((element) => chromeResizeObserver.observe(element));
+    }
 
     const scrollActiveWrap = (direction) => {
       const wrap = getActiveWrap();
