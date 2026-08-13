@@ -704,9 +704,12 @@
         top: 40px;
         right: 12px;
       }
+      /* 小屏不固定排名与模型名称列，避免移动浏览器的 sticky 表格首屏布局错位。 */
       #score-table th:nth-child(-n+2),
       #score-table td:nth-child(-n+2) {
+        position: static;
         left: auto;
+        z-index: auto;
       }
       .scroll-nav {
         display: none;
