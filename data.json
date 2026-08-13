@@ -8,9 +8,9 @@
             "output": ["text"],
             "context": 1000000,
             "generate": 384000,
-            "inputPrice": "￥3",
-            "inputCachedPrice": "￥0.025",
-            "outputPrice": "￥6",
+            "inputPrice": "￥4.5",
+            "inputCachedPrice": "￥0.15",
+            "outputPrice": "￥13.5",
             "url": "https://api-docs.deepseek.com/quick_start/pricing"
         },
         {
@@ -86,9 +86,9 @@
             "generate": 384000,
             "params": 284,
             "active": 13,
-            "inputPrice": "￥1",
-            "inputCachedPrice": "￥0.02",
-            "outputPrice": "￥2",
+            "inputPrice": "￥1.5",
+            "inputCachedPrice": "￥0.05",
+            "outputPrice": "￥4.5",
             "url": "https://api-docs.deepseek.com/updates/"
         },
         {

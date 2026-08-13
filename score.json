@@ -7835,9 +7835,9 @@
         "generate": 384000,
         "params": 284,
         "active": 13,
-        "inputPrice": "￥1",
-        "inputCachedPrice": "￥0.02",
-        "outputPrice": "￥2",
+        "inputPrice": "￥1.5",
+        "inputCachedPrice": "￥0.05",
+        "outputPrice": "￥4.5",
         "url": "https://api-docs.deepseek.com/updates/",
         "currentBenchmarksScores": {
           "DeepSWE": 0.544,
@@ -8308,9 +8308,9 @@
         ],
         "context": 1000000,
         "generate": 384000,
-        "inputPrice": "￥3",
-        "inputCachedPrice": "￥0.025",
-        "outputPrice": "￥6",
+        "inputPrice": "￥4.5",
+        "inputCachedPrice": "￥0.15",
+        "outputPrice": "￥13.5",
         "url": "https://api-docs.deepseek.com/quick_start/pricing",
         "currentBenchmarksScores": {
           "DeepSWE": 0.627,
@@ -8554,5 +8554,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-08-13T00:20:35.835Z"
+  "updatedAt": "2026-08-13T13:55:09.988Z"
 }
