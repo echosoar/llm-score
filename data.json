@@ -1,6 +1,32 @@
 {
     "models": [
         {
+            "brand": "DeepSeek",
+            "model": "DeepSeek V4 Pro",
+            "time": "2026/08/13",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 384000,
+            "inputPrice": "￥3",
+            "inputCachedPrice": "￥0.025",
+            "outputPrice": "￥6",
+            "url": "https://api-docs.deepseek.com/quick_start/pricing"
+        },
+        {
+            "brand": "xAI",
+            "model": "Grok 4.6",
+            "time": "2026/08/12",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 500000,
+            "generate": 500000,
+            "inputPrice": "$2",
+            "inputCachedPrice": "$0.5",
+            "outputPrice": "$6",
+            "url": "https://x.ai/news/grok-4-6"
+        },
+        {
             "brand": "Agnes",
             "model": "Agnes 2.5 Pro",
             "time": "2026/08/10",
@@ -1494,7 +1520,7 @@
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.738,
                 "Kimi K2.6": 0.767,
                 "Claude Opus 4.6(from Qwen 3.7 Max)": 0.775,
-                "DeepSeek V4 Pro(from Qwen 3.7 Max)": 0.762,
+                "DeepSeek V4 Pro Preview(from Qwen 3.7 Max)": 0.762,
                 "Hy 3": 0.758,
                 "GLM 5.2(from Hy 3)": 0.83,
                 "Ring-2.6-1T": 0.567,
@@ -1509,6 +1535,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Grok 4.6": 0.659,
                 "Muse Spark 1.2": 0.593,
                 "Qwen 3.8 Max": 0.566,
                 "Claude Opus 5": 0.688,
@@ -1530,6 +1557,7 @@
         {
             "name": "DeepSWE",
             "scores": {
+                "DeepSeek V4 Pro": 0.627,
                 "DeepSeek V4 Flash": 0.544,
                 "GLM 5.2": 0.462,
                 "Laguna S 2.1": 0.404,
@@ -1539,7 +1567,7 @@
                 "Qwen 3.7 Max(from Hy 3)": 0.18,
                 "MiniMax M3(from GLM 5.2)": 0.22,
                 "Claude Opus 4.8(from Hy 3)": 0.58,
-                "DeepSeek V4 Pro(from Hy 3)": 0.08,
+                "DeepSeek V4 Pro Preview(from Hy 3)": 0.08,
                 "DeepSeek V4 Flash Preview(from Hy 3)": 0.071,
                 "GPT-5.5(from Hy 3)": 0.7,
                 "Gemini 3.1 Pro(from Hy 3)": 0.1
@@ -1548,6 +1576,7 @@
         {
             "name": "Toolathlon-Verified",
             "scores": {
+                "DeepSeek V4 Pro": 0.741,
                 "Qwen 3.8 Max": 0.725,
                 "Inkling-Small": 0.544,
                 "Inkling": 0.455,
@@ -1565,8 +1594,18 @@
             }
         },
         {
+            "name": "Terminal-Bench 3",
+            "scores": {
+                "Grok 4.6": 0.26,
+                "Grok 4.5(from Grok 4.6)": 0.157,
+                "GPT-5.6 Sol(from Grok 4.6)": 0.346,
+                "Claude Fable 5(from Grok 4.6)": 0.341
+            }
+        },
+        {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "DeepSeek V4 Pro": 0.879,
                 "Agnes 2.5 Pro": 0.67,
                 "Muse Glimmer": 0.517,
                 "Gemma 4 31B(from Muse Glimmer)": 0.434,
@@ -1600,7 +1639,7 @@
                 "GPT-5.5(from GPT-5.6 Sol)": 0.856,
                 "GLM 5.2": 0.81,
                 "Ring-2.6-1T": 0.431,
-                "DeepSeek V4 Pro(from Hy 3)": 0.64,
+                "DeepSeek V4 Pro Preview(from Hy 3)": 0.64,
                 "DeepSeek V4 Flash Preview(from Hy 3)": 0.526,
                 "MiniMax M2.7": 0.511,
                 "GLM 5.1": 0.635,
@@ -1701,13 +1740,14 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "Grok 4.6": 1753,
                 "Agnes 2.5 Pro": 1170,
                 "Muse Spark 1.2": 1631,
                 "Inkling-Small": 1269,
                 "Claude Opus 5": 1861,
                 "Gemini 3.6 Flash": 1421,
                 "Gemini 3.5 Flash Lite": 1140,
-                "Grok 4.5(from Gemini 3.6 Flash)": 1535,
+                "Grok 4.5(from Grok 4.6)": 1526,
                 "Kimi K3": 1668,
                 "Inkling": 1238,
                 "GPT-5.6 Sol": 1747.8,
@@ -1719,7 +1759,7 @@
                 "Kimi K2.6(from Inkling)": 1190,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 1600.1,
                 "GPT-5.5(from GPT-5.6 Sol)": 1493.7,
-                "DeepSeek V4 Pro(from Inkling)": 1307,
+                "DeepSeek V4 Pro Preview(from Inkling)": 1307,
                 "Gemini 3.5 Flash(from GPT-5.6 Sol)": 1348.8,
                 "MiniMax M3": 1395,
                 "Claude Sonnet 4.6(from Claude Sonnet 5)": 1395,
@@ -1753,6 +1793,7 @@
         {
             "name": "Humanity's Last Exam",
             "scores": {
+                "DeepSeek V4 Pro": 0.6,
                 "Agnes 2.5 Pro": 0.319,
                 "Muse Glimmer": 0.22,
                 "Qwen 3.8 Max": 0.562,
@@ -1807,18 +1848,30 @@
             }
         },
         {
-            "name": "Agents' Last Exam",
+            "name": "Agents' Last Exam(score)",
             "info": "score",
             "scores": {
                 "Qwen 3.8 Max": 0.524,
-                "DeepSeek V4 Flash": 0.252,
-                "Qwen 3.7 Max(from Qwen 3.8 Max)": 0.311,
-                "GPT-5.6 Sol": 0.27,
+                "Qwen 3.7 Max": 0.346,
+                "GPT-5.6 Sol": 0.536,
                 "GPT-5.6 Terra": 0.504,
                 "GPT-5.6 Luna": 0.503,
                 "GPT-5.5": 0.469,
                 "Claude Opus 4.8(from Qwen 3.8 Max)": 0.451,
                 "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.321
+            }
+        },
+        {
+            "name": "Agents' Last Exam(pass)",
+            "info": "pass",
+            "scores": {
+                "DeepSeek V4 Pro": 0.257,
+                "DeepSeek V4 Flash": 0.252,
+                "Kimi K3(from DeepSeek V4 Pro)": 0.276,
+                "GLM 5.2(from DeepSeek V4 Pro)": 0.238,
+                "DeepSeek V4 Pro Preview(from DeepSeek V4 Pro)": 0.128,
+                "DeepSeek V4 Flash Preview(from DeepSeek V4 Pro)": 0.108,
+                "Claude Opus 4.8(from DeepSeek V4 Pro)": 0.257
             }
         },
         {
@@ -1849,7 +1902,10 @@
         {
             "name": "Cybergym",
             "scores": {
+                "DeepSeek V4 Pro": 0.833,
                 "DeepSeek V4 Flash": 0.767,
+                "Kimi K3(from DeepSeek V4 Pro)": 0.8,
+                "Claude Opus 4.8(from DeepSeek V4 Pro)": 0.783,
                 "GPT-5.5": 0.818,
                 "GPT-5.4": 0.79,
                 "Claude Opus 4.7": 0.78,
@@ -2037,7 +2093,7 @@
             "scores": {
                 "Qwen 3.7 Max": 0.943,
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.943,
-                "DeepSeek V4 Pro(from Qwen 3.7 Max)": 0.919,
+                "DeepSeek v4 Pro Preview(from Qwen 3.7 Max)": 0.919,
                 "GLM 5.1(from Qwen 3.7 Max)": 0.945,
                 "Kimi K2.6(from Qwen 3.7 Max)": 0.945,
                 "LongCat 2": 0.9,
@@ -2061,7 +2117,7 @@
             "scores": {
                 "Qwen 3.7 Max": 0.896,
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.885,
-                "DeepSeek V4 Pro(from Qwen 3.7 Max)": 0.875,
+                "DeepSeek v4 Pro Preview(from Qwen 3.7 Max)": 0.875,
                 "GLM 5.1(from Qwen 3.7 Max)": 0.863,
                 "Kimi K2.6(from Qwen 3.7 Max)": 0.871,
                 "Claude Opus 4.6(from Qwen 3.7 Max)": 0.897,
@@ -2085,7 +2141,7 @@
                 "GLM 5.2": 0.992,
                 "Qwen 3.7 Max(from GLM 5.2)": 0.97,
                 "GLM 5.1(from GLM 5.2)": 0.953,
-                "DeepSeek V4 Pro(from GLM 5.2)": 0.946,
+                "DeepSeek v4 Pro Preview(from GLM 5.2)": 0.946,
                 "GPT-5.5(from GLM 5.2)": 0.983,
                 "ERNIE 5.1": 0.95
             }
