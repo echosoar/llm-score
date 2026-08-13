@@ -2,7 +2,7 @@
     "models": [
         {
             "brand": "DeepSeek",
-            "model": "DeepSeek V4 Pro",
+            "model": "DeepSeek V4 Pro 0813",
             "time": "2026/08/13",
             "input": ["text"],
             "output": ["text"],
@@ -78,7 +78,7 @@
         },
         {
             "brand": "DeepSeek",
-            "model": "DeepSeek V4 Flash",
+            "model": "DeepSeek V4 Flash 0731",
             "time": "2026/07/31",
             "input": ["text"],
             "output": ["text"],
@@ -1557,8 +1557,8 @@
         {
             "name": "DeepSWE",
             "scores": {
-                "DeepSeek V4 Pro": 0.627,
-                "DeepSeek V4 Flash": 0.544,
+                "DeepSeek V4 Pro 0813": 0.627,
+                "DeepSeek V4 Flash 0731": 0.544,
                 "GLM 5.2": 0.462,
                 "Laguna S 2.1": 0.404,
                 "Kimi K3(from Laguna S 2.1)": 0.69,
@@ -1576,11 +1576,11 @@
         {
             "name": "Toolathlon-Verified",
             "scores": {
-                "DeepSeek V4 Pro": 0.741,
+                "DeepSeek V4 Pro 0813": 0.741,
                 "Qwen 3.8 Max": 0.725,
                 "Inkling-Small": 0.544,
                 "Inkling": 0.455,
-                "DeepSeek V4 Flash": 0.703,
+                "DeepSeek V4 Flash 0731": 0.703,
                 "Kimi K3": 0.732,
                 "GLM 5.2(from Kimi K3)": 0.599,
                 "Claude Fable 5(from Kimi K3)": 0.779,
@@ -1605,14 +1605,14 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
-                "DeepSeek V4 Pro": 0.879,
+                "DeepSeek V4 Pro 0813": 0.879,
                 "Agnes 2.5 Pro": 0.67,
                 "Muse Glimmer": 0.517,
                 "Gemma 4 31B(from Muse Glimmer)": 0.434,
                 "Qwen 3.6 27B(from Muse Glimmer)": 0.607,
                 "Muse Spark 1.2": 0.829,
                 "Qwen 3.8 Max": 0.866,
-                "DeepSeek V4 Flash": 0.827,
+                "DeepSeek V4 Flash 0731": 0.827,
                 "Inkling-Small": 0.647,
                 "Ling-3.0-flash": 0.57,
                 "Gemini 3.6 Flash": 0.78,
@@ -1793,7 +1793,8 @@
         {
             "name": "Humanity's Last Exam",
             "scores": {
-                "DeepSeek V4 Pro": 0.6,
+                "DeepSeek V4 Pro 0813": 0.6,
+                "DeepSeek V4 Flash 0731(from DeepSeek V4 Pro 0813)": 0.515,
                 "Agnes 2.5 Pro": 0.319,
                 "Muse Glimmer": 0.22,
                 "Qwen 3.8 Max": 0.562,
@@ -1865,13 +1866,13 @@
             "name": "Agents' Last Exam(pass)",
             "info": "pass",
             "scores": {
-                "DeepSeek V4 Pro": 0.257,
-                "DeepSeek V4 Flash": 0.252,
-                "Kimi K3(from DeepSeek V4 Pro)": 0.276,
-                "GLM 5.2(from DeepSeek V4 Pro)": 0.238,
-                "DeepSeek V4 Pro Preview(from DeepSeek V4 Pro)": 0.128,
-                "DeepSeek V4 Flash Preview(from DeepSeek V4 Pro)": 0.108,
-                "Claude Opus 4.8(from DeepSeek V4 Pro)": 0.257
+                "DeepSeek V4 Pro 0813": 0.257,
+                "DeepSeek V4 Flash 0731(from DeepSeek V4 Pro 0813)": 0.252,
+                "Kimi K3(from DeepSeek V4 Pro 0813)": 0.276,
+                "GLM 5.2(from DeepSeek V4 Pro 0813)": 0.238,
+                "DeepSeek V4 Pro Preview(from DeepSeek V4 Pro 0813)": 0.128,
+                "DeepSeek V4 Flash Preview(from DeepSeek V4 Pro 0813)": 0.108,
+                "Claude Opus 4.8(from DeepSeek V4 Pro 0813)": 0.257
             }
         },
         {
@@ -1902,10 +1903,10 @@
         {
             "name": "Cybergym",
             "scores": {
-                "DeepSeek V4 Pro": 0.833,
-                "DeepSeek V4 Flash": 0.767,
-                "Kimi K3(from DeepSeek V4 Pro)": 0.8,
-                "Claude Opus 4.8(from DeepSeek V4 Pro)": 0.783,
+                "DeepSeek V4 Pro 0813": 0.833,
+                "DeepSeek V4 Flash 0731": 0.767,
+                "Kimi K3(from DeepSeek V4 Pro 0813)": 0.8,
+                "Claude Opus 4.8(from DeepSeek V4 Pro 0813)": 0.783,
                 "GPT-5.5": 0.818,
                 "GPT-5.4": 0.79,
                 "Claude Opus 4.7": 0.78,
@@ -1960,7 +1961,7 @@
                 "DeepSeek V4 Pro Preview": 0.736,
                 "DeepSeek V4 Flash Preview": 0.69,
                 "GPT-5.5(from Kimi K3)": 0.828,
-                "Kimi K2.6(from DeepSeek V4 Pro)": 0.666,
+                "Kimi K2.6(from DeepSeek V4 Pro 0813)": 0.666,
                 "GLM 5.1(from GLM 5.2)": 0.718,
                 "GPT-5.4": 0.672,
                 "Gemini 3.1 Pro": 0.692,
@@ -2228,11 +2229,12 @@
         "OpenAI": "openai.svg",
         "Poolside": "poolside-color.svg",
         "StepFun": "stepfun-color.svg",
-        "Thinking Machines": "thinkingmachines.svg",
         "Xiaomi": "xiaomimimo.svg",
         "Z.ai": "zhipu-color.svg",
         "xAI": "xai.svg",
         "美团": "longcat-color.svg",
-        "腾讯": "hunyuan-color.svg"
+        "腾讯": "hunyuan-color.svg",
+        "Thinking Machines": "default.svg",
+        "Agnes": "default.svg"
     }
 }
