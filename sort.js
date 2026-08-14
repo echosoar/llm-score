@@ -5,7 +5,7 @@ const inputPath = path.join(__dirname, 'data.json');
 
 const outputPath = path.join(__dirname, 'score.json');
 const data = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
-const scorePi = 10;
+const scorePi = 5;
 
 // strip from
 data.benchmarks.forEach(benchmark => {

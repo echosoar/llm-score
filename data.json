@@ -1,6 +1,19 @@
 {
     "models": [
         {
+            "brand": "Z.ai",
+            "model": "GLM 5.3",
+            "time": "2026/08/14",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 131072,
+            "inputPrice": "￥8",
+            "inputCachedPrice": "￥2",
+            "outputPrice": "￥28",
+            "url": "https://z.ai/blog/glm-5.3"
+        },
+        {
             "brand": "Google",
             "model": "Gemini 3.7 Flash",
             "time": "2026/08/14",
@@ -1548,10 +1561,14 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "GLM 5.3": 0.669,
                 "Gemini 3.7 Flash": 0.653,
                 "Grok 4.6": 0.659,
                 "Muse Spark 1.2": 0.593,
                 "Qwen 3.8 Max": 0.566,
+                "DeepSeek V4 Pro 0813": 0.627,
+                "DeepSeek V4 Flash 0731": 0.544,
+                "GLM 5.2": 0.462,
                 "Claude Opus 5": 0.688,
                 "Gemini 3.6 Flash": 0.49,
                 "Claude Sonnet 5(from Gemini 3.6 Flash)": 0.54,
@@ -1571,9 +1588,6 @@
         {
             "name": "DeepSWE",
             "scores": {
-                "DeepSeek V4 Pro 0813": 0.627,
-                "DeepSeek V4 Flash 0731": 0.544,
-                "GLM 5.2": 0.462,
                 "Laguna S 2.1": 0.404,
                 "Kimi K3(from Laguna S 2.1)": 0.69,
                 "Hy 3": 0.28,
@@ -1590,6 +1604,7 @@
         {
             "name": "Toolathlon-Verified",
             "scores": {
+                "GLM 5.3": 0.73,
                 "DeepSeek V4 Pro 0813": 0.741,
                 "Qwen 3.8 Max": 0.725,
                 "Inkling-Small": 0.544,
@@ -1610,6 +1625,10 @@
         {
             "name": "Terminal-Bench 3",
             "scores": {
+                "GLM 5.3": 0.283,
+                "GLM 5.2(from GLM 5.3)": 0.046,
+                "Kimi K3(from GLM 5.3)": 0.174,
+                "Claude Opus 4.8(from GLM 5.3)": 0.221,
                 "Gemini 3.7 Flash": 0.149,
                 "Gemini 3.6 Flash(from Gemini 3.7 Flash)": 0.054,
                 "Claude Sonnet 5(from Gemini 3.7 Flash)": 0.146,
@@ -1623,6 +1642,7 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "GLM 5.3": 0.882,
                 "Gemini 3.7 Flash": 0.858,
                 "DeepSeek V4 Pro 0813": 0.879,
                 "Agnes 2.5 Pro": 0.67,
@@ -1759,6 +1779,7 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "GLM 5.3": 1769,
                 "Gemini 3.7 Flash": 1525,
                 "Grok 4.6": 1753,
                 "Agnes 2.5 Pro": 1170,
@@ -1813,6 +1834,7 @@
         {
             "name": "Humanity's Last Exam",
             "scores": {
+                "GLM 5.3": 0.625,
                 "DeepSeek V4 Pro 0813": 0.6,
                 "DeepSeek V4 Flash 0731(from DeepSeek V4 Pro 0813)": 0.515,
                 "Agnes 2.5 Pro": 0.319,
@@ -1886,6 +1908,7 @@
             "name": "Agents' Last Exam(pass)",
             "info": "pass",
             "scores": {
+                "GLM 5.3": 0.285,
                 "Gemini 3.7 Flash": 0.263,
                 "Gemini 3.6 Flash(from Gemini 3.7 Flash)": 0.242,
                 "Claude Sonnet 5(from Gemini 3.7 Flash)": 0.333,
@@ -1928,6 +1951,8 @@
         {
             "name": "Cybergym",
             "scores": {
+                "GLM 5.3": 0.845,
+                "GLM 5.2(from GLM 5.3)": 0.772,
                 "DeepSeek V4 Pro 0813": 0.833,
                 "DeepSeek V4 Flash 0731": 0.767,
                 "Kimi K3(from DeepSeek V4 Pro 0813)": 0.8,
@@ -2048,6 +2073,7 @@
         },
         {
             "name": "MMMU Pro",
+            "info": "not with python",
             "scores": {
                 "Muse Glimmer": 0.74,
                 "Qwen 3.8 Max": 0.823,
