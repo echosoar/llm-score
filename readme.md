@@ -1,3 +1,3 @@
 厂商图标来自 [lobe-icons](https://github.com/lobehub/lobe-icons)（MIT License），存放在 `icons/` 目录；品牌 → 文件名的映射维护在 `data.json` 的 `icons` 字段。其中 `icons/thinkingmachines.svg` 是本仓库自绘的占位图标（上游没有对应 logo）。
 
-最后更新时间：2026-08-13 13:55:09 UTC
+最后更新时间：2026-08-14 00:29:03 UTC
