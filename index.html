@@ -976,6 +976,17 @@ let modelMap = new Map();
     const getBenchmarkScore = (model, benchmark) =>
       model.currentBenchmarksScores?.[benchmark] ?? null;
 
+    // 分数来自其他模型（数据中带 from）时返回来源，用于在数字后加 *
+    const getBenchmarkFrom = (model, benchmark) =>
+      model.currentBenchmarksFrom?.[benchmark] ?? null;
+
+    const formatBenchmarkCell = (model, benchmark) => {
+      const value = getBenchmarkScore(model, benchmark);
+      const text = formatBenchmarkScore(value);
+      if (value === null || value === undefined) return text;
+      return getBenchmarkFrom(model, benchmark) !== null ? `${text}*` : text;
+    };
+
     const formatScore = (value) => {
       if (value === null || value === undefined) return '-';
       return Number(value).toFixed(4);
@@ -1224,7 +1235,7 @@ const getPriceScore = (model) => {
           const value = getBenchmarkScore(model, benchmark);
           appendTextCell(
             row,
-            formatBenchmarkScore(value),
+            formatBenchmarkCell(model, benchmark),
             value === null || value === undefined ? 'numeric missing' : 'numeric dimensional-score',
           );
         });
@@ -1364,7 +1375,7 @@ const getPriceScore = (model) => {
           better: 'high',
           numeric: true,
           value: (m) => getBenchmarkScore(m, benchmark),
-          format: (m) => formatBenchmarkScore(getBenchmarkScore(m, benchmark)),
+          format: (m) => formatBenchmarkCell(m, benchmark),
           rank: (m) => getMetricRank(m, (item) => getBenchmarkScore(item, benchmark)),
         })),
       ];
@@ -1477,6 +1488,15 @@ const getPriceScore = (model) => {
       let entries = rows
         .map((definition) => makeCompareEntry(definition, list))
         .filter((entry) => entry.hasData);
+
+      // benchmark 行按数据覆盖度排序：所有选中模型都有数据的排在最上方，
+      // 其余按有数据的模型数量递减（数量相同的保持原有顺序）
+      const isBenchmarkEntry = (entry) => String(entry.definition.key ?? '').startsWith('benchmark:');
+      const dataCount = (entry) => entry.values.filter((value) => !isMissing(value)).length;
+      entries = [
+        ...entries.filter((entry) => !isBenchmarkEntry(entry)),
+        ...entries.filter(isBenchmarkEntry).sort((a, b) => dataCount(b) - dataCount(a)),
+      ];
 
       const index = list.findIndex((model) => model.model === compareSort.model);
       if (compareSort.direction && index >= 0) {

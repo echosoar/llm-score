@@ -82,6 +82,29 @@
         "DeepSeek V3": 0.591,
         "GPT-4o mini": 0.402,
         "GPT-o1": 0.757
+      },
+      "fromSources": {
+        "Claude Fable 5": "GPT-5.6 Sol",
+        "Claude Opus 4.8": "GPT-5.6 Sol",
+        "Kimi K2.6": "Qwen 3.7 Max",
+        "GPT-5 mini": "Gemini 3.1 Flash Lite",
+        "MiniMax M3": "GLM 5.2",
+        "GPT-4.1": "Kimi K2",
+        "Gemini 2.5 Flash": "Kimi K2",
+        "DeepSeek V3.1": "Llama 4 Maverick",
+        "GPT-4o": "GPT-4.5",
+        "Gemma 3 27B": "Llama 4 Scout",
+        "Mistral 3.1 24B": "Llama 4 Scout",
+        "Llama 3.3 70B": "Llama 4 Scout",
+        "Llama 3.1 405B": "Llama 4 Scout",
+        "Claude Sonnet 3.7": "Claude Sonnet 4",
+        "Gemini 2.5 Pro": "Claude Opus 4",
+        "GPT-4.1 mini": "GPT-4.1",
+        "GPT-4.1 nano": "GPT-4.1",
+        "GPT-4.5": "Llama 4 Behemoth",
+        "Claude Sonnet 3.5": "Qwen 2.5 Max",
+        "GPT-4o mini": "GPT-4.1",
+        "GPT-o1": "GPT-4.1"
       }
     },
     {
@@ -142,6 +165,13 @@
         "Gemini 3 Pro": 0.433,
         "MiniMax M2.1": 0.497,
         "GPT-5.2": 0.565
+      },
+      "fromSources": {
+        "Gemma 4 31B": "Muse Glimmer",
+        "Claude Sonnet 4.6": "Claude Sonnet 5",
+        "Claude Opus 4.6": "Claude Opus 4.7",
+        "Step 3.5 Flash": "Step 3.7 Flash",
+        "Gemini 3 Pro": "Gemini 3.1 Pro"
       }
     },
     {
@@ -191,6 +221,28 @@
         "GPT-4.5": 0.38,
         "GPT-4o mini": 0.087,
         "GPT-o1": 0.41
+      },
+      "fromSources": {
+        "Gemma 4 31B": "Muse Glimmer",
+        "Seed 2.1 Pro": "Hy 3",
+        "GLM 5.2": "Hy 3",
+        "Claude Opus 4.8": "Hy 3",
+        "GPT-5.5": "Hy 3",
+        "Qwen 3.6 27B": "Qwen 3.7 Max",
+        "Kimi K2.6": "Qwen 3.7 Max",
+        "GLM 5.1": "Hy 3",
+        "Claude Sonnet 4.6": "Gemini 3.1 Pro",
+        "Claude Opus 4.6": "Gemini 3.1 Pro",
+        "Gemini 3 Pro": "Gemini 3.1 Pro",
+        "GPT-5.2": "Gemini 3.1 Pro",
+        "Claude Sonnet 3.7": "Claude Opus 4",
+        "Gemini 2.5 Pro": "Claude Opus 4",
+        "GPT-o3": "Claude Opus 4",
+        "GPT-4.1 mini": "GPT-4.1",
+        "Claude Sonnet 3.5": "DeepSeek V3",
+        "GPT-4o": "GPT-4.5",
+        "GPT-4o mini": "GPT-4.1",
+        "GPT-o1": "GPT-4.1"
       }
     },
     {
@@ -214,6 +266,15 @@
         "Composer 2": 0.737,
         "Composer 1.5": 0.659,
         "Claude Sonnet 4": 0.51
+      },
+      "fromSources": {
+        "Qwen 3.6 27B": "Qwen 3.7 Max",
+        "Claude Opus 4.6": "Qwen 3.7 Max",
+        "DeepSeek V4 Pro Preview": "Qwen 3.7 Max",
+        "GLM 5.2": "Hy 3",
+        "Claude Opus 4.8": "Hy 3",
+        "Claude Opus 4.7": "Composer 2.5",
+        "Claude Sonnet 4": "Kimi K2"
       }
     },
     {
@@ -244,6 +305,15 @@
         "GPT-5.5": 0.67,
         "Gemini 3.5 Flash": 0.37,
         "Gemini 3.1 Pro": 0.118
+      },
+      "fromSources": {
+        "Qwen 3.6 27B": "Qwen 3.8 27B",
+        "Qwen 3.7 Plus": "Qwen 3.8 27B",
+        "Claude Sonnet 5": "Gemini 3.6 Flash",
+        "Claude Fable 5": "GPT-5.6 Sol",
+        "Claude Opus 4.8": "GPT-5.6 Sol",
+        "Gemini 3.5 Flash": "Gemini 3.6 Flash",
+        "Gemini 3.1 Pro": "GPT-5.6 Sol"
       }
     },
     {
@@ -260,6 +330,17 @@
         "DeepSeek V4 Flash Preview": 0.071,
         "GPT-5.5": 0.7,
         "Gemini 3.1 Pro": 0.1
+      },
+      "fromSources": {
+        "Kimi K3": "Laguna S 2.1",
+        "Seed 2.1 Pro": "Hy 3",
+        "Qwen 3.7 Max": "Hy 3",
+        "MiniMax M3": "GLM 5.2",
+        "Claude Opus 4.8": "Hy 3",
+        "DeepSeek V4 Pro Preview": "Hy 3",
+        "DeepSeek V4 Flash Preview": "Hy 3",
+        "GPT-5.5": "Hy 3",
+        "Gemini 3.1 Pro": "Hy 3"
       }
     },
     {
@@ -281,6 +362,16 @@
         "Muse Spark 1.1": 0.756,
         "Muse Spark": 0.494,
         "Gemini 3 Pro": 0.611
+      },
+      "fromSources": {
+        "GLM 5.2": "Kimi K3",
+        "Claude Fable 5": "Kimi K3",
+        "GPT-5.6 Sol": "Kimi K3",
+        "Claude Opus 4.8": "Kimi K3",
+        "GPT-5.5": "Kimi K3",
+        "Qwen 3.7 Max": "Qwen 3.8 Max",
+        "Muse Spark": "Muse Spark 1.1",
+        "Gemini 3 Pro": "Muse Spark 1.1"
       }
     },
     {
@@ -298,6 +389,17 @@
         "Grok 4.5": 0.157,
         "GPT-5.6 Sol": 0.346,
         "Claude Fable 5": 0.341
+      },
+      "fromSources": {
+        "GLM 5.2": "GLM 5.3",
+        "Kimi K3": "GLM 5.3",
+        "Claude Opus 4.8": "GLM 5.3",
+        "Gemini 3.6 Flash": "Gemini 3.7 Flash",
+        "Claude Sonnet 5": "Gemini 3.7 Flash",
+        "GPT-5.6 Terra": "Gemini 3.7 Flash",
+        "Grok 4.5": "Grok 4.6",
+        "GPT-5.6 Sol": "Grok 4.6",
+        "Claude Fable 5": "Grok 4.6"
       }
     },
     {
@@ -349,6 +451,19 @@
         "Claude Sonnet 4.6": 0.67,
         "Step 3.5 Flash": 0.534,
         "Gemini 3.1 Flash Lite": 0.31
+      },
+      "fromSources": {
+        "Qwen 3.7 Plus": "Qwen 3.8 27B",
+        "Gemma 4 31B": "Muse Glimmer",
+        "Qwen 3.6 27B": "Qwen 3.8 27B",
+        "Qwen 3.7 Max": "Qwen 3.8 Max",
+        "GPT-5.5": "GPT-5.6 Sol",
+        "DeepSeek V4 Pro Preview": "Hy 3",
+        "DeepSeek V4 Flash Preview": "Hy 3",
+        "Gemini 3.1 Pro": "Gemini 3.6 Flash",
+        "Claude Sonnet 4.6": "Claude Sonnet 5",
+        "Step 3.5 Flash": "Step 3.7 Flash",
+        "Gemini 3.1 Flash Lite": "Gemini 3.5 Flash Lite"
       }
     },
     {
@@ -395,6 +510,12 @@
         "Gemini 2.5 Pro": 0.253,
         "GPT-o3": 0.302,
         "GPT-4.1": 0.303
+      },
+      "fromSources": {
+        "Claude Sonnet 3.7": "Claude Opus 4",
+        "Gemini 2.5 Pro": "Claude Opus 4",
+        "GPT-o3": "Claude Opus 4",
+        "GPT-4.1": "Claude Opus 4"
       }
     },
     {
@@ -437,6 +558,13 @@
         "GPT-5.2": 0.779,
         "GLM 4.7": 0.675,
         "GPT-5": 0.549
+      },
+      "fromSources": {
+        "Claude Fable 5": "GPT-5.6 Sol",
+        "Claude Opus 4.8": "GPT-5.6 Sol",
+        "GLM 5.1": "Hy 3",
+        "MiniMax M2.7": "MiniMax M3",
+        "Gemini 3 Pro": "Gemini 3.1 Pro"
       }
     },
     {
@@ -471,6 +599,20 @@
         "Kimi K2.5": 1009,
         "Gemini 3.1 Pro": 963.2,
         "Gemini 3.1 Flash Lite": 642
+      },
+      "fromSources": {
+        "Grok 4.5": "Grok 4.6",
+        "GLM 5.2": "Kimi K3",
+        "Claude Fable 5": "GPT-5.6 Sol",
+        "Kimi K2.6": "Inkling",
+        "Claude Opus 4.8": "GPT-5.6 Sol",
+        "GPT-5.5": "GPT-5.6 Sol",
+        "DeepSeek V4 Pro Preview": "Inkling",
+        "Gemini 3.5 Flash": "GPT-5.6 Sol",
+        "Claude Sonnet 4.6": "Claude Sonnet 5",
+        "Kimi K2.5": "Inkling",
+        "Gemini 3.1 Pro": "GPT-5.6 Sol",
+        "Gemini 3.1 Flash Lite": "Gemini 3.5 Flash Lite"
       }
     },
     {
@@ -492,6 +634,9 @@
         "Claude Sonnet 4.6": 1633,
         "Gemini 3 Pro": 1195,
         "Claude Opus 4.6": 1606
+      },
+      "fromSources": {
+        "Gemini 3 Pro": "Gemini 3.1 Pro"
       }
     },
     {
@@ -552,6 +697,11 @@
         "DeepSeek R1 0528": 0.177,
         "GPT-o3": 0.243,
         "GPT-4o": 0.053
+      },
+      "fromSources": {
+        "DeepSeek V4 Flash 0731": "DeepSeek V4 Pro 0813",
+        "GPT-5.6 Sol": "Kimi K3",
+        "Step 3.5 Flash": "Step 3.7 Flash"
       }
     },
     {
@@ -567,6 +717,10 @@
         "GPT-5.5": 0.469,
         "Claude Opus 4.8": 0.451,
         "Gemini 3.1 Pro": 0.321
+      },
+      "fromSources": {
+        "Claude Opus 4.8": "Qwen 3.8 Max",
+        "Gemini 3.1 Pro": "GPT-5.6 Sol"
       }
     },
     {
@@ -586,6 +740,17 @@
         "DeepSeek V4 Pro Preview": 0.128,
         "DeepSeek V4 Flash Preview": 0.108,
         "Claude Opus 4.8": 0.257
+      },
+      "fromSources": {
+        "Gemini 3.6 Flash": "Gemini 3.7 Flash",
+        "Claude Sonnet 5": "Gemini 3.7 Flash",
+        "GPT-5.6 Terra": "Gemini 3.7 Flash",
+        "DeepSeek V4 Flash 0731": "DeepSeek V4 Pro 0813",
+        "Kimi K3": "DeepSeek V4 Pro 0813",
+        "GLM 5.2": "DeepSeek V4 Pro 0813",
+        "DeepSeek V4 Pro Preview": "DeepSeek V4 Pro 0813",
+        "DeepSeek V4 Flash Preview": "DeepSeek V4 Pro 0813",
+        "Claude Opus 4.8": "DeepSeek V4 Pro 0813"
       }
     },
     {
@@ -613,6 +778,18 @@
         "Claude Opus 4.8": 0.899,
         "Claude Fable 5": 0.935,
         "Gemini 3.1 Pro": 0.832
+      },
+      "fromSources": {
+        "Gemma 4 31B": "Muse Glimmer",
+        "Qwen 3.6 27B": "Muse Glimmer",
+        "Claude Sonnet 5": "Gemini 3.6 Flash",
+        "Gemini 3.5 Flash": "Gemini 3.6 Flash",
+        "Muse Spark": "Muse Spark 1.1",
+        "Qwen 3.7 Plus": "Qwen 3.8 Max",
+        "GPT-5.6 Sol": "Qwen 3.8 Max",
+        "Claude Opus 4.8": "Qwen 3.8 Max",
+        "Claude Fable 5": "Qwen 3.8 Max",
+        "Gemini 3.1 Pro": "Gemini 3.6 Flash"
       }
     },
     {
@@ -628,6 +805,13 @@
         "GPT-5.4": 0.79,
         "Claude Opus 4.7": 0.78,
         "Claude Opus 4.6": 0.727
+      },
+      "fromSources": {
+        "GLM 5.2": "GLM 5.3",
+        "Kimi K3": "DeepSeek V4 Pro 0813",
+        "Claude Opus 4.8": "DeepSeek V4 Pro 0813",
+        "Claude Opus 4.6": "Claude Opus 4.7",
+        "GPT-5.4": "GPT-5.5"
       }
     },
     {
@@ -652,6 +836,14 @@
         "Qwen 3.5 397B A17B": 0.809,
         "Kimi K2.5": 0.818,
         "DeepSeek V3.2": 0.845
+      },
+      "fromSources": {
+        "Claude Opus 4.8": "Hy 3",
+        "GLM 5.2": "Hy 3",
+        "GPT-5.5": "Hy 3",
+        "Claude Opus 4.7": "LongCat 2",
+        "Gemini 3.1 Pro": "Hy 3",
+        "Claude Opus 4.6": "Qwen 3.7 Max"
       }
     },
     {
@@ -690,6 +882,18 @@
         "Gemini 3 Flash": 0.574,
         "GPT-5.2": 0.606,
         "GLM 4.7": 0.52
+      },
+      "fromSources": {
+        "GPT-5.6 Sol": "Kimi K3",
+        "Claude Fable 5": "Kimi K3",
+        "Claude Opus 4.8": "Kimi K3",
+        "Qwen 3.7 Max": "GLM 5.2",
+        "Kimi K2.6": "DeepSeek V4 Pro 0813",
+        "GLM 5.1": "GLM 5.2",
+        "Claude Opus 4.7": "GPT-5.5",
+        "Claude Opus 4.6": "Claude Sonnet 4.6",
+        "Claude Sonnet 4.5": "Claude Sonnet 4.6",
+        "Gemini 3 Pro": "Gemini 3.1 Pro"
       }
     },
     {
@@ -707,6 +911,14 @@
         "MiMo V2.5": 0.066,
         "MiniMax M2.7": 0.089,
         "Inkling": 0.237
+      },
+      "fromSources": {
+        "Gemma 4 31B": "Muse Glimmer",
+        "Qwen 3.6 27B": "Muse Glimmer",
+        "Nemotron 3 Ultra": "Inkling-Small",
+        "GPT-5.6 Luna": "Inkling-Small",
+        "Claude Haiku 4.5": "Inkling-Small",
+        "Inkling": "Inkling-Small"
       }
     },
     {
@@ -737,6 +949,13 @@
         "Kimi K2.5": 0.633,
         "Qwen 3.5 397B A17B": 0.622,
         "Gemini 3 Flash": 0.651
+      },
+      "fromSources": {
+        "Qwen 3.7 Plus": "Qwen 3.8 Max",
+        "GPT-5.6 Sol": "Qwen 3.8 Max",
+        "Claude Opus 4.6": "Claude Sonnet 4.6",
+        "GPT-5.2": "Claude Sonnet 4.6",
+        "Gemini 3 Flash": "Gemini 3.5 Flash Lite"
       }
     },
     {
@@ -774,6 +993,15 @@
         "Gemini 3 Pro": 0.81,
         "Gemini 3 Flash": 0.812,
         "GPT-5.2": 0.795
+      },
+      "fromSources": {
+        "Claude Fable 5": "Kimi K3",
+        "Claude Opus 4.8": "Kimi K3",
+        "Claude Opus 4.7": "Seed 2.1 Pro",
+        "GPT-5 mini": "Gemini 3.1 Flash Lite",
+        "Gemini 3.1 Pro": "GPT-5.6 Sol",
+        "Claude Opus 4.6": "Qwen 3.7 Plus",
+        "Gemini 3 Pro": "Gemini 3.1 Pro"
       }
     },
     {
@@ -796,6 +1024,18 @@
         "Gemini 2.5 Pro": 0.796,
         "GPT-o3": 0.829,
         "GPT-4.1": 0.748
+      },
+      "fromSources": {
+        "Gemini 2 Flash": "Llama 4 Maverick",
+        "GPT-4o": "Llama 4 Maverick",
+        "Gemini 2 Flash Lite": "Llama 4 Scout",
+        "Gemma 3 27B": "Llama 4 Scout",
+        "Mistral 3.1 24B": "Llama 4 Scout",
+        "Gemini 2 Pro": "Llama 4 Behemoth",
+        "Claude Sonnet 3.7": "Claude Opus 4",
+        "Gemini 2.5 Pro": "Claude Opus 4",
+        "GPT-o3": "Claude Opus 4",
+        "GPT-4.1": "Claude Opus 4"
       }
     },
     {
@@ -806,6 +1046,11 @@
         "DeepSeek V3": 0.826,
         "Claude Sonnet 3.5": 0.817,
         "GPT-4o": 0.805
+      },
+      "fromSources": {
+        "Llama 3.1 405B": "Qwen 2.5 Max",
+        "Claude Sonnet 3.5": "DeepSeek V3",
+        "GPT-4o": "DeepSeek V3"
       }
     },
     {
@@ -830,6 +1075,23 @@
         "GPT-4o mini": 0.784,
         "GPT-4.5": 0.882,
         "GPT-o1": 0.922
+      },
+      "fromSources": {
+        "Qwen 3.6 27B": "Qwen 3.7 Max",
+        "DeepSeek v4 Pro Preview": "Qwen 3.7 Max",
+        "GLM 5.1": "Qwen 3.7 Max",
+        "Kimi K2.6": "Qwen 3.7 Max",
+        "GPT-5.5": "LongCat 2",
+        "Claude Opus 4.6": "Qwen 3.7 Max",
+        "Claude Sonnet 4": "Kimi K2",
+        "Claude Opus 4": "Kimi K2",
+        "Gemini 2.5 Flash": "Kimi K2",
+        "GPT-4.1 mini": "GPT-4.1",
+        "GPT-4.1 nano": "GPT-4.1",
+        "GPT-4o": "GPT-4.1",
+        "GPT-4o mini": "GPT-4.1",
+        "GPT-4.5": "GPT-4.1",
+        "GPT-o1": "GPT-4.1"
       }
     },
     {
@@ -847,6 +1109,17 @@
         "GPT-4.1": 0.818,
         "Gemini 2.5 Flash": 0.794,
         "ERNIE 5.1": 0.843
+      },
+      "fromSources": {
+        "Qwen 3.6 27B": "Qwen 3.7 Max",
+        "DeepSeek v4 Pro Preview": "Qwen 3.7 Max",
+        "GLM 5.1": "Qwen 3.7 Max",
+        "Kimi K2.6": "Qwen 3.7 Max",
+        "Claude Opus 4.6": "Qwen 3.7 Max",
+        "Claude Sonnet 4": "Kimi K2",
+        "Claude Opus 4": "Kimi K2",
+        "GPT-4.1": "Kimi K2",
+        "Gemini 2.5 Flash": "Kimi K2"
       }
     },
     {
@@ -864,6 +1137,14 @@
         "DeepSeek v4 Pro Preview": 0.946,
         "GPT-5.5": 0.983,
         "ERNIE 5.1": 0.95
+      },
+      "fromSources": {
+        "Gemma 4 31B": "Muse Glimmer",
+        "Qwen 3.6 27B": "Muse Glimmer",
+        "Qwen 3.7 Max": "GLM 5.2",
+        "GLM 5.1": "GLM 5.2",
+        "DeepSeek v4 Pro Preview": "GLM 5.2",
+        "GPT-5.5": "GLM 5.2"
       }
     },
     {
@@ -882,6 +1163,13 @@
         "GPT-4.1": 0.37,
         "GPT-4o": 0.076,
         "DeepSeek V3": 0.467
+      },
+      "fromSources": {
+        "Claude Sonnet 4.5": "Gemini 3 Pro",
+        "GPT-5.1": "Gemini 3 Pro",
+        "GPT-4.1": "Kimi K2",
+        "GPT-4o": "Qwen 3 235B A22B",
+        "DeepSeek V3": "Kimi K2"
       }
     },
     {
@@ -899,6 +1187,13 @@
         "DeepSeek V3": 0.392,
         "GPT-4.1": 0.465,
         "GPT-4o": 0.111
+      },
+      "fromSources": {
+        "Gemini 2.5 Flash": "Kimi K2",
+        "Claude Sonnet 4": "Kimi K2",
+        "Claude Opus 4": "Kimi K2",
+        "GPT-4.1": "Kimi K2",
+        "GPT-4o": "Qwen 3 235B A22B"
       }
     },
     {
@@ -920,6 +1215,16 @@
         "Gemini 3.1 Pro": 0.515,
         "Qwen 3.6 27B": 0.374,
         "Claude Opus 4.6": 0.126
+      },
+      "fromSources": {
+        "GPT-5.6 Sol": "Kimi K3",
+        "Claude Fable 5": "Kimi K3",
+        "Claude Opus 4.8": "Kimi K3",
+        "GPT-5.5": "Kimi K3",
+        "Claude Opus 4.7": "Seed 2.1 Pro",
+        "GPT-5.4": "Qwen 3.7 Plus",
+        "Gemini 3.1 Pro": "Muse Spark 1.1",
+        "Claude Opus 4.6": "Qwen 3.7 Plus"
       }
     },
     {
@@ -936,6 +1241,15 @@
         "DeepSeek V4 Pro 0813": 0.615,
         "Qwen 3.8 Max": 0.559,
         "Qwen 3.7 Max": 0.472
+      },
+      "fromSources": {
+        "Qwen 3.6 27B": "Qwen 3.8 27B",
+        "Qwen 3.7 Plus": "Qwen 3.8 27B",
+        "GLM 5.2": "GLM 5.3",
+        "Kimi K3": "GLM 5.3",
+        "Claude Opus 4.8": "GLM 5.3",
+        "Claude Opus 4.6": "Qwen 3.8 27B",
+        "Qwen 3.7 Max": "Qwen 3.8 Max"
       }
     },
     {
@@ -950,6 +1264,13 @@
         "Gemini 3.7 Flash": 0.34,
         "Gemini 3.6 Flash": 0.22,
         "Gemini 3.1 Pro": 0.167
+      },
+      "fromSources": {
+        "GPT-5.5": "GPT-5.6 Sol",
+        "Claude Fable 5": "GPT-5.6 Sol",
+        "Claude Opus 4.8": "GPT-5.6 Sol",
+        "Gemini 3.6 Flash": "Gemini 3.7 Flash",
+        "Gemini 3.1 Pro": "GPT-5.6 Sol"
       }
     }
   ],
@@ -976,6 +1297,11 @@
           "GPQA Diamond": 0.402,
           "SWE-Bench Verified": 0.087,
           "IFEval": 0.784
+        },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "GPT-4.1",
+          "SWE-Bench Verified": "GPT-4.1",
+          "IFEval": "GPT-4.1"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -1079,6 +1405,10 @@
           "GPQA Diamond": 0.503,
           "IFEval": 0.745
         },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "GPT-4.1",
+          "IFEval": "GPT-4.1"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -1176,6 +1506,9 @@
         "currentBenchmarksScores": {
           "GPQA Diamond": 0.515,
           "MMMU": 0.68
+        },
+        "currentBenchmarksFrom": {
+          "MMMU": "Llama 4 Scout"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -1277,6 +1610,15 @@
           "IFEval": 0.81,
           "AIME'25": 0.076,
           "AIME'24": 0.111
+        },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "GPT-4.5",
+          "SWE-Bench Verified": "GPT-4.5",
+          "MMMU": "Llama 4 Maverick",
+          "HumanEval-Mul": "DeepSeek V3",
+          "IFEval": "GPT-4.1",
+          "AIME'25": "Qwen 3 235B A22B",
+          "AIME'24": "Qwen 3 235B A22B"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -1571,6 +1913,9 @@
           "AIME'25": 0.467,
           "AIME'24": 0.392
         },
+        "currentBenchmarksFrom": {
+          "AIME'25": "Kimi K2"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -1672,6 +2017,9 @@
           "GPQA Diamond": 0.601,
           "MMMU": 0.717
         },
+        "currentBenchmarksFrom": {
+          "MMMU": "Llama 4 Maverick"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -1761,6 +2109,9 @@
         "currentBenchmarksScores": {
           "GPQA Diamond": 0.647,
           "MMMU": 0.727
+        },
+        "currentBenchmarksFrom": {
+          "MMMU": "Llama 4 Behemoth"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -1852,6 +2203,11 @@
           "GPQA Diamond": 0.65,
           "SWE-Bench Verified": 0.236,
           "IFEval": 0.841
+        },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "GPT-4.1",
+          "SWE-Bench Verified": "GPT-4.1",
+          "IFEval": "GPT-4.1"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -1953,6 +2309,14 @@
           "AIME'25": 0.37,
           "AIME'24": 0.465
         },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "Kimi K2",
+          "Terminal-Bench 2": "Claude Opus 4",
+          "MMMU": "Claude Opus 4",
+          "MMLU Pro": "Kimi K2",
+          "AIME'25": "Kimi K2",
+          "AIME'24": "Kimi K2"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2052,6 +2416,11 @@
           "SWE-Bench Verified": 0.508,
           "HumanEval-Mul": 0.817
         },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "Qwen 2.5 Max",
+          "SWE-Bench Verified": "DeepSeek V3",
+          "HumanEval-Mul": "DeepSeek V3"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2146,6 +2515,12 @@
           "IFEval": 0.843,
           "MMLU Pro": 0.794,
           "AIME'24": 0.613
+        },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "Kimi K2",
+          "IFEval": "Kimi K2",
+          "MMLU Pro": "Kimi K2",
+          "AIME'24": "Kimi K2"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -2320,6 +2695,10 @@
           "SWE-Bench Verified": 0.38,
           "IFEval": 0.882
         },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "Llama 4 Behemoth",
+          "IFEval": "GPT-4.1"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2476,6 +2855,12 @@
           "IFEval": 0.876,
           "MMLU Pro": 0.837,
           "AIME'24": 0.434
+        },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Multilingual": "Kimi K2",
+          "IFEval": "Kimi K2",
+          "MMLU Pro": "Kimi K2",
+          "AIME'24": "Kimi K2"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -3311,6 +3696,12 @@
           "MMMU": 0.796,
           "AIME'25": 0.88
         },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "Claude Opus 4",
+          "SWE-Bench Verified": "Claude Opus 4",
+          "Terminal-Bench 2": "Claude Opus 4",
+          "MMMU": "Claude Opus 4"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -3558,6 +3949,11 @@
           "MMLU Pro": 0.866,
           "AIME'24": 0.482
         },
+        "currentBenchmarksFrom": {
+          "IFEval": "Kimi K2",
+          "MMLU Pro": "Kimi K2",
+          "AIME'24": "Kimi K2"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -3654,6 +4050,9 @@
           "Terminal-Bench 2": 0.41,
           "Tau 3 Banking": 0.091,
           "OSWorld-Verified": 0.507
+        },
+        "currentBenchmarksFrom": {
+          "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -3850,6 +4249,10 @@
           "GPQA Diamond": 0.823,
           "MMMU Pro": 0.741
         },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "Gemini 3.1 Flash Lite",
+          "MMMU Pro": "Gemini 3.1 Flash Lite"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -3930,6 +4333,14 @@
           "Tau 3 Banking": 0.151,
           "MMMU Pro": 0.769,
           "AIME'26": 0.892
+        },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Pro": "Muse Glimmer",
+          "SWE-Bench Verified": "Muse Glimmer",
+          "Terminal-Bench 2.1": "Muse Glimmer",
+          "CharXiv": "Muse Glimmer",
+          "Tau 3 Banking": "Muse Glimmer",
+          "AIME'26": "Muse Glimmer"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -4278,6 +4689,10 @@
           "MMMU Pro": 0.634,
           "AIME'25": 0.87
         },
+        "currentBenchmarksFrom": {
+          "MCPAtlas": "Claude Sonnet 4.6",
+          "AIME'25": "Gemini 3 Pro"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -4375,6 +4790,10 @@
           "Terminal-Bench 2.1": 0.31,
           "GDPval-AA 2": 642,
           "MMMU Pro": 0.768
+        },
+        "currentBenchmarksFrom": {
+          "Terminal-Bench 2.1": "Gemini 3.5 Flash Lite",
+          "GDPval-AA 2": "Gemini 3.5 Flash Lite"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -4871,6 +5290,11 @@
           "Humanity's Last Exam": 0.357,
           "IMOAnswerBench": 0.854
         },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Pro": "Step 3.7 Flash",
+          "Terminal-Bench 2.1": "Step 3.7 Flash",
+          "Humanity's Last Exam": "Step 3.7 Flash"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -5114,6 +5538,9 @@
           "Terminal-Bench 2.1": 0.564,
           "Tau 3 Banking": 0.138
         },
+        "currentBenchmarksFrom": {
+          "Tau 3 Banking": "Inkling-Small"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -5202,6 +5629,9 @@
           "Humanity's Last Exam": 0.502,
           "IMOAnswerBench": 0.818,
           "OSWorld-Verified": 0.633
+        },
+        "currentBenchmarksFrom": {
+          "GDPval-AA 2": "Inkling"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -5305,6 +5735,18 @@
           "BabyVision": 0.374,
           "NL2Repo": 0.362
         },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Verified": "Qwen 3.7 Max",
+          "SWE-Bench Multilingual": "Qwen 3.7 Max",
+          "DeepSWE 1.1": "Qwen 3.8 27B",
+          "Terminal-Bench 2.1": "Qwen 3.8 27B",
+          "CharXiv": "Muse Glimmer",
+          "Tau 3 Banking": "Muse Glimmer",
+          "IFEval": "Qwen 3.7 Max",
+          "MMLU Pro": "Qwen 3.7 Max",
+          "AIME'26": "Muse Glimmer",
+          "NL2Repo": "Qwen 3.8 27B"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -5401,6 +5843,15 @@
           "MMMU Pro": 0.81,
           "AIME'25": 0.95
         },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Pro": "Gemini 3.1 Pro",
+          "SWE-Bench Verified": "Gemini 3.1 Pro",
+          "Toolathlon-Verified": "Muse Spark 1.1",
+          "BrowseComp": "Gemini 3.1 Pro",
+          "GDPval-AA": "Gemini 3.1 Pro",
+          "MCPAtlas": "Gemini 3.1 Pro",
+          "MMMU Pro": "Gemini 3.1 Pro"
+        },
         "betterThanCurrentModels": [
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -5491,6 +5942,11 @@
           "Agents' Last Exam(pass)": 0.108,
           "IMOAnswerBench": 0.884,
           "MCPAtlas": 0.69
+        },
+        "currentBenchmarksFrom": {
+          "DeepSWE": "Hy 3",
+          "Terminal-Bench 2.1": "Hy 3",
+          "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -5731,6 +6187,9 @@
           "GDPval-AA 2": 1158,
           "Tau 3 Banking": 0.089
         },
+        "currentBenchmarksFrom": {
+          "BrowseComp": "MiniMax M3"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -5900,6 +6359,9 @@
           "Tau 3 Banking": 0.237,
           "MMMU Pro": 0.735,
           "AIME'26": 0.971
+        },
+        "currentBenchmarksFrom": {
+          "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -6133,6 +6595,10 @@
           "CharXiv": 0.889,
           "MMMU Pro": 0.804
         },
+        "currentBenchmarksFrom": {
+          "Toolathlon-Verified": "Muse Spark 1.1",
+          "CharXiv": "Muse Spark 1.1"
+        },
         "betterThanCurrentModels": [
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -6211,6 +6677,10 @@
           "MCPAtlas": 0.606,
           "OSWorld-Verified": 0.382,
           "MMMU Pro": 0.795
+        },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Verified": "Gemini 3.1 Pro",
+          "OSWorld-Verified": "Claude Sonnet 4.6"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -6361,6 +6831,9 @@
           "MCPAtlas": 0.574,
           "OSWorld-Verified": 0.651,
           "MMMU Pro": 0.812
+        },
+        "currentBenchmarksFrom": {
+          "OSWorld-Verified": "Gemini 3.5 Flash Lite"
         },
         "betterThanCurrentModels": [
           "GLM 5.3",
@@ -6520,6 +6993,12 @@
           "MCPAtlas": 0.613,
           "OSWorld-Verified": 0.725,
           "MMMU Pro": 0.745
+        },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Pro": "Claude Sonnet 5",
+          "SWE-Bench Verified": "Gemini 3.1 Pro",
+          "Terminal-Bench 2.1": "Claude Sonnet 5",
+          "GDPval-AA 2": "Claude Sonnet 5"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -6800,6 +7279,14 @@
           "MMLU Pro": 0.863,
           "AIME'26": 0.953
         },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Verified": "Hy 3",
+          "BrowseComp": "Hy 3",
+          "MCPAtlas": "GLM 5.2",
+          "IFEval": "Qwen 3.7 Max",
+          "MMLU Pro": "Qwen 3.7 Max",
+          "AIME'26": "GLM 5.2"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -6875,6 +7362,13 @@
           "Agents' Last Exam(pass)": 0.128,
           "IMOAnswerBench": 0.898,
           "MCPAtlas": 0.736
+        },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Multilingual": "Qwen 3.7 Max",
+          "DeepSWE": "Hy 3",
+          "Terminal-Bench 2.1": "Hy 3",
+          "GDPval-AA 2": "Inkling",
+          "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -6955,6 +7449,20 @@
           "MMLU Pro": 0.897,
           "BabyVision": 0.126,
           "NL2Repo": 0.476
+        },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Pro": "Claude Opus 4.7",
+          "SWE-Bench Verified": "Gemini 3.1 Pro",
+          "SWE-Bench Multilingual": "Qwen 3.7 Max",
+          "Cybergym": "Claude Opus 4.7",
+          "IMOAnswerBench": "Qwen 3.7 Max",
+          "MCPAtlas": "Claude Sonnet 4.6",
+          "OSWorld-Verified": "Claude Sonnet 4.6",
+          "MMMU Pro": "Qwen 3.7 Plus",
+          "IFEval": "Qwen 3.7 Max",
+          "MMLU Pro": "Qwen 3.7 Max",
+          "BabyVision": "Qwen 3.7 Plus",
+          "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -7089,6 +7597,13 @@
           "MMMU Pro": 0.79,
           "BabyVision": 0.704,
           "NL2Repo": 0.411
+        },
+        "currentBenchmarksFrom": {
+          "DeepSWE 1.1": "Qwen 3.8 27B",
+          "Terminal-Bench 2.1": "Qwen 3.8 27B",
+          "CharXiv": "Qwen 3.8 Max",
+          "OSWorld-Verified": "Qwen 3.8 Max",
+          "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -7278,6 +7793,18 @@
           "BabyVision": 0.515,
           "gdp.pdf": 0.167
         },
+        "currentBenchmarksFrom": {
+          "DeepSWE 1.1": "GPT-5.6 Sol",
+          "DeepSWE": "Hy 3",
+          "Terminal-Bench 2.1": "Gemini 3.6 Flash",
+          "GDPval-AA 2": "GPT-5.6 Sol",
+          "Agents' Last Exam(score)": "GPT-5.6 Sol",
+          "CharXiv": "Gemini 3.6 Flash",
+          "IMOAnswerBench": "Hy 3",
+          "MMMU Pro": "GPT-5.6 Sol",
+          "BabyVision": "Muse Spark 1.1",
+          "gdp.pdf": "GPT-5.6 Sol"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -7346,6 +7873,10 @@
           "OSWorld-Verified": 0.701,
           "MMMU Pro": 0.781
         },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "GLM 5.2",
+          "DeepSWE": "GLM 5.2"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -7408,6 +7939,10 @@
           "MMMU Pro": 0.816,
           "BabyVision": 0.737
         },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Verified": "Hy 3",
+          "DeepSWE": "Hy 3"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -7445,7 +7980,7 @@
       "modelInfo": {
         "brand": "Alibaba",
         "model": "Qwen 3.8 27B",
-        "time": "2026/08/03",
+        "time": "2026/08/14",
         "input": [
           "text",
           "image",
@@ -7545,6 +8080,14 @@
           "IFEval": 0.945,
           "MMLU Pro": 0.871
         },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "Qwen 3.7 Max",
+          "SWE-Bench Verified": "Qwen 3.7 Max",
+          "GDPval-AA 2": "Inkling",
+          "MCPAtlas": "DeepSeek V4 Pro 0813",
+          "IFEval": "Qwen 3.7 Max",
+          "MMLU Pro": "Qwen 3.7 Max"
+        },
         "betterThanCurrentModels": [
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7614,6 +8157,11 @@
           "OSWorld-Verified": 0.784,
           "MMMU Pro": 0.836
         },
+        "currentBenchmarksFrom": {
+          "DeepSWE 1.1": "Gemini 3.6 Flash",
+          "GDPval-AA 2": "GPT-5.6 Sol",
+          "CharXiv": "Gemini 3.6 Flash"
+        },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -7682,6 +8230,10 @@
           "OSWorld-Verified": 0.75,
           "MMMU Pro": 0.812,
           "BabyVision": 0.531
+        },
+        "currentBenchmarksFrom": {
+          "Cybergym": "GPT-5.5",
+          "BabyVision": "Qwen 3.7 Plus"
         },
         "betterThanCurrentModels": [
           "Qwen 3.8 27B",
@@ -7861,6 +8413,14 @@
           "AIME'26": 0.97,
           "NL2Repo": 0.472
         },
+        "currentBenchmarksFrom": {
+          "DeepSWE": "Hy 3",
+          "Toolathlon-Verified": "Qwen 3.8 Max",
+          "Terminal-Bench 2.1": "Qwen 3.8 Max",
+          "MCPAtlas": "GLM 5.2",
+          "AIME'26": "GLM 5.2",
+          "NL2Repo": "Qwen 3.8 Max"
+        },
         "betterThanCurrentModels": [
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7954,6 +8514,17 @@
           "AIME'26": 0.992,
           "NL2Repo": 0.489
         },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Verified": "Hy 3",
+          "SWE-Bench Multilingual": "Hy 3",
+          "Toolathlon-Verified": "Kimi K3",
+          "Terminal-Bench 3": "GLM 5.3",
+          "GDPval-AA 2": "Kimi K3",
+          "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813",
+          "Cybergym": "GLM 5.3",
+          "IMOAnswerBench": "Hy 3",
+          "NL2Repo": "GLM 5.3"
+        },
         "betterThanCurrentModels": [
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -8012,6 +8583,11 @@
           "OSWorld-Verified": 0.83,
           "gdp.pdf": 0.22
         },
+        "currentBenchmarksFrom": {
+          "Terminal-Bench 3": "Gemini 3.7 Flash",
+          "Agents' Last Exam(pass)": "Gemini 3.7 Flash",
+          "gdp.pdf": "Gemini 3.7 Flash"
+        },
         "betterThanCurrentModels": [
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -8063,6 +8639,10 @@
           "Humanity's Last Exam": 0.515,
           "Agents' Last Exam(pass)": 0.252,
           "Cybergym": 0.767
+        },
+        "currentBenchmarksFrom": {
+          "Humanity's Last Exam": "DeepSeek V4 Pro 0813",
+          "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
           "GLM 5.3",
@@ -8122,6 +8702,13 @@
           "OSWorld-Verified": 0.78,
           "MMMU Pro": 0.74,
           "BabyVision": 0.222
+        },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Multilingual": "Composer 2.5",
+          "IMOAnswerBench": "LongCat 2",
+          "MCPAtlas": "GPT-5.5",
+          "MMMU Pro": "Seed 2.1 Pro",
+          "BabyVision": "Seed 2.1 Pro"
         },
         "betterThanCurrentModels": [
           "GLM 5.3",
@@ -8259,6 +8846,10 @@
           "Terminal-Bench 2.1": 0.833,
           "GDPval-AA 2": 1526
         },
+        "currentBenchmarksFrom": {
+          "Terminal-Bench 3": "Grok 4.6",
+          "GDPval-AA 2": "Grok 4.6"
+        },
         "betterThanCurrentModels": [
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -8309,6 +8900,12 @@
           "Agents' Last Exam(pass)": 0.333,
           "CharXiv": 0.883,
           "OSWorld-Verified": 0.812
+        },
+        "currentBenchmarksFrom": {
+          "DeepSWE 1.1": "Gemini 3.6 Flash",
+          "Terminal-Bench 3": "Gemini 3.7 Flash",
+          "Agents' Last Exam(pass)": "Gemini 3.7 Flash",
+          "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
           "GLM 5.3",
@@ -8374,6 +8971,27 @@
           "BabyVision": 0.812,
           "NL2Repo": 0.697,
           "gdp.pdf": 0.225
+        },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "GPT-5.6 Sol",
+          "SWE-Bench Verified": "Hy 3",
+          "SWE-Bench Multilingual": "Hy 3",
+          "DeepSWE 1.1": "GPT-5.6 Sol",
+          "DeepSWE": "Hy 3",
+          "Toolathlon-Verified": "Kimi K3",
+          "Terminal-Bench 3": "GLM 5.3",
+          "BrowseComp": "GPT-5.6 Sol",
+          "GDPval-AA 2": "GPT-5.6 Sol",
+          "Agents' Last Exam(score)": "Qwen 3.8 Max",
+          "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813",
+          "CharXiv": "Qwen 3.8 Max",
+          "Cybergym": "DeepSeek V4 Pro 0813",
+          "IMOAnswerBench": "Hy 3",
+          "MCPAtlas": "Kimi K3",
+          "MMMU Pro": "Kimi K3",
+          "BabyVision": "Kimi K3",
+          "NL2Repo": "GLM 5.3",
+          "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
           "GLM 5.3",
@@ -8476,6 +9094,18 @@
           "BabyVision": 0.836,
           "gdp.pdf": 0.26
         },
+        "currentBenchmarksFrom": {
+          "SWE-Bench Verified": "Hy 3",
+          "DeepSWE": "Hy 3",
+          "Toolathlon-Verified": "Kimi K3",
+          "Terminal-Bench 2.1": "GPT-5.6 Sol",
+          "GDPval-AA 2": "GPT-5.6 Sol",
+          "IMOAnswerBench": "Hy 3",
+          "IFEval": "LongCat 2",
+          "AIME'26": "GLM 5.2",
+          "BabyVision": "Kimi K3",
+          "gdp.pdf": "GPT-5.6 Sol"
+        },
         "betterThanCurrentModels": [
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -8524,6 +9154,9 @@
           "Tau 3 Banking": 0.243,
           "MMMU Pro": 0.784,
           "gdp.pdf": 0.227
+        },
+        "currentBenchmarksFrom": {
+          "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
           "GLM 5.3",
@@ -8709,6 +9342,10 @@
           "MMMU Pro": 0.807,
           "gdp.pdf": 0.247
         },
+        "currentBenchmarksFrom": {
+          "Terminal-Bench 3": "Gemini 3.7 Flash",
+          "Agents' Last Exam(pass)": "Gemini 3.7 Flash"
+        },
         "betterThanCurrentModels": [
           "GLM 5.3",
           "Grok 4.6",
@@ -8756,6 +9393,13 @@
           "MMMU Pro": 0.816,
           "BabyVision": 0.857,
           "NL2Repo": 0.58
+        },
+        "currentBenchmarksFrom": {
+          "DeepSWE": "Laguna S 2.1",
+          "Terminal-Bench 3": "GLM 5.3",
+          "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813",
+          "Cybergym": "DeepSeek V4 Pro 0813",
+          "NL2Repo": "GLM 5.3"
         },
         "betterThanCurrentModels": [
           "GLM 5.3",
@@ -8875,6 +9519,15 @@
           "BabyVision": 0.889,
           "gdp.pdf": 0.307
         },
+        "currentBenchmarksFrom": {
+          "Toolathlon-Verified": "Kimi K3",
+          "Terminal-Bench 3": "Grok 4.6",
+          "Humanity's Last Exam": "Kimi K3",
+          "CharXiv": "Qwen 3.8 Max",
+          "MCPAtlas": "Kimi K3",
+          "OSWorld-Verified": "Qwen 3.8 Max",
+          "BabyVision": "Kimi K3"
+        },
         "betterThanCurrentModels": [
           "Claude Opus 5",
           "Claude Fable 5"
@@ -8919,6 +9572,19 @@
           "MMMU Pro": 0.812,
           "BabyVision": 0.905,
           "gdp.pdf": 0.298
+        },
+        "currentBenchmarksFrom": {
+          "GPQA Diamond": "GPT-5.6 Sol",
+          "DeepSWE 1.1": "GPT-5.6 Sol",
+          "Toolathlon-Verified": "Kimi K3",
+          "Terminal-Bench 3": "Grok 4.6",
+          "BrowseComp": "GPT-5.6 Sol",
+          "GDPval-AA 2": "GPT-5.6 Sol",
+          "CharXiv": "Qwen 3.8 Max",
+          "MCPAtlas": "Kimi K3",
+          "MMMU Pro": "Kimi K3",
+          "BabyVision": "Kimi K3",
+          "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
           "Claude Opus 5"
@@ -8988,5 +9654,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-08-15T00:46:20.600Z"
+  "updatedAt": "2026-08-15T01:51:43.010Z"
 }

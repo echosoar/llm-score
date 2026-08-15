@@ -10,11 +10,19 @@ const scorePi = 5;
 // strip from
 data.benchmarks.forEach(benchmark => {
   const newScores = {};
+  const fromSources = {};
   Object.keys(benchmark.scores).forEach(modelName => {
     const newModelName = modelName.replace(/\(.*\)/, '').trim();
     newScores[newModelName] = benchmark.scores[modelName];
+    const fromMatch = modelName.match(/\(from\s+(.+)\)/i);
+    if (fromMatch) {
+      fromSources[newModelName] = fromMatch[1].trim();
+    }
   });
   benchmark.scores = newScores;
+  if (Object.keys(fromSources).length) {
+    benchmark.fromSources = fromSources;
+  }
 });
 
 data.models.forEach(model => {
@@ -26,6 +34,17 @@ data.models.forEach(model => {
         }
     });
     model.currentBenchmarksScores = currentBenchmarksScores;
+
+    const currentBenchmarksFrom = {};
+    data.benchmarks.forEach(benchmark => {
+        const from = benchmark.fromSources?.[model.model];
+        if (from !== undefined) {
+            currentBenchmarksFrom[benchmark.name] = from;
+        }
+    });
+    if (Object.keys(currentBenchmarksFrom).length) {
+        model.currentBenchmarksFrom = currentBenchmarksFrom;
+    }
 
     const sameRanksModels = {};
     data.models.forEach(otherModel => {

@@ -3,7 +3,7 @@
         {
             "brand": "Alibaba",
             "model": "Qwen 3.8 27B",
-            "time": "2026/08/03",
+            "time": "2026/08/14",
             "input": ["text", "image", "video"],
             "output": ["text"],
             "context": 262000,
