@@ -1,6 +1,17 @@
 {
     "models": [
         {
+            "brand": "Alibaba",
+            "model": "Qwen 3.8 27B",
+            "time": "2026/08/03",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "context": 262000,
+            "params": 2400,
+            "active": 27,
+            "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
+        },
+        {
             "brand": "Z.ai",
             "model": "GLM 5.3",
             "time": "2026/08/14",
@@ -37,7 +48,7 @@
             "inputPrice": "￥4.5",
             "inputCachedPrice": "￥0.15",
             "outputPrice": "￥13.5",
-            "url": "https://api-docs.deepseek.com/quick_start/pricing"
+            "url": "https://api-docs.deepseek.com/zh-cn/updates/#%E6%97%B6%E9%97%B4-2026-08-13"
         },
         {
             "brand": "xAI",
@@ -1344,6 +1355,7 @@
         {
             "name": "GPQA Diamond",
             "scores": {
+                "Qwen 3.8 27B": 0.892,
                 "Muse Glimmer": 0.835,
                 "Qwen 3.8 Max": 0.926,
                 "Kimi K3": 0.935,
@@ -1430,8 +1442,9 @@
         {
             "name": "SWE-Bench Pro",
             "scores": {
+                "Qwen 3.8 27B": 0.617,
                 "Muse Glimmer": 0.512,
-                 "Gemma 4 31B(from Muse Glimmer)": 0.369,
+                "Gemma 4 31B(from Muse Glimmer)": 0.369,
                 "Qwen 3.8 Max": 0.677,
                 "Inkling-Small": 0.559,
                 "Ling-3.0-flash": 0.566,
@@ -1561,6 +1574,9 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Qwen 3.8 27B": 0.422,
+                "Qwen 3.6 27B(from Qwen 3.8 27B)": 0.133,
+                "Qwen 3.7 Plus(from Qwen 3.8 27B)": 0.142,
                 "GLM 5.3": 0.669,
                 "Gemini 3.7 Flash": 0.653,
                 "Grok 4.6": 0.659,
@@ -1642,13 +1658,15 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "Qwen 3.8 27B": 0.73,
+                "Qwen 3.7 Plus(from Qwen 3.8 27B)": 0.64,
                 "GLM 5.3": 0.882,
                 "Gemini 3.7 Flash": 0.858,
                 "DeepSeek V4 Pro 0813": 0.879,
                 "Agnes 2.5 Pro": 0.67,
                 "Muse Glimmer": 0.517,
                 "Gemma 4 31B(from Muse Glimmer)": 0.434,
-                "Qwen 3.6 27B(from Muse Glimmer)": 0.607,
+                "Qwen 3.6 27B(from Qwen 3.8 27B)": 0.634,
                 "Muse Spark 1.2": 0.829,
                 "Qwen 3.8 Max": 0.866,
                 "DeepSeek V4 Flash 0731": 0.827,
@@ -1834,6 +1852,7 @@
         {
             "name": "Humanity's Last Exam",
             "scores": {
+                "Qwen 3.8 27B": 0.308,
                 "GLM 5.3": 0.625,
                 "DeepSeek V4 Pro 0813": 0.6,
                 "DeepSeek V4 Flash 0731(from DeepSeek V4 Pro 0813)": 0.515,
@@ -1894,6 +1913,7 @@
             "name": "Agents' Last Exam(score)",
             "info": "score",
             "scores": {
+                "Qwen 3.8 27B": 0.429,
                 "Qwen 3.8 Max": 0.524,
                 "Qwen 3.7 Max": 0.346,
                 "GPT-5.6 Sol": 0.536,
@@ -1908,6 +1928,7 @@
             "name": "Agents' Last Exam(pass)",
             "info": "pass",
             "scores": {
+                "Qwen 3.8 27B": 0.204,
                 "GLM 5.3": 0.285,
                 "Gemini 3.7 Flash": 0.263,
                 "Gemini 3.6 Flash(from Gemini 3.7 Flash)": 0.242,
@@ -1926,6 +1947,7 @@
             "name": "CharXiv",
             "info": "RQ score w/ python",
             "scores": {
+                "Qwen 3.8 27B": 0.902,
                 "Gemini 3.7 Flash": 0.887,
                 "Muse Glimmer": 0.788,
                 "Gemma 4 31B(from Muse Glimmer)": 0.777,
@@ -2010,13 +2032,14 @@
                 "Gemini 3.5 Flash": 0.836,
                 "DeepSeek V4 Pro Preview": 0.736,
                 "DeepSeek V4 Flash Preview": 0.69,
-                "GPT-5.5(from Kimi K3)": 0.828,
+                "GPT-5.5": 0.753,
                 "Kimi K2.6(from DeepSeek V4 Pro 0813)": 0.666,
                 "GLM 5.1(from GLM 5.2)": 0.718,
                 "GPT-5.4": 0.672,
                 "Gemini 3.1 Pro": 0.692,
                 "Claude Sonnet 4.6": 0.613,
                 "GLM 5": 0.678,
+                "Claude Opus 4.7(from GPT-5.5)": 0.791,
                 "Claude Opus 4.6(from Claude Sonnet 4.6)": 0.595,
                 "Claude Sonnet 4.5(from Claude Sonnet 4.6)": 0.438,
                 "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.541,
@@ -2045,6 +2068,7 @@
         {
             "name": "OSWorld-Verified",
             "scores": {
+                "Qwen 3.8 27B": 0.843,
                 "Muse Glimmer": 0.659,
                 "Qwen 3.8 Max": 0.861,
                 "Gemini 3.6 Flash": 0.83,
@@ -2237,6 +2261,7 @@
             "name": "BabyVision",
             "info": "with tool",
             "scores": {
+                "Qwen 3.8 27B": 0.856,
                 "Qwen 3.8 Max": 0.913,
                 "Kimi K3": 0.857,
                 "GPT-5.6 Sol(from Kimi K3)": 0.889,
@@ -2251,6 +2276,36 @@
                 "Gemini 3.1 Pro(from Muse Spark 1.1)": 0.515,
                 "Qwen 3.6 27B": 0.374,
                 "Claude Opus 4.6(from Qwen 3.7 Plus)": 0.126
+            }
+        },
+        {
+            "name": "NL2Repo",
+            "scores": {
+                "Qwen 3.8 27B": 0.423,
+                "Qwen 3.6 27B(from Qwen 3.8 27B)": 0.362,
+                "Qwen 3.7 Plus(from Qwen 3.8 27B)": 0.411,
+                "GLM 5.3": 0.58,
+                "GLM 5.2(from GLM 5.3)": 0.489,
+                "Kimi K3(from GLM 5.3)": 0.58,
+                "Claude Opus 4.8(from GLM 5.3)": 0.697,
+                "Claude Opus 4.6(from Qwen 3.8 27B)": 0.476,
+                "DeepSeek V4 Pro 0813": 0.615,
+                "Qwen 3.8 Max": 0.559,
+                "Qwen 3.7 Max(from Qwen 3.8 Max)": 0.472
+            }
+        },
+        {
+            "name": "gdp.pdf",
+            "scores": {
+                "GPT-5.6 Sol": 0.307,
+                "GPT-5.6 Terra": 0.247,
+                "GPT-5.6 Luna": 0.227,
+                "GPT-5.5(from GPT-5.6 Sol)": 0.26,
+                "Claude Fable 5(from GPT-5.6 Sol)": 0.298,
+                "Claude Opus 4.8(from GPT-5.6 Sol)": 0.225,
+                "Gemini 3.7 Flash": 0.34,
+                "Gemini 3.6 Flash(from Gemini 3.7 Flash)": 0.22,
+                "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.167
             }
         }
     ],
