@@ -280,6 +280,7 @@
     {
       "name": "DeepSWE 1.1",
       "scores": {
+        "DeepSeek V4 Flash Vision Exp": 0.593,
         "Qwen 3.8 27B": 0.422,
         "Qwen 3.6 27B": 0.133,
         "Qwen 3.7 Plus": 0.142,
@@ -346,6 +347,7 @@
     {
       "name": "Toolathlon-Verified",
       "scores": {
+        "DeepSeek V4 Flash Vision Exp": 0.759,
         "GLM 5.3": 0.73,
         "DeepSeek V4 Pro 0813": 0.741,
         "Qwen 3.8 Max": 0.725,
@@ -405,6 +407,7 @@
     {
       "name": "Terminal-Bench 2.1",
       "scores": {
+        "DeepSeek V4 Flash Vision Exp": 0.839,
         "Qwen 3.8 27B": 0.73,
         "Qwen 3.7 Plus": 0.64,
         "GLM 5.3": 0.882,
@@ -727,6 +730,7 @@
       "name": "Agents' Last Exam(pass)",
       "info": "pass",
       "scores": {
+        "DeepSeek V4 Flash Vision Exp": 0.273,
         "Qwen 3.8 27B": 0.204,
         "GLM 5.3": 0.285,
         "Gemini 3.7 Flash": 0.263,
@@ -795,6 +799,7 @@
     {
       "name": "Cybergym",
       "scores": {
+        "DeepSeek V4 Flash Vision Exp": 0.753,
         "GLM 5.3": 0.845,
         "GLM 5.2": 0.772,
         "DeepSeek V4 Pro 0813": 0.833,
@@ -1230,6 +1235,7 @@
     {
       "name": "NL2Repo",
       "scores": {
+        "DeepSeek V4 Flash Vision Exp": 0.577,
         "Qwen 3.8 27B": 0.423,
         "Qwen 3.6 27B": 0.362,
         "Qwen 3.7 Plus": 0.411,
@@ -4343,6 +4349,7 @@
           "AIME'26": "Muse Glimmer"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -4796,6 +4803,7 @@
           "GDPval-AA 2": "Gemini 3.5 Flash Lite"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -4972,6 +4980,7 @@
           "AIME'26": 0.947
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -5296,6 +5305,7 @@
           "Humanity's Last Exam": "Step 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -5453,6 +5463,7 @@
           "MCPAtlas": 0.612
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -5542,6 +5553,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -5748,6 +5760,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -5853,6 +5866,7 @@
           "MMMU Pro": "Gemini 3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
           "Qwen 3.8 Max",
@@ -5949,6 +5963,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -6031,6 +6046,7 @@
           "Tau 3 Banking": 0.116
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -6191,6 +6207,7 @@
           "BrowseComp": "MiniMax M3"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -6273,6 +6290,7 @@
           "OSWorld-Verified": 0.74
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -6364,6 +6382,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -6519,6 +6538,7 @@
           "AIME'26": 0.955
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -6600,6 +6620,7 @@
           "CharXiv": "Muse Spark 1.1"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
           "Qwen 3.8 Max",
@@ -6913,6 +6934,7 @@
           "MCPAtlas": 0.655
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7001,6 +7023,7 @@
           "GDPval-AA 2": "Claude Sonnet 5"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7072,6 +7095,7 @@
           "Humanity's Last Exam": 0.472
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7288,6 +7312,7 @@
           "AIME'26": "GLM 5.2"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7371,6 +7396,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7465,6 +7491,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -7606,6 +7633,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7669,6 +7697,7 @@
           "IFEval": 0.9
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7806,6 +7835,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7878,6 +7908,7 @@
           "DeepSWE": "GLM 5.2"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -7944,6 +7975,7 @@
           "DeepSWE": "Hy 3"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -8007,6 +8039,7 @@
           "NL2Repo": 0.423
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -8163,6 +8196,7 @@
           "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -8198,6 +8232,150 @@
         "rank": 42.04177725611245
       },
       "rank": 42.04177725611245
+    },
+    {
+      "modelInfo": {
+        "brand": "腾讯",
+        "model": "Hy 3",
+        "time": "2026/07/06",
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 262000,
+        "inputPrice": "￥1",
+        "inputCachedPrice": "￥0.25",
+        "outputPrice": "￥4",
+        "url": "https://hy.tencent.com/research/hy3",
+        "currentBenchmarksScores": {
+          "GPQA Diamond": 0.904,
+          "SWE-Bench Pro": 0.579,
+          "SWE-Bench Verified": 0.78,
+          "SWE-Bench Multilingual": 0.758,
+          "DeepSWE": 0.28,
+          "Terminal-Bench 2.1": 0.717,
+          "BrowseComp": 0.842,
+          "Humanity's Last Exam": 0.532,
+          "IMOAnswerBench": 0.9,
+          "MCPAtlas": 0.791
+        },
+        "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
+          "GLM 5.3",
+          "Gemini 3.7 Flash",
+          "DeepSeek V4 Pro 0813",
+          "Muse Spark 1.2",
+          "Qwen 3.8 Max",
+          "DeepSeek V4 Flash 0731",
+          "Claude Opus 5",
+          "Gemini 3.6 Flash",
+          "Laguna S 2.1",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Muse Spark 1.1",
+          "Grok 4.5",
+          "Claude Sonnet 5",
+          "GLM 5.2",
+          "Claude Fable 5",
+          "Claude Opus 4.8",
+          "Qwen 3.7 Max",
+          "Composer 2.5",
+          "ERNIE 5.1",
+          "GPT-5.5",
+          "Kimi K2.6",
+          "Claude Opus 4.7"
+        ],
+        "rank": 42.97727670984198
+      },
+      "rank": 42.97727670984198
+    },
+    {
+      "modelInfo": {
+        "brand": "Poolside",
+        "model": "Laguna S 2.1",
+        "time": "2026/07/21",
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "params": 118,
+        "active": 8,
+        "inputPrice": "$0.1",
+        "inputCachedPrice": "$0.01",
+        "outputPrice": "$0.2",
+        "url": "https://poolside.ai/blog/introducing-laguna-s-2-1",
+        "currentBenchmarksScores": {
+          "SWE-Bench Pro": 0.594,
+          "SWE-Bench Multilingual": 0.785,
+          "DeepSWE": 0.404,
+          "Terminal-Bench 2.1": 0.702
+        },
+        "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
+          "Qwen 3.8 27B",
+          "GLM 5.3",
+          "Gemini 3.7 Flash",
+          "DeepSeek V4 Pro 0813",
+          "Muse Spark 1.2",
+          "Qwen 3.8 Max",
+          "DeepSeek V4 Flash 0731",
+          "Gemini 3.6 Flash",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Muse Spark 1.1",
+          "Grok 4.5",
+          "Claude Sonnet 5",
+          "LongCat 2",
+          "GLM 5.2",
+          "Claude Fable 5",
+          "Claude Opus 4.8",
+          "Gemini 3.5 Flash",
+          "Composer 2.5",
+          "GPT-5.5",
+          "Claude Opus 4.7"
+        ],
+        "rank": 43.817916595473456
+      },
+      "rank": 43.817916595473456
+    },
+    {
+      "modelInfo": {
+        "brand": "Cursor",
+        "model": "Composer 2.5",
+        "time": "2026/05/18",
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ],
+        "inputPrice": "$0.5",
+        "outputPrice": "$2.5",
+        "url": "https://cursor.com/cn/blog/composer-2-5",
+        "currentBenchmarksScores": {
+          "SWE-Bench Multilingual": 0.798,
+          "Terminal-Bench 2": 0.693
+        },
+        "betterThanCurrentModels": [
+          "GLM 5.2",
+          "Qwen 3.7 Plus",
+          "Claude Opus 4.8",
+          "GPT-5.5",
+          "Claude Opus 4.7",
+          "GPT-5.4"
+        ],
+        "rank": 43.90071914324415
+      },
+      "rank": 43.90071914324415
     },
     {
       "modelInfo": {
@@ -8262,121 +8440,9 @@
           "Claude Opus 4.7",
           "GLM 5.1"
         ],
-        "rank": 42.62989170460523
+        "rank": 44.31918956171457
       },
-      "rank": 42.62989170460523
-    },
-    {
-      "modelInfo": {
-        "brand": "腾讯",
-        "model": "Hy 3",
-        "time": "2026/07/06",
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 262000,
-        "inputPrice": "￥1",
-        "inputCachedPrice": "￥0.25",
-        "outputPrice": "￥4",
-        "url": "https://hy.tencent.com/research/hy3",
-        "currentBenchmarksScores": {
-          "GPQA Diamond": 0.904,
-          "SWE-Bench Pro": 0.579,
-          "SWE-Bench Verified": 0.78,
-          "SWE-Bench Multilingual": 0.758,
-          "DeepSWE": 0.28,
-          "Terminal-Bench 2.1": 0.717,
-          "BrowseComp": 0.842,
-          "Humanity's Last Exam": 0.532,
-          "IMOAnswerBench": 0.9,
-          "MCPAtlas": 0.791
-        },
-        "betterThanCurrentModels": [
-          "GLM 5.3",
-          "Gemini 3.7 Flash",
-          "DeepSeek V4 Pro 0813",
-          "Muse Spark 1.2",
-          "Qwen 3.8 Max",
-          "DeepSeek V4 Flash 0731",
-          "Claude Opus 5",
-          "Gemini 3.6 Flash",
-          "Laguna S 2.1",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "GPT-5.6 Luna",
-          "Muse Spark 1.1",
-          "Grok 4.5",
-          "Claude Sonnet 5",
-          "GLM 5.2",
-          "Claude Fable 5",
-          "Claude Opus 4.8",
-          "Qwen 3.7 Max",
-          "Composer 2.5",
-          "ERNIE 5.1",
-          "GPT-5.5",
-          "Kimi K2.6",
-          "Claude Opus 4.7"
-        ],
-        "rank": 42.90464249115957
-      },
-      "rank": 42.90464249115957
-    },
-    {
-      "modelInfo": {
-        "brand": "Poolside",
-        "model": "Laguna S 2.1",
-        "time": "2026/07/21",
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 1000000,
-        "params": 118,
-        "active": 8,
-        "inputPrice": "$0.1",
-        "inputCachedPrice": "$0.01",
-        "outputPrice": "$0.2",
-        "url": "https://poolside.ai/blog/introducing-laguna-s-2-1",
-        "currentBenchmarksScores": {
-          "SWE-Bench Pro": 0.594,
-          "SWE-Bench Multilingual": 0.785,
-          "DeepSWE": 0.404,
-          "Terminal-Bench 2.1": 0.702
-        },
-        "betterThanCurrentModels": [
-          "Qwen 3.8 27B",
-          "GLM 5.3",
-          "Gemini 3.7 Flash",
-          "DeepSeek V4 Pro 0813",
-          "Muse Spark 1.2",
-          "Qwen 3.8 Max",
-          "DeepSeek V4 Flash 0731",
-          "Gemini 3.6 Flash",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "GPT-5.6 Luna",
-          "Muse Spark 1.1",
-          "Grok 4.5",
-          "Claude Sonnet 5",
-          "LongCat 2",
-          "GLM 5.2",
-          "Claude Fable 5",
-          "Claude Opus 4.8",
-          "Gemini 3.5 Flash",
-          "Composer 2.5",
-          "GPT-5.5",
-          "Claude Opus 4.7"
-        ],
-        "rank": 43.745282376791046
-      },
-      "rank": 43.745282376791046
+      "rank": 44.31918956171457
     },
     {
       "modelInfo": {
@@ -8422,6 +8488,7 @@
           "NL2Repo": "Qwen 3.8 Max"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -8445,39 +8512,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 43.94892133043
+        "rank": 44.67591644237182
       },
-      "rank": 43.94892133043
-    },
-    {
-      "modelInfo": {
-        "brand": "Cursor",
-        "model": "Composer 2.5",
-        "time": "2026/05/18",
-        "input": [
-          "text"
-        ],
-        "output": [
-          "text"
-        ],
-        "inputPrice": "$0.5",
-        "outputPrice": "$2.5",
-        "url": "https://cursor.com/cn/blog/composer-2-5",
-        "currentBenchmarksScores": {
-          "SWE-Bench Multilingual": 0.798,
-          "Terminal-Bench 2": 0.693
-        },
-        "betterThanCurrentModels": [
-          "GLM 5.2",
-          "Qwen 3.7 Plus",
-          "Claude Opus 4.8",
-          "GPT-5.5",
-          "Claude Opus 4.7",
-          "GPT-5.4"
-        ],
-        "rank": 44.044706771043025
-      },
-      "rank": 44.044706771043025
+      "rank": 44.67591644237182
     },
     {
       "modelInfo": {
@@ -8526,6 +8563,7 @@
           "NL2Repo": "GLM 5.3"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -8547,9 +8585,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 44.24520802417586
+        "rank": 44.93691413805804
       },
-      "rank": 44.24520802417586
+      "rank": 44.93691413805804
     },
     {
       "modelInfo": {
@@ -8589,6 +8627,7 @@
           "gdp.pdf": "Gemini 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -8609,9 +8648,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 44.66408440213152
+        "rank": 45.355790516013705
       },
-      "rank": 44.66408440213152
+      "rank": 45.355790516013705
     },
     {
       "modelInfo": {
@@ -8645,6 +8684,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -8665,9 +8705,47 @@
           "Claude Opus 4.7",
           "GPT-5.4"
         ],
-        "rank": 45.017055745362605
+        "rank": 45.70876185924479
       },
-      "rank": 45.017055745362605
+      "rank": 45.70876185924479
+    },
+    {
+      "modelInfo": {
+        "brand": "Moonshot",
+        "model": "Kimi K2.7 Code",
+        "time": "2026/06/12",
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 262144,
+        "generate": 262144,
+        "inputPrice": "$0.95",
+        "inputCachedPrice": "$0.19",
+        "outputPrice": "$4",
+        "url": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
+        "currentBenchmarksScores": {
+          "MCPAtlas": 0.76
+        },
+        "betterThanCurrentModels": [
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "Muse Spark 1.1",
+          "Hy 3",
+          "GLM 5.2",
+          "Claude Fable 5",
+          "Claude Opus 4.8",
+          "Qwen 3.7 Max",
+          "Gemini 3.5 Flash",
+          "Claude Opus 4.7"
+        ],
+        "rank": 45.70876185924479
+      },
+      "rank": 45.70876185924479
     },
     {
       "modelInfo": {
@@ -8728,47 +8806,9 @@
           "Claude Opus 4.8",
           "GPT-5.5"
         ],
-        "rank": 45.21476843254378
+        "rank": 45.91270922766584
       },
-      "rank": 45.21476843254378
-    },
-    {
-      "modelInfo": {
-        "brand": "Moonshot",
-        "model": "Kimi K2.7 Code",
-        "time": "2026/06/12",
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 262144,
-        "generate": 262144,
-        "inputPrice": "$0.95",
-        "inputCachedPrice": "$0.19",
-        "outputPrice": "$4",
-        "url": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
-        "currentBenchmarksScores": {
-          "MCPAtlas": 0.76
-        },
-        "betterThanCurrentModels": [
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "Muse Spark 1.1",
-          "Hy 3",
-          "GLM 5.2",
-          "Claude Fable 5",
-          "Claude Opus 4.8",
-          "Qwen 3.7 Max",
-          "Gemini 3.5 Flash",
-          "Claude Opus 4.7"
-        ],
-        "rank": 45.21476843254378
-      },
-      "rank": 45.21476843254378
+      "rank": 45.91270922766584
     },
     {
       "modelInfo": {
@@ -8801,6 +8841,7 @@
           "BabyVision": 0.763
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -8817,9 +8858,9 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 46.01082106412272
+        "rank": 50.38937643770576
       },
-      "rank": 46.01082106412272
+      "rank": 50.38937643770576
     },
     {
       "modelInfo": {
@@ -8851,6 +8892,7 @@
           "GDPval-AA 2": "Grok 4.6"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -8867,9 +8909,9 @@
           "Claude Opus 4.8",
           "GPT-5.5"
         ],
-        "rank": 46.188180611756664
+        "rank": 50.5667359853397
       },
-      "rank": 46.188180611756664
+      "rank": 50.5667359853397
     },
     {
       "modelInfo": {
@@ -8908,6 +8950,7 @@
           "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -8923,9 +8966,55 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 46.48962228934513
+        "rank": 50.86817766292816
       },
-      "rank": 46.48962228934513
+      "rank": 50.86817766292816
+    },
+    {
+      "modelInfo": {
+        "brand": "DeepSeek",
+        "model": "DeepSeek V4 Flash Vision Exp",
+        "time": "2026/08/21",
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "generate": 384000,
+        "inputPrice": "￥1.5",
+        "inputCachedPrice": "￥0.05",
+        "outputPrice": "￥4.5",
+        "url": "https://api-docs.deepseek.com/updates/#deepseek-v4-flash-vision-exp-release",
+        "currentBenchmarksScores": {
+          "DeepSWE 1.1": 0.593,
+          "Toolathlon-Verified": 0.759,
+          "Terminal-Bench 2.1": 0.839,
+          "Agents' Last Exam(pass)": 0.273,
+          "Cybergym": 0.753,
+          "NL2Repo": 0.577
+        },
+        "betterThanCurrentModels": [
+          "GLM 5.3",
+          "Gemini 3.7 Flash",
+          "DeepSeek V4 Pro 0813",
+          "Grok 4.6",
+          "Claude Opus 5",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Claude Fable 5",
+          "Claude Opus 4.8",
+          "GPT-5.5",
+          "Claude Opus 4.7",
+          "GPT-5.4"
+        ],
+        "rank": 51.22237887906967
+      },
+      "rank": 51.22237887906967
     },
     {
       "modelInfo": {
@@ -9007,9 +9096,9 @@
           "Claude Fable 5",
           "GPT-5.5"
         ],
-        "rank": 47.06988393555338
+        "rank": 51.55347428310672
       },
-      "rank": 47.06988393555338
+      "rank": 51.55347428310672
     },
     {
       "modelInfo": {
@@ -9036,6 +9125,7 @@
           "GDPval-AA 2": 1631
         },
         "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -9048,9 +9138,9 @@
           "Claude Fable 5",
           "GPT-5.5"
         ],
-        "rank": 47.13087403257062
+        "rank": 51.61446438012396
       },
-      "rank": 47.13087403257062
+      "rank": 51.61446438012396
     },
     {
       "modelInfo": {
@@ -9121,9 +9211,9 @@
           "Kimi K2.7 Code",
           "Claude Fable 5"
         ],
-        "rank": 47.53691800761521
+        "rank": 52.02050835516856
       },
-      "rank": 47.53691800761521
+      "rank": 52.02050835516856
     },
     {
       "modelInfo": {
@@ -9172,9 +9262,60 @@
           "GPT-5.5",
           "Gemini 3 Flash"
         ],
-        "rank": 47.80081982382199
+        "rank": 52.284410171375335
       },
-      "rank": 47.80081982382199
+      "rank": 52.284410171375335
+    },
+    {
+      "modelInfo": {
+        "brand": "Alibaba",
+        "model": "Qwen 3.8 Max",
+        "time": "2026/08/03",
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "generate": 131000,
+        "params": 2400,
+        "active": 95,
+        "inputPrice": "￥12",
+        "inputCachedPrice": "￥1.5",
+        "outputPrice": "￥36",
+        "url": "https://qwen.ai/blog?id=qwen3.8",
+        "currentBenchmarksScores": {
+          "GPQA Diamond": 0.926,
+          "SWE-Bench Pro": 0.677,
+          "DeepSWE 1.1": 0.566,
+          "Toolathlon-Verified": 0.725,
+          "Terminal-Bench 2.1": 0.866,
+          "Humanity's Last Exam": 0.562,
+          "Agents' Last Exam(score)": 0.524,
+          "CharXiv": 0.935,
+          "OSWorld-Verified": 0.861,
+          "MMMU Pro": 0.823,
+          "BabyVision": 0.913,
+          "NL2Repo": 0.559
+        },
+        "betterThanCurrentModels": [
+          "DeepSeek V4 Flash Vision Exp",
+          "GLM 5.3",
+          "DeepSeek V4 Pro 0813",
+          "Grok 4.6",
+          "Muse Spark 1.2",
+          "Claude Opus 5",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "Claude Fable 5"
+        ],
+        "rank": 52.481331773100656
+      },
+      "rank": 52.481331773100656
     },
     {
       "modelInfo": {
@@ -9217,59 +9358,9 @@
           "Claude Fable 5",
           "Muse Spark"
         ],
-        "rank": 49.077780748360006
+        "rank": 53.249883009849775
       },
-      "rank": 49.077780748360006
-    },
-    {
-      "modelInfo": {
-        "brand": "Alibaba",
-        "model": "Qwen 3.8 Max",
-        "time": "2026/08/03",
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 1000000,
-        "generate": 131000,
-        "params": 2400,
-        "active": 95,
-        "inputPrice": "￥12",
-        "inputCachedPrice": "￥1.5",
-        "outputPrice": "￥36",
-        "url": "https://qwen.ai/blog?id=qwen3.8",
-        "currentBenchmarksScores": {
-          "GPQA Diamond": 0.926,
-          "SWE-Bench Pro": 0.677,
-          "DeepSWE 1.1": 0.566,
-          "Toolathlon-Verified": 0.725,
-          "Terminal-Bench 2.1": 0.866,
-          "Humanity's Last Exam": 0.562,
-          "Agents' Last Exam(score)": 0.524,
-          "CharXiv": 0.935,
-          "OSWorld-Verified": 0.861,
-          "MMMU Pro": 0.823,
-          "BabyVision": 0.913,
-          "NL2Repo": 0.559
-        },
-        "betterThanCurrentModels": [
-          "GLM 5.3",
-          "DeepSeek V4 Pro 0813",
-          "Grok 4.6",
-          "Muse Spark 1.2",
-          "Claude Opus 5",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "Claude Fable 5"
-        ],
-        "rank": 49.236378257577584
-      },
-      "rank": 49.236378257577584
+      "rank": 53.249883009849775
     },
     {
       "modelInfo": {
@@ -9307,9 +9398,9 @@
           "GPT-5.6 Luna",
           "Claude Fable 5"
         ],
-        "rank": 49.5490271712686
+        "rank": 53.372260632227395
       },
-      "rank": 49.5490271712686
+      "rank": 53.372260632227395
     },
     {
       "modelInfo": {
@@ -9354,9 +9445,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 50.04788219705379
+        "rank": 53.871115658012585
       },
-      "rank": 50.04788219705379
+      "rank": 53.871115658012585
     },
     {
       "modelInfo": {
@@ -9409,9 +9500,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 50.16515734740708
+        "rank": 53.98839080836588
       },
-      "rank": 50.16515734740708
+      "rank": 53.98839080836588
     },
     {
       "modelInfo": {
@@ -9442,9 +9533,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 51.5281876128499
+        "rank": 55.351421073808694
       },
-      "rank": 51.5281876128499
+      "rank": 55.351421073808694
     },
     {
       "modelInfo": {
@@ -9479,9 +9570,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 51.71612637249383
+        "rank": 55.53935983345262
       },
-      "rank": 51.71612637249383
+      "rank": 55.53935983345262
     },
     {
       "modelInfo": {
@@ -9532,9 +9623,9 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 52.14380327420758
+        "rank": 55.96703673516637
       },
-      "rank": 52.14380327420758
+      "rank": 55.96703673516637
     },
     {
       "modelInfo": {
@@ -9589,9 +9680,9 @@
         "betterThanCurrentModels": [
           "Claude Opus 5"
         ],
-        "rank": 52.45885374094737
+        "rank": 56.28208720190616
       },
-      "rank": 52.45885374094737
+      "rank": 56.28208720190616
     },
     {
       "modelInfo": {
@@ -9619,9 +9710,9 @@
           "Humanity's Last Exam": 0.647
         },
         "betterThanCurrentModels": [],
-        "rank": 52.613096558214814
+        "rank": 56.4363300191736
       },
-      "rank": 52.613096558214814
+      "rank": 56.4363300191736
     }
   ],
   "priceMap": {
@@ -9654,5 +9745,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-08-15T01:51:43.010Z"
+  "updatedAt": "2026-08-24T00:16:26.765Z"
 }
