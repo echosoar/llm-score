@@ -1,6 +1,35 @@
 {
     "models": [
         {
+            "brand": "Alibaba",
+            "model": "Qwen 3.8 Flash Next",
+            "time": "2026/08/26",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 262144,
+            "params": 125,
+            "active": 6,
+            "inputPrice": "￥1",
+            "inputCachedPrice": "￥0.5",
+            "outputPrice": "￥3",
+            "url": "https://qwen.ai/blog?id=qwen3.8-flash-next"
+        },
+        {
+            "brand": "Z.ai",
+            "model": "GLM 5.3 Flash",
+            "time": "2026/08/26",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 163840,
+            "params": 320,
+            "active": 18,
+            "inputPrice": "￥0.8",
+            "inputCachedPrice": "￥0.23",
+            "outputPrice": "￥2.8",
+            "url": "https://z.ai/blog/glm-5.3-flash"
+        },
+        {
             "brand": "DeepSeek",
             "model": "DeepSeek V4 Flash Vision Exp",
             "time": "2026/08/21",
@@ -1368,6 +1397,7 @@
         {
             "name": "GPQA Diamond",
             "scores": {
+                "Qwen 3.8 Flash Next": 0.917,
                 "Qwen 3.8 27B": 0.892,
                 "Muse Glimmer": 0.835,
                 "Qwen 3.8 Max": 0.926,
@@ -1455,8 +1485,10 @@
         {
             "name": "SWE-Bench Pro",
             "scores": {
+                "Qwen 3.8 Flash Next": 0.625,
                 "Qwen 3.8 27B": 0.617,
                 "Muse Glimmer": 0.512,
+                "DeepSeek V4 Flash 0731(from Qwen 3.8 Flash Next)": 0.56,
                 "Gemma 4 31B(from Muse Glimmer)": 0.369,
                 "Qwen 3.8 Max": 0.677,
                 "Inkling-Small": 0.559,
@@ -1564,6 +1596,9 @@
          {
             "name": "SWE-Bench Multilingual",
             "scores": {
+                "Qwen 3.8 Flash Next": 0.81,
+                "Qwen 3.8 27B(from Qwen 3.8 Flash Next)": 0.738,
+                "Qwen 3.7 Plus(from Qwen 3.8 Flash Next)": 0.758,
                 "Ling-3.0-flash": 0.724,
                 "Laguna S 2.1": 0.785,
                 "Composer 2.5": 0.798,
@@ -1587,6 +1622,8 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "GLM 5.3 Flash": 0.634,
+                "Qwen 3.8 Flash Next": 0.587,
                 "DeepSeek V4 Flash Vision Exp": 0.593,
                 "Qwen 3.8 27B": 0.422,
                 "Qwen 3.6 27B(from Qwen 3.8 27B)": 0.133,
@@ -1634,6 +1671,10 @@
         {
             "name": "Toolathlon-Verified",
             "scores": {
+                "GLM 5.3 Flash": 0.784,
+                "Qwen 3.8 Flash Next": 0.735,
+                "Qwen 3.8 27B(from Qwen 3.8 Flash Next)": 0.671,
+                "Qwen 3.7 Plus(from Qwen 3.8 Flash Next)": 0.506,
                 "DeepSeek V4 Flash Vision Exp": 0.759,
                 "GLM 5.3": 0.73,
                 "DeepSeek V4 Pro 0813": 0.741,
@@ -1642,9 +1683,10 @@
                 "Inkling": 0.455,
                 "DeepSeek V4 Flash 0731": 0.703,
                 "Kimi K3": 0.732,
-                "GLM 5.2(from Kimi K3)": 0.599,
+                "GLM 5.2(from GLM 5.3 Flash)": 0.599,
                 "Claude Fable 5(from Kimi K3)": 0.779,
                 "GPT-5.6 Sol(from Kimi K3)": 0.749,
+                "GPT-5.6 Terra(from GLM 5.3 Flash)": 0.749,
                 "Claude Opus 4.8(from Kimi K3)": 0.762,
                 "GPT-5.5(from Kimi K3)": 0.735,
                 "Qwen 3.7 Max(from Qwen 3.8 Max)": 0.497,
@@ -1673,6 +1715,7 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "GLM 5.3 Flash": 0.843,
                 "DeepSeek V4 Flash Vision Exp": 0.839,
                 "Qwen 3.8 27B": 0.73,
                 "Qwen 3.7 Plus(from Qwen 3.8 27B)": 0.64,
@@ -1813,6 +1856,8 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "GLM 5.3 Flash": 1773,
+                "DeepSeek V4 Flash Vision Exp(from GLM 5.3 Flash)": 1675,
                 "GLM 5.3": 1769,
                 "Gemini 3.7 Flash": 1525,
                 "Grok 4.6": 1753,
@@ -1867,7 +1912,10 @@
         },
         {
             "name": "Humanity's Last Exam",
+            "info": "hle",
             "scores": {
+                "GLM 5.3 Flash": 0.553,
+                "Qwen 3.8 Flash Next": 0.359,
                 "Qwen 3.8 27B": 0.308,
                 "GLM 5.3": 0.625,
                 "DeepSeek V4 Pro 0813": 0.6,
@@ -1929,6 +1977,8 @@
             "name": "Agents' Last Exam(score)",
             "info": "score",
             "scores": {
+                "Qwen 3.8 Flash Next": 0.512,
+                "Qwen 3.8 27B(from Qwen 3.8 Flash Next)": 0.738,
                 "Qwen 3.8 27B": 0.429,
                 "Qwen 3.8 Max": 0.524,
                 "Qwen 3.7 Max": 0.346,
@@ -1944,6 +1994,8 @@
             "name": "Agents' Last Exam(pass)",
             "info": "pass",
             "scores": {
+                "GLM 5.3 Flash": 0.263,
+                "Qwen 3.8 Flash Next": 0.243,
                 "DeepSeek V4 Flash Vision Exp": 0.273,
                 "Qwen 3.8 27B": 0.204,
                 "GLM 5.3": 0.285,
@@ -1964,6 +2016,9 @@
             "name": "CharXiv",
             "info": "RQ score w/ python",
             "scores": {
+                "GLM 5.3 Flash": 0.894,
+                "DeepSeek V4 Flash Vision Exp(from GLM 5.3 Flash)": 0.804,
+                "Qwen 3.8 Flash Next": 0.906,
                 "Qwen 3.8 27B": 0.902,
                 "Gemini 3.7 Flash": 0.887,
                 "Muse Glimmer": 0.788,
@@ -2207,6 +2262,16 @@
             }   
         },
         {
+            "name": "IFBench",
+            "scores": {
+                "Qwen 3.8 Flash Next": 0.813,
+                "Qwen 3.8 27B(from Qwen 3.8 Flash Next)": 0.795,
+                "Qwen 3.7 Plus(from Qwen 3.8 Flash Next)": 0.791,
+                "DeepSeek V4 Flash 0731(from Qwen 3.8 Flash Next)": 0.792,
+                "Claude Opus 4.6(from Qwen 3.8 Flash Next)": 0.625
+            }
+        },
+        {
             "name": "MMLU Pro",
             "scores": {
                 "Qwen 3.7 Max": 0.896,
@@ -2299,6 +2364,8 @@
         {
             "name": "NL2Repo",
             "scores": {
+                "GLM 5.3 Flash": 0.563,
+                "Qwen 3.8 Flash Next": 0.481,
                 "DeepSeek V4 Flash Vision Exp": 0.577,
                 "Qwen 3.8 27B": 0.423,
                 "Qwen 3.6 27B(from Qwen 3.8 27B)": 0.362,
