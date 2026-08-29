@@ -1,6 +1,20 @@
 {
     "models": [
         {
+            "brand": "腾讯",
+            "model": "Hy 4 Preview",
+            "time": "2026/08/28",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "params": 770,
+            "active": 49,
+            "inputPrice": "￥6",
+            "inputCachedPrice": "￥0.3",
+            "outputPrice": "￥18",
+            "url": "https://hy.tencent.ai/research/hy4-preview"
+        },
+        {
             "brand": "Alibaba",
             "model": "Qwen 3.8 Flash Next",
             "time": "2026/08/26",
@@ -10,7 +24,7 @@
             "params": 125,
             "active": 6,
             "inputPrice": "￥1",
-            "inputCachedPrice": "￥0.5",
+            "inputCachedPrice": "￥0.1",
             "outputPrice": "￥3",
             "url": "https://qwen.ai/blog?id=qwen3.8-flash-next"
         },
@@ -1397,6 +1411,7 @@
         {
             "name": "GPQA Diamond",
             "scores": {
+                "Hy 4 Preview": 0.923,
                 "Qwen 3.8 Flash Next": 0.917,
                 "Qwen 3.8 27B": 0.892,
                 "Muse Glimmer": 0.835,
@@ -1485,6 +1500,7 @@
         {
             "name": "SWE-Bench Pro",
             "scores": {
+                "Hy 4 Preview": 0.657,
                 "Qwen 3.8 Flash Next": 0.625,
                 "Qwen 3.8 27B": 0.617,
                 "Muse Glimmer": 0.512,
@@ -1596,6 +1612,7 @@
          {
             "name": "SWE-Bench Multilingual",
             "scores": {
+                "Hy 4 Preview": 0.829,
                 "Qwen 3.8 Flash Next": 0.81,
                 "Qwen 3.8 27B(from Qwen 3.8 Flash Next)": 0.738,
                 "Qwen 3.7 Plus(from Qwen 3.8 Flash Next)": 0.758,
@@ -1622,6 +1639,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Hy 4 Preview": 0.643,
                 "GLM 5.3 Flash": 0.634,
                 "Qwen 3.8 Flash Next": 0.587,
                 "DeepSeek V4 Flash Vision Exp": 0.593,
@@ -1671,6 +1689,7 @@
         {
             "name": "Toolathlon-Verified",
             "scores": {
+                "Hy 4 Preview": 0.741,
                 "GLM 5.3 Flash": 0.784,
                 "Qwen 3.8 Flash Next": 0.735,
                 "Qwen 3.8 27B(from Qwen 3.8 Flash Next)": 0.671,
@@ -1715,6 +1734,7 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "Hy 4 Preview": 0.854,
                 "GLM 5.3 Flash": 0.843,
                 "DeepSeek V4 Flash Vision Exp": 0.839,
                 "Qwen 3.8 27B": 0.73,
@@ -1856,6 +1876,7 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "Hy 4 Preview": 1678,
                 "GLM 5.3 Flash": 1773,
                 "DeepSeek V4 Flash Vision Exp(from GLM 5.3 Flash)": 1675,
                 "GLM 5.3": 1769,
@@ -1912,8 +1933,9 @@
         },
         {
             "name": "Humanity's Last Exam",
-            "info": "hle",
+            "info": "hle with tool",
             "scores": {
+                "Hy 4 Preview": 0.554,
                 "GLM 5.3 Flash": 0.553,
                 "Qwen 3.8 Flash Next": 0.359,
                 "Qwen 3.8 27B": 0.308,
@@ -2045,6 +2067,7 @@
         {
             "name": "Cybergym",
             "scores": {
+                "Hy 4 Preview": 0.784,
                 "DeepSeek V4 Flash Vision Exp": 0.753,
                 "GLM 5.3": 0.845,
                 "GLM 5.2(from GLM 5.3)": 0.772,
@@ -2087,6 +2110,7 @@
             "name": "MCPAtlas",
             "group": "agentic",
             "scores": {
+                "Hy 4 Preview": 0.837,
                 "Muse Glimmer": 0.755,
                 "Ling-3.0-flash": 0.655,
                 "Kimi K3": 0.842,
@@ -2364,6 +2388,7 @@
         {
             "name": "NL2Repo",
             "scores": {
+                "Hy 4 Preview": 0.589,
                 "GLM 5.3 Flash": 0.563,
                 "Qwen 3.8 Flash Next": 0.481,
                 "DeepSeek V4 Flash Vision Exp": 0.577,

@@ -3,6 +3,7 @@
     {
       "name": "GPQA Diamond",
       "scores": {
+        "Hy 4 Preview": 0.923,
         "Qwen 3.8 Flash Next": 0.917,
         "Qwen 3.8 27B": 0.892,
         "Muse Glimmer": 0.835,
@@ -111,6 +112,7 @@
     {
       "name": "SWE-Bench Pro",
       "scores": {
+        "Hy 4 Preview": 0.657,
         "Qwen 3.8 Flash Next": 0.625,
         "Qwen 3.8 27B": 0.617,
         "Muse Glimmer": 0.512,
@@ -252,6 +254,7 @@
     {
       "name": "SWE-Bench Multilingual",
       "scores": {
+        "Hy 4 Preview": 0.829,
         "Qwen 3.8 Flash Next": 0.81,
         "Qwen 3.8 27B": 0.738,
         "Qwen 3.7 Plus": 0.758,
@@ -289,6 +292,7 @@
     {
       "name": "DeepSWE 1.1",
       "scores": {
+        "Hy 4 Preview": 0.643,
         "GLM 5.3 Flash": 0.634,
         "Qwen 3.8 Flash Next": 0.587,
         "DeepSeek V4 Flash Vision Exp": 0.593,
@@ -358,6 +362,7 @@
     {
       "name": "Toolathlon-Verified",
       "scores": {
+        "Hy 4 Preview": 0.741,
         "GLM 5.3 Flash": 0.784,
         "Qwen 3.8 Flash Next": 0.735,
         "Qwen 3.8 27B": 0.671,
@@ -426,6 +431,7 @@
     {
       "name": "Terminal-Bench 2.1",
       "scores": {
+        "Hy 4 Preview": 0.854,
         "GLM 5.3 Flash": 0.843,
         "DeepSeek V4 Flash Vision Exp": 0.839,
         "Qwen 3.8 27B": 0.73,
@@ -593,6 +599,7 @@
     {
       "name": "GDPval-AA 2",
       "scores": {
+        "Hy 4 Preview": 1678,
         "GLM 5.3 Flash": 1773,
         "DeepSeek V4 Flash Vision Exp": 1675,
         "GLM 5.3": 1769,
@@ -667,8 +674,9 @@
     },
     {
       "name": "Humanity's Last Exam",
-      "info": "hle",
+      "info": "hle with tool",
       "scores": {
+        "Hy 4 Preview": 0.554,
         "GLM 5.3 Flash": 0.553,
         "Qwen 3.8 Flash Next": 0.359,
         "Qwen 3.8 27B": 0.308,
@@ -833,6 +841,7 @@
     {
       "name": "Cybergym",
       "scores": {
+        "Hy 4 Preview": 0.784,
         "DeepSeek V4 Flash Vision Exp": 0.753,
         "GLM 5.3": 0.845,
         "GLM 5.2": 0.772,
@@ -889,6 +898,7 @@
       "name": "MCPAtlas",
       "group": "agentic",
       "scores": {
+        "Hy 4 Preview": 0.837,
         "Muse Glimmer": 0.755,
         "Ling-3.0-flash": 0.655,
         "Kimi K3": 0.842,
@@ -1285,6 +1295,7 @@
     {
       "name": "NL2Repo",
       "scores": {
+        "Hy 4 Preview": 0.589,
         "GLM 5.3 Flash": 0.563,
         "Qwen 3.8 Flash Next": 0.481,
         "DeepSeek V4 Flash Vision Exp": 0.577,
@@ -1362,6 +1373,7 @@
           "IFEval": "GPT-4.1"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -1469,6 +1481,7 @@
           "IFEval": "GPT-4.1"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -1571,6 +1584,7 @@
           "MMMU": "Llama 4 Scout"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -1682,6 +1696,7 @@
           "AIME'24": "Qwen 3 235B A22B"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -1795,6 +1810,7 @@
           "MMMU": 0.694
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -1884,6 +1900,7 @@
           "HumanEval-Mul": 0.773
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -1982,6 +1999,7 @@
           "AIME'25": "Kimi K2"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2087,6 +2105,7 @@
           "MMMU": "Llama 4 Maverick"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2181,6 +2200,7 @@
           "MMMU": "Llama 4 Behemoth"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2278,6 +2298,7 @@
           "IFEval": "GPT-4.1"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2387,6 +2408,7 @@
           "AIME'24": "Kimi K2"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2492,6 +2514,7 @@
           "HumanEval-Mul": "DeepSeek V3"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2594,6 +2617,7 @@
           "AIME'24": "Kimi K2"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2682,6 +2706,7 @@
           "MMMU": 0.734
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2773,6 +2798,7 @@
           "IFEval": "GPT-4.1"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -2937,6 +2963,7 @@
           "AIME'24": "Kimi K2"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -3033,6 +3060,7 @@
           "MMMU": 0.761
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -3112,6 +3140,7 @@
           "Humanity's Last Exam": 0.17
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -3207,6 +3236,7 @@
           "AIME'24": 0.696
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -3383,6 +3413,7 @@
           "Terminal-Bench 2": 0.357
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -3480,6 +3511,7 @@
           "MMMU Pro": 0.738
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -3572,6 +3604,7 @@
           "Humanity's Last Exam": 0.177
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -3662,6 +3695,7 @@
           "Humanity's Last Exam": 0.19
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -3790,6 +3824,7 @@
           "MMMU": "Claude Opus 4"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -3878,6 +3913,7 @@
           "Terminal-Bench 2": 0.375
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -3967,6 +4003,7 @@
           "Terminal-Bench 2": 0.4
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Ling-3.0-flash",
@@ -4047,6 +4084,7 @@
           "AIME'24": "Kimi K2"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -4148,6 +4186,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Agnes 2.5 Pro",
@@ -4247,6 +4286,7 @@
           "Humanity's Last Exam": 0.22
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -4350,6 +4390,7 @@
           "MMMU Pro": "Gemini 3.1 Flash Lite"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Muse Glimmer",
@@ -4440,6 +4481,7 @@
           "AIME'26": "Muse Glimmer"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -4541,6 +4583,7 @@
           "AIME'24": 0.839
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Qwen 3.8 Max",
@@ -4610,6 +4653,7 @@
           "Terminal-Bench 2": 0.46
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Qwen 3.8 Max",
@@ -4702,6 +4746,7 @@
           "IMOAnswerBench": 0.845
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -4799,6 +4844,7 @@
           "AIME'25": "Gemini 3 Pro"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -4903,6 +4949,7 @@
           "GDPval-AA 2": "Gemini 3.5 Flash Lite"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -4995,6 +5042,7 @@
           "MMMU": 0.842
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -5084,6 +5132,7 @@
           "AIME'26": 0.947
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -5182,6 +5231,7 @@
           "MCPAtlas": 0.52
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -5270,6 +5320,7 @@
           "MMMU Pro": 0.752
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Qwen 3.8 Max",
@@ -5349,6 +5400,7 @@
           "Terminal-Bench 2": 0.479
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Laguna S 2.1",
@@ -5416,6 +5468,7 @@
           "Humanity's Last Exam": "Step 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -5504,6 +5557,7 @@
           "MCPAtlas": 0.612
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -5596,6 +5650,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -5710,6 +5765,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -5796,6 +5852,7 @@
           "Humanity's Last Exam": 0.386
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -5891,6 +5948,7 @@
           "MMMU Pro": "Gemini 3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -5987,6 +6045,7 @@
           "GDPval-AA 2": "Inkling"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -6089,6 +6148,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -6174,6 +6234,7 @@
           "Tau 3 Banking": 0.116
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -6259,6 +6320,7 @@
           "Humanity's Last Exam": 0.4
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -6339,6 +6401,7 @@
           "BrowseComp": "MiniMax M3"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -6424,6 +6487,7 @@
           "OSWorld-Verified": 0.74
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -6518,6 +6582,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -6605,6 +6670,7 @@
           "CharXiv": "Muse Spark 1.1"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -6683,6 +6749,7 @@
           "BrowseComp": 0.763
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Qwen 3.8 Max",
@@ -6765,6 +6832,7 @@
           "AIME'26": 0.955
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -6849,6 +6917,7 @@
           "OSWorld-Verified": "Claude Sonnet 4.6"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -6925,6 +6994,7 @@
           "OSWorld-Verified": 0.622
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -6995,6 +7065,7 @@
           "MCPAtlas": 0.655
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -7086,6 +7157,7 @@
           "GDPval-AA 2": "Claude Sonnet 5"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -7160,6 +7232,7 @@
           "Humanity's Last Exam": 0.472
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
           "Qwen 3.8 27B",
@@ -7230,6 +7303,7 @@
           "MCPAtlas": 0.678
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -7297,6 +7371,7 @@
           "Tau 3 Banking": 0.066
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 27B",
           "Agnes 2.5 Pro",
@@ -7382,6 +7457,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -7460,6 +7536,7 @@
           "OSWorld-Verified": "Gemini 3.5 Flash Lite"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -7552,6 +7629,7 @@
           "AIME'26": "GLM 5.2"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -7644,6 +7722,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -7743,6 +7822,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -7807,6 +7887,7 @@
           "AIME'26": 0.95
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "Qwen 3.8 Max",
           "Kimi K3",
@@ -7887,6 +7968,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -7951,6 +8033,7 @@
           "Humanity's Last Exam": 0.48
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -8013,6 +8096,7 @@
           "IFEval": 0.9
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8087,6 +8171,7 @@
           "DeepSWE": "GLM 5.2"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8156,6 +8241,7 @@
           "DeepSWE": "Hy 3"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8231,6 +8317,7 @@
           "IFBench": "Qwen 3.8 Flash Next"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8315,6 +8402,7 @@
           "MMLU Pro": "Qwen 3.7 Max"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8391,6 +8479,7 @@
           "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8453,6 +8542,7 @@
           "MCPAtlas": 0.76
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Kimi K3",
           "GPT-5.6 Sol",
           "Muse Spark 1.1",
@@ -8497,6 +8587,7 @@
           "MCPAtlas": 0.791
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8573,6 +8664,7 @@
           "NL2Repo": "Qwen 3.8 Max"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8628,6 +8720,7 @@
           "Terminal-Bench 2.1": 0.702
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8678,6 +8771,7 @@
           "Terminal-Bench 2": 0.693
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.2",
           "Claude Opus 4.8",
@@ -8736,6 +8830,7 @@
           "NL2Repo": "GLM 5.3"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8800,6 +8895,7 @@
           "IFBench": "Qwen 3.8 Flash Next"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8869,6 +8965,7 @@
           "gdp.pdf": "Gemini 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -8912,7 +9009,7 @@
         "params": 125,
         "active": 6,
         "inputPrice": "￥1",
-        "inputCachedPrice": "￥0.5",
+        "inputCachedPrice": "￥0.1",
         "outputPrice": "￥3",
         "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
         "currentBenchmarksScores": {
@@ -8929,6 +9026,7 @@
           "NL2Repo": 0.481
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
@@ -8998,6 +9096,7 @@
           "BabyVision": "Qwen 3.7 Plus"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
           "GLM 5.3",
@@ -9071,6 +9170,7 @@
           "BabyVision": "Seed 2.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -9123,6 +9223,7 @@
           "BabyVision": 0.763
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -9176,6 +9277,7 @@
           "GDPval-AA 2": "Grok 4.6"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -9235,6 +9337,7 @@
           "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
@@ -9289,6 +9392,7 @@
           "CharXiv": "GLM 5.3 Flash"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -9334,6 +9438,7 @@
           "GDPval-AA 2": 1631
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
@@ -9407,6 +9512,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -9493,6 +9599,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -9544,6 +9651,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "Hy 4 Preview",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "Grok 4.6",
@@ -9560,6 +9668,53 @@
         "rank": 54.8952452419402
       },
       "rank": 54.8952452419402
+    },
+    {
+      "modelInfo": {
+        "brand": "腾讯",
+        "model": "Hy 4 Preview",
+        "time": "2026/08/28",
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "params": 770,
+        "active": 49,
+        "inputPrice": "￥6",
+        "inputCachedPrice": "￥0.3",
+        "outputPrice": "￥18",
+        "url": "https://hy.tencent.ai/research/hy4-preview",
+        "currentBenchmarksScores": {
+          "GPQA Diamond": 0.923,
+          "SWE-Bench Pro": 0.657,
+          "SWE-Bench Multilingual": 0.829,
+          "DeepSWE 1.1": 0.643,
+          "Toolathlon-Verified": 0.741,
+          "Terminal-Bench 2.1": 0.854,
+          "GDPval-AA 2": 1678,
+          "Humanity's Last Exam": 0.554,
+          "Cybergym": 0.784,
+          "MCPAtlas": 0.837,
+          "NL2Repo": 0.589
+        },
+        "betterThanCurrentModels": [
+          "GLM 5.3",
+          "Gemini 3.7 Flash",
+          "DeepSeek V4 Pro 0813",
+          "Grok 4.6",
+          "Qwen 3.8 Max",
+          "Claude Opus 5",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "Claude Fable 5"
+        ],
+        "rank": 55.07901838275214
+      },
+      "rank": 55.07901838275214
     },
     {
       "modelInfo": {
@@ -9609,9 +9764,57 @@
           "GPT-5.6 Terra",
           "Claude Fable 5"
         ],
-        "rank": 55.092166843665524
+        "rank": 55.15674791602909
       },
-      "rank": 55.092166843665524
+      "rank": 55.15674791602909
+    },
+    {
+      "modelInfo": {
+        "brand": "Z.ai",
+        "model": "GLM 5.3 Flash",
+        "time": "2026/08/26",
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "generate": 163840,
+        "params": 320,
+        "active": 18,
+        "inputPrice": "￥0.8",
+        "inputCachedPrice": "￥0.23",
+        "outputPrice": "￥2.8",
+        "url": "https://z.ai/blog/glm-5.3-flash",
+        "currentBenchmarksScores": {
+          "DeepSWE 1.1": 0.634,
+          "Toolathlon-Verified": 0.784,
+          "Terminal-Bench 2.1": 0.843,
+          "GDPval-AA 2": 1773,
+          "Humanity's Last Exam": 0.553,
+          "Agents' Last Exam(pass)": 0.263,
+          "CharXiv": 0.894,
+          "NL2Repo": 0.563
+        },
+        "betterThanCurrentModels": [
+          "Hy 4 Preview",
+          "GLM 5.3",
+          "DeepSeek V4 Pro 0813",
+          "Grok 4.6",
+          "Claude Opus 5",
+          "Kimi K3",
+          "GPT-5.6 Sol",
+          "GPT-5.6 Terra",
+          "GPT-5.6 Luna",
+          "Claude Fable 5",
+          "Claude Opus 4.8"
+        ],
+        "rank": 55.50454172963513
+      },
+      "rank": 55.50454172963513
     },
     {
       "modelInfo": {
@@ -9655,55 +9858,9 @@
           "Claude Fable 5",
           "Muse Spark"
         ],
-        "rank": 55.86071808041464
+        "rank": 55.62394685104694
       },
-      "rank": 55.86071808041464
-    },
-    {
-      "modelInfo": {
-        "brand": "Z.ai",
-        "model": "GLM 5.3 Flash",
-        "time": "2026/08/26",
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 1000000,
-        "generate": 163840,
-        "params": 320,
-        "active": 18,
-        "inputPrice": "￥0.8",
-        "inputCachedPrice": "￥0.23",
-        "outputPrice": "￥2.8",
-        "url": "https://z.ai/blog/glm-5.3-flash",
-        "currentBenchmarksScores": {
-          "DeepSWE 1.1": 0.634,
-          "Toolathlon-Verified": 0.784,
-          "Terminal-Bench 2.1": 0.843,
-          "GDPval-AA 2": 1773,
-          "Humanity's Last Exam": 0.553,
-          "Agents' Last Exam(pass)": 0.263,
-          "CharXiv": 0.894,
-          "NL2Repo": 0.563
-        },
-        "betterThanCurrentModels": [
-          "GLM 5.3",
-          "DeepSeek V4 Pro 0813",
-          "Grok 4.6",
-          "Claude Opus 5",
-          "Kimi K3",
-          "GPT-5.6 Sol",
-          "GPT-5.6 Terra",
-          "GPT-5.6 Luna",
-          "Claude Fable 5",
-          "Claude Opus 4.8"
-        ],
-        "rank": 56.287004882492006
-      },
-      "rank": 56.287004882492006
+      "rank": 55.62394685104694
     },
     {
       "modelInfo": {
@@ -9741,9 +9898,9 @@
           "GPT-5.6 Luna",
           "Claude Fable 5"
         ],
-        "rank": 56.653768098034995
+        "rank": 55.74632447342456
       },
-      "rank": 56.653768098034995
+      "rank": 55.74632447342456
     },
     {
       "modelInfo": {
@@ -9790,9 +9947,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 57.00433181742935
+        "rank": 56.096888192818916
       },
-      "rank": 57.00433181742935
+      "rank": 56.096888192818916
     },
     {
       "modelInfo": {
@@ -9845,9 +10002,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 57.12160696778265
+        "rank": 56.21416334317221
       },
-      "rank": 57.12160696778265
+      "rank": 56.21416334317221
     },
     {
       "modelInfo": {
@@ -9878,9 +10035,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 58.48463723322546
+        "rank": 57.577193608615026
       },
-      "rank": 58.48463723322546
+      "rank": 57.577193608615026
     },
     {
       "modelInfo": {
@@ -9915,9 +10072,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 58.6725759928694
+        "rank": 57.76513236825896
       },
-      "rank": 58.6725759928694
+      "rank": 57.76513236825896
     },
     {
       "modelInfo": {
@@ -9968,9 +10125,9 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 59.10025289458314
+        "rank": 58.192809269972706
       },
-      "rank": 59.10025289458314
+      "rank": 58.192809269972706
     },
     {
       "modelInfo": {
@@ -10025,9 +10182,9 @@
         "betterThanCurrentModels": [
           "Claude Opus 5"
         ],
-        "rank": 59.415303361322934
+        "rank": 58.5078597367125
       },
-      "rank": 59.415303361322934
+      "rank": 58.5078597367125
     },
     {
       "modelInfo": {
@@ -10055,9 +10212,9 @@
           "Humanity's Last Exam": 0.647
         },
         "betterThanCurrentModels": [],
-        "rank": 59.56954617859038
+        "rank": 58.66210255397994
       },
-      "rank": 59.56954617859038
+      "rank": 58.66210255397994
     }
   ],
   "priceMap": {
@@ -10090,5 +10247,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-08-26T15:10:14.599Z"
+  "updatedAt": "2026-08-29T13:10:40.027Z"
 }
