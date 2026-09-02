@@ -1,6 +1,21 @@
 {
     "models": [
         {
+            "brand": "Alibaba",
+            "model": "Qwen 3.8 Max 0902",
+            "time": "2026/09/02",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 131000,
+            "params": 2400,
+            "active": 95,
+            "inputPrice": "￥12",
+            "inputCachedPrice": "￥1.5",
+            "outputPrice": "￥36",
+            "url": "https://www.qwencloud.com/models/qwen3.8-max-0902"
+        },
+        {
             "brand": "Anthropic",
             "model": "Claude Fable 5.1",
             "time": "2026/09/02",
@@ -1652,6 +1667,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Qwen 3.8 Max 0902": 0.693,
                 "Hy 4 Preview": 0.643,
                 "GLM 5.3 Flash": 0.634,
                 "Qwen 3.8 Flash Next": 0.587,
@@ -1702,6 +1718,7 @@
         {
             "name": "Toolathlon-Verified",
             "scores": {
+                "Qwen 3.8 Max 0902": 0.733,
                 "Hy 4 Preview": 0.741,
                 "GLM 5.3 Flash": 0.784,
                 "Qwen 3.8 Flash Next": 0.735,
@@ -1739,9 +1756,12 @@
         {
             "name": "Terminal-Bench 3",
             "scores": {
+                "Qwen 3.8 Max 0902": 0.29,
+                "Qwen 3.8 Max(from Qwen 3.8 Max 0902)": 0.113,
                 "GLM 5.3": 0.283,
                 "GLM 5.2(from GLM 5.3)": 0.046,
                 "Kimi K3(from GLM 5.3)": 0.174,
+                "Claude Opus 5(from Qwen 3.8 Max 0902)": 0.427,
                 "Claude Opus 4.8(from GLM 5.3)": 0.221,
                 "Gemini 3.7 Flash": 0.149,
                 "Gemini 3.6 Flash(from Gemini 3.7 Flash)": 0.054,
@@ -2220,6 +2240,7 @@
             "name": "MMMU Pro",
             "info": "not with python",
             "scores": {
+                "Qwen 3.8 Max 0902": 0.827,
                 "Muse Glimmer": 0.74,
                 "Qwen 3.8 Max": 0.823,
                 "Inkling-Small": 0.74,
@@ -2392,6 +2413,7 @@
             "name": "BabyVision",
             "info": "with tool",
             "scores": {
+                "Qwen 3.8 Max 0902": 0.938,
                 "Qwen 3.8 27B": 0.856,
                 "Qwen 3.8 Max": 0.913,
                 "Kimi K3": 0.857,
@@ -2412,6 +2434,7 @@
         {
             "name": "NL2Repo",
             "scores": {
+                "Qwen 3.8 Max 0902": 0.649,
                 "Hy 4 Preview": 0.589,
                 "GLM 5.3 Flash": 0.563,
                 "Qwen 3.8 Flash Next": 0.481,
@@ -2422,6 +2445,7 @@
                 "GLM 5.3": 0.58,
                 "GLM 5.2(from GLM 5.3)": 0.489,
                 "Kimi K3(from GLM 5.3)": 0.58,
+                "Claude Opus 5(from Qwen 3.8 Max 0902)": 0.723,
                 "Claude Opus 4.8(from GLM 5.3)": 0.697,
                 "Claude Opus 4.6(from Qwen 3.8 27B)": 0.476,
                 "DeepSeek V4 Pro 0813": 0.615,
