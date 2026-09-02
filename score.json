@@ -401,6 +401,20 @@
       }
     },
     {
+      "name": "Terminal-Bench 4",
+      "scores": {
+        "Claude Fable 5.1": 0.558,
+        "Claude Fable 5": 0.42,
+        "Claude Opus 5": 0.523,
+        "GPT-5.6 Sol": 0.373
+      },
+      "fromSources": {
+        "Claude Fable 5": "Claude Fable 5.1",
+        "Claude Opus 5": "Claude Fable 5.1",
+        "GPT-5.6 Sol": "Claude Fable 5.1"
+      }
+    },
+    {
       "name": "Terminal-Bench 3",
       "scores": {
         "GLM 5.3": 0.283,
@@ -599,6 +613,7 @@
     {
       "name": "GDPval-AA 2",
       "scores": {
+        "Claude Fable 5.1": 1853,
         "Hy 4 Preview": 1678,
         "GLM 5.3 Flash": 1773,
         "DeepSeek V4 Flash Vision Exp": 1675,
@@ -676,6 +691,7 @@
       "name": "Humanity's Last Exam",
       "info": "hle with tool",
       "scores": {
+        "Claude Fable 5.1": 0.65,
         "Hy 4 Preview": 0.554,
         "GLM 5.3 Flash": 0.553,
         "Qwen 3.8 Flash Next": 0.359,
@@ -1696,6 +1712,7 @@
           "AIME'24": "Qwen 3 235B A22B"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -3140,6 +3157,7 @@
           "Humanity's Last Exam": 0.17
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -3511,6 +3529,7 @@
           "MMMU Pro": 0.738
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -3604,6 +3623,7 @@
           "Humanity's Last Exam": 0.177
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -3695,6 +3715,7 @@
           "Humanity's Last Exam": 0.19
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -4286,6 +4307,7 @@
           "Humanity's Last Exam": 0.22
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -4481,6 +4503,7 @@
           "AIME'26": "Muse Glimmer"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -4746,6 +4769,7 @@
           "IMOAnswerBench": 0.845
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -4844,6 +4868,7 @@
           "AIME'25": "Gemini 3 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -4949,6 +4974,7 @@
           "GDPval-AA 2": "Gemini 3.5 Flash Lite"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -5042,6 +5068,7 @@
           "MMMU": 0.842
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -5132,6 +5159,7 @@
           "AIME'26": 0.947
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -5231,6 +5259,7 @@
           "MCPAtlas": 0.52
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -5468,6 +5497,7 @@
           "Humanity's Last Exam": "Step 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -5765,6 +5795,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -5852,6 +5883,7 @@
           "Humanity's Last Exam": 0.386
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -5948,6 +5980,7 @@
           "MMMU Pro": "Gemini 3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6045,6 +6078,7 @@
           "GDPval-AA 2": "Inkling"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6148,6 +6182,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6234,6 +6269,7 @@
           "Tau 3 Banking": 0.116
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6320,6 +6356,7 @@
           "Humanity's Last Exam": 0.4
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6401,6 +6438,7 @@
           "BrowseComp": "MiniMax M3"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6487,6 +6525,7 @@
           "OSWorld-Verified": 0.74
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6582,6 +6621,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6670,6 +6710,7 @@
           "CharXiv": "Muse Spark 1.1"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6832,6 +6873,7 @@
           "AIME'26": 0.955
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -6917,6 +6959,7 @@
           "OSWorld-Verified": "Claude Sonnet 4.6"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -6994,6 +7037,7 @@
           "OSWorld-Verified": 0.622
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -7157,6 +7201,7 @@
           "GDPval-AA 2": "Claude Sonnet 5"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -7232,6 +7277,7 @@
           "Humanity's Last Exam": 0.472
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -7303,6 +7349,7 @@
           "MCPAtlas": 0.678
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -7457,6 +7504,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -7536,6 +7584,7 @@
           "OSWorld-Verified": "Gemini 3.5 Flash Lite"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -7629,6 +7678,7 @@
           "AIME'26": "GLM 5.2"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -7822,6 +7872,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -7968,6 +8019,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -8033,6 +8085,7 @@
           "Humanity's Last Exam": 0.48
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -8171,6 +8224,7 @@
           "DeepSWE": "GLM 5.2"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -8317,6 +8371,7 @@
           "IFBench": "Qwen 3.8 Flash Next"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -8402,6 +8457,7 @@
           "MMLU Pro": "Qwen 3.7 Max"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -8479,6 +8535,7 @@
           "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -8587,6 +8644,7 @@
           "MCPAtlas": 0.791
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -8664,6 +8722,7 @@
           "NL2Repo": "Qwen 3.8 Max"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -8830,6 +8889,7 @@
           "NL2Repo": "GLM 5.3"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -8895,6 +8955,7 @@
           "IFBench": "Qwen 3.8 Flash Next"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -8965,6 +9026,7 @@
           "gdp.pdf": "Gemini 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -9026,6 +9088,7 @@
           "NL2Repo": 0.481
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -9096,6 +9159,7 @@
           "BabyVision": "Qwen 3.7 Plus"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "Qwen 3.8 27B",
@@ -9170,6 +9234,7 @@
           "BabyVision": "Seed 2.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -9223,6 +9288,7 @@
           "BabyVision": 0.763
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -9277,6 +9343,7 @@
           "GDPval-AA 2": "Grok 4.6"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "Qwen 3.8 Flash Next",
           "GLM 5.3 Flash",
@@ -9337,6 +9404,7 @@
           "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -9392,6 +9460,7 @@
           "CharXiv": "GLM 5.3 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -9438,6 +9507,7 @@
           "GDPval-AA 2": 1631
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
@@ -9512,6 +9582,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3 Flash",
           "GLM 5.3",
@@ -9599,6 +9670,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -9651,6 +9723,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3",
           "Gemini 3.7 Flash",
@@ -9701,6 +9774,7 @@
           "NL2Repo": 0.589
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "DeepSeek V4 Pro 0813",
@@ -9752,6 +9826,7 @@
           "NL2Repo": 0.559
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "GLM 5.3 Flash",
           "DeepSeek V4 Flash Vision Exp",
           "GLM 5.3",
@@ -9800,6 +9875,7 @@
           "NL2Repo": 0.563
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Hy 4 Preview",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
@@ -9847,6 +9923,7 @@
           "gdp.pdf": 0.34
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "GLM 5.3 Flash",
           "GLM 5.3",
           "Grok 4.6",
@@ -9889,6 +9966,7 @@
           "NL2Repo": 0.615
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "GLM 5.3",
           "Gemini 3.7 Flash",
           "Grok 4.6",
@@ -9940,6 +10018,7 @@
           "Agents' Last Exam(pass)": "Gemini 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "GLM 5.3",
           "Grok 4.6",
           "Claude Opus 5",
@@ -9995,6 +10074,7 @@
           "NL2Repo": "GLM 5.3"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "GLM 5.3",
           "DeepSeek V4 Pro 0813",
           "Grok 4.6",
@@ -10030,6 +10110,7 @@
           "GDPval-AA 2": 1753
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "GLM 5.3",
           "Claude Opus 5",
           "GPT-5.6 Sol",
@@ -10068,6 +10149,7 @@
           "NL2Repo": 0.58
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Claude Opus 5",
           "GPT-5.6 Sol",
           "Claude Fable 5"
@@ -10099,6 +10181,7 @@
           "SWE-Bench Pro": 0.646,
           "DeepSWE 1.1": 0.727,
           "Toolathlon-Verified": 0.749,
+          "Terminal-Bench 4": 0.373,
           "Terminal-Bench 3": 0.346,
           "Terminal-Bench 2.1": 0.888,
           "BrowseComp": 0.904,
@@ -10114,6 +10197,7 @@
         },
         "currentBenchmarksFrom": {
           "Toolathlon-Verified": "Kimi K3",
+          "Terminal-Bench 4": "Claude Fable 5.1",
           "Terminal-Bench 3": "Grok 4.6",
           "Humanity's Last Exam": "Kimi K3",
           "CharXiv": "Qwen 3.8 Max",
@@ -10122,6 +10206,7 @@
           "BabyVision": "Kimi K3"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Claude Opus 5",
           "Claude Fable 5"
         ],
@@ -10153,6 +10238,7 @@
           "SWE-Bench Pro": 0.803,
           "DeepSWE 1.1": 0.697,
           "Toolathlon-Verified": 0.779,
+          "Terminal-Bench 4": 0.42,
           "Terminal-Bench 3": 0.341,
           "Terminal-Bench 2.1": 0.88,
           "BrowseComp": 0.88,
@@ -10170,6 +10256,7 @@
           "GPQA Diamond": "GPT-5.6 Sol",
           "DeepSWE 1.1": "GPT-5.6 Sol",
           "Toolathlon-Verified": "Kimi K3",
+          "Terminal-Bench 4": "Claude Fable 5.1",
           "Terminal-Bench 3": "Grok 4.6",
           "BrowseComp": "GPT-5.6 Sol",
           "GDPval-AA 2": "GPT-5.6 Sol",
@@ -10180,11 +10267,12 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.1",
           "Claude Opus 5"
         ],
-        "rank": 58.5078597367125
+        "rank": 58.54285710814713
       },
-      "rank": 58.5078597367125
+      "rank": 58.54285710814713
     },
     {
       "modelInfo": {
@@ -10207,14 +10295,49 @@
         "url": "https://www.anthropic.com/news/claude-opus-5",
         "currentBenchmarksScores": {
           "DeepSWE 1.1": 0.688,
+          "Terminal-Bench 4": 0.523,
           "BrowseComp": 0.908,
           "GDPval-AA 2": 1861,
           "Humanity's Last Exam": 0.647
         },
-        "betterThanCurrentModels": [],
-        "rank": 58.66210255397994
+        "currentBenchmarksFrom": {
+          "Terminal-Bench 4": "Claude Fable 5.1"
+        },
+        "betterThanCurrentModels": [
+          "Claude Fable 5.1"
+        ],
+        "rank": 58.96508684014534
       },
-      "rank": 58.66210255397994
+      "rank": 58.96508684014534
+    },
+    {
+      "modelInfo": {
+        "brand": "Anthropic",
+        "model": "Claude Fable 5.1",
+        "time": "2026/09/02",
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "generate": 128000,
+        "inputPrice": "$10",
+        "inputCachedPrice": "$0.25",
+        "outputPrice": "$50",
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+        "currentBenchmarksScores": {
+          "Terminal-Bench 4": 0.558,
+          "GDPval-AA 2": 1853,
+          "Humanity's Last Exam": 0.65
+        },
+        "betterThanCurrentModels": [],
+        "rank": 59.143982818347425
+      },
+      "rank": 59.143982818347425
     }
   ],
   "priceMap": {
@@ -10247,5 +10370,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-08-29T13:10:40.027Z"
+  "updatedAt": "2026-09-02T00:43:10.160Z"
 }

@@ -1,6 +1,19 @@
 {
     "models": [
         {
+            "brand": "Anthropic",
+            "model": "Claude Fable 5.1",
+            "time": "2026/09/02",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "inputPrice": "$10",
+            "inputCachedPrice": "$0.25",
+            "outputPrice": "$50",
+            "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+        },
+        {
             "brand": "腾讯",
             "model": "Hy 4 Preview",
             "time": "2026/08/28",
@@ -1715,6 +1728,15 @@
             }
         },
         {
+            "name": "Terminal-Bench 4",
+            "scores": {
+                "Claude Fable 5.1": 0.558,
+                "Claude Fable 5(from Claude Fable 5.1)": 0.42,
+                "Claude Opus 5(from Claude Fable 5.1)": 0.523,
+                "GPT-5.6 Sol(from Claude Fable 5.1)": 0.373
+            }
+        },
+        {
             "name": "Terminal-Bench 3",
             "scores": {
                 "GLM 5.3": 0.283,
@@ -1876,6 +1898,7 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "Claude Fable 5.1": 1853,
                 "Hy 4 Preview": 1678,
                 "GLM 5.3 Flash": 1773,
                 "DeepSeek V4 Flash Vision Exp(from GLM 5.3 Flash)": 1675,
@@ -1935,6 +1958,7 @@
             "name": "Humanity's Last Exam",
             "info": "hle with tool",
             "scores": {
+                "Claude Fable 5.1": 0.65,
                 "Hy 4 Preview": 0.554,
                 "GLM 5.3 Flash": 0.553,
                 "Qwen 3.8 Flash Next": 0.359,
