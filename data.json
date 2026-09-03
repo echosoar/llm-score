@@ -1,6 +1,31 @@
 {
     "models": [
         {
+            "brand": "Meta",
+            "model": "Muse Spark 1.3",
+            "time": "2026/09/02",
+            "input": ["text", "image", "pdf", "video"],
+            "output": ["text"],
+            "context": 1000000,
+            "inputPrice": "$1.25",
+            "inputCachedPrice": "$0.15",
+            "outputPrice": "$4.25",
+            "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+        },
+        {
+            "brand": "Google",
+            "model": "Gemini 3.8 Flash",
+            "time": "2026/09/02",
+            "input": ["text", "image", "video", "audio", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 64000,
+            "inputPrice": "$0.75",
+            "inputCachedPrice": "$0.075",
+            "outputPrice": "$3.75",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+        },
+        {
             "brand": "Alibaba",
             "model": "Qwen 3.8 Max 0902",
             "time": "2026/09/02",
@@ -177,9 +202,9 @@
             "input": ["text", "image", "pdf", "video"],
             "output": ["text"],
             "context": 1000000,
-            "inputPrice": "$0.1",
-            "inputCachedPrice": "$0.002",
-            "outputPrice": "$0.2",
+            "inputPrice": "$1.25",
+            "inputCachedPrice": "$0.15",
+            "outputPrice": "$4.25",
             "url": "https://developer.meta.com/ai/models/muse-spark/"
         },
         {
@@ -1526,6 +1551,15 @@
             }
         },
         {
+            "name": "JobBench",
+            "scores": {
+                "Muse Spark 1.3": 0.649,
+                "Qwen 3.8 Max 0902": 0.64,
+                "hy4 preview": 0.617,
+                "Qwen 3.8 Flash Next": 0.557
+            }
+        },
+        {
             "name": "SWE-Bench Pro",
             "scores": {
                 "Hy 4 Preview": 0.657,
@@ -1667,6 +1701,8 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Muse Spark 1.3": 0.754,
+                "Gemini 3.8 Flash": 0.737,
                 "Qwen 3.8 Max 0902": 0.693,
                 "Hy 4 Preview": 0.643,
                 "GLM 5.3 Flash": 0.634,
@@ -1683,7 +1719,7 @@
                 "DeepSeek V4 Pro 0813": 0.627,
                 "DeepSeek V4 Flash 0731": 0.544,
                 "GLM 5.2": 0.462,
-                "Claude Opus 5": 0.688,
+                "Claude Opus 5(from Gemini 3.8 Flash)": 0.74,
                 "Gemini 3.6 Flash": 0.49,
                 "Claude Sonnet 5(from Gemini 3.6 Flash)": 0.54,
                 "Kimi K3": 0.675,
@@ -1747,10 +1783,14 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Gemini 3.8 Flash": 0.191,
+                "Gemini 3.7 Flash(from Gemini 3.8 Flash)": 0.112,
                 "Claude Fable 5.1": 0.558,
                 "Claude Fable 5(from Claude Fable 5.1)": 0.42,
                 "Claude Opus 5(from Claude Fable 5.1)": 0.523,
-                "GPT-5.6 Sol(from Claude Fable 5.1)": 0.373
+                "Claude Sonnet 5(from Gemini 3.8 Flash)": 0.124,
+                "GPT-5.6 Sol(from Claude Fable 5.1)": 0.373,
+                "GPT-5.6 Terra(from Gemini 3.8 Flash)": 0.236
             }
         },
         {
@@ -1776,6 +1816,8 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "Muse Spark 1.3": 0.888,
+                "Gemini 3.8 Flash": 0.894,
                 "Hy 4 Preview": 0.854,
                 "GLM 5.3 Flash": 0.843,
                 "DeepSeek V4 Flash Vision Exp": 0.839,
@@ -1804,6 +1846,7 @@
                 "Muse Spark 1.1": 0.8,
                 "Grok 4.5": 0.833,
                 "Hy 3": 0.717,
+                "Claude Opus 5(from Gemini 3.8 Flash)": 0.891,
                 "Claude Sonnet 5": 0.804,
                 "LongCat 2": 0.708,
                 "Seed 2.1 Pro": 0.71,
@@ -1918,6 +1961,8 @@
         {
             "name": "GDPval-AA 2",
             "scores": {
+                "Muse Spark 1.3": 1754,
+                "Gemini 3.8 Flash": 1545,
                 "Claude Fable 5.1": 1853,
                 "Hy 4 Preview": 1678,
                 "GLM 5.3 Flash": 1773,
@@ -1928,7 +1973,7 @@
                 "Agnes 2.5 Pro": 1170,
                 "Muse Spark 1.2": 1631,
                 "Inkling-Small": 1269,
-                "Claude Opus 5": 1861,
+                "Claude Opus 5": 1824,
                 "Gemini 3.6 Flash": 1421,
                 "Gemini 3.5 Flash Lite": 1140,
                 "Grok 4.5(from Grok 4.6)": 1526,
@@ -2207,6 +2252,23 @@
             }
         },
         {
+            "name": "OSWorld 2.0",
+            "info":"Patrial score/ batch tool enabled",
+            "scores": {
+                "Muse Spark 1.3": 0.669,
+                "Gemini 3.8 Flash": 0.59,
+                "Claude Fable 5.1": 0.779,
+                "Claude Fable 5(from Claude Fable 5.1)": 0.729,
+                "Claude Opus 5(from Claude Fable 5.1)": 0.754,
+                "GPT-5.6 Sol": 0.626,
+                "GPT-5.6 Terra": 0.502,
+                "GPT-5.6 Luna": 0.456,
+                "GPT-5.5(from GPT-5.6 Sol)": 0.475,
+                "Muse Spark 1.2(from Muse Spark 1.3)": 0.476,
+                "Claude Opus 4.8(from GPT-5.6 Sol)": 0.548
+            }
+        },
+        {
             "name": "OSWorld-Verified",
             "scores": {
                 "Qwen 3.8 27B": 0.843,
@@ -2455,15 +2517,14 @@
         },
         {
             "name": "gdp.pdf",
+            "info": "no tool",
             "scores": {
                 "GPT-5.6 Sol": 0.307,
                 "GPT-5.6 Terra": 0.247,
                 "GPT-5.6 Luna": 0.227,
                 "GPT-5.5(from GPT-5.6 Sol)": 0.26,
-                "Claude Fable 5(from GPT-5.6 Sol)": 0.298,
+                "Claude Fable 5": 0.298,
                 "Claude Opus 4.8(from GPT-5.6 Sol)": 0.225,
-                "Gemini 3.7 Flash": 0.34,
-                "Gemini 3.6 Flash(from Gemini 3.7 Flash)": 0.22,
                 "Gemini 3.1 Pro(from GPT-5.6 Sol)": 0.167
             }
         }

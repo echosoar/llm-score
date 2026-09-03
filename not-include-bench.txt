@@ -1,0 +1,119 @@
++ Agentic IF Index(internal)
+    - Muse Spark 1.3: 57.8
++ Apex-Agents(pass@1)
+    - hy4 preview: 37.1
+    - Grok 4.6: 57.5
++ Apex-SWE
+    - Grok 4.6: 56.4
++ ARC-AGI-3
+    - GPT 5.6 Sol: 7.78
++ Automation Bench(差别太大)
+    - Muse Spark 1.3: 49.4(5.6 sol: 46.7)
+    - Claude Fable 5.1: 31.4(5.6 sol: 19.6)
+    - GPT 5.6 Sol: 18.1
++ Automation Bench(1.0.6 pass@1)
+    - Qwen 3.8 Max 0902: 50.8(5.6 sol: 45.8)
+    - hy4 preview: 32.1
+    - GLM 5.3 Flash: 48.8
++ BenchCAD(no tool)
+    - GPT 5.6 Sol: 70.6
++ BenchCAD(python tool)
+    - GPT 5.6 Sol: 83.4
++ BioFinanceBench
+    - GPT 5.6 Sol: 53
++ BioMySteryBench(human solvable)
+    - Gemini 3.8 Flash: 88.8(5.6 sol: 79.5)
+    - hy4 preview: 71.3(5.6 sol: 73.1)
++ BioMySteryBench(human diffcult)
+    - Gemini 3.8 Flash: 56.5(5.6 sol: 44.7)
++ Chartography(with tools)
+    - GLM 5.3 Flash: 78
++ ClawEval-MM(pass@3)
+    - Qwen 3.8 Max 0902: 80.2
++ CursorBench 3.2.0
+    - Claude Fable 5.1: 73.4
+    - Grok 4.6: 69.9
++ CoWorkBench
+    - Qwen 3.8 Max 0902: 76.1
+    - Qwen 3.8 Flash Next: 73.9
++ DeepSearchQA
+    - Muse Spark 1.3: 89.4
++ Draco
+    - hy4 preview: 77.2
++ ERQA
+    - Qwen 3.8 Max 0902: 78.3
++ FrontierCode 1.1 extened
+    - Grok 4.6: 61.3
++ GDP.pdf(all pass rate)
+    - Gemini 3.8 Flash: 35(5.6 sol: 40)
+    - GPT 5.6 Sol: 30.7
++ Harvey's Legal Agent Benchmark(all pass rate) / Harvey Lab
+    - Gemini 3.8 Flash: 10
+    - Grok 4.6: 15.8
++ HealthBench Professional
+    - GPT 5.6 Sol: 60.5
++ HLE(no tool/text-only)
+    - hy4 preview: 43.4
++ HLE-Verified
+    - Gemini 3.8 Flash: 54.9
++ Hyber-index
+    - hy4 preview: 39.6
++ LABBench2(agentic)
+    - Gemini 3.8 Flash: 86.2
++ LVBench(agentic)
+    - Gemini 3.8 Flash: 87.8
++ LVBench(static)
+    - Gemini 3.8 Flash: 87.1
++ LiveCodeBench v6
+    - Qwen 3.8 Flash Next: 91.9
++ MRCR 256-512 v2 8-needle
+    - Muse Spark 1.3: 98.5
+    - GPT 5.6 Sol: 91.5
++ MRCR 512-1M v2 8-needle
+    - Muse Spark 1.3: 98.1
+    - GPT 5.6 Sol: 73.8
++ MMVU
+    - GLM 5.3 Flash: 80.5
++ MVBench
+    - GLM 5.3 Flash: 77.8
++ OfficeQA Pro
+    - hy4 preview: 66.1
+    - GLM 5.3 Flash: 62.4
++ OneMillionBench(with tools)
+    - hy4 preview: 65.4
++ OSWorld-2.0(Strict)
+    - Claude Fable 5.1: 41.7
++ PostTrainBench 1.1
+    - hy4 preview: 35.6
++ Program Bench(almost resolved)
+    - Qwen 3.8 Max 0902: 28
+    - hy4 preview: 17.5
++ SEC-bench Pro
+    - GPT 5.6 Sol: 71.2
++ SkillBench(79, text-only)
+    - hy4 preview: 74.1
++ SWE-Marathon
+    - Qwen 3.8 Max 0902: 44.8
+    - hy4 preview: 31.9
++ SWE-bench Multilingual
+    - Qwen 3.8 Flash Next: 81
+    - hy4 preview: 82.9
++ SWE-Atlas Codebase QnA
+    - Muse Spark 1.3: 59.4
+    - Qwen 3.8 Max 0902: 66.3
+    - hy4 preview: 64
++ SWE-Atlas Test Writing
+    - hy4 preview: 57.8
++ SWE-Atlas Refactoring
+    - hy4 preview: 53.3
++ Terminal Bench Science 0.1
+    - Claude Fable 5.1: 52.6
++ Vals Finance Agent v2
+    - Gemini 3.8 Flash: 61.4
++ WideSearch
+    - hy4 preview: 83.9
++ WorkArena(Elo)
+    - Qwen 3.8 Max 0902: 1468
++ WorkSpaceBench
+    - hy4 preview: 60.2
+
