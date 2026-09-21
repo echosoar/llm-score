@@ -4,6 +4,25 @@
     ],
     "models": [
         {
+            "brand": "StepFun",
+            "model": "Step 5 Preview",
+            "time": "2026/09/20",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "params": 600,
+            "active": 27,
+            "context": 1000000,
+            "url": "https://www.stepfun.com/step-5-preview"
+        },
+        {
+            "brand": "Alibaba",
+            "model": "Qwen 3.8 Omni Flash",
+            "time": "2026/09/18",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash"
+        },
+        {
             "brand": "DeepSeek",
             "model": "DeepSeek V4.1 Flash",
             "time": "2026/09/10",
@@ -1511,6 +1530,8 @@
         {
             "name": "GPQA Diamond",
             "scores": {
+                "Qwen 3.8 Omni Flash": 0.91,
+                "Step 5 Preview": 0.935,
                 "DeepSeek V4.1 Flash": 0.909,
                 "GPT-6 Astra": 0.96,
                 "Hy 4 Preview": 0.923,
@@ -1602,6 +1623,7 @@
         {
             "name": "JobBench",
             "scores": {
+                "Step 5 Preview": 0.59,
                 "Muse Spark 1.3": 0.649,
                 "Muse Spark 1.2(from Muse Spark 1.3)": 0.616,
                 "GPT-5.6 Sol(from Muse Spark 1.3)": 0.454,
@@ -1619,6 +1641,7 @@
         {
             "name": "SWE-Bench Pro",
             "scores": {
+                "Qwen 3.8 Omni Flash": 0.633,
                 "Hy 4 Preview": 0.657,
                 "Qwen 3.8 Flash Next": 0.625,
                 "Qwen 3.8 27B": 0.617,
@@ -1731,6 +1754,7 @@
          {
             "name": "SWE-Bench Multilingual",
             "scores": {
+                "Qwen 3.8 Omni Flash": 0.805,
                 "Hy 4 Preview": 0.829,
                 "Qwen 3.8 Flash Next": 0.81,
                 "Qwen 3.8 27B(from Qwen 3.8 Flash Next)": 0.738,
@@ -1758,6 +1782,8 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Qwen 3.8 Omni Flash": 0.578,
+                "Step 5 Preview": 0.677,
                 "DeepSeek V4.1 Flash": 0.742,
                 "GPT-6 Astra": 0.741,
                 "Muse Spark 1.3": 0.754,
@@ -1852,6 +1878,7 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Step 5 Preview": 0.33,
                 "DeepSeek V4.1 Flash": 0.312,
                 "DeepSeek V4 Pro 0813(from DeepSeek V4.1 Flash)": 0.124,
                 "DeepSeek V4 Flash 0731(from DeepSeek V4.1 Flash)": 0.07,
@@ -1894,6 +1921,7 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "Step 5 Preview": 0.85,
                 "DeepSeek V4.1 Flash": 0.906,
                 "Muse Spark 1.3": 0.888,
                 "Gemini 3.8 Flash": 0.894,
@@ -2103,6 +2131,7 @@
             "name": "Humanity's Last Exam",
             "info": "hle with tool",
             "scores": {
+                "Step 5 Preview": 0.594,
                 "DeepSeek V4.1 Flash": 0.639,
                 "GPT-6 Astra": 0.572,
                 "Claude Fable 5.1": 0.65,
@@ -2187,6 +2216,7 @@
             "name": "Agents' Last Exam(pass)",
             "info": "pass",
             "scores": {
+                "Step 5 Preview": 0.295,
                 "DeepSeek V4.1 Flash": 0.318,
                 "GPT-6 Astra": 0.593,
                 "GPT-5.6 Sol(from GPT-6 Astra)": 0.536,
@@ -2214,6 +2244,7 @@
             "name": "CharXiv",
             "info": "RQ score w/ python",
             "scores": {
+                "Qwen 3.8 Omni Flash": 0.914,
                 "GLM 5.3 Flash": 0.894,
                 "DeepSeek V4 Flash Vision Exp(from GLM 5.3 Flash)": 0.804,
                 "Qwen 3.8 Flash Next": 0.906,
@@ -2243,6 +2274,7 @@
         {
             "name": "Cybergym",
             "scores": {
+                "Step 5 Preview": 0.847,
                 "Hy 4 Preview": 0.784,
                 "DeepSeek V4 Flash Vision Exp": 0.753,
                 "GLM 5.3": 0.845,
@@ -2286,6 +2318,7 @@
             "name": "MCPAtlas",
             "group": "agentic",
             "scores": {
+                "Step 5 Preview": 0.856,
                 "Hy 4 Preview": 0.837,
                 "Muse Glimmer": 0.755,
                 "Ling-3.0-flash": 0.655,
@@ -2390,6 +2423,7 @@
             "name": "MMMU Pro",
             "info": "not with python",
             "scores": {
+                "Step 5 Preview": 0.76,
                 "Qwen 3.8 Max 0902": 0.827,
                 "Muse Glimmer": 0.74,
                 "Qwen 3.8 Max": 0.823,
@@ -2483,6 +2517,7 @@
         {
             "name": "IFBench",
             "scores": {
+                "Qwen 3.8 Omni Flash": 0.815,
                 "Qwen 3.8 Flash Next": 0.813,
                 "Qwen 3.8 27B(from Qwen 3.8 Flash Next)": 0.795,
                 "Qwen 3.7 Plus(from Qwen 3.8 Flash Next)": 0.791,
@@ -2585,6 +2620,7 @@
         {
             "name": "NL2Repo",
             "scores": {
+                "Qwen 3.8 Omni Flash": 0.489,
                 "DeepSeek V4.1 Flash": 0.654,
                 "Qwen 3.8 Max 0902": 0.649,
                 "Hy 4 Preview": 0.589,
@@ -2609,6 +2645,7 @@
             "name": "gdp.pdf",
             "info": "no tool",
             "scores": {
+                "Step 5 Preview": 0.148,
                 "GPT-5.6 Sol": 0.307,
                 "GPT-5.6 Terra": 0.247,
                 "GPT-5.6 Luna": 0.227,

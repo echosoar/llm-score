@@ -1,5 +1,9 @@
++ aa-lcr 1.1
+    - Step 5 Preview: 0.883
 + Agentic IF Index(internal)
     - Muse Spark 1.3: 57.8
++ AndroidWorld
+    - Qwen 3.8 Omni Flash: 0.871
 + Apex-Agents(pass@1)
     - hy4 preview: 37.1
     - Grok 4.6: 57.5
@@ -12,6 +16,7 @@
 + ARC-AGI-2
     - GPT‑6 Astra: 95
 + Automation Bench(1.0.6 pass@1)
+    - Step 5 Preview: 0.44
     - Muse Spark 1.3: 49.4(5.6 sol: 46.7)
     - Qwen 3.8 Max 0902: 50.8(5.6 sol: 45.8)
     - hy4 preview: 32.1
@@ -35,13 +40,17 @@
     - Claude Fable 5.1: 73.4
     - Grok 4.6: 69.9
 + CoWorkBench
+    - Qwen 3.8 Omni Flash: 0.753
     - Qwen 3.8 Max 0902: 76.1
     - Qwen 3.8 Flash Next: 73.9
++ CritPt
+    - Step 5 Preview: 0.209
 + DeepSearchQA
     - Muse Spark 1.3: 89.4
 + Draco
     - hy4 preview: 77.2
 + ERQA
+    - Qwen 3.8 Omni Flash: 0.71
     - Qwen 3.8 Max 0902: 78.3
 + Exploit Gym
     - GPT‑6 Astra: 42.4
@@ -52,6 +61,8 @@
     - GPT‑6 Astra: 97.6
 + GeneBench Pro
     - GPT‑6 Astra: 37.8
++ GDPV-aa 2.1
+    - Step 5 Preview: 1566
 + GDP.pdf(all pass rate)
     - Gemini 3.8 Flash: 35(5.6 sol: 40)
     - GPT 5.6 Sol: 30.7
@@ -62,7 +73,9 @@
     - GPT‑6 Astra: 63.4
     - GPT 5.6 Sol: 60.5
 + HLE(no tool/text-only)
+    - Step 5 Preview: 0.465
     - hy4 preview: 43.4
+    - Qwen 3.8 Omni Flash: 0.365
 + HLE-Verified
     - Gemini 3.8 Flash: 54.9
 + Hyber-index
@@ -74,11 +87,17 @@
 + LVBench(agentic)
     - Gemini 3.8 Flash: 87.8
 + LVBench(static)
+    - Qwen 3.8 Omni Flash: 0.769
     - Gemini 3.8 Flash: 87.1
 + LiveCodeBench v6
+    - Qwen 3.8 Omni Flash: 0.926
     - Qwen 3.8 Flash Next: 91.9
++ Math Vision
+    - Qwen 3.8 Omni Flash: 0.962
 + MedChemBench (Internal)
     - GPT‑6 Astra: 49.3
++ MLS-Bench-lite
+    - Step 5 Preview: 0.405
 + MRCR 256-512 v2 8-needle
     - Muse Spark 1.3: 98.5
     - GPT 5.6 Sol: 91.5
@@ -102,6 +121,12 @@
 + Program Bench(almost resolved)
     - Qwen 3.8 Max 0902: 28
     - hy4 preview: 17.5
++ RealWorldQA
+    - Qwen 3.8 Omni Flash: 0.877
++ RoadmapBench
+    - Step 5 Preview: 0.543
++ SCICode
+    - Step 5 Preview: 0.589
 + SEC-bench Pro
     - GPT‑6 Astra: 85.4
     - GPT 5.6 Sol: 71.2
@@ -113,14 +138,18 @@
     - Qwen 3.8 Max 0902: 44.8
     - hy4 preview: 31.9
     - Kimi k3: 42
++ SWE-Marathon 1.1 Partial Score
+    - Step 5 Preview: 0.727
 + SWE-bench Multilingual
     - Qwen 3.8 Flash Next: 81
     - hy4 preview: 82.9
 + SWE-Atlas Codebase QnA
+    - Step 5 Preview: 0.636
     - Muse Spark 1.3: 59.4
     - Qwen 3.8 Max 0902: 66.3
     - hy4 preview: 64
 + SWE-Atlas Test Writing
+    - Step 5 Preview: 0.508
     - hy4 preview: 57.8
 + SWE-Atlas Refactoring
     - hy4 preview: 53.3
