@@ -4,6 +4,45 @@
     ],
     "models": [
         {
+            "brand": "Xiaomi",
+            "model": "MiMo V2.6 Pro",
+            "time": "2026/09/22",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "inputPrice": "￥3",
+            "inputCachedPrice": "￥0.025",
+            "outputPrice": "￥6",
+            "url": "https://mimo.xiaomi.com/mimo-v2-6"
+        },
+        {
+            "brand": "Xiaomi",
+            "model": "MiMo V2.6 Flash",
+            "time": "2026/09/22",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "inputPrice": "￥1",
+            "inputCachedPrice": "￥0.02",
+            "outputPrice": "￥3",
+            "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-flash"
+        },
+        {
+            "brand": "xAI",
+            "model": "Grok 4.7",
+            "time": "2026/09/22",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 500000,
+            "generate": 500000,
+            "inputPrice": "$1.6",
+            "inputCachedPrice": "$0.4",
+            "outputPrice": "$4.8",
+            "url": "https://x.ai/news/grok-4-7"
+        },
+        {
             "brand": "StepFun",
             "model": "Step 5 Preview",
             "time": "2026/09/20",
@@ -12,6 +51,9 @@
             "params": 600,
             "active": 27,
             "context": 1000000,
+            "inputPrice": "$1",
+            "inputCachedPrice": "$0.05",
+            "outputPrice": "$2.7",
             "url": "https://www.stepfun.com/step-5-preview"
         },
         {
@@ -20,6 +62,11 @@
             "time": "2026/09/18",
             "input": ["text", "image", "video"],
             "output": ["text"],
+            "context": 1000000,
+            "generate": 131000,
+            "inputPrice": "￥0.8",
+            "inputCachedPrice": "￥0.1",
+            "outputPrice": "￥2.7",
             "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash"
         },
         {
@@ -1623,6 +1670,9 @@
         {
             "name": "JobBench",
             "scores": {
+                "MiMo V2.6 Pro": 0.62,
+                "MiMo V2.6 Flash": 0.612,
+                "DeepSeek V4.1 Flash(from MiMo V2.6 Pro)": 0.458,
                 "Step 5 Preview": 0.59,
                 "Muse Spark 1.3": 0.649,
                 "Muse Spark 1.2(from Muse Spark 1.3)": 0.616,
@@ -1700,6 +1750,26 @@
                 "Gemini 3 Pro(from Gemini 3.1 Pro)": 0.433,
                 "MiniMax M2.1": 0.497,
                 "GPT-5.2": 0.565
+            }
+        },
+        {
+            "name": "SEC-Bench Pro",
+            "scores": {
+                "MiMo V2.6 Pro": 0.663,
+                "MiMo V2.6 Flash": 0.475,
+                "DeepSeek V4.1 Flash(from MiMo V2.6 Pro)": 0.628,
+                "GPT-6 Astra": 0.854,
+                "GPT-5.6 Sol": 0.712
+            }
+        },
+        {
+            "name": "HealthBench Professional",
+            "scores": {
+                "GPT-6 Astra": 0.634,
+                "GPT-5.6 Sol": 0.605,
+                "Grok 4.7": 0.567,
+                "Grok 4.6(from Grok 4.7)": 0.485,
+                "Claude Fable 5.1(from Grok 4.7)": 0.621
             }
         },
         {
@@ -1782,6 +1852,9 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "MiMo V2.6 Pro": 0.719,
+                "MiMo V2.6 Flash": 0.679,
+                "Grok 4.7": 0.71,
                 "Qwen 3.8 Omni Flash": 0.578,
                 "Step 5 Preview": 0.677,
                 "DeepSeek V4.1 Flash": 0.742,
@@ -1839,6 +1912,8 @@
         {
             "name": "Toolathlon-Verified",
             "scores": {
+                "MiMo V2.6 Pro": 0.769,
+                "MiMo V2.6 Flash": 0.736,
                 "Qwen 3.8 Max 0902": 0.733,
                 "Hy 4 Preview": 0.741,
                 "GLM 5.3 Flash": 0.784,
@@ -1878,6 +1953,9 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "MiMo V2.6 Pro": 0.349,
+                "MiMo V2.6 Flash": 0.288,
+                "Grok 4.7": 0.38,
                 "Step 5 Preview": 0.33,
                 "DeepSeek V4.1 Flash": 0.312,
                 "DeepSeek V4 Pro 0813(from DeepSeek V4.1 Flash)": 0.124,
@@ -1921,6 +1999,8 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "MiMo V2.6 Pro": 0.899,
+                "MiMo V2.6 Flash": 0.876,
                 "Step 5 Preview": 0.85,
                 "DeepSeek V4.1 Flash": 0.906,
                 "Muse Spark 1.3": 0.888,
@@ -2026,6 +2106,7 @@
         {
             "name": "BrowseComp",
             "scores": {
+                "Step 5 Preview": 0.887,
                 "GPT-6 Astra": 0.915,
                 "Inkling-Small": 0.774,
                 "Ling-3.0-flash": 0.82,
@@ -2064,6 +2145,13 @@
                 "GPT-5.2": 0.779,
                 "GLM 4.7": 0.675,
                 "GPT-5": 0.549
+            }
+        },
+        {
+            "name": "GDPval-AA 2.1",
+            "scores": {
+                "MiMo V2.6 Pro": 1673,
+                "DeepSeek V4.1 Flash(from MiMo V2.6 Pro)": 1600
             }
         },
         {
@@ -2199,6 +2287,10 @@
             "name": "Agents' Last Exam(score)",
             "info": "score",
             "scores": {
+                "GPT-6 Astra": 0.593,
+                "GPT-5.6 Sol(from GPT-6 Astra)": 0.536,
+                "Claude Fable 5(from GPT-6 Astra)": 0.487,
+                "Claude Opus 5(from GPT-6 Astra)": 0.555,
                 "Qwen 3.8 Flash Next": 0.512,
                 "Qwen 3.8 27B(from Qwen 3.8 Flash Next)": 0.738,
                 "Qwen 3.8 27B": 0.429,
@@ -2216,12 +2308,12 @@
             "name": "Agents' Last Exam(pass)",
             "info": "pass",
             "scores": {
+                "MiMo V2.6 Pro": 0.316,
+                "MiMo V2.6 Flash": 0.276,
+                "DeepSeek V4.1 Flash(from MiMo V2.6 Pro)": 0.318,
+                "GPT-6 Astra": 0.342,
                 "Step 5 Preview": 0.295,
                 "DeepSeek V4.1 Flash": 0.318,
-                "GPT-6 Astra": 0.593,
-                "GPT-5.6 Sol(from GPT-6 Astra)": 0.536,
-                "Claude Fable 5(from GPT-6 Astra)": 0.487,
-                "Claude Opus 5(from GPT-6 Astra)": 0.555,
                 "GLM 5.3 Flash": 0.263,
                 "Qwen 3.8 Flash Next": 0.243,
                 "DeepSeek V4 Flash Vision Exp": 0.273,
@@ -2274,6 +2366,9 @@
         {
             "name": "Cybergym",
             "scores": {
+                "MiMo V2.6 Pro": 0.94,
+                "MiMo V2.6 Flash": 0.951,
+                "DeepSeek V4.1 Flash(from MiMo V2.6 Pro)": 0.881,
                 "Step 5 Preview": 0.847,
                 "Hy 4 Preview": 0.784,
                 "DeepSeek V4 Flash Vision Exp": 0.753,
@@ -2392,6 +2487,8 @@
         {
             "name": "OSWorld-Verified",
             "scores": {
+                "MiMo V2.6 Pro": 0.82,
+                "MiMo V2.6 Flash": 0.808,
                 "Qwen 3.8 27B": 0.843,
                 "Muse Glimmer": 0.659,
                 "Qwen 3.8 Max": 0.861,
