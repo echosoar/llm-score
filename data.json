@@ -4,6 +4,45 @@
     ],
     "models": [
         {
+            "brand": "Anthropic",
+            "model": "Claude Opus 5.5",
+            "time": "2026/09/23",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "inputPrice": "$4",
+            "inputCachedPrice": "$0.2",
+            "outputPrice": "$20",
+            "url": "https://www.anthropic.com/claude-opus-5-5"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-6 Sol",
+            "time": "2026/09/03",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1050000,
+            "generate": 128000,
+            "inputPrice": "$2",
+            "inputCachedPrice": "$0.2",
+            "outputPrice": "$10",
+            "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-6 Luna",
+            "time": "2026/09/03",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1050000,
+            "generate": 128000,
+            "inputPrice": "$0.1",
+            "inputCachedPrice": "$0.01",
+            "outputPrice": "$0.5",
+            "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+        },
+        {
             "brand": "Xiaomi",
             "model": "MiMo V2.6 Pro",
             "time": "2026/09/22",
@@ -1562,6 +1601,9 @@
             "name": "AutomationBench 1.0.6",
             "info": "score",
             "scores": {
+                "GPT-6 Sol": 0.332,
+                "GPT-6 Luna": 0.207,
+                "Claude Opus 5.5": 0.4,
                 "GPT-6 Astra": 0.414,
                 "Claude Fable 5.1": 0.314,
                 "Claude Opus 5(from GPT-6 Astra)": 0.269,
@@ -1852,6 +1894,8 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "GPT-6 Sol": 0.688,
+                "GPT-6 Luna": 0.666,
                 "MiMo V2.6 Pro": 0.719,
                 "MiMo V2.6 Flash": 0.679,
                 "Grok 4.7": 0.71,
@@ -1943,6 +1987,7 @@
         {
             "name": "Terminal-Bench Science 0.1",
             "scores": {
+                "Claude Opus 5.5": 0.587,
                 "GPT-6 Astra": 0.646,
                 "GPT-5.6 Sol(from GPT-6 Astra)": 0.224,
                 "Claude Fable 5.1": 0.526,
@@ -1953,6 +1998,7 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Claude Opus 5.5": 0.664,
                 "MiMo V2.6 Pro": 0.349,
                 "MiMo V2.6 Flash": 0.288,
                 "Grok 4.7": 0.38,
@@ -2150,6 +2196,9 @@
         {
             "name": "GDPval-AA 2.1",
             "scores": {
+                "Claude Opus 5.5": 1846,
+                "Claude Fable 5.1(from Claude Opus 5.5)": 1735,
+                "Claude Opus 5(from Claude Opus 5.5)": 1708,
                 "MiMo V2.6 Pro": 1673,
                 "DeepSeek V4.1 Flash(from MiMo V2.6 Pro)": 1600
             }
@@ -2219,10 +2268,11 @@
             "name": "Humanity's Last Exam",
             "info": "hle with tool",
             "scores": {
+                "Claude Opus 5.5": 0.677,
                 "Step 5 Preview": 0.594,
                 "DeepSeek V4.1 Flash": 0.639,
                 "GPT-6 Astra": 0.572,
-                "Claude Fable 5.1": 0.65,
+                "Claude Fable 5.1": 0.656,
                 "Hy 4 Preview": 0.554,
                 "GLM 5.3 Flash": 0.553,
                 "Qwen 3.8 Flash Next": 0.359,
@@ -2287,6 +2337,8 @@
             "name": "Agents' Last Exam(score)",
             "info": "score",
             "scores": {
+                "GPT-6 Sol": 0.564,
+                "GPT-6 Luna": 0.509,
                 "GPT-6 Astra": 0.593,
                 "GPT-5.6 Sol(from GPT-6 Astra)": 0.536,
                 "Claude Fable 5(from GPT-6 Astra)": 0.487,
@@ -2470,6 +2522,9 @@
             "name": "OSWorld 2.0",
             "info":"Patrial score/ batch tool enabled",
             "scores": {
+                "GPT-6 Sol": 0.644,
+                "GPT-6 Luna": 0.527,
+                "Claude Opus 5.5": 0.818,
                 "GPT-6 Astra": 0.726,
                 "Muse Spark 1.3": 0.669,
                 "Gemini 3.8 Flash": 0.59,
