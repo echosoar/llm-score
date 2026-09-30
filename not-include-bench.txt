@@ -61,9 +61,6 @@
     - GPT‑6 Astra: 42.4
     "MiMo V2.6 Pro": 0.178,
     "MiMo V2.6 Flash": 0.6,
-+ FrontierCode 1.1 extened
-    - GPT-6 Astra: 64.5
-    - Grok 4.6: 61.3
 + FrontierMath Tier 4 v2
     - GPT‑6 Astra: 97.6
 + GeneBench Pro

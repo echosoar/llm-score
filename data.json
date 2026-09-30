@@ -4,6 +4,32 @@
     ],
     "models": [
         {
+            "brand": "OpenAI",
+            "model": "GPT-6.1 Sol",
+            "time": "2026/09/29",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1050000,
+            "generate": 128000,
+            "inputPrice": "$2",
+            "inputCachedPrice": "$0.1",
+            "outputPrice": "$10",
+            "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-1-sol/"
+        },
+        {
+            "brand": "Anthropic",
+            "model": "Claude Sonnet 5.5",
+            "time": "2026/09/28",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "inputPrice": "$3",
+            "inputCachedPrice": "$0.3",
+            "outputPrice": "$15",
+            "url": "https://www.anthropic.com/claude-sonnet-5-5"
+        },
+        {
             "brand": "Anthropic",
             "model": "Claude Opus 5.5",
             "time": "2026/09/23",
@@ -19,7 +45,7 @@
         {
             "brand": "OpenAI",
             "model": "GPT-6 Sol",
-            "time": "2026/09/03",
+            "time": "2026/09/22",
             "input": ["text", "image"],
             "output": ["text"],
             "context": 1050000,
@@ -32,7 +58,7 @@
         {
             "brand": "OpenAI",
             "model": "GPT-6 Luna",
-            "time": "2026/09/03",
+            "time": "2026/09/22",
             "input": ["text", "image"],
             "output": ["text"],
             "context": 1050000,
@@ -1601,6 +1627,7 @@
             "name": "AutomationBench 1.0.6",
             "info": "score",
             "scores": {
+                "GPT-6.1 Sol": 0.361,
                 "GPT-6 Sol": 0.332,
                 "GPT-6 Luna": 0.207,
                 "Claude Opus 5.5": 0.4,
@@ -1894,6 +1921,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "GPT-6.1 Sol": 0.752,
                 "GPT-6 Sol": 0.688,
                 "GPT-6 Luna": 0.666,
                 "MiMo V2.6 Pro": 0.719,
@@ -1985,8 +2013,41 @@
             }
         },
         {
+            "name": "FrontierCode 1.1",
+            "info": "main(not extend)",
+            "scores": {
+                "Claude Sonnet 5.5": 0.521,
+                "Claude Sonnet 5(from Claude Sonnet 5.5)": 0.424,
+                "Claude Opus 5.5": 0.544,
+                "GPT-6 Astra": 0.533,
+                "GPT-5.6 Sol(from GPT-6 Astra)": 0.475,
+                "Claude Fable 5.1(from GPT-6 Astra)": 0.535,
+                "Claude Fable 5(from GPT-6 Astra)": 0.509,
+                "Claude Opus 5(from GPT-6 Astra)": 0.534,
+                "Gemini 3.8 Flash(from GPT-6 Astra)": 0.436
+            }
+        },
+        {
+            "name": "FrontierCode 1.1(E)",
+            "info": "Extend",
+            "scores": {
+                "GPT-6 Astra": 0.645,
+                "GPT-6.1 Sol": 0.604,
+                "GPT-6 Sol": 0.607,
+                "GPT-5.6 Sol(from GPT-6 Astra)": 0.606,
+                "Claude Fable 5.1(from GPT-6 Astra)": 0.649,
+                "Claude Fable 5(from GPT-6 Astra)": 0.636,
+                "Claude Opus 5(from GPT-6 Astra)": 0.636,
+                "Gemini 3.8 Flash(from GPT-6 Astra)": 0.563,
+                "Grok 4.6": 0.613,
+                "Grok 4.5(from Grok 4.6)": 0.566
+            }
+        },
+        {
             "name": "Terminal-Bench Science 0.1",
             "scores": {
+                "GPT-6.1 Sol": 0.57,
+                "GPT-6 Sol(from GPT-6.1 Sol)": 0.276,
                 "Claude Opus 5.5": 0.587,
                 "GPT-6 Astra": 0.646,
                 "GPT-5.6 Sol(from GPT-6 Astra)": 0.224,
@@ -1998,6 +2059,8 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Claude Sonnet 5.5": 0.706,
+                "Claude Sonnet 5(from Claude Sonnet 5.5)": 0.103,
                 "Claude Opus 5.5": 0.664,
                 "MiMo V2.6 Pro": 0.349,
                 "MiMo V2.6 Flash": 0.288,
@@ -2196,6 +2259,9 @@
         {
             "name": "GDPval-AA 2.1",
             "scores": {
+                "Claude Sonnet 5.5": 1844,
+                "Claude Sonnet 5(from Claude Sonnet 5.5)": 1449,
+                "GPT-6 Sol(from Claude Sonnet 5.5)": 1487,
                 "Claude Opus 5.5": 1846,
                 "Claude Fable 5.1(from Claude Opus 5.5)": 1735,
                 "Claude Opus 5(from Claude Opus 5.5)": 1708,
@@ -2268,6 +2334,7 @@
             "name": "Humanity's Last Exam",
             "info": "hle with tool",
             "scores": {
+                "Claude Sonnet 5.5": 0.645,
                 "Claude Opus 5.5": 0.677,
                 "Step 5 Preview": 0.594,
                 "DeepSeek V4.1 Flash": 0.639,
@@ -2519,9 +2586,19 @@
             }
         },
         {
+            "name": "OSWorld 2.1",
+            "info":"Patrial score/ batch tool enabled",
+            "scores": {
+                "Claude Sonnet 5.5": 0.801,
+                "Claude Sonnet 5(from Claude Sonnet 5.5)": 0.57,
+                "Claude Opus 5.5(from Claude Sonnet 5.5)": 0.818
+            }
+        },
+        {
             "name": "OSWorld 2.0",
             "info":"Patrial score/ batch tool enabled",
             "scores": {
+                "GPT-6.1 Sol": 0.714,
                 "GPT-6 Sol": 0.644,
                 "GPT-6 Luna": 0.527,
                 "Claude Opus 5.5": 0.818,
@@ -2797,6 +2874,8 @@
             "name": "gdp.pdf",
             "info": "no tool",
             "scores": {
+                "GPT-6.1 Sol": 0.32,
+                "GPT-6 Astra(from GPT-6.1 Sol)": 0.322,
                 "Step 5 Preview": 0.148,
                 "GPT-5.6 Sol": 0.307,
                 "GPT-5.6 Terra": 0.247,
