@@ -4,6 +4,19 @@
     ],
     "models": [
         {
+            "brand": "Anthropic",
+            "model": "Claude Haiku 5.5",
+            "time": "2025/10/08",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "inputPrice": "$0.1",
+            "inputCachedPrice": "$0.01",
+            "outputPrice": "$0.5",
+            "url": "https://www.anthropic.com/claude-haiku-5-5"
+        },
+        {
             "brand": "Mistral",
             "model": "Large 4",
             "time": "2026/10/06",
@@ -1961,6 +1974,7 @@
             "name": "Chartography",
             "info": "no tool",
             "scores": {
+                "Claude Haiku 5.5": 0.464,
                 "Gemini 4 Argon": 0.716,
                 "GPT-6 Astra(from Gemini 4 Argon)": 0.71,
                 "Claude Fable 5.1(from Gemini 4 Argon)": 0.462,
@@ -2070,6 +2084,7 @@
             "name": "FrontierCode 1.1",
             "info": "main(not extend)",
             "scores": {
+                "Claude Haiku 5.5": 0.464,
                 "Claude Sonnet 5.5": 0.521,
                 "Claude Sonnet 5(from Claude Sonnet 5.5)": 0.424,
                 "Claude Opus 5.5": 0.544,
@@ -2114,6 +2129,7 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Claude Haiku 5.5": 0.392,
                 "Large 4": 0.28,
                 "Gemini 4 Argon": 0.574,
                 "Claude Sonnet 5.5": 0.706,
@@ -2316,9 +2332,12 @@
         {
             "name": "GDPval-AA 2.1",
             "scores": {
+                "Claude Haiku 5.5": 1620,
+                "Claude Haiku 4.5(from Claude Haiku 5.5)": 735,
                 "Claude Sonnet 5.5": 1844,
                 "Claude Sonnet 5(from Claude Sonnet 5.5)": 1449,
                 "GPT-6 Sol(from Claude Sonnet 5.5)": 1487,
+                "GPT-6 Luna(from Claude Haiku 5.5)": 1437,
                 "Claude Opus 5.5": 1846,
                 "Claude Fable 5.1(from Claude Opus 5.5)": 1735,
                 "Claude Opus 5(from Claude Opus 5.5)": 1708,
@@ -2391,6 +2410,8 @@
             "name": "Humanity's Last Exam",
             "info": "hle with tool",
             "scores": {
+                "Claude Haiku 5.5": 0.574,
+                "Claude Haiku 4.5(from Claude Haiku 5.5)": 0.187,
                 "Claude Sonnet 5.5": 0.645,
                 "Claude Opus 5.5": 0.677,
                 "Step 5 Preview": 0.594,
@@ -2648,6 +2669,9 @@
             "name": "OSWorld 2.1",
             "info":"Patrial score/ batch tool enabled",
             "scores": {
+
+                "Claude Haiku 5.5": 0.724,
+                "Claude Haiku 4.5(from Claude Haiku 5.5)": 0.157,
                 "Claude Sonnet 5.5": 0.801,
                 "Claude Sonnet 5(from Claude Sonnet 5.5)": 0.57,
                 "Claude Opus 5.5(from Claude Sonnet 5.5)": 0.818
