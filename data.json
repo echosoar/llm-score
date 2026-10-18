@@ -4,6 +4,30 @@
     ],
     "models": [
         {
+            "brand": "DeepSeek",
+            "model": "DeepSeek V4.1 Flash 1017",
+            "time": "2026/10/18",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1000000,
+            "inputPrice": "￥1",
+            "inputCachedPrice": "￥0.02",
+            "outputPrice": "￥4",
+            "url": "https://api-docs.deepseek.com/zh-cn/news/news261017"
+        },
+        {
+            "brand": "Meta",
+            "model": "Muse Wonder",
+            "time": "2026/10/12",
+            "input": ["text", "image", "pdf", "audio", "video"],
+            "output": ["text"],
+            "context": 1000000,
+            "inputPrice": "$4",
+            "inputCachedPrice": "$0.2",
+            "outputPrice": "$20",
+            "url": "https://research.meta.ai/blog/muse-wonder"
+        },
+        {
             "brand": "Anthropic",
             "model": "Claude Haiku 5.5",
             "time": "2026/10/08",
@@ -1684,6 +1708,23 @@
             }
         },
         {
+            "name": "AutomationBench 1.0.6 Pass",
+            "info": "Pass@1",
+            "scores": {
+                "DeepSeek V4.1 Flash 1017": 0.605,
+                "DeepSeek V4.1 Flash(from DeepSeek V4.1 Flash 1017)": 0.548,
+                "Kimi K3(from DeepSeek V4.1 Flash 1017)": 0.467,
+                "GLM 5.3(from DeepSeek V4.1 Flash 1017)": 0.488,
+                "MiMo V2.6 Pro": 0.531,
+                "MiMo V2.6 Flash": 0.523,
+                "GPT-6 Astra(from MiMo V2.6 Pro)": 0.52,
+                "Qwen 3.8 Max 0902": 0.508,
+                "Claude Opus 5(from Qwen 3.8 Max 0902)": 0.503,
+                "Claude Fable 5(from Qwen 3.8 Max 0902)": 0.462,
+                "GPT-5.6 Sol(from Qwen 3.8 Max 0902)": 0.458
+            }
+        },
+        {
             "name": "GPQA Diamond",
             "scores": {
                 "Qwen 3.8 Omni Flash": 0.91,
@@ -1779,6 +1820,10 @@
         {
             "name": "JobBench",
             "scores": {
+                "Muse Wonder": 0.705,
+                "Claude Opus 5.5(from Muse Wonder)": 0.754,
+                "Claude Fable 5.1(from Muse Wonder)": 0.731,
+                "GPT-6 Astra(from Muse Wonder)": 0.661,
                 "MiMo V2.6 Pro": 0.62,
                 "MiMo V2.6 Flash": 0.612,
                 "DeepSeek V4.1 Flash(from MiMo V2.6 Pro)": 0.458,
@@ -1874,6 +1919,8 @@
         {
             "name": "HealthBench Professional",
             "scores": {
+                "Muse Wonder": 0.605,
+                "Claude Opus 5.5(from Muse Wonder)": 0.656,
                 "GPT-6 Astra": 0.634,
                 "GPT-5.6 Sol": 0.605,
                 "Grok 4.7": 0.567,
@@ -1930,7 +1977,7 @@
                 "GPT-o1(from GPT-4.1)": 0.41
             }
         },
-         {
+        {
             "name": "SWE-Bench Multilingual",
             "scores": {
                 "Qwen 3.8 Omni Flash": 0.805,
@@ -1987,6 +2034,8 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Muse Wonder": 0.788,
+                "DeepSeek V4.1 Flash 1017": 0.77,
                 "Large 4": 0.62,
                 "Gemini 4 Argon": 0.779,
                 "GPT-6.1 Sol": 0.752,
@@ -2113,6 +2162,29 @@
             }
         },
         {
+            "name": "Program Bench",
+            "info": "almost resolved",
+            "scores": {
+                "Muse Wonder": 0.5,
+                "Claude Opus 5.5(from Muse Wonder)": 0.705,
+                "Claude Fable 5.1(from Muse Wonder)": 0.555,
+                "GPT-6 Astra(from Muse Wonder)": 0.525,
+                "DeepSeek V4.1 Flash 1017": 0.291,
+                "DeepSeek V4.1 Flash(from DeepSeek V4.1 Flash 1017)": 0.203,
+                "Kimi K3(from DeepSeek V4.1 Flash 1017)": 0.175,
+                "GLM 5.3(from DeepSeek V4.1 Flash 1017)": 0.19,
+                "GPT-5.6 Sol(from DeepSeek V4.1 Flash 1017)": 0.23,
+                "Claude Opus 5(from DeepSeek V4.1 Flash 1017)": 0.37,
+                "Qwen 3.8 Max 0902": 0.28,
+                "Qwen 3.8 Max(from Qwen 3.8 Max 0902)": 0.105,
+                "MiMo V2.6 Pro": 0.265,
+                "Claude Fable 5(from MiMo V2.6 Pro)": 0.33,
+                "MiMo V2.5 Pro(from MiMo V2.6 Pro)": 0.125,
+                "MiMo V2.6 Flash": 0.26,
+                "hy4 preview": 0.175
+            }
+        },
+        {
             "name": "Terminal-Bench Science 0.1",
             "scores": {
                 "Gemini 4 Argon": 0.576,
@@ -2129,6 +2201,8 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Muse Wonder": 0.52,
+                "DeepSeek V4.1 Flash 1017": 0.423,
                 "Claude Haiku 5.5": 0.392,
                 "Large 4": 0.28,
                 "Gemini 4 Argon": 0.574,
@@ -2669,7 +2743,9 @@
             "name": "OSWorld 2.1",
             "info":"Patrial score/ batch tool enabled",
             "scores": {
-
+                "Muse Wonder": 0.726,
+                "Claude Fable 5.1(from Muse Wonder)": 0.807,
+                "GPT-6 Astra(from Muse Wonder)": 0.758,
                 "Claude Haiku 5.5": 0.724,
                 "Claude Haiku 4.5(from Claude Haiku 5.5)": 0.157,
                 "Claude Sonnet 5.5": 0.801,
@@ -2911,6 +2987,7 @@
             "name": "BabyVision",
             "info": "with tool",
             "scores": {
+                "DeepSeek V4.1 Flash 1017": 0.925,
                 "DeepSeek V4.1 Flash": 0.896,
                 "Qwen 3.8 Max 0902": 0.938,
                 "Qwen 3.8 27B": 0.856,
@@ -2933,6 +3010,7 @@
         {
             "name": "NL2Repo",
             "scores": {
+                "DeepSeek V4.1 Flash 1017": 0.682,
                 "Qwen 3.8 Omni Flash": 0.489,
                 "DeepSeek V4.1 Flash": 0.654,
                 "Qwen 3.8 Max 0902": 0.649,

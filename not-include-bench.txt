@@ -8,6 +8,8 @@
     - hy4 preview: 37.1
     - Grok 4.6: 57.5
     - Kimi k3: 41
++ Apex-bench 1.1
+    - "DeepSeek V4.1 Flash 1017": 0.721,
 + Apex-SWE
     - Grok 4.6: 56.4
 + ARC-AGI-3
@@ -34,6 +36,7 @@
     - Gemini 3.8 Flash: 56.5(5.6 sol: 44.7)
 + Chartography(with tools)
     - GLM 5.3 Flash: 78
+    - "DeepSeek V4.1 Flash 1017": 0.83
 + ClawEval-MM(pass@3)
     - Qwen 3.8 Max 0902: 80.2
 + CursorBench 3.2.0
@@ -87,6 +90,7 @@
     - Step 5 Preview: 0.465
     - hy4 preview: 43.4
     - Qwen 3.8 Omni Flash: 0.365
+    - "DeepSeek V4.1 Flash 1017": 0.426
 + HLE-Verified
     - Gemini 3.8 Flash: 54.9
 + Hyber-index
@@ -131,11 +135,6 @@
 + PostTrainBench 1.1
     - hy4 preview: 35.6
     - Gemini 4 Argon: 45.3
-+ Program Bench(almost resolved)
-    - Qwen 3.8 Max 0902: 28
-    "MiMo V2.6 Pro": 0.265,
-    "MiMo V2.6 Flash": 0.26,
-    - hy4 preview: 17.5
 + RealWorldQA
     - Qwen 3.8 Omni Flash: 0.877
 + RiemannBench
