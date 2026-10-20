@@ -33,6 +33,7 @@
       "name": "AutomationBench 1.0.6 Pass",
       "info": "Pass@1",
       "scores": {
+        "MiniMax M3.1 Flash": 0.628,
         "DeepSeek V4.1 Flash 1017": 0.605,
         "DeepSeek V4.1 Flash": 0.548,
         "Kimi K3": 0.467,
@@ -457,6 +458,7 @@
     {
       "name": "DeepSWE 1.1",
       "scores": {
+        "MiniMax M3.1 Flash": 0.737,
         "Muse Wonder": 0.788,
         "DeepSeek V4.1 Flash 1017": 0.77,
         "Large 4": 0.62,
@@ -693,6 +695,7 @@
     {
       "name": "Terminal-Bench 4",
       "scores": {
+        "MiniMax M3.1 Flash": 0.381,
         "Muse Wonder": 0.52,
         "DeepSeek V4.1 Flash 1017": 0.423,
         "Claude Haiku 5.5": 0.392,
@@ -1131,6 +1134,22 @@
       }
     },
     {
+      "name": "Humanity's Last Exam",
+      "info": "hle without tool",
+      "scores": {
+        "MiniMax M3.1 Flash": 0.434,
+        "DeepSeek V4.1 Flash 1017": 0.44,
+        "DeepSeek V4.1 Flash": 0.391,
+        "Kimi K3": 0.435,
+        "GLM 5.3": 0.42
+      },
+      "fromSources": {
+        "DeepSeek V4.1 Flash": "DeepSeek V4.1 Flash 1017",
+        "Kimi K3": "DeepSeek V4.1 Flash 1017",
+        "GLM 5.3": "DeepSeek V4.1 Flash 1017"
+      }
+    },
+    {
       "name": "Agents' Last Exam(score)",
       "info": "ale score",
       "scores": {
@@ -1163,6 +1182,7 @@
       "name": "Agents' Last Exam(pass)",
       "info": "ale pass",
       "scores": {
+        "MiniMax M3.1 Flash": 0.296,
         "Gemini 4 Argon": 0.395,
         "Claude Opus 5.5": 0.382,
         "MiMo V2.6 Pro": 0.316,
@@ -1205,6 +1225,7 @@
       "name": "CharXiv",
       "info": "RQ score w/ python",
       "scores": {
+        "MiniMax M3.1 Flash": 0.825,
         "Qwen 3.8 Omni Flash": 0.914,
         "GLM 5.3 Flash": 0.894,
         "DeepSeek V4 Flash Vision Exp": 0.804,
@@ -1248,6 +1269,7 @@
     {
       "name": "Cybergym",
       "scores": {
+        "MiniMax M3.1 Flash": 0.822,
         "MiMo V2.6 Pro": 0.94,
         "MiMo V2.6 Flash": 0.951,
         "DeepSeek V4.1 Flash": 0.881,
@@ -1408,6 +1430,8 @@
       "name": "OSWorld 2.0",
       "info": "Patrial score/ batch tool enabled",
       "scores": {
+        "MiniMax M3.1 Flash": 0.617,
+        "DeepSeek V4.1 Flash": 0.543,
         "Gemini 4 Argon": 0.692,
         "GPT-6.1 Sol": 0.714,
         "GPT-6 Sol": 0.644,
@@ -1427,6 +1451,7 @@
         "Claude Opus 4.8": 0.548
       },
       "fromSources": {
+        "DeepSeek V4.1 Flash": "MiniMax M3.1 Flash",
         "Claude Fable 5": "Claude Fable 5.1",
         "Claude Opus 5": "Claude Fable 5.1",
         "GPT-5.5": "GPT-5.6 Sol",
@@ -1734,6 +1759,7 @@
       "name": "BabyVision",
       "info": "with tool",
       "scores": {
+        "MiniMax M3.1 Flash": 0.91,
         "DeepSeek V4.1 Flash 1017": 0.925,
         "DeepSeek V4.1 Flash": 0.896,
         "Qwen 3.8 Max 0902": 0.938,
@@ -1767,6 +1793,7 @@
     {
       "name": "NL2Repo",
       "scores": {
+        "MiniMax M3.1 Flash": 0.612,
         "DeepSeek V4.1 Flash 1017": 0.682,
         "Qwen 3.8 Omni Flash": 0.489,
         "DeepSeek V4.1 Flash": 0.654,
@@ -5122,6 +5149,7 @@
           "AIME'26": "Muse Glimmer"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "Claude Haiku 5.5",
           "Claude Sonnet 5.5",
           "Claude Opus 5.5",
@@ -5831,6 +5859,7 @@
           "AIME'26": 0.947
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "Claude Haiku 5.5",
           "Claude Sonnet 5.5",
           "Claude Opus 5.5",
@@ -6519,6 +6548,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -6954,6 +6984,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "Claude Haiku 5.5",
           "Gemini 4 Argon",
           "Claude Sonnet 5.5",
@@ -7345,6 +7376,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "Claude Haiku 5.5",
           "Claude Sonnet 5.5",
           "Claude Opus 5.5",
@@ -7714,6 +7746,7 @@
           "AIME'26": 0.955
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "Claude Haiku 5.5",
           "Claude Sonnet 5.5",
           "Claude Opus 5.5",
@@ -8412,6 +8445,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "Claude Haiku 5.5",
           "Gemini 4 Argon",
           "Claude Sonnet 5.5",
@@ -8617,6 +8651,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Large 4",
@@ -8830,6 +8865,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Claude Haiku 5.5",
           "Claude Sonnet 5.5",
@@ -8940,6 +8976,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -9269,6 +9306,7 @@
           "DeepSWE": "Hy 3"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "MiMo V2.6 Pro",
           "MiMo V2.6 Flash",
@@ -9355,6 +9393,7 @@
           "IFBench": "Qwen 3.8 Flash Next"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -9602,6 +9641,7 @@
           "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -9747,6 +9787,7 @@
           "NL2Repo": "Qwen 3.8 Max"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Claude Haiku 5.5",
           "Claude Sonnet 5.5",
@@ -10014,6 +10055,7 @@
           "NL2Repo": "GLM 5.3"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -10104,6 +10146,7 @@
           "IFBench": "Qwen 3.8 Flash Next"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -10193,6 +10236,7 @@
           "Agents' Last Exam(pass)": "Gemini 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Large 4",
@@ -10277,6 +10321,7 @@
           "BabyVision": "Qwen 3.7 Plus"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Claude Haiku 5.5",
           "Claude Sonnet 5.5",
@@ -10355,6 +10400,7 @@
           "NL2Repo": 0.481
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -10450,6 +10496,7 @@
           "BabyVision": "Seed 2.1 Pro"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Claude Haiku 5.5",
           "Claude Sonnet 5.5",
@@ -10514,6 +10561,7 @@
           "BabyVision": 0.763
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Large 4",
@@ -10605,6 +10653,7 @@
           "OSWorld 2.1": "Claude Sonnet 5.5"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -10680,6 +10729,7 @@
           "GDPval-AA 2": "Grok 4.6"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Large 4",
@@ -10750,6 +10800,7 @@
           "NL2Repo": 0.489
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Large 4",
@@ -10822,6 +10873,7 @@
           "CharXiv": "GLM 5.3 Flash"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Large 4",
@@ -10892,6 +10944,7 @@
           "OSWorld 2.0": "Muse Spark 1.3"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Large 4",
@@ -10963,6 +11016,7 @@
           "Terminal-Bench 4": "Gemini 3.8 Flash"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11061,6 +11115,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11133,6 +11188,7 @@
           "NL2Repo": 0.563
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11239,6 +11295,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Large 4",
@@ -11318,6 +11375,7 @@
           "Terminal-Bench 3": "Qwen 3.8 Max 0902"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11388,6 +11446,7 @@
           "Terminal-Bench 3": "DeepSeek V4.1 Flash"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11458,6 +11517,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Gemini 4 Argon",
@@ -11526,6 +11586,7 @@
           "NL2Repo": 0.589
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11583,6 +11644,7 @@
           "Terminal-Bench 4": 0.28
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11648,7 +11710,7 @@
           "Terminal-Bench 2.1": 0.883,
           "BrowseComp": 0.912,
           "GDPval-AA 2": 1668,
-          "Humanity's Last Exam": 0.56,
+          "Humanity's Last Exam": 0.435,
           "Agents' Last Exam(pass)": 0.276,
           "CharXiv": 0.913,
           "Cybergym": 0.8,
@@ -11664,11 +11726,13 @@
           "Program Bench": "DeepSeek V4.1 Flash 1017",
           "Terminal-Bench 4": "DeepSeek V4.1 Flash",
           "Terminal-Bench 3": "GLM 5.3",
+          "Humanity's Last Exam": "DeepSeek V4.1 Flash 1017",
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813",
           "Cybergym": "DeepSeek V4 Pro 0813",
           "NL2Repo": "GLM 5.3"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11740,6 +11804,7 @@
           "Agents' Last Exam(pass)": "Gemini 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11797,6 +11862,7 @@
           "GDPval-AA 2.1": "Claude Haiku 5.5"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11854,6 +11920,7 @@
           "HealthBench Professional": "Grok 4.7"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Gemini 4 Argon",
@@ -11915,6 +11982,7 @@
           "gdp.pdf": 0.148
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -11972,6 +12040,7 @@
           "OSWorld-Verified": 0.808
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -12032,6 +12101,7 @@
           "FrontierCode 1.1(E)": "GPT-6 Astra"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -12084,7 +12154,7 @@
           "Terminal-Bench 3": 0.283,
           "Terminal-Bench 2.1": 0.882,
           "GDPval-AA 2": 1769,
-          "Humanity's Last Exam": 0.625,
+          "Humanity's Last Exam": 0.42,
           "Agents' Last Exam(pass)": 0.285,
           "Cybergym": 0.845,
           "NL2Repo": 0.58
@@ -12093,9 +12163,11 @@
           "AutomationBench 1.0.6 Pass": "DeepSeek V4.1 Flash 1017",
           "SWE-Atlas QnA": "Step 5 Preview",
           "Program Bench": "DeepSeek V4.1 Flash 1017",
-          "Terminal-Bench 4": "DeepSeek V4.1 Flash"
+          "Terminal-Bench 4": "DeepSeek V4.1 Flash",
+          "Humanity's Last Exam": "DeepSeek V4.1 Flash 1017"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Gemini 4 Argon",
@@ -12119,6 +12191,78 @@
         "rank": 63.78141008817137
       },
       "rank": 63.78141008817137
+    },
+    {
+      "modelInfo": {
+        "brand": "DeepSeek",
+        "model": "DeepSeek V4.1 Flash",
+        "time": "2026/09/10",
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "generate": 384000,
+        "params": 552,
+        "active": 16,
+        "inputPrice": "￥1",
+        "inputCachedPrice": "￥0.02",
+        "outputPrice": "￥4",
+        "url": "https://www.deepseek.com/news/deepseek-v4-1-flash/",
+        "currentBenchmarksScores": {
+          "AutomationBench 1.0.6 Pass": 0.548,
+          "GPQA Diamond": 0.909,
+          "JobBench": 0.458,
+          "SEC-Bench Pro": 0.628,
+          "DeepSWE 1.1": 0.742,
+          "Program Bench": 0.203,
+          "Terminal-Bench 4": 0.312,
+          "Terminal-Bench 3": 0.3,
+          "Terminal-Bench 2.1": 0.906,
+          "GDPval-AA 2.1": 1600,
+          "Humanity's Last Exam": 0.391,
+          "Agents' Last Exam(pass)": 0.318,
+          "Cybergym": 0.881,
+          "OSWorld 2.0": 0.543,
+          "BabyVision": 0.896,
+          "NL2Repo": 0.654
+        },
+        "currentBenchmarksFrom": {
+          "AutomationBench 1.0.6 Pass": "DeepSeek V4.1 Flash 1017",
+          "JobBench": "MiMo V2.6 Pro",
+          "SEC-Bench Pro": "MiMo V2.6 Pro",
+          "Program Bench": "DeepSeek V4.1 Flash 1017",
+          "GDPval-AA 2.1": "MiMo V2.6 Pro",
+          "Humanity's Last Exam": "DeepSeek V4.1 Flash 1017",
+          "Agents' Last Exam(pass)": "MiMo V2.6 Pro",
+          "Cybergym": "MiMo V2.6 Pro",
+          "OSWorld 2.0": "MiniMax M3.1 Flash"
+        },
+        "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
+          "DeepSeek V4.1 Flash 1017",
+          "Muse Wonder",
+          "Claude Haiku 5.5",
+          "Gemini 4 Argon",
+          "GPT-6.1 Sol",
+          "Claude Sonnet 5.5",
+          "Claude Opus 5.5",
+          "MiMo V2.6 Pro",
+          "Grok 4.7",
+          "GPT-6 Astra",
+          "Muse Spark 1.3",
+          "Claude Fable 5.1",
+          "Claude Opus 5",
+          "GPT-5.6 Sol",
+          "Claude Fable 5",
+          "ERNIE 5.1"
+        ],
+        "rank": 64.16816050239844
+      },
+      "rank": 64.16816050239844
     },
     {
       "modelInfo": {
@@ -12185,6 +12329,7 @@
           "BabyVision": "Kimi K3"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Gemini 4 Argon",
@@ -12193,7 +12338,6 @@
           "Claude Opus 5.5",
           "GPT-6 Sol",
           "MiMo V2.6 Pro",
-          "DeepSeek V4.1 Flash",
           "GPT-6 Astra",
           "Muse Spark 1.3",
           "Qwen 3.8 Max 0902",
@@ -12201,9 +12345,9 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 64.33407792533184
+        "rank": 64.84246685582805
       },
-      "rank": 64.33407792533184
+      "rank": 64.84246685582805
     },
     {
       "modelInfo": {
@@ -12239,6 +12383,7 @@
           "NL2Repo": 0.649
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Gemini 4 Argon",
@@ -12254,76 +12399,9 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 65.32329211310291
+        "rank": 65.83168104359912
       },
-      "rank": 65.32329211310291
-    },
-    {
-      "modelInfo": {
-        "brand": "DeepSeek",
-        "model": "DeepSeek V4.1 Flash",
-        "time": "2026/09/10",
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 1000000,
-        "generate": 384000,
-        "params": 552,
-        "active": 16,
-        "inputPrice": "￥1",
-        "inputCachedPrice": "￥0.02",
-        "outputPrice": "￥4",
-        "url": "https://www.deepseek.com/news/deepseek-v4-1-flash/",
-        "currentBenchmarksScores": {
-          "AutomationBench 1.0.6 Pass": 0.548,
-          "GPQA Diamond": 0.909,
-          "JobBench": 0.458,
-          "SEC-Bench Pro": 0.628,
-          "DeepSWE 1.1": 0.742,
-          "Program Bench": 0.203,
-          "Terminal-Bench 4": 0.312,
-          "Terminal-Bench 3": 0.3,
-          "Terminal-Bench 2.1": 0.906,
-          "GDPval-AA 2.1": 1600,
-          "Humanity's Last Exam": 0.639,
-          "Agents' Last Exam(pass)": 0.318,
-          "Cybergym": 0.881,
-          "BabyVision": 0.896,
-          "NL2Repo": 0.654
-        },
-        "currentBenchmarksFrom": {
-          "AutomationBench 1.0.6 Pass": "DeepSeek V4.1 Flash 1017",
-          "JobBench": "MiMo V2.6 Pro",
-          "SEC-Bench Pro": "MiMo V2.6 Pro",
-          "Program Bench": "DeepSeek V4.1 Flash 1017",
-          "GDPval-AA 2.1": "MiMo V2.6 Pro",
-          "Agents' Last Exam(pass)": "MiMo V2.6 Pro",
-          "Cybergym": "MiMo V2.6 Pro"
-        },
-        "betterThanCurrentModels": [
-          "DeepSeek V4.1 Flash 1017",
-          "Muse Wonder",
-          "Claude Haiku 5.5",
-          "Gemini 4 Argon",
-          "GPT-6.1 Sol",
-          "Claude Sonnet 5.5",
-          "Claude Opus 5.5",
-          "MiMo V2.6 Pro",
-          "Grok 4.7",
-          "GPT-6 Astra",
-          "Muse Spark 1.3",
-          "Claude Fable 5.1",
-          "Claude Opus 5",
-          "Claude Fable 5",
-          "ERNIE 5.1"
-        ],
-        "rank": 65.56283479692117
-      },
-      "rank": 65.56283479692117
+      "rank": 65.83168104359912
     },
     {
       "modelInfo": {
@@ -12357,6 +12435,7 @@
           "OSWorld-Verified": 0.82
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Claude Haiku 5.5",
@@ -12371,9 +12450,52 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 66.35120737215362
+        "rank": 66.05152581252759
       },
-      "rank": 66.35120737215362
+      "rank": 66.05152581252759
+    },
+    {
+      "modelInfo": {
+        "brand": "xAI",
+        "model": "Grok 4.7",
+        "time": "2026/09/22",
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 500000,
+        "generate": 500000,
+        "inputPrice": "$1.6",
+        "inputCachedPrice": "$0.4",
+        "outputPrice": "$4.8",
+        "url": "https://x.ai/news/grok-4-7",
+        "currentBenchmarksScores": {
+          "HealthBench Professional": 0.567,
+          "DeepSWE 1.1": 0.71,
+          "Terminal-Bench 4": 0.38
+        },
+        "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
+          "DeepSeek V4.1 Flash 1017",
+          "Muse Wonder",
+          "Claude Haiku 5.5",
+          "Gemini 4 Argon",
+          "GPT-6.1 Sol",
+          "Claude Sonnet 5.5",
+          "Claude Opus 5.5",
+          "GPT-6 Astra",
+          "Muse Spark 1.3",
+          "Claude Fable 5.1",
+          "Claude Opus 5",
+          "GPT-5.6 Sol",
+          "Claude Fable 5"
+        ],
+        "rank": 66.49565188702616
+      },
+      "rank": 66.49565188702616
     },
     {
       "modelInfo": {
@@ -12417,9 +12539,9 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 66.96725321742584
+        "rank": 66.65354662386827
       },
-      "rank": 66.96725321742584
+      "rank": 66.65354662386827
     },
     {
       "modelInfo": {
@@ -12455,6 +12577,7 @@
           "GDPval-AA 2.1": "Claude Sonnet 5.5"
         },
         "betterThanCurrentModels": [
+          "MiniMax M3.1 Flash",
           "DeepSeek V4.1 Flash 1017",
           "Muse Wonder",
           "Gemini 4 Argon",
@@ -12470,32 +12593,40 @@
           "Claude Fable 5.1",
           "Claude Opus 5"
         ],
-        "rank": 67.74311528639136
+        "rank": 67.42940869283379
       },
-      "rank": 67.74311528639136
+      "rank": 67.42940869283379
     },
     {
       "modelInfo": {
-        "brand": "xAI",
-        "model": "Grok 4.7",
-        "time": "2026/09/22",
+        "brand": "MiniMax",
+        "model": "MiniMax M3.1 Flash",
+        "time": "2026/10/19",
         "input": [
           "text",
-          "image"
+          "image",
+          "video"
         ],
         "output": [
           "text"
         ],
-        "context": 500000,
-        "generate": 500000,
-        "inputPrice": "$1.6",
-        "inputCachedPrice": "$0.4",
-        "outputPrice": "$4.8",
-        "url": "https://x.ai/news/grok-4-7",
+        "context": 512000,
+        "generate": 128000,
+        "inputPrice": "$0.15",
+        "inputCachedPrice": "￥0.015",
+        "outputPrice": "$0.6",
+        "url": "https://www.minimax.io/blog/minimax-m31f",
         "currentBenchmarksScores": {
-          "HealthBench Professional": 0.567,
-          "DeepSWE 1.1": 0.71,
-          "Terminal-Bench 4": 0.38
+          "AutomationBench 1.0.6 Pass": 0.628,
+          "DeepSWE 1.1": 0.737,
+          "Terminal-Bench 4": 0.381,
+          "Humanity's Last Exam": 0.434,
+          "Agents' Last Exam(pass)": 0.296,
+          "CharXiv": 0.825,
+          "Cybergym": 0.822,
+          "OSWorld 2.0": 0.617,
+          "BabyVision": 0.91,
+          "NL2Repo": 0.612
         },
         "betterThanCurrentModels": [
           "DeepSeek V4.1 Flash 1017",
@@ -12509,12 +12640,12 @@
           "Muse Spark 1.3",
           "Claude Fable 5.1",
           "Claude Opus 5",
-          "GPT-5.6 Sol",
-          "Claude Fable 5"
+          "Claude Fable 5",
+          "Muse Spark"
         ],
-        "rank": 67.9029990073216
+        "rank": 67.78551334399658
       },
-      "rank": 67.9029990073216
+      "rank": 67.78551334399658
     },
     {
       "modelInfo": {
@@ -12598,9 +12729,9 @@
           "Claude Fable 5.1",
           "Claude Opus 5"
         ],
-        "rank": 68.42931479679528
+        "rank": 68.48087840877677
       },
-      "rank": 68.42931479679528
+      "rank": 68.48087840877677
     },
     {
       "modelInfo": {
@@ -12639,9 +12770,9 @@
           "Claude Fable 5.1",
           "Claude Opus 5"
         ],
-        "rank": 68.79853476859775
+        "rank": 68.85009838057924
       },
-      "rank": 68.79853476859775
+      "rank": 68.85009838057924
     },
     {
       "modelInfo": {
@@ -12708,9 +12839,9 @@
           "GPT-6 Astra",
           "Claude Fable 5.1"
         ],
-        "rank": 69.02687117001264
+        "rank": 69.07843478199413
       },
-      "rank": 69.02687117001264
+      "rank": 69.07843478199413
     },
     {
       "modelInfo": {
@@ -12734,6 +12865,7 @@
           "DeepSWE 1.1": 0.77,
           "Program Bench": 0.291,
           "Terminal-Bench 4": 0.423,
+          "Humanity's Last Exam": 0.44,
           "BabyVision": 0.925,
           "NL2Repo": 0.682
         },
@@ -12746,9 +12878,9 @@
           "Claude Fable 5.1",
           "Claude Opus 5"
         ],
-        "rank": 69.63518077186102
+        "rank": 69.68674438384251
       },
-      "rank": 69.63518077186102
+      "rank": 69.68674438384251
     },
     {
       "modelInfo": {
@@ -12784,9 +12916,9 @@
           "Claude Opus 5.5",
           "GPT-6 Astra"
         ],
-        "rank": 69.63518077186102
+        "rank": 69.68674438384251
       },
-      "rank": 69.63518077186102
+      "rank": 69.68674438384251
     },
     {
       "modelInfo": {
@@ -12823,9 +12955,9 @@
           "GPT-6 Astra",
           "Claude Fable 5.1"
         ],
-        "rank": 69.87454247398868
+        "rank": 69.92610608597018
       },
-      "rank": 69.87454247398868
+      "rank": 69.92610608597018
     },
     {
       "modelInfo": {
@@ -12881,9 +13013,9 @@
           "Claude Opus 5.5",
           "Claude Fable 5.1"
         ],
-        "rank": 70.19388317117028
+        "rank": 70.24544678315178
       },
-      "rank": 70.19388317117028
+      "rank": 70.24544678315178
     },
     {
       "modelInfo": {
@@ -12936,9 +13068,9 @@
           "Claude Sonnet 5.5",
           "Claude Opus 5.5"
         ],
-        "rank": 70.52066646058351
+        "rank": 70.572230072565
       },
-      "rank": 70.52066646058351
+      "rank": 70.572230072565
     },
     {
       "modelInfo": {
@@ -12972,9 +13104,9 @@
           "Gemini 4 Argon",
           "Claude Opus 5.5"
         ],
-        "rank": 71.87686320398028
+        "rank": 71.92842681596177
       },
-      "rank": 71.87686320398028
+      "rank": 71.92842681596177
     },
     {
       "modelInfo": {
@@ -13009,9 +13141,9 @@
         "betterThanCurrentModels": [
           "Claude Opus 5.5"
         ],
-        "rank": 72.65183487660296
+        "rank": 72.70339848858445
       },
-      "rank": 72.65183487660296
+      "rank": 72.70339848858445
     },
     {
       "modelInfo": {
@@ -13055,9 +13187,9 @@
           "OSWorld 2.1": "Claude Sonnet 5.5"
         },
         "betterThanCurrentModels": [],
-        "rank": 73.248455830211
+        "rank": 73.3000194421925
       },
-      "rank": 73.248455830211
+      "rank": 73.3000194421925
     }
   ],
   "priceMap": {
@@ -13090,5 +13222,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-10-18T04:50:44.960Z"
+  "updatedAt": "2026-10-20T00:35:05.993Z"
 }

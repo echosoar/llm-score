@@ -4,6 +4,19 @@
     ],
     "models": [
         {
+            "brand": "MiniMax",
+            "model": "MiniMax M3.1 Flash",
+            "time": "2026/10/19",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+             "context": 512000,
+            "generate": 128000,
+            "inputPrice": "$0.15",
+            "inputCachedPrice": "￥0.015",
+            "outputPrice": "$0.6",
+            "url": "https://www.minimax.io/blog/minimax-m31f"
+        },
+        {
             "brand": "DeepSeek",
             "model": "DeepSeek V4.1 Flash 1017",
             "time": "2026/10/18",
@@ -1711,6 +1724,7 @@
             "name": "AutomationBench 1.0.6 Pass",
             "info": "Pass@1",
             "scores": {
+                "MiniMax M3.1 Flash": 0.628,
                 "DeepSeek V4.1 Flash 1017": 0.605,
                 "DeepSeek V4.1 Flash(from DeepSeek V4.1 Flash 1017)": 0.548,
                 "Kimi K3(from DeepSeek V4.1 Flash 1017)": 0.467,
@@ -2034,6 +2048,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "MiniMax M3.1 Flash": 0.737,
                 "Muse Wonder": 0.788,
                 "DeepSeek V4.1 Flash 1017": 0.77,
                 "Large 4": 0.62,
@@ -2201,6 +2216,7 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "MiniMax M3.1 Flash": 0.381,
                 "Muse Wonder": 0.52,
                 "DeepSeek V4.1 Flash 1017": 0.423,
                 "Claude Haiku 5.5": 0.392,
@@ -2553,6 +2569,17 @@
             }
         },
         {
+            "name": "Humanity's Last Exam",
+            "info": "hle without tool",
+            "scores": {
+                "MiniMax M3.1 Flash": 0.434,
+                "DeepSeek V4.1 Flash 1017": 0.44,
+                "DeepSeek V4.1 Flash(from DeepSeek V4.1 Flash 1017)": 0.391,
+                "Kimi K3(from DeepSeek V4.1 Flash 1017)": 0.435,
+                "GLM 5.3(from DeepSeek V4.1 Flash 1017)": 0.42
+            }
+        },
+        {
             "name": "Agents' Last Exam(score)",
             "info": "ale score",
             "scores": {
@@ -2579,6 +2606,7 @@
             "name": "Agents' Last Exam(pass)",
             "info": "ale pass",
             "scores": {
+                "MiniMax M3.1 Flash": 0.296,
                 "Gemini 4 Argon": 0.395,
                 "Claude Opus 5.5(from Gemini 4 Argon)": 0.382,
                 "MiMo V2.6 Pro": 0.316,
@@ -2609,6 +2637,7 @@
             "name": "CharXiv",
             "info": "RQ score w/ python",
             "scores": {
+                "MiniMax M3.1 Flash": 0.825,
                 "Qwen 3.8 Omni Flash": 0.914,
                 "GLM 5.3 Flash": 0.894,
                 "DeepSeek V4 Flash Vision Exp(from GLM 5.3 Flash)": 0.804,
@@ -2639,6 +2668,7 @@
         {
             "name": "Cybergym",
             "scores": {
+                "MiniMax M3.1 Flash": 0.822,
                 "MiMo V2.6 Pro": 0.94,
                 "MiMo V2.6 Flash": 0.951,
                 "DeepSeek V4.1 Flash(from MiMo V2.6 Pro)": 0.881,
@@ -2757,6 +2787,8 @@
             "name": "OSWorld 2.0",
             "info":"Patrial score/ batch tool enabled",
             "scores": {
+                "MiniMax M3.1 Flash": 0.617,
+                "DeepSeek V4.1 Flash(from MiniMax M3.1 Flash)": 0.543,
                 "Gemini 4 Argon": 0.692,
                 "GPT-6.1 Sol": 0.714,
                 "GPT-6 Sol": 0.644,
@@ -2987,6 +3019,7 @@
             "name": "BabyVision",
             "info": "with tool",
             "scores": {
+                "MiniMax M3.1 Flash": 0.91,
                 "DeepSeek V4.1 Flash 1017": 0.925,
                 "DeepSeek V4.1 Flash": 0.896,
                 "Qwen 3.8 Max 0902": 0.938,
@@ -3010,6 +3043,7 @@
         {
             "name": "NL2Repo",
             "scores": {
+                "MiniMax M3.1 Flash": 0.612,
                 "DeepSeek V4.1 Flash 1017": 0.682,
                 "Qwen 3.8 Omni Flash": 0.489,
                 "DeepSeek V4.1 Flash": 0.654,

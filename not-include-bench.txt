@@ -23,6 +23,8 @@
     - Qwen 3.8 Max 0902: 50.8(5.6 sol: 45.8)
     - hy4 preview: 32.1
     - GLM 5.3 Flash: 48.8
++ Banker ToolBench
+    - MiniMax M3.1 Flash： 76.2
 + BenchCAD(no tool)
     - GPT 5.6 Sol: 70.6
 + BenchCAD(python tool)
@@ -74,6 +76,8 @@
     - GPT‑6 Astra: 37.8
 + GDPV-aa 2.1
     - Step 5 Preview: 1566
++ + GDP.pdf aa
+    - MiniMax M3.1 Flash：20.8
 + GDP.pdf(all pass rate)
     - Gemini 3.8 Flash: 35(5.6 sol: 40)
     - GPT 5.6 Sol: 30.7
@@ -98,6 +102,8 @@
 + LABBench2(agentic)
     - Gemini 3.8 Flash: 86.2
     Gemini 4 Argon: 0.888
++ Loca-bench 256k
+    - MiniMax M3.1 Flash: 60.3
 + LifeSciBench
     - GPT‑6 Astra: 60.3
 + LVBench(agentic)
@@ -135,6 +141,7 @@
 + PostTrainBench 1.1
     - hy4 preview: 35.6
     - Gemini 4 Argon: 45.3
+    - MiniMax M3.1 Flash： 39.3
 + RealWorldQA
     - Qwen 3.8 Omni Flash: 0.877
 + RiemannBench
@@ -163,6 +170,8 @@
     - hy4 preview: 57.8
 + SWE-Atlas Refactoring
     - hy4 preview: 53.3
++ SWE Refactor Bench
+    - MiniMax M3.1 Flash: 23
 + Vals Finance Agent v2
     - Gemini 3.8 Flash: 61.4
     - Gemini 4 Argon: 0.654
@@ -175,4 +184,5 @@
     - Qwen 3.8 Max 0902: 1468
 + WorkSpaceBench
     - hy4 preview: 60.2
-
++ ZeroBench-main with tool
+    - DeepSeek v4.1 flash 1017: 51.0
