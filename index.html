@@ -1056,7 +1056,13 @@ const getPriceIndex = (model) => {
   const cached = getPriceAmount(model.inputCachedPrice);
   const output = getPriceAmount(model.outputPrice);
   if (output === null) return null;
-  return input * 5 + (cached ?? input) * 20 + output * 1;
+  let finalValue = input * 4 + (cached ?? input) * 20 + output * 1;
+  
+  // 支持图像输入，再根据需要调整权重
+  if (model.input && model.input.includes('image')) {
+    finalValue /= 1.5;
+  }
+  return finalValue;
 };
 
 const formatPriceIndex = (model) => {
@@ -1073,7 +1079,7 @@ const getPriceScore = (model) => {
   const multiplier = getPriceMultiplier(model);
   if (multiplier === null || model.score === null || model.score === undefined) return null;
   const value = getPriceIndex(model);
-  return model.score / Math.pow(value, 0.1);
+  return model.score / Math.pow(value, 0.08);
   // return Math.sqrt(model.score) * ((multiplier + 0.1) * 0.9);
 };
 

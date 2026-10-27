@@ -4,6 +4,19 @@
     ],
     "models": [
         {
+            "brand": "OpenAI",
+            "model": "GPT-6.1 Terra",
+            "time": "2026/10/27",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1050000,
+            "generate": 128000,
+            "inputPrice": "$1",
+            "inputCachedPrice": "$0.05",
+            "outputPrice": "$5",
+            "url": "https://openai.com/index/introducing-gpt-6-1-terra/"
+        },
+        {
             "brand": "Moonshot",
             "model": "Kimi K3.1 Pro",
             "time": "2026/10/24",
@@ -76,6 +89,20 @@
             "inputCachedPrice": "$0.14",
             "outputPrice": "$4.18",
             "url": "https://mistral.ai/news/mistral-large-4/"
+        },
+        {
+            "brand": "蚂蚁",
+            "model": "Ling-3.1-flash",
+            "time": "2026/09/30",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 262000,
+            "params": 560,
+            "active": 25,
+            "inputPrice": "￥0.5",
+            "inputCachedPrice": "￥0.1",
+            "outputPrice": "￥1.5",
+            "url": "https://mp.weixin.qq.com/s/-eHoHAYQXgPP-EUpkgoCcA"
         },
         {
             "brand": "Google",
@@ -509,8 +536,9 @@
             "context": 262000,
             "params": 124,
             "active": 5.1,
-            "inputPrice": "￥0.4",
-            "outputPrice": "￥1.2",
+            "inputPrice": "￥0.14",
+            "inputCachedPrice": "￥0.028",
+            "outputPrice": "￥0.42",
             "url": "https://mp.weixin.qq.com/s/5ic54FCsy334JJsQcyBr1g"
         },
         {
@@ -1736,18 +1764,13 @@
             "name": "AutomationBench 1.0.6 Pass",
             "info": "Pass@1",
             "scores": {
+                "Ling-3.1-flash": 0.525,
                 "MiniMax M3.1 Flash": 0.628,
                 "DeepSeek V4.1 Flash 1017": 0.605,
-                "DeepSeek V4.1 Flash(from DeepSeek V4.1 Flash 1017)": 0.548,
-                "Kimi K3(from DeepSeek V4.1 Flash 1017)": 0.467,
-                "GLM 5.3(from DeepSeek V4.1 Flash 1017)": 0.488,
                 "MiMo V2.6 Pro": 0.531,
                 "MiMo V2.6 Flash": 0.523,
                 "GPT-6 Astra(from MiMo V2.6 Pro)": 0.52,
-                "Qwen 3.8 Max 0902": 0.508,
-                "Claude Opus 5(from Qwen 3.8 Max 0902)": 0.503,
-                "Claude Fable 5(from Qwen 3.8 Max 0902)": 0.462,
-                "GPT-5.6 Sol(from Qwen 3.8 Max 0902)": 0.458
+                "Qwen 3.8 Max 0902": 0.508
             }
         },
         {
@@ -2034,9 +2057,10 @@
         {
             "name": "SWE-Atlas QnA",
             "scores": {
+                "Ling-3.1-flash": 0.5592,
                 "Step 5 Preview": 0.636,
                 "GLM 5.3(from Step 5 Preview)": 0.596,
-                "Kimi K3(from Step 5 Preview)": 0.595,
+                "Kimi K3(from Ling-3.1-flash)": 0.66,
                 "Muse Spark 1.3": 0.594,
                 "Qwen 3.8 Max 0902": 0.663,
                 "Hy 4 Preview": 0.64,
@@ -2216,6 +2240,7 @@
         {
             "name": "Terminal-Bench Science 0.1",
             "scores": {
+                "GPT-6.1 Terra": 0.583,
                 "Kimi K3.1 Pro": 0.381,
                 "DeepSeek V4.1 Flash 1017(from Kimi K3.1 Pro)": 0.157,
                 "GLM 5.3(from Kimi K3.1 Pro)": 0.081,
@@ -2233,6 +2258,9 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Ling-3.1-flash": 0.404,
+                "GPT-6.1 Terra": 0.503,
+                "GPT-6.1 Sol(from GPT-6.1 Terra)": 0.559,
                 "Kimi K3.1 Pro": 0.657,
                 "MiniMax M3.1 Flash": 0.381,
                 "Muse Wonder": 0.52,
@@ -2250,7 +2278,7 @@
                 "DeepSeek V4.1 Flash": 0.312,
                 "DeepSeek V4 Pro 0813(from DeepSeek V4.1 Flash)": 0.124,
                 "DeepSeek V4 Flash 0731(from DeepSeek V4.1 Flash)": 0.07,
-                "GLM 5.3(from DeepSeek V4.1 Flash)": 0.379,
+                "GLM 5.3(from Ling-3.1-flash)": 0.419,
                 "Kimi K3(from DeepSeek V4.1 Flash)": 0.126,
                 "GPT-6 Astra": 0.579,
                 "Gemini 3.8 Flash": 0.191,
@@ -2444,6 +2472,7 @@
             "scores": {
                 "Kimi K3.1 Pro": 1846,
                 "DeepSeek V4.1 Flash 1017(from Kimi K3.1 Pro)": 1746,
+                "Ling-3.1-flash": 1673,
                 "GLM 5.3(from Kimi K3.1 Pro)": 1650,
                 "Claude Haiku 5.5": 1620,
                 "Claude Haiku 4.5(from Claude Haiku 5.5)": 735,
@@ -2608,6 +2637,8 @@
             "name": "Agents' Last Exam(score)",
             "info": "ale score",
             "scores": {
+                "GPT-6.1 Terra": 0.6,
+                "GPT-6.1 Sol(from GPT-6.1 Terra)": 0.586,
                 "GPT-6 Sol": 0.564,
                 "GPT-6 Luna": 0.509,
                 "GPT-6 Astra": 0.593,
@@ -2695,6 +2726,7 @@
         {
             "name": "Cybergym",
             "scores": {
+                "Ling-3.1-flash": 0.879,
                 "MiniMax M3.1 Flash": 0.822,
                 "MiMo V2.6 Pro": 0.94,
                 "MiMo V2.6 Flash": 0.951,
@@ -2783,6 +2815,10 @@
             "name": "Tau 3 Banking",
             "group": "agentic",
             "scores": {
+                "Ling-3.1-flash": 0.478,
+                "Kimi K3(from Ling-3.1-flash)": 0.46,
+                "GLM 5.3(from Ling-3.1-flash)": 0.503,
+                "GLM 5.3 Flash(from Ling-3.1-flash)": 0.472,
                 "Agnes 2.5 Pro": 0.116,
                 "Muse Glimmer": 0.235,
                 "Gemma 4 31B(from Muse Glimmer)": 0.151,
@@ -2800,11 +2836,13 @@
             "name": "OSWorld 2.1",
             "info":"Patrial score/ batch tool enabled",
             "scores": {
+                "GPT-6.1 Terra": 0.742,
+                "GPT-6.1 Sol(from GPT-6.1 Terra)": 0.78,
                 "Kimi K3.1 Pro": 0.796,
                 "DeepSeek V4.1 Flash 1017(from Kimi K3.1 Pro)": 0.693,
                 "Muse Wonder": 0.726,
                 "Claude Fable 5.1(from Muse Wonder)": 0.807,
-                "GPT-6 Astra(from Muse Wonder)": 0.758,
+                "GPT-6 Astra(from GPT-6.1 Terra)": 0.809,
                 "Claude Haiku 5.5": 0.724,
                 "Claude Haiku 4.5(from Claude Haiku 5.5)": 0.157,
                 "Claude Sonnet 5.5": 0.801,
@@ -2873,7 +2911,10 @@
             "name": "MMMU Pro",
             "info": "not with python",
             "scores": {
-                 "Kimi K3.1 Pro": 0.90,
+                "GPT-6.1 Terra": 0.855,
+                "GPT-6.1 Sol(from GPT-6.1 Terra)": 0.863,
+                "GPT-6 Astra(from GPT-6.1 Terra)": 0.867,
+                "Kimi K3.1 Pro": 0.90,
                 "Step 5 Preview": 0.76,
                 "Qwen 3.8 Max 0902": 0.827,
                 "Muse Glimmer": 0.74,

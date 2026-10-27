@@ -187,6 +187,7 @@
     - Gemini 3.8 Flash: 61.4
     - Gemini 4 Argon: 0.654
     - "Large 4": 0.547
+    - Ling-3.1-flash: 0.5787
 + VibeCode Bench
     - Gemini 4 Argon: 0.919
 + WideSearch
