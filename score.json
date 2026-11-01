@@ -6059,7 +6059,7 @@
       "modelInfo": {
         "brand": "Nvidia",
         "model": "Nemotron 3.5 Bolt",
-        "time": "2026/10/14",
+        "time": "2026/10/15",
         "input": [
           "text",
           "image",
@@ -7450,6 +7450,9 @@
         "generate": 128000,
         "params": 120,
         "active": 12,
+        "inputPrice": "$0.06",
+        "inputCachedPrice": "$0.01",
+        "outputPrice": "$0.35",
         "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Super-and-Lightning/",
         "currentBenchmarksScores": {
           "GPQA Diamond": 0.895,
@@ -14158,5 +14161,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-11-01T05:27:41.768Z"
+  "updatedAt": "2026-11-01T05:32:33.008Z"
 }
