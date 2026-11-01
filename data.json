@@ -4,6 +4,19 @@
     ],
     "models": [
         {
+            "brand": "Google",
+            "model": "Gemini 4 Carbon",
+            "time": "2026/09/30",
+            "input": ["text", "image", "video", "audio", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 64000,
+            "inputPrice": "$2",
+            "inputCachedPrice": "$0.1",
+            "outputPrice": "$10",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+        },
+        {
             "brand": "OpenAI",
             "model": "GPT-6.1 Terra",
             "time": "2026/10/27",
@@ -52,6 +65,33 @@
             "inputCachedPrice": "￥0.02",
             "outputPrice": "￥4",
             "url": "https://api-docs.deepseek.com/zh-cn/news/news261017"
+        },
+        {
+            "brand": "Nvidia",
+            "model": "Nemotron 3.5 Bolt",
+            "time": "2026/10/15",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "params": 74,
+            "active": 9,
+            "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-24GB/"
+        },
+        {
+            "brand": "Nvidia",
+            "model": "Nemotron 3.5 Super",
+            "time": "2026/10/14",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "params": 120,
+            "active": 12,
+            "inputPrice": "$0.06", 
+            "inputCachedPrice": "$0.01",
+            "outputPrice": "$0.35",
+            "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Super-and-Lightning/"
         },
         {
             "brand": "Meta",
@@ -1742,6 +1782,7 @@
             "name": "AutomationBench 1.0.6",
             "info": "score",
             "scores": {
+                "Gemini 4 Carbon": 0.539,
                 "Gemini 4 Argon": 0.513,
                 "GPT-6.1 Sol": 0.361,
                 "GPT-6 Sol": 0.332,
@@ -1776,6 +1817,8 @@
         {
             "name": "GPQA Diamond",
             "scores": {
+                "Nemotron 3.5 Bolt": 0.864,
+                "Nemotron 3.5 Super": 0.895,
                 "Qwen 3.8 Omni Flash": 0.91,
                 "Step 5 Preview": 0.935,
                 "DeepSeek V4.1 Flash": 0.909,
@@ -1894,6 +1937,7 @@
         {
             "name": "SWE-Bench Pro",
             "scores": {
+                "Nemotron 3.5 Super": 0.518,
                 "Qwen 3.8 Omni Flash": 0.633,
                 "Hy 4 Preview": 0.657,
                 "Qwen 3.8 Flash Next": 0.625,
@@ -2029,6 +2073,7 @@
         {
             "name": "SWE-Bench Multilingual",
             "scores": {
+                "Nemotron 3.5 Super": 0.677,
                 "Qwen 3.8 Omni Flash": 0.805,
                 "Hy 4 Preview": 0.829,
                 "Qwen 3.8 Flash Next": 0.81,
@@ -2071,6 +2116,7 @@
             "name": "Chartography",
             "info": "no tool",
             "scores": {
+                "Gemini 4 Carbon": 0.725,
                 "Claude Haiku 5.5": 0.464,
                 "Gemini 4 Argon": 0.716,
                 "GPT-6 Astra(from Gemini 4 Argon)": 0.71,
@@ -2240,6 +2286,7 @@
         {
             "name": "Terminal-Bench Science 0.1",
             "scores": {
+                "Gemini 4 Carbon": 0.648,
                 "GPT-6.1 Terra": 0.583,
                 "Kimi K3.1 Pro": 0.381,
                 "DeepSeek V4.1 Flash 1017(from Kimi K3.1 Pro)": 0.157,
@@ -2258,6 +2305,7 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Gemini 4 Carbon": 0.652,
                 "Ling-3.1-flash": 0.404,
                 "GPT-6.1 Terra": 0.503,
                 "GPT-6.1 Sol(from GPT-6.1 Terra)": 0.559,
@@ -2317,6 +2365,8 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "Nemotron 3.5 Bolt": 0.51,
+                "Nemotron 3.5 Super": 0.607,
                 "MiMo V2.6 Pro": 0.899,
                 "MiMo V2.6 Flash": 0.876,
                 "Step 5 Preview": 0.85,
@@ -2424,6 +2474,8 @@
         {
             "name": "BrowseComp",
             "scores": {
+                "Nemotron 3.5 Bolt": 0.668,
+                "Nemotron 3.5 Super": 0.789,
                  "Kimi K3.1 Pro": 0.921,
                  "Claude Opus 5.5(from Kimi K3.1 Pro)": 0.908,
                 "Step 5 Preview": 0.887,
@@ -2626,11 +2678,23 @@
             "name": "Humanity's Last Exam",
             "info": "hle without tool",
             "scores": {
+                 "Nemotron 3.5 Bolt": 0.253,
+                "Nemotron 3.5 Super": 0.318,
                 "MiniMax M3.1 Flash": 0.434,
                 "DeepSeek V4.1 Flash 1017": 0.44,
                 "DeepSeek V4.1 Flash(from DeepSeek V4.1 Flash 1017)": 0.391,
                 "Kimi K3(from DeepSeek V4.1 Flash 1017)": 0.435,
                 "GLM 5.3(from DeepSeek V4.1 Flash 1017)": 0.42
+            }
+        },
+        {
+            "name": "Agents' Last Exam(v1.1 score)",
+            "info": "ale score",
+            "scores": {
+                "Gemini 4 Carbon": 0.774,
+                "Gemini 4 Argon(from Gemini 4 Carbon)": 0.69,
+                "GPT-6 Astra(from Gemini 4 Carbon)": 0.73,
+                "Claude Opus 5.5(from Gemini 4 Carbon)": 0.716
             }
         },
         {
@@ -2693,6 +2757,7 @@
             "name": "CharXiv",
             "info": "RQ score w/ python",
             "scores": {
+                "Nemotron 3.5 Super": 0.808,
                 "Kimi K3.1 Pro": 0.934,
                 "Claude Opus 5.5(from Kimi K3.1 Pro)": 0.938,
                 "MiniMax M3.1 Flash": 0.825,
@@ -2775,6 +2840,7 @@
             "name": "MCPAtlas",
             "group": "agentic",
             "scores": {
+                "Nemotron 3.5 Bolt": 0.522,
                 "Step 5 Preview": 0.856,
                 "Hy 4 Preview": 0.837,
                 "Muse Glimmer": 0.755,
@@ -2815,6 +2881,7 @@
             "name": "Tau 3 Banking",
             "group": "agentic",
             "scores": {
+                 "Nemotron 3.5 Bolt": 0.17,
                 "Ling-3.1-flash": 0.478,
                 "Kimi K3(from Ling-3.1-flash)": 0.46,
                 "GLM 5.3(from Ling-3.1-flash)": 0.503,
@@ -2836,6 +2903,8 @@
             "name": "OSWorld 2.1",
             "info":"Patrial score/ batch tool enabled",
             "scores": {
+                "Gemini 4 Carbon": 0.815,
+                "Gemini 4 Argon(from Gemini 4 Carbon)": 0.747,
                 "GPT-6.1 Terra": 0.742,
                 "GPT-6.1 Sol(from GPT-6.1 Terra)": 0.78,
                 "Kimi K3.1 Pro": 0.796,
@@ -3009,6 +3078,7 @@
         {
             "name": "ExploitGym",
             "scores": {
+                "Gemini 4 Carbon": 0.548,
                  "Kimi K3.1 Pro": 0.207,
                  "Claude Fable 5.1(from Kimi K3.1 Pro)": 0.304,
                  "Claude Opus 5.5(from Kimi K3.1 Pro)": 0.345,

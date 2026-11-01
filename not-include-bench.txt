@@ -76,6 +76,7 @@
     - "Kimi K3.1 Pro": 58.6
 + FrontierSWE v2
     - Gemini 4 Argon: 55
+    - Gemini 4 Cargo: 61.2
 + GeneBench Pro
     - GPT‑6 Astra: 37.8
 + GDPV-aa 2.1
@@ -87,6 +88,7 @@
     - GPT 5.6 Sol: 30.7
 + GraphWalks（128k）
     - Gemini 4 Argon: 0.997
+    - "Nemotron 3.5 Super": 0.897
 + Harvey's Legal Agent Benchmark(all pass rate) / Harvey Lab
     - Gemini 3.8 Flash: 10
     - Grok 4.6: 15.8
@@ -136,6 +138,10 @@
     - GLM 5.3 Flash: 80.5
 + MVBench
     - GLM 5.3 Flash: 77.8
++mmlongbench-doc
+    - "Nemotron 3.5 Super": 62.8+
++ NVChat
+    - "Nemotron 3.5 Super"： 52.7
 + OfficeQA Pro
     - hy4 preview: 66.1
     - GLM 5.3 Flash: 62.4
@@ -148,6 +154,8 @@
     - hy4 preview: 65.4
 + OSWorld-2.0(Strict)
     - Claude Fable 5.1: 41.7
++ OCRBench v2 en
+    - "Nemotron 3.5 Super": 68.1
 + PostTrainBench 1.1
     - hy4 preview: 35.6
     - Gemini 4 Argon: 45.3
@@ -181,6 +189,8 @@
     - hy4 preview: 57.8
 + SWE-Atlas Refactoring
     - hy4 preview: 53.3
++ SWE-sweep
+    - "Gemini 4 Carbon": 0.612
 + SWE Refactor Bench
     - MiniMax M3.1 Flash: 23
 + Vals Finance Agent v2
@@ -190,6 +200,8 @@
     - Ling-3.1-flash: 0.5787
 + VibeCode Bench
     - Gemini 4 Argon: 0.919
++ Vending-bench 2 bank balance
+    - "Gemini 4 Carbon": 16484
 + WideSearch
     - hy4 preview: 83.9
 + WorkArena(Elo)
