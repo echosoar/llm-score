@@ -14099,7 +14099,7 @@
       "modelInfo": {
         "brand": "Google",
         "model": "Gemini 4 Carbon",
-        "time": "2026/09/30",
+        "time": "2026/10/28",
         "input": [
           "text",
           "image",
@@ -14161,5 +14161,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-11-01T05:32:33.008Z"
+  "updatedAt": "2026-11-01T05:45:11.569Z"
 }
