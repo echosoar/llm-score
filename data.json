@@ -4,6 +4,19 @@
     ],
     "models": [
         {
+            "brand": "美团",
+            "model": "LongCat 2.5",
+            "time": "2026/11/01",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "params": 1600,
+            "active": 48,
+            "inputPrice": "$0.3",
+            "inputCachedPrice": "$0.006",
+            "outputPrice": "$1.2",
+            "url": "https://longcat.ai/blog/longcat-2.5/"
+        },
+        {
             "brand": "Google",
             "model": "Gemini 4 Carbon",
             "time": "2026/10/28",
@@ -1805,6 +1818,7 @@
             "name": "AutomationBench 1.0.6 Pass",
             "info": "Pass@1",
             "scores": {
+                "LongCat 2.5": 0.518,
                 "Ling-3.1-flash": 0.525,
                 "MiniMax M3.1 Flash": 0.628,
                 "DeepSeek V4.1 Flash 1017": 0.605,
@@ -1912,6 +1926,7 @@
         {
             "name": "JobBench",
             "scores": {
+                "LongCat 2.5": 0.654,
                 "Muse Wonder": 0.705,
                 "Claude Opus 5.5(from Muse Wonder)": 0.754,
                 "Claude Fable 5.1(from Muse Wonder)": 0.731,
@@ -2102,6 +2117,7 @@
         {
             "name": "SWE-Atlas QnA",
             "scores": {
+                "LongCat 2.5": 0.583,
                 "Ling-3.1-flash": 0.5592,
                 "Step 5 Preview": 0.636,
                 "GLM 5.3(from Step 5 Preview)": 0.596,
@@ -2130,7 +2146,8 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
-                 "Kimi K3.1 Pro": 0.755,
+                "LongCat 2.5": 0.646,
+                "Kimi K3.1 Pro": 0.755,
                 "MiniMax M3.1 Flash": 0.737,
                 "Muse Wonder": 0.788,
                 "DeepSeek V4.1 Flash 1017": 0.77,
@@ -2263,7 +2280,8 @@
             "name": "Program Bench",
             "info": "almost resolved",
             "scores": {
-                 "Kimi K3.1 Pro": 0.315,
+                "LongCat 2.5": 0.255,
+                "Kimi K3.1 Pro": 0.315,
                 "Muse Wonder": 0.5,
                 "Claude Opus 5.5(from Muse Wonder)": 0.705,
                 "Claude Fable 5.1(from Muse Wonder)": 0.555,
@@ -2305,6 +2323,7 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "LongCat 2.5": 0.385,
                 "Gemini 4 Carbon": 0.652,
                 "Ling-3.1-flash": 0.404,
                 "GPT-6.1 Terra": 0.503,
@@ -2365,6 +2384,7 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "LongCat 2.5": 0.884,
                 "Nemotron 3.5 Bolt": 0.51,
                 "Nemotron 3.5 Super": 0.607,
                 "MiMo V2.6 Pro": 0.899,
@@ -2474,10 +2494,11 @@
         {
             "name": "BrowseComp",
             "scores": {
+                "LongCat 2.5": 0.919,
                 "Nemotron 3.5 Bolt": 0.668,
                 "Nemotron 3.5 Super": 0.789,
-                 "Kimi K3.1 Pro": 0.921,
-                 "Claude Opus 5.5(from Kimi K3.1 Pro)": 0.908,
+                "Kimi K3.1 Pro": 0.921,
+                "Claude Opus 5.5(from Kimi K3.1 Pro)": 0.908,
                 "Step 5 Preview": 0.887,
                 "GPT-6 Astra": 0.915,
                 "Inkling-Small": 0.774,
@@ -2604,6 +2625,7 @@
             "name": "Humanity's Last Exam(w/t)",
             "info": "hle with tool",
             "scores": {
+                "LongCat 2.5": 0.63,
                 "Kimi K3.1 Pro": 0.70,
                 "DeepSeek V4.1 Flash 1017(from Kimi K3.1 Pro)": 0.588,
                 "Claude Haiku 5.5": 0.574,
@@ -2757,6 +2779,7 @@
             "name": "CharXiv",
             "info": "RQ score w/ python",
             "scores": {
+                "LongCat 2.5": 0.902,
                 "Nemotron 3.5 Super": 0.808,
                 "Kimi K3.1 Pro": 0.934,
                 "Claude Opus 5.5(from Kimi K3.1 Pro)": 0.938,
@@ -2840,6 +2863,7 @@
             "name": "MCPAtlas",
             "group": "agentic",
             "scores": {
+                "LongCat 2.5": 0.831,
                 "Nemotron 3.5 Bolt": 0.522,
                 "Step 5 Preview": 0.856,
                 "Hy 4 Preview": 0.837,
@@ -3203,6 +3227,7 @@
         {
             "name": "NL2Repo",
             "scores": {
+                "LongCat 2.5": 0.605,
                 "MiniMax M3.1 Flash": 0.612,
                 "DeepSeek V4.1 Flash 1017": 0.682,
                 "Qwen 3.8 Omni Flash": 0.489,
