@@ -4,6 +4,20 @@
     ],
     "models": [
         {
+            "brand": "腾讯",
+            "model": "Hy 4",
+            "time": "2026/11/04",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1000000,
+            "params": 770,
+            "active": 49,
+            "inputPrice": "$0.834",
+            "inputCachedPrice": "$0.042",
+            "outputPrice": "$2.501",
+            "url": "https://hy.tencent.ai/research/hy4"
+        },
+        {
             "brand": "美团",
             "model": "LongCat 2.5",
             "time": "2026/11/01",
@@ -1818,6 +1832,10 @@
             "name": "AutomationBench 1.0.6 Pass",
             "info": "Pass@1",
             "scores": {
+                "Hy 4": 0.562,
+                "GLM 5.3(from Hy 4)": 0.482,
+                "Kimi K3.1 Pro(from Hy 4)": 0.656,
+                "Claude Opus 5.5(from Hy 4)": 0.588,
                 "LongCat 2.5": 0.518,
                 "Ling-3.1-flash": 0.525,
                 "MiniMax M3.1 Flash": 0.628,
@@ -2146,6 +2164,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Hy 4": 0.749,
                 "LongCat 2.5": 0.646,
                 "Kimi K3.1 Pro": 0.755,
                 "MiniMax M3.1 Flash": 0.737,
@@ -2280,6 +2299,7 @@
             "name": "Program Bench",
             "info": "almost resolved",
             "scores": {
+                "Hy 4": 0.3,
                 "LongCat 2.5": 0.255,
                 "Kimi K3.1 Pro": 0.315,
                 "Muse Wonder": 0.5,
@@ -2304,6 +2324,7 @@
         {
             "name": "Terminal-Bench Science 0.1",
             "scores": {
+                "Hy 4": 0.198,
                 "Gemini 4 Carbon": 0.648,
                 "GPT-6.1 Terra": 0.583,
                 "Kimi K3.1 Pro": 0.381,
@@ -2323,6 +2344,7 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Hy 4": 0.444,
                 "LongCat 2.5": 0.385,
                 "Gemini 4 Carbon": 0.652,
                 "Ling-3.1-flash": 0.404,
@@ -2625,6 +2647,7 @@
             "name": "Humanity's Last Exam(w/t)",
             "info": "hle with tool",
             "scores": {
+                "Hy 4": 0.591,
                 "LongCat 2.5": 0.63,
                 "Kimi K3.1 Pro": 0.70,
                 "DeepSeek V4.1 Flash 1017(from Kimi K3.1 Pro)": 0.588,
@@ -2717,6 +2740,18 @@
                 "Gemini 4 Argon(from Gemini 4 Carbon)": 0.69,
                 "GPT-6 Astra(from Gemini 4 Carbon)": 0.73,
                 "Claude Opus 5.5(from Gemini 4 Carbon)": 0.716
+            }
+        },
+        {
+            "name": "Agents' Last Exam(v1.1 pass)",
+            "info": "ale pass",
+            "scores": {
+                "Hy 4": 0.41,
+                "Kimi K3.1 Pro(from Hy 4)": 0.434,
+                "GPT-6.1 Sol(from Hy 4)": 0.402,
+                "Claude Opus 5.5(from Hy 4)": 0.434,
+                "DeepSeek V4.1 Flash 1017(from Hy 4)": 0.353,
+                "GLM 5.3(from Hy 4)": 0.262
             }
         },
         {
@@ -2927,6 +2962,7 @@
             "name": "OSWorld 2.1",
             "info":"Patrial score/ batch tool enabled",
             "scores": {
+                "Hy 4": 0.789,
                 "Gemini 4 Carbon": 0.815,
                 "Gemini 4 Argon(from Gemini 4 Carbon)": 0.747,
                 "GPT-6.1 Terra": 0.742,
@@ -3004,6 +3040,7 @@
             "name": "MMMU Pro",
             "info": "not with python",
             "scores": {
+                "Hy 4": 0.786,
                 "GPT-6.1 Terra": 0.855,
                 "GPT-6.1 Sol(from GPT-6.1 Terra)": 0.863,
                 "GPT-6 Astra(from GPT-6.1 Terra)": 0.867,
@@ -3063,6 +3100,19 @@
                 "Gemini 2.5 Pro(from Claude Opus 4)": 0.796,
                 "GPT-o3(from Claude Opus 4)": 0.829,
                 "GPT-4.1(from Claude Opus 4)": 0.748
+            }
+        },
+        {
+            "name": "Apex Agents 1.1(pass@1)",
+            "scores": {
+                "Hy 4": 0.752,
+                "DeepSeek V4.1 Flash 1017(from Hy 4)": 0.721,
+                "GPT-6.1 Sol(from Hy 4)": 0.60,
+                "Claude Opus 5.5(from Hy 4)": 0.735,
+                "Hy 4 Preview": 0.539,
+                "Kimi K3.1 Pro": 0.672,
+                "Kimi K3": 0.41,
+                "Grok 4.6": 0.575
             }
         },
         {
