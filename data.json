@@ -4,6 +4,31 @@
     ],
     "models": [
         {
+            "brand": "Anthropic",
+            "model": "Claude Fable 5.2",
+            "time": "2026/11/09",
+            "input": ["text", "image", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "inputPrice": "$8",
+            "inputCachedPrice": "$0.2",
+            "outputPrice": "$40",
+            "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+        },
+        {
+            "brand": "百度",
+            "model": "ERNIE 5.5 Flash",
+            "time": "2026/11/05",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "params": 280,
+            "active": 14,
+            "url": "https://ernie.baidu.com/zh/release/ernie-5-5-flash-base/"
+        },
+        {
             "brand": "腾讯",
             "model": "Hy 4",
             "time": "2026/11/04",
@@ -1809,6 +1834,7 @@
             "name": "AutomationBench 1.0.6",
             "info": "score",
             "scores": {
+                "Claude Fable 5.2": 0.514,
                 "Gemini 4 Carbon": 0.539,
                 "Gemini 4 Argon": 0.513,
                 "GPT-6.1 Sol": 0.361,
@@ -2150,6 +2176,7 @@
             "name": "Chartography",
             "info": "no tool",
             "scores": {
+                "Claude Fable 5.2": 0.734,
                 "Gemini 4 Carbon": 0.725,
                 "Claude Haiku 5.5": 0.464,
                 "Gemini 4 Argon": 0.716,
@@ -2264,6 +2291,17 @@
             }
         },
         {
+            "name": "FrontierSWE 2",
+            "scores": {
+                "Claude Fable 5.2": 0.699,
+                "Claude Fable 5.1(from Claude Fable 5.2)": 0.563,
+                "Claude Opus 5.5(from Claude Fable 5.2)": 0.623,
+                "GPT-6 Astra(from Claude Fable 5.2)": 0.655,
+                "Gemini 4 Argon": 0.55,
+                "Gemini 4 Cargo": 0.612
+            }
+        },
+        {
             "name": "FrontierCode 1.1",
             "info": "main(not extend)",
             "scores": {
@@ -2324,6 +2362,7 @@
         {
             "name": "Terminal-Bench Science 0.1",
             "scores": {
+                "Claude Fable 5.2": 0.746,
                 "Hy 4": 0.198,
                 "Gemini 4 Carbon": 0.648,
                 "GPT-6.1 Terra": 0.583,
@@ -2647,6 +2686,7 @@
             "name": "Humanity's Last Exam(w/t)",
             "info": "hle with tool",
             "scores": {
+                "Claude Fable 5.2": 0.742,
                 "Hy 4": 0.591,
                 "LongCat 2.5": 0.63,
                 "Kimi K3.1 Pro": 0.70,
@@ -2962,6 +3002,7 @@
             "name": "OSWorld 2.1",
             "info":"Patrial score/ batch tool enabled",
             "scores": {
+                "Claude Fable 5.2": 0.893,
                 "Hy 4": 0.789,
                 "Gemini 4 Carbon": 0.815,
                 "Gemini 4 Argon(from Gemini 4 Carbon)": 0.747,
@@ -3179,6 +3220,7 @@
         {
             "name": "MMLU Pro",
             "scores": {
+                "ERNIE 5.5 Flash": 0.784,
                 "Qwen 3.7 Max": 0.896,
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.885,
                 "DeepSeek v4 Pro Preview(from Qwen 3.7 Max)": 0.875,

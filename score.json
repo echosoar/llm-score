@@ -4,6 +4,7 @@
       "name": "AutomationBench 1.0.6",
       "info": "score",
       "scores": {
+        "Claude Fable 5.2": 0.514,
         "Gemini 4 Carbon": 0.539,
         "Gemini 4 Argon": 0.513,
         "GPT-6.1 Sol": 0.361,
@@ -444,6 +445,7 @@
       "name": "Chartography",
       "info": "no tool",
       "scores": {
+        "Claude Fable 5.2": 0.734,
         "Gemini 4 Carbon": 0.725,
         "Claude Haiku 5.5": 0.464,
         "Gemini 4 Argon": 0.716,
@@ -598,6 +600,22 @@
       }
     },
     {
+      "name": "FrontierSWE 2",
+      "scores": {
+        "Claude Fable 5.2": 0.699,
+        "Claude Fable 5.1": 0.563,
+        "Claude Opus 5.5": 0.623,
+        "GPT-6 Astra": 0.655,
+        "Gemini 4 Argon": 0.55,
+        "Gemini 4 Cargo": 0.612
+      },
+      "fromSources": {
+        "Claude Fable 5.1": "Claude Fable 5.2",
+        "Claude Opus 5.5": "Claude Fable 5.2",
+        "GPT-6 Astra": "Claude Fable 5.2"
+      }
+    },
+    {
       "name": "FrontierCode 1.1",
       "info": "main(not extend)",
       "scores": {
@@ -687,6 +705,7 @@
     {
       "name": "Terminal-Bench Science 0.1",
       "scores": {
+        "Claude Fable 5.2": 0.746,
         "Hy 4": 0.198,
         "Gemini 4 Carbon": 0.648,
         "GPT-6.1 Terra": 0.583,
@@ -1102,6 +1121,7 @@
       "name": "Humanity's Last Exam(w/t)",
       "info": "hle with tool",
       "scores": {
+        "Claude Fable 5.2": 0.742,
         "Hy 4": 0.591,
         "LongCat 2.5": 0.63,
         "Kimi K3.1 Pro": 0.7,
@@ -1512,6 +1532,7 @@
       "name": "OSWorld 2.1",
       "info": "Patrial score/ batch tool enabled",
       "scores": {
+        "Claude Fable 5.2": 0.893,
         "Hy 4": 0.789,
         "Gemini 4 Carbon": 0.815,
         "Gemini 4 Argon": 0.747,
@@ -1818,6 +1839,7 @@
     {
       "name": "MMLU Pro",
       "scores": {
+        "ERNIE 5.5 Flash": 0.784,
         "Qwen 3.7 Max": 0.896,
         "Qwen 3.6 27B": 0.885,
         "DeepSeek v4 Pro Preview": 0.875,
@@ -2393,6 +2415,7 @@
           "AIME'24": "Qwen 3 235B A22B"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -2696,6 +2719,38 @@
     },
     {
       "modelInfo": {
+        "brand": "百度",
+        "model": "ERNIE 5.5 Flash",
+        "time": "2026/11/05",
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ],
+        "url": "https://ernie.baidu.com/zh/release/ernie-5-5-flash-base/",
+        "currentBenchmarksScores": {
+          "MMLU Pro": 0.784
+        },
+        "betterThanCurrentModels": [
+          "Qwen 3.7 Max",
+          "ERNIE 5.1",
+          "Qwen 3.6 27B",
+          "Kimi K2.6",
+          "GLM 5.1",
+          "Claude Opus 4.6",
+          "Kimi K2",
+          "Gemini 2.5 Flash",
+          "Claude Opus 4",
+          "Claude Sonnet 4",
+          "GPT-4.1"
+        ],
+        "rank": 3.6835778623159197
+      },
+      "rank": 3.6835778623159197
+    },
+    {
+      "modelInfo": {
         "brand": "DeepSeek",
         "model": "DeepSeek V3",
         "time": "2024/12/26",
@@ -2802,9 +2857,9 @@
           "Gemini 2 Flash",
           "Claude Sonnet 3.5"
         ],
-        "rank": 3.8652725583055703
+        "rank": 3.6835778623159197
       },
-      "rank": 3.8652725583055703
+      "rank": 3.6835778623159197
     },
     {
       "modelInfo": {
@@ -2906,9 +2961,9 @@
           "Gemini 2 Pro",
           "Claude Sonnet 3.5"
         ],
-        "rank": 3.910111813804724
+        "rank": 3.7284171178150736
       },
-      "rank": 3.910111813804724
+      "rank": 3.7284171178150736
     },
     {
       "modelInfo": {
@@ -3006,9 +3061,9 @@
           "Grok 3",
           "Claude Sonnet 3.5"
         ],
-        "rank": 4.030005900136895
+        "rank": 3.8483112041472443
       },
-      "rank": 4.030005900136895
+      "rank": 3.8483112041472443
     },
     {
       "modelInfo": {
@@ -3114,9 +3169,9 @@
           "DeepSeek V3",
           "Claude Sonnet 3.5"
         ],
-        "rank": 4.0422933808169565
+        "rank": 3.860598684827306
       },
-      "rank": 4.0422933808169565
+      "rank": 3.860598684827306
     },
     {
       "modelInfo": {
@@ -3240,9 +3295,9 @@
           "GPT-4.5",
           "Grok 3"
         ],
-        "rank": 5.254931899663903
+        "rank": 5.073237203674253
       },
-      "rank": 5.254931899663903
+      "rank": 5.073237203674253
     },
     {
       "modelInfo": {
@@ -3339,9 +3394,9 @@
           "Llama 4 Behemoth",
           "Grok 3"
         ],
-        "rank": 5.254931899663903
+        "rank": 5.073237203674253
       },
-      "rank": 5.254931899663903
+      "rank": 5.073237203674253
     },
     {
       "modelInfo": {
@@ -3447,9 +3502,9 @@
           "GPT-4.5",
           "Grok 3"
         ],
-        "rank": 5.385393438125442
+        "rank": 5.203698742135792
       },
-      "rank": 5.385393438125442
+      "rank": 5.203698742135792
     },
     {
       "modelInfo": {
@@ -3537,9 +3592,9 @@
           "GPT-4.5",
           "Grok 3"
         ],
-        "rank": 5.447563526101981
+        "rank": 5.265868830112331
       },
-      "rank": 5.447563526101981
+      "rank": 5.265868830112331
     },
     {
       "modelInfo": {
@@ -3639,9 +3694,9 @@
           "Grok 3",
           "Claude Sonnet 3.5"
         ],
-        "rank": 5.508308511775334
+        "rank": 5.3266138157856835
       },
-      "rank": 5.508308511775334
+      "rank": 5.3266138157856835
     },
     {
       "modelInfo": {
@@ -3707,9 +3762,9 @@
           "Gemini 3 Pro",
           "GPT-5"
         ],
-        "rank": 5.508308511775334
+        "rank": 5.3266138157856835
       },
-      "rank": 5.508308511775334
+      "rank": 5.3266138157856835
     },
     {
       "modelInfo": {
@@ -3829,9 +3884,9 @@
           "Llama 4 Behemoth",
           "Grok 3"
         ],
-        "rank": 5.508308511775334
+        "rank": 5.3266138157856835
       },
-      "rank": 5.508308511775334
+      "rank": 5.3266138157856835
     },
     {
       "modelInfo": {
@@ -3854,6 +3909,7 @@
           "Humanity's Last Exam(w/t)": 0.17
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -3938,9 +3994,9 @@
           "DeepSeek R1 0528",
           "Grok 3"
         ],
-        "rank": 5.5629852655580025
+        "rank": 5.381290569568352
       },
-      "rank": 5.5629852655580025
+      "rank": 5.381290569568352
     },
     {
       "modelInfo": {
@@ -4020,9 +4076,9 @@
           "DeepSeek R1 0528",
           "Grok 3"
         ],
-        "rank": 5.5629852655580025
+        "rank": 5.381290569568352
       },
-      "rank": 5.5629852655580025
+      "rank": 5.381290569568352
     },
     {
       "modelInfo": {
@@ -4120,9 +4176,9 @@
           "Qwen 3 4B",
           "Grok 3"
         ],
-        "rank": 5.613324478583783
+        "rank": 5.431629782594133
       },
-      "rank": 5.613324478583783
+      "rank": 5.431629782594133
     },
     {
       "modelInfo": {
@@ -4150,9 +4206,9 @@
           "Qwen 3 30B A3B",
           "Grok 3"
         ],
-        "rank": 6.124240971095103
+        "rank": 5.942546275105453
       },
-      "rank": 6.124240971095103
+      "rank": 5.942546275105453
     },
     {
       "modelInfo": {
@@ -4179,9 +4235,9 @@
           "Qwen 3 32B",
           "Grok 3"
         ],
-        "rank": 6.349787210932502
+        "rank": 6.168092514942852
       },
-      "rank": 6.349787210932502
+      "rank": 6.168092514942852
     },
     {
       "modelInfo": {
@@ -4207,9 +4263,9 @@
           "Qwen 3 235B A22B",
           "Grok 3"
         ],
-        "rank": 6.403643897176879
+        "rank": 6.221949201187229
       },
-      "rank": 6.403643897176879
+      "rank": 6.221949201187229
     },
     {
       "modelInfo": {
@@ -4235,6 +4291,7 @@
           "MMMU Pro": 0.738
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -4320,9 +4377,9 @@
           "DeepSeek R1 0528",
           "Grok 3"
         ],
-        "rank": 6.403643897176879
+        "rank": 6.221949201187229
       },
-      "rank": 6.403643897176879
+      "rank": 6.221949201187229
     },
     {
       "modelInfo": {
@@ -4345,6 +4402,7 @@
           "Humanity's Last Exam(w/t)": 0.177
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -4425,9 +4483,9 @@
           "Gemini 2.5 Pro",
           "Grok 3"
         ],
-        "rank": 6.48067878089781
+        "rank": 6.2989840849081595
       },
-      "rank": 6.48067878089781
+      "rank": 6.2989840849081595
     },
     {
       "modelInfo": {
@@ -4450,6 +4508,7 @@
           "Humanity's Last Exam(w/t)": 0.19
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -4529,9 +4588,9 @@
           "Gemini 2.5 Pro",
           "Grok 3"
         ],
-        "rank": 6.6753115492593915
+        "rank": 6.493616853269741
       },
-      "rank": 6.6753115492593915
+      "rank": 6.493616853269741
     },
     {
       "modelInfo": {
@@ -4624,9 +4683,9 @@
           "Claude Opus 4",
           "Claude Sonnet 4"
         ],
-        "rank": 6.6753115492593915
+        "rank": 6.493616853269741
       },
-      "rank": 6.6753115492593915
+      "rank": 6.493616853269741
     },
     {
       "modelInfo": {
@@ -4650,9 +4709,9 @@
           "Claude Sonnet 4.5",
           "Gemini 2.5 Pro"
         ],
-        "rank": 6.6753115492593915
+        "rank": 6.493616853269741
       },
-      "rank": 6.6753115492593915
+      "rank": 6.493616853269741
     },
     {
       "modelInfo": {
@@ -4757,9 +4816,9 @@
           "Claude Opus 4",
           "Claude Sonnet 4"
         ],
-        "rank": 6.886661242510925
+        "rank": 6.704966546521275
       },
-      "rank": 6.886661242510925
+      "rank": 6.704966546521275
     },
     {
       "modelInfo": {
@@ -4852,9 +4911,9 @@
           "GPT-5",
           "Claude Opus 4"
         ],
-        "rank": 7.687026010860352
+        "rank": 7.505331314870702
       },
-      "rank": 7.687026010860352
+      "rank": 7.505331314870702
     },
     {
       "modelInfo": {
@@ -4920,9 +4979,9 @@
           "Claude Sonnet 4.5",
           "Claude Opus 4"
         ],
-        "rank": 7.863692677527019
+        "rank": 7.681997981537369
       },
-      "rank": 7.863692677527019
+      "rank": 7.681997981537369
     },
     {
       "modelInfo": {
@@ -4959,6 +5018,7 @@
           "OSWorld 2.1": "Claude Haiku 5.5"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -5060,9 +5120,9 @@
           "Llama 4 Behemoth",
           "Grok 3"
         ],
-        "rank": 7.929942677527018
+        "rank": 7.748247981537368
       },
-      "rank": 7.929942677527018
+      "rank": 7.748247981537368
     },
     {
       "modelInfo": {
@@ -5173,9 +5233,9 @@
           "Llama 4 Behemoth",
           "Grok 3"
         ],
-        "rank": 8.072137799478238
+        "rank": 7.890443103488588
       },
-      "rank": 8.072137799478238
+      "rank": 7.890443103488588
     },
     {
       "modelInfo": {
@@ -5203,6 +5263,7 @@
           "Humanity's Last Exam(w/t)": 0.22
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -5290,9 +5351,9 @@
           "Grok 4",
           "Grok 3"
         ],
-        "rank": 8.290080274999736
+        "rank": 8.108385579010086
       },
-      "rank": 8.290080274999736
+      "rank": 8.108385579010086
     },
     {
       "modelInfo": {
@@ -5381,9 +5442,9 @@
           "Gemini 2.5 Pro",
           "Grok 3"
         ],
-        "rank": 8.332611139197267
+        "rank": 8.150916443207617
       },
-      "rank": 8.332611139197267
+      "rank": 8.150916443207617
     },
     {
       "modelInfo": {
@@ -5423,6 +5484,7 @@
           "AIME'26": "Muse Glimmer"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -5521,9 +5583,9 @@
           "Grok 4",
           "Grok 3"
         ],
-        "rank": 8.414877886540436
+        "rank": 8.233183190550786
       },
-      "rank": 8.414877886540436
+      "rank": 8.233183190550786
     },
     {
       "modelInfo": {
@@ -5599,9 +5661,9 @@
           "Gemini 2.5 Pro",
           "Qwen 3 235B A22B"
         ],
-        "rank": 8.424308491522643
+        "rank": 8.242613795532993
       },
-      "rank": 8.424308491522643
+      "rank": 8.242613795532993
     },
     {
       "modelInfo": {
@@ -5627,6 +5689,7 @@
           "IMOAnswerBench": 0.845
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -5701,9 +5764,9 @@
           "GPT-5",
           "Grok 4"
         ],
-        "rank": 8.458764756298057
+        "rank": 8.277070060308407
       },
-      "rank": 8.458764756298057
+      "rank": 8.277070060308407
     },
     {
       "modelInfo": {
@@ -5739,6 +5802,7 @@
           "AIME'25": "Gemini 3 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -5827,9 +5891,9 @@
           "GPT-5 mini",
           "Grok 4"
         ],
-        "rank": 8.691468441220302
+        "rank": 8.509773745230651
       },
-      "rank": 8.691468441220302
+      "rank": 8.509773745230651
     },
     {
       "modelInfo": {
@@ -5923,9 +5987,9 @@
           "Grok 4",
           "Grok 3"
         ],
-        "rank": 8.716888105488886
+        "rank": 8.535193409499236
       },
-      "rank": 8.716888105488886
+      "rank": 8.535193409499236
     },
     {
       "modelInfo": {
@@ -6039,9 +6103,9 @@
           "GPT-5",
           "Grok 4"
         ],
-        "rank": 8.801864352519765
+        "rank": 8.620169656530114
       },
-      "rank": 8.801864352519765
+      "rank": 8.620169656530114
     },
     {
       "modelInfo": {
@@ -6069,6 +6133,7 @@
           "MMMU": 0.842
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -6140,9 +6205,9 @@
           "Gemini 3 Pro",
           "Grok 4"
         ],
-        "rank": 8.81406228117339
+        "rank": 8.63236758518374
       },
-      "rank": 8.81406228117339
+      "rank": 8.63236758518374
     },
     {
       "modelInfo": {
@@ -6250,9 +6315,9 @@
           "Gemini 3 Pro",
           "Grok 4"
         ],
-        "rank": 9.38847029574534
+        "rank": 9.206775599755689
       },
-      "rank": 9.38847029574534
+      "rank": 9.206775599755689
     },
     {
       "modelInfo": {
@@ -6283,6 +6348,7 @@
           "AIME'26": 0.947
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -6375,9 +6441,9 @@
           "Grok 4",
           "Grok 3"
         ],
-        "rank": 10.132624378834514
+        "rank": 9.950929682844864
       },
-      "rank": 10.132624378834514
+      "rank": 9.950929682844864
     },
     {
       "modelInfo": {
@@ -6404,6 +6470,7 @@
           "MCPAtlas": 0.52
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -6477,9 +6544,9 @@
           "GPT-5.2",
           "Gemini 3 Pro"
         ],
-        "rank": 11.420261831202506
+        "rank": 11.238567135212854
       },
-      "rank": 11.420261831202506
+      "rank": 11.238567135212854
     },
     {
       "modelInfo": {
@@ -6574,9 +6641,9 @@
           "GPT-5.2",
           "Gemini 3 Pro"
         ],
-        "rank": 11.660686525968707
+        "rank": 11.478991829979055
       },
-      "rank": 11.660686525968707
+      "rank": 11.478991829979055
     },
     {
       "modelInfo": {
@@ -6609,6 +6676,7 @@
           "Humanity's Last Exam(w/t)": "Step 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -6688,9 +6756,9 @@
           "GPT-5.2",
           "Grok 4"
         ],
-        "rank": 11.880113277561064
+        "rank": 11.698418581571412
       },
-      "rank": 11.880113277561064
+      "rank": 11.698418581571412
     },
     {
       "modelInfo": {
@@ -6790,9 +6858,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 11.999115099749385
+        "rank": 11.817420403759733
       },
-      "rank": 11.999115099749385
+      "rank": 11.817420403759733
     },
     {
       "modelInfo": {
@@ -6847,9 +6915,9 @@
           "Gemini 3 Pro",
           "Claude Sonnet 4.5"
         ],
-        "rank": 12.793647727615348
+        "rank": 12.611953031625696
       },
-      "rank": 12.793647727615348
+      "rank": 12.611953031625696
     },
     {
       "modelInfo": {
@@ -6948,9 +7016,9 @@
           "MiniMax M2.1",
           "GPT-5.2"
         ],
-        "rank": 12.793647727615348
+        "rank": 12.611953031625696
       },
-      "rank": 12.793647727615348
+      "rank": 12.611953031625696
     },
     {
       "modelInfo": {
@@ -6974,6 +7042,7 @@
           "Humanity's Last Exam(w/t)": 0.386
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -7035,9 +7104,9 @@
           "GPT-5.2",
           "Gemini 3 Pro"
         ],
-        "rank": 12.793647727615348
+        "rank": 12.611953031625696
       },
-      "rank": 12.793647727615348
+      "rank": 12.611953031625696
     },
     {
       "modelInfo": {
@@ -7072,6 +7141,7 @@
           "GDPval-AA 2": "Inkling"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -7151,9 +7221,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 13.193348541827042
+        "rank": 13.01165384583739
       },
-      "rank": 13.193348541827042
+      "rank": 13.01165384583739
     },
     {
       "modelInfo": {
@@ -7207,6 +7277,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -7295,9 +7366,9 @@
           "Gemini 3 Pro",
           "Grok 4"
         ],
-        "rank": 13.391950816805092
+        "rank": 13.21025612081544
       },
-      "rank": 13.391950816805092
+      "rank": 13.21025612081544
     },
     {
       "modelInfo": {
@@ -7343,6 +7414,7 @@
           "MMMU Pro": "Gemini 3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -7421,9 +7493,9 @@
           "Kimi K2.5",
           "GPT-5.2"
         ],
-        "rank": 14.260222569313935
+        "rank": 14.078527873324283
       },
-      "rank": 14.260222569313935
+      "rank": 14.078527873324283
     },
     {
       "modelInfo": {
@@ -7462,6 +7534,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -7538,9 +7611,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 14.693324394089355
+        "rank": 14.511629698099703
       },
-      "rank": 14.693324394089355
+      "rank": 14.511629698099703
     },
     {
       "modelInfo": {
@@ -7643,9 +7716,9 @@
           "Gemini 3 Flash",
           "GPT-5.2"
         ],
-        "rank": 14.912172242141208
+        "rank": 14.730477546151556
       },
-      "rank": 14.912172242141208
+      "rank": 14.730477546151556
     },
     {
       "modelInfo": {
@@ -7672,6 +7745,7 @@
           "Tau 3 Banking": 0.116
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -7748,9 +7822,9 @@
           "GPT-5",
           "Grok 4"
         ],
-        "rank": 15.187213428302659
+        "rank": 15.005518732313007
       },
-      "rank": 15.187213428302659
+      "rank": 15.005518732313007
     },
     {
       "modelInfo": {
@@ -7775,6 +7849,7 @@
           "Humanity's Last Exam(w/t)": 0.4
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -7836,9 +7911,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 15.860097440841844
+        "rank": 15.678402744852193
       },
-      "rank": 15.860097440841844
+      "rank": 15.678402744852193
     },
     {
       "modelInfo": {
@@ -7936,9 +8011,9 @@
           "GPT-5.2",
           "Claude Haiku 4.5"
         ],
-        "rank": 15.917915622660026
+        "rank": 15.736220926670374
       },
-      "rank": 15.917915622660026
+      "rank": 15.736220926670374
     },
     {
       "modelInfo": {
@@ -7979,6 +8054,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -8051,9 +8127,9 @@
           "Gemini 3 Flash",
           "GPT-5.2"
         ],
-        "rank": 17.236968489035508
+        "rank": 17.055273793045856
       },
-      "rank": 17.236968489035508
+      "rank": 17.055273793045856
     },
     {
       "modelInfo": {
@@ -8088,6 +8164,7 @@
           "CharXiv": "Muse Spark 1.1"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -8156,9 +8233,9 @@
           "Gemini 3 Flash",
           "GPT-5.2"
         ],
-        "rank": 17.441424733452585
+        "rank": 17.259730037462933
       },
-      "rank": 17.441424733452585
+      "rank": 17.259730037462933
     },
     {
       "modelInfo": {
@@ -8250,9 +8327,9 @@
           "Claude Sonnet 4.6",
           "MiniMax M2.5"
         ],
-        "rank": 17.522340763986936
+        "rank": 17.340646067997284
       },
-      "rank": 17.522340763986936
+      "rank": 17.340646067997284
     },
     {
       "modelInfo": {
@@ -8328,9 +8405,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 17.59104446769064
+        "rank": 17.409349771700988
       },
-      "rank": 17.59104446769064
+      "rank": 17.409349771700988
     },
     {
       "modelInfo": {
@@ -8367,6 +8444,7 @@
           "AIME'26": 0.955
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -8436,9 +8514,9 @@
           "Claude Opus 4.6",
           "GPT-5.2"
         ],
-        "rank": 17.622105179492333
+        "rank": 17.44041048350268
       },
-      "rank": 17.622105179492333
+      "rank": 17.44041048350268
     },
     {
       "modelInfo": {
@@ -8473,6 +8551,7 @@
           "OSWorld-Verified": "Claude Sonnet 4.6"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -8534,9 +8613,9 @@
           "GLM 5",
           "Claude Opus 4.6"
         ],
-        "rank": 17.70420215290987
+        "rank": 17.522507456920216
       },
-      "rank": 17.70420215290987
+      "rank": 17.522507456920216
     },
     {
       "modelInfo": {
@@ -8566,6 +8645,7 @@
           "OSWorld-Verified": 0.622
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -8622,9 +8702,9 @@
           "Claude Opus 4.6",
           "Kimi K2.5"
         ],
-        "rank": 18.314668881650327
+        "rank": 18.132974185660675
       },
-      "rank": 18.314668881650327
+      "rank": 18.132974185660675
     },
     {
       "modelInfo": {
@@ -8666,6 +8746,7 @@
           "GDPval-AA 2": "Claude Sonnet 5"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -8731,9 +8812,9 @@
           "GLM 5",
           "Claude Opus 4.6"
         ],
-        "rank": 18.584793888584926
+        "rank": 18.403099192595274
       },
-      "rank": 18.584793888584926
+      "rank": 18.403099192595274
     },
     {
       "modelInfo": {
@@ -8820,9 +8901,9 @@
           "Gemini 3.1 Pro",
           "Claude Sonnet 4.6"
         ],
-        "rank": 18.805061527929688
+        "rank": 18.623366831940036
       },
-      "rank": 18.805061527929688
+      "rank": 18.623366831940036
     },
     {
       "modelInfo": {
@@ -8849,6 +8930,7 @@
           "Humanity's Last Exam(w/t)": 0.472
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -8908,9 +8990,9 @@
           "GLM 5",
           "Claude Opus 4.6"
         ],
-        "rank": 18.921289598105126
+        "rank": 18.739594902115474
       },
-      "rank": 18.921289598105126
+      "rank": 18.739594902115474
     },
     {
       "modelInfo": {
@@ -8936,6 +9018,7 @@
           "MCPAtlas": 0.678
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -8986,9 +9069,9 @@
           "Gemini 3.1 Pro",
           "Claude Opus 4.6"
         ],
-        "rank": 19.10095061505428
+        "rank": 18.91925591906463
       },
-      "rank": 19.10095061505428
+      "rank": 18.91925591906463
     },
     {
       "modelInfo": {
@@ -9063,9 +9146,9 @@
           "Gemini 3.1 Pro",
           "GPT-5.2"
         ],
-        "rank": 19.553619654200187
+        "rank": 19.371924958210535
       },
-      "rank": 19.553619654200187
+      "rank": 19.371924958210535
     },
     {
       "modelInfo": {
@@ -9108,6 +9191,7 @@
           "Agents' Last Exam(pass)": "DeepSeek V4 Pro 0813"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -9167,9 +9251,9 @@
           "Gemini 3.1 Pro",
           "Claude Opus 4.6"
         ],
-        "rank": 19.63819412228529
+        "rank": 19.45649942629564
       },
-      "rank": 19.63819412228529
+      "rank": 19.45649942629564
     },
     {
       "modelInfo": {
@@ -9205,6 +9289,7 @@
           "OSWorld-Verified": "Gemini 3.5 Flash Lite"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -9272,9 +9357,9 @@
           "GPT-5.2",
           "Gemini 3 Pro"
         ],
-        "rank": 19.661723534049997
+        "rank": 19.480028838060345
       },
-      "rank": 19.661723534049997
+      "rank": 19.480028838060345
     },
     {
       "modelInfo": {
@@ -9389,9 +9474,9 @@
           "Claude Opus 4.7",
           "GPT-5.4"
         ],
-        "rank": 20.4373892592963
+        "rank": 20.255694563306648
       },
-      "rank": 20.4373892592963
+      "rank": 20.255694563306648
     },
     {
       "modelInfo": {
@@ -9448,6 +9533,7 @@
           "NL2Repo": "Qwen 3.8 27B"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -9506,9 +9592,9 @@
           "GPT-5.4",
           "Gemini 3.1 Pro"
         ],
-        "rank": 20.59079082241283
+        "rank": 20.40909612642318
       },
-      "rank": 20.59079082241283
+      "rank": 20.40909612642318
     },
     {
       "modelInfo": {
@@ -9549,6 +9635,7 @@
           "AIME'26": "GLM 5.2"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -9606,9 +9693,9 @@
           "Gemini 3.1 Pro",
           "Claude Opus 4.6"
         ],
-        "rank": 20.88330383480806
+        "rank": 20.70160913881841
       },
-      "rank": 20.88330383480806
+      "rank": 20.70160913881841
     },
     {
       "modelInfo": {
@@ -9665,6 +9752,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -9728,9 +9816,9 @@
           "Claude Opus 4.7",
           "GPT-5.4"
         ],
-        "rank": 21.15762332541968
+        "rank": 20.97592862943003
       },
-      "rank": 21.15762332541968
+      "rank": 20.97592862943003
     },
     {
       "modelInfo": {
@@ -9760,6 +9848,7 @@
           "Program Bench": "MiMo V2.6 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -9810,9 +9899,9 @@
           "Claude Sonnet 4.6",
           "Claude Opus 4.6"
         ],
-        "rank": 21.49656645346144
+        "rank": 21.31487175747179
       },
-      "rank": 21.49656645346144
+      "rank": 21.31487175747179
     },
     {
       "modelInfo": {
@@ -9886,9 +9975,9 @@
           "Claude Opus 4.6",
           "Gemini 3 Flash"
         ],
-        "rank": 21.603122397517385
+        "rank": 21.421427701527733
       },
-      "rank": 21.603122397517385
+      "rank": 21.421427701527733
     },
     {
       "modelInfo": {
@@ -9975,9 +10064,9 @@
           "Claude Opus 4.7",
           "Gemini 3.1 Pro"
         ],
-        "rank": 21.723930008549736
+        "rank": 21.542235312560084
       },
-      "rank": 21.723930008549736
+      "rank": 21.542235312560084
     },
     {
       "modelInfo": {
@@ -10061,9 +10150,9 @@
           "MiniMax M2.5",
           "Gemini 3 Flash"
         ],
-        "rank": 22.260056413443746
+        "rank": 22.078361717454094
       },
-      "rank": 22.260056413443746
+      "rank": 22.078361717454094
     },
     {
       "modelInfo": {
@@ -10105,6 +10194,7 @@
           "IFBench": "Qwen 3.8 Flash Next"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -10170,9 +10260,9 @@
           "GPT-5",
           "Grok 4"
         ],
-        "rank": 22.471317051260186
+        "rank": 22.289622355270534
       },
-      "rank": 22.471317051260186
+      "rank": 22.289622355270534
     },
     {
       "modelInfo": {
@@ -10220,9 +10310,9 @@
           "GPT-5.2",
           "Gemini 3 Pro"
         ],
-        "rank": 22.524792387583055
+        "rank": 22.343097691593403
       },
-      "rank": 22.524792387583055
+      "rank": 22.343097691593403
     },
     {
       "modelInfo": {
@@ -10266,6 +10356,7 @@
           "MMLU Pro": "Qwen 3.7 Max"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -10316,9 +10407,9 @@
           "GPT-5.4",
           "Gemini 3.1 Pro"
         ],
-        "rank": 22.61281136741698
+        "rank": 22.43111667142733
       },
-      "rank": 22.61281136741698
+      "rank": 22.43111667142733
     },
     {
       "modelInfo": {
@@ -10361,6 +10452,7 @@
           "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -10424,9 +10516,9 @@
           "GLM 5",
           "MiniMax M2.5"
         ],
-        "rank": 23.020208281235234
+        "rank": 22.838513585245583
       },
-      "rank": 23.020208281235234
+      "rank": 22.838513585245583
     },
     {
       "modelInfo": {
@@ -10465,9 +10557,9 @@
           "Gemini 3.5 Flash",
           "Claude Opus 4.7"
         ],
-        "rank": 23.020208281235234
+        "rank": 22.838513585245583
       },
-      "rank": 23.020208281235234
+      "rank": 22.838513585245583
     },
     {
       "modelInfo": {
@@ -10513,6 +10605,7 @@
           "NL2Repo": "Qwen 3.8 Max"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -10562,9 +10655,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 23.034155649656288
+        "rank": 22.852460953666636
       },
-      "rank": 23.034155649656288
+      "rank": 22.852460953666636
     },
     {
       "modelInfo": {
@@ -10595,6 +10688,7 @@
           "MCPAtlas": 0.791
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -10640,9 +10734,9 @@
           "Kimi K2.6",
           "Claude Opus 4.7"
         ],
-        "rank": 23.817092676997767
+        "rank": 23.635397981008115
       },
-      "rank": 23.817092676997767
+      "rank": 23.635397981008115
     },
     {
       "modelInfo": {
@@ -10706,9 +10800,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 24.26263181638245
+        "rank": 24.080937120392797
       },
-      "rank": 24.26263181638245
+      "rank": 24.080937120392797
     },
     {
       "modelInfo": {
@@ -10738,9 +10832,9 @@
           "Claude Opus 4.7",
           "GPT-5.4"
         ],
-        "rank": 24.30651716670092
+        "rank": 24.12482247071127
       },
-      "rank": 24.30651716670092
+      "rank": 24.12482247071127
     },
     {
       "modelInfo": {
@@ -10791,6 +10885,7 @@
           "NL2Repo": "GLM 5.3"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -10842,9 +10937,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 24.41278283086132
+        "rank": 24.23108813487167
       },
-      "rank": 24.41278283086132
+      "rank": 24.23108813487167
     },
     {
       "modelInfo": {
@@ -10886,6 +10981,7 @@
           "IFBench": "Qwen 3.8 Flash Next"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -10942,9 +11038,9 @@
           "GLM 5.1",
           "GPT-5.4"
         ],
-        "rank": 24.98682422961097
+        "rank": 24.80512953362132
       },
-      "rank": 24.98682422961097
+      "rank": 24.80512953362132
     },
     {
       "modelInfo": {
@@ -11029,9 +11125,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 25.114592086753827
+        "rank": 24.932897390764175
       },
-      "rank": 25.114592086753827
+      "rank": 24.932897390764175
     },
     {
       "modelInfo": {
@@ -11070,6 +11166,7 @@
           "BabyVision": "Qwen 3.7 Plus"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -11117,9 +11214,9 @@
           "Claude Opus 4.7",
           "GLM 5.1"
         ],
-        "rank": 25.114592086753827
+        "rank": 24.932897390764175
       },
-      "rank": 25.114592086753827
+      "rank": 24.932897390764175
     },
     {
       "modelInfo": {
@@ -11155,6 +11252,7 @@
           "NL2Repo": 0.481
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -11209,9 +11307,9 @@
           "GPT-5.2",
           "Grok 4"
         ],
-        "rank": 25.335042693339616
+        "rank": 25.153347997349965
       },
-      "rank": 25.335042693339616
+      "rank": 25.153347997349965
     },
     {
       "modelInfo": {
@@ -11255,6 +11353,7 @@
           "BabyVision": "Seed 2.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -11291,9 +11390,9 @@
           "Claude Opus 4.8",
           "GPT-5.5"
         ],
-        "rank": 25.847146089481207
+        "rank": 25.665451393491555
       },
-      "rank": 25.847146089481207
+      "rank": 25.665451393491555
     },
     {
       "modelInfo": {
@@ -11342,6 +11441,7 @@
           "OSWorld 2.1": "Claude Sonnet 5.5"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -11388,9 +11488,9 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 25.96690725762446
+        "rank": 25.785212561634808
       },
-      "rank": 25.96690725762446
+      "rank": 25.785212561634808
     },
     {
       "modelInfo": {
@@ -11465,9 +11565,9 @@
           "Claude Opus 4.8",
           "GPT-5.5"
         ],
-        "rank": 26.08628648461821
+        "rank": 25.904591788628558
       },
-      "rank": 26.08628648461821
+      "rank": 25.904591788628558
     },
     {
       "modelInfo": {
@@ -11538,9 +11638,9 @@
           "GPT-5.5",
           "Claude Opus 4.7"
         ],
-        "rank": 26.272767966099693
+        "rank": 26.09107327011004
       },
-      "rank": 26.272767966099693
+      "rank": 26.09107327011004
     },
     {
       "modelInfo": {
@@ -11573,6 +11673,7 @@
           "BabyVision": 0.763
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -11617,9 +11718,9 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 26.272767966099693
+        "rank": 26.09107327011004
       },
-      "rank": 26.272767966099693
+      "rank": 26.09107327011004
     },
     {
       "modelInfo": {
@@ -11694,9 +11795,9 @@
           "Claude Opus 4.7",
           "GPT-5.4"
         ],
-        "rank": 26.41877290532262
+        "rank": 26.237078209332967
       },
-      "rank": 26.41877290532262
+      "rank": 26.237078209332967
     },
     {
       "modelInfo": {
@@ -11766,9 +11867,9 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 26.41877290532262
+        "rank": 26.237078209332967
       },
-      "rank": 26.41877290532262
+      "rank": 26.237078209332967
     },
     {
       "modelInfo": {
@@ -11844,9 +11945,9 @@
           "GPT-5.5",
           "Muse Spark"
         ],
-        "rank": 26.599188011598695
+        "rank": 26.417493315609043
       },
-      "rank": 26.599188011598695
+      "rank": 26.417493315609043
     },
     {
       "modelInfo": {
@@ -11884,6 +11985,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -11923,9 +12025,9 @@
           "GPT-5.5",
           "Gemini 3 Flash"
         ],
-        "rank": 26.695780188939093
+        "rank": 26.51408549294944
       },
-      "rank": 26.695780188939093
+      "rank": 26.51408549294944
     },
     {
       "modelInfo": {
@@ -11988,6 +12090,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -12031,9 +12134,9 @@
           "Kimi K2.7 Code",
           "Claude Fable 5"
         ],
-        "rank": 26.81090984914749
+        "rank": 26.629215153157837
       },
-      "rank": 26.81090984914749
+      "rank": 26.629215153157837
     },
     {
       "modelInfo": {
@@ -12106,6 +12209,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -12144,9 +12248,9 @@
           "Claude Fable 5",
           "GPT-5.5"
         ],
-        "rank": 27.071432989486755
+        "rank": 26.889738293497103
       },
-      "rank": 27.071432989486755
+      "rank": 26.889738293497103
     },
     {
       "modelInfo": {
@@ -12192,6 +12296,7 @@
           "Terminal-Bench 3": "Qwen 3.8 Max 0902"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "GPT-6.1 Terra",
@@ -12230,9 +12335,9 @@
           "GPT-5.6 Terra",
           "Claude Fable 5"
         ],
-        "rank": 27.233122038937708
+        "rank": 27.051427342948056
       },
-      "rank": 27.233122038937708
+      "rank": 27.051427342948056
     },
     {
       "modelInfo": {
@@ -12270,6 +12375,7 @@
           "Tau 3 Banking": "Ling-3.1-flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -12305,9 +12411,9 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 27.417452760148908
+        "rank": 27.235758064159256
       },
-      "rank": 27.417452760148908
+      "rank": 27.235758064159256
     },
     {
       "modelInfo": {
@@ -12342,6 +12448,7 @@
           "Terminal-Bench 3": "DeepSeek V4.1 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -12379,9 +12486,9 @@
           "GPT-5.6 Luna",
           "Claude Fable 5"
         ],
-        "rank": 27.611837264386693
+        "rank": 27.43014256839704
       },
-      "rank": 27.611837264386693
+      "rank": 27.43014256839704
     },
     {
       "modelInfo": {
@@ -12442,9 +12549,9 @@
           "Claude Fable 5",
           "GPT-5.5"
         ],
-        "rank": 30.94570823212863
+        "rank": 30.76401353613898
       },
-      "rank": 30.94570823212863
+      "rank": 30.76401353613898
     },
     {
       "modelInfo": {
@@ -12480,6 +12587,7 @@
           "NL2Repo": 0.589
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Kimi K3.1 Pro",
@@ -12514,9 +12622,9 @@
           "GPT-5.6 Terra",
           "Claude Fable 5"
         ],
-        "rank": 31.107149593528302
+        "rank": 30.92545489753865
       },
-      "rank": 31.107149593528302
+      "rank": 30.92545489753865
     },
     {
       "modelInfo": {
@@ -12574,6 +12682,7 @@
           "NL2Repo": "GLM 5.3"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -12606,9 +12715,9 @@
           "GPT-5.6 Terra",
           "Claude Fable 5"
         ],
-        "rank": 31.169684994335967
+        "rank": 30.987990298346315
       },
-      "rank": 31.169684994335967
+      "rank": 30.987990298346315
     },
     {
       "modelInfo": {
@@ -12652,6 +12761,7 @@
           "Agents' Last Exam(pass)": "Gemini 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -12683,9 +12793,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 31.77242541690376
+        "rank": 31.59073072091411
       },
-      "rank": 31.77242541690376
+      "rank": 31.59073072091411
     },
     {
       "modelInfo": {
@@ -12716,6 +12826,7 @@
           "GDPval-AA 2.1": "Claude Haiku 5.5"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "Gemini 4 Carbon",
           "GPT-6.1 Terra",
@@ -12746,9 +12857,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 32.14480654125071
+        "rank": 31.963111845261054
       },
-      "rank": 32.14480654125071
+      "rank": 31.963111845261054
     },
     {
       "modelInfo": {
@@ -12786,6 +12897,7 @@
           "gdp.pdf": 0.148
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -12815,9 +12927,9 @@
           "GPT-5.6 Terra",
           "Claude Fable 5"
         ],
-        "rank": 32.18857531001948
+        "rank": 32.006880614029825
       },
-      "rank": 32.18857531001948
+      "rank": 32.006880614029825
     },
     {
       "modelInfo": {
@@ -12879,9 +12991,9 @@
           "GPT-5.6 Terra",
           "Claude Fable 5"
         ],
-        "rank": 32.31684649649146
+        "rank": 32.1351518005018
       },
-      "rank": 32.31684649649146
+      "rank": 32.1351518005018
     },
     {
       "modelInfo": {
@@ -12945,9 +13057,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 32.457253672636874
+        "rank": 32.27555897664722
       },
-      "rank": 32.457253672636874
+      "rank": 32.27555897664722
     },
     {
       "modelInfo": {
@@ -13003,9 +13115,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 32.75330872905562
+        "rank": 32.57161403306596
       },
-      "rank": 32.75330872905562
+      "rank": 32.57161403306596
     },
     {
       "modelInfo": {
@@ -13040,6 +13152,7 @@
           "NL2Repo": 0.605
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "Gemini 4 Carbon",
           "GPT-6.1 Terra",
@@ -13066,9 +13179,9 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 32.75330872905562
+        "rank": 32.57161403306596
       },
-      "rank": 32.75330872905562
+      "rank": 32.57161403306596
     },
     {
       "modelInfo": {
@@ -13119,6 +13232,7 @@
           "OSWorld 2.0": "MiniMax M3.1 Flash"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "Gemini 4 Carbon",
           "GPT-6.1 Terra",
@@ -13143,9 +13257,9 @@
           "Claude Fable 5",
           "ERNIE 5.1"
         ],
-        "rank": 32.93136960850828
+        "rank": 32.74967491251862
       },
-      "rank": 32.93136960850828
+      "rank": 32.74967491251862
     },
     {
       "modelInfo": {
@@ -13198,6 +13312,7 @@
           "ExploitGym": "Kimi K3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -13223,9 +13338,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 33.32742758088898
+        "rank": 33.145732884899324
       },
-      "rank": 33.32742758088898
+      "rank": 33.145732884899324
     },
     {
       "modelInfo": {
@@ -13280,9 +13395,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 33.639266995167915
+        "rank": 33.45757229917826
       },
-      "rank": 33.639266995167915
+      "rank": 33.45757229917826
     },
     {
       "modelInfo": {
@@ -13329,9 +13444,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 33.70427421017513
+        "rank": 33.52257951418547
       },
-      "rank": 33.70427421017513
+      "rank": 33.52257951418547
     },
     {
       "modelInfo": {
@@ -13360,6 +13475,7 @@
           "OSWorld 2.1": 0.724
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -13382,9 +13498,9 @@
           "Claude Fable 5",
           "Claude Opus 4.8"
         ],
-        "rank": 33.78795842070144
+        "rank": 33.60626372471179
       },
-      "rank": 33.78795842070144
+      "rank": 33.60626372471179
     },
     {
       "modelInfo": {
@@ -13451,6 +13567,7 @@
           "BabyVision": "Kimi K3"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "LongCat 2.5",
           "Gemini 4 Carbon",
@@ -13471,9 +13588,9 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 33.833220232848504
+        "rank": 33.65152553685885
       },
-      "rank": 33.833220232848504
+      "rank": 33.65152553685885
     },
     {
       "modelInfo": {
@@ -13509,6 +13626,7 @@
           "GDPval-AA 2.1": "Claude Sonnet 5.5"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "GPT-6.1 Terra",
           "Kimi K3.1 Pro",
@@ -13529,9 +13647,9 @@
           "Claude Fable 5.1",
           "Claude Opus 5"
         ],
-        "rank": 34.442211414503156
+        "rank": 34.2605167185135
       },
-      "rank": 34.442211414503156
+      "rank": 34.2605167185135
     },
     {
       "modelInfo": {
@@ -13580,9 +13698,9 @@
           "Claude Opus 5",
           "Claude Fable 5"
         ],
-        "rank": 34.77368417845743
+        "rank": 34.59198948246777
       },
-      "rank": 34.77368417845743
+      "rank": 34.59198948246777
     },
     {
       "modelInfo": {
@@ -13637,9 +13755,9 @@
           "GPT-5.6 Sol",
           "Claude Fable 5"
         ],
-        "rank": 34.88077811637389
+        "rank": 34.69908342038423
       },
-      "rank": 34.88077811637389
+      "rank": 34.69908342038423
     },
     {
       "modelInfo": {
@@ -13692,9 +13810,9 @@
           "Claude Fable 5",
           "Muse Spark"
         ],
-        "rank": 35.14524768756022
+        "rank": 34.96355299157056
       },
-      "rank": 35.14524768756022
+      "rank": 34.96355299157056
     },
     {
       "modelInfo": {
@@ -13728,6 +13846,7 @@
           "Apex Agents 1.1(pass@1)": 0.752
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "GPT-6.1 Terra",
           "Kimi K3.1 Pro",
@@ -13744,9 +13863,9 @@
           "Seed 2.1 Pro",
           "Claude Fable 5"
         ],
-        "rank": 35.38591612418882
+        "rank": 35.204221428199155
       },
-      "rank": 35.38591612418882
+      "rank": 35.204221428199155
     },
     {
       "modelInfo": {
@@ -13818,6 +13937,7 @@
           "BabyVision": "Kimi K3"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "GPT-6.1 Terra",
           "Kimi K3.1 Pro",
@@ -13833,9 +13953,9 @@
           "Claude Fable 5.1",
           "Claude Opus 5"
         ],
-        "rank": 35.58814923091775
+        "rank": 35.40645453492809
       },
-      "rank": 35.58814923091775
+      "rank": 35.40645453492809
     },
     {
       "modelInfo": {
@@ -13875,9 +13995,9 @@
           "Claude Fable 5.1",
           "Claude Opus 5"
         ],
-        "rank": 35.783835815973056
+        "rank": 35.60214111998339
       },
-      "rank": 35.783835815973056
+      "rank": 35.60214111998339
     },
     {
       "modelInfo": {
@@ -13922,6 +14042,7 @@
           "gdp.pdf": "Kimi K3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Hy 4",
           "Gemini 4 Carbon",
           "GPT-6.1 Terra",
@@ -13935,9 +14056,9 @@
           "Claude Fable 5.1",
           "Claude Opus 5"
         ],
-        "rank": 35.84006923772372
+        "rank": 35.658374541734055
       },
-      "rank": 35.84006923772372
+      "rank": 35.658374541734055
     },
     {
       "modelInfo": {
@@ -13996,6 +14117,7 @@
           "NL2Repo": "Qwen 3.8 Max 0902"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "GPT-6.1 Terra",
           "Kimi K3.1 Pro",
@@ -14007,9 +14129,9 @@
           "GPT-6 Astra",
           "Claude Fable 5.1"
         ],
-        "rank": 36.386710731872405
+        "rank": 36.20501603588274
       },
-      "rank": 36.386710731872405
+      "rank": 36.20501603588274
     },
     {
       "modelInfo": {
@@ -14037,6 +14159,7 @@
           "MMMU Pro": 0.855
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "Kimi K3.1 Pro",
           "Muse Wonder",
@@ -14047,9 +14170,9 @@
           "GPT-6 Astra",
           "Claude Fable 5.1"
         ],
-        "rank": 38.77883942598708
+        "rank": 38.59714472999742
       },
-      "rank": 38.77883942598708
+      "rank": 38.59714472999742
     },
     {
       "modelInfo": {
@@ -14080,6 +14203,7 @@
           "OSWorld 2.1": 0.726
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "Gemini 4 Argon",
           "GPT-6.1 Sol",
@@ -14088,9 +14212,9 @@
           "GPT-6 Astra",
           "Claude Fable 5.1"
         ],
-        "rank": 38.868402050241556
+        "rank": 38.686707354251894
       },
-      "rank": 38.868402050241556
+      "rank": 38.686707354251894
     },
     {
       "modelInfo": {
@@ -14116,6 +14240,7 @@
           "JobBench": 0.731,
           "HealthBench Professional": 0.621,
           "Chartography": 0.462,
+          "FrontierSWE 2": 0.563,
           "FrontierCode 1.1": 0.535,
           "FrontierCode 1.1(E)": 0.649,
           "Program Bench": 0.555,
@@ -14133,6 +14258,7 @@
           "JobBench": "Muse Wonder",
           "HealthBench Professional": "Grok 4.7",
           "Chartography": "Gemini 4 Argon",
+          "FrontierSWE 2": "Claude Fable 5.2",
           "FrontierCode 1.1": "GPT-6 Astra",
           "FrontierCode 1.1(E)": "GPT-6 Astra",
           "Program Bench": "Muse Wonder",
@@ -14142,6 +14268,7 @@
           "BabyVision": "Kimi K3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "Gemini 4 Argon",
           "GPT-6.1 Sol",
@@ -14149,9 +14276,9 @@
           "Claude Opus 5.5",
           "GPT-6 Astra"
         ],
-        "rank": 39.05812767909369
+        "rank": 38.876432983104024
       },
-      "rank": 39.05812767909369
+      "rank": 38.876432983104024
     },
     {
       "modelInfo": {
@@ -14194,6 +14321,7 @@
           "Apex Agents 1.1(pass@1)": "Hy 4"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "Kimi K3.1 Pro",
           "Gemini 4 Argon",
@@ -14201,9 +14329,9 @@
           "Claude Opus 5.5",
           "GPT-6 Astra"
         ],
-        "rank": 39.265820398660466
+        "rank": 39.0841257026708
       },
-      "rank": 39.265820398660466
+      "rank": 39.0841257026708
     },
     {
       "modelInfo": {
@@ -14234,14 +14362,15 @@
           "OSWorld 2.1": 0.801
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "Kimi K3.1 Pro",
           "Gemini 4 Argon",
           "Claude Opus 5.5"
         ],
-        "rank": 39.732326232848614
+        "rank": 39.55063153685895
       },
-      "rank": 39.732326232848614
+      "rank": 39.55063153685895
     },
     {
       "modelInfo": {
@@ -14284,15 +14413,16 @@
           "Agents' Last Exam(v1.1 pass)": "Hy 4"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "Muse Wonder",
           "Gemini 4 Argon",
           "Claude Opus 5.5",
           "Claude Fable 5.1"
         ],
-        "rank": 39.84674782224813
+        "rank": 39.66505312625847
       },
-      "rank": 39.84674782224813
+      "rank": 39.66505312625847
     },
     {
       "modelInfo": {
@@ -14319,6 +14449,7 @@
           "AutomationBench 1.0.6": 0.513,
           "Chartography": 0.716,
           "DeepSWE 1.1": 0.779,
+          "FrontierSWE 2": 0.55,
           "Terminal-Bench Science 0.1": 0.576,
           "Terminal-Bench 4": 0.574,
           "Agents' Last Exam(v1.1 score)": 0.69,
@@ -14331,13 +14462,14 @@
           "OSWorld 2.1": "Gemini 4 Carbon"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "Claude Opus 5.5",
           "GPT-6 Astra"
         ],
-        "rank": 40.567016633845355
+        "rank": 40.38532193785569
       },
-      "rank": 40.567016633845355
+      "rank": 40.38532193785569
     },
     {
       "modelInfo": {
@@ -14366,6 +14498,7 @@
           "HealthBench Professional": 0.634,
           "Chartography": 0.71,
           "DeepSWE 1.1": 0.741,
+          "FrontierSWE 2": 0.655,
           "FrontierCode 1.1": 0.533,
           "FrontierCode 1.1(E)": 0.645,
           "Program Bench": 0.525,
@@ -14387,6 +14520,7 @@
           "AutomationBench 1.0.6 Pass": "MiMo V2.6 Pro",
           "JobBench": "Muse Wonder",
           "Chartography": "Gemini 4 Argon",
+          "FrontierSWE 2": "Claude Fable 5.2",
           "Program Bench": "Muse Wonder",
           "Agents' Last Exam(v1.1 score)": "Gemini 4 Carbon",
           "OSWorld 2.1": "GPT-6.1 Terra",
@@ -14395,14 +14529,15 @@
           "gdp.pdf": "GPT-6.1 Sol"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon",
           "Kimi K3.1 Pro",
           "Claude Sonnet 5.5",
           "Claude Opus 5.5"
         ],
-        "rank": 40.736797471410476
+        "rank": 40.61112415097814
       },
-      "rank": 40.736797471410476
+      "rank": 40.61112415097814
     },
     {
       "modelInfo": {
@@ -14429,6 +14564,7 @@
           "JobBench": 0.754,
           "HealthBench Professional": 0.656,
           "Chartography": 0.644,
+          "FrontierSWE 2": 0.623,
           "FrontierCode 1.1": 0.544,
           "Program Bench": 0.705,
           "Terminal-Bench Science 0.1": 0.587,
@@ -14450,6 +14586,7 @@
           "AutomationBench 1.0.6 Pass": "Hy 4",
           "JobBench": "Muse Wonder",
           "HealthBench Professional": "Muse Wonder",
+          "FrontierSWE 2": "Claude Fable 5.2",
           "Program Bench": "Muse Wonder",
           "BrowseComp": "Kimi K3.1 Pro",
           "Agents' Last Exam(v1.1 score)": "Gemini 4 Carbon",
@@ -14462,11 +14599,12 @@
           "BabyVision": "Kimi K3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Claude Fable 5.2",
           "Gemini 4 Carbon"
         ],
-        "rank": 41.02175621105162
+        "rank": 40.89608289061928
       },
-      "rank": 41.02175621105162
+      "rank": 40.89608289061928
     },
     {
       "modelInfo": {
@@ -14498,10 +14636,44 @@
           "OSWorld 2.1": 0.815,
           "ExploitGym": 0.548
         },
-        "betterThanCurrentModels": [],
-        "rank": 41.642032396080545
+        "betterThanCurrentModels": [
+          "Claude Fable 5.2"
+        ],
+        "rank": 41.51635907564821
       },
-      "rank": 41.642032396080545
+      "rank": 41.51635907564821
+    },
+    {
+      "modelInfo": {
+        "brand": "Anthropic",
+        "model": "Claude Fable 5.2",
+        "time": "2026/11/09",
+        "input": [
+          "text",
+          "image",
+          "pdf"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "generate": 128000,
+        "inputPrice": "$10",
+        "inputCachedPrice": "$0.25",
+        "outputPrice": "$50",
+        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "currentBenchmarksScores": {
+          "AutomationBench 1.0.6": 0.514,
+          "Chartography": 0.734,
+          "FrontierSWE 2": 0.699,
+          "Terminal-Bench Science 0.1": 0.746,
+          "Humanity's Last Exam(w/t)": 0.742,
+          "OSWorld 2.1": 0.893
+        },
+        "betterThanCurrentModels": [],
+        "rank": 41.745455005169624
+      },
+      "rank": 41.745455005169624
     }
   ],
   "priceMap": {
@@ -14534,5 +14706,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-11-05T00:31:56.664Z"
+  "updatedAt": "2026-11-10T00:42:30.027Z"
 }

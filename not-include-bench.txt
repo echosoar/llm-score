@@ -69,9 +69,6 @@
     - GPT‑6 Astra: 97.6
 + Frontier Finance
     - "Kimi K3.1 Pro": 58.6
-+ FrontierSWE v2
-    - Gemini 4 Argon: 55
-    - Gemini 4 Cargo: 61.2
 + GeneBench Pro
     - GPT‑6 Astra: 37.8
 + GDPV-aa 2.1
