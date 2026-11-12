@@ -4,6 +4,21 @@
     ],
     "models": [
         {
+            "brand": "百度",
+            "model": "ERNIE 5.5 Flash Preview",
+            "time": "2026/11/11",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 128000,
+            "params": 280,
+            "active": 14,
+            "inputPrice": "$0.28",
+            "inputCachedPrice": "$0.028",
+            "outputPrice": "$1.13",
+            "url": "https://ernie.baidu.com/zh/release/ernie-5-5-flash-preview/"
+        },
+        {
             "brand": "Anthropic",
             "model": "Claude Fable 5.2",
             "time": "2026/11/09",
@@ -15,18 +30,6 @@
             "inputCachedPrice": "$0.2",
             "outputPrice": "$40",
             "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
-        },
-        {
-            "brand": "百度",
-            "model": "ERNIE 5.5 Flash",
-            "time": "2026/11/05",
-            "input": ["text"],
-            "output": ["text"],
-            "context": 1000000,
-            "generate": 128000,
-            "params": 280,
-            "active": 14,
-            "url": "https://ernie.baidu.com/zh/release/ernie-5-5-flash-base/"
         },
         {
             "brand": "腾讯",
@@ -1858,6 +1861,7 @@
             "name": "AutomationBench 1.0.6 Pass",
             "info": "Pass@1",
             "scores": {
+                "ERNIE 5.5 Flash Preview": 0.618,
                 "Hy 4": 0.562,
                 "GLM 5.3(from Hy 4)": 0.482,
                 "Kimi K3.1 Pro(from Hy 4)": 0.656,
@@ -2191,6 +2195,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "ERNIE 5.5 Flash Preview": 0.712,
                 "Hy 4": 0.749,
                 "LongCat 2.5": 0.646,
                 "Kimi K3.1 Pro": 0.755,
@@ -2383,6 +2388,7 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "ERNIE 5.5 Flash Preview": 0.465,
                 "Hy 4": 0.444,
                 "LongCat 2.5": 0.385,
                 "Gemini 4 Carbon": 0.652,
@@ -3146,6 +3152,7 @@
         {
             "name": "Apex Agents 1.1(pass@1)",
             "scores": {
+                "ERNIE 5.5 Flash Preview": 0.642,
                 "Hy 4": 0.752,
                 "DeepSeek V4.1 Flash 1017(from Hy 4)": 0.721,
                 "GPT-6.1 Sol(from Hy 4)": 0.60,
@@ -3220,7 +3227,7 @@
         {
             "name": "MMLU Pro",
             "scores": {
-                "ERNIE 5.5 Flash": 0.784,
+                "ERNIE 5.5 Flash Preview": 0.784,
                 "Qwen 3.7 Max": 0.896,
                 "Qwen 3.6 27B(from Qwen 3.7 Max)": 0.885,
                 "DeepSeek v4 Pro Preview(from Qwen 3.7 Max)": 0.875,
