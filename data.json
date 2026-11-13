@@ -2194,6 +2194,7 @@
             "info": "no tool",
             "scores": {
                 "Gemini 4 Hydrogen": 0.666,
+                "GPT-6.1 Terra(from Gemini 4 Hydrogen)": 0.632,
                 "Claude Fable 5.2": 0.734,
                 "Gemini 4 Carbon": 0.725,
                 "Claude Haiku 5.5": 0.464,
@@ -2385,6 +2386,7 @@
             "scores": {
                 "ERNIE 5.5 Flash Preview": 0.21,
                 "Gemini 4 Hydrogen": 0.514,
+                "Claude Sonnet 5.5(from Gemini 4 Hydrogen)": 0.599,
                 "Claude Fable 5.2": 0.746,
                 "Hy 4": 0.198,
                 "Gemini 4 Carbon": 0.648,
@@ -2406,7 +2408,6 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
-                "Gemini 4 Hydrogen": 0.57,
                 "ERNIE 5.5 Flash Preview": 0.465,
                 "Hy 4": 0.444,
                 "LongCat 2.5": 0.385,
@@ -2804,6 +2805,8 @@
             "info": "ale score",
             "scores": {
                 "Gemini 4 Hydrogen": 0.716,
+                "GPT-6.1 Terra(from Gemini 4 Hydrogen)": 0.698,
+                "Claude Sonnet 5.5(from Gemini 4 Hydrogen)": 0.604,
                 "Gemini 4 Carbon": 0.774,
                 "Gemini 4 Argon(from Gemini 4 Carbon)": 0.69,
                 "GPT-6 Astra(from Gemini 4 Carbon)": 0.73,
