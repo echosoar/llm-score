@@ -4,6 +4,32 @@
     ],
     "models": [
         {
+            "brand": "OpenAI",
+            "model": "GPT-6.2 Astra",
+            "time": "2026/11/17",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1050000,
+            "generate": 128000,
+            "inputPrice": "$8",
+            "inputCachedPrice": "$0.4",
+            "outputPrice": "$40",
+            "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
+        },
+        {
+            "brand": "OpenAI",
+            "model": "GPT-6.2 Sol",
+            "time": "2026/11/17",
+            "input": ["text", "image"],
+            "output": ["text"],
+            "context": 1050000,
+            "generate": 128000,
+            "inputPrice": "$2",
+            "inputCachedPrice": "$0.1",
+            "outputPrice": "$10",
+            "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/"
+        },
+        {
             "brand": "Google",
             "model": "Gemini 4 Hydrogen",
             "time": "2026/11/12",
@@ -1850,6 +1876,8 @@
             "name": "AutomationBench 1.0.6",
             "info": "score",
             "scores": {
+                "GPT-6.2 Astra": 0.524,
+                "GPT-6.2 Sol": 0.412,
                 "Claude Fable 5.2": 0.514,
                 "Gemini 4 Carbon": 0.539,
                 "Gemini 4 Argon": 0.513,
@@ -2323,6 +2351,17 @@
             }
         },
         {
+            "name": "FrontierCode 2",
+            "scores": {
+                "GPT-6.2 Astra": 0.442,
+                "GPT-6.2 Sol": 0.438,
+                "GPT-6.1 Sol(from GPT-6.2 Sol)": 0.39,
+                "Claude Fable 5.2(from GPT-6.2 Sol)": 0.491,
+                "Claude Opus 5.2(from GPT-6.2 Sol)": 0.455,
+                "Gemini 4 Carbon(from GPT-6.2 Sol)": 0.411
+            }
+        },
+        {
             "name": "FrontierCode 1.1",
             "info": "main(not extend)",
             "scores": {
@@ -2384,6 +2423,8 @@
         {
             "name": "Terminal-Bench Science 0.1",
             "scores": {
+                "GPT-6.2 Astra": 0.771,
+                "GPT-6.2 Sol": 0.68,
                 "ERNIE 5.5 Flash Preview": 0.21,
                 "Gemini 4 Hydrogen": 0.514,
                 "Claude Sonnet 5.5(from Gemini 4 Hydrogen)": 0.599,
@@ -2801,9 +2842,24 @@
             }
         },
         {
+            "name": "HLE-Diamond",
+            "scores": {
+                "GPT-6.2 Astra": 0.72,
+                "GPT-6.2 Sol": 0.64,
+                "Gemini 4 Carbon": 0.69,
+                "Gemini 4 Hydrogen": 0.59,
+                "Gemini 4 Argon": 0.57,
+                "Claude Fable 5.2": 0.8
+            }
+        },
+        
+        {
             "name": "Agents' Last Exam(v1.1 score)",
             "info": "ale score",
             "scores": {
+                "GPT-6.2 Astra": 0.783,
+                "GPT-6.2 Sol": 0.73,
+                "GPT-6.1 Sol(from GPT-6.2 Sol)": 0.725,
                 "Gemini 4 Hydrogen": 0.716,
                 "GPT-6.1 Terra(from Gemini 4 Hydrogen)": 0.698,
                 "Claude Sonnet 5.5(from Gemini 4 Hydrogen)": 0.604,
