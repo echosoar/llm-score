@@ -30,6 +30,21 @@
             "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/"
         },
         {
+            "brand": "Alibaba",
+            "model": "Qwen 4 Max",
+            "time": "2026/11/16",
+            "input": ["text", "image", "video"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 131000,
+            "params": 2400,
+            "active": 71,
+            "inputPrice": "￥10",
+            "inputCachedPrice": "￥0.5",
+            "outputPrice": "￥30",
+            "url": "https://qwen.ai/blog?id=qwen4-max"
+        },
+        {
             "brand": "Google",
             "model": "Gemini 4 Hydrogen",
             "time": "2026/11/12",
@@ -1920,6 +1935,9 @@
         {
             "name": "GPQA Diamond",
             "scores": {
+                "GPT-6.2 Astra": 0.97,
+                "GPT-6.2 Sol": 0.96,
+                "GPT-6.1 Terra": 0.9356,
                 "Nemotron 3.5 Bolt": 0.864,
                 "Nemotron 3.5 Super": 0.895,
                 "Qwen 3.8 Omni Flash": 0.91,
@@ -2015,6 +2033,7 @@
         {
             "name": "JobBench",
             "scores": {
+                "Qwen 4 Max": 0.685,
                 "LongCat 2.5": 0.654,
                 "Muse Wonder": 0.705,
                 "Claude Opus 5.5(from Muse Wonder)": 0.754,
@@ -2106,6 +2125,10 @@
         {
             "name": "SEC-Bench Pro",
             "scores": {
+                "GPT-6.2 Astra": 0.8675,
+                "GPT-6.2 Sol": 0.8834,
+                "GPT-6.1 Sol": 0.788,
+                "GPT-6.1 Terra": 0.833,
                 "MiMo V2.6 Pro": 0.663,
                 "MiMo V2.6 Flash": 0.475,
                 "DeepSeek V4.1 Flash(from MiMo V2.6 Pro)": 0.628,
@@ -2116,6 +2139,7 @@
         {
             "name": "HealthBench Professional",
             "scores": {
+                "Qwen 4 Max": 0.6,
                 "Muse Wonder": 0.605,
                 "Claude Opus 5.5(from Muse Wonder)": 0.656,
                 "GPT-6 Astra": 0.634,
@@ -2221,6 +2245,7 @@
             "name": "Chartography",
             "info": "no tool",
             "scores": {
+                "Qwen 4 Max": 0.542,
                 "Gemini 4 Hydrogen": 0.666,
                 "GPT-6.1 Terra(from Gemini 4 Hydrogen)": 0.632,
                 "Claude Fable 5.2": 0.734,
@@ -2238,6 +2263,7 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "Qwen 4 Max": 0.757,
                 "ERNIE 5.5 Flash Preview": 0.712,
                 "Hy 4": 0.749,
                 "LongCat 2.5": 0.646,
@@ -2352,13 +2378,21 @@
         },
         {
             "name": "FrontierCode 2",
+            "info": "official score https://cognition.com/blog/frontier-code-2.0",
             "scores": {
                 "GPT-6.2 Astra": 0.442,
                 "GPT-6.2 Sol": 0.438,
                 "GPT-6.1 Sol(from GPT-6.2 Sol)": 0.39,
-                "Claude Fable 5.2(from GPT-6.2 Sol)": 0.491,
-                "Claude Opus 5.2(from GPT-6.2 Sol)": 0.455,
-                "Gemini 4 Carbon(from GPT-6.2 Sol)": 0.411
+                "Claude Fable 5.2": 0.502,
+                "Claude Opus 5.5": 0.473,
+                "Claude Sonnet 5.5": 0.422,
+                "Gemini 4 Carbon": 0.426,
+                "Gemini 4 Neon": 0.462,
+                "Gemini 4 Hydrogen": 0.389,
+                "Gemini 4 Argon": 0.276,
+                "Muse Wonder": 0.253,
+                "Grok 4.7": 0.289,
+                "GPT-6 Luna": 0.227
             }
         },
         {
@@ -2397,6 +2431,7 @@
             "name": "Program Bench",
             "info": "almost resolved",
             "scores": {
+                "Qwen 4 Max": 0.315,
                 "ERNIE 5.5 Flash Preview": 0.295,
                 "Hy 4": 0.3,
                 "LongCat 2.5": 0.255,
@@ -2449,6 +2484,7 @@
         {
             "name": "Terminal-Bench 4",
             "scores": {
+                "Qwen 4 Max": 0.485,
                 "ERNIE 5.5 Flash Preview": 0.465,
                 "Hy 4": 0.444,
                 "LongCat 2.5": 0.385,
@@ -2849,7 +2885,8 @@
                 "Gemini 4 Carbon": 0.69,
                 "Gemini 4 Hydrogen": 0.59,
                 "Gemini 4 Argon": 0.57,
-                "Claude Fable 5.2": 0.8
+                "Claude Fable 5.2": 0.8,
+                "Kimi K3.1 Pro(from official)": 0.295
             }
         },
         
@@ -2873,11 +2910,13 @@
             "name": "Agents' Last Exam(v1.1 pass)",
             "info": "ale pass",
             "scores": {
+                "Qwen 4 Max": 0.467,
+                "GPT-6.2 Astra": 0.475,
+                "GPT-6.2 Sol": 0.418,
                 "Hy 4": 0.41,
-                "Kimi K3.1 Pro(from Hy 4)": 0.434,
-                "GPT-6.1 Sol(from Hy 4)": 0.402,
-                "Claude Opus 5.5(from Hy 4)": 0.434,
-                "DeepSeek V4.1 Flash 1017(from Hy 4)": 0.353,
+                "GPT-6.1 Terra(from official)": 0.418,
+                "Claude Opus 5.5(from official)": 0.434,
+                "DeepSeek V4.1 Flash 1017(from official)": 0.361,
                 "GLM 5.3(from Hy 4)": 0.262
             }
         },
@@ -3235,6 +3274,7 @@
         {
             "name": "Apex Agents 1.1(pass@1)",
             "scores": {
+                "Qwen 4 Max": 0.721,
                 "ERNIE 5.5 Flash Preview": 0.642,
                 "Hy 4": 0.752,
                 "DeepSeek V4.1 Flash 1017(from Hy 4)": 0.721,
