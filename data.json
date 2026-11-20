@@ -30,6 +30,30 @@
             "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/"
         },
         {
+            "brand": "Microsoft",
+            "model": "MAI Code 2",
+            "time": "2026/11/17",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1050000,
+            "inputPrice": "$1",
+            "inputCachedPrice": "$0.05",
+            "outputPrice": "$5",
+            "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/"
+        },
+        {
+            "brand": "Microsoft",
+            "model": "MAI Code 2 Flash",
+            "time": "2026/11/17",
+            "input": ["text"],
+            "output": ["text"],
+            "context": 1050000,
+            "inputPrice": "$0.1",
+            "inputCachedPrice": "$0.01",
+            "outputPrice": "$0.5",
+            "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/"
+        },
+        {
             "brand": "Alibaba",
             "model": "Qwen 4 Max",
             "time": "2026/11/16",
@@ -2263,6 +2287,8 @@
         {
             "name": "DeepSWE 1.1",
             "scores": {
+                "MAI Code 2": 0.732,
+                "MAI Code 2 fLASH": 0.599,
                 "Qwen 4 Max": 0.757,
                 "ERNIE 5.5 Flash Preview": 0.712,
                 "Hy 4": 0.749,
@@ -2399,6 +2425,7 @@
             "name": "FrontierCode 1.1",
             "info": "main(not extend)",
             "scores": {
+                "MAI Code 2": 0.52,
                 "Claude Haiku 5.5": 0.464,
                 "Claude Sonnet 5.5": 0.521,
                 "Claude Sonnet 5(from Claude Sonnet 5.5)": 0.424,
@@ -2548,6 +2575,8 @@
         {
             "name": "Terminal-Bench 2.1",
             "scores": {
+                "MAI Code 2": 0.846,
+                "MAI Code 2 fLASH": 0.783,
                 "LongCat 2.5": 0.884,
                 "Nemotron 3.5 Bolt": 0.51,
                 "Nemotron 3.5 Super": 0.607,
