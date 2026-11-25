@@ -4,6 +4,7 @@
       "name": "AutomationBench 1.0.6",
       "info": "score",
       "scores": {
+        "Gemini 4 Neon": 0.563,
         "GPT-6.2 Astra": 0.524,
         "GPT-6.2 Sol": 0.412,
         "Claude Fable 5.2": 0.514,
@@ -292,6 +293,7 @@
     {
       "name": "SEC-Bench Pro",
       "scores": {
+        "Gemini 4 Neon": 0.905,
         "GPT-6.2 Astra": 0.8675,
         "GPT-6.2 Sol": 0.8834,
         "GPT-6.1 Sol": 0.788,
@@ -457,6 +459,9 @@
       "name": "Chartography",
       "info": "no tool",
       "scores": {
+        "Gemini 4 Neon": 0.735,
+        "GPT-6.2 Sol": 0.751,
+        "GPT-6.2 Astra": 0.907,
         "Qwen 4 Max": 0.542,
         "Gemini 4 Hydrogen": 0.666,
         "GPT-6.1 Terra": 0.632,
@@ -472,6 +477,8 @@
         "Claude Opus 5.5": 0.644
       },
       "fromSources": {
+        "GPT-6.2 Sol": "Gemini 4 Neon",
+        "GPT-6.2 Astra": "Offcial",
         "GPT-6.1 Terra": "Gemini 4 Hydrogen",
         "GPT-6 Astra": "Gemini 4 Argon",
         "Claude Fable 5.1": "Gemini 4 Argon",
@@ -640,6 +647,7 @@
       "name": "FrontierCode 2",
       "info": "official score https://cognition.com/blog/frontier-code-2.0",
       "scores": {
+        "Gemini 4 Neon": 0.462,
         "GPT-6.2 Astra": 0.442,
         "GPT-6.2 Sol": 0.438,
         "GPT-6.1 Sol": 0.39,
@@ -647,7 +655,6 @@
         "Claude Opus 5.5": 0.473,
         "Claude Sonnet 5.5": 0.422,
         "Gemini 4 Carbon": 0.426,
-        "Gemini 4 Neon": 0.462,
         "Gemini 4 Hydrogen": 0.389,
         "Gemini 4 Argon": 0.276,
         "Muse Wonder": 0.253,
@@ -751,6 +758,7 @@
     {
       "name": "Terminal-Bench Science 0.1",
       "scores": {
+        "Gemini 4 Neon": 0.705,
         "GPT-6.2 Astra": 0.771,
         "GPT-6.2 Sol": 0.68,
         "ERNIE 5.5 Flash Preview": 0.21,
@@ -1280,6 +1288,7 @@
     {
       "name": "HLE-Diamond",
       "scores": {
+        "Gemini 4 Neon": 0.713,
         "GPT-6.2 Astra": 0.72,
         "GPT-6.2 Sol": 0.64,
         "Gemini 4 Carbon": 0.69,
@@ -1296,6 +1305,7 @@
       "name": "Agents' Last Exam(v1.1 score)",
       "info": "ale score",
       "scores": {
+        "Gemini 4 Neon": 0.758,
         "GPT-6.2 Astra": 0.783,
         "GPT-6.2 Sol": 0.73,
         "GPT-6.1 Sol": 0.725,
@@ -10602,6 +10612,7 @@
           "CharXiv": "Gemini 3.6 Flash"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -11784,6 +11795,9 @@
           "OSWorld 2.1": "Claude Sonnet 5.5"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
+          "GPT-6.2 Astra",
+          "GPT-6.2 Sol",
           "MAI Code 2",
           "Qwen 4 Max",
           "Gemini 4 Hydrogen",
@@ -12271,6 +12285,7 @@
           "Tau 3 Banking": "Inkling-Small"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -12381,6 +12396,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -12757,6 +12773,7 @@
           "gdp.pdf": "GPT-5.6 Sol"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -13168,6 +13185,7 @@
           "Agents' Last Exam(pass)": "Gemini 3.7 Flash"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -13239,6 +13257,7 @@
           "GDPval-AA 2.1": "Claude Haiku 5.5"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -13387,6 +13406,7 @@
           "ExploitGym": 0.06
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -13671,6 +13691,7 @@
           "ExploitGym": "Kimi K3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -13756,6 +13777,7 @@
           "OSWorld 2.0": "MiniMax M3.1 Flash"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Qwen 4 Max",
@@ -13874,6 +13896,7 @@
           "Terminal-Bench 4": 0.38
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -13933,6 +13956,9 @@
           "OSWorld 2.1": 0.724
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
+          "GPT-6.2 Astra",
+          "GPT-6.2 Sol",
           "MAI Code 2",
           "Qwen 4 Max",
           "Gemini 4 Hydrogen",
@@ -14029,6 +14055,7 @@
           "BabyVision": "Kimi K3"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -14146,6 +14173,7 @@
           "ExploitGym": 0.178
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Qwen 4 Max",
@@ -14208,6 +14236,7 @@
           "NL2Repo": 0.648
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -14275,6 +14304,7 @@
           "GDPval-AA 2.1": "Claude Sonnet 5.5"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -14432,6 +14462,7 @@
           "BabyVision": "Kimi K3"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "MAI Code 2",
@@ -14533,6 +14564,7 @@
           "Apex Agents 1.1(pass@1)": 0.752
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Qwen 4 Max",
@@ -14644,6 +14676,7 @@
           "gdp.pdf": "Kimi K3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Qwen 4 Max",
@@ -14724,6 +14757,7 @@
           "NL2Repo": "Qwen 3.8 Max 0902"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Gemini 4 Hydrogen",
@@ -14742,6 +14776,57 @@
         "rank": 39.086064464203155
       },
       "rank": 39.086064464203155
+    },
+    {
+      "modelInfo": {
+        "brand": "Alibaba",
+        "model": "Qwen 4 Max",
+        "time": "2026/11/16",
+        "input": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "generate": 131000,
+        "params": 2400,
+        "active": 71,
+        "inputPrice": "￥10",
+        "inputCachedPrice": "￥0.5",
+        "outputPrice": "￥30",
+        "url": "https://qwen.ai/blog?id=qwen4-max",
+        "currentBenchmarksScores": {
+          "JobBench": 0.685,
+          "HealthBench Professional": 0.6,
+          "Chartography": 0.542,
+          "DeepSWE 1.1": 0.757,
+          "Program Bench": 0.315,
+          "Terminal-Bench 4": 0.485,
+          "Agents' Last Exam(v1.1 pass)": 0.467,
+          "Apex Agents 1.1(pass@1)": 0.721
+        },
+        "betterThanCurrentModels": [
+          "Gemini 4 Neon",
+          "GPT-6.2 Astra",
+          "GPT-6.2 Sol",
+          "Gemini 4 Hydrogen",
+          "Claude Fable 5.2",
+          "Gemini 4 Carbon",
+          "GPT-6.1 Terra",
+          "Muse Wonder",
+          "Gemini 4 Argon",
+          "Claude Sonnet 5.5",
+          "Claude Opus 5.5",
+          "GPT-6 Astra",
+          "Claude Fable 5.1",
+          "Claude Opus 5"
+        ],
+        "rank": 39.17297245095703
+      },
+      "rank": 39.17297245095703
     },
     {
       "modelInfo": {
@@ -14779,6 +14864,7 @@
           "Agents' Last Exam(v1.1 pass)": "official"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Gemini 4 Hydrogen",
@@ -14792,9 +14878,56 @@
           "Claude Opus 5.5",
           "GPT-6 Astra"
         ],
-        "rank": 41.47819315831783
+        "rank": 39.44216615887349
       },
-      "rank": 41.47819315831783
+      "rank": 39.44216615887349
+    },
+    {
+      "modelInfo": {
+        "brand": "Meta",
+        "model": "Muse Wonder",
+        "time": "2026/10/12",
+        "input": [
+          "text",
+          "image",
+          "pdf",
+          "audio",
+          "video"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1000000,
+        "inputPrice": "$4",
+        "inputCachedPrice": "$0.2",
+        "outputPrice": "$20",
+        "url": "https://research.meta.ai/blog/muse-wonder",
+        "currentBenchmarksScores": {
+          "JobBench": 0.705,
+          "HealthBench Professional": 0.605,
+          "DeepSWE 1.1": 0.788,
+          "FrontierCode 2": 0.253,
+          "Program Bench": 0.5,
+          "Terminal-Bench 4": 0.52,
+          "OSWorld 2.1": 0.726
+        },
+        "betterThanCurrentModels": [
+          "Gemini 4 Neon",
+          "GPT-6.2 Astra",
+          "GPT-6.2 Sol",
+          "Gemini 4 Hydrogen",
+          "Claude Fable 5.2",
+          "Gemini 4 Carbon",
+          "Gemini 4 Argon",
+          "GPT-6.1 Sol",
+          "Claude Sonnet 5.5",
+          "Claude Opus 5.5",
+          "GPT-6 Astra",
+          "Claude Fable 5.1"
+        ],
+        "rank": 39.53172878312797
+      },
+      "rank": 39.53172878312797
     },
     {
       "modelInfo": {
@@ -14837,6 +14970,7 @@
           "HLE-Diamond": "official"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Qwen 4 Max",
@@ -14849,104 +14983,9 @@
           "Claude Opus 5.5",
           "Claude Fable 5.1"
         ],
-        "rank": 41.85941410332448
+        "rank": 40.008570142526146
       },
-      "rank": 41.85941410332448
-    },
-    {
-      "modelInfo": {
-        "brand": "Meta",
-        "model": "Muse Wonder",
-        "time": "2026/10/12",
-        "input": [
-          "text",
-          "image",
-          "pdf",
-          "audio",
-          "video"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 1000000,
-        "inputPrice": "$4",
-        "inputCachedPrice": "$0.2",
-        "outputPrice": "$20",
-        "url": "https://research.meta.ai/blog/muse-wonder",
-        "currentBenchmarksScores": {
-          "JobBench": 0.705,
-          "HealthBench Professional": 0.605,
-          "DeepSWE 1.1": 0.788,
-          "FrontierCode 2": 0.253,
-          "Program Bench": 0.5,
-          "Terminal-Bench 4": 0.52,
-          "OSWorld 2.1": 0.726
-        },
-        "betterThanCurrentModels": [
-          "GPT-6.2 Astra",
-          "GPT-6.2 Sol",
-          "Gemini 4 Hydrogen",
-          "Claude Fable 5.2",
-          "Gemini 4 Carbon",
-          "Gemini 4 Argon",
-          "GPT-6.1 Sol",
-          "Claude Sonnet 5.5",
-          "Claude Opus 5.5",
-          "GPT-6 Astra",
-          "Claude Fable 5.1"
-        ],
-        "rank": 42.69550261378385
-      },
-      "rank": 42.69550261378385
-    },
-    {
-      "modelInfo": {
-        "brand": "Alibaba",
-        "model": "Qwen 4 Max",
-        "time": "2026/11/16",
-        "input": [
-          "text",
-          "image",
-          "video"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 1000000,
-        "generate": 131000,
-        "params": 2400,
-        "active": 71,
-        "inputPrice": "￥10",
-        "inputCachedPrice": "￥0.5",
-        "outputPrice": "￥30",
-        "url": "https://qwen.ai/blog?id=qwen4-max",
-        "currentBenchmarksScores": {
-          "JobBench": 0.685,
-          "HealthBench Professional": 0.6,
-          "Chartography": 0.542,
-          "DeepSWE 1.1": 0.757,
-          "Program Bench": 0.315,
-          "Terminal-Bench 4": 0.485,
-          "Agents' Last Exam(v1.1 pass)": 0.467,
-          "Apex Agents 1.1(pass@1)": 0.721
-        },
-        "betterThanCurrentModels": [
-          "GPT-6.2 Astra",
-          "Gemini 4 Hydrogen",
-          "Claude Fable 5.2",
-          "Gemini 4 Carbon",
-          "GPT-6.1 Terra",
-          "Muse Wonder",
-          "Gemini 4 Argon",
-          "Claude Sonnet 5.5",
-          "Claude Opus 5.5",
-          "GPT-6 Astra",
-          "Claude Fable 5.1",
-          "Claude Opus 5"
-        ],
-        "rank": 42.69550261378385
-      },
-      "rank": 42.69550261378385
+      "rank": 40.008570142526146
     },
     {
       "modelInfo": {
@@ -15000,6 +15039,7 @@
           "BabyVision": "Kimi K3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Claude Fable 5.2",
@@ -15011,9 +15051,9 @@
           "Claude Opus 5.5",
           "GPT-6 Astra"
         ],
-        "rank": 43.36765756448601
+        "rank": 41.08506660387696
       },
-      "rank": 43.36765756448601
+      "rank": 41.08506660387696
     },
     {
       "modelInfo": {
@@ -15055,6 +15095,7 @@
           "OSWorld 2.1": "Gemini 4 Carbon"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Gemini 4 Hydrogen",
@@ -15065,9 +15106,9 @@
           "Claude Opus 5.5",
           "GPT-6 Astra"
         ],
-        "rank": 44.23372551684085
+        "rank": 41.9511345562318
       },
-      "rank": 44.23372551684085
+      "rank": 41.9511345562318
     },
     {
       "modelInfo": {
@@ -15099,6 +15140,7 @@
           "OSWorld 2.1": 0.776
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Claude Fable 5.2",
@@ -15109,9 +15151,9 @@
           "GPT-6 Astra",
           "Claude Fable 5.1"
         ],
-        "rank": 44.578895385866915
+        "rank": 42.296304425257865
       },
-      "rank": 44.578895385866915
+      "rank": 42.296304425257865
     },
     {
       "modelInfo": {
@@ -15157,6 +15199,7 @@
           "Apex Agents 1.1(pass@1)": "Hy 4"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Qwen 4 Max",
@@ -15167,9 +15210,9 @@
           "Claude Opus 5.5",
           "GPT-6 Astra"
         ],
-        "rank": 44.664519921446754
+        "rank": 42.381928960837705
       },
-      "rank": 44.664519921446754
+      "rank": 42.381928960837705
     },
     {
       "modelInfo": {
@@ -15207,6 +15250,7 @@
           "Agents' Last Exam(v1.1 score)": "Gemini 4 Hydrogen"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Claude Fable 5.2",
@@ -15214,9 +15258,9 @@
           "Claude Opus 5.5",
           "GPT-6 Astra"
         ],
-        "rank": 45.014875513727524
+        "rank": 42.732284553118475
       },
-      "rank": 45.014875513727524
+      "rank": 42.732284553118475
     },
     {
       "modelInfo": {
@@ -15276,6 +15320,7 @@
           "gdp.pdf": "GPT-6.1 Sol"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "GPT-6.2 Sol",
           "Claude Fable 5.2",
@@ -15283,48 +15328,9 @@
           "Kimi K3.1 Pro",
           "Claude Opus 5.5"
         ],
-        "rank": 45.265401704576085
+        "rank": 42.982810743967036
       },
-      "rank": 45.265401704576085
-    },
-    {
-      "modelInfo": {
-        "brand": "OpenAI",
-        "model": "GPT-6.2 Sol",
-        "time": "2026/11/17",
-        "input": [
-          "text",
-          "image"
-        ],
-        "output": [
-          "text"
-        ],
-        "context": 1050000,
-        "generate": 128000,
-        "inputPrice": "$2",
-        "inputCachedPrice": "$0.1",
-        "outputPrice": "$10",
-        "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/",
-        "currentBenchmarksScores": {
-          "AutomationBench 1.0.6": 0.412,
-          "GPQA Diamond": 0.96,
-          "SEC-Bench Pro": 0.8834,
-          "FrontierCode 2": 0.438,
-          "Terminal-Bench Science 0.1": 0.68,
-          "HLE-Diamond": 0.64,
-          "Agents' Last Exam(v1.1 score)": 0.73,
-          "Agents' Last Exam(v1.1 pass)": 0.418
-        },
-        "betterThanCurrentModels": [
-          "GPT-6.2 Astra",
-          "Qwen 4 Max",
-          "Claude Fable 5.2",
-          "Gemini 4 Carbon",
-          "Claude Opus 5.5"
-        ],
-        "rank": 45.38075330077971
-      },
-      "rank": 45.38075330077971
+      "rank": 42.982810743967036
     },
     {
       "modelInfo": {
@@ -15387,13 +15393,57 @@
           "BabyVision": "Kimi K3.1 Pro"
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
+          "GPT-6.2 Astra",
+          "GPT-6.2 Sol",
+          "Claude Fable 5.2",
+          "Gemini 4 Carbon"
+        ],
+        "rank": 43.26776948360818
+      },
+      "rank": 43.26776948360818
+    },
+    {
+      "modelInfo": {
+        "brand": "OpenAI",
+        "model": "GPT-6.2 Sol",
+        "time": "2026/11/17",
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1050000,
+        "generate": 128000,
+        "inputPrice": "$2",
+        "inputCachedPrice": "$0.1",
+        "outputPrice": "$10",
+        "url": "https://openai.com/zh-Hans-CN/index/introducing-gpt-6-2-astra-sol/",
+        "currentBenchmarksScores": {
+          "AutomationBench 1.0.6": 0.412,
+          "GPQA Diamond": 0.96,
+          "SEC-Bench Pro": 0.8834,
+          "Chartography": 0.751,
+          "FrontierCode 2": 0.438,
+          "Terminal-Bench Science 0.1": 0.68,
+          "HLE-Diamond": 0.64,
+          "Agents' Last Exam(v1.1 score)": 0.73,
+          "Agents' Last Exam(v1.1 pass)": 0.418
+        },
+        "currentBenchmarksFrom": {
+          "Chartography": "Gemini 4 Neon"
+        },
+        "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "Claude Fable 5.2",
           "Gemini 4 Carbon"
         ],
-        "rank": 45.51087925530823
+        "rank": 43.57175526745413
       },
-      "rank": 45.51087925530823
+      "rank": 43.57175526745413
     },
     {
       "modelInfo": {
@@ -15428,47 +15478,51 @@
           "ExploitGym": 0.548
         },
         "betterThanCurrentModels": [
+          "Gemini 4 Neon",
           "GPT-6.2 Astra",
           "Claude Fable 5.2"
         ],
-        "rank": 46.13115544033716
+        "rank": 43.96629733726616
       },
-      "rank": 46.13115544033716
+      "rank": 43.96629733726616
     },
     {
       "modelInfo": {
-        "brand": "OpenAI",
-        "model": "GPT-6.2 Astra",
-        "time": "2026/11/17",
+        "brand": "Google",
+        "model": "Gemini 4 Neon",
+        "time": "2026/11/18",
         "input": [
           "text",
-          "image"
+          "image",
+          "video",
+          "audio",
+          "pdf"
         ],
         "output": [
           "text"
         ],
-        "context": 1050000,
-        "generate": 128000,
-        "inputPrice": "$8",
-        "inputCachedPrice": "$0.4",
-        "outputPrice": "$40",
-        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+        "context": 1000000,
+        "generate": 64000,
+        "inputPrice": "$3",
+        "inputCachedPrice": "$0.15",
+        "outputPrice": "$15",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
         "currentBenchmarksScores": {
-          "AutomationBench 1.0.6": 0.524,
-          "GPQA Diamond": 0.97,
-          "SEC-Bench Pro": 0.8675,
-          "FrontierCode 2": 0.442,
-          "Terminal-Bench Science 0.1": 0.771,
-          "HLE-Diamond": 0.72,
-          "Agents' Last Exam(v1.1 score)": 0.783,
-          "Agents' Last Exam(v1.1 pass)": 0.475
+          "AutomationBench 1.0.6": 0.563,
+          "SEC-Bench Pro": 0.905,
+          "Chartography": 0.735,
+          "FrontierCode 2": 0.462,
+          "Terminal-Bench Science 0.1": 0.705,
+          "HLE-Diamond": 0.713,
+          "Agents' Last Exam(v1.1 score)": 0.758
         },
         "betterThanCurrentModels": [
+          "GPT-6.2 Astra",
           "Claude Fable 5.2"
         ],
-        "rank": 46.31829822045814
+        "rank": 44.106282709410124
       },
-      "rank": 46.31829822045814
+      "rank": 44.106282709410124
     },
     {
       "modelInfo": {
@@ -15499,10 +15553,49 @@
           "HLE-Diamond": 0.8,
           "OSWorld 2.1": 0.893
         },
-        "betterThanCurrentModels": [],
-        "rank": 46.645384696074025
+        "betterThanCurrentModels": [
+          "GPT-6.2 Astra"
+        ],
+        "rank": 44.34191695550183
       },
-      "rank": 46.645384696074025
+      "rank": 44.34191695550183
+    },
+    {
+      "modelInfo": {
+        "brand": "OpenAI",
+        "model": "GPT-6.2 Astra",
+        "time": "2026/11/17",
+        "input": [
+          "text",
+          "image"
+        ],
+        "output": [
+          "text"
+        ],
+        "context": 1050000,
+        "generate": 128000,
+        "inputPrice": "$8",
+        "inputCachedPrice": "$0.4",
+        "outputPrice": "$40",
+        "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+        "currentBenchmarksScores": {
+          "AutomationBench 1.0.6": 0.524,
+          "GPQA Diamond": 0.97,
+          "SEC-Bench Pro": 0.8675,
+          "Chartography": 0.907,
+          "FrontierCode 2": 0.442,
+          "Terminal-Bench Science 0.1": 0.771,
+          "HLE-Diamond": 0.72,
+          "Agents' Last Exam(v1.1 score)": 0.783,
+          "Agents' Last Exam(v1.1 pass)": 0.475
+        },
+        "currentBenchmarksFrom": {
+          "Chartography": "Offcial"
+        },
+        "betterThanCurrentModels": [],
+        "rank": 44.59690184596743
+      },
+      "rank": 44.59690184596743
     }
   ],
   "priceMap": {
@@ -15535,5 +15628,5 @@
     "Thinking Machines": "default.svg",
     "Agnes": "default.svg"
   },
-  "updatedAt": "2026-11-20T00:49:59.325Z"
+  "updatedAt": "2026-11-25T11:26:00.094Z"
 }

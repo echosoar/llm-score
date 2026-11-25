@@ -4,6 +4,19 @@
     ],
     "models": [
         {
+            "brand": "Google",
+            "model": "Gemini 4 Neon",
+            "time": "2026/11/18",
+            "input": ["text", "image", "video", "audio", "pdf"],
+            "output": ["text"],
+            "context": 1000000,
+            "generate": 64000,
+            "inputPrice": "$3",
+            "inputCachedPrice": "$0.15",
+            "outputPrice": "$15",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
             "brand": "OpenAI",
             "model": "GPT-6.2 Astra",
             "time": "2026/11/17",
@@ -1915,6 +1928,7 @@
             "name": "AutomationBench 1.0.6",
             "info": "score",
             "scores": {
+                "Gemini 4 Neon": 0.563,
                 "GPT-6.2 Astra": 0.524,
                 "GPT-6.2 Sol": 0.412,
                 "Claude Fable 5.2": 0.514,
@@ -2149,6 +2163,7 @@
         {
             "name": "SEC-Bench Pro",
             "scores": {
+                "Gemini 4 Neon": 0.905,
                 "GPT-6.2 Astra": 0.8675,
                 "GPT-6.2 Sol": 0.8834,
                 "GPT-6.1 Sol": 0.788,
@@ -2269,6 +2284,9 @@
             "name": "Chartography",
             "info": "no tool",
             "scores": {
+                "Gemini 4 Neon": 0.735,
+                "GPT-6.2 Sol(from Gemini 4 Neon)": 0.751,
+                "GPT-6.2 Astra(from Offcial)": 0.907,
                 "Qwen 4 Max": 0.542,
                 "Gemini 4 Hydrogen": 0.666,
                 "GPT-6.1 Terra(from Gemini 4 Hydrogen)": 0.632,
@@ -2406,6 +2424,7 @@
             "name": "FrontierCode 2",
             "info": "official score https://cognition.com/blog/frontier-code-2.0",
             "scores": {
+                "Gemini 4 Neon": 0.462,
                 "GPT-6.2 Astra": 0.442,
                 "GPT-6.2 Sol": 0.438,
                 "GPT-6.1 Sol(from GPT-6.2 Sol)": 0.39,
@@ -2413,7 +2432,6 @@
                 "Claude Opus 5.5": 0.473,
                 "Claude Sonnet 5.5": 0.422,
                 "Gemini 4 Carbon": 0.426,
-                "Gemini 4 Neon": 0.462,
                 "Gemini 4 Hydrogen": 0.389,
                 "Gemini 4 Argon": 0.276,
                 "Muse Wonder": 0.253,
@@ -2485,6 +2503,7 @@
         {
             "name": "Terminal-Bench Science 0.1",
             "scores": {
+                "Gemini 4 Neon": 0.705,
                 "GPT-6.2 Astra": 0.771,
                 "GPT-6.2 Sol": 0.68,
                 "ERNIE 5.5 Flash Preview": 0.21,
@@ -2909,6 +2928,7 @@
         {
             "name": "HLE-Diamond",
             "scores": {
+                "Gemini 4 Neon": 0.713,
                 "GPT-6.2 Astra": 0.72,
                 "GPT-6.2 Sol": 0.64,
                 "Gemini 4 Carbon": 0.69,
@@ -2923,6 +2943,7 @@
             "name": "Agents' Last Exam(v1.1 score)",
             "info": "ale score",
             "scores": {
+                "Gemini 4 Neon": 0.758,
                 "GPT-6.2 Astra": 0.783,
                 "GPT-6.2 Sol": 0.73,
                 "GPT-6.1 Sol(from GPT-6.2 Sol)": 0.725,
